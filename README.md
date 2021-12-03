@@ -1,4 +1,4 @@
-# selenium648
+# selenium648PageFactory
 
 create in `src/test/resources` file  `data.properties`
 
