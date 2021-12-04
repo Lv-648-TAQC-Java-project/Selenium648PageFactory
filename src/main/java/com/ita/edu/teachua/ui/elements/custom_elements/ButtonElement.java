@@ -12,7 +12,7 @@ public class ButtonElement extends BaseElement implements Button {
     public void click() {
         getWrappedElement().click();
     }
-    public boolean isActive(){
+    public boolean isDisplayed(){
         return getWrappedElement().isDisplayed();
     }
 }

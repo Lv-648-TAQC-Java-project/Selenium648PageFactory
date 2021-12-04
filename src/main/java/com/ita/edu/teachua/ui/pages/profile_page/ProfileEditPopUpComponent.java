@@ -11,6 +11,7 @@ import org.openqa.selenium.support.How;
 import javax.swing.text.LabelView;
 
 public class ProfileEditPopUpComponent extends BasePage {
+
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.PHONE_EDIT_XPATH)
     private InputElement phone;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.FIRSTNAME_EDIT_XPATH)
@@ -37,11 +38,13 @@ public class ProfileEditPopUpComponent extends BasePage {
     private LabelElement newPasswordErrorMessage;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.CONFIRM_PASSWORD_ERROR_MESSAGE_XPATH)
     private LabelElement confirmPasswordErrorMessage;
+
     public ProfileEditPopUpComponent(WebDriver driver) {
         super(driver);
     }
 
     public ProfileEditPopUpComponent fillPhone(String phoneNumber) {
+
         phone.clear();
         phone.sendKeys(phoneNumber);
         sleep(2000);
@@ -61,8 +64,8 @@ public class ProfileEditPopUpComponent extends BasePage {
         return this;
     }
 
-    public boolean getSaveButtonValue() {
-        return saveButton.isActive();
+    public Button getSaveButton() {
+        return saveButton;
     }
 
     public ProfileEditPopUpComponent clickSubmit() {
