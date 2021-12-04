@@ -1,5 +1,6 @@
 package com.ita.edu.teachua.ui.elements.custom_elements;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import com.ita.edu.teachua.ui.elements.base_element.BaseElement;
 
@@ -37,5 +38,9 @@ public class InputElement extends BaseElement implements Input {
     @Override
     public String getText() {
         return getWrappedElement().getAttribute("value");
+    }
+
+    public void pressEnter() {
+        getWrappedElement().sendKeys(Keys.ENTER);
     }
 }
