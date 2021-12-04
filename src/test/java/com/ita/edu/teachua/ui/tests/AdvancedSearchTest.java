@@ -135,7 +135,7 @@ public class AdvancedSearchTest extends TestRunner {
         softAssert.assertAll();
     }
 
-    @Test
+    /*@Test
     public void checkSortingClubsSimplified() {
         MainPage mainPage = new MainPage(driver);
         AdvancedSearchPage advSearch = mainPage.clickAdvancedSearchButton();
@@ -173,5 +173,5 @@ public class AdvancedSearchTest extends TestRunner {
             System.out.println("____________ " + i);
             advSearch.clickOnNextPageButton();
         }
-    }
+    }*/
 }

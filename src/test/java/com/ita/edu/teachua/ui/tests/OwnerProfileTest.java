@@ -175,7 +175,7 @@ public class OwnerProfileTest extends TestRunner {
 
     }
 
-    @Test
+    /*@Test
     public void testAddLocationByOwner() {
         HeaderPage header = new HeaderPage(driver);
         boolean actual = header.authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -197,7 +197,7 @@ public class OwnerProfileTest extends TestRunner {
                 .getCheckBoxByName("LocationTestName")
                 .isDisplayed();
         Assert.assertTrue(actual);
-    }
+    }*/
 
     @Test
     public void testAddLocationFromProfilePage() {
@@ -237,7 +237,7 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
-    @Test(dataProvider = "verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider", description = "TUA-159")
+    /*@Test(dataProvider = "verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider", description = "TUA-159")
     public void addLocationWithValidDataOfMandatoryFields(String name, String town, String address, String coordinates, String phoneNumber) {
         boolean actualResult = new HeaderPage(driver).authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
@@ -255,10 +255,10 @@ public class OwnerProfileTest extends TestRunner {
                 .getCheckBoxByName(name)
                 .isDisplayed();
         Assert.assertTrue(actualResult, "Location was not create");
-    }
+    }*/
 
 
-    @Test
+    /*@Test
     public void checkLastVerifyEnteredDataInRegistrationRemembered() {
         HeaderPage header = new HeaderPage(driver);
         RegisterPopUpComponent registerCheck = header.clickOnGuestDropdown()
@@ -288,7 +288,7 @@ public class OwnerProfileTest extends TestRunner {
         softassert.assertEquals(actual3, "svitlanawhite@gmail.com");
         softassert.assertEquals(actual4, "12345678");
 
-    }
+    }*/
 
     @DataProvider
     public Object[][] lastNameDataProvider() {

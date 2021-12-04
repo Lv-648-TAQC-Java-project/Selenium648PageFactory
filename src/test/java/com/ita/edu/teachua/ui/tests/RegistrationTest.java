@@ -14,7 +14,7 @@ import java.util.List;
 
 public class RegistrationTest extends TestRunner {
 
-    @Test(invocationCount = 1)
+    /*@Test(invocationCount = 1)
     public void checkAlertsFieldsWhenEmpty() {
         HeaderPage profile = new HeaderPage(driver);
         RegisterPopUpComponent registration = profile.clickOnGuestDropdown().clickOnRegisterButton();
@@ -45,5 +45,5 @@ public class RegistrationTest extends TestRunner {
         softAssert.assertTrue(alerts.get(6).getText().equals("Підтвердіть пароль"));
 
         softAssert.assertAll();
-    }
+    }*/
 }
