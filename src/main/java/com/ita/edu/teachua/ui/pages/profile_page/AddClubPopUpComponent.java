@@ -142,9 +142,9 @@ public class AddClubPopUpComponent extends BasePage {
         return tick;
     }
 
-    /*public LabelElement getError() {
-        return new LabelElement(driver, AddClubPopUpComponentLocators.ERROR_IN_DESCRIPTION_FIELD);
-    }*/
+    public Label getError() {
+        return error;
+    }
     /*Base info area end*/
 
     /*Contacts area start*/
