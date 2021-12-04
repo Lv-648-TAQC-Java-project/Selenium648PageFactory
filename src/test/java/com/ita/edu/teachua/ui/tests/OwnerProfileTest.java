@@ -1,6 +1,7 @@
 package com.ita.edu.teachua.ui.tests;
 
 import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
+import com.ita.edu.teachua.ui.pages.header_page.RegisterPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddClubPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddLocationPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfileEditPopUpComponent;
@@ -13,39 +14,42 @@ public class OwnerProfileTest extends TestRunner {
     @DataProvider
     public Object[][] phoneDataProvider() {
         return new Object[][]{
-                {"6895", "Телефон не відповідає вказаному формату"},
-                {"65987458", "Телефон не відповідає вказаному формату"},
-                {"6593859632586", "Телефон не відповідає вказаному формату"},
-                {"jngeoлщшогнеп", "Телефон не може містити літери"},
-                {"!96397180", "Телефон не відповідає вказаному формату"},
-                {"@96397180", "Телефон не відповідає вказаному формату"},
-                {"#96397180", "Телефон не відповідає вказаному формату"},
-                {"$96397180", "Телефон не відповідає вказаному формату"},
-                {"%96397180", "Телефон не відповідає вказаному формату"},
-                {"^96397180", "Телефон не відповідає вказаному формату"},
-                {"&96397180", "Телефон не відповідає вказаному формату"},
-                {"*96397180", "Телефон не відповідає вказаному формату"},
-                {"(96397180", "Телефон не відповідає вказаному формату"},
-                {"_96397180", "Телефон не відповідає вказаному формату"},
-                {"+96397180", "Телефон не відповідає вказаному формату"},
-                {".96397180", "Телефон не відповідає вказаному формату"},
-                {":96397180", "Телефон не відповідає вказаному формату"},
-                {"", "Будь ласка введіть Ваш номер телефону"}
+                {"6895", "Телефон не відповідає вказаному формату",
+                        "65987458", "Телефон не відповідає вказаному формату",
+                        "6593859632586", "Телефон не відповідає вказаному формату",
+                        "jngeoлщшогнеп", "Телефон не може містити літери",
+                        "!96397180", "Телефон не відповідає вказаному формату",
+                        "@96397180", "Телефон не відповідає вказаному формату",
+                        "#96397180", "Телефон не відповідає вказаному формату",
+                        "$96397180", "Телефон не відповідає вказаному формату",
+                        "%96397180", "Телефон не відповідає вказаному формату",
+                        "^96397180", "Телефон не відповідає вказаному формату",
+                        "&96397180", "Телефон не відповідає вказаному формату",
+                        "*96397180", "Телефон не відповідає вказаному формату",
+                        "(96397180", "Телефон не відповідає вказаному формату",
+                        "_96397180", "Телефон не відповідає вказаному формату",
+                        "+96397180", "Телефон не відповідає вказаному формату",
+                        ".96397180", "Телефон не відповідає вказаному формату",
+                        ":96397180", "Телефон не відповідає вказаному формату",
+                        "", "Будь ласка введіть Ваш номер телефону"}
         };
     }
 
     @Test(dataProvider = "phoneDataProvider")
-    public void TestUserCheckInvalidDataForFieldPhone(String data, String expected) {
+    public void TestUserCheckInvalidDataForFieldPhone(String[] dataAndExpected) {
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile();
-        String actual = edit
-                .fillPhone(data)
-                .getMessage();
-        Assert.assertEquals(actual, expected);
+        for(int i=0;i<dataAndExpected.length;i+=2){
+            String actual = edit
+                    .fillPhone(dataAndExpected[i])
+                    .getMessage();
+
+            Assert.assertEquals(actual, dataAndExpected[i+1]);
+        }
 
     }
 
@@ -289,93 +293,98 @@ public class OwnerProfileTest extends TestRunner {
     @DataProvider
     public Object[][] lastNameDataProvider() {
         return new Object[][]{
-                {"AfBbCcDdEeFfGgHhIiJjKkLlMmNn", "Прізвище не може містити більше, ніж 25 символів"},
-                {"AfBbCcDdEeFfGgHhIiJjKkLlMm", "Прізвище не може містити більше, ніж 25 символів"},
-                {"", ""},
-                {"1Admin", "Прізвище не може містити цифри"},
-                {"2Admin", "Прізвище не може містити цифри"},
-                {"3Admin", "Прізвище не може містити цифри"},
-                {"4Admin", "Прізвище не може містити цифри"},
-                {"-Lastname", "Прізвище повинно починатися та закінчуватися літерою"},
-                {"< Lastname>", "Прізвище повинно починатися та закінчуватися літерою"},
-                {"\'Lastname", "Прізвище повинно починатися та закінчуватися літерою"},
-                {"Lastname-", "Прізвище повинно починатися та закінчуватися літерою"},
-                {"<Lastname >", "Прізвище повинно починатися та закінчуватися літерою"},
-                {"Lastname\'", "Прізвище повинно починатися та закінчуватися літерою"},
-                {"!Admin", "Прізвище не може містити спеціальні символи"},
-                {"@Admin", "Прізвище не може містити спеціальні символи"},
-                {"#Admin", "Прізвище не може містити спеціальні символи"},
-                {"$Admin", "Прізвище не може містити спеціальні символи"},
-                {"%Admin", "Прізвище не може містити спеціальні символи"},
-                {"^Admin", "Прізвище не може містити спеціальні символи"},
-                {"&Admin", "Прізвище не може містити спеціальні символи"},
-                {"*Admin", "Прізвище не може містити спеціальні символи"},
-                {"(Admin", "Прізвище не може містити спеціальні символи"},
-                {"_Admin", "Прізвище не може містити спеціальні символи"},
-                {"+Admin", "Прізвище не може містити спеціальні символи"},
-                {".Admin", "Прізвище не може містити спеціальні символи"},
-                {":Admin", "Прізвище не може містити спеціальні символи"},
-                {"", "Введіть прізвище"}
+                {"AfBbCcDdEeFfGgHhIiJjKkLlMmNn", "Прізвище не може містити більше, ніж 25 символів",
+                        "AfBbCcDdEeFfGgHhIiJjKkLlMm", "Прізвище не може містити більше, ніж 25 символів",
+                        "", "",
+                        "1Admin", "Прізвище не може містити цифри",
+                        "2Admin", "Прізвище не може містити цифри",
+                        "3Admin", "Прізвище не може містити цифри",
+                        "4Admin", "Прізвище не може містити цифри",
+                        "-Lastname", "Прізвище повинно починатися та закінчуватися літерою",
+                        "< Lastname>", "Прізвище повинно починатися та закінчуватися літерою",
+                        "\'Lastname", "Прізвище повинно починатися та закінчуватися літерою",
+                        "Lastname-", "Прізвище повинно починатися та закінчуватися літерою",
+                        "<Lastname >", "Прізвище повинно починатися та закінчуватися літерою",
+                        "Lastname\'", "Прізвище повинно починатися та закінчуватися літерою",
+                        "!Admin", "Прізвище не може містити спеціальні символи",
+                        "@Admin", "Прізвище не може містити спеціальні символи",
+                        "#Admin", "Прізвище не може містити спеціальні символи",
+                        "$Admin", "Прізвище не може містити спеціальні символи",
+                        "%Admin", "Прізвище не може містити спеціальні символи",
+                        "^Admin", "Прізвище не може містити спеціальні символи",
+                        "&Admin", "Прізвище не може містити спеціальні символи",
+                        "*Admin", "Прізвище не може містити спеціальні символи",
+                        "(Admin", "Прізвище не може містити спеціальні символи",
+                        "_Admin", "Прізвище не може містити спеціальні символи",
+                        "+Admin", "Прізвище не може містити спеціальні символи",
+                        ".Admin", "Прізвище не може містити спеціальні символи",
+                        ":Admin", "Прізвище не може містити спеціальні символи",
+                        "", "Введіть прізвище"}
         };
     }
 
     @Test(dataProvider = "lastNameDataProvider")
-    public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String data, String expected) {
+    public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String[] dataAndExpected) {
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
-                .clickOnUserLoginDropdown()
+                .clickOnOwnerDropdown()
                 .clickOnProfile()
-                .clickEditProfile()
-                .fillLastName(data);
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(edit.getMessage(), expected);
+                .clickEditProfile();
+        for(int i=0;i<dataAndExpected.length;i+=2){
+            edit=edit.fillLastName(dataAndExpected[i]);
+            SoftAssert softAssert = new SoftAssert();
+            softAssert.assertEquals(edit.getMessage(),dataAndExpected[i+1]);
+        }
     }
 
     @DataProvider
     public Object[][] firstNameDataProvider() {
         return new Object[][]{
-                {"AfBbCcDdEeFfGgHhIiJjKkLlMmNn", "Ім'я не може містити більше, ніж 25 символів"},
-                {"AfBbCcDdEeFfGgHhIiJjKkLlMm", "Ім'я не може містити більше, ніж 25 символів"},
-                {"", ""},
-                {"1Admin", "Ім'я не може містити цифри"},
-                {"2Admin", "Ім'я не може містити цифри"},
-                {"3Admin", "Ім'я не може містити цифри"},
-                {"4Admin", "Ім'я не може містити цифри"},
-                {"-Name", "Ім'я повинно починатися та закінчуватися літерою"},
-                {"< Name>", "Ім'я повинно починатися та закінчуватися літерою"},
-                {"\'Name", "Ім'я повинно починатися та закінчуватися літерою"},
-                {"Name-", "Ім'я повинно починатися та закінчуватися літерою"},
-                {"<Name >", "Ім'я повинно починатися та закінчуватися літерою"},
-                {"Name\'", "Ім'я повинно починатися та закінчуватися літерою"},
-                {"!Admin", "Ім'я не може містити спеціальні символи"},
-                {"@Admin", "Ім'я не може містити спеціальні символи"},
-                {"#Admin", "Ім'я не може містити спеціальні символи"},
-                {"$Admin", "Ім'я не може містити спеціальні символи"},
-                {"%Admin", "Ім'я не може містити спеціальні символи"},
-                {"^Admin", "Ім'я не може містити спеціальні символи"},
-                {"&Admin", "Ім'я не може містити спеціальні символи"},
-                {"*Admin", "Ім'я не може містити спеціальні символи"},
-                {"(Admin", "Ім'я не може містити спеціальні символи"},
-                {"_Admin", "Ім'я не може містити спеціальні символи"},
-                {"+Admin", "Ім'я не може містити спеціальні символи"},
-                {".Admin", "Ім'я не може містити спеціальні символи"},
-                {":Admin", "Ім'я не може містити спеціальні символи"},
-                {"", "Введіть Ім'я"}
+                {"AfBbCcDdEeFfGgHhIiJjKkLlMmNn", "Ім'я не може містити більше, ніж 25 символів",
+                        "AfBbCcDdEeFfGgHhIiJjKkLlMm", "Ім'я не може містити більше, ніж 25 символів",
+                        "", "",
+                        "1Admin", "Ім'я не може містити цифри",
+                        "2Admin", "Ім'я не може містити цифри",
+                        "3Admin", "Ім'я не може містити цифри",
+                        "4Admin", "Ім'я не може містити цифри",
+                        "-Name", "Ім'я повинно починатися та закінчуватися літерою",
+                        "< Name>", "Ім'я повинно починатися та закінчуватися літерою",
+                        "\'Name", "Ім'я повинно починатися та закінчуватися літерою",
+                        "Name-", "Ім'я повинно починатися та закінчуватися літерою",
+                        "<Name >", "Ім'я повинно починатися та закінчуватися літерою",
+                        "Name\'", "Ім'я повинно починатися та закінчуватися літерою",
+                        "!Admin", "Ім'я не може містити спеціальні символи",
+                        "@Admin", "Ім'я не може містити спеціальні символи",
+                        "#Admin", "Ім'я не може містити спеціальні символи",
+                        "$Admin", "Ім'я не може містити спеціальні символи",
+                        "%Admin", "Ім'я не може містити спеціальні символи",
+                        "^Admin", "Ім'я не може містити спеціальні символи",
+                        "&Admin", "Ім'я не може містити спеціальні символи",
+                        "*Admin", "Ім'я не може містити спеціальні символи",
+                        "(Admin", "Ім'я не може містити спеціальні символи",
+                        "_Admin", "Ім'я не може містити спеціальні символи",
+                        "+Admin", "Ім'я не може містити спеціальні символи",
+                        ".Admin", "Ім'я не може містити спеціальні символи",
+                        ":Admin", "Ім'я не може містити спеціальні символи",
+                        "", "Введіть Ім'я"}
         };
     }
 
     @Test(dataProvider = "firstNameDataProvider")
-    public void checkErrorMsWhenFillInvalidDataIntoFirstNameField(String data, String expected) {
+    public void checkErrorMsWhenFillInvalidDataIntoFirstNameField(String dataAndExpected[]) {
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
-                .clickOnUserLoginDropdown()
+                .clickOnOwnerDropdown()
                 .clickOnProfile()
-                .clickEditProfile()
-                .fillFirstName(data);
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(edit.getMessage(), expected);
+                .clickEditProfile();
+        for (int i = 0; i <dataAndExpected.length ; i+=2) {
+            edit=edit.fillFirstName(dataAndExpected[i]);
+            SoftAssert softAssert = new SoftAssert();
+            softAssert.assertEquals(edit.getMessage(), dataAndExpected[i+1]);
+        }
+
     }
 
 
