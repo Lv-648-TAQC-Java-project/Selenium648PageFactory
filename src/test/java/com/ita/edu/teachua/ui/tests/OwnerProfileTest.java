@@ -451,17 +451,17 @@ public class OwnerProfileTest extends TestRunner {
                 .enterValidTelephoneNumber("9632548777")
                 .clickOnNextStepButton()
                 .inputInDescriptionField(input[0])
-                .getTick().isDisplayedLabel();
+                .getTick().isDisplayed();
         softAssert.assertTrue(checkIfValidFiledWithUKRAndENGSymbols, "field is NOT valid");
 
         boolean checkIfValidFiledWithNumbers = new AddClubPopUpComponent(driver)
                 .inputInDescriptionField(input[1])
-                .getTick().isDisplayedLabel();
+                .getTick().isDisplayed();
         softAssert.assertTrue(checkIfValidFiledWithNumbers, "field is NOT valid");
 
         boolean checkIfValidFiledWithSpecialSymbols = new AddClubPopUpComponent(driver)
                 .inputInDescriptionField(input[2])
-                .getTick().isDisplayedLabel();
+                .getTick().isDisplayed();
         softAssert.assertTrue(checkIfValidFiledWithSpecialSymbols, "field is NOT valid");
 
         boolean checkEndButtonIsEnabled = new AddClubPopUpComponent(driver)
@@ -555,12 +555,12 @@ public class OwnerProfileTest extends TestRunner {
                 .enterValidTelephoneNumber("9632548777")
                 .clickOnNextStepButton()
                 .inputInDescriptionField(input[0])
-                .getTick().isDisplayedLabel();
+                .getTick().isDisplayed();
         softAssert.assertTrue(checkIfValidFiledWith1500Symbols, "field is NOT valid");
 
         boolean checkIfValidFiledWithLessThan1500Symbols = new AddClubPopUpComponent(driver)
                 .inputInDescriptionField(input[1])
-                .getTick().isDisplayedLabel();
+                .getTick().isDisplayed();
         softAssert.assertTrue(checkIfValidFiledWithLessThan1500Symbols, "field is NOT valid");
 
         String checkIfValidFiledWith1501Symbol = new AddClubPopUpComponent(driver)

@@ -1,16 +1,10 @@
 package com.ita.edu.teachua.ui.pages.profile_page;
 
-import com.ita.edu.teachua.ui.elements.ButtonElement;
-import com.ita.edu.teachua.ui.elements.CheckBoxElement;
-import com.ita.edu.teachua.ui.elements.InputElement;
-import com.ita.edu.teachua.ui.elements.LabelElement;
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.CheckBox;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.elements.custom_elements.Label;
-import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddCenterPopUpComponentLocators;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddClubPopUpComponentLocators;
-import com.ita.edu.teachua.ui.locators.pageslocators.profilelocators.AddClubPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -142,9 +136,9 @@ public class AddClubPopUpComponent extends BasePage {
         return tick;
     }
 
-    /*public LabelElement getError() {
-        return new LabelElement(driver, AddClubPopUpComponentLocators.ERROR_IN_DESCRIPTION_FIELD);
-    }*/
+    public Label getError() {
+        return error;
+    }
     /*Base info area end*/
 
     /*Contacts area start*/

@@ -5,10 +5,12 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.elements.custom_elements.Link;
 
 
+
 import com.ita.edu.teachua.ui.locators.pages_locators.main_page_locators.MainPageLocators;
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.ui.pages.clubs_page.ClubsPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -22,7 +24,7 @@ public class MainPage extends BasePage {
     @FindBy(how = How.XPATH, using = MainPageLocators.CLUBS_LINK_XPATH)
     private Link clubsLink;
     @FindBy(how = How.XPATH, using = MainPageLocators.ADVANCED_SEARCH_BUTTON_XPATH)
-    private Button advancedSearchButton;
+    private Button advancedSearch;
     @FindBy(how = How.CSS, using = MainPageLocators.SEARCH_INPUT_FIELD_CSS)
     private Input searchInput;
 
@@ -35,7 +37,7 @@ public class MainPage extends BasePage {
     }
 
     public AdvancedSearchPage clickAdvancedSearchButton() {
-        advancedSearchButton.click();
+        advancedSearch.click();
         return new AdvancedSearchPage(driver);
     }
 

@@ -1,18 +1,13 @@
 package com.ita.edu.teachua.ui.pages.clubs_page;
 
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
-import com.ita.edu.teachua.ui.locators.pages_locators.header_locators.GuestDropdownComponentLocators;
-import com.ita.edu.teachua.ui.locators_example.pageslocators.clubslocators.ClubsPageLocators;
+import com.ita.edu.teachua.ui.locators.pages_locators.clubs_page_locators.ClubsPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 import java.util.List;
 
 public class ClubsPage extends BasePage {
