@@ -1,5 +1,5 @@
 package com.ita.edu.teachua.ui.tests;
-
+/*
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
 import com.ita.edu.teachua.ui.pages.advanced_search.ClubsItemComponent;
 import com.ita.edu.teachua.ui.pages.main_page.MainPage;
@@ -166,4 +166,4 @@ public class AdvancedSearchTest extends TestRunner {
     }
 
 
-}
+}*/

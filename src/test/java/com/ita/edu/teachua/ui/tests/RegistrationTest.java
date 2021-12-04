@@ -1,5 +1,5 @@
 package com.ita.edu.teachua.ui.tests;
-
+/*
 import com.ita.edu.teachua.ui.elements.InputElement;
 import com.ita.edu.teachua.ui.pages.header.HeaderPage;
 import com.ita.edu.teachua.ui.pages.header.RegisterPopUpComponent;
@@ -46,3 +46,4 @@ public class RegistrationTest extends TestRunner {
         softAssert.assertAll();
     }
 }
+*/
