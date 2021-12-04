@@ -138,7 +138,7 @@ public class AdvancedSearchTest extends TestRunner {
     @Test
     public void checkSortingClubs() {
         MainPage mainPage = new MainPage(driver);
-        AdvancedSearchPage advSearch = mainPage.clickOnAdvancedSearchButton();
+        AdvancedSearchPage advSearch = mainPage.clickOnAdvancedSearch();
         List<WebElement> titles = advSearch.getAllTitlesOfCards();
         boolean actual = true;
         try {
