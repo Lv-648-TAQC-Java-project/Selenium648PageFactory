@@ -17,7 +17,7 @@ public class LoginPopUpComponent extends BasePage {
     private Input passwordField;
     @FindBy(how = How.XPATH, using = LoginPopUpComponentLocators.LOG_IN_SUBMIT_BUTTON_XPATH)
     private Button loginSubmitButton;
-    @FindBy(how = How.ID, using = LoginPopUpComponentLocators.FORGOT_PASSWORD_BUTTON_CLASSNAME)
+    @FindBy(how = How.CLASS_NAME, using = LoginPopUpComponentLocators.FORGOT_PASSWORD_BUTTON_CLASS_NAME)
     private Button forgotPasswordButton;
 
 

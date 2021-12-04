@@ -53,5 +53,4 @@ public class RegistrationTest extends TestRunner {
 
         softAssert.assertAll();
     }*/
-}
-*/
+//}

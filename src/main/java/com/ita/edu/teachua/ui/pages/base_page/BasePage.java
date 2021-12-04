@@ -34,5 +34,11 @@ public class BasePage {
         }
     }
 
+    public void waitElementToBeClickable(String locator, long seconds){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
+    }
+
+
 
 }

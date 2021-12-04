@@ -21,6 +21,7 @@ public class GuestDropdownComponent extends BasePage {
     }*/
 
     public LoginPopUpComponent clickOnLoginButton() {
+        waitElementToBeClickable(GuestDropdownComponentLocators.LOGIN_BUTTON_XPATH, 5);
         loginButton.click();
         return new LoginPopUpComponent(driver);
     }

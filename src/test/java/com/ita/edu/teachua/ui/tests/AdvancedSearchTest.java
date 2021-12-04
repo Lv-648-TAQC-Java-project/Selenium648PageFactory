@@ -143,7 +143,7 @@ public class AdvancedSearchTest extends TestRunner {
         Assert.assertTrue(actual);
     }
 
-    @Test
+    /*@Test
     public void checkSortingClubs() {
         SoftAssert softAssert = new SoftAssert();
         MainPage mainPage = new MainPage(driver);
@@ -174,11 +174,11 @@ public class AdvancedSearchTest extends TestRunner {
             advSearch.clickOnNextPageButton();
         }
 
-    }
-
-
-}*/
-
     }*/
-}
+
+
+/*}
+
+    }
+}*/
 

@@ -223,7 +223,7 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnAddButton();
     }
 
-    @Test
+   /* @Test
     public void testPasswordRecovery() {
         HeaderPage header = new HeaderPage(driver);
         header.clickOnGuestDropdown();
@@ -303,7 +303,7 @@ public class OwnerProfileTest extends TestRunner {
     }
 */
 
-    }*/
+   // }
 
 
     @DataProvider
