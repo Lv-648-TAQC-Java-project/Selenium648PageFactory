@@ -1,8 +1,5 @@
 package com.ita.edu.teachua.ui.locators.pages_locators.profile_locators;
 
-import com.ita.edu.teachua.ui.locators_example.Locator;
-import org.openqa.selenium.By;
-
 public class AddClubPopUpComponentLocators  {
     public static final String NAME_OF_CLUB_ID = "basic_name";
     public static final String DANCES_CHECKBOX_XPATH = "//label[@class='ant-checkbox-wrapper']//span[contains(text(),'Танці, хореографія')]";
