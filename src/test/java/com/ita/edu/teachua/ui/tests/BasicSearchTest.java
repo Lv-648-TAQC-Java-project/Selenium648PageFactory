@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class BasicSearchTest extends TestRunner {
+public class BasicSearchTest extends TestRunner{
 
     @DataProvider
     public Object[][] clubsNameSearchTestDataProvider() {
@@ -58,4 +58,5 @@ public class BasicSearchTest extends TestRunner {
                 .getTitleOfInvalidSearchPage();
         Assert.assertEquals(actualResult, expectedResult);
     }
+
 }
