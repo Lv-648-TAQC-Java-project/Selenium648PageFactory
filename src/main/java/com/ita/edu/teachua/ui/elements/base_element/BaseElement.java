@@ -122,4 +122,5 @@ public class BaseElement implements Element {
     public <X> X getScreenshotAs(OutputType<X> outputType) throws WebDriverException {
         throw new UnsupportedOperationException("getScreenshotAs() not yet implemented");
     }
+
 }

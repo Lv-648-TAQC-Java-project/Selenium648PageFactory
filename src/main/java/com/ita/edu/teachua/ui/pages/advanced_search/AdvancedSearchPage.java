@@ -1,232 +1,271 @@
 package com.ita.edu.teachua.ui.pages.advanced_search;
 
-import com.ita.edu.teachua.ui.locators.pageslocators.advancedsearchlocators.AdvancedSearchPageLocators;
-import com.ita.edu.teachua.ui.locators.pageslocators.clubslocators.ClubsPageLocators;
+
+import com.ita.edu.teachua.ui.elements.custom_elements.*;
+import com.ita.edu.teachua.ui.locators.pages_locators.advanced_search.AdvancedSearchPageLocators;
+import com.ita.edu.teachua.ui.locators_example.pageslocators.clubslocators.ClubsPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class AdvancedSearchPage extends BasePage {
 
-
-    private RadioButtonElement clubsRadioButton;
-    private LabelElement cityLabel;
-    private DropDownElement citiesDropdown;
-    private LabelElement districtLabel;
-    private DropDownElement districtDropdown;
-    private LabelElement metroStationLabel;
-    private DropDownElement metroDropdown;
-    private LabelElement remoteLabel;
-    private CheckBoxElement availableOnlineCheckBox;
-    private LabelElement categoriesLabel;
-    private CheckBoxElement sportSectionsCheckBox;
-    private CheckBoxElement danceChoreographyCheckBox;
-    private CheckBoxElement earlyDevelopStudiesCheckBox;
-    private CheckBoxElement programmingStemCheckBox;
-    private CheckBoxElement artDesignCheckBox;
-    private CheckBoxElement vocalMusicCheckBox;
-    private CheckBoxElement actorsTheaterCheckBox;
-    private CheckBoxElement personalDevelopmentCheckBox;
-    private CheckBoxElement journalismEditVideoCheckBox;
-    private CheckBoxElement developCenterCheckBox;
-    private CheckBoxElement otherCheckBox;
-    private LabelElement ageLabel;
-    private InputElement ageInput;
-    private RadioButtonElement workShopRadioButton;
-    private RadioButtonElement centerRadioButton;
-    private ButtonElement listIcon;
-    private DivElement advancedSearchBlock;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.CLUB_RADIOBUTTON_XPATH)
+    private RadioButton clubsRadioButton;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.CITY_LABEL_XPATH)
+    private Label cityLabel;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.CITIES_DROPDOWN_CLASS_NAME)
+    private Dropdown citiesDropdown;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.DISTRICT_LABEL_XPATH)
+    private Label districtLabel;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.DISTRICT_DROPDOWN_XPATH)
+    private Dropdown districtDropdown;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.NEAREST_STATION_LABEL_XPATH)
+    private Label metroStationLabel;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.NEAREST_STATION_DROPDOWN_XPATH)
+    private Dropdown metroDropdown;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.REMOTE_LABEL_XPATH)
+    private Label remoteLabel;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.AVAILABLE_ONLINE_CHECKBOX_XPATH)
+    private CheckBox availableOnlineCheckBox;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.CATEGORIES_LABEL_XPATH)
+    private Label categoriesLabel;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.SPORT_SECTIONS_CHECKBOX_XPATH)
+    private CheckBox sportSectionsCheckBox;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.DANCE_CHOREOGRAPHY_CHECKBOX_XPATH)
+    private CheckBox danceChoreographyCheckBox;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.EARLY_DEVELOPMENT_STUDIES_CHECKBOX_XPATH)
+    private CheckBox earlyDevelopStudiesCheckBox;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.PROGRAMING_STEM_CHECKBOX_XPATH)
+    private CheckBox programmingStemCheckBox;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.ART_DESIGN_CHECKBOX_XPATH)
+    private CheckBox artDesignCheckBox;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.VOCAL_MUSIC_CHECKBOX_XPATH)
+    private CheckBox vocalMusicCheckBox;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.ACTORS_THEATER_CHECKBOX_XPATH)
+    private CheckBox actorsTheaterCheckBox;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.PERSONAL_DEVELOPMENT_CHECKBOX_XPATH)
+    private CheckBox personalDevelopmentCheckBox;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.JOURNALISM_EDITING_VIDEO_CHECKBOX_XPATH)
+    private CheckBox journalismEditVideoCheckBox;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.DEVELOPMENT_CENTER_CHECKBOX_XPATH)
+    private CheckBox developCenterCheckBox;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.OTHER_CHECKBOX_XPATH)
+    private CheckBox otherCheckBox;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.AGE_LABEL_XPATH)
+    private Label ageLabel;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.AGE_INPUT_CSS_SELECTOR)
+    private Input ageInput;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.WORKSHOP_RADIO_BUTTON_XPATH)
+    private RadioButton workShopRadioButton;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.CENTER_RADIO_BUTTON_XPATH)
+    private RadioButton centerRadioButton;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.LIST_ICON_IN_MENU_BAR_CSS_SELECTOR)
+    private Button listIcon;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.ADVANCED_SEARCH_BLOCK_CSS_SELECTOR)
+    private Div advancedSearchBlock;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.CENTER_RADIO_BUTTON_CHECKED_XPATH)
+    private RadioButton centerRadioButtonChecked;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.ADVANCED_SEARCH_FIELD_TITLE_XPATH)
+    private Label advancedSearchFieldTitle;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.CENTER_ITEM_XPATH)
+    private Label centerItem; //or not label
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.CENTER_ADDRESS_XPATH)
+    private Label centerAddress;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.NEXT_PAGE_BUTTON_XPATH)
+    private  Button nextPageButton;
+    @FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.LAST_PAGE_BUTTON_XPATH)
+    private Button lastPageButton;
+    @FindAll(@FindBy(how = How.CLASS_NAME, using = ClubsPageLocators.CARD_TITLE_CSS_SELECTOR))
+    private List<Button> cartTitles;
+    @FindAll(@FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.CENTER_BLOCKS_CSS_SELECTOR))
+    private List<Button> centerBlocks;
+    @FindAll(@FindBy(how = How.CLASS_NAME, using = AdvancedSearchPageLocators.ADVANCED_SEARCH_FIELD_TITLE_XPATH))
+    private List<Button> searchFields;
 
     public AdvancedSearchPage(WebDriver driver) {
         super(driver);
     }
 
     public AdvancedSearchPage setValueAgeInput(String input) {
-        ageInput = new InputElement(driver, AdvancedSearchPageLocators.AGE_INPUT);
+        ageInput.clear();
         ageInput.sendKeys(input);
         return this;
     }
 
-    public CheckBoxElement getVocalMusicCheckBox() {
+    public CheckBox getVocalMusicCheckBox() {
         try {
-            vocalMusicCheckBox = new CheckBoxElement(driver, AdvancedSearchPageLocators.VOCAL_MUSIC_RADIOBUTTON);
+            vocalMusicCheckBox.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return vocalMusicCheckBox;
     }
 
-    public RadioButtonElement getClubsRadioButton() {
-        clubsRadioButton = new RadioButtonElement(driver, AdvancedSearchPageLocators.CLUB_RADIOBUTTON);
+    public RadioButton getClubsRadioButton() {
         return clubsRadioButton;
     }
 
-    public LabelElement getCityLabel() {
-        cityLabel = new LabelElement(driver, AdvancedSearchPageLocators.CITY_LABEL);
+    public Label getCityLabel() {
         return cityLabel;
     }
 
-    public DropDownElement getDistrictDropdown() {
-        districtDropdown = new DropDownElement(driver, AdvancedSearchPageLocators.DISTRICT_DROPDOWN);
+    public Dropdown getDistrictDropdown() {
         return districtDropdown;
     }
 
-    public DropDownElement getMetroDropdown() {
-        metroDropdown = new DropDownElement(driver, AdvancedSearchPageLocators.NEAREST_STATION_DROPDOWN);
+    public Dropdown getMetroDropdown() {
         return metroDropdown;
     }
 
-    public CheckBoxElement getAvailableOnlineCheckBox() {
+    public CheckBox getAvailableOnlineCheckBox() {
         try {
-            availableOnlineCheckBox = new CheckBoxElement(driver, AdvancedSearchPageLocators.AVAILABLE_ONLINE_RADIOBUTTON);
+            availableOnlineCheckBox.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return availableOnlineCheckBox;
     }
 
-    public CheckBoxElement getSportSectionsCheckBox() {
+    public CheckBox getSportSectionsCheckBox() {
         try {
-            sportSectionsCheckBox = new CheckBoxElement(driver, AdvancedSearchPageLocators.SPORT_SECTIONS_RADIOBUTTON);
+            sportSectionsCheckBox.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return sportSectionsCheckBox;
     }
 
-    public CheckBoxElement getDanceChoreographyCheckBox() {
+    public CheckBox getDanceChoreographyCheckBox() {
         try {
-            danceChoreographyCheckBox = new CheckBoxElement(driver, AdvancedSearchPageLocators.DANCE_CHOREOGRAPHY_RADIOBUTTON);
+            danceChoreographyCheckBox.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return danceChoreographyCheckBox;
     }
 
-    public CheckBoxElement getEarlyDevelopStudiesCheckBox() {
+    public CheckBox getEarlyDevelopStudiesCheckBox() {
         try {
-            earlyDevelopStudiesCheckBox = new CheckBoxElement(driver, AdvancedSearchPageLocators.EARLY_DEVELOPMENT_STUDIES_RADIOBUTTON);
+            earlyDevelopStudiesCheckBox.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return earlyDevelopStudiesCheckBox;
     }
 
-    public CheckBoxElement getProgrammingStemCheckBox() {
+    public CheckBox getProgrammingStemCheckBox() {
         try {
-            programmingStemCheckBox = new CheckBoxElement(driver, AdvancedSearchPageLocators.PROGRAMING_STEM_RADIOBUTTON);
+            programmingStemCheckBox.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return programmingStemCheckBox;
     }
 
-    public CheckBoxElement getArtDesignCheckBox() {
+    public CheckBox getArtDesignCheckBox() {
         try {
-            artDesignCheckBox = new CheckBoxElement(driver, AdvancedSearchPageLocators.ART_DESIGN_RADIOBUTTON);
+            artDesignCheckBox.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return artDesignCheckBox;
     }
 
-    public CheckBoxElement getActorsTheaterCheckBox() {
+    public CheckBox getActorsTheaterCheckBox() {
         try {
-            actorsTheaterCheckBox = new CheckBoxElement(driver, AdvancedSearchPageLocators.ACTORS_THEATER_RADIOBUTTON);
+            actorsTheaterCheckBox.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return actorsTheaterCheckBox;
     }
 
-    public CheckBoxElement getPersonalDevelopmentCheckBox() {
+    public CheckBox getPersonalDevelopmentCheckBox() {
         try {
-            personalDevelopmentCheckBox = new CheckBoxElement(driver, AdvancedSearchPageLocators.PERSONAL_DEVELOPMENT_RADIOBUTTON);
+            personalDevelopmentCheckBox.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return personalDevelopmentCheckBox;
     }
 
-    public CheckBoxElement getJournalismEditVideoCheckBox() {
+    public CheckBox getJournalismEditVideoCheckBox() {
         try {
-            journalismEditVideoCheckBox = new CheckBoxElement(driver, AdvancedSearchPageLocators.JOURNALISM_EDITING_VIDEO_RADIOBUTTON);
+            journalismEditVideoCheckBox.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return journalismEditVideoCheckBox;
     }
 
-    public CheckBoxElement getDevelopCenterCheckBox() {
+    public CheckBox getDevelopCenterCheckBox() {
         try {
-            developCenterCheckBox = new CheckBoxElement(driver, AdvancedSearchPageLocators.DEVELOPMENT_CENTER_RADIOBUTTON);
+            developCenterCheckBox.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return developCenterCheckBox;
     }
 
-    public CheckBoxElement getOtherCheckBox() {
+    public CheckBox getOtherCheckBox() {
         try {
-            otherCheckBox = new CheckBoxElement(driver, AdvancedSearchPageLocators.OTHER_RADIOBUTTON);
+            otherCheckBox.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return otherCheckBox;
     }
 
-    public InputElement getAgeInput() {
-        ageInput = new InputElement(driver, AdvancedSearchPageLocators.AGE_INPUT);
+    public Input getAgeInput() {
         return ageInput;
     }
 
     public AdvancedSearchPage pressEnterAgeInput() {
-        ageInput = new InputElement(driver, AdvancedSearchPageLocators.AGE_INPUT);
         ageInput.pressEnter();
         return this;
     }
 
-    public DropDownElement getCitiesDropdown() {
-        citiesDropdown = new DropDownElement(driver, AdvancedSearchPageLocators.CITIES_DROPDOWN);
+    public Dropdown getCitiesDropdown() {
         return citiesDropdown;
     }
 
-    public LabelElement getDistrictLabel() {
-        districtLabel = new LabelElement(driver, AdvancedSearchPageLocators.DISTRICT_LABEL);
+    public Label getDistrictLabel() {
         return districtLabel;
     }
 
-    public LabelElement getMetroStationLabel() {
-        metroStationLabel = new LabelElement(driver, AdvancedSearchPageLocators.NEAREST_STATION_LABEL);
+    public Label getMetroStationLabel() {
         return metroStationLabel;
     }
 
-    public LabelElement getRemoteLabel() {
+    public Label getRemoteLabel() {
         try {
-            remoteLabel = new LabelElement(driver, AdvancedSearchPageLocators.REMOTE_LABEL);
+            remoteLabel.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return remoteLabel;
     }
 
-    public LabelElement getCategoriesLabel() {
+    public Label getCategoriesLabel() {
         try {
-            categoriesLabel = new LabelElement(driver, AdvancedSearchPageLocators.CATEGORIES_LABEL);
+            categoriesLabel.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
         return categoriesLabel;
     }
 
-    public LabelElement getAgeLabel() {
+    public Label getAgeLabel() {
         try {
-            ageLabel = new LabelElement(driver, AdvancedSearchPageLocators.AGE_LABEL);
+            ageLabel.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
@@ -234,29 +273,27 @@ public class AdvancedSearchPage extends BasePage {
     }
 
 
-    public RadioButtonElement getWorkshopRadioButton() {
-        return new RadioButtonElement(driver, AdvancedSearchPageLocators.WORKSHOP_RADIO_BUTTON);
+    public RadioButton getWorkshopRadioButton() {
+        return workShopRadioButton;
     }
 
     public AdvancedSearchPage clickOnCenterRadioButton() {
-        centerRadioButton = new RadioButtonElement(driver, AdvancedSearchPageLocators.CENTER_RADIO_BUTTON);
         centerRadioButton.click();
         return this;
     }
 
-    public RadioButtonElement getCenterRadioButton() {
-        return new RadioButtonElement(driver, AdvancedSearchPageLocators.CENTER_RADIO_BUTTON);
+    public RadioButton getCenterRadioButton() {
+        return centerRadioButton;
     }
 
     public AdvancedSearchPage clickOnListIcon() {
-        listIcon = new ButtonElement(driver, AdvancedSearchPageLocators.LIST_ICON_IN_MENU_BAR);
         listIcon.click();
         sleep(1000);
         return this;
     }
 
+    //?
     public List<ClubsItemComponent> getCards() {
-        List<WebElement> centerBlocks = driver.findElements(By.cssSelector(".ant-card.ant-card-bordered.card.center-list-rectangle-item"));
         List<ClubsItemComponent> clubBlocks = new ArrayList<>();
         for (WebElement j : centerBlocks) {
             clubBlocks.add(new ClubsItemComponent(driver, j));
@@ -265,17 +302,16 @@ public class AdvancedSearchPage extends BasePage {
     }
 
     public boolean isAdvanceSearchFieldDisappear() {
-        int searchFields = driver.findElements(AdvancedSearchPageLocators.ADVANCED_SEARCH_FIELD_TITLE.getPath()).size();
-        return searchFields == 0;
+        return searchFields.size() == 0;
     }
 
     public String getTitleOfAdvancedSearchField() {
-        return driver.findElement(AdvancedSearchPageLocators.ADVANCED_SEARCH_FIELD_TITLE.getPath()).getText();
+        return advancedSearchFieldTitle.getText();
     }
 
     public boolean isSearchBlockPresent() {
         try {
-            advancedSearchBlock = new DivElement(driver, AdvancedSearchPageLocators.ADVANCED_SEARCH_BLOCK);
+            advancedSearchBlock.isDisplayed();
             return true;
         } catch (NoSuchElementException e) {
             return false;
@@ -283,18 +319,20 @@ public class AdvancedSearchPage extends BasePage {
     }
 
 
-    public AdvancedSearchPage clickOnNextPageButton() {
-        ButtonElement nextPageButton = new ButtonElement(driver, AdvancedSearchPageLocators.NEXT_PAGE_BUTTON);
+    public AdvancedSearchPage clickOnNextPageButton(){
         nextPageButton.click();
         return this;
     }
 
-    public List<WebElement> getAllTitlesOfCards() {
-        return driver.findElements(ClubsPageLocators.CARD_TITLE.getPath());
+
+    public List<Button> getAllTitlesOfCards() {
+        return cartTitles;
     }
 
+
     public int getNumberOfPagesWithClubs() {
-        ButtonElement lastPageButton = new ButtonElement(driver, AdvancedSearchPageLocators.LAST_PAGE_BUTTON);
         return Integer.parseInt(lastPageButton.getInnerText());
     }
+
+
 }
