@@ -27,7 +27,9 @@ public class InputElement extends BaseElement implements Input {
         element.clear();
         element.sendKeys(text);
     }
-
+    public String getCSSValue(String cssValue){
+        return getWrappedElement().getCssValue(cssValue);
+    }
     /**
      * Gets the value of an input field.
      * @return String with the value of the field.

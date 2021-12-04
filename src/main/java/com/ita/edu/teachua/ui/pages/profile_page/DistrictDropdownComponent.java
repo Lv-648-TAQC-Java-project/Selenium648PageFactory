@@ -1,23 +1,20 @@
 package com.ita.edu.teachua.ui.pages.profile_page;
 
-import com.ita.edu.teachua.ui.elements.ButtonElement;
-import com.ita.edu.teachua.ui.locators.pageslocators.profilelocators.DistrictDropdownLocators;
+import com.ita.edu.teachua.ui.elements.custom_elements.ButtonElement;
+import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.CityDropdownLocators;
+import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.DistrictDropdownLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
 public class DistrictDropdownComponent extends BasePage {
-
+    @FindBy(how = How.CLASS_NAME, using = DistrictDropdownLocators.DESNIANSKYI_BUTTON_XPATH)
     private ButtonElement desnianskyiButton;
 
     public DistrictDropdownComponent(WebDriver driver) {
         super(driver);
-        initElements();
     }
-
-    private void initElements() {
-        desnianskyiButton = new ButtonElement(driver, DistrictDropdownLocators.DESNIANSKYI_BUTTON);
-    }
-
     public AddLocationPopUpComponent clickOnDesnianskyiButton() {
         desnianskyiButton.click();
         return new AddLocationPopUpComponent(driver);

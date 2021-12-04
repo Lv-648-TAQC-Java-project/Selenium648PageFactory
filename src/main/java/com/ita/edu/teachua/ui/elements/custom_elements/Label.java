@@ -6,4 +6,5 @@ import com.ita.edu.teachua.ui.elements.base_element.ImplementedBy;
 @ImplementedBy(LabelElement.class)
 public interface Label extends Element {
      boolean isDisplayed();
+     void click();
 }
