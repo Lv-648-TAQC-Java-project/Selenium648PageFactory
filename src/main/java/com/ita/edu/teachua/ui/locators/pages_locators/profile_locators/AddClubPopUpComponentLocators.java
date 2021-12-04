@@ -13,11 +13,11 @@ public class AddClubPopUpComponentLocators  {
     public static final String TICK_XPATH = "//span[@aria-label='check-circle']";
     public static final String ERROR_IN_DESCRIPTION_FIELD_XPATH = "//div[@class='ant-form-item-explain ant-form-item-explain-connected']";
     /*Base info area*/
-    public static final String CLUB_NAME_INPUT = "basic_name";
-    public static final String SPORT_SECTIONS_CHECKBOX = "input[value*='Спортивні секції']";
-    public static final String CHILD_AGE_FROM_INPUT = "basic_ageFrom";
-    public static final String CHILD_AGE_TO_INPUT = "basic_ageTo";
-    public static final String NEXT_STEP_BUTTON  = "button[type='submit']>span";
+    public static final String CLUB_NAME_INPUT_ID = "basic_name";
+    public static final String SPORT_SECTIONS_CHECKBOX_CSS_SELECTOR = "input[value*='Спортивні секції']";
+    public static final String CHILD_AGE_FROM_INPUT_ID = "basic_ageFrom";
+    public static final String CHILD_AGE_TO_INPUT_ID = "basic_ageTo";
+    public static final String NEXT_STEP_BUTTON_CSS_SELECTOR  = "button[type='submit']>span";
     /*Base info area end*/
     /*Contacts area start*/
     public static final String ADD_LOCATION_BUTTON_CLASS_NAME = "add-club-location";
