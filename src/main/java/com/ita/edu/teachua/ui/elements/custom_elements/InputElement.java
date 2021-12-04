@@ -40,6 +40,7 @@ public class InputElement extends BaseElement implements Input {
         return getWrappedElement().getAttribute("value");
     }
 
+
     public void pressEnter() {
         getWrappedElement().sendKeys(Keys.ENTER);
     }

@@ -5,7 +5,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.elements.custom_elements.Link;
 
 
-import com.ita.edu.teachua.ui.locators.pages_locators.advanced_search.AdvancedSearchPageLocators;
+
 import com.ita.edu.teachua.ui.locators.pages_locators.main_page_locators.MainPageLocators;
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
@@ -34,10 +34,6 @@ public class MainPage extends BasePage {
 
     public String getMainPageUrL() {
         return driver.getCurrentUrl();
-    }
-
-    public String getTitleOfAdvancedSearchField() {
-        return driver.findElement(new By.ByXPath(AdvancedSearchPageLocators.ADVANCED_SEARCH_FIELD_TITLE_XPATH)).getText();
     }
 
     public AdvancedSearchPage clickAdvancedSearchButton() {

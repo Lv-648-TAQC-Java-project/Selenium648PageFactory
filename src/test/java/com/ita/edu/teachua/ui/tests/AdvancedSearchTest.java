@@ -18,11 +18,11 @@ public class AdvancedSearchTest extends TestRunner {
     public void verifyAllParametersActiveCenterAdvancedSearch() {
         SoftAssert softAssert = new SoftAssert();
         AdvancedSearchPage advancedSearchPage = new MainPage(driver).clickAdvancedSearchButton().clickOnCenterRadioButton();
-        softAssert.assertTrue(advancedSearchPage.getCityLabel().isDisplayedLabel(), "City label is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getCityLabel().isDisplayed(), "City label is not displayed");
         softAssert.assertTrue(advancedSearchPage.getCitiesDropdown().isDisplayed(), "Cities dropdown is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getDistrictLabel().isDisplayedLabel(), "District label is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getDistrictLabel().isDisplayed(), "District label is not displayed");
         softAssert.assertTrue(advancedSearchPage.getDistrictDropdown().isDisplayed(), "District dropdown is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getMetroStationLabel().isDisplayedLabel(), "Metro station label is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getMetroStationLabel().isDisplayed(), "Metro station label is not displayed");
         softAssert.assertTrue(advancedSearchPage.getMetroDropdown().isDisplayed(), "Metro station dropdown is not displayed");
 
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(50));
@@ -50,11 +50,11 @@ public class AdvancedSearchTest extends TestRunner {
         SoftAssert softAssert = new SoftAssert();
         MainPage mainPage = new MainPage(driver);
         boolean isPresent = mainPage
-                .clickOnAdvancedSearchButton()
+                .clickAdvancedSearchButton()
                 .isSearchBlockPresent();
         softAssert.assertTrue(isPresent, "Розширений пошук section did not open");
         isPresent = mainPage
-                .clickOnAdvancedSearchButton()
+                .clickAdvancedSearchButton()
                 .isSearchBlockPresent();
         softAssert.assertFalse(isPresent, "Розширений пошук section did not close");
         softAssert.assertAll();
@@ -75,7 +75,7 @@ public class AdvancedSearchTest extends TestRunner {
         String actualResult = new MainPage(driver).clickAdvancedSearchButton()
                 .setValueAgeInput(input)
                 .pressEnterAgeInput()
-                .getAgeInput().getValue();
+                .getAgeInput().getText();
         Assert.assertEquals(actualResult, expectedResult);
 
     }
@@ -85,15 +85,15 @@ public class AdvancedSearchTest extends TestRunner {
         SoftAssert softAssert = new SoftAssert();
         AdvancedSearchPage advancedSearchPage = new MainPage(driver).clickAdvancedSearchButton();
         softAssert.assertTrue(advancedSearchPage.getClubsRadioButton().getAttribute("class").contains("checked"), "Clubs radio button is not selected");
-        softAssert.assertTrue(advancedSearchPage.getCityLabel().isDisplayedLabel(), "City label is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getCityLabel().isDisplayed(), "City label is not displayed");
         softAssert.assertTrue(advancedSearchPage.getCitiesDropdown().isDisplayed(), "Cities dropdown is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getDistrictLabel().isDisplayedLabel(), "District label is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getDistrictLabel().isDisplayed(), "District label is not displayed");
         softAssert.assertTrue(advancedSearchPage.getDistrictDropdown().isDisplayed(), "District dropdown is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getMetroStationLabel().isDisplayedLabel(), "Metro station label is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getMetroStationLabel().isDisplayed(), "Metro station label is not displayed");
         softAssert.assertTrue(advancedSearchPage.getMetroDropdown().isDisplayed(), "Metro station dropdown is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getRemoteLabel().isDisplayedLabel(), "Remote label is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getRemoteLabel().isDisplayed(), "Remote label is not displayed");
         softAssert.assertTrue(advancedSearchPage.getAvailableOnlineCheckBox().isDisplayed(), "Available online checkbox is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getCategoriesLabel().isDisplayedLabel(), "Categories label is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getCategoriesLabel().isDisplayed(), "Categories label is not displayed");
         softAssert.assertTrue(advancedSearchPage.getSportSectionsCheckBox().isDisplayed(), "Sport sections checkbox is not displayed");
         softAssert.assertTrue(advancedSearchPage.getDanceChoreographyCheckBox().isDisplayed(), "Dance checkbox check box is not displayed");
         softAssert.assertTrue(advancedSearchPage.getEarlyDevelopStudiesCheckBox().isDisplayed(), "Early development studies checkbox check box is not displayed");
@@ -105,7 +105,7 @@ public class AdvancedSearchTest extends TestRunner {
         softAssert.assertTrue(advancedSearchPage.getJournalismEditVideoCheckBox().isDisplayed(), "Journalism, editing video checkbox check box is not displayed");
         softAssert.assertTrue(advancedSearchPage.getDevelopCenterCheckBox().isDisplayed(), "Develop center checkbox check box is not displayed");
         softAssert.assertTrue(advancedSearchPage.getOtherCheckBox().isDisplayed(), "Other checkbox check box is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getAgeLabel().isDisplayedLabel(), "Age label is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getAgeLabel().isDisplayed(), "Age label is not displayed");
         softAssert.assertAll();
     }
 
@@ -138,7 +138,8 @@ public class AdvancedSearchTest extends TestRunner {
     @Test
     public void checkSortingClubs() {
         MainPage mainPage = new MainPage(driver);
-        AdvancedSearchPage advSearch = mainPage.clickOnAdvancedSearch();
+
+        AdvancedSearchPage advSearch = mainPage.clickAdvancedSearchButton();
         List<WebElement> titles = advSearch.getAllTitlesOfCards();
         boolean actual = true;
         try {
