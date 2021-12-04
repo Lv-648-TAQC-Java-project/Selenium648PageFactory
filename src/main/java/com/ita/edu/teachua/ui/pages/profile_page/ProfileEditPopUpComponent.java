@@ -9,12 +9,16 @@ import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.WebDriver;
 
 public class ProfileEditPopUpComponent extends BasePage {
+    InputElement phone = new InputElement(driver, ProfileEditPopUpLocators.PHONE_EDIT);
+    InputElement firstName = new InputElement(driver, ProfileEditPopUpLocators.FIRSTNAME_EDIT);
+    InputElement lastName = new InputElement(driver, ProfileEditPopUpLocators.LASTNAME_EDIT);
+    Button saveButton;
     public ProfileEditPopUpComponent(WebDriver driver) {
         super(driver);
     }
 
     public ProfileEditPopUpComponent fillPhone(String phoneNumber) {
-        InputElement phone = new InputElement(driver, ProfileEditPopUpLocators.PHONE_EDIT);
+
         phone.clear();
         phone.sendKeys(phoneNumber);
         sleep(2000);
@@ -37,8 +41,7 @@ public class ProfileEditPopUpComponent extends BasePage {
     }
 
     public boolean getSaveButtonValue() {
-        ButtonElement saveButton = new ButtonElement(driver, ProfileEditPopUpLocators.SAVE_BUTTON);
-        return saveButton.isActive();
+        return saveButton.isDisplayed();
     }
 
     public ProfileEditPopUpComponent clickSubmit() {
