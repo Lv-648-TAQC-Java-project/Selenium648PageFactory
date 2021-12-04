@@ -21,4 +21,8 @@ public class ButtonElement extends BaseElement implements Button {
         return getWrappedElement().getAttribute("innerText");
     }
 
+    public boolean isActive() {
+        return getWrappedElement().isEnabled();
+    }
+
 }

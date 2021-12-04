@@ -8,4 +8,5 @@ public interface Button extends Element {
      void click();
      boolean isDisplayed();
      String getInnerText();
+     boolean isActive();
 }
