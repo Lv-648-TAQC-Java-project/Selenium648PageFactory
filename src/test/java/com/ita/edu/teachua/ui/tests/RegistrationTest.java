@@ -1,9 +1,16 @@
 package com.ita.edu.teachua.ui.tests;
 
+/*
+import com.ita.edu.teachua.ui.elements.InputElement;
+import com.ita.edu.teachua.ui.pages.header.HeaderPage;
+import com.ita.edu.teachua.ui.pages.header.RegisterPopUpComponent;
+
+
 
 import com.ita.edu.teachua.ui.elements.custom_elements.InputElement;
 import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
 import com.ita.edu.teachua.ui.pages.header_page.RegisterPopUpComponent;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -47,3 +54,4 @@ public class RegistrationTest extends TestRunner {
         softAssert.assertAll();
     }*/
 }
+*/

@@ -5,10 +5,15 @@ import com.ita.edu.teachua.ui.elements.custom_elements.*;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddDropDownComponentLocators;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddLocationPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class AddLocationPopUpComponent extends BasePage {
     @FindBy(how = How.XPATH, using = AddLocationPopUpComponentLocators.ADD_BUTTON_XPATH)
@@ -39,10 +44,17 @@ public class AddLocationPopUpComponent extends BasePage {
     }
 
     public boolean checkAddButton() {
-        return addButton.isDisplayed();
+        try{
+              return addButton.isDisplayed();
+
+        }
+        catch(NoSuchElementException e){
+            return false;
+        }
     }
 
     public boolean addLocationPopUpBlockIsDisplayed() {
+        waitUntilVisibilityOfElementLocatedByXpath(AddLocationPopUpComponentLocators.ADD_LOCATION_BLOCK_HEADER_XPATH,5);
         return addLocationPopUpBlock.isActive();
     }
 

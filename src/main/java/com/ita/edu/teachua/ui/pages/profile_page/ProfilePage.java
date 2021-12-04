@@ -1,9 +1,7 @@
 package com.ita.edu.teachua.ui.pages.profile_page;
 
 
-import com.ita.edu.teachua.ui.elements.custom_elements.ButtonElement;
-import com.ita.edu.teachua.ui.elements.custom_elements.DropdownElement;
-import com.ita.edu.teachua.ui.elements.custom_elements.LinkElement;
+import com.ita.edu.teachua.ui.elements.custom_elements.*;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.ProfileEditPopUpLocators;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.ProfilePageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
@@ -14,14 +12,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class ProfilePage extends BasePage {
-    @FindBy(how = How.CLASS_NAME, using = ProfilePageLocators.ADD_BUTTON_XPATH)
-    private ButtonElement addButton;
-    @FindBy(how = How.CLASS_NAME, using = ProfilePageLocators.EDIT_PROFILE_XPATH)
-    private LinkElement editProfile;
-    @FindBy(how = How.CLASS_NAME, using = ProfilePageLocators.ADD_CLUB_BUTTON_XPATH)
-    private DropdownElement addClubButton;
-    @FindBy(how = How.CLASS_NAME, using = ProfilePageLocators.ADD_BUTTON_XPATH)
-    private ButtonElement addClub;
+    @FindBy(how = How.CSS, using = ProfilePageLocators.ADD_BUTTON_CSS_SELECTOR)
+    private Button addButton;
+    @FindBy(how = How.XPATH, using = ProfilePageLocators.EDIT_PROFILE_XPATH)
+    private Link editProfile;
+    @FindBy(how = How.XPATH, using = ProfilePageLocators.ADD_CLUB_BUTTON_XPATH)
+    private Dropdown addClubButton;
+
 
 
     public ProfilePage(WebDriver driver) {
@@ -46,7 +43,7 @@ public class ProfilePage extends BasePage {
     }
 
     public ClubPagePopUpComponent clickAddClub() throws InterruptedException {
-        addClub.click();
+        addClubButton.click();
         return new ClubPagePopUpComponent(driver);
     }
 }

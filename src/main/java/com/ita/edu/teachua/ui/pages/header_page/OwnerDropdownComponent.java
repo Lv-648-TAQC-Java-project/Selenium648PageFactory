@@ -30,5 +30,10 @@ public class OwnerDropdownComponent extends BasePage {
         myProfileButton.click();
         return new ProfilePage(driver);
     }
+    public void clickOnProfile2() {
+        myProfileButton.click();
+
+    }
+
 
 }

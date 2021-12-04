@@ -237,7 +237,11 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
+
+   /* @Test(dataProvider = "verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider", description = "TUA-159")
+
     /*@Test(dataProvider = "verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider", description = "TUA-159")
+
     public void addLocationWithValidDataOfMandatoryFields(String name, String town, String address, String coordinates, String phoneNumber) {
         boolean actualResult = new HeaderPage(driver).authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
@@ -255,10 +259,17 @@ public class OwnerProfileTest extends TestRunner {
                 .getCheckBoxByName(name)
                 .isDisplayed();
         Assert.assertTrue(actualResult, "Location was not create");
+
+    }
+*/
+
+  /*  @Test
+
     }*/
 
 
     /*@Test
+
     public void checkLastVerifyEnteredDataInRegistrationRemembered() {
         HeaderPage header = new HeaderPage(driver);
         RegisterPopUpComponent registerCheck = header.clickOnGuestDropdown()
@@ -288,7 +299,12 @@ public class OwnerProfileTest extends TestRunner {
         softassert.assertEquals(actual3, "svitlanawhite@gmail.com");
         softassert.assertEquals(actual4, "12345678");
 
+
+    }
+*/
+
     }*/
+
 
     @DataProvider
     public Object[][] lastNameDataProvider() {
@@ -323,8 +339,13 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
+
+    /*@Test(dataProvider = "lastNameDataProvider")
+    public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String data, String expected) {
+
     @Test(dataProvider = "lastNameDataProvider")
     public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String[] dataAndExpected) {
+
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -337,7 +358,7 @@ public class OwnerProfileTest extends TestRunner {
             softAssert.assertEquals(edit.getMessage(),dataAndExpected[i+1]);
         }
     }
-
+*/
     @DataProvider
     public Object[][] firstNameDataProvider() {
         return new Object[][]{
@@ -370,7 +391,7 @@ public class OwnerProfileTest extends TestRunner {
                         "", "Введіть Ім'я"}
         };
     }
-
+/*
     @Test(dataProvider = "firstNameDataProvider")
     public void checkErrorMsWhenFillInvalidDataIntoFirstNameField(String dataAndExpected[]) {
         HeaderPage profile = new HeaderPage(driver);
@@ -418,7 +439,7 @@ public class OwnerProfileTest extends TestRunner {
         softAssert.assertEquals(editProfile.getNewPasswordInputBorderColor(), "rgb(255, 77, 79)", "New password input isn't red");
         softAssert.assertAll();
     }
-
+*/
 
     /**
      * 173-Verify that the ‘Опис’ text field is filled in with valid data
