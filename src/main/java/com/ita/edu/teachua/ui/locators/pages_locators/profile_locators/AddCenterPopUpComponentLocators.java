@@ -1,7 +1,6 @@
 package com.ita.edu.teachua.ui.locators.pages_locators.profile_locators;
 
-import com.ita.edu.teachua.ui.locators_example.Locator;
-import org.openqa.selenium.By;
+
 
 public class AddCenterPopUpComponentLocators {
     public static final String ADD_LOCATION_BUTTON_CLASS_NAME = "add-club-location";

@@ -9,12 +9,13 @@ public class OwnerProfileTest extends TestRunner {
     @Test(description = "TUA-160 This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty")
     public void VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty() {
         HeaderPage header = new HeaderPage(driver);
-        header
+        boolean addLocationPopUpBlockIsDisplayed = header
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnAddCenterButton()
                 .clickOnAddLocation()
                 .addLocationPopUpBlockIsDisplayed();
+        Assert.assertTrue(addLocationPopUpBlockIsDisplayed);
 
 
         try {
