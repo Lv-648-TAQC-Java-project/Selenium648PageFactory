@@ -1,24 +1,14 @@
 package com.ita.edu.teachua.ui.pages.main_page;
 
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
-import com.ita.edu.teachua.ui.elements.custom_elements.ButtonElement;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
+import com.ita.edu.teachua.ui.elements.custom_elements.Link;
 
 import com.ita.edu.teachua.ui.locators.pages_locators.advanced_search_page_locators.AdvancedSearchPageLocators;
 import com.ita.edu.teachua.ui.locators.pages_locators.main_page_locators.MainPageLocators;
-import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddCenterPopUpComponentLocators;
-import com.ita.edu.teachua.ui.elements.ButtonElement;
-import com.ita.edu.teachua.ui.elements.InputElement;
-import com.ita.edu.teachua.ui.elements.LinkElement;
-import com.ita.edu.teachua.ui.elements.custom_elements.ButtonElement;
-import com.ita.edu.teachua.ui.elements.custom_elements.InputElement;
-import com.ita.edu.teachua.ui.elements.custom_elements.LinkElement;
-import com.ita.edu.teachua.ui.locators.pageslocators.advancedsearchlocators.AdvancedSearchPageLocators;
-import com.ita.edu.teachua.ui.locators.pageslocators.mainpagelocators.MainPageLocators;
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.ui.pages.clubs_page.ClubsPage;
-import io.opencensus.trace.Link;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
