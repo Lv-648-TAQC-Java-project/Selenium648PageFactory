@@ -27,7 +27,7 @@ public class ClubsPage extends BasePage {
     }
 
     public String getTitleOfInvalidSearchPage() {
-        return driver.findElement(new By.ByXPath(ClubsPageLocators.CLUBS_PAGE_TITLE_XPATH)).getText();
+        return driver.findElement(new By.ByCssSelector(ClubsPageLocators.INVALID_CLUBS_BASIC_SEARCH_CSS_SELECTOR)).getText();
     }
 
     public boolean isClubPresent(String title) {
