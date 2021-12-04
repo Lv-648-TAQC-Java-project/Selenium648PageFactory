@@ -1,12 +1,8 @@
 package com.ita.edu.teachua.ui.pages.header_page;
 
-import com.ita.edu.teachua.ui.elements.ButtonElement;
-import com.ita.edu.teachua.ui.elements.InputElement;
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
-import com.ita.edu.teachua.ui.locators.pages_locators.header_locators.LoginPopUpComponentLocators;
 import com.ita.edu.teachua.ui.locators.pages_locators.header_locators.RegisterPopUpComponentLocators;
-import com.ita.edu.teachua.ui.locators.pageslocators.headerlocators.RegisterPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -173,71 +169,4 @@ public class RegisterPopUpComponent extends BasePage {
     public String getPhoneNumberText() {
         return phoneNumber.getText();
     }
-
-    public RegisterPopUpComponent sendKeysFirstNameField() {
-        firstName.sendKeys("Vitalii");// TODO
-        return this;
-    }
-
-    public RegisterPopUpComponent sendKeysLastNameField() {
-        lastName.sendKeys("Pidstavskyi");// TODO
-        return this;
-    }
-
-    public RegisterPopUpComponent sendKeysEmailField() {
-        email.sendKeys("vitalii@gmail.com");// TODO
-        return this;
-    }
-
-    public RegisterPopUpComponent sendKeysPhoneNumberField() {
-        phoneNumber.sendKeys("662745332");// TODO
-        return this;
-    }
-
-    public RegisterPopUpComponent sendKeysPasswordField() {
-        password.sendKeys("12345678qQ!");// TODO
-        return this;
-    }
-
-    public RegisterPopUpComponent sendKeysPasswordConfirmField() {
-        passwordConfirm.sendKeys("12345678qQ!");// TODO
-        return this;
-    }
-
-    public RegisterPopUpComponent completeFirstNameField() {
-        clickFirstNameField();
-        sendKeysFirstNameField();
-        return this;
-    }
-
-    public RegisterPopUpComponent completeLastNameField() {
-        clickLastNameField();
-        sendKeysLastNameField();
-        return this;
-    }
-
-    public RegisterPopUpComponent completePhoneNumberField() {
-        clickPhoneNumberField();
-        sendKeysPhoneNumberField();
-        return this;
-    }
-
-    public RegisterPopUpComponent completeEmailField() {
-        clickEmailField();
-        sendKeysEmailField();
-        return this;
-    }
-
-    public RegisterPopUpComponent completePasswordField() {
-        clickPasswordField();
-        sendKeysPasswordField();
-        return this;
-    }
-
-    public RegisterPopUpComponent completePasswordConfirmField() {
-        clickPasswordConfirmField();
-        sendKeysPasswordConfirmField();
-        return this;
-    }
-
 }

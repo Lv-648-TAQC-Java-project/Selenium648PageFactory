@@ -136,23 +136,31 @@ public class AdvancedSearchTest extends TestRunner {
     }
 
     @Test
-    public void checkSortingClubs() {
+    public void checkSortingClubsSimplified() {
         MainPage mainPage = new MainPage(driver);
-
         AdvancedSearchPage advSearch = mainPage.clickAdvancedSearchButton();
-        List<WebElement> titles = advSearch.getAllTitlesOfCards();
+        boolean actual = advSearch.isAlphabeticallySorted(advSearch.getTitlesFromAllPages(), true);
+        Assert.assertTrue(actual);
+    }
+
+    @Test
+    public void checkSortingClubs() {
+        SoftAssert softAssert = new SoftAssert();
+        MainPage mainPage = new MainPage(driver);
+        AdvancedSearchPage advSearch = mainPage.clickAdvancedSearchButton();
+        List<WebElement> titles;
+        int n = advSearch.getNumberOfPagesWithClubs();
         boolean actual = true;
-        try {
-            driver.wait(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        for (int i = 0; i < advSearch.getNumberOfPagesWithClubs(); i++) {
+        for (int i = 0; i < n; i++) {
+            titles = advSearch.getAllTitlesOfCards();
             for (int j = 0; j < titles.size() - 1; j++) {
+                System.out.println(titles.get(j).getText());
                 char[] firstTitle = titles.get(j).getText().toLowerCase().replaceAll(" ", "").toCharArray();
                 char[] secondTitle = titles.get(j + 1).getText().toLowerCase().replaceAll(" ", "").toCharArray();
                 int wordLength = Math.min(firstTitle.length, secondTitle.length);
                 for (int k = 0; k < wordLength; k++) {
+                    System.out.println("fw letter: " + firstTitle[k]);
+                    System.out.println("sw letter: " + secondTitle[k]);
                     if (firstTitle[k] < secondTitle[k]) {
                         break;
                     } else if (firstTitle[k] > secondTitle[k]) {
@@ -160,11 +168,10 @@ public class AdvancedSearchTest extends TestRunner {
                         break;
                     }
                 }
-                Assert.assertTrue(actual);
+                softAssert.assertTrue(actual);
             }
+            System.out.println("____________ " + i);
             advSearch.clickOnNextPageButton();
         }
     }
-
-
 }
