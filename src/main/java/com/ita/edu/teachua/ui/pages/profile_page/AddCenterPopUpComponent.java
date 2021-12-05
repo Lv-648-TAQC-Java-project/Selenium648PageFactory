@@ -2,6 +2,7 @@ package com.ita.edu.teachua.ui.pages.profile_page;
 
 
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
+import com.ita.edu.teachua.ui.elements.custom_elements.CheckBoxElement;
 import com.ita.edu.teachua.ui.elements.custom_elements.Div;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 
@@ -84,9 +85,9 @@ public class AddCenterPopUpComponent extends BasePage {
         return this;
     }
 
-    /*public CheckBoxElement getCheckBoxByName(String name) {
+    public CheckBoxElement getCheckBoxByName(String name) {
         return new CheckBoxElement(driver.findElement(By.xpath("//span[contains(text(),'" + name + "')]")));
-    }*/
+    }
 
     /*public AddCenterPopUpComponent clickOnCheckBoxByName(String name) {
         getCheckBoxByName(name).click();

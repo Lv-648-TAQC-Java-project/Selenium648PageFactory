@@ -1,7 +1,6 @@
 package com.ita.edu.teachua.ui.tests;
 
 import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
-import com.ita.edu.teachua.ui.pages.header_page.RegisterPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddClubPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddLocationPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfileEditPopUpComponent;
@@ -43,12 +42,14 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile();
-        for(int i=0;i<dataAndExpected.length;i+=2){
+        for (int i = 0; i < dataAndExpected.length; i += 2) {
             String actual = edit
                     .fillPhone(dataAndExpected[i])
                     .getMessage();
 
-            Assert.assertEquals(actual, dataAndExpected[i+1]);
+
+            Assert.assertEquals(dataAndExpected[i+1],actual);
+
         }
 
     }
@@ -220,16 +221,16 @@ public class OwnerProfileTest extends TestRunner {
                 .sendKeysCoordinatesField("50.46403522497495, 30.36469393119765")
                 .clickOnPhoneField()
                 .sendKeysPhoneField("0432143210")
-                .clickOnAddButton();
+                .clickOnAddButtonToCenterPopUp();
     }
 
-   /* @Test
-    public void testPasswordRecovery() {
-        HeaderPage header = new HeaderPage(driver);
-        header.clickOnGuestDropdown();
-    }
+    /* @Test
+     public void testPasswordRecovery() {
+         HeaderPage header = new HeaderPage(driver);
+         header.clickOnGuestDropdown();
+     }
 
-
+ */
     @DataProvider
     public Object[][] verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider() {
         return new Object[][]{
@@ -238,10 +239,7 @@ public class OwnerProfileTest extends TestRunner {
     }
 
 
-   /* @Test(dataProvider = "verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider", description = "TUA-159")
-
-    /*@Test(dataProvider = "verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider", description = "TUA-159")
-
+    @Test(dataProvider = "verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider", description = "TUA-159")
     public void addLocationWithValidDataOfMandatoryFields(String name, String town, String address, String coordinates, String phoneNumber) {
         boolean actualResult = new HeaderPage(driver).authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
@@ -255,13 +253,12 @@ public class OwnerProfileTest extends TestRunner {
                 .sendKeysAddressField(address)
                 .sendKeysCoordinatesField(coordinates)
                 .sendKeysPhoneField(phoneNumber)
-                .clickOnAddButton()
+                .clickOnAddButtonToCenterPopUp()
                 .getCheckBoxByName(name)
                 .isDisplayed();
         Assert.assertTrue(actualResult, "Location was not create");
-
     }
-*/
+
 
   /*  @Test
 
@@ -303,7 +300,7 @@ public class OwnerProfileTest extends TestRunner {
     }
 */
 
-   // }
+    // }
 
 
     @DataProvider
@@ -311,17 +308,16 @@ public class OwnerProfileTest extends TestRunner {
         return new Object[][]{
                 {"AfBbCcDdEeFfGgHhIiJjKkLlMmNn", "Прізвище не може містити більше, ніж 25 символів",
                         "AfBbCcDdEeFfGgHhIiJjKkLlMm", "Прізвище не може містити більше, ніж 25 символів",
-                        "", "",
                         "1Admin", "Прізвище не може містити цифри",
                         "2Admin", "Прізвище не може містити цифри",
                         "3Admin", "Прізвище не може містити цифри",
                         "4Admin", "Прізвище не може містити цифри",
-                        "-Lastname", "Прізвище повинно починатися та закінчуватися літерою",
-                        "< Lastname>", "Прізвище повинно починатися та закінчуватися літерою",
-                        "\'Lastname", "Прізвище повинно починатися та закінчуватися літерою",
-                        "Lastname-", "Прізвище повинно починатися та закінчуватися літерою",
-                        "<Lastname >", "Прізвище повинно починатися та закінчуватися літерою",
-                        "Lastname\'", "Прізвище повинно починатися та закінчуватися літерою",
+                        "-Lastname", "Прізвище повинно починатися і закінчуватися літерою",
+                        "< Lastname>", "Прізвище не може містити спеціальні символи",
+                        "\'Lastname", "Прізвище повинно починатися і закінчуватися літерою",
+                        "Lastname-", "Прізвище повинно починатися і закінчуватися літерою",
+                        "<Lastname >", "Прізвище не може містити спеціальні символи",
+                        "Lastname\'", "Прізвище повинно починатися і закінчуватися літерою",
                         "!Admin", "Прізвище не може містити спеціальні символи",
                         "@Admin", "Прізвище не може містити спеціальні символи",
                         "#Admin", "Прізвище не може містити спеціальні символи",
@@ -335,13 +331,12 @@ public class OwnerProfileTest extends TestRunner {
                         "+Admin", "Прізвище не може містити спеціальні символи",
                         ".Admin", "Прізвище не може містити спеціальні символи",
                         ":Admin", "Прізвище не може містити спеціальні символи",
-                        "", "Введіть прізвище"}
+                        "", "Будь ласка введіть Ваше прізвище"}
         };
     }
 
 
-    /*@Test(dataProvider = "lastNameDataProvider")
-    public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String data, String expected) {
+
 
     @Test(dataProvider = "lastNameDataProvider")
     public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String[] dataAndExpected) {
@@ -354,27 +349,26 @@ public class OwnerProfileTest extends TestRunner {
                 .clickEditProfile();
         for(int i=0;i<dataAndExpected.length;i+=2){
             edit=edit.fillLastName(dataAndExpected[i]);
-            SoftAssert softAssert = new SoftAssert();
-            softAssert.assertEquals(edit.getMessage(),dataAndExpected[i+1]);
+            Assert.assertEquals(dataAndExpected[i+1],edit.getMessage());
         }
     }
-*/
+
     @DataProvider
     public Object[][] firstNameDataProvider() {
         return new Object[][]{
                 {"AfBbCcDdEeFfGgHhIiJjKkLlMmNn", "Ім'я не може містити більше, ніж 25 символів",
                         "AfBbCcDdEeFfGgHhIiJjKkLlMm", "Ім'я не може містити більше, ніж 25 символів",
-                        "", "",
+                        "", "Будь ласка введіть Ваше ім'я",
                         "1Admin", "Ім'я не може містити цифри",
                         "2Admin", "Ім'я не може містити цифри",
                         "3Admin", "Ім'я не може містити цифри",
                         "4Admin", "Ім'я не може містити цифри",
-                        "-Name", "Ім'я повинно починатися та закінчуватися літерою",
-                        "< Name>", "Ім'я повинно починатися та закінчуватися літерою",
-                        "\'Name", "Ім'я повинно починатися та закінчуватися літерою",
-                        "Name-", "Ім'я повинно починатися та закінчуватися літерою",
-                        "<Name >", "Ім'я повинно починатися та закінчуватися літерою",
-                        "Name\'", "Ім'я повинно починатися та закінчуватися літерою",
+                        "-Name", "Ім'я повинно починатися і закінчуватися літерою",
+                        "< Name>", "Ім'я не може містити спеціальні символи",
+                        "\'Name", "Ім'я повинно починатися і закінчуватися літерою",
+                        "Name-", "Ім'я повинно починатися і закінчуватися літерою",
+                        "<Name >", "Ім'я не може містити спеціальні символи",
+                        "Name\'", "Ім'я повинно починатися і закінчуватися літерою",
                         "!Admin", "Ім'я не може містити спеціальні символи",
                         "@Admin", "Ім'я не може містити спеціальні символи",
                         "#Admin", "Ім'я не може містити спеціальні символи",
@@ -388,10 +382,10 @@ public class OwnerProfileTest extends TestRunner {
                         "+Admin", "Ім'я не може містити спеціальні символи",
                         ".Admin", "Ім'я не може містити спеціальні символи",
                         ":Admin", "Ім'я не може містити спеціальні символи",
-                        "", "Введіть Ім'я"}
+                        "", "Будь ласка введіть Ваше ім'я"}
         };
     }
-/*
+
     @Test(dataProvider = "firstNameDataProvider")
     public void checkErrorMsWhenFillInvalidDataIntoFirstNameField(String dataAndExpected[]) {
         HeaderPage profile = new HeaderPage(driver);
@@ -402,13 +396,13 @@ public class OwnerProfileTest extends TestRunner {
                 .clickEditProfile();
         for (int i = 0; i <dataAndExpected.length ; i+=2) {
             edit=edit.fillFirstName(dataAndExpected[i]);
-            SoftAssert softAssert = new SoftAssert();
-            softAssert.assertEquals(edit.getMessage(), dataAndExpected[i+1]);
+            //SoftAssert softAssert = new SoftAssert();
+            Assert.assertEquals(dataAndExpected[i+1],edit.getMessage());
         }
 
     }
 
-
+/*
     @Test(description = "TUA-359 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up")
     public void getErrorMessageInChangePasswordPopUpTest() {
         HeaderPage headerPage = new HeaderPage(driver);
@@ -448,8 +442,8 @@ public class OwnerProfileTest extends TestRunner {
     public Object[][] specialCharactersData() {
         return new Object[][]{
                 {"Education, students, Школа балетуee and so ", //Urk and Eng letters
-                 "12345678901234567890123456789012345678656",   //numbers
-                 "!#$%&'()*+,-./:;<=>?@[]^_`{}~^&^%%^&***#"},   //special symbols
+                        "12345678901234567890123456789012345678656",   //numbers
+                        "!#$%&'()*+,-./:;<=>?@[]^_`{}~^&^%%^&***#"},   //special symbols
         };
     }
 
@@ -497,8 +491,8 @@ public class OwnerProfileTest extends TestRunner {
     public Object[][] lessThan40SymbolsData() {
         return new Object[][]{
                 {"Also known as the Mo", //20 symbols
-                "1", //1 symbol
-                "Also known as the Monastery of the ghfg"} //39 symbols
+                        "1", //1 symbol
+                        "Also known as the Monastery of the ghfg"} //39 symbols
         };
     }
 
@@ -545,15 +539,15 @@ public class OwnerProfileTest extends TestRunner {
                 {"Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\n" +
                         "Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\n" +
                         "On the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalv", //1500 symbols
-                "Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\n" +
-                        "Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.", //less than 1500 symbols
-                "Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\n" +
-                        "Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\n" +
-                        "On the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd", //1501 symbol
-                "Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\n" +
-                        "Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\n" +
-                        "On the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd. With its numerous parks and gardens, Kiev is perfect for picnics and outdoor activities.\n" +
-                        "Hidropark is an island in the Dnieper River whose natural beaches are very popular during the summer. Besides swimming, you can also play beach volleyball, eat delicious street food or simply sunbathe."} //more than 1500 symbols
+                        "Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\n" +
+                                "Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.", //less than 1500 symbols
+                        "Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\n" +
+                                "Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\n" +
+                                "On the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd", //1501 symbol
+                        "Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\n" +
+                                "Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\n" +
+                                "On the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd. With its numerous parks and gardens, Kiev is perfect for picnics and outdoor activities.\n" +
+                                "Hidropark is an island in the Dnieper River whose natural beaches are very popular during the summer. Besides swimming, you can also play beach volleyball, eat delicious street food or simply sunbathe."} //more than 1500 symbols
         };
     }
 
@@ -603,12 +597,12 @@ public class OwnerProfileTest extends TestRunner {
     public Object[][] differentSizeData() {
         return new Object[][]{
                 {"Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\\n\" +\n" +
-                 "\"Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\\n\" +\n" +
-                 "\"On the top of the column stands a bronze figurine of a woman holding a whe are you so sad& i think that is", //1000 symbols
-                "Also known as the Monastery of the Caves", //40 symbols
-                "Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\\n\" +\n" +
-                 "\"Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\\n\" +\n" +
-                 "\"On the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 b"} //1500 symbols
+                        "\"Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\\n\" +\n" +
+                        "\"On the top of the column stands a bronze figurine of a woman holding a whe are you so sad& i think that is", //1000 symbols
+                        "Also known as the Monastery of the Caves", //40 symbols
+                        "Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\\n\" +\n" +
+                                "\"Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\\n\" +\n" +
+                                "\"On the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 b"} //1500 symbols
         };
     }
 
