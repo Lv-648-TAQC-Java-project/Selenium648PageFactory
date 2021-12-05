@@ -12,7 +12,6 @@ public class LinkElement extends BaseElement implements Label{
     public LinkElement(WebElement element) {
         super(element);
     }
-    @Override
     public void click(){
         getWrappedElement().click();
     }

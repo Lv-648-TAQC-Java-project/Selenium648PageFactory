@@ -22,12 +22,14 @@ public class InputElement extends BaseElement implements Input {
         getWrappedElement().clear();
     }
 
-    @Override
     public void set(String text) {
         WebElement element = getWrappedElement();
-        element.clear();
+        while(!element.getAttribute("value").equals("")){
+            element.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+        }
         element.sendKeys(text);
     }
+    @Override
     public String getCSSValue(String cssValue){
         return getWrappedElement().getCssValue(cssValue);
     }
@@ -35,7 +37,6 @@ public class InputElement extends BaseElement implements Input {
      * Gets the value of an input field.
      * @return String with the value of the field.
      */
-    @Override
     public String getText() {
         return getWrappedElement().getAttribute("value");
     }

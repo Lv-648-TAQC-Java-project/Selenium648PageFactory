@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class DistrictDropdownComponent extends BasePage {
-    @FindBy(how = How.CLASS_NAME, using = DistrictDropdownLocators.DESNIANSKYI_BUTTON_XPATH)
+    @FindBy(how = How.XPATH, using = DistrictDropdownLocators.DESNIANSKYI_BUTTON_XPATH)
     private ButtonElement desnianskyiButton;
 
     public DistrictDropdownComponent(WebDriver driver) {
