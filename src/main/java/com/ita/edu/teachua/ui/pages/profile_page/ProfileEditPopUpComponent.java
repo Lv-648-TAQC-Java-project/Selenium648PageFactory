@@ -14,6 +14,7 @@ import java.time.Duration;
 
 public class ProfileEditPopUpComponent extends BasePage {
 
+
     @FindBy(how = How.XPATH, using = ProfileEditPopUpLocators.PHONE_EDIT_XPATH)
     private Input phone;
     @FindBy(how = How.XPATH, using = ProfileEditPopUpLocators.FIRSTNAME_EDIT_XPATH)
