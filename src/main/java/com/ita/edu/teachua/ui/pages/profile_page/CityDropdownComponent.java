@@ -1,5 +1,6 @@
 package com.ita.edu.teachua.ui.pages.profile_page;
 
+import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.ButtonElement;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.CityDropdownLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
@@ -8,8 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class CityDropdownComponent extends BasePage {
-    @FindBy(how = How.CLASS_NAME, using = CityDropdownLocators.KYIV_BUTTON_XPATH)
-    private ButtonElement kyivButton;
+    @FindBy(how = How.XPATH, using = CityDropdownLocators.KYIV_BUTTON_XPATH)
+    private Button kyivButton;
 
     public CityDropdownComponent(WebDriver driver) {
         super(driver);

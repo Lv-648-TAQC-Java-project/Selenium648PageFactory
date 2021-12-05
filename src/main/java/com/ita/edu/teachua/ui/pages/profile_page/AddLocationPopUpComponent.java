@@ -4,6 +4,7 @@ package com.ita.edu.teachua.ui.pages.profile_page;
 import com.ita.edu.teachua.ui.elements.custom_elements.*;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddDropDownComponentLocators;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddLocationPopUpComponentLocators;
+import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddLocationPopUpDynamicLabelsLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -36,26 +37,20 @@ public class AddLocationPopUpComponent extends BasePage {
     private Input phoneField;
     @FindBy(how = How.CSS, using = AddLocationPopUpComponentLocators.ADD_BUTTON_DISABLED_CSS_SELECTOR)
     private Button addButtonDisabled;
-
-    //private Label fieldAcceptLabel;
+    //@FindBy(how = How.XPATH, using = String.format("//input[contains(@id,'%s')]/ancestor::div[@class='ant-form-item-control-input']//span[@aria-label='check-circle']", ""))
+    private Label fieldAcceptLabel;
 
     public AddLocationPopUpComponent(WebDriver driver) {
         super(driver);
     }
 
     public boolean checkAddButton() {
-        try{
-              return addButton.isDisplayed();
-
-        }
-        catch(NoSuchElementException e){
-            return false;
-        }
+        return addButtonDisabled.isEnabled();
     }
 
     public boolean addLocationPopUpBlockIsDisplayed() {
-        waitUntilVisibilityOfElementLocatedByXpath(AddLocationPopUpComponentLocators.ADD_LOCATION_BLOCK_HEADER_XPATH,5);
-        return addLocationPopUpBlock.isActive();
+        waitUntilVisibilityOfElementLocated(By.xpath(AddLocationPopUpComponentLocators.ADD_LOCATION_BLOCK_HEADER_XPATH),5);
+        return addLocationPopUpBlock.isEnabled();
     }
 
     public AddLocationPopUpComponent clickOnLocationNameField() {
@@ -120,13 +115,12 @@ public class AddLocationPopUpComponent extends BasePage {
     }
 
     public boolean isDataAccepted(String id) {
-
-        /*try {
-            fieldAcceptLabel = new LabelElement(*//*driver, new AddLocationPopUpDynamicLocators().byId(id)*//*);
+        try {
+            fieldAcceptLabel = new LabelElement(new AddLocationPopUpDynamicLabelsLocators().byId(driver,id));
             return true;
         } catch (NoSuchElementException e) {
             return false;
-        }*/
-    return true;
+        }
+
     }
 }
