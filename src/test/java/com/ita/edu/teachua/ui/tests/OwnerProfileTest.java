@@ -152,7 +152,7 @@ public class OwnerProfileTest extends TestRunner {
                 .sendKeysPhoneField(validPhone)
                 .isDataAccepted(locationPopUpComponentId[6]);
         softAssert.assertTrue(isDataAccepted);
-
+        addLocationPopUpComponent.clickOnAddButtonToClubPopUp();
         softAssert.assertAll();
         try {
             Thread.sleep(5000);
@@ -163,7 +163,7 @@ public class OwnerProfileTest extends TestRunner {
 
     @Test(description = "TUA-252 This test case verifies that user cannot create a center with invalid data in 'Назва' field")
     public void VerifyThatErrorMessagesIsDisplayedAfterUserLeavesFieldsEmptyAndClicksNextStepButton() {
-        boolean actualResult = new HeaderPage(driver)
+        boolean errorsIsDisplayed = new HeaderPage(driver)
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
@@ -172,7 +172,7 @@ public class OwnerProfileTest extends TestRunner {
                 .clearCenterName()
                 .clickOnNextStepButton()
                 .errorsIsDisplayed();
-        Assert.assertTrue(actualResult);
+        Assert.assertTrue(errorsIsDisplayed);
 
     }
 

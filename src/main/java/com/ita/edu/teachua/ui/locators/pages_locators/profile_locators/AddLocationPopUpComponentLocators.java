@@ -10,7 +10,7 @@ public class AddLocationPopUpComponentLocators {
     public static final String ADDRESS_FIELD_ID = "address";
     public static final String COORDINATES_FIELD_ID = "coordinates";
     public static final String PHONE_FIELD_ID = "phone";
-    public static final String ADD_BUTTON_XPATH = "//button[@class='ant-btn flooded-button add-club-content-next']";
+    public static final String ADD_BUTTON_XPATH = "//button[@class='ant-btn flooded-button add-club-content-next']/span[contains(text(),'Додати')]";
     public static final String ADD_BUTTON_DISABLED_CSS_SELECTOR = "button[disabled]";
     public static final String ADD_LOCATION_BLOCK_HEADER_XPATH = "//div[contains(text(),'Додати локацію')]";
 }

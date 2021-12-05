@@ -21,6 +21,7 @@ public class AddClubPopUpComponentLocators  {
     /*Contacts area start*/
     public static final String ADD_LOCATION_BUTTON_CLASS_NAME = "add-club-location";
     public static final String TELEPHONE_NUMBER_ID = "basic_contactТелефон";
+
     /*Contacts area end*/;
 
 
