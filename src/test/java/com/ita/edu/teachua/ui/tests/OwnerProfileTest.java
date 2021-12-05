@@ -47,7 +47,9 @@ public class OwnerProfileTest extends TestRunner {
                     .fillPhone(dataAndExpected[i])
                     .getMessage();
 
-            Assert.assertEquals(actual, dataAndExpected[i + 1]);
+
+            Assert.assertEquals(dataAndExpected[i+1],actual);
+
         }
 
     }
@@ -306,17 +308,16 @@ public class OwnerProfileTest extends TestRunner {
         return new Object[][]{
                 {"AfBbCcDdEeFfGgHhIiJjKkLlMmNn", "Прізвище не може містити більше, ніж 25 символів",
                         "AfBbCcDdEeFfGgHhIiJjKkLlMm", "Прізвище не може містити більше, ніж 25 символів",
-                        "", "",
                         "1Admin", "Прізвище не може містити цифри",
                         "2Admin", "Прізвище не може містити цифри",
                         "3Admin", "Прізвище не може містити цифри",
                         "4Admin", "Прізвище не може містити цифри",
-                        "-Lastname", "Прізвище повинно починатися та закінчуватися літерою",
-                        "< Lastname>", "Прізвище повинно починатися та закінчуватися літерою",
-                        "\'Lastname", "Прізвище повинно починатися та закінчуватися літерою",
-                        "Lastname-", "Прізвище повинно починатися та закінчуватися літерою",
-                        "<Lastname >", "Прізвище повинно починатися та закінчуватися літерою",
-                        "Lastname\'", "Прізвище повинно починатися та закінчуватися літерою",
+                        "-Lastname", "Прізвище повинно починатися і закінчуватися літерою",
+                        "< Lastname>", "Прізвище не може містити спеціальні символи",
+                        "\'Lastname", "Прізвище повинно починатися і закінчуватися літерою",
+                        "Lastname-", "Прізвище повинно починатися і закінчуватися літерою",
+                        "<Lastname >", "Прізвище не може містити спеціальні символи",
+                        "Lastname\'", "Прізвище повинно починатися і закінчуватися літерою",
                         "!Admin", "Прізвище не може містити спеціальні символи",
                         "@Admin", "Прізвище не може містити спеціальні символи",
                         "#Admin", "Прізвище не може містити спеціальні символи",
@@ -330,13 +331,12 @@ public class OwnerProfileTest extends TestRunner {
                         "+Admin", "Прізвище не може містити спеціальні символи",
                         ".Admin", "Прізвище не може містити спеціальні символи",
                         ":Admin", "Прізвище не може містити спеціальні символи",
-                        "", "Введіть прізвище"}
+                        "", "Будь ласка введіть Ваше прізвище"}
         };
     }
 
 
-    /*@Test(dataProvider = "lastNameDataProvider")
-    public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String data, String expected) {
+
 
     @Test(dataProvider = "lastNameDataProvider")
     public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String[] dataAndExpected) {
@@ -349,27 +349,26 @@ public class OwnerProfileTest extends TestRunner {
                 .clickEditProfile();
         for(int i=0;i<dataAndExpected.length;i+=2){
             edit=edit.fillLastName(dataAndExpected[i]);
-            SoftAssert softAssert = new SoftAssert();
-            softAssert.assertEquals(edit.getMessage(),dataAndExpected[i+1]);
+            Assert.assertEquals(dataAndExpected[i+1],edit.getMessage());
         }
     }
-*/
+
     @DataProvider
     public Object[][] firstNameDataProvider() {
         return new Object[][]{
                 {"AfBbCcDdEeFfGgHhIiJjKkLlMmNn", "Ім'я не може містити більше, ніж 25 символів",
                         "AfBbCcDdEeFfGgHhIiJjKkLlMm", "Ім'я не може містити більше, ніж 25 символів",
-                        "", "",
+                        "", "Будь ласка введіть Ваше ім'я",
                         "1Admin", "Ім'я не може містити цифри",
                         "2Admin", "Ім'я не може містити цифри",
                         "3Admin", "Ім'я не може містити цифри",
                         "4Admin", "Ім'я не може містити цифри",
-                        "-Name", "Ім'я повинно починатися та закінчуватися літерою",
-                        "< Name>", "Ім'я повинно починатися та закінчуватися літерою",
-                        "\'Name", "Ім'я повинно починатися та закінчуватися літерою",
-                        "Name-", "Ім'я повинно починатися та закінчуватися літерою",
-                        "<Name >", "Ім'я повинно починатися та закінчуватися літерою",
-                        "Name\'", "Ім'я повинно починатися та закінчуватися літерою",
+                        "-Name", "Ім'я повинно починатися і закінчуватися літерою",
+                        "< Name>", "Ім'я не може містити спеціальні символи",
+                        "\'Name", "Ім'я повинно починатися і закінчуватися літерою",
+                        "Name-", "Ім'я повинно починатися і закінчуватися літерою",
+                        "<Name >", "Ім'я не може містити спеціальні символи",
+                        "Name\'", "Ім'я повинно починатися і закінчуватися літерою",
                         "!Admin", "Ім'я не може містити спеціальні символи",
                         "@Admin", "Ім'я не може містити спеціальні символи",
                         "#Admin", "Ім'я не може містити спеціальні символи",
@@ -383,10 +382,10 @@ public class OwnerProfileTest extends TestRunner {
                         "+Admin", "Ім'я не може містити спеціальні символи",
                         ".Admin", "Ім'я не може містити спеціальні символи",
                         ":Admin", "Ім'я не може містити спеціальні символи",
-                        "", "Введіть Ім'я"}
+                        "", "Будь ласка введіть Ваше ім'я"}
         };
     }
-/*
+
     @Test(dataProvider = "firstNameDataProvider")
     public void checkErrorMsWhenFillInvalidDataIntoFirstNameField(String dataAndExpected[]) {
         HeaderPage profile = new HeaderPage(driver);
@@ -397,13 +396,13 @@ public class OwnerProfileTest extends TestRunner {
                 .clickEditProfile();
         for (int i = 0; i <dataAndExpected.length ; i+=2) {
             edit=edit.fillFirstName(dataAndExpected[i]);
-            SoftAssert softAssert = new SoftAssert();
-            softAssert.assertEquals(edit.getMessage(), dataAndExpected[i+1]);
+            //SoftAssert softAssert = new SoftAssert();
+            Assert.assertEquals(dataAndExpected[i+1],edit.getMessage());
         }
 
     }
 
-
+/*
     @Test(description = "TUA-359 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up")
     public void getErrorMessageInChangePasswordPopUpTest() {
         HeaderPage headerPage = new HeaderPage(driver);

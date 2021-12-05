@@ -20,6 +20,7 @@ public class HeaderPage extends BasePage {
 
     public GuestDropdownComponent clickOnGuestDropdown() {
         guestDropdown.click();
+        sleep(2000);
         return new GuestDropdownComponent(driver);
     }
     public OwnerDropdownComponent clickOnOwnerDropdown() {

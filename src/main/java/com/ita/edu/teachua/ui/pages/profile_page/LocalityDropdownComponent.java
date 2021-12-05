@@ -9,8 +9,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class LocalityDropdownComponent extends BasePage {
-    @FindBy(how = How.CLASS_NAME, using = LocalityDropdownLocators.AKADEMMISTECHKO_BUTTON_XPATH)
+
+    @FindBy(how = How.XPATH, using = LocalityDropdownLocators.AKADEMMISTECHKO_BUTTON_XPATH)
     private Button akademmistechkoButton;
+
 
     public LocalityDropdownComponent(WebDriver driver) {
         super(driver);

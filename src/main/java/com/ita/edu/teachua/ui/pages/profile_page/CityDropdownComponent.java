@@ -12,6 +12,7 @@ public class CityDropdownComponent extends BasePage {
     @FindBy(how = How.XPATH, using = CityDropdownLocators.KYIV_BUTTON_XPATH)
     private Button kyivButton;
 
+
     public CityDropdownComponent(WebDriver driver) {
         super(driver);
     }

@@ -5,5 +5,5 @@ import com.ita.edu.teachua.ui.elements.base_element.ImplementedBy;
 
 @ImplementedBy(LinkElement.class)
 public interface Link extends Element {
-    void click();
+
 }
