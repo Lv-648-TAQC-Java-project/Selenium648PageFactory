@@ -70,6 +70,7 @@ public class AddLocationPopUpComponent extends BasePage {
 
     public CityDropdownComponent clickOnCityDropdown() {
         cityDropdown.click();
+        sleep(1000);
         return new CityDropdownComponent(driver);
     }
 
@@ -114,7 +115,7 @@ public class AddLocationPopUpComponent extends BasePage {
         return this;
     }
 
-    public AddCenterPopUpComponent clickOnAddButton() {
+    public AddCenterPopUpComponent clickOnAddButtonToCenterPopUp() {
         addButton.click();
         return new AddCenterPopUpComponent(driver);
     }

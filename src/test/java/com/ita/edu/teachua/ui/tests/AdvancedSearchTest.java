@@ -1,5 +1,5 @@
-package com.ita.edu.teachua.ui.tests;
-/*
+/*package com.ita.edu.teachua.ui.tests;
+
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
 import com.ita.edu.teachua.ui.pages.advanced_search.ClubsItemComponent;
 import com.ita.edu.teachua.ui.pages.main_page.MainPage;
@@ -13,7 +13,7 @@ import java.time.Duration;
 import java.util.List;
 
 public class AdvancedSearchTest extends TestRunner {
-
+/*
     @Test
     public void verifyAllParametersActiveCenterAdvancedSearch() {
         SoftAssert softAssert = new SoftAssert();
@@ -108,6 +108,7 @@ public class AdvancedSearchTest extends TestRunner {
         softAssert.assertTrue(advancedSearchPage.getAgeLabel().isDisplayed(), "Age label is not displayed");
         softAssert.assertAll();
     }
+
 
     @Test
     public void checkIfCentersAreDisplayedAsAList() {

@@ -9,4 +9,5 @@ public interface Input extends Element {
     void set(String text);
 
     void pressEnter();
+    String getCSSValue(String text);
 }

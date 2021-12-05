@@ -13,31 +13,31 @@ import javax.swing.text.LabelView;
 public class ProfileEditPopUpComponent extends BasePage {
 
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.PHONE_EDIT_XPATH)
-    private InputElement phone;
+    private Input phone;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.FIRSTNAME_EDIT_XPATH)
-    private InputElement firstName;
+    private Input firstName;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.LASTNAME_EDIT_XPATH)
-    private InputElement lastName;
+    private Input lastName;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.SAVE_BUTTON_XPATH)
-    private ButtonElement saveButton;
+    private Button saveButton;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.PASSWORD_EDIT_CHECKBOX_XPATH)
-    private CheckBoxElement changePassword;
+    private CheckBox changePassword;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.SAVE_BUTTON_XPATH)
-    private ButtonElement saveChangeButton;
+    private Button saveChangeButton;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.CURRENT_PASSWORD_INPUT_XPATH)
-    private InputElement currentPasswordInput;
+    private Input currentPasswordInput;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.NEW_PASSWORD_INPUT_XPATH)
-    private InputElement newPasswordInput;
+    private Input newPasswordInput;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.CONFIRM_PASSWORD_INPUT_XPATH)
-    private InputElement confirmPasswordInput;
+    private Input confirmPasswordInput;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.MESSAGE_INVALID_INPUT_XPATH)
-    private LabelElement messageInvalidInput;
+    private Label messageInvalidInput;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.CURRENT_PASSWORD_ERROR_MESSAGE_XPATH)
-    private LabelElement currentPasswordErrorMessage;
+    private Label currentPasswordErrorMessage;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.NEW_PASSWORD_ERROR_MESSAGE_XPATH)
-    private LabelElement newPasswordErrorMessage;
+    private Label newPasswordErrorMessage;
     @FindBy(how = How.CLASS_NAME, using = ProfileEditPopUpLocators.CONFIRM_PASSWORD_ERROR_MESSAGE_XPATH)
-    private LabelElement confirmPasswordErrorMessage;
+    private Label confirmPasswordErrorMessage;
 
     public ProfileEditPopUpComponent(WebDriver driver) {
         super(driver);
