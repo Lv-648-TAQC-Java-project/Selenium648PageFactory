@@ -28,13 +28,13 @@ public class LoginPopUpComponent extends BasePage {
 
     public LoginPopUpComponent sendKeysEmailField(String emailValue) {
         emailField.clear();
-        emailField.sendKeys(emailValue);
+        emailField.set(emailValue);
         return this;
     }
 
     public LoginPopUpComponent sendKeysPasswordField(String passwordValue) {
         passwordField.clear();
-        passwordField.sendKeys(passwordValue);
+        passwordField.set(passwordValue);
         return this;
     }
 
