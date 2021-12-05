@@ -1,12 +1,11 @@
 package com.ita.edu.teachua.ui.pages.profile_page;
 
-import com.ita.edu.teachua.ui.elements.custom_elements.Button;
-import com.ita.edu.teachua.ui.elements.custom_elements.CheckBox;
-import com.ita.edu.teachua.ui.elements.custom_elements.Input;
-import com.ita.edu.teachua.ui.elements.custom_elements.Label;
+import com.ita.edu.teachua.ui.elements.custom_elements.*;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddClubPopUpComponentLocators;
+import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.ProfileDynamicLabelsLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -49,6 +48,10 @@ public class AddClubPopUpComponent extends BasePage {
     private Input childAgeToInput;
     @FindBy(how = How.CLASS_NAME, using = AddClubPopUpComponentLocators.ADD_LOCATION_BUTTON_CLASS_NAME)
     private Button addLocation;
+    @FindBy(how = How.TAG_NAME, using = AddClubPopUpComponentLocators.ADDED_LOCATION_TITLE_TAG_NAME)
+    private Title addedLocationTitle;
+
+    private Label fieldAcceptLabel;
 
     public AddClubPopUpComponent(WebDriver driver) {
         super(driver);
@@ -113,12 +116,7 @@ public class AddClubPopUpComponent extends BasePage {
         return this;
     }
 
-    public AddClubPopUpComponent enterValidTelephoneNumber(String number) {
-        telephoneNumber.click();
-        telephoneNumber.clear();
-        telephoneNumber.sendKeys(number);
-        return this;
-    }
+
 
     public AddClubPopUpComponent inputInDescriptionField(String text) {
         descriptionField.click();
@@ -142,9 +140,28 @@ public class AddClubPopUpComponent extends BasePage {
     /*Base info area end*/
 
     /*Contacts area start*/
+    public Title getAddedLocationTitle(){
+        return addedLocationTitle;
+    }
     public AddLocationPopUpComponent clickOnAddLocation() {
         addLocation.click();
         return new AddLocationPopUpComponent(driver);
+    }
+
+    public AddClubPopUpComponent enterValidTelephoneNumber(String number) {
+        telephoneNumber.click();
+        telephoneNumber.clear();
+        telephoneNumber.sendKeys(number);
+        return this;
+    }
+
+    public boolean isDataAccepted(String id) {
+        try {
+            fieldAcceptLabel = new LabelElement(new ProfileDynamicLabelsLocators().addClubPopUpDynamicIdByXPath(driver, id));
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
     /*Contacts area end*/
 }

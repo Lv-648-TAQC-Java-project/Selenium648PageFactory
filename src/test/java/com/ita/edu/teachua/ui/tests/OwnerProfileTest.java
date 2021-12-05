@@ -1,9 +1,11 @@
 package com.ita.edu.teachua.ui.tests;
 
+import com.ita.edu.teachua.ui.elements.custom_elements.Title;
 import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
 import com.ita.edu.teachua.ui.pages.profile_page.AddClubPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddLocationPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfileEditPopUpComponent;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -81,7 +83,9 @@ public class OwnerProfileTest extends TestRunner {
                         "ValidAddress",
                         "49.829104498711104, 24.005058710351314",
                         "0966666666",
-                        "name,cityName,districtName,stationName,address,coordinates,phone"
+                        "example@email.com",
+                        "name,cityName,districtName,stationName,address,coordinates,phone",
+                        "basic_contactТелефон,basic_contactFacebook,basic_contactWhatsApp,basic_contactПошта,basic_contactSkype,basic_contactSite"
                 }
         };
     }
@@ -93,8 +97,11 @@ public class OwnerProfileTest extends TestRunner {
                                                     String validAddress,
                                                     String validCoordinates,
                                                     String validPhone,
-                                                    String addLocationPopUpComponentId) {
+                                                    String validEmail,
+                                                    String addLocationPopUpComponentId,
+                                                    String addClubPopUpComponentId) {
         String[] locationPopUpComponentId = addLocationPopUpComponentId.split(",");
+        String[] clubPopUpComponentId = addClubPopUpComponentId.split(",");
         SoftAssert softAssert = new SoftAssert();
         AddLocationPopUpComponent addLocationPopUpComponent = new HeaderPage(driver)
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -152,13 +159,51 @@ public class OwnerProfileTest extends TestRunner {
                 .sendKeysPhoneField(validPhone)
                 .isDataAccepted(locationPopUpComponentId[6]);
         softAssert.assertTrue(isDataAccepted);
-        addLocationPopUpComponent.clickOnAddButtonToClubPopUp();
+
+        AddClubPopUpComponent addClubPopUpComponent  = addLocationPopUpComponent
+                .clickOnAddButtonToClubPopUp();
+        Title addedLoactionTitle = addClubPopUpComponent
+                .getAddedLocationTitle();
+        softAssert.assertTrue(addedLoactionTitle.isDisplayed());
+
+
+
+        /*isDataAccepted = addClubPopUpComponent.
+                enterValidTelephoneNumber(validPhone).
+                isDataAccepted(clubPopUpComponentId[0]);
+        softAssert.assertTrue(isDataAccepted);
+        isDataAccepted = addClubPopUpComponent.
+                enterValidTelephoneNumber(validName).
+                isDataAccepted(clubPopUpComponentId[1]);
+        softAssert.assertTrue(isDataAccepted);
+        isDataAccepted = addClubPopUpComponent.
+                enterValidTelephoneNumber(validName).
+                isDataAccepted(clubPopUpComponentId[2]);
+        softAssert.assertTrue(isDataAccepted);
+        isDataAccepted = addClubPopUpComponent.
+                enterValidTelephoneNumber(validEmail).
+                isDataAccepted(clubPopUpComponentId[3]);
+        softAssert.assertTrue(isDataAccepted);
+        isDataAccepted = addClubPopUpComponent.
+                enterValidTelephoneNumber(validName).
+                isDataAccepted(clubPopUpComponentId[4]);
+        softAssert.assertTrue(isDataAccepted);
+        isDataAccepted = addClubPopUpComponent.
+                enterValidTelephoneNumber(validName).
+                isDataAccepted(clubPopUpComponentId[5]);
+        softAssert.assertTrue(isDataAccepted);
+*/
+
         softAssert.assertAll();
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+        /*Title addedLoactionTitle = addLocationPopUpComponent
+                .clickOnAddButtonToClubPopUp()
+                .getAddedLocationTitle();*/
     }
 
     @Test(description = "TUA-252 This test case verifies that user cannot create a center with invalid data in 'Назва' field")
