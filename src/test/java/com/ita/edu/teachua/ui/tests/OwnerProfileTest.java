@@ -151,7 +151,7 @@ public class OwnerProfileTest extends TestRunner {
                 .sendKeysPhoneField(validPhone)
                 .isDataAccepted(locationPopUpComponentId[6]);
         softAssert.assertTrue(isDataAccepted);
-
+        addLocationPopUpComponent.clickOnAddButtonToClubPopUp();
         softAssert.assertAll();
         try {
             Thread.sleep(5000);

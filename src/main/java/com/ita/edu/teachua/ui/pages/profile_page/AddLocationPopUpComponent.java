@@ -19,6 +19,8 @@ import java.time.Duration;
 public class AddLocationPopUpComponent extends BasePage {
     @FindBy(how = How.XPATH, using = AddLocationPopUpComponentLocators.ADD_BUTTON_XPATH)
     private Button addButton;
+    @FindBy(how = How.XPATH, using = AddLocationPopUpComponentLocators.ADD_BUTTON_XPATH)
+    private Button addButtonToClubPopUp;
     @FindBy(how = How.XPATH, using = AddLocationPopUpComponentLocators.ADD_LOCATION_BLOCK_HEADER_XPATH)
     private Div addLocationPopUpBlock;
     @FindBy(how = How.ID, using = AddLocationPopUpComponentLocators.LOCATION_NAME_FIELD_ID)
@@ -112,6 +114,10 @@ public class AddLocationPopUpComponent extends BasePage {
     public AddCenterPopUpComponent clickOnAddButton() {
         addButton.click();
         return new AddCenterPopUpComponent(driver);
+    }
+    public AddClubPopUpComponent clickOnAddButtonToClubPopUp() {
+        addButtonToClubPopUp.click();
+        return new AddClubPopUpComponent(driver);
     }
 
     public boolean isDataAccepted(String id) {
