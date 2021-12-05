@@ -4,11 +4,11 @@ import com.ita.edu.teachua.ui.elements.base_element.BaseElement;
 import com.ita.edu.teachua.ui.elements.base_element.Element;
 import com.ita.edu.teachua.ui.elements.base_element.ImplementedBy;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Locatable;
 import org.openqa.selenium.WrapsElement;
+import org.openqa.selenium.interactions.Locatable;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.pagefactory.ElementLocator;
 import org.openqa.selenium.support.pagefactory.ElementLocatorFactory;
 import org.openqa.selenium.support.pagefactory.FieldDecorator;
@@ -46,7 +46,7 @@ public class ElementDecorator implements FieldDecorator {
         if (field.getDeclaringClass() == BaseElement.class) {
             return null;
         }
-        
+
         ElementLocator locator = factory.createLocator(field);
         if (locator == null) {
             return null;

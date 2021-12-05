@@ -1,7 +1,5 @@
 package com.ita.edu.teachua.ui.pages.base_page;
 
-import com.ita.edu.teachua.ui.elements.base_element.Element;
-import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddLocationPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pagefactory.ElementFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +10,7 @@ import java.time.Duration;
 
 public class BasePage {
     protected WebDriver driver;
+
     public BasePage(WebDriver driver) {
 
         this.driver = driver;
@@ -26,6 +25,7 @@ public class BasePage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+
     public void sleep(long ms) {
         try {
             Thread.sleep(ms); // For Presentation ONLY
@@ -38,7 +38,6 @@ public class BasePage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
         wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
-
 
 
 }

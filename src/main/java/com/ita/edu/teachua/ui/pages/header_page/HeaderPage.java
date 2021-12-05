@@ -23,10 +23,12 @@ public class HeaderPage extends BasePage {
         sleep(2000);
         return new GuestDropdownComponent(driver);
     }
+
     public OwnerDropdownComponent clickOnOwnerDropdown() {
         guestDropdown.click();
         return new OwnerDropdownComponent(driver);
     }
+
     public HeaderPage authorize(String email, String password) {
         clickOnGuestDropdown().clickOnLoginButton().fillLoginFields(email, password);
         sleep(3000);

@@ -1,7 +1,5 @@
 package com.ita.edu.teachua.ui.locators.pages_locators.profile_locators;
 
-import org.openqa.selenium.By;
-
 public class AddLocationPopUpComponentLocators {
     public static final String LOCATION_NAME_FIELD_ID = "name";
     public static final String CITY_DROPDOWN_ID = "cityName";

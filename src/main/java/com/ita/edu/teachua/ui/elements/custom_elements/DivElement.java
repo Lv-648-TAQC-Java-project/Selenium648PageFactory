@@ -10,7 +10,8 @@ public class DivElement extends BaseElement implements Div {
     public DivElement(WebElement element) {
         super(element);
     }
-    public boolean isActive(){
+
+    public boolean isActive() {
         return getWrappedElement().isDisplayed();
     }
 

@@ -5,10 +5,8 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.CheckBoxElement;
 import com.ita.edu.teachua.ui.elements.custom_elements.Div;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
-
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddCenterPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -70,7 +68,7 @@ public class AddCenterPopUpComponent extends BasePage {
     }
 
     public boolean errorsIsDisplayed() {
-        waitUntilVisibilityOfElementLocated(By.cssSelector(AddCenterPopUpComponentLocators.CENTER_NAME_ERROR_BLOCK_CSS_SELECTOR),5);
+        waitUntilVisibilityOfElementLocated(By.cssSelector(AddCenterPopUpComponentLocators.CENTER_NAME_ERROR_BLOCK_CSS_SELECTOR), 5);
         return errorBlock.isDisplayed();
     }
 

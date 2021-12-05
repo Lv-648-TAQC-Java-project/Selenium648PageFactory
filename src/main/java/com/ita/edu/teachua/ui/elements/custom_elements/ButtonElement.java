@@ -8,6 +8,7 @@ public class ButtonElement extends BaseElement implements Button {
     public ButtonElement(WebElement element) {
         super(element);
     }
+
     public void click() {
         getWrappedElement().click();
     }
@@ -16,7 +17,7 @@ public class ButtonElement extends BaseElement implements Button {
         return getWrappedElement().isDisplayed();
     }
 
-    public String getInnerText(){
+    public String getInnerText() {
         return getWrappedElement().getAttribute("innerText");
     }
 

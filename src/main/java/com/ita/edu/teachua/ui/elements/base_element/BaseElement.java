@@ -1,10 +1,10 @@
 package com.ita.edu.teachua.ui.elements.base_element;
 
-import java.util.List;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Coordinates;
 import org.openqa.selenium.interactions.Locatable;
+
+import java.util.List;
 
 /**
  * An implementation of the Element interface. Delegates its work to an underlying WebElement instance for

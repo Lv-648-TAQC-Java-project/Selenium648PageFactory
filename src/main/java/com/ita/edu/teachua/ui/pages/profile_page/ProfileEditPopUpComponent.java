@@ -1,16 +1,15 @@
 package com.ita.edu.teachua.ui.pages.profile_page;
 
 
-import com.ita.edu.teachua.ui.elements.custom_elements.*;
+import com.ita.edu.teachua.ui.elements.custom_elements.Button;
+import com.ita.edu.teachua.ui.elements.custom_elements.CheckBox;
+import com.ita.edu.teachua.ui.elements.custom_elements.Input;
+import com.ita.edu.teachua.ui.elements.custom_elements.Label;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.ProfileEditPopUpLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import javax.swing.text.LabelView;
-import java.time.Duration;
 
 public class ProfileEditPopUpComponent extends BasePage {
 
@@ -81,7 +80,7 @@ public class ProfileEditPopUpComponent extends BasePage {
     public ProfileEditPopUpComponent clickOnChangePasswordCheckBox() {
         try {
             changePassword.click();
-        }catch (org.openqa.selenium.ElementClickInterceptedException e){
+        } catch (org.openqa.selenium.ElementClickInterceptedException e) {
             sleep(100);
             return clickOnChangePasswordCheckBox();
         }

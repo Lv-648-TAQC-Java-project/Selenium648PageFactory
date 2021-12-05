@@ -2,10 +2,10 @@ package com.ita.edu.teachua.ui.pages.header_page;
 
 /*import com.ita.edu.teachua.ui.elements.ButtonElement;
 import com.ita.edu.teachua.ui.elements.InputElement;*/
+
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.locators.pages_locators.header_locators.RegisterPopUpComponentLocators;
-//import com.ita.edu.teachua.ui.locators.pageslocators.headerlocators.RegisterPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;

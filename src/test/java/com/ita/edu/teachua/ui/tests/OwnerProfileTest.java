@@ -48,7 +48,7 @@ public class OwnerProfileTest extends TestRunner {
                     .getMessage();
 
 
-            Assert.assertEquals(dataAndExpected[i+1],actual);
+            Assert.assertEquals(dataAndExpected[i + 1], actual);
 
         }
 
@@ -336,8 +336,6 @@ public class OwnerProfileTest extends TestRunner {
     }
 
 
-
-
     @Test(dataProvider = "lastNameDataProvider")
     public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String[] dataAndExpected) {
 
@@ -347,9 +345,9 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile();
-        for(int i=0;i<dataAndExpected.length;i+=2){
-            edit=edit.fillLastName(dataAndExpected[i]);
-            Assert.assertEquals(dataAndExpected[i+1],edit.getMessage());
+        for (int i = 0; i < dataAndExpected.length; i += 2) {
+            edit = edit.fillLastName(dataAndExpected[i]);
+            Assert.assertEquals(dataAndExpected[i + 1], edit.getMessage());
         }
     }
 
@@ -394,10 +392,10 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile();
-        for (int i = 0; i <dataAndExpected.length ; i+=2) {
-            edit=edit.fillFirstName(dataAndExpected[i]);
+        for (int i = 0; i < dataAndExpected.length; i += 2) {
+            edit = edit.fillFirstName(dataAndExpected[i]);
             //SoftAssert softAssert = new SoftAssert();
-            Assert.assertEquals(dataAndExpected[i+1],edit.getMessage());
+            Assert.assertEquals(dataAndExpected[i + 1], edit.getMessage());
         }
 
     }

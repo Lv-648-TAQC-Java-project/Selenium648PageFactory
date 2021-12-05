@@ -1,8 +1,8 @@
 package com.ita.edu.teachua.ui.elements.custom_elements;
 
+import com.ita.edu.teachua.ui.elements.base_element.BaseElement;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import com.ita.edu.teachua.ui.elements.base_element.BaseElement;
 
 /**
  * TextInput  wrapper.
@@ -24,17 +24,21 @@ public class InputElement extends BaseElement implements Input {
 
     public void set(String text) {
         WebElement element = getWrappedElement();
-        while(!element.getAttribute("value").equals("")){
-            element.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+        while (!element.getAttribute("value").equals("")) {
+            element.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
         }
         element.sendKeys(text);
     }
+
     @Override
-    public String getCSSValue(String cssValue){
+
+    public String getCSSValue(String cssValue) {
         return getWrappedElement().getCssValue(cssValue);
     }
+
     /**
      * Gets the value of an input field.
+     *
      * @return String with the value of the field.
      */
     public String getText() {

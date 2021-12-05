@@ -1,8 +1,6 @@
 package com.ita.edu.teachua.ui.locators.pages_locators.profile_locators;
 
-import org.openqa.selenium.By;
-
-public class AddClubPopUpComponentLocators  {
+public class AddClubPopUpComponentLocators {
     public static final String NAME_OF_CLUB_ID = "basic_name";
     public static final String DANCES_CHECKBOX_XPATH = "//label[@class='ant-checkbox-wrapper']//span[contains(text(),'Танці, хореографія')]";
     public static final String FROM_AGE_UPPER_ARROW_ID = "basic_ageFrom";
@@ -16,7 +14,7 @@ public class AddClubPopUpComponentLocators  {
     public static final String SPORT_SECTIONS_CHECKBOX_CSS_SELECTOR = "input[value*='Спортивні секції']";
     public static final String CHILD_AGE_FROM_INPUT_ID = "basic_ageFrom";
     public static final String CHILD_AGE_TO_INPUT_ID = "basic_ageTo";
-    public static final String NEXT_STEP_BUTTON_CSS_SELECTOR  = "button[type='submit']>span";
+    public static final String NEXT_STEP_BUTTON_CSS_SELECTOR = "button[type='submit']>span";
     /*Base info area end*/
     /*Contacts area start*/
     public static final String ADD_LOCATION_BUTTON_CLASS_NAME = "add-club-location";
