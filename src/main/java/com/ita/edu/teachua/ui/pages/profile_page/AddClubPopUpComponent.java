@@ -4,6 +4,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.*;
 import com.ita.edu.teachua.ui.locators.profile_locators.AddClubPopUpComponentLocators;
 import com.ita.edu.teachua.ui.locators.profile_locators.ProfileDynamicLabelsLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -102,17 +103,19 @@ public class AddClubPopUpComponent extends BasePage {
 
 
     /*Base info area start*/
+    @Step("Enter {clubName} data into the 'Назва' field of 'Основна інформація' tab")
     public AddClubPopUpComponent fillClubNameField(String clubName) {
         clubNameInput.clear();
         clubNameInput.sendKeys(clubName);
         return this;
     }
-
+    @Step("Check off 'Спортивні секції' check-box from 'Категорія' group box")
     public AddClubPopUpComponent chooseSportSections() {
         sportSectionsCheckBox.click();
         return this;
     }
 
+    @Step("Enter {ageFrom} into the first age input and {ageTo} in second age input")
     public AddClubPopUpComponent fillChildAge(String ageFrom, String ageTo) {
         childAgeFromInput.clear();
         childAgeFromInput.sendKeys(ageFrom);
@@ -121,13 +124,12 @@ public class AddClubPopUpComponent extends BasePage {
         return this;
 
     }
-
+    @Step("Click the 'Наступний крок' button")
     public AddClubPopUpComponent clickOnNextStepButton() {
         nextStepButton.click();
         return this;
     }
-
-
+    @Step("Enter {text} data into the 'Опис' field")
     public AddClubPopUpComponent inputInDescriptionField(String text) {
         descriptionField.clear();
         descriptionField.sendKeys(text);
@@ -135,6 +137,7 @@ public class AddClubPopUpComponent extends BasePage {
         return this;
     }
 
+    @Step("Click the 'Завершити' button")
     public AddClubPopUpComponent clickOnCompleteButton() {
         completeButton.click();
         return this;
@@ -158,48 +161,49 @@ public class AddClubPopUpComponent extends BasePage {
         return addedLocationTitle;
     }
 
+    @Step("Click the 'Додати локацію' link on the 'Контакти' tab")
     public AddLocationPopUpComponent clickOnAddLocation() {
         addLocation.click();
         return new AddLocationPopUpComponent(driver);
     }
-
+    @Step("Enter {number} data into Phone number field of 'Контакти' area ")
     public AddClubPopUpComponent enterValidTelephoneNumber(String number) {
         telephoneNumber.clear();
         telephoneNumber.sendKeys(number);
         return this;
     }
-
+    @Step("Enter {facebook} data into Facebook field of 'Контакти' area ")
     public AddClubPopUpComponent enterValidFacebook(String facebook) {
         facebookField.clear();
         facebookField.sendKeys(facebook);
         return this;
     }
-
+    @Step("Enter {whatsApp} data into WhatsApp field of 'Контакти' area ")
     public AddClubPopUpComponent enterValidWhatsApp(String whatsApp) {
         whatsAppField.clear();
         whatsAppField.sendKeys(whatsApp);
         return this;
     }
-
+    @Step("Enter {email} data into Email field of 'Контакти' area ")
     public AddClubPopUpComponent enterValidEmail(String email) {
         emailField.clear();
         emailField.sendKeys(email);
         return this;
     }
-
+    @Step("Enter {skype} data into Skype field of 'Контакти' area ")
     public AddClubPopUpComponent enterValidSkype(String skype) {
         skypeField.clear();
         skypeField.sendKeys(skype);
         return this;
     }
-
+    @Step("Enter {site} data into Site field of 'Контакти' area ")
     public AddClubPopUpComponent enterValidSite(String site) {
         siteField.clear();
         siteField.sendKeys(site);
         return this;
     }
 
-
+    @Step("Check if data for the field with Id {id} is accepted")
     public boolean isDataAccepted(String id) {
         try {
             fieldAcceptLabel = new LabelElement(new ProfileDynamicLabelsLocators().addClubPopUpDynamicIdByXPath(driver, id));

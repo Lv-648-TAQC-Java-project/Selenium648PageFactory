@@ -133,7 +133,8 @@ public class OwnerProfileTest extends TestRunner {
                 .isDataAccepted(locationPopUpComponentId[1]);
         softAssert.assertTrue(isDataAccepted);
 
-        isDataAccepted = addLocationPopUpComponent.clickOnDistrictDropdown()
+        isDataAccepted = addLocationPopUpComponent
+                .clickOnDistrictDropdown()
                 .clickOnDesnianskyiButton()
                 .isDataAccepted(locationPopUpComponentId[2]);
         softAssert.assertTrue(isDataAccepted);
