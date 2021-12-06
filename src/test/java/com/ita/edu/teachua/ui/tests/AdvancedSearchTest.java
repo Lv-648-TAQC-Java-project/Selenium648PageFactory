@@ -78,7 +78,7 @@ public class AdvancedSearchTest extends TestRunner {
 
     }
 
-    @Test
+    @Test(description = "TUA-509 Verify that all parameters are activated with the selected 'Гурток' radio button")
     public void verifyAllParametersActiveClubsAdvancedSearch() {
         SoftAssert softAssert = new SoftAssert();
         AdvancedSearchPage advancedSearchPage = new MainPage(driver).clickAdvancedSearchButton();
@@ -93,16 +93,16 @@ public class AdvancedSearchTest extends TestRunner {
         softAssert.assertTrue(advancedSearchPage.getAvailableOnlineCheckBox().isDisplayed(), "Available online checkbox is not displayed");
         softAssert.assertTrue(advancedSearchPage.getCategoriesLabel().isDisplayed(), "Categories label is not displayed");
         softAssert.assertTrue(advancedSearchPage.getSportSectionsCheckBox().isDisplayed(), "Sport sections checkbox is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getDanceChoreographyCheckBox().isDisplayed(), "Dance checkbox check box is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getEarlyDevelopStudiesCheckBox().isDisplayed(), "Early development studies checkbox check box is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getProgrammingStemCheckBox().isDisplayed(), "Programming, STEM checkbox check box is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getArtDesignCheckBox().isDisplayed(), "Art studio, design checkbox check box is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getVocalMusicCheckBox().isDisplayed(), "Vocal studio, music checkbox check box is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getActorsTheaterCheckBox().isDisplayed(), "Actors, theater checkbox check box is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getPersonalDevelopmentCheckBox().isDisplayed(), "Personal development checkbox check box is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getJournalismEditVideoCheckBox().isDisplayed(), "Journalism, editing video checkbox check box is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getDevelopCenterCheckBox().isDisplayed(), "Develop center checkbox check box is not displayed");
-        softAssert.assertTrue(advancedSearchPage.getOtherCheckBox().isDisplayed(), "Other checkbox check box is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getDanceChoreographyCheckBox().isDisplayed(), "Dance checkbox is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getEarlyDevelopStudiesCheckBox().isDisplayed(), "Early development studies checkbox is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getProgrammingStemCheckBox().isDisplayed(), "Programming, STEM checkbox is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getArtDesignCheckBox().isDisplayed(), "Art studio, design checkbox is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getVocalMusicCheckBox().isDisplayed(), "Vocal studio, music checkbox is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getActorsTheaterCheckBox().isDisplayed(), "Actors, theater checkbox is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getPersonalDevelopmentCheckBox().isDisplayed(), "Personal development checkbox is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getJournalismEditVideoCheckBox().isDisplayed(), "Journalism, editing video checkbox is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getDevelopCenterCheckBox().isDisplayed(), "Develop center checkbox is not displayed");
+        softAssert.assertTrue(advancedSearchPage.getOtherCheckBox().isDisplayed(), "Other checkbox is not displayed");
         softAssert.assertTrue(advancedSearchPage.getAgeLabel().isDisplayed(), "Age label is not displayed");
         softAssert.assertAll();
     }
