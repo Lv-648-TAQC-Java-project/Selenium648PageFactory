@@ -78,11 +78,6 @@ public class AddCenterPopUpComponent extends BasePage {
         return new ProfilePage(driver);
     }
 
-    public AddCenterPopUpComponent clickOnNextStep() {
-        nextStepButton.click();
-        return this;
-    }
-
     public CheckBoxElement getCheckBoxByName(String name) {
         return new CheckBoxElement(driver.findElement(By.xpath("//span[contains(text(),'" + name + "')]")));
     }
