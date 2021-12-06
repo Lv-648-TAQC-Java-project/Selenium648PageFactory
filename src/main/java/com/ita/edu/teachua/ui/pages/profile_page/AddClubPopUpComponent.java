@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -18,13 +19,13 @@ public class AddClubPopUpComponent extends BasePage {
     private Input nameOfClub;
     @FindBy(how = How.XPATH, using = AddClubPopUpComponentLocators.DANCES_CHECKBOX_XPATH)
     private CheckBox dancesCheckbox;
-    @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.FROM_AGE_UPPER_ARROW_ID)
+    @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.CHILD_AGE_FROM_INPUT_ID)
     private Input ageFrom;
-    @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.TO_AGE_UPPER_ARROW_ID)
+    @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.CHILD_AGE_TO_INPUT_ID)
     private Input ageTo;
-    @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.FROM_AGE_UPPER_ARROW_ID)
+    @FindBy(how = How.XPATH, using = AddClubPopUpComponentLocators.FROM_AGE_UPPER_ARROW_XPATH)
     private Button fromAgeUpperArrow;
-    @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.TO_AGE_UPPER_ARROW_ID)
+    @FindBy(how = How.XPATH, using = AddClubPopUpComponentLocators.TO_AGE_UPPER_ARROW_XPATH)
     private Button toAgeUpperArrow;
     @FindBy(how = How.XPATH, using = AddClubPopUpComponentLocators.NEXT_STEP_BUTTON_XPATH)
     private Button nextStepButton;
@@ -74,6 +75,7 @@ public class AddClubPopUpComponent extends BasePage {
     }
 
     public AddClubPopUpComponent enterNameOfClub(String text) {
+        waitElementToBeClickable(By.id(AddClubPopUpComponentLocators.NAME_OF_CLUB_ID), 5);
         nameOfClub.click();
         nameOfClub.clear();
         nameOfClub.sendKeys(text);
@@ -81,6 +83,7 @@ public class AddClubPopUpComponent extends BasePage {
     }
 
     public AddClubPopUpComponent clickOnDancesCheckbox() {
+        waitElementToBeClickable(By.xpath(AddClubPopUpComponentLocators.DANCES_CHECKBOX_XPATH), 5);
         dancesCheckbox.click();
         return this;
     }
@@ -94,17 +97,18 @@ public class AddClubPopUpComponent extends BasePage {
 
     public AddClubPopUpComponent severalClicksOnFromAgeUpperArrow() {
         for (int i = 0; i <= 6; i++) {
-            fromAgeUpperArrow.click();
+            ageFrom.sendKeys(Keys.ARROW_UP);
         }
         return this;
     }
 
     public AddClubPopUpComponent severalClicksOnAgeToUpperArrow() {
         for (int i = 0; i <= 7; i++) {
-            toAgeUpperArrow.click();
+            ageTo.sendKeys(Keys.ARROW_UP);
         }
         return this;
     }
+
 
     /*Base info area start*/
     public AddClubPopUpComponent fillClubNameField(String clubName) {

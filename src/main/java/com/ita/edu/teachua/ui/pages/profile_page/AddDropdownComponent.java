@@ -26,7 +26,7 @@ public class AddDropdownComponent extends BasePage {
     }
 
     public AddClubPopUpComponent clickOnAddClubButton() {
-        waitUntilElementToBeClickable(By.xpath(AddDropDownComponentLocators.ADD_CLUB_BUTTON_XPATH), 5);
+        waitUntilVisibilityOfElementLocated(By.xpath(AddDropDownComponentLocators.ADD_CLUB_BUTTON_XPATH), 5);
         addClubButton.click();
         return new AddClubPopUpComponent(driver);
     }
