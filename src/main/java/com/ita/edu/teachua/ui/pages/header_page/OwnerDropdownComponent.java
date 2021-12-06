@@ -1,7 +1,7 @@
 package com.ita.edu.teachua.ui.pages.header_page;
 
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
-import com.ita.edu.teachua.ui.locators.pages_locators.header_locators.OwnerDropdownComponentLocators;
+import com.ita.edu.teachua.ui.locators.header_locators.OwnerDropdownComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.ui.pages.profile_page.AddCenterPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfilePage;

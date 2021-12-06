@@ -200,11 +200,7 @@ public class OwnerProfileTest extends TestRunner {
 
         softAssert.assertAll();
 
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
 
         /*Title addedLoactionTitle = addLocationPopUpComponent
                 .clickOnAddButtonToClubPopUp()

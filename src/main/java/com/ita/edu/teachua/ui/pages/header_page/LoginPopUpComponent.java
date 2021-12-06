@@ -3,7 +3,7 @@ package com.ita.edu.teachua.ui.pages.header_page;
 
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
-import com.ita.edu.teachua.ui.locators.pages_locators.header_locators.LoginPopUpComponentLocators;
+import com.ita.edu.teachua.ui.locators.header_locators.LoginPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -2,8 +2,8 @@ package com.ita.edu.teachua.ui.pages.advanced_search;
 
 
 import com.ita.edu.teachua.ui.elements.custom_elements.*;
-import com.ita.edu.teachua.ui.locators.pages_locators.advanced_search.AdvancedSearchPageLocators;
-import com.ita.edu.teachua.ui.locators.pages_locators.clubs_page_locators.ClubsPageLocators;
+import com.ita.edu.teachua.ui.locators.advanced_search.AdvancedSearchPageLocators;
+import com.ita.edu.teachua.ui.locators.clubs_page_locators.ClubsPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;

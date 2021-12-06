@@ -2,8 +2,8 @@ package com.ita.edu.teachua.ui.pages.profile_page;
 
 
 import com.ita.edu.teachua.ui.elements.custom_elements.*;
-import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddLocationPopUpComponentLocators;
-import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.ProfileDynamicLabelsLocators;
+import com.ita.edu.teachua.ui.locators.profile_locators.AddLocationPopUpComponentLocators;
+import com.ita.edu.teachua.ui.locators.profile_locators.ProfileDynamicLabelsLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;

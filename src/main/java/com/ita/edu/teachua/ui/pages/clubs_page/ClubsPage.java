@@ -2,7 +2,7 @@ package com.ita.edu.teachua.ui.pages.clubs_page;
 
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.Label;
-import com.ita.edu.teachua.ui.locators.pages_locators.clubs_page_locators.ClubsPageLocators;
+import com.ita.edu.teachua.ui.locators.clubs_page_locators.ClubsPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;

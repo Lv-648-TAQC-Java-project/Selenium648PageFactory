@@ -1,8 +1,8 @@
 package com.ita.edu.teachua.ui.pages.profile_page;
 
 import com.ita.edu.teachua.ui.elements.custom_elements.*;
-import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddClubPopUpComponentLocators;
-import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.ProfileDynamicLabelsLocators;
+import com.ita.edu.teachua.ui.locators.profile_locators.AddClubPopUpComponentLocators;
+import com.ita.edu.teachua.ui.locators.profile_locators.ProfileDynamicLabelsLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;

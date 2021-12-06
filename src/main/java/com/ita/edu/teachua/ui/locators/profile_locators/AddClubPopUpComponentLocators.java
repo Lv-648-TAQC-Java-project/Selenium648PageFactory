@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.ui.locators.pages_locators.profile_locators;
+package com.ita.edu.teachua.ui.locators.profile_locators;
 
 public class AddClubPopUpComponentLocators {
     public static final String NAME_OF_CLUB_ID = "basic_name";

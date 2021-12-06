@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.ui.locators.pages_locators.profile_locators;
+package com.ita.edu.teachua.ui.locators.profile_locators;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -21,6 +21,7 @@ public class ElementDecorator implements FieldDecorator {
 
     private ElementLocatorFactory factory;
 
+
     public ElementDecorator(ElementLocatorFactory factory) {
         this.factory = factory;
     }
@@ -94,6 +95,8 @@ public class ElementDecorator implements FieldDecorator {
         return proxy;
     }
 
+
+    @SuppressWarnings("unchecked")
     protected <T> List<T> proxyForListLocator(ClassLoader loader, Class<T> interfaceType, ElementLocator locator) {
         InvocationHandler handler;
         if (interfaceType.getAnnotation(ImplementedBy.class) != null) {

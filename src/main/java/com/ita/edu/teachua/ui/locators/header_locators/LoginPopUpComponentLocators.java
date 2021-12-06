@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.ui.locators.pages_locators.header_locators;
+package com.ita.edu.teachua.ui.locators.header_locators;
 
 public class LoginPopUpComponentLocators {
     public static final String EMAIL_FIELD_ID = "basic_email";

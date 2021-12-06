@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.ui.locators.pages_locators.clubs_page_locators;
+package com.ita.edu.teachua.ui.locators.clubs_page_locators;
 
 public class ClubsPageLocators {
     public static final String CARD_TITLE_CSS_SELECTOR = "div[class='name']";

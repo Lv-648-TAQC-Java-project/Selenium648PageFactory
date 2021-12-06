@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.ui.locators.pages_locators.advanced_search;
+package com.ita.edu.teachua.ui.locators.advanced_search;
 
 
 public class AdvancedSearchPageLocators {

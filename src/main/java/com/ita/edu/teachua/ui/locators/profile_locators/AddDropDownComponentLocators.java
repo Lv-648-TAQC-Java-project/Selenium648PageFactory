@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.ui.locators.pages_locators.profile_locators;
+package com.ita.edu.teachua.ui.locators.profile_locators;
 
 public class AddDropDownComponentLocators {
     public static final String ADD_CLUB_BUTTON_XPATH = "//ul[@classname='menu']//div[contains(text(),'Додати гурток')]";

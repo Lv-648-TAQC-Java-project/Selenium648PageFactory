@@ -5,7 +5,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.CheckBoxElement;
 import com.ita.edu.teachua.ui.elements.custom_elements.Div;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
-import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddCenterPopUpComponentLocators;
+import com.ita.edu.teachua.ui.locators.profile_locators.AddCenterPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

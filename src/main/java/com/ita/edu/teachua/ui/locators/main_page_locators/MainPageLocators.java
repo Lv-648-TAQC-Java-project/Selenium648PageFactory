@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.ui.locators.pages_locators.main_page_locators;
+package com.ita.edu.teachua.ui.locators.main_page_locators;
 
 public class MainPageLocators {
     public static final String ADVANCED_SEARCH_BUTTON_XPATH = "//span[@title='Розширений пошук']";
