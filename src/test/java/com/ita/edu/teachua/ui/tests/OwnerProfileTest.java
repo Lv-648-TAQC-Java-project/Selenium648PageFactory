@@ -44,16 +44,16 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile();
+        SoftAssert softAssert=new SoftAssert();
         for (int i = 0; i < dataAndExpected.length; i += 2) {
             String actual = edit
                     .fillPhone(dataAndExpected[i])
                     .getMessage();
 
 
-            Assert.assertEquals(dataAndExpected[i + 1], actual);
-
+            softAssert.assertEquals(dataAndExpected[i + 1], actual);
         }
-
+        softAssert.assertAll();
     }
 
     @Test(description = "TUA-160 This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty")
@@ -382,11 +382,12 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile();
+        SoftAssert softAssert=new SoftAssert();
         for (int i = 0; i < dataAndExpected.length; i += 2) {
             edit = edit.fillLastName(dataAndExpected[i]);
-
-            Assert.assertEquals(dataAndExpected[i + 1], edit.getMessage());
+            softAssert.assertEquals(dataAndExpected[i + 1], edit.getMessage());
         }
+        softAssert.assertAll();
     }
 
     @DataProvider
@@ -430,11 +431,12 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile();
+        SoftAssert softAssert = new SoftAssert();
         for (int i = 0; i < dataAndExpected.length; i += 2) {
             edit = edit.fillFirstName(dataAndExpected[i]);
-            //SoftAssert softAssert = new SoftAssert();
-            Assert.assertEquals(dataAndExpected[i + 1], edit.getMessage());
+            softAssert.assertEquals(dataAndExpected[i + 1], edit.getMessage());
         }
+        softAssert.assertAll();
 
     }
 
