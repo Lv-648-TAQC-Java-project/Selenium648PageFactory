@@ -5,6 +5,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.locators.pages_locators.header_locators.LoginPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -27,6 +28,7 @@ public class LoginPopUpComponent extends BasePage {
     }
 
     public LoginPopUpComponent sendKeysEmailField(String emailValue) {
+        waitUntilVisibilityOfElementLocated(By.id(LoginPopUpComponentLocators.EMAIL_FIELD_ID), 5);
         emailField.clear();
         emailField.set(emailValue);
         return this;

@@ -3,12 +3,12 @@ package com.ita.edu.teachua.ui.locators.pages_locators.profile_locators;
 public class AddClubPopUpComponentLocators {
     public static final String NAME_OF_CLUB_ID = "basic_name";
     public static final String DANCES_CHECKBOX_XPATH = "//label[@class='ant-checkbox-wrapper']//span[contains(text(),'Танці, хореографія')]";
-    public static final String FROM_AGE_UPPER_ARROW_ID = "basic_ageFrom";
-    public static final String TO_AGE_UPPER_ARROW_ID = "basic_ageTo";
+    public static final String FROM_AGE_UPPER_ARROW_XPATH = "//div[@class='ant-row ant-form-item ant-form-item-has-success']//span[@aria-label='Increase Value']";
+    public static final String TO_AGE_UPPER_ARROW_XPATH = "div[class='ant-row ant-form-item'] span[aria-label='Increase Value']";
     public static final String DESCRIPTION_FIELD_ID = "basic_description";
     public static final String END_BUTTON_CSS_SELECTOR = "button[type='submit']";
     public static final String TICK_XPATH = "//span[@aria-label='check-circle']";
-    public static final String ERROR_IN_DESCRIPTION_FIELD_XPATH = "//div[@class='ant-form-item-explain ant-form-item-explain-connected']";
+    public static final String ERROR_IN_DESCRIPTION_FIELD_XPATH = "//div[@class='ant-form-item-explain ant-form-item-explain-error']";
     /*Base info area*/
     public static final String CLUB_NAME_INPUT_ID = "basic_name";
     public static final String SPORT_SECTIONS_CHECKBOX_CSS_SELECTOR = "input[value*='Спортивні секції']";
