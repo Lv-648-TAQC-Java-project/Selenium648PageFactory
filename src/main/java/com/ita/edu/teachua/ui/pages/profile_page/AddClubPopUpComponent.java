@@ -23,10 +23,6 @@ public class AddClubPopUpComponent extends BasePage {
     private Input ageFrom;
     @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.CHILD_AGE_TO_INPUT_ID)
     private Input ageTo;
-    @FindBy(how = How.XPATH, using = AddClubPopUpComponentLocators.FROM_AGE_UPPER_ARROW_XPATH)
-    private Button fromAgeUpperArrow;
-    @FindBy(how = How.XPATH, using = AddClubPopUpComponentLocators.TO_AGE_UPPER_ARROW_XPATH)
-    private Button toAgeUpperArrow;
     @FindBy(how = How.XPATH, using = AddClubPopUpComponentLocators.NEXT_STEP_BUTTON_XPATH)
     private Button nextStepButton;
 
@@ -75,7 +71,7 @@ public class AddClubPopUpComponent extends BasePage {
     }
 
     public AddClubPopUpComponent enterNameOfClub(String text) {
-        waitElementToBeClickable(By.id(AddClubPopUpComponentLocators.NAME_OF_CLUB_ID), 5);
+        waitUntilElementToBeClickable(By.id(AddClubPopUpComponentLocators.NAME_OF_CLUB_ID), 5);
         nameOfClub.click();
         nameOfClub.clear();
         nameOfClub.sendKeys(text);
@@ -83,7 +79,7 @@ public class AddClubPopUpComponent extends BasePage {
     }
 
     public AddClubPopUpComponent clickOnDancesCheckbox() {
-        waitElementToBeClickable(By.xpath(AddClubPopUpComponentLocators.DANCES_CHECKBOX_XPATH), 5);
+        waitUntilElementToBeClickable(By.xpath(AddClubPopUpComponentLocators.DANCES_CHECKBOX_XPATH), 5);
         dancesCheckbox.click();
         return this;
     }
