@@ -3,20 +3,10 @@ package com.ita.edu.teachua.ui.pagefactory;
 import com.ita.edu.teachua.ui.elements.base_element.Element;
 import com.ita.edu.teachua.ui.elements.base_element.ImplementedBy;
 
-/**
- * Processes the iface type into a useful class reference for wrapping WebElements.
- */
 public final class ImplementedByProcessor {
     private ImplementedByProcessor() {
     }
 
-    /**
-     * Gets the wrapper class (descended from ElementImpl) for the annotation @ImplementedBy.
-     *
-     * @param iface iface to process for annotations
-     * @param <T>   type of the wrapped class.
-     * @return The class name of the class in question
-     */
     public static <T> Class<?> getWrapperClass(Class<T> iface) {
         if (iface.isAnnotationPresent(ImplementedBy.class)) {
             ImplementedBy annotation = iface.getAnnotation(ImplementedBy.class);

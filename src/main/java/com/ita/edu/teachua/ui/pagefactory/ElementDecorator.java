@@ -17,22 +17,10 @@ import org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandl
 import java.lang.reflect.*;
 import java.util.List;
 
-/**
- * WrappedElementDecorator recognizes a few things that DefaultFieldDecorator does not.
- * <p/>
- * It is designed to support and return concrete implementations of wrappers for a variety of common html elements.
- */
 public class ElementDecorator implements FieldDecorator {
-    /**
-     * factory to use when generating ElementLocator.
-     */
+
     private ElementLocatorFactory factory;
 
-    /**
-     * Constructor for an ElementLocatorFactory. This class is designed to replace DefaultFieldDecorator.
-     *
-     * @param factory for locating elements.
-     */
     public ElementDecorator(ElementLocatorFactory factory) {
         this.factory = factory;
     }
@@ -68,8 +56,6 @@ public class ElementDecorator implements FieldDecorator {
     }
 
     private Class<?> getErasureClass(Field field) {
-        // Type erasure in Java isn't complete. Attempt to discover the generic
-        // interfaceType of the list.
         Type genericType = field.getGenericType();
         if (!(genericType instanceof ParameterizedType)) {
             return null;
@@ -99,16 +85,6 @@ public class ElementDecorator implements FieldDecorator {
         return true;
     }
 
-    /**
-     * Generate a type-parameterized locator proxy for the element in question. We use our customized InvocationHandler
-     * here to wrap classes.
-     *
-     * @param loader        ClassLoader of the wrapping class
-     * @param interfaceType Interface wrapping the underlying WebElement
-     * @param locator       ElementLocator pointing at a proxy of the object on the page
-     * @param <T>           The interface of the proxy.
-     * @return a proxy representing the class we need to wrap.
-     */
     protected <T> T proxyForLocator(ClassLoader loader, Class<T> interfaceType, ElementLocator locator) {
         InvocationHandler handler = new ElementHandler(interfaceType, locator);
 
@@ -118,16 +94,6 @@ public class ElementDecorator implements FieldDecorator {
         return proxy;
     }
 
-    /**
-     * generates a proxy for a list of elements to be wrapped.
-     *
-     * @param loader        classloader for the class we're presently wrapping with proxies
-     * @param interfaceType type of the element to be wrapped
-     * @param locator       locator for items on the page being wrapped
-     * @param <T>           class of the interface.
-     * @return proxy with the same type as we started with.
-     */
-    @SuppressWarnings("unchecked")
     protected <T> List<T> proxyForListLocator(ClassLoader loader, Class<T> interfaceType, ElementLocator locator) {
         InvocationHandler handler;
         if (interfaceType.getAnnotation(ImplementedBy.class) != null) {

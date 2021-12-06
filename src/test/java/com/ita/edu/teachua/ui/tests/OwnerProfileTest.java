@@ -384,6 +384,7 @@ public class OwnerProfileTest extends TestRunner {
                 .clickEditProfile();
         for (int i = 0; i < dataAndExpected.length; i += 2) {
             edit = edit.fillLastName(dataAndExpected[i]);
+
             Assert.assertEquals(dataAndExpected[i + 1], edit.getMessage());
         }
     }

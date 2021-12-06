@@ -52,6 +52,7 @@ public class ProfileEditPopUpComponent extends BasePage {
     }
 
     public ProfileEditPopUpComponent fillFirstName(String firstNameFill) {
+        sleep(100);
         firstName.clear();
         firstName.set(firstNameFill);
         return this;
@@ -74,6 +75,7 @@ public class ProfileEditPopUpComponent extends BasePage {
 
 
     public String getMessage() {
+        sleep(100);
         return messageInvalidInput.getText();
     }
 

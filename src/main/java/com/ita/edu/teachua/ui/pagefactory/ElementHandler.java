@@ -12,21 +12,10 @@ import java.lang.reflect.Method;
 
 import static com.ita.edu.teachua.ui.pagefactory.ImplementedByProcessor.getWrapperClass;
 
-/**
- * Replaces DefaultLocatingElementHandler. Simply opens it up to descendants of the WebElement interface, and other
- * mix-ins of WebElement and Locatable, etc. Saves the wrapping type for calling the constructor of the wrapped classes.
- */
 public class ElementHandler implements InvocationHandler {
     private final ElementLocator locator;
     private final Class<?> wrappingType;
 
-    /**
-     * Generates a handler to retrieve the WebElement from a locator for a given WebElement interface descendant.
-     *
-     * @param interfaceType Interface wrapping this class. It contains a reference the the implementation.
-     * @param locator       Element locator that finds the element on a page.
-     * @param <T>           type of the interface
-     */
     public <T> ElementHandler(Class<T> interfaceType, ElementLocator locator) {
         this.locator = locator;
         if (!Element.class.isAssignableFrom(interfaceType)) {
@@ -56,7 +45,6 @@ public class ElementHandler implements InvocationHandler {
         try {
             return method.invoke(wrappingType.cast(thing), objects);
         } catch (InvocationTargetException e) {
-            // Unwrap the underlying exception
             throw e.getCause();
         }
     }
