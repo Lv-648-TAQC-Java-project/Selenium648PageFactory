@@ -105,15 +105,15 @@ public class ProfileEditPopUpComponent extends BasePage {
     }
 
     public String getCurrentPasswordInputBorderColor() {
-        return currentPasswordInput.getCSSValue("border-color");
+        return currentPasswordInput.getCssValue("border-color");
     }
 
     public String getNewPasswordInputBorderColor() {
-        return newPasswordInput.getCSSValue("border-color");
+        return newPasswordInput.getCssValue("border-color");
     }
 
     public String getConfirmPasswordInputBorderColor() {
-        return confirmPasswordInput.getCSSValue("border-color");
+        return confirmPasswordInput.getCssValue("border-color");
     }
 
     public ProfileEditPopUpComponent fillInCurrentPasswordInput(String currentPassword) {

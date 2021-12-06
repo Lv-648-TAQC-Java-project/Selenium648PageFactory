@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import com.ita.edu.teachua.ui.locators.pages_locators.header_locators.GuestDropdownComponentLocators;
 
 public class GuestDropdownComponent extends BasePage {
     @FindBy(how = How.XPATH, using = GuestDropdownComponentLocators.REGISTER_BUTTON_XPATH)

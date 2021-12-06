@@ -9,5 +9,5 @@ public interface RadioButton extends Element {
 
     void check();
 
-    boolean isSelected();
+    boolean isChecked();
 }

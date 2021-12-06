@@ -5,5 +5,5 @@ import com.ita.edu.teachua.ui.elements.base_element.ImplementedBy;
 
 @ImplementedBy(DropdownElement.class)
 public interface Dropdown extends Element {
-    void click();
+
 }

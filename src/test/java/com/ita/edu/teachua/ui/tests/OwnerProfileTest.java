@@ -641,7 +641,7 @@ public class OwnerProfileTest extends TestRunner {
         for (String data : input) {
             boolean checkIfButtonIsEnabled = new AddClubPopUpComponent(driver)
                     .inputInDescriptionField(data)
-                    .getEndButton().isActive();
+                    .getEndButton().isEnabled();
             Assert.assertTrue(checkIfButtonIsEnabled, "button is NOT enabled");
         }
     }
