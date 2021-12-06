@@ -22,9 +22,9 @@ public class BasePage {
         return ElementFactory.initElements(driver, this);
     }
 
-    public void waitUntilVisibilityOfElementLocatedByXpath(String locator, long seconds){
+    public void waitUntilVisibilityOfElementLocated(By locator, long seconds){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
     public void sleep(long ms) {
         try {
@@ -34,9 +34,9 @@ public class BasePage {
         }
     }
 
-    public void waitElementToBeClickable(String locator, long seconds){
+    public void waitElementToBeClickable(By locator, long seconds){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
 

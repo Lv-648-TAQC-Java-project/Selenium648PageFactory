@@ -54,7 +54,7 @@ public class AddLocationPopUpComponent extends BasePage {
     }
 
     public boolean addLocationPopUpBlockIsDisplayed() {
-        waitUntilVisibilityOfElementLocatedByXpath(AddLocationPopUpComponentLocators.ADD_LOCATION_BLOCK_HEADER_XPATH,5);
+        waitUntilVisibilityOfElementLocated(By.xpath(AddLocationPopUpComponentLocators.ADD_LOCATION_BLOCK_HEADER_XPATH),5);
         return addLocationPopUpBlock.isActive();
     }
 
