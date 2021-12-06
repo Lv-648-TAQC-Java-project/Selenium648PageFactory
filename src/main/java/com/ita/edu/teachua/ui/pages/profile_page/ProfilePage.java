@@ -7,6 +7,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Link;
 import com.ita.edu.teachua.ui.locators.profile_locators.ProfilePageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.ui.pages.clubs_page.ClubPagePopUpComponent;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -25,7 +26,7 @@ public class ProfilePage extends BasePage {
         super(driver);
     }
 
-
+    @Step("Click on 'Додати' button")
     public AddDropdownComponent clickOnAddButton() {
         addButton.click();
         return new AddDropdownComponent(driver);
@@ -42,7 +43,7 @@ public class ProfilePage extends BasePage {
         return this;
     }
 
-    public ClubPagePopUpComponent clickAddClub() throws InterruptedException {
+    public ClubPagePopUpComponent clickAddClub() {
         addClubButton.click();
         return new ClubPagePopUpComponent(driver);
     }

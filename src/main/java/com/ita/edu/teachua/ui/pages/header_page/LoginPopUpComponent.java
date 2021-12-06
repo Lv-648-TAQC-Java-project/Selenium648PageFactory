@@ -5,6 +5,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.locators.header_locators.LoginPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -46,6 +47,7 @@ public class LoginPopUpComponent extends BasePage {
         return new HeaderPage(driver);
     }
 
+    @Step("Set value for `Емейл` and `Пароль` fields")
     public HeaderPage fillLoginFields(String email, String password) {
         sendKeysEmailField(email);
         sendKeysPasswordField(password);

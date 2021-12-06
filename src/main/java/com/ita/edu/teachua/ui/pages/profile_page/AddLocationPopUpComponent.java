@@ -5,6 +5,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.*;
 import com.ita.edu.teachua.ui.locators.profile_locators.AddLocationPopUpComponentLocators;
 import com.ita.edu.teachua.ui.locators.profile_locators.ProfileDynamicLabelsLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -55,11 +56,13 @@ public class AddLocationPopUpComponent extends BasePage {
         return this;
     }
 
+    @Step("Set value for `Назва` field")
     public AddLocationPopUpComponent sendKeysLocationNameField(String locationName) {
         locationNameField.sendKeys(locationName);
         return this;
     }
 
+    @Step("Click on `Місто` dropdown")
     public CityDropdownComponent clickOnCityDropdown() {
         cityDropdown.click();
         sleep(1000);
@@ -82,6 +85,7 @@ public class AddLocationPopUpComponent extends BasePage {
         return this;
     }
 
+    @Step("Set value for `Адреса` field")
     public AddLocationPopUpComponent sendKeysAddressField(String address) {
         addressField.sendKeys(address);
         return this;
@@ -92,6 +96,7 @@ public class AddLocationPopUpComponent extends BasePage {
         return this;
     }
 
+    @Step("Set value for `Географічні координати` field")
     public AddLocationPopUpComponent sendKeysCoordinatesField(String coordinates) {
         coordinatesField.sendKeys(coordinates);
         return this;
@@ -102,11 +107,13 @@ public class AddLocationPopUpComponent extends BasePage {
         return this;
     }
 
+    @Step("Set value for `Номер телефону` field")
     public AddLocationPopUpComponent sendKeysPhoneField(String phoneNumber) {
         phoneField.sendKeys(phoneNumber);
         return this;
     }
 
+    @Step("Click on `Додати` button")
     public AddCenterPopUpComponent clickOnAddButtonToCenterPopUp() {
         addButton.click();
         return new AddCenterPopUpComponent(driver);

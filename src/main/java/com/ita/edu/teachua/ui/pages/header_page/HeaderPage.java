@@ -3,6 +3,7 @@ package com.ita.edu.teachua.ui.pages.header_page;
 import com.ita.edu.teachua.ui.elements.custom_elements.Dropdown;
 import com.ita.edu.teachua.ui.locators.header_locators.HeaderPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -19,12 +20,14 @@ public class HeaderPage extends BasePage {
         super(driver);
     }
 
+    @Step("Click on guest dropdown")
     public GuestDropdownComponent clickOnGuestDropdown() {
         guestDropdown.click();
         sleep(2000);
         return new GuestDropdownComponent(driver);
     }
 
+    @Step("Click on owner dropdown")
     public OwnerDropdownComponent clickOnOwnerDropdown() {
         guestDropdown.click();
         return new OwnerDropdownComponent(driver);
