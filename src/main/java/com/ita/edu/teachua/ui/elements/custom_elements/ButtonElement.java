@@ -17,7 +17,7 @@ public class ButtonElement extends BaseElement implements Button {
         return getWrappedElement().isDisplayed();
     }
 
-    public String getInnerText(){
+    public String getInnerText() {
         return getWrappedElement().getAttribute("innerText");
     }
 

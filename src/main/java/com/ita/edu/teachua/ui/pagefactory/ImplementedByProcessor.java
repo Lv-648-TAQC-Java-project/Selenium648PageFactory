@@ -25,7 +25,7 @@ public final class ImplementedByProcessor {
                 return annotation.value();
             }
         }
-        throw new UnsupportedOperationException("Apply @ImplementedBy interface to your Interface " + 
+        throw new UnsupportedOperationException("Apply @ImplementedBy interface to your Interface " +
                 iface.getCanonicalName() + " if you want to extend ");
     }
 

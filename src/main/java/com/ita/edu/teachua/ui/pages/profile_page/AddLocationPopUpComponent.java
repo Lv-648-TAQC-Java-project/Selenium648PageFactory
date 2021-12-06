@@ -2,22 +2,20 @@ package com.ita.edu.teachua.ui.pages.profile_page;
 
 
 import com.ita.edu.teachua.ui.elements.custom_elements.*;
-import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddDropDownComponentLocators;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddLocationPopUpComponentLocators;
+import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddLocationPopUpDynamicLabelsLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class AddLocationPopUpComponent extends BasePage {
     @FindBy(how = How.XPATH, using = AddLocationPopUpComponentLocators.ADD_BUTTON_XPATH)
     private Button addButton;
+    @FindBy(how = How.XPATH, using = AddLocationPopUpComponentLocators.ADD_BUTTON_XPATH)
+    private Button addButtonToClubPopUp;
     @FindBy(how = How.XPATH, using = AddLocationPopUpComponentLocators.ADD_LOCATION_BLOCK_HEADER_XPATH)
     private Div addLocationPopUpBlock;
     @FindBy(how = How.ID, using = AddLocationPopUpComponentLocators.LOCATION_NAME_FIELD_ID)
@@ -36,26 +34,20 @@ public class AddLocationPopUpComponent extends BasePage {
     private Input phoneField;
     @FindBy(how = How.CSS, using = AddLocationPopUpComponentLocators.ADD_BUTTON_DISABLED_CSS_SELECTOR)
     private Button addButtonDisabled;
-
-    //private Label fieldAcceptLabel;
+    //@FindBy(how = How.XPATH, using = String.format("//input[contains(@id,'%s')]/ancestor::div[@class='ant-form-item-control-input']//span[@aria-label='check-circle']", ""))
+    private Label fieldAcceptLabel;
 
     public AddLocationPopUpComponent(WebDriver driver) {
         super(driver);
     }
 
     public boolean checkAddButton() {
-        try{
-              return addButton.isDisplayed();
-
-        }
-        catch(NoSuchElementException e){
-            return false;
-        }
+        return addButtonDisabled.isEnabled();
     }
 
     public boolean addLocationPopUpBlockIsDisplayed() {
-        waitUntilVisibilityOfElementLocated(By.xpath(AddLocationPopUpComponentLocators.ADD_LOCATION_BLOCK_HEADER_XPATH),5);
-        return addLocationPopUpBlock.isActive();
+        waitUntilVisibilityOfElementLocated(By.xpath(AddLocationPopUpComponentLocators.ADD_LOCATION_BLOCK_HEADER_XPATH), 5);
+        return addLocationPopUpBlock.isDisplayed();
     }
 
     public AddLocationPopUpComponent clickOnLocationNameField() {
@@ -70,6 +62,7 @@ public class AddLocationPopUpComponent extends BasePage {
 
     public CityDropdownComponent clickOnCityDropdown() {
         cityDropdown.click();
+        sleep(1000);
         return new CityDropdownComponent(driver);
     }
 
@@ -114,19 +107,22 @@ public class AddLocationPopUpComponent extends BasePage {
         return this;
     }
 
-    public AddCenterPopUpComponent clickOnAddButton() {
+    public AddCenterPopUpComponent clickOnAddButtonToCenterPopUp() {
         addButton.click();
         return new AddCenterPopUpComponent(driver);
     }
 
-    public boolean isDataAccepted(String id) {
+    public AddClubPopUpComponent clickOnAddButtonToClubPopUp() {
+        addButtonToClubPopUp.click();
+        return new AddClubPopUpComponent(driver);
+    }
 
-        /*try {
-            fieldAcceptLabel = new LabelElement(*//*driver, new AddLocationPopUpDynamicLocators().byId(id)*//*);
+    public boolean isDataAccepted(String id) {
+        try {
+            fieldAcceptLabel = new LabelElement(new AddLocationPopUpDynamicLabelsLocators().byId(driver, id));
             return true;
         } catch (NoSuchElementException e) {
             return false;
-        }*/
-    return true;
+        }
     }
 }

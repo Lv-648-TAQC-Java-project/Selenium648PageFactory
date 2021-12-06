@@ -38,7 +38,7 @@ public class ElementHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object object, Method method, Object[] objects) throws Throwable {
-       final WebElement element;
+        final WebElement element;
         try {
             element = locator.findElement();
         } catch (NoSuchElementException e) {

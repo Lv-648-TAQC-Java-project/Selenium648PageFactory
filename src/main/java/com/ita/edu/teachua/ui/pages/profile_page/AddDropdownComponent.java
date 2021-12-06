@@ -1,7 +1,6 @@
 package com.ita.edu.teachua.ui.pages.profile_page;
 
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
-import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddClubPopUpComponentLocators;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddDropDownComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.By;
@@ -21,6 +20,7 @@ public class AddDropdownComponent extends BasePage {
     }
 
     public AddCenterPopUpComponent clickOnAddCenterButton() {
+        waitUntilElementToBeClickable(By.xpath(AddDropDownComponentLocators.ADD_CENTER_BUTTON_XPATH), 5);
         addCenterButton.click();
         return new AddCenterPopUpComponent(driver);
     }

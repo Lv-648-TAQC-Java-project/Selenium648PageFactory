@@ -1,16 +1,8 @@
 package com.ita.edu.teachua.ui.tests;
 
-/*
-import com.ita.edu.teachua.ui.elements.InputElement;
-import com.ita.edu.teachua.ui.pages.header.HeaderPage;
-import com.ita.edu.teachua.ui.pages.header.RegisterPopUpComponent;
-
-
-
-import com.ita.edu.teachua.ui.elements.custom_elements.InputElement;
+import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
 import com.ita.edu.teachua.ui.pages.header_page.RegisterPopUpComponent;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -21,17 +13,17 @@ import java.util.List;
 
 public class RegistrationTest extends TestRunner {
 
-    /*@Test(invocationCount = 1)
+    @Test(invocationCount = 1)
     public void checkAlertsFieldsWhenEmpty() {
         HeaderPage profile = new HeaderPage(driver);
         RegisterPopUpComponent registration = profile.clickOnGuestDropdown().clickOnRegisterButton();
 
-        InputElement lastName = registration.fillLastName("a" + Keys.BACK_SPACE).getLastNameField();
-        InputElement firstName = registration.fillFirstName("a" + Keys.BACK_SPACE).getFirstNameField();
-        InputElement phoneNumber = registration.fillPhoneNumber("a" + Keys.BACK_SPACE).getPhoneNumber();
-        InputElement email = registration.fillEmail("a" + Keys.BACK_SPACE).getEmailField();
-        InputElement password = registration.fillPassword("a" + Keys.BACK_SPACE).getPasswordField();
-        InputElement confirmPassword = registration.fillPasswordConfirm("a" + Keys.BACK_SPACE).getPasswordConfirmField();
+        Input lastName = registration.fillLastName("a" + Keys.BACK_SPACE).getLastNameField();
+        Input firstName = registration.fillFirstName("a" + Keys.BACK_SPACE).getFirstNameField();
+        Input phoneNumber = registration.fillPhoneNumber("a" + Keys.BACK_SPACE).getPhoneNumber();
+        Input email = registration.fillEmail("a" + Keys.BACK_SPACE).getEmailField();
+        Input password = registration.fillPassword("a" + Keys.BACK_SPACE).getPasswordField();
+        Input confirmPassword = registration.fillPasswordConfirm("a" + Keys.BACK_SPACE).getPasswordConfirmField();
 
         List<WebElement> alerts = driver.findElements(By.cssSelector("div[role=\"alert\"]"));
 
@@ -52,5 +44,5 @@ public class RegistrationTest extends TestRunner {
         softAssert.assertTrue(alerts.get(6).getText().equals("Підтвердіть пароль"));
 
         softAssert.assertAll();
-    }*/
-//}
+    }
+}

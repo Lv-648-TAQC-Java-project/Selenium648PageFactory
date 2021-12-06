@@ -1,7 +1,6 @@
 package com.ita.edu.teachua.ui.locators.pages_locators.profile_locators;
 
 
-
 public class AddCenterPopUpComponentLocators {
     public static final String ADD_LOCATION_BUTTON_CLASS_NAME = "add-club-location";
     public static final String NEXT_STEP_BUTTON_CSS_SELECTOR = "button[class='ant-btn next-btn'] span";

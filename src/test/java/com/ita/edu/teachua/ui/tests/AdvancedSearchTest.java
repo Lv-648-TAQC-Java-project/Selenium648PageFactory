@@ -1,16 +1,11 @@
 package com.ita.edu.teachua.ui.tests;
-/*
+
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
-import com.ita.edu.teachua.ui.pages.advanced_search.ClubsItemComponent;
 import com.ita.edu.teachua.ui.pages.main_page.MainPage;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
-import java.util.List;
 
 public class AdvancedSearchTest extends TestRunner {
 
@@ -44,7 +39,8 @@ public class AdvancedSearchTest extends TestRunner {
 
         softAssert.assertAll();
     }
-
+}
+/*
     @Test(description = "TUA-224 Advanced search button opens Розширений пошук section")
     public void openAdvancedSearchFieldTest() {
         SoftAssert softAssert = new SoftAssert();
@@ -109,6 +105,7 @@ public class AdvancedSearchTest extends TestRunner {
         softAssert.assertAll();
     }
 
+
     @Test
     public void checkIfCentersAreDisplayedAsAList() {
         SoftAssert softAssert = new SoftAssert();
@@ -134,7 +131,7 @@ public class AdvancedSearchTest extends TestRunner {
         }
         softAssert.assertAll();
     }
-
+}
     /*@Test
     public void checkSortingClubsSimplified() {
         MainPage mainPage = new MainPage(driver);

@@ -1,9 +1,7 @@
 package com.ita.edu.teachua.ui.pages.header_page;
 
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
-
 import com.ita.edu.teachua.ui.locators.pages_locators.header_locators.OwnerDropdownComponentLocators;
-import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddClubPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.ui.pages.profile_page.AddCenterPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfilePage;
@@ -29,14 +27,8 @@ public class OwnerDropdownComponent extends BasePage {
     }
 
     public ProfilePage clickOnProfile() {
-        waitElementToBeClickable(By.xpath(OwnerDropdownComponentLocators.MY_PROFILE_BUTTON_XPATH), 5);
+        waitUntilElementToBeClickable(By.xpath(OwnerDropdownComponentLocators.MY_PROFILE_BUTTON_XPATH), 5);
         myProfileButton.click();
         return new ProfilePage(driver);
     }
-    public void clickOnProfile2() {
-        myProfileButton.click();
-
-    }
-
-
 }

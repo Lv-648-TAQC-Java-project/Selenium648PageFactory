@@ -8,6 +8,7 @@ public class DropdownElement extends BaseElement implements Dropdown {
     public DropdownElement(WebElement element) {
         super(element);
     }
+
     public void click() {
         getWrappedElement().click();
     }

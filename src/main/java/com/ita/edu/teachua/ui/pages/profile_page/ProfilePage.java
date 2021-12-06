@@ -1,8 +1,9 @@
 package com.ita.edu.teachua.ui.pages.profile_page;
 
 
-import com.ita.edu.teachua.ui.elements.custom_elements.*;
-import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.ProfileEditPopUpLocators;
+import com.ita.edu.teachua.ui.elements.custom_elements.Button;
+import com.ita.edu.teachua.ui.elements.custom_elements.Dropdown;
+import com.ita.edu.teachua.ui.elements.custom_elements.Link;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.ProfilePageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.ui.pages.clubs_page.ClubPagePopUpComponent;
@@ -18,7 +19,6 @@ public class ProfilePage extends BasePage {
     private Link editProfile;
     @FindBy(how = How.XPATH, using = ProfilePageLocators.ADD_CLUB_BUTTON_XPATH)
     private Dropdown addClubButton;
-
 
 
     public ProfilePage(WebDriver driver) {

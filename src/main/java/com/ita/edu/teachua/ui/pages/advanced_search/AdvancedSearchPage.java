@@ -12,7 +12,6 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -319,7 +318,7 @@ public class AdvancedSearchPage extends BasePage {
         }
     }
 
-    public AdvancedSearchPage clickOnNextPageButton(){
+    public AdvancedSearchPage clickOnNextPageButton() {
         nextPageButton.click();
         return this;
     }
@@ -334,7 +333,7 @@ public class AdvancedSearchPage extends BasePage {
             }
         }
         List<String> stringCards = new ArrayList<>();
-        for (WebElement card: titles) {
+        for (WebElement card : titles) {
             stringCards.add(card.getText());
         }
         return stringCards;

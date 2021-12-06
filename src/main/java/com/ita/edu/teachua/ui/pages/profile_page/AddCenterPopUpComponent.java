@@ -2,12 +2,12 @@ package com.ita.edu.teachua.ui.pages.profile_page;
 
 
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
+import com.ita.edu.teachua.ui.elements.custom_elements.CheckBoxElement;
 import com.ita.edu.teachua.ui.elements.custom_elements.Div;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
-
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddCenterPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -15,7 +15,7 @@ import org.openqa.selenium.support.How;
 public class AddCenterPopUpComponent extends BasePage {
     @FindBy(how = How.CLASS_NAME, using = AddCenterPopUpComponentLocators.ADD_LOCATION_BUTTON_CLASS_NAME)
     private Button addLocation;
-    @FindBy(how = How.CLASS_NAME, using = AddCenterPopUpComponentLocators.CENTER_NAME_INPUT_ID)
+    @FindBy(how = How.ID, using = AddCenterPopUpComponentLocators.CENTER_NAME_INPUT_ID)
     private Input centerName;
     @FindBy(how = How.CSS, using = AddCenterPopUpComponentLocators.NEXT_STEP_BUTTON_CSS_SELECTOR)
     private Button nextStepButton;
@@ -68,6 +68,7 @@ public class AddCenterPopUpComponent extends BasePage {
     }
 
     public boolean errorsIsDisplayed() {
+        waitUntilVisibilityOfElementLocated(By.cssSelector(AddCenterPopUpComponentLocators.CENTER_NAME_ERROR_BLOCK_CSS_SELECTOR), 5);
         return errorBlock.isDisplayed();
     }
 
@@ -82,9 +83,9 @@ public class AddCenterPopUpComponent extends BasePage {
         return this;
     }
 
-    /*public CheckBoxElement getCheckBoxByName(String name) {
+    public CheckBoxElement getCheckBoxByName(String name) {
         return new CheckBoxElement(driver.findElement(By.xpath("//span[contains(text(),'" + name + "')]")));
-    }*/
+    }
 
     /*public AddCenterPopUpComponent clickOnCheckBoxByName(String name) {
         getCheckBoxByName(name).click();
