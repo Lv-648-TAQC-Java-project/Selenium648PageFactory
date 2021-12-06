@@ -1,9 +1,11 @@
 package com.ita.edu.teachua.ui.tests;
 
 import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
+import com.ita.edu.teachua.ui.pages.header_page.RegisterPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddClubPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddLocationPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfileEditPopUpComponent;
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -176,7 +178,8 @@ public class OwnerProfileTest extends TestRunner {
 
     }
 
-    /*@Test
+    @Test(description = "Implement TUA-158 Verify that a 'Керівник' can add location to the " +
+            "list of locations after filling in all mandatory and all optional fields with valid data")
     public void testAddLocationByOwner() {
         HeaderPage header = new HeaderPage(driver);
         boolean actual = header.authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -194,13 +197,13 @@ public class OwnerProfileTest extends TestRunner {
                 .sendKeysAddressField("SomeAddress")
                 .sendKeysCoordinatesField("50.46403522497495, 30.36469393119765")
                 .sendKeysPhoneField("0432143210")
-                .clickOnAddButton()
+                .clickOnAddButtonToCenterPopUp()
                 .getCheckBoxByName("LocationTestName")
                 .isDisplayed();
         Assert.assertTrue(actual);
-    }*/
+    }
 
-    @Test
+    @Test(description = "UA-214 [Center] Verify that user can create a center with valid data")
     public void testAddLocationFromProfilePage() {
         HeaderPage header = new HeaderPage(driver);// TODO create dropDown element from profile page
         header.authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -224,13 +227,12 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnAddButtonToCenterPopUp();
     }
 
-    /* @Test
+     @Test(description = "TUA-321 Verify if error message is displayed after inputting invalid data for recover or change the password.")
      public void testPasswordRecovery() {
          HeaderPage header = new HeaderPage(driver);
          header.clickOnGuestDropdown();
      }
 
- */
     @DataProvider
     public Object[][] verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider() {
         return new Object[][]{
@@ -259,14 +261,7 @@ public class OwnerProfileTest extends TestRunner {
         Assert.assertTrue(actualResult, "Location was not create");
     }
 
-
-  /*  @Test
-
-    }*/
-
-
-    /*@Test
-
+    @Test
     public void checkLastVerifyEnteredDataInRegistrationRemembered() {
         HeaderPage header = new HeaderPage(driver);
         RegisterPopUpComponent registerCheck = header.clickOnGuestDropdown()
@@ -298,10 +293,6 @@ public class OwnerProfileTest extends TestRunner {
 
 
     }
-*/
-
-    // }
-
 
     @DataProvider
     public Object[][] lastNameDataProvider() {
@@ -334,7 +325,6 @@ public class OwnerProfileTest extends TestRunner {
                         "", "Будь ласка введіть Ваше прізвище"}
         };
     }
-
 
     @Test(dataProvider = "lastNameDataProvider")
     public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String[] dataAndExpected) {
@@ -400,7 +390,6 @@ public class OwnerProfileTest extends TestRunner {
 
     }
 
-/*
     @Test(description = "TUA-359 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up")
     public void getErrorMessageInChangePasswordPopUpTest() {
         HeaderPage headerPage = new HeaderPage(driver);
@@ -431,7 +420,6 @@ public class OwnerProfileTest extends TestRunner {
         softAssert.assertEquals(editProfile.getNewPasswordInputBorderColor(), "rgb(255, 77, 79)", "New password input isn't red");
         softAssert.assertAll();
     }
-*/
 
     /**
      * 173-Verify that the ‘Опис’ text field is filled in with valid data

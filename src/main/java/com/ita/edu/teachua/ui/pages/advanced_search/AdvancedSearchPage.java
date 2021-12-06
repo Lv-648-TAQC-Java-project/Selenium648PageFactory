@@ -89,6 +89,8 @@ public class AdvancedSearchPage extends BasePage {
     private List<Button> centerBlocks;
     @FindAll(@FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.ADVANCED_SEARCH_FIELD_TITLE_XPATH))
     private List<Button> searchFields;
+    @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.ARROW_UPP_BUTTON_XPATH)
+    private Button arrowUpButton;
 
     public AdvancedSearchPage(WebDriver driver) {
         super(driver);
@@ -323,26 +325,31 @@ public class AdvancedSearchPage extends BasePage {
         return this;
     }
 
-    public List<String> getTitlesFromAllPages() {
-        List<WebElement> titles = new ArrayList<>();
+    public List<String> getTitlesFromAllPages() { // TODO rename
+        List<WebElement> titles;
+        List<String> stringCards = new ArrayList<>();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         int n = this.getNumberOfPagesWithClubs();
         for (int i = 0; i < n; i++) {
-            titles.addAll(this.getAllTitlesOfCards());
-            if (i <= n - 1) {
-                this.clickOnNextPageButton();
+            titles = getAllTitlesOfCards();
+            for (WebElement card : titles) {
+                stringCards.add(card.getText());
             }
-        }
-        List<String> stringCards = new ArrayList<>();
-        for (WebElement card : titles) {
-            stringCards.add(card.getText());
+            clickOnNextPageButton();
         }
         return stringCards;
     }
 
     public boolean isAlphabeticallySorted(List<String> titles, boolean asc) {
         for (int j = 0; j < titles.size() - 1; j++) {
-            char[] firstTitle = titles.get(j).toLowerCase().replaceAll(" ", "").toCharArray();
-            char[] secondTitle = titles.get(j + 1).toLowerCase().replaceAll(" ", "").toCharArray();
+            System.out.println(titles.get(j));
+            System.out.println(titles.get(j + 1));
+            char[] firstTitle = titles.get(j).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9]", "").toCharArray();
+            char[] secondTitle = titles.get(j + 1).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9]", "").toCharArray();
             int wordLength = Math.min(firstTitle.length, secondTitle.length);
             for (int k = 0; k < wordLength; k++) {
                 System.out.println("fw letter: " + firstTitle[k]);
@@ -376,5 +383,9 @@ public class AdvancedSearchPage extends BasePage {
         return Integer.parseInt(lastPageButton.getInnerText());
     }
 
+    public AdvancedSearchPage clickOnArrowUpButton() {
+        arrowUpButton.click();
+        return this;
+    }
 
 }

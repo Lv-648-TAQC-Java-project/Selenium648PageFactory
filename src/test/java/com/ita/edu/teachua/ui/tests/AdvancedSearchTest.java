@@ -1,11 +1,17 @@
 package com.ita.edu.teachua.ui.tests;
 
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
+import com.ita.edu.teachua.ui.pages.advanced_search.ClubsItemComponent;
 import com.ita.edu.teachua.ui.pages.main_page.MainPage;
+import io.qameta.allure.Description;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
+import java.util.List;
 
 public class AdvancedSearchTest extends TestRunner {
 
@@ -39,8 +45,7 @@ public class AdvancedSearchTest extends TestRunner {
 
         softAssert.assertAll();
     }
-}
-/*
+
     @Test(description = "TUA-224 Advanced search button opens Розширений пошук section")
     public void openAdvancedSearchFieldTest() {
         SoftAssert softAssert = new SoftAssert();
@@ -131,51 +136,23 @@ public class AdvancedSearchTest extends TestRunner {
         }
         softAssert.assertAll();
     }
-}
-    /*@Test
-    public void checkSortingClubsSimplified() {
+
+    @Test(description = "[TUA-103] Verify that sorting for advanced search works correctly")
+    public void checkSortingClubsByNameInAscendingOrder() {
         MainPage mainPage = new MainPage(driver);
         AdvancedSearchPage advSearch = mainPage.clickAdvancedSearchButton();
         boolean actual = advSearch.isAlphabeticallySorted(advSearch.getTitlesFromAllPages(), true);
         Assert.assertTrue(actual);
     }
 
-    /*@Test
-    public void checkSortingClubs() {
-        SoftAssert softAssert = new SoftAssert();
+    @Test(description = "[TUA-103] Verify that sorting for advanced search works correctly")
+    public void checkSortingClubsByNameInDescendingOrder() {
         MainPage mainPage = new MainPage(driver);
-        AdvancedSearchPage advSearch = mainPage.clickAdvancedSearchButton();
-        List<WebElement> titles;
-        int n = advSearch.getNumberOfPagesWithClubs();
-        boolean actual = true;
-        for (int i = 0; i < n; i++) {
-            titles = advSearch.getAllTitlesOfCards();
-            for (int j = 0; j < titles.size() - 1; j++) {
-                System.out.println(titles.get(j).getText());
-                char[] firstTitle = titles.get(j).getText().toLowerCase().replaceAll(" ", "").toCharArray();
-                char[] secondTitle = titles.get(j + 1).getText().toLowerCase().replaceAll(" ", "").toCharArray();
-                int wordLength = Math.min(firstTitle.length, secondTitle.length);
-                for (int k = 0; k < wordLength; k++) {
-                    System.out.println("fw letter: " + firstTitle[k]);
-                    System.out.println("sw letter: " + secondTitle[k]);
-                    if (firstTitle[k] < secondTitle[k]) {
-                        break;
-                    } else if (firstTitle[k] > secondTitle[k]) {
-                        actual = false;
-                        break;
-                    }
-                }
-                softAssert.assertTrue(actual);
-            }
-            System.out.println("____________ " + i);
-            advSearch.clickOnNextPageButton();
-        }
-
-    }*/
-
-
-/*}
-
+        AdvancedSearchPage advSearch = mainPage.clickAdvancedSearchButton().clickOnArrowUpButton();
+        boolean actual = advSearch.isAlphabeticallySorted(advSearch.getTitlesFromAllPages(), false);
+        Assert.assertTrue(actual);
     }
-}*/
+}
+
+
 
