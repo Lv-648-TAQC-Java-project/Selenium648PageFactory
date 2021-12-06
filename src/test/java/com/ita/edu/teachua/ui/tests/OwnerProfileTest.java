@@ -497,12 +497,14 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnNextStepButton()
                 .enterValidTelephoneNumber("9632548777")
                 .clickOnNextStepButton();
+        SoftAssert softAssert = new SoftAssert();
         for (String data : input) {
             boolean checkDescriptionFiledWithDifferentSymbols = new AddClubPopUpComponent(driver)
                     .inputInDescriptionField(data)
                     .getTick().isDisplayed();
-            Assert.assertTrue(checkDescriptionFiledWithDifferentSymbols, "field is NOT valid");
+            softAssert.assertTrue(checkDescriptionFiledWithDifferentSymbols, "field is NOT valid");
         }
+        softAssert.assertAll();
     }
 
     /**
@@ -535,12 +537,14 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnNextStepButton()
                 .enterValidTelephoneNumber("9632548777")
                 .clickOnNextStepButton();
+        SoftAssert softAssert = new SoftAssert();
         for (String data : input) {
             String checkDescriptionFiledWithLessThan40Symbols = new AddClubPopUpComponent(driver)
                     .inputInDescriptionField(data)
                     .getError().getText();
-            Assert.assertEquals(checkDescriptionFiledWithLessThan40Symbols, "Некоректний опис гуртка\n" + "Опис гуртка може містити від 40 до 1500 символів.");
+            softAssert.assertEquals(checkDescriptionFiledWithLessThan40Symbols, "Некоректний опис гуртка\n" + "Опис гуртка може містити від 40 до 1500 символів.");
         }
+        softAssert.assertAll();
     }
 
 
@@ -567,6 +571,7 @@ public class OwnerProfileTest extends TestRunner {
 
     @Test(dataProvider = "lessAndMoreThan1500data")
     public void checkDescriptionFieldWithLessAndMoreThan1500Symbols(String[] input) {
+        SoftAssert softAssert = new SoftAssert();
         boolean checkIfValidFiledWith1500Symbols = new HeaderPage(driver)
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
@@ -584,22 +589,24 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnNextStepButton()
                 .inputInDescriptionField(input[0])
                 .getTick().isDisplayed();
-        Assert.assertTrue(checkIfValidFiledWith1500Symbols, "field is NOT valid");
+        softAssert.assertTrue(checkIfValidFiledWith1500Symbols, "field is NOT valid");
 
         boolean checkIfValidFiledWithLessThan1500Symbols = new AddClubPopUpComponent(driver)
                 .inputInDescriptionField(input[1])
                 .getTick().isDisplayed();
-        Assert.assertTrue(checkIfValidFiledWithLessThan1500Symbols, "field is NOT valid");
+        softAssert.assertTrue(checkIfValidFiledWithLessThan1500Symbols, "field is NOT valid");
 
         String checkIfValidFiledWith1501Symbol = new AddClubPopUpComponent(driver)
                 .inputInDescriptionField(input[2])
                 .getError().getText();
-        Assert.assertEquals(checkIfValidFiledWith1501Symbol, "Опис гуртка може містити від 40 до 1500 символів.");
+        softAssert.assertEquals(checkIfValidFiledWith1501Symbol, "Опис гуртка може містити від 40 до 1500 символів.");
 
         String checkIfValidFiledWithMoreThan1500Symbols = new AddClubPopUpComponent(driver)
                 .inputInDescriptionField(input[3])
                 .getError().getText();
-        Assert.assertEquals(checkIfValidFiledWithMoreThan1500Symbols, "Опис гуртка може містити від 40 до 1500 символів.");
+        softAssert.assertEquals(checkIfValidFiledWithMoreThan1500Symbols, "Опис гуртка може містити від 40 до 1500 символів.");
+
+        softAssert.assertAll();
     }
 
 
@@ -637,12 +644,14 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnNextStepButton()
                 .enterValidTelephoneNumber("9632548777")
                 .clickOnNextStepButton();
+        SoftAssert softAssert = new SoftAssert();
         for (String data : input) {
             boolean checkIfButtonIsEnabled = new AddClubPopUpComponent(driver)
                     .inputInDescriptionField(data)
                     .getEndButton().isEnabled();
-            Assert.assertTrue(checkIfButtonIsEnabled, "button is NOT enabled");
+            softAssert.assertTrue(checkIfButtonIsEnabled, "button is NOT enabled");
         }
+        softAssert.assertAll();
     }
 }
 
