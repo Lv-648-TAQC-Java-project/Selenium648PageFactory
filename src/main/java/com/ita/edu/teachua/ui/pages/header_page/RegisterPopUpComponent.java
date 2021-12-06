@@ -24,9 +24,9 @@ public class RegisterPopUpComponent extends BasePage {
     private Input password;
     @FindBy(how = How.ID, using = RegisterPopUpComponentLocators.PASSWORD_CONFIRM_FIELD_ID)
     private Input passwordConfirm;
-    @FindBy(how = How.ID, using = RegisterPopUpComponentLocators.REGISTER_BUTTON_XPATH)
+    @FindBy(how = How.XPATH, using = RegisterPopUpComponentLocators.REGISTER_BUTTON_XPATH)
     private Button registerButton;
-    @FindBy(how = How.ID, using = RegisterPopUpComponentLocators.CLOSE_BUTTON_XPATH)
+    @FindBy(how = How.XPATH, using = RegisterPopUpComponentLocators.CLOSE_BUTTON_XPATH)
     private Button closeButton;
 
     public RegisterPopUpComponent(WebDriver driver) {

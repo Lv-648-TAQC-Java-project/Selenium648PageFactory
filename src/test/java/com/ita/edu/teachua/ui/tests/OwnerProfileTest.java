@@ -6,7 +6,6 @@ import com.ita.edu.teachua.ui.pages.header_page.RegisterPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddClubPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddLocationPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfileEditPopUpComponent;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -163,12 +162,11 @@ public class OwnerProfileTest extends TestRunner {
                 .isDataAccepted(locationPopUpComponentId[6]);
         softAssert.assertTrue(isDataAccepted);
 
-        AddClubPopUpComponent addClubPopUpComponent  = addLocationPopUpComponent
+        AddClubPopUpComponent addClubPopUpComponent = addLocationPopUpComponent
                 .clickOnAddButtonToClubPopUp();
         Title addedLoactionTitle = addClubPopUpComponent
                 .getAddedLocationTitle();
         softAssert.assertTrue(addedLoactionTitle.isDisplayed());
-
 
 
         isDataAccepted = addClubPopUpComponent
@@ -277,11 +275,11 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnAddButtonToCenterPopUp();
     }
 
-     @Test(description = "TUA-321 Verify if error message is displayed after inputting invalid data for recover or change the password.")
-     public void testPasswordRecovery() {
-         HeaderPage header = new HeaderPage(driver);
-         header.clickOnGuestDropdown();
-     }
+    @Test(description = "TUA-321 Verify if error message is displayed after inputting invalid data for recover or change the password.")
+    public void testPasswordRecovery() {
+        HeaderPage header = new HeaderPage(driver);
+        header.clickOnGuestDropdown();
+    }
 
     @DataProvider
     public Object[][] verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider() {
@@ -378,7 +376,6 @@ public class OwnerProfileTest extends TestRunner {
 
     @Test(dataProvider = "lastNameDataProvider")
     public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String[] dataAndExpected) {
-
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -521,31 +518,31 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
-   @Test(dataProvider = "lessThan40SymbolsData")
-   public void checkDescriptionFieldWithLessThan40Symbols(String[] input) {
-       HeaderPage headerPage = new HeaderPage(driver);
-       headerPage
-               .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
-               .clickOnOwnerDropdown()
-               .clickOnProfile()
-               .clickOnAddButton()
-               .clickOnAddClubButton()
-               .enterNameOfClub("Танці, хореографія")
-               .clickOnDancesCheckbox()
-               .hoverToElement("basic_ageFrom")
-               .severalClicksOnFromAgeUpperArrow()
-               .hoverToElement("basic_ageTo")
-               .severalClicksOnAgeToUpperArrow()
-               .clickOnNextStepButton()
-               .enterValidTelephoneNumber("9632548777")
-               .clickOnNextStepButton();
-       for (String data : input) {
-           String checkDescriptionFiledWithLessThan40Symbols = new AddClubPopUpComponent(driver)
-                   .inputInDescriptionField(data)
-                   .getError().getText();
-           Assert.assertEquals(checkDescriptionFiledWithLessThan40Symbols, "Некоректний опис гуртка\n" + "Опис гуртка може містити від 40 до 1500 символів.");
-       }
-   }
+    @Test(dataProvider = "lessThan40SymbolsData")
+    public void checkDescriptionFieldWithLessThan40Symbols(String[] input) {
+        HeaderPage headerPage = new HeaderPage(driver);
+        headerPage
+                .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+                .clickOnOwnerDropdown()
+                .clickOnProfile()
+                .clickOnAddButton()
+                .clickOnAddClubButton()
+                .enterNameOfClub("Танці, хореографія")
+                .clickOnDancesCheckbox()
+                .hoverToElement("basic_ageFrom")
+                .severalClicksOnFromAgeUpperArrow()
+                .hoverToElement("basic_ageTo")
+                .severalClicksOnAgeToUpperArrow()
+                .clickOnNextStepButton()
+                .enterValidTelephoneNumber("9632548777")
+                .clickOnNextStepButton();
+        for (String data : input) {
+            String checkDescriptionFiledWithLessThan40Symbols = new AddClubPopUpComponent(driver)
+                    .inputInDescriptionField(data)
+                    .getError().getText();
+            Assert.assertEquals(checkDescriptionFiledWithLessThan40Symbols, "Некоректний опис гуртка\n" + "Опис гуртка може містити від 40 до 1500 символів.");
+        }
+    }
 
 
     /**
@@ -623,31 +620,31 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
-   @Test(dataProvider = "differentSizeData")
-   public void checkButtonIsEnabledWithValidInput(String[] input) {
-       HeaderPage headerPage = new HeaderPage(driver);
+    @Test(dataProvider = "differentSizeData")
+    public void checkButtonIsEnabledWithValidInput(String[] input) {
+        HeaderPage headerPage = new HeaderPage(driver);
         headerPage
-               .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
-               .clickOnOwnerDropdown()
-               .clickOnProfile()
-               .clickOnAddButton()
-               .clickOnAddClubButton()
-               .enterNameOfClub("Танці, хореографія")
-               .clickOnDancesCheckbox()
-               .hoverToElement("basic_ageFrom")
-               .severalClicksOnFromAgeUpperArrow()
-               .hoverToElement("basic_ageTo")
-               .severalClicksOnAgeToUpperArrow()
-               .clickOnNextStepButton()
-               .enterValidTelephoneNumber("9632548777")
-               .clickOnNextStepButton();
-       for (String data : input) {
-           boolean checkIfButtonIsEnabled = new AddClubPopUpComponent(driver)
-                   .inputInDescriptionField(data)
-                   .getEndButton().isActive();
-           Assert.assertTrue(checkIfButtonIsEnabled, "button is NOT enabled");
-       }
-   }
+                .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+                .clickOnOwnerDropdown()
+                .clickOnProfile()
+                .clickOnAddButton()
+                .clickOnAddClubButton()
+                .enterNameOfClub("Танці, хореографія")
+                .clickOnDancesCheckbox()
+                .hoverToElement("basic_ageFrom")
+                .severalClicksOnFromAgeUpperArrow()
+                .hoverToElement("basic_ageTo")
+                .severalClicksOnAgeToUpperArrow()
+                .clickOnNextStepButton()
+                .enterValidTelephoneNumber("9632548777")
+                .clickOnNextStepButton();
+        for (String data : input) {
+            boolean checkIfButtonIsEnabled = new AddClubPopUpComponent(driver)
+                    .inputInDescriptionField(data)
+                    .getEndButton().isActive();
+            Assert.assertTrue(checkIfButtonIsEnabled, "button is NOT enabled");
+        }
+    }
 }
 
 
