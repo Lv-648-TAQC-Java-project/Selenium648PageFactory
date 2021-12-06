@@ -4,6 +4,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.Label;
 import com.ita.edu.teachua.ui.locators.pages_locators.clubs_page_locators.ClubsPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -20,7 +21,7 @@ public class ClubsPage extends BasePage {
     private Button lastPageButton;
     @FindAll(@FindBy(how = How.CSS, using = ClubsPageLocators.CARD_TITLE_CSS_SELECTOR))
     private List<WebElement> cartTitles;
-    @FindBy(how = How.XPATH, using = ClubsPageLocators.INVALID_CLUBS_BASIC_SEARCH_CSS_SELECTOR)
+    @FindBy(how = How.CSS, using = ClubsPageLocators.INVALID_CLUBS_BASIC_SEARCH_CSS_SELECTOR)
     private Label invalidSearchPageTitle;
 
     public ClubsPage(WebDriver driver) {
@@ -40,11 +41,15 @@ public class ClubsPage extends BasePage {
             sleep(100);
         }
         List<WebElement> titles = cartTitles;
-        System.out.println(titles.size());
         boolean isPresent = false;
         String res = "";
         for (WebElement t : titles) {
-            res = t.getText();
+            try{
+                res = t.getText();
+            }catch (StaleElementReferenceException e){
+                sleep(100);
+                return isClubPresent(title);
+            }
             if (res.equals(title)) {
                 isPresent = true;
             }
