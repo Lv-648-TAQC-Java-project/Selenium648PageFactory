@@ -26,14 +26,30 @@ public class AddClubPopUpComponent extends BasePage {
     private Button fromAgeUpperArrow;
     @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.TO_AGE_UPPER_ARROW_ID)
     private Button toAgeUpperArrow;
-    @FindBy(how = How.CSS, using = AddClubPopUpComponentLocators.NEXT_STEP_BUTTON_CSS_SELECTOR)
+    @FindBy(how = How.XPATH, using = AddClubPopUpComponentLocators.NEXT_STEP_BUTTON_XPATH)
     private Button nextStepButton;
+
     @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.TELEPHONE_NUMBER_ID)
     private Input telephoneNumber;
+    @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.FACEBOOK_FIELD_ID)
+    private Input facebookField;
+    @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.WHATSAPP_FIELD_ID)
+    private Input whatsAppField;
+    @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.EMAIL_FIELD_ID)
+    private Input emailField;
+    @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.SKYPE_FIELD_ID)
+    private Input skypeField;
+    @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.SITE_FIELD_ID)
+    private Input siteField;
+
     @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.DESCRIPTION_FIELD_ID)
     private Input descriptionField;
     @FindBy(how = How.CSS, using = AddClubPopUpComponentLocators.END_BUTTON_CSS_SELECTOR)
     private Button endButton;
+
+    @FindBy(how = How.XPATH, using = AddClubPopUpComponentLocators.COMPLETE_BUTTON_XPATH)
+    private Button completeButton;
+
     @FindBy(how = How.XPATH, using = AddClubPopUpComponentLocators.TICK_XPATH)
     private Label tick;
     @FindBy(how = How.XPATH, using = AddClubPopUpComponentLocators.ERROR_IN_DESCRIPTION_FIELD_XPATH)
@@ -119,10 +135,13 @@ public class AddClubPopUpComponent extends BasePage {
 
 
     public AddClubPopUpComponent inputInDescriptionField(String text) {
-        descriptionField.click();
         descriptionField.clear();
         descriptionField.sendKeys(text);
         sleep(1000);
+        return this;
+    }
+    public AddClubPopUpComponent clickOnCompleteButton() {
+        completeButton.click();
         return this;
     }
 
@@ -149,11 +168,36 @@ public class AddClubPopUpComponent extends BasePage {
     }
 
     public AddClubPopUpComponent enterValidTelephoneNumber(String number) {
-        telephoneNumber.click();
         telephoneNumber.clear();
         telephoneNumber.sendKeys(number);
         return this;
     }
+    public AddClubPopUpComponent enterValidFacebook(String facebook) {
+        facebookField.clear();
+        facebookField.sendKeys(facebook);
+        return this;
+    }
+    public AddClubPopUpComponent enterValidWhatsApp(String whatsApp) {
+        whatsAppField.clear();
+        whatsAppField.sendKeys(whatsApp);
+        return this;
+    }
+    public AddClubPopUpComponent enterValidEmail(String email) {
+        emailField.clear();
+        emailField.sendKeys(email);
+        return this;
+    }
+    public AddClubPopUpComponent enterValidSkype(String skype) {
+        skypeField.clear();
+        skypeField.sendKeys(skype);
+        return this;
+    }
+    public AddClubPopUpComponent enterValidSite(String site) {
+        siteField.clear();
+        siteField.sendKeys(site);
+        return this;
+    }
+
 
     public boolean isDataAccepted(String id) {
         try {

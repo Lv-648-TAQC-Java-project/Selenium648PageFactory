@@ -77,13 +77,14 @@ public class OwnerProfileTest extends TestRunner {
     @DataProvider
     public Object[][] addClubPopUpComponentData() {
         return new Object[][]{
-                {"ValidName",
+                {"ValidName2",
                         "2",
                         "18",
                         "ValidAddress",
                         "49.829104498711104, 24.005058710351314",
                         "0966666666",
                         "example@email.com",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                         "name,cityName,districtName,stationName,address,coordinates,phone",
                         "basic_contactТелефон,basic_contactFacebook,basic_contactWhatsApp,basic_contactПошта,basic_contactSkype,basic_contactSite"
                 }
@@ -98,6 +99,7 @@ public class OwnerProfileTest extends TestRunner {
                                                     String validCoordinates,
                                                     String validPhone,
                                                     String validEmail,
+                                                    String descriptionText,
                                                     String addLocationPopUpComponentId,
                                                     String addClubPopUpComponentId) {
         String[] locationPopUpComponentId = addLocationPopUpComponentId.split(",");
@@ -168,33 +170,37 @@ public class OwnerProfileTest extends TestRunner {
 
 
 
-        /*isDataAccepted = addClubPopUpComponent.
-                enterValidTelephoneNumber(validPhone).
-                isDataAccepted(clubPopUpComponentId[0]);
+        isDataAccepted = addClubPopUpComponent
+                .enterValidTelephoneNumber(validPhone)
+                .isDataAccepted(clubPopUpComponentId[0]);
         softAssert.assertTrue(isDataAccepted);
-        isDataAccepted = addClubPopUpComponent.
-                enterValidTelephoneNumber(validName).
-                isDataAccepted(clubPopUpComponentId[1]);
+        isDataAccepted = addClubPopUpComponent
+                .enterValidFacebook(validName)
+                .isDataAccepted(clubPopUpComponentId[1]);
         softAssert.assertTrue(isDataAccepted);
-        isDataAccepted = addClubPopUpComponent.
-                enterValidTelephoneNumber(validName).
-                isDataAccepted(clubPopUpComponentId[2]);
+        isDataAccepted = addClubPopUpComponent
+                .enterValidWhatsApp(validName)
+                .isDataAccepted(clubPopUpComponentId[2]);
         softAssert.assertTrue(isDataAccepted);
-        isDataAccepted = addClubPopUpComponent.
-                enterValidTelephoneNumber(validEmail).
-                isDataAccepted(clubPopUpComponentId[3]);
+        isDataAccepted = addClubPopUpComponent
+                .enterValidEmail(validEmail)
+                .isDataAccepted(clubPopUpComponentId[3]);
         softAssert.assertTrue(isDataAccepted);
-        isDataAccepted = addClubPopUpComponent.
-                enterValidTelephoneNumber(validName).
-                isDataAccepted(clubPopUpComponentId[4]);
+        isDataAccepted = addClubPopUpComponent
+                .enterValidSkype(validName)
+                .isDataAccepted(clubPopUpComponentId[4]);
         softAssert.assertTrue(isDataAccepted);
-        isDataAccepted = addClubPopUpComponent.
-                enterValidTelephoneNumber(validName).
-                isDataAccepted(clubPopUpComponentId[5]);
+        isDataAccepted = addClubPopUpComponent
+                .enterValidSite(validName)
+                .isDataAccepted(clubPopUpComponentId[5]);
         softAssert.assertTrue(isDataAccepted);
-*/
+        addClubPopUpComponent
+                .clickOnNextStepButton()
+                .inputInDescriptionField(descriptionText)
+                .clickOnCompleteButton();
 
         softAssert.assertAll();
+
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
