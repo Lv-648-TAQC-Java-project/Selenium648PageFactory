@@ -7,6 +7,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.elements.custom_elements.Label;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.ProfileEditPopUpLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -24,7 +25,7 @@ public class ProfileEditPopUpComponent extends BasePage {
     private Button saveButton;
     @FindBy(how = How.XPATH, using = ProfileEditPopUpLocators.PASSWORD_EDIT_CHECKBOX_XPATH)
     private CheckBox changePassword;
-    @FindBy(how = How.XPATH, using = ProfileEditPopUpLocators.SAVE_BUTTON_XPATH)
+    @FindBy(how = How.XPATH, using = ProfileEditPopUpLocators.SAVE_CHANGE_BUTTON_XPATH)
     private Button saveChangeButton;
     @FindBy(how = How.XPATH, using = ProfileEditPopUpLocators.CURRENT_PASSWORD_INPUT_XPATH)
     private Input currentPasswordInput;
@@ -83,7 +84,7 @@ public class ProfileEditPopUpComponent extends BasePage {
         try {
             changePassword.click();
         } catch (org.openqa.selenium.ElementClickInterceptedException e) {
-            sleep(100);
+            sleep(200);
             return clickOnChangePasswordCheckBox();
         }
         return this;
@@ -95,6 +96,7 @@ public class ProfileEditPopUpComponent extends BasePage {
     }
 
     public String getErrorMessageCurrentPasswordInput() {
+        waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.CURRENT_PASSWORD_ERROR_MESSAGE_XPATH),10);
         return currentPasswordErrorMessage.getText();
     }
 
@@ -103,7 +105,7 @@ public class ProfileEditPopUpComponent extends BasePage {
     }
 
     public String getErrorMessageConfirmPasswordInput() {
-        return confirmPasswordInput.getText();
+        return confirmPasswordErrorMessage.getText();
     }
 
     public String getCurrentPasswordInputBorderColor() {
@@ -119,22 +121,30 @@ public class ProfileEditPopUpComponent extends BasePage {
     }
 
     public ProfileEditPopUpComponent fillInCurrentPasswordInput(String currentPassword) {
+        waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.CURRENT_PASSWORD_INPUT_XPATH),5);
         currentPasswordInput.clear();
         currentPasswordInput.sendKeys(currentPassword);
         return this;
     }
 
     public ProfileEditPopUpComponent fillInNewPasswordInput(String newPassword) {
+        waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.NEW_PASSWORD_INPUT_XPATH), 5);
         newPasswordInput.clear();
         newPasswordInput.sendKeys(newPassword);
         return this;
     }
 
     public ProfileEditPopUpComponent fillInConfirmPasswordInput(String confirmPassword) {
+        waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.CONFIRM_PASSWORD_INPUT_XPATH), 5);
         confirmPasswordInput.clear();
         confirmPasswordInput.sendKeys(confirmPassword);
         return this;
     }
 
+    public ProfileEditPopUpComponent checkChangePasswordCheckBox(){
+        waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.PASSWORD_EDIT_CHECKBOX_XPATH), 5);
+        changePassword.toggle();
+        return this;
+    }
 
 }

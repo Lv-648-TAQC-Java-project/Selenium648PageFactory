@@ -58,6 +58,7 @@ public class AdvancedSearchTest extends TestRunner {
         softAssert.assertAll();
     }
 
+
     @DataProvider
     public Object[][] checkByAgeDataProvider() {
         return new Object[][]{

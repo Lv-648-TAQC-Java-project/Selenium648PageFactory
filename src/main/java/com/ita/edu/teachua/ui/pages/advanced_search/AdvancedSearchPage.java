@@ -294,7 +294,7 @@ public class AdvancedSearchPage extends BasePage {
         return this;
     }
 
-    //?
+
     public List<ClubsItemComponent> getCards() {
         List<ClubsItemComponent> clubBlocks = new ArrayList<>();
         for (WebElement j : centerBlocks) {
