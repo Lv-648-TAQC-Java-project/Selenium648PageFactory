@@ -8,7 +8,9 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Label;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.ProfileEditPopUpLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
@@ -96,53 +98,74 @@ public class ProfileEditPopUpComponent extends BasePage {
     }
 
     public String getErrorMessageCurrentPasswordInput() {
-        waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.CURRENT_PASSWORD_ERROR_MESSAGE_XPATH),10);
-        return currentPasswordErrorMessage.getText();
+        return currentPasswordErrorMessage.getAttribute("innerText");
     }
 
     public String getErrorMessageNewPasswordInput() {
-        return newPasswordErrorMessage.getText();
+        return newPasswordErrorMessage.getAttribute("innerText");
     }
 
     public String getErrorMessageConfirmPasswordInput() {
-        return confirmPasswordErrorMessage.getText();
+        return confirmPasswordErrorMessage.getAttribute("innerText");
     }
 
     public String getCurrentPasswordInputBorderColor() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return currentPasswordInput.getCssValue("border-color");
     }
 
     public String getNewPasswordInputBorderColor() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return newPasswordInput.getCssValue("border-color");
     }
 
     public String getConfirmPasswordInputBorderColor() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return confirmPasswordInput.getCssValue("border-color");
     }
 
     public ProfileEditPopUpComponent fillInCurrentPasswordInput(String currentPassword) {
         waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.CURRENT_PASSWORD_INPUT_XPATH),5);
-        currentPasswordInput.clear();
+        Actions act = new Actions(driver);
+        act.doubleClick(currentPasswordInput).perform();
+        currentPasswordInput.sendKeys(Keys.DELETE);
         currentPasswordInput.sendKeys(currentPassword);
         return this;
     }
 
     public ProfileEditPopUpComponent fillInNewPasswordInput(String newPassword) {
         waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.NEW_PASSWORD_INPUT_XPATH), 5);
-        newPasswordInput.clear();
+        Actions act = new Actions(driver);
+        act.doubleClick(newPasswordInput).perform();
+        newPasswordInput.sendKeys(Keys.DELETE);
         newPasswordInput.sendKeys(newPassword);
         return this;
     }
 
     public ProfileEditPopUpComponent fillInConfirmPasswordInput(String confirmPassword) {
         waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.CONFIRM_PASSWORD_INPUT_XPATH), 5);
-        confirmPasswordInput.clear();
+        Actions act = new Actions(driver);
+        act.doubleClick(confirmPasswordInput).perform();
+        confirmPasswordInput.sendKeys(Keys.DELETE);
         confirmPasswordInput.sendKeys(confirmPassword);
         return this;
     }
 
     public ProfileEditPopUpComponent checkChangePasswordCheckBox(){
         waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.PASSWORD_EDIT_CHECKBOX_XPATH), 5);
+
         changePassword.toggle();
         return this;
     }

@@ -451,30 +451,30 @@ public class OwnerProfileTest extends TestRunner {
                 .clickEditProfile()
                 .checkChangePasswordCheckBox()
 
-                .fillInCurrentPasswordInput(valueProvider.getAdminPassword())
+                .fillInCurrentPasswordInput("")
                 .fillInNewPasswordInput("NewPassword101!")
-                .fillInConfirmPasswordInput("")
+                .fillInConfirmPasswordInput("NewPassword101!")
                 .clickOnSaveChangeButton();
-        softAssert.assertEquals(editProfile.getErrorMessageConfirmPasswordInput(), "Будь ласка, підтвердіть пароль");
-        softAssert.assertEquals(editProfile.getConfirmPasswordInputBorderColor(), "rgb(255, 77, 79)", "Confirm password input isn't red");
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        editProfile.fillInCurrentPasswordInput(valueProvider.getAdminPassword())
+        softAssert.assertEquals(editProfile.getErrorMessageCurrentPasswordInput(), "Введіть старий пароль");
+        softAssert.assertEquals(editProfile.getCurrentPasswordInputBorderColor(), "rgb(255, 77, 79)", "Current password input isn't red");
+       editProfile
+                .fillInCurrentPasswordInput(valueProvider.getAdminPassword())
                 .fillInNewPasswordInput("")
                 .fillInConfirmPasswordInput("NewPassword101!")
                 .clickOnSaveChangeButton();
         softAssert.assertEquals(editProfile.getErrorMessageNewPasswordInput(), "Будь ласка, введіть новий пароль");
         softAssert.assertEquals(editProfile.getNewPasswordInputBorderColor(), "rgb(255, 77, 79)", "New password input isn't red");
 
-        editProfile.fillInCurrentPasswordInput("")
+        editProfile.fillInCurrentPasswordInput(valueProvider.getAdminPassword())
                 .fillInNewPasswordInput("NewPassword101!")
-                .fillInConfirmPasswordInput("NewPassword101!")
+                .fillInConfirmPasswordInput("")
                 .clickOnSaveChangeButton();
-        softAssert.assertEquals(editProfile.getErrorMessageCurrentPasswordInput(), "Введіть старий пароль");
-        softAssert.assertEquals(editProfile.getCurrentPasswordInputBorderColor(), "rgb(255, 77, 79)", "Current password input isn't red");
+        softAssert.assertEquals(editProfile.getErrorMessageConfirmPasswordInput(), "Будь ласка, підтвердіть пароль");
+        softAssert.assertEquals(editProfile.getConfirmPasswordInputBorderColor(), "rgb(255, 77, 79)", "Confirm password input isn't red");
+
+
+
+
 
         softAssert.assertAll();
     }
