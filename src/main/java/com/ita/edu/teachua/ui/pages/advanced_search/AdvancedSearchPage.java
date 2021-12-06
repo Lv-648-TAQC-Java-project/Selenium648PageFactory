@@ -329,7 +329,7 @@ public class AdvancedSearchPage extends BasePage {
         List<WebElement> titles;
         List<String> stringCards = new ArrayList<>();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -346,14 +346,10 @@ public class AdvancedSearchPage extends BasePage {
 
     public boolean isAlphabeticallySorted(List<String> titles, boolean asc) {
         for (int j = 0; j < titles.size() - 1; j++) {
-            System.out.println(titles.get(j));
-            System.out.println(titles.get(j + 1));
             char[] firstTitle = titles.get(j).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9]", "").toCharArray();
             char[] secondTitle = titles.get(j + 1).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9]", "").toCharArray();
             int wordLength = Math.min(firstTitle.length, secondTitle.length);
             for (int k = 0; k < wordLength; k++) {
-                System.out.println("fw letter: " + firstTitle[k]);
-                System.out.println("sw letter: " + secondTitle[k]);
                 if (asc) {
                     if (firstTitle[k] < secondTitle[k]) {
                         break;
@@ -374,16 +370,29 @@ public class AdvancedSearchPage extends BasePage {
     }
 
     public List<WebElement> getAllTitlesOfCards() {
-        sleep(1000);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return cartTitles;
     }
 
     public int getNumberOfPagesWithClubs() {
-        sleep(1000);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return Integer.parseInt(lastPageButton.getInnerText());
     }
 
     public AdvancedSearchPage clickOnArrowUpButton() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         arrowUpButton.click();
         return this;
     }
