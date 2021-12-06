@@ -11,8 +11,5 @@ public class DivElement extends BaseElement implements Div {
         super(element);
     }
 
-    public boolean isActive() {
-        return getWrappedElement().isDisplayed();
-    }
 
 }

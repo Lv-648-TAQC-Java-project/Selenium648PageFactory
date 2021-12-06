@@ -4,10 +4,6 @@ import com.ita.edu.teachua.ui.elements.custom_elements.*;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.AddClubPopUpComponentLocators;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.ProfileDynamicLabelsLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -25,7 +21,6 @@ public class AddClubPopUpComponent extends BasePage {
     private Input ageTo;
     @FindBy(how = How.XPATH, using = AddClubPopUpComponentLocators.NEXT_STEP_BUTTON_XPATH)
     private Button nextStepButton;
-
     @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.TELEPHONE_NUMBER_ID)
     private Input telephoneNumber;
     @FindBy(how = How.ID, using = AddClubPopUpComponentLocators.FACEBOOK_FIELD_ID)
@@ -133,13 +128,13 @@ public class AddClubPopUpComponent extends BasePage {
     }
 
 
-
     public AddClubPopUpComponent inputInDescriptionField(String text) {
         descriptionField.clear();
         descriptionField.sendKeys(text);
         sleep(1000);
         return this;
     }
+
     public AddClubPopUpComponent clickOnCompleteButton() {
         completeButton.click();
         return this;
@@ -159,9 +154,10 @@ public class AddClubPopUpComponent extends BasePage {
     /*Base info area end*/
 
     /*Contacts area start*/
-    public Title getAddedLocationTitle(){
+    public Title getAddedLocationTitle() {
         return addedLocationTitle;
     }
+
     public AddLocationPopUpComponent clickOnAddLocation() {
         addLocation.click();
         return new AddLocationPopUpComponent(driver);
@@ -172,26 +168,31 @@ public class AddClubPopUpComponent extends BasePage {
         telephoneNumber.sendKeys(number);
         return this;
     }
+
     public AddClubPopUpComponent enterValidFacebook(String facebook) {
         facebookField.clear();
         facebookField.sendKeys(facebook);
         return this;
     }
+
     public AddClubPopUpComponent enterValidWhatsApp(String whatsApp) {
         whatsAppField.clear();
         whatsAppField.sendKeys(whatsApp);
         return this;
     }
+
     public AddClubPopUpComponent enterValidEmail(String email) {
         emailField.clear();
         emailField.sendKeys(email);
         return this;
     }
+
     public AddClubPopUpComponent enterValidSkype(String skype) {
         skypeField.clear();
         skypeField.sendKeys(skype);
         return this;
     }
+
     public AddClubPopUpComponent enterValidSite(String site) {
         siteField.clear();
         siteField.sendKeys(site);

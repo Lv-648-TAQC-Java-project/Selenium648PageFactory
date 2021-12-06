@@ -10,18 +10,4 @@ public class LabelElement extends BaseElement implements Label {
         super(element);
     }
 
-    public boolean isDisplayed() {
-        return getWrappedElement().isDisplayed();
-    }
-
-    @Override
-    public void click() {
-        getWrappedElement().click();
-    }
-
-    public String getText() {
-        return getWrappedElement().getText();
-
-    }
-
 }

@@ -9,7 +9,4 @@ public class DropdownElement extends BaseElement implements Dropdown {
         super(element);
     }
 
-    public void click() {
-        getWrappedElement().click();
-    }
 }

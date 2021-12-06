@@ -5,5 +5,5 @@ import com.ita.edu.teachua.ui.elements.base_element.ImplementedBy;
 
 @ImplementedBy(DivElement.class)
 public interface Div extends Element {
-    boolean isActive();
+
 }

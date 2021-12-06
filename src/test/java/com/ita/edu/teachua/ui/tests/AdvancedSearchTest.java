@@ -3,15 +3,12 @@ package com.ita.edu.teachua.ui.tests;
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
 import com.ita.edu.teachua.ui.pages.advanced_search.ClubsItemComponent;
 import com.ita.edu.teachua.ui.pages.main_page.MainPage;
-import io.qameta.allure.Description;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
-import java.util.List;
 
 public class AdvancedSearchTest extends TestRunner {
 

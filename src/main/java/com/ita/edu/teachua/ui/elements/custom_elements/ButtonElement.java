@@ -9,20 +9,7 @@ public class ButtonElement extends BaseElement implements Button {
         super(element);
     }
 
-    public void click() {
-        getWrappedElement().click();
-    }
-
-    public boolean isDisplayed() {
-        return getWrappedElement().isDisplayed();
-    }
-
     public String getInnerText() {
         return getWrappedElement().getAttribute("innerText");
     }
-
-    public boolean isActive() {
-        return getWrappedElement().isEnabled();
-    }
-
 }

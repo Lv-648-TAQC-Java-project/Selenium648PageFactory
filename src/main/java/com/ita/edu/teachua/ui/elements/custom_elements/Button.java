@@ -5,11 +5,5 @@ import com.ita.edu.teachua.ui.elements.base_element.ImplementedBy;
 
 @ImplementedBy(ButtonElement.class)
 public interface Button extends Element {
-    void click();
-
-    boolean isDisplayed();
-
     String getInnerText();
-
-    boolean isActive();
 }
