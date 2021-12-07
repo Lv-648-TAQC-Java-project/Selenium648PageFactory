@@ -307,9 +307,6 @@ public class AdvancedSearchPage extends BasePage {
         return clubBlocks;
     }
 
-    public boolean isAdvanceSearchFieldDisappear() {
-        return searchFields.size() == 0;
-    }
 
     @Step("Get text of title 'Розширений пошук'")
     public String getTitleOfAdvancedSearchField() {

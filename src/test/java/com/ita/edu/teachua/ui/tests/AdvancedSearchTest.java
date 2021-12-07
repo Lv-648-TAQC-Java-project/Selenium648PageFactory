@@ -46,8 +46,9 @@ public class AdvancedSearchTest extends TestRunner {
 
         softAssert.assertAll();
     }
-
-    @Test(description = "TUA-224 Advanced search button opens Розширений пошук section")
+    @Description("TUA-224 Advanced search button opens Розширений пошук section")
+    @Issue("TUA-224")
+    @Test
     public void openAdvancedSearchFieldTest() {
         SoftAssert softAssert = new SoftAssert();
         MainPage mainPage = new MainPage(driver);

@@ -205,12 +205,6 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnCompleteButton();
 
         softAssert.assertAll();
-
-
-
-        /*Title addedLoactionTitle = addLocationPopUpComponent
-                .clickOnAddButtonToClubPopUp()
-                .getAddedLocationTitle();*/
     }
 
     @Issue("TUA-252")
@@ -386,7 +380,7 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile();
-        SoftAssert softAssert=new SoftAssert();
+        SoftAssert softAssert = new SoftAssert();
         for (int i = 0; i < dataAndExpected.length; i += 2) {
             edit = edit.fillLastName(dataAndExpected[i]);
             softAssert.assertEquals(dataAndExpected[i + 1], edit.getMessage());
@@ -441,29 +435,24 @@ public class OwnerProfileTest extends TestRunner {
             softAssert.assertEquals(dataAndExpected[i + 1], edit.getMessage());
         }
         softAssert.assertAll();
-
     }
 
-    @Test(description = "TUA-359 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up")
+    @Description("TUA-359 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up")
+    @Issue("TUA-359")
+    @Test
     public void getErrorMessageInChangePasswordPopUpTest() {
         HeaderPage headerPage = new HeaderPage(driver);
         ProfileEditPopUpComponent editProfile = new ProfileEditPopUpComponent(driver);
-        SoftAssert softAssert = new SoftAssert();
         headerPage.authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile()
-                .clickOnChangePasswordCheckBox()
-                .fillInCurrentPasswordInput(valueProvider.getAdminPassword())
-                .fillInNewPasswordInput("NewPassword101!")
-                .fillInConfirmPasswordInput("")
-                .clickOnSaveChangeButton();
-        softAssert.assertEquals(editProfile.getErrorMessageConfirmPasswordInput(), "Будь ласка, підтвердіть пароль");
-        softAssert.assertEquals(editProfile.getConfirmPasswordInputBorderColor(), "rgb(255, 77, 79)", "Confirm password input isn't red");
-        editProfile.fillInCurrentPasswordInput("")
+                .checkChangePasswordCheckBox()
+                .fillInCurrentPasswordInput("")
                 .fillInNewPasswordInput("NewPassword101!")
                 .fillInConfirmPasswordInput("NewPassword101!")
                 .clickOnSaveChangeButton();
+        SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(editProfile.getErrorMessageCurrentPasswordInput(), "Введіть старий пароль");
         softAssert.assertEquals(editProfile.getCurrentPasswordInputBorderColor(), "rgb(255, 77, 79)", "Current password input isn't red");
         editProfile.fillInCurrentPasswordInput(valueProvider.getAdminPassword())
@@ -472,6 +461,12 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnSaveChangeButton();
         softAssert.assertEquals(editProfile.getErrorMessageNewPasswordInput(), "Будь ласка, введіть новий пароль");
         softAssert.assertEquals(editProfile.getNewPasswordInputBorderColor(), "rgb(255, 77, 79)", "New password input isn't red");
+        editProfile.fillInCurrentPasswordInput(valueProvider.getAdminPassword())
+                .fillInNewPasswordInput("NewPassword101!")
+                .fillInConfirmPasswordInput("")
+                .clickOnSaveChangeButton();
+        softAssert.assertEquals(editProfile.getErrorMessageConfirmPasswordInput(), "Будь ласка, підтвердіть пароль");
+        softAssert.assertEquals(editProfile.getConfirmPasswordInputBorderColor(), "rgb(255, 77, 79)", "Confirm password input isn't red");
         softAssert.assertAll();
     }
 
