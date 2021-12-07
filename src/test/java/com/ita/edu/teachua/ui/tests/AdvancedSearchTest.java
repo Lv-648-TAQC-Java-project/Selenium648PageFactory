@@ -3,6 +3,7 @@ package com.ita.edu.teachua.ui.tests;
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
 import com.ita.edu.teachua.ui.pages.advanced_search.ClubsItemComponent;
 import com.ita.edu.teachua.ui.pages.main_page.MainPage;
+import io.qameta.allure.Description;
 import io.qameta.allure.Issue;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -138,7 +139,9 @@ public class AdvancedSearchTest extends TestRunner {
         softAssert.assertAll();
     }
 
-    @Test(description = "[TUA-103] Verify that sorting for advanced search works correctly (In ascending order)")
+    @Issue("TUA-103")
+    @Description("Verify that sorting for advanced search works correctly (In ascending order)")
+    @Test(description = "TUA-103")
     public void checkSortingClubsByNameInAscendingOrder() {
         MainPage mainPage = new MainPage(driver);
         AdvancedSearchPage advSearch = mainPage.clickAdvancedSearchButton();
@@ -146,6 +149,8 @@ public class AdvancedSearchTest extends TestRunner {
         Assert.assertTrue(actual);
     }
 
+    @Issue("TUA-103")
+    @Description("Verify that sorting for advanced search works correctly (In descending order)")
     @Test(description = "[TUA-103] Verify that sorting for advanced search works correctly (In descending order)")
     public void checkSortingClubsByNameInDescendingOrder() {
         MainPage mainPage = new MainPage(driver);
@@ -164,7 +169,7 @@ public class AdvancedSearchTest extends TestRunner {
         }
         int n = advancedSearchPage.getNumberOfPagesWithClubs();
         for (int i = 0; i < n; i++) {
-            /*titles = advancedSearchPage.getAllTitlesOfCards();
+            /*titles = advancedSearchPage.getAllTitlesOfCards(); TODO fix
             for (WebElement card : titles) {
                 stringCards.add(card.getText());
             }*/

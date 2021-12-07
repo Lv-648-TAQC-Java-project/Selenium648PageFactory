@@ -6,6 +6,8 @@ import com.ita.edu.teachua.ui.pages.header_page.RegisterPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddClubPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddLocationPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfileEditPopUpComponent;
+import io.qameta.allure.Description;
+import io.qameta.allure.Issue;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -218,8 +220,9 @@ public class OwnerProfileTest extends TestRunner {
 
     }
 
-    @Test(description = "Implement TUA-158 Verify that a 'Керівник' can add location to the " +
-            "list of locations after filling in all mandatory and all optional fields with valid data")
+    @Issue("TUA-158")
+    @Description("Verify that a 'Керівник' can add location to the list of locations after filling in all mandatory and all optional fields with valid data")
+    @Test(description = "TUA-158")
     public void testAddLocationByOwner() {
         HeaderPage header = new HeaderPage(driver);
         boolean actual = header.authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -242,7 +245,9 @@ public class OwnerProfileTest extends TestRunner {
         Assert.assertTrue(actual);
     }
 
-    @Test(description = "UA-214 [Center] Verify that user can create a center with valid data")
+    @Issue("UA-214")
+    @Description("Verify that user can create a center with valid data")
+    @Test(description = "UA-214")
     public void testAddLocationFromProfilePage() {
         HeaderPage header = new HeaderPage(driver);// TODO create dropDown element from profile page
         header.authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -262,7 +267,9 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnAddButtonToCenterPopUp();
     }
 
-    @Test(description = "TUA-321 Verify if error message is displayed after inputting invalid data for recover or change the password.")
+    @Issue("TUA-321")
+    @Description("Verify if error message is displayed after inputting invalid data for recover or change the password.")
+    @Test(description = "TUA-321")
     public void testPasswordRecovery() {
         HeaderPage header = new HeaderPage(driver);
         header.clickOnGuestDropdown();
