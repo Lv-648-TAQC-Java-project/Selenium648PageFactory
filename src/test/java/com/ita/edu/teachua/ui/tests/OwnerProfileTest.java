@@ -6,6 +6,8 @@ import com.ita.edu.teachua.ui.pages.header_page.RegisterPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddClubPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddLocationPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfileEditPopUpComponent;
+import io.qameta.allure.Description;
+import io.qameta.allure.Issue;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -90,8 +92,9 @@ public class OwnerProfileTest extends TestRunner {
                 }
         };
     }
-
-    @Test(dataProvider = "addClubPopUpComponentData", description = "TUA-237 This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.")
+    @Issue("TUA-237")
+    @Description("TUA-237 This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.")
+    @Test(dataProvider = "addClubPopUpComponentData")
     public void VerifyThatOwnerCanAddLocationOfClub(String validName,
                                                     String ageFrom,
                                                     String ageTo,
@@ -208,7 +211,9 @@ public class OwnerProfileTest extends TestRunner {
                 .getAddedLocationTitle();*/
     }
 
-    @Test(description = "TUA-252 This test case verifies that user cannot create a center with invalid data in 'Назва' field")
+    @Issue("TUA-252")
+    @Description("TUA-252 This test case verifies that user cannot create a center with invalid data in 'Назва' field")
+    @Test(description = "TUA-252")
     public void VerifyThatErrorMessagesIsDisplayedAfterUserLeavesFieldsEmptyAndClicksNextStepButton() {
         boolean errorsIsDisplayed = new HeaderPage(driver)
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())

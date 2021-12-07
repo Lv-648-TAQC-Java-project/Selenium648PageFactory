@@ -1,16 +1,21 @@
 package com.ita.edu.teachua.ui.tests;
 
+import com.ita.edu.teachua.utils.TestNgListeners;
 import com.ita.edu.teachua.utils.ValueProvider;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import lombok.SneakyThrows;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 
 import java.io.IOException;
 import java.time.Duration;
 
+@Listeners(TestNgListeners.class)
 public class TestRunner {
 
     protected static ValueProvider valueProvider;
@@ -22,13 +27,15 @@ public class TestRunner {
         valueProvider = new ValueProvider();
 
     }
-
+    @SneakyThrows()
     @BeforeMethod
-    public void beforeMethod() {
+    public void beforeMethod(ITestContext context) {
+
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(valueProvider.getBaseUrl());
+        context.setAttribute("driver",driver);
     }
 
     @AfterMethod
