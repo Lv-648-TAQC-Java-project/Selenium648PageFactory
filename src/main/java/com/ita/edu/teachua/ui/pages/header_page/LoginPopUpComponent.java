@@ -53,10 +53,10 @@ public class LoginPopUpComponent extends BasePage {
         return new HeaderPage(driver);
     }
 
-    /*public RestoringPopUpComponent clickOnForgotPasswordButton(){
-        forgotPasswordButton = new LinkElement(driver,LoginPopUpComponentLocators.FORGOT_PASSWORD_BUTTON);
-        waitElementToBeClickable(LoginPopUpComponentLocators.FORGOT_PASSWORD_BUTTON,5);
+    public RestoringBeginPopUpComponent clickOnForgotPasswordButton(){
+
+        //waitElementToBeClickable(LoginPopUpComponentLocators.FORGOT_PASSWORD_BUTTON,5);
         forgotPasswordButton.click();
-        return new RestoringPopUpComponent(driver);
-    }*/
+        return new RestoringBeginPopUpComponent(driver);
+    }
 }
