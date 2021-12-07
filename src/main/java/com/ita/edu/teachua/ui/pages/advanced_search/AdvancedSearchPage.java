@@ -2,8 +2,7 @@ package com.ita.edu.teachua.ui.pages.advanced_search;
 
 
 import com.ita.edu.teachua.ui.elements.custom_elements.*;
-import com.ita.edu.teachua.ui.locators.advanced_search.AdvancedSearchPageLocators;
-import com.ita.edu.teachua.ui.locators.clubs_page_locators.ClubsPageLocators;
+import com.ita.edu.teachua.ui.locators.advanced_search_page_locators.AdvancedSearchPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.NoSuchElementException;
@@ -84,8 +83,6 @@ public class AdvancedSearchPage extends BasePage {
     private Button nextPageButton;
     @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.LAST_PAGE_BUTTON_XPATH)
     private Button lastPageButton;
-    @FindAll(@FindBy(how = How.CSS, using = ClubsPageLocators.CARD_TITLE_CSS_SELECTOR))
-    private List<WebElement> cartTitles;
     @FindAll(@FindBy(how = How.CSS, using = AdvancedSearchPageLocators.CENTER_BLOCKS_CSS_SELECTOR))
     private List<Button> centerBlocks;
     @FindAll(@FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.ADVANCED_SEARCH_FIELD_TITLE_XPATH))
@@ -322,64 +319,12 @@ public class AdvancedSearchPage extends BasePage {
         }
     }
 
-    public AdvancedSearchPage clickOnNextPageButton() {
+    @Step("go to next page with clubs")
+    public void clickOnNextPageButton() {
         nextPageButton.click();
-        return this;
     }
 
-    public List<String> getTitlesFromAllPages() { // TODO rename
-        List<WebElement> titles;
-        List<String> stringCards = new ArrayList<>();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        int n = this.getNumberOfPagesWithClubs();
-        for (int i = 0; i < n; i++) {
-            titles = getAllTitlesOfCards();
-            for (WebElement card : titles) {
-                stringCards.add(card.getText());
-            }
-            clickOnNextPageButton();
-        }
-        return stringCards;
-    }
-
-    public boolean isAlphabeticallySorted(List<String> titles, boolean asc) {
-        for (int j = 0; j < titles.size() - 1; j++) {
-            char[] firstTitle = titles.get(j).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9]", "").toCharArray();
-            char[] secondTitle = titles.get(j + 1).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9]", "").toCharArray();
-            int wordLength = Math.min(firstTitle.length, secondTitle.length);
-            for (int k = 0; k < wordLength; k++) {
-                if (asc) {
-                    if (firstTitle[k] < secondTitle[k]) {
-                        break;
-                    } else if (firstTitle[k] > secondTitle[k]) {
-                        return false;
-                    }
-                }
-                if (!asc) {
-                    if (firstTitle[k] > secondTitle[k]) {
-                        break;
-                    } else if (firstTitle[k] < secondTitle[k]) {
-                        return false;
-                    }
-                }
-            }
-        }
-        return true;
-    }
-
-    public List<WebElement> getAllTitlesOfCards() {
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        return cartTitles;
-    }
-
+    @Step("Get number of pages with clubs")
     public int getNumberOfPagesWithClubs() {
         try {
             Thread.sleep(1000);
@@ -389,6 +334,7 @@ public class AdvancedSearchPage extends BasePage {
         return Integer.parseInt(lastPageButton.getInnerText());
     }
 
+    @Step("Click on arrow up to sort clubs in descending order")
     public AdvancedSearchPage clickOnArrowUpButton() {
         try {
             Thread.sleep(1000);
@@ -398,5 +344,4 @@ public class AdvancedSearchPage extends BasePage {
         arrowUpButton.click();
         return this;
     }
-
 }

@@ -13,6 +13,8 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AdvancedSearchTest extends TestRunner {
 
@@ -46,6 +48,7 @@ public class AdvancedSearchTest extends TestRunner {
 
         softAssert.assertAll();
     }
+
     @Description("TUA-224 Advanced search button opens Розширений пошук section")
     @Issue("TUA-224")
     @Test
@@ -141,20 +144,68 @@ public class AdvancedSearchTest extends TestRunner {
         softAssert.assertAll();
     }
 
-    @Test(description = "[TUA-103] Verify that sorting for advanced search works correctly")
+    @Issue("TUA-103")
+    @Description("Verify that sorting for advanced search works correctly (In ascending order)")
+    @Test(description = "TUA-103")
     public void checkSortingClubsByNameInAscendingOrder() {
         MainPage mainPage = new MainPage(driver);
         AdvancedSearchPage advSearch = mainPage.clickAdvancedSearchButton();
-        boolean actual = advSearch.isAlphabeticallySorted(advSearch.getTitlesFromAllPages(), true);
+        boolean actual = isAlphabeticallySorted(getTitlesFromAllPages(advSearch), true);
         Assert.assertTrue(actual);
     }
 
-    @Test(description = "[TUA-103] Verify that sorting for advanced search works correctly")
+    @Issue("TUA-103")
+    @Description("Verify that sorting for advanced search works correctly (In descending order)")
+    @Test(description = "[TUA-103] Verify that sorting for advanced search works correctly (In descending order)")
     public void checkSortingClubsByNameInDescendingOrder() {
         MainPage mainPage = new MainPage(driver);
         AdvancedSearchPage advSearch = mainPage.clickAdvancedSearchButton().clickOnArrowUpButton();
-        boolean actual = advSearch.isAlphabeticallySorted(advSearch.getTitlesFromAllPages(), false);
+        boolean actual = isAlphabeticallySorted(getTitlesFromAllPages(advSearch), false);
         Assert.assertTrue(actual);
+    }
+
+    public List<String> getTitlesFromAllPages(AdvancedSearchPage advancedSearchPage) {
+        //List<WebElement> titles;
+        List<String> stringCards = new ArrayList<>();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        int n = advancedSearchPage.getNumberOfPagesWithClubs();
+        for (int i = 0; i < n; i++) {
+            /*titles = advancedSearchPage.getAllTitlesOfCards(); TODO fix
+            for (WebElement card : titles) {
+                stringCards.add(card.getText());
+            }*/
+            advancedSearchPage.clickOnNextPageButton();
+        }
+        return stringCards;
+    }
+
+    public boolean isAlphabeticallySorted(List<String> titles, boolean asc) {
+        for (int j = 0; j < titles.size() - 1; j++) {
+            char[] firstTitle = titles.get(j).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9]", "").toCharArray();
+            char[] secondTitle = titles.get(j + 1).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9]", "").toCharArray();
+            int wordLength = Math.min(firstTitle.length, secondTitle.length);
+            for (int k = 0; k < wordLength; k++) {
+                if (asc) {
+                    if (firstTitle[k] < secondTitle[k]) {
+                        break;
+                    } else if (firstTitle[k] > secondTitle[k]) {
+                        return false;
+                    }
+                }
+                if (!asc) {
+                    if (firstTitle[k] > secondTitle[k]) {
+                        break;
+                    } else if (firstTitle[k] < secondTitle[k]) {
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
     }
 }
 

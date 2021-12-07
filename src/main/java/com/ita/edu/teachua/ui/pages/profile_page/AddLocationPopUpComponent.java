@@ -52,22 +52,17 @@ public class AddLocationPopUpComponent extends BasePage {
         waitUntilVisibilityOfElementLocated(By.xpath(AddLocationPopUpComponentLocators.ADD_LOCATION_BLOCK_HEADER_XPATH), 5);
         return addLocationPopUpBlock.isDisplayed();
     }
-    @Step("Clic on 'location name field'")
-    public AddLocationPopUpComponent clickOnLocationNameField() {
-        locationNameField.click();
-        return this;
-    }
-  
+
     @Step("Enter data into the 'Назва' field of 'Додати локацію' pop-up ")
     public AddLocationPopUpComponent sendKeysLocationNameField(String locationName) {
-        locationNameField.sendKeys(locationName);
+        locationNameField.set(locationName);
         return this;
     }
 
     @Step("Click on 'Місто' dropdown")
     public CityDropdownComponent clickOnCityDropdown() {
         cityDropdown.click();
-        sleep(1000);
+        sleep(1000);//TODO ask why
         return new CityDropdownComponent(driver);
     }
 
@@ -76,50 +71,37 @@ public class AddLocationPopUpComponent extends BasePage {
         districtDropdown.click();
         return new DistrictDropdownComponent(driver);
     }
+
     @Step("Click on 'Метро/Місцевість' dropdown")
     public LocalityDropdownComponent clickOnLocalityDropdown() {
         localityDropdown.click();
         return new LocalityDropdownComponent(driver);
     }
-    @Step("Click on 'Адреса' field")
-    public AddLocationPopUpComponent clickOnAddressField() {
-        addressField.click();
-        return this;
-    }
 
     @Step("Enter data {address} into the 'Адреса' field")
     public AddLocationPopUpComponent sendKeysAddressField(String address) {
-        addressField.sendKeys(address);
-        return this;
-    }
-    @Step("Click on 'Географічні координати' field")
-    public AddLocationPopUpComponent clickOnCoordinatesField() {
-        coordinatesField.click();
+        addressField.set(address);
         return this;
     }
 
     @Step("Enter data {coordinates} into the 'Географічні координати' field ")
     public AddLocationPopUpComponent sendKeysCoordinatesField(String coordinates) {
-        coordinatesField.sendKeys(coordinates);
-        return this;
-    }
-    @Step("Click on 'Номер телефону' field")
-    public AddLocationPopUpComponent clickOnPhoneField() {
-        phoneField.click();
+        coordinatesField.set(coordinates);
         return this;
     }
 
     @Step("Enter data {phoneNumber} into the 'Номер телефону' field")
     public AddLocationPopUpComponent sendKeysPhoneField(String phoneNumber) {
-        phoneField.sendKeys(phoneNumber);
+        phoneField.set(phoneNumber);
         return this;
     }
-  
+
     @Step("Click the 'Додати' button")
     public AddCenterPopUpComponent clickOnAddButtonToCenterPopUp() {
         addButton.click();
         return new AddCenterPopUpComponent(driver);
     }
+
     @Step("Click the 'Додати' button")
     public AddClubPopUpComponent clickOnAddButtonToClubPopUp() {
         addButtonToClubPopUp.click();

@@ -94,6 +94,7 @@ public class OwnerProfileTest extends TestRunner {
                 }
         };
     }
+
     @Issue("TUA-237")
     @Description("TUA-237 This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.")
     @Test(dataProvider = "addClubPopUpComponentData")
@@ -127,7 +128,6 @@ public class OwnerProfileTest extends TestRunner {
 
 
         boolean isDataAccepted = addLocationPopUpComponent
-                .clickOnLocationNameField()
                 .sendKeysLocationNameField(validName)
                 .isDataAccepted(locationPopUpComponentId[0]);
         softAssert.assertTrue(isDataAccepted);
@@ -151,19 +151,16 @@ public class OwnerProfileTest extends TestRunner {
         softAssert.assertTrue(isDataAccepted);
 
         isDataAccepted = addLocationPopUpComponent
-                .clickOnAddressField()
                 .sendKeysAddressField(validAddress)
                 .isDataAccepted(locationPopUpComponentId[4]);
         softAssert.assertTrue(isDataAccepted);
 
         isDataAccepted = addLocationPopUpComponent
-                .clickOnCoordinatesField()
                 .sendKeysCoordinatesField(validCoordinates)
                 .isDataAccepted(locationPopUpComponentId[5]);
         softAssert.assertTrue(isDataAccepted);
 
         isDataAccepted = addLocationPopUpComponent
-                .clickOnPhoneField()
                 .sendKeysPhoneField(validPhone)
                 .isDataAccepted(locationPopUpComponentId[6]);
         softAssert.assertTrue(isDataAccepted);
@@ -224,15 +221,15 @@ public class OwnerProfileTest extends TestRunner {
 
     }
 
-    @Test(description = "Implement TUA-158 Verify that a 'Керівник' can add location to the " +
-            "list of locations after filling in all mandatory and all optional fields with valid data")
+    @Issue("TUA-158")
+    @Description("Verify that a 'Керівник' can add location to the list of locations after filling in all mandatory and all optional fields with valid data")
+    @Test(description = "TUA-158")
     public void testAddLocationByOwner() {
         HeaderPage header = new HeaderPage(driver);
         boolean actual = header.authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnAddCenterButton()
                 .clickOnAddLocation()
-                .clickOnLocationNameField()
                 .sendKeysLocationNameField("LocationTestName")
                 .clickOnCityDropdown()
                 .clickOnKyivButton()
@@ -249,14 +246,15 @@ public class OwnerProfileTest extends TestRunner {
         Assert.assertTrue(actual);
     }
 
-    @Test(description = "UA-214 [Center] Verify that user can create a center with valid data")
+    @Issue("UA-214")
+    @Description("Verify that user can create a center with valid data")
+    @Test(description = "UA-214")
     public void testAddLocationFromProfilePage() {
         HeaderPage header = new HeaderPage(driver);// TODO create dropDown element from profile page
         header.authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnAddCenterButton()
                 .clickOnAddLocation()
-                .clickOnLocationNameField()
                 .sendKeysLocationNameField("LocationTestName")
                 .clickOnCityDropdown()
                 .clickOnKyivButton()
@@ -264,16 +262,15 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnDesnianskyiButton()
                 .clickOnLocalityDropdown()
                 .clickOnAkademmistechkoButton()
-                .clickOnAddressField()
                 .sendKeysAddressField("SomeAddress")
-                .clickOnCoordinatesField()
                 .sendKeysCoordinatesField("50.46403522497495, 30.36469393119765")
-                .clickOnPhoneField()
                 .sendKeysPhoneField("0432143210")
                 .clickOnAddButtonToCenterPopUp();
     }
 
-    @Test(description = "TUA-321 Verify if error message is displayed after inputting invalid data for recover or change the password.")
+    @Issue("TUA-321")
+    @Description("Verify if error message is displayed after inputting invalid data for recover or change the password.")
+    @Test(description = "TUA-321")
     public void testPasswordRecovery() {
         HeaderPage header = new HeaderPage(driver);
         header.clickOnGuestDropdown();

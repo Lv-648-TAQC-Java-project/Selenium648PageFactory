@@ -31,6 +31,7 @@ public class ProfilePage extends BasePage {
         addButton.click();
         return new AddDropdownComponent(driver);
     }
+
     @Step("Click edit pop up")
     public ProfileEditPopUpComponent clickEditProfile() {
         editProfile.click();
