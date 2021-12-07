@@ -19,20 +19,21 @@ public class HeaderPage extends BasePage {
     public HeaderPage(WebDriver driver) {
         super(driver);
     }
-
+    @Step("Click on guest dropdown")
     public GuestDropdownComponent clickOnGuestDropdown() {
         guestDropdown.click();
         sleep(2000);
         return new GuestDropdownComponent(driver);
     }
 
-    @Step("Click on owner dropdown in the right upper corner")
+
+    @Step("Click on dropdown for authorized user in top right corner of header")
     public OwnerDropdownComponent clickOnOwnerDropdown() {
         guestDropdown.click();
         return new OwnerDropdownComponent(driver);
     }
 
-    @Step("Authorize user with valid email {0} and password {1}")
+    @Step("Authorize user with valid email {email} and password {password}")
     public HeaderPage authorize(String email, String password) {
         clickOnGuestDropdown().clickOnLoginButton().fillLoginFields(email, password);
         sleep(3000);

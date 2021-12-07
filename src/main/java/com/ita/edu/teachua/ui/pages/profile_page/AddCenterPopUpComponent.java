@@ -7,6 +7,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Div;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.locators.profile_locators.AddCenterPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -34,6 +35,7 @@ public class AddCenterPopUpComponent extends BasePage {
         super(driver);
     }
 
+    @Step("Click on '+Додати локацію' button")
     public AddLocationPopUpComponent clickOnAddLocation() {
         addLocation.click();
         return new AddLocationPopUpComponent(driver);

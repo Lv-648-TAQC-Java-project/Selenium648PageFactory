@@ -21,13 +21,14 @@ public class OwnerDropdownComponent extends BasePage {
     public OwnerDropdownComponent(WebDriver driver) {
         super(driver);
     }
-
+    @Step("Click on profile")
+    @Step("Click on 'Додати центр' button ")
     public AddCenterPopUpComponent clickOnAddCenterButton() {
         addCenterButton.click();
         return new AddCenterPopUpComponent(driver);
     }
 
-    @Step("Click on 'Мій Профіль'")
+    @Step("Click on 'Мій профіль' button in dropdown for authorized users")
     public ProfilePage clickOnProfile() {
         waitUntilElementToBeClickable(By.xpath(OwnerDropdownComponentLocators.MY_PROFILE_BUTTON_XPATH), 5);
         myProfileButton.click();

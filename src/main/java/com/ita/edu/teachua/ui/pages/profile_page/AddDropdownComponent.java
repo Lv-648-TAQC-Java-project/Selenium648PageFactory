@@ -26,7 +26,7 @@ public class AddDropdownComponent extends BasePage {
         return new AddCenterPopUpComponent(driver);
     }
 
-    @Step("Click on 'Додати гурток'")
+    @Step("Click on 'Додати гурток' button")
     public AddClubPopUpComponent clickOnAddClubButton() {
         waitUntilVisibilityOfElementLocated(By.xpath(AddDropDownComponentLocators.ADD_CLUB_BUTTON_XPATH), 5);
         addClubButton.click();

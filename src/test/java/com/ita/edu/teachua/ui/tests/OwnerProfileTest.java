@@ -94,8 +94,9 @@ public class OwnerProfileTest extends TestRunner {
                 }
         };
     }
-
-    @Test(dataProvider = "addClubPopUpComponentData", description = "TUA-237 This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.")
+    @Issue("TUA-237")
+    @Description("TUA-237 This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.")
+    @Test(dataProvider = "addClubPopUpComponentData")
     public void VerifyThatOwnerCanAddLocationOfClub(String validName,
                                                     String ageFrom,
                                                     String ageTo,
@@ -137,7 +138,8 @@ public class OwnerProfileTest extends TestRunner {
                 .isDataAccepted(locationPopUpComponentId[1]);
         softAssert.assertTrue(isDataAccepted);
 
-        isDataAccepted = addLocationPopUpComponent.clickOnDistrictDropdown()
+        isDataAccepted = addLocationPopUpComponent
+                .clickOnDistrictDropdown()
                 .clickOnDesnianskyiButton()
                 .isDataAccepted(locationPopUpComponentId[2]);
         softAssert.assertTrue(isDataAccepted);
@@ -211,7 +213,9 @@ public class OwnerProfileTest extends TestRunner {
                 .getAddedLocationTitle();*/
     }
 
-    @Test(description = "TUA-252 This test case verifies that user cannot create a center with invalid data in 'Назва' field")
+    @Issue("TUA-252")
+    @Description("TUA-252 This test case verifies that user cannot create a center with invalid data in 'Назва' field")
+    @Test(description = "TUA-252")
     public void VerifyThatErrorMessagesIsDisplayedAfterUserLeavesFieldsEmptyAndClicksNextStepButton() {
         boolean errorsIsDisplayed = new HeaderPage(driver)
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -338,7 +342,7 @@ public class OwnerProfileTest extends TestRunner {
         softassert.assertEquals(actual2, "Світлана");
         softassert.assertEquals(actual3, "svitlanawhite@gmail.com");
         softassert.assertEquals(actual4, "12345678");
-
+        softassert.assertAll();
 
     }
 

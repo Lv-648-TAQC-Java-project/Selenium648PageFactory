@@ -7,6 +7,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.elements.custom_elements.Label;
 import com.ita.edu.teachua.ui.locators.profile_locators.ProfileEditPopUpLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -44,20 +45,20 @@ public class ProfileEditPopUpComponent extends BasePage {
     public ProfileEditPopUpComponent(WebDriver driver) {
         super(driver);
     }
-
+    @Step("Fill phone number in (phone field)")
     public ProfileEditPopUpComponent fillPhone(String phoneNumber) {
         phone.set(phoneNumber);
         sleep(2000);
         return this;
     }
-
+    @Step("Fill first name in (first name field)")
     public ProfileEditPopUpComponent fillFirstName(String firstNameFill) {
         sleep(100);
         firstName.clear();
         firstName.set(firstNameFill);
         return this;
     }
-
+    @Step("Fill last name in (last name field)")
     public ProfileEditPopUpComponent fillLastName(String lastNameFill) {
         lastName.clear();
         lastName.set(lastNameFill);
