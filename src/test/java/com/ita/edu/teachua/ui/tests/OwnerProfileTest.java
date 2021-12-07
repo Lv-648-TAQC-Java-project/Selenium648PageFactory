@@ -48,7 +48,7 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile();
-        SoftAssert softAssert=new SoftAssert();
+        SoftAssert softAssert = new SoftAssert();
         for (int i = 0; i < dataAndExpected.length; i += 2) {
             String actual = edit
                     .fillPhone(dataAndExpected[i])

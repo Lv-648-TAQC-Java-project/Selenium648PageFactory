@@ -13,14 +13,14 @@ public class ClubsItemComponent {
     @FindBy(how = How.CSS, using = ClubsItemComponentLocators.CARD_TITLE_CSS_SELECTOR)
     private WebElement cartTitle;
 
-    @Step("Get title of the card")
-    public String getCardTitle(){
-        return cartTitle.getText();
-    }
-
     public ClubsItemComponent(WebDriver driver, WebElement root) {
         this.driver = driver;
         this.root = root;
+    }
+
+    @Step("Get title of the card")
+    public String getCardTitle() {
+        return cartTitle.getText();
     }
 
     @Step("Check if club is displayed as a list")

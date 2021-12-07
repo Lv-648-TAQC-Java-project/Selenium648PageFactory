@@ -18,6 +18,8 @@ import java.util.List;
 
 public class AdvancedSearchTest extends TestRunner {
 
+    @Description("TUA-510 Verify that 'Доступний онлайн', 'Категорії', 'Вік дитини' parameters are deactivated after selecting 'Центр' radio button")
+    @Issue("TUA-510")
     @Test
     public void verifyAllParametersActiveCenterAdvancedSearch() {
         SoftAssert softAssert = new SoftAssert();

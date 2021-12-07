@@ -1,8 +1,6 @@
 package com.ita.edu.teachua.ui.locators.profile_locators;
 
 
-import org.openqa.selenium.By;
-
 public class ProfileEditPopUpLocators {
     public static final String PHONE_EDIT_XPATH = "//input[@id='edit_phone']";
     public static final String LASTNAME_EDIT_XPATH = "//input[@id='edit_lastName']";
@@ -16,7 +14,6 @@ public class ProfileEditPopUpLocators {
     public static final String NEW_PASSWORD_INPUT_XPATH = "//*[@id='edit_password']";
     public static final String CONFIRM_PASSWORD_INPUT_XPATH = "//*[@id='edit_confirmPassword']";
     public static final String MESSAGE_INVALID_INPUT_XPATH = "//div[@role='alert']";
-
 
 
 }

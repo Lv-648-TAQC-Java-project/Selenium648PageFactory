@@ -95,6 +95,7 @@ public class AddClubPopUpComponent extends BasePage {
         }
         return this;
     }
+
     @Step("Click 7 times on upper arrow in 'до' field")
     public AddClubPopUpComponent severalClicksOnAgeToUpperArrow() {
         for (int i = 0; i <= 7; i++) {
@@ -110,6 +111,7 @@ public class AddClubPopUpComponent extends BasePage {
         clubNameInput.set(clubName);
         return this;
     }
+
     @Step("Check off 'Спортивні секції' check-box from 'Категорія' group box")
     public AddClubPopUpComponent chooseSportSections() {
         sportSectionsCheckBox.click();
@@ -149,6 +151,7 @@ public class AddClubPopUpComponent extends BasePage {
     public Button getEndButton() {
         return endButton;
     }
+
     @Step("Get tick")
     public Label getTick() {
         return tick;
@@ -176,30 +179,35 @@ public class AddClubPopUpComponent extends BasePage {
         telephoneNumber.set(number);
         return this;
     }
+
     @Step("Enter {facebook} data into Facebook field of 'Контакти' area ")
     public AddClubPopUpComponent enterValidFacebook(String facebook) {
         facebookField.clear();
         facebookField.sendKeys(facebook);
         return this;
     }
+
     @Step("Enter {whatsApp} data into WhatsApp field of 'Контакти' area ")
     public AddClubPopUpComponent enterValidWhatsApp(String whatsApp) {
         whatsAppField.clear();
         whatsAppField.sendKeys(whatsApp);
         return this;
     }
+
     @Step("Enter {email} data into Email field of 'Контакти' area ")
     public AddClubPopUpComponent enterValidEmail(String email) {
         emailField.clear();
         emailField.sendKeys(email);
         return this;
     }
+
     @Step("Enter {skype} data into Skype field of 'Контакти' area ")
     public AddClubPopUpComponent enterValidSkype(String skype) {
         skypeField.clear();
         skypeField.sendKeys(skype);
         return this;
     }
+
     @Step("Enter {site} data into Site field of 'Контакти' area ")
     public AddClubPopUpComponent enterValidSite(String site) {
         siteField.clear();
