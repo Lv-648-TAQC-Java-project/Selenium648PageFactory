@@ -5,6 +5,7 @@ import com.ita.edu.teachua.ui.locators.header_locators.OwnerDropdownComponentLoc
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.ui.pages.profile_page.AddCenterPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfilePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -20,12 +21,14 @@ public class OwnerDropdownComponent extends BasePage {
     public OwnerDropdownComponent(WebDriver driver) {
         super(driver);
     }
-
+    @Step("Click on profile")
+    @Step("Click on 'Додати центр' button ")
     public AddCenterPopUpComponent clickOnAddCenterButton() {
         addCenterButton.click();
         return new AddCenterPopUpComponent(driver);
     }
 
+    @Step("Click on 'Мій профіль' button in dropdown for authorized users")
     public ProfilePage clickOnProfile() {
         waitUntilElementToBeClickable(By.xpath(OwnerDropdownComponentLocators.MY_PROFILE_BUTTON_XPATH), 5);
         myProfileButton.click();

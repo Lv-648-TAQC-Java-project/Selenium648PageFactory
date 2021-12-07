@@ -6,6 +6,10 @@ import com.ita.edu.teachua.ui.pages.header_page.RegisterPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddClubPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.AddLocationPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfileEditPopUpComponent;
+import io.qameta.allure.Description;
+import io.qameta.allure.Issue;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -90,8 +94,9 @@ public class OwnerProfileTest extends TestRunner {
                 }
         };
     }
-
-    @Test(dataProvider = "addClubPopUpComponentData", description = "TUA-237 This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.")
+    @Issue("TUA-237")
+    @Description("TUA-237 This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.")
+    @Test(dataProvider = "addClubPopUpComponentData")
     public void VerifyThatOwnerCanAddLocationOfClub(String validName,
                                                     String ageFrom,
                                                     String ageTo,
@@ -133,7 +138,8 @@ public class OwnerProfileTest extends TestRunner {
                 .isDataAccepted(locationPopUpComponentId[1]);
         softAssert.assertTrue(isDataAccepted);
 
-        isDataAccepted = addLocationPopUpComponent.clickOnDistrictDropdown()
+        isDataAccepted = addLocationPopUpComponent
+                .clickOnDistrictDropdown()
                 .clickOnDesnianskyiButton()
                 .isDataAccepted(locationPopUpComponentId[2]);
         softAssert.assertTrue(isDataAccepted);
@@ -207,7 +213,9 @@ public class OwnerProfileTest extends TestRunner {
                 .getAddedLocationTitle();*/
     }
 
-    @Test(description = "TUA-252 This test case verifies that user cannot create a center with invalid data in 'Назва' field")
+    @Issue("TUA-252")
+    @Description("TUA-252 This test case verifies that user cannot create a center with invalid data in 'Назва' field")
+    @Test(description = "TUA-252")
     public void VerifyThatErrorMessagesIsDisplayedAfterUserLeavesFieldsEmptyAndClicksNextStepButton() {
         boolean errorsIsDisplayed = new HeaderPage(driver)
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -334,7 +342,7 @@ public class OwnerProfileTest extends TestRunner {
         softassert.assertEquals(actual2, "Світлана");
         softassert.assertEquals(actual3, "svitlanawhite@gmail.com");
         softassert.assertEquals(actual4, "12345678");
-
+        softassert.assertAll();
 
     }
 
@@ -479,6 +487,10 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
+
+    @Description("TUA-173 Verify that the ‘Опис’ text field is filled in with valid data")
+    @Severity(SeverityLevel.CRITICAL)
+    @Issue("TUA-173")
     @Test(dataProvider = "specialCharactersData")
     public void checkDescriptionFieldWithValidLettersAndSymbols(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
@@ -519,6 +531,9 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
+    @Description("TUA-176-Verify that error message ‘Опис гуртка закороткий’ appears when the user enters less than 40 symbols into the field")
+    @Severity(SeverityLevel.CRITICAL)
+    @Issue("TUA-176")
     @Test(dataProvider = "lessThan40SymbolsData")
     public void checkDescriptionFieldWithLessThan40Symbols(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
@@ -569,6 +584,9 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
+    @Description("TUA-177-Verify that error message ‘Опис гуртка задовгий’ appears when the user enters more than 1500 symbols into the field")
+    @Severity(SeverityLevel.CRITICAL)
+    @Issue("TUA-177")
     @Test(dataProvider = "lessAndMoreThan1500data")
     public void checkDescriptionFieldWithLessAndMoreThan1500Symbols(String[] input) {
         SoftAssert softAssert = new SoftAssert();
@@ -626,6 +644,9 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
+    @Description("TUA-172-Verify that the ‘Опис’ text field is filled in with valid data when a user enters from 40 to 1500 symbols into the field")
+    @Severity(SeverityLevel.CRITICAL)
+    @Issue("TUA-172")
     @Test(dataProvider = "differentSizeData")
     public void checkButtonIsEnabledWithValidInput(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
