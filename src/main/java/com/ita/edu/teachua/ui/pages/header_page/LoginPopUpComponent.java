@@ -29,13 +29,11 @@ public class LoginPopUpComponent extends BasePage {
 
     public LoginPopUpComponent sendKeysEmailField(String emailValue) {
         waitUntilVisibilityOfElementLocated(By.id(LoginPopUpComponentLocators.EMAIL_FIELD_ID), 5);
-        emailField.clear();
         emailField.set(emailValue);
         return this;
     }
 
     public LoginPopUpComponent sendKeysPasswordField(String passwordValue) {
-        passwordField.clear();
         passwordField.set(passwordValue);
         return this;
     }

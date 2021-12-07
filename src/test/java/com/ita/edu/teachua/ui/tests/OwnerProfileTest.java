@@ -122,7 +122,6 @@ public class OwnerProfileTest extends TestRunner {
 
 
         boolean isDataAccepted = addLocationPopUpComponent
-                .clickOnLocationNameField()
                 .sendKeysLocationNameField(validName)
                 .isDataAccepted(locationPopUpComponentId[0]);
         softAssert.assertTrue(isDataAccepted);
@@ -145,19 +144,16 @@ public class OwnerProfileTest extends TestRunner {
         softAssert.assertTrue(isDataAccepted);
 
         isDataAccepted = addLocationPopUpComponent
-                .clickOnAddressField()
                 .sendKeysAddressField(validAddress)
                 .isDataAccepted(locationPopUpComponentId[4]);
         softAssert.assertTrue(isDataAccepted);
 
         isDataAccepted = addLocationPopUpComponent
-                .clickOnCoordinatesField()
                 .sendKeysCoordinatesField(validCoordinates)
                 .isDataAccepted(locationPopUpComponentId[5]);
         softAssert.assertTrue(isDataAccepted);
 
         isDataAccepted = addLocationPopUpComponent
-                .clickOnPhoneField()
                 .sendKeysPhoneField(validPhone)
                 .isDataAccepted(locationPopUpComponentId[6]);
         softAssert.assertTrue(isDataAccepted);
@@ -230,7 +226,6 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnOwnerDropdown()
                 .clickOnAddCenterButton()
                 .clickOnAddLocation()
-                .clickOnLocationNameField()
                 .sendKeysLocationNameField("LocationTestName")
                 .clickOnCityDropdown()
                 .clickOnKyivButton()
@@ -254,7 +249,6 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnOwnerDropdown()
                 .clickOnAddCenterButton()
                 .clickOnAddLocation()
-                .clickOnLocationNameField()
                 .sendKeysLocationNameField("LocationTestName")
                 .clickOnCityDropdown()
                 .clickOnKyivButton()
@@ -262,11 +256,8 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnDesnianskyiButton()
                 .clickOnLocalityDropdown()
                 .clickOnAkademmistechkoButton()
-                .clickOnAddressField()
                 .sendKeysAddressField("SomeAddress")
-                .clickOnCoordinatesField()
                 .sendKeysCoordinatesField("50.46403522497495, 30.36469393119765")
-                .clickOnPhoneField()
                 .sendKeysPhoneField("0432143210")
                 .clickOnAddButtonToCenterPopUp();
     }

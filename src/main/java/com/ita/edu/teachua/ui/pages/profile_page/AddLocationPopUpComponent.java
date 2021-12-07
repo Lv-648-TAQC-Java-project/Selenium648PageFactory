@@ -5,6 +5,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.*;
 import com.ita.edu.teachua.ui.locators.profile_locators.AddLocationPopUpComponentLocators;
 import com.ita.edu.teachua.ui.locators.profile_locators.ProfileDynamicLabelsLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -50,63 +51,46 @@ public class AddLocationPopUpComponent extends BasePage {
         return addLocationPopUpBlock.isDisplayed();
     }
 
-    public AddLocationPopUpComponent clickOnLocationNameField() {
-        locationNameField.click();
-        return this;
-    }
-
     public AddLocationPopUpComponent sendKeysLocationNameField(String locationName) {
-        locationNameField.sendKeys(locationName);
+        locationNameField.set(locationName);
         return this;
     }
 
+    @Step("Click on city dropdown")
     public CityDropdownComponent clickOnCityDropdown() {
         cityDropdown.click();
         sleep(1000);
         return new CityDropdownComponent(driver);
     }
 
-
+    @Step("Click on district dropdown")
     public DistrictDropdownComponent clickOnDistrictDropdown() {
         districtDropdown.click();
         return new DistrictDropdownComponent(driver);
     }
 
+    @Step("Click on locality dropdown")
     public LocalityDropdownComponent clickOnLocalityDropdown() {
         localityDropdown.click();
         return new LocalityDropdownComponent(driver);
     }
 
-    public AddLocationPopUpComponent clickOnAddressField() {
-        addressField.click();
-        return this;
-    }
-
     public AddLocationPopUpComponent sendKeysAddressField(String address) {
-        addressField.sendKeys(address);
-        return this;
-    }
-
-    public AddLocationPopUpComponent clickOnCoordinatesField() {
-        coordinatesField.click();
+        addressField.set(address);
         return this;
     }
 
     public AddLocationPopUpComponent sendKeysCoordinatesField(String coordinates) {
-        coordinatesField.sendKeys(coordinates);
-        return this;
-    }
-
-    public AddLocationPopUpComponent clickOnPhoneField() {
-        phoneField.click();
+        coordinatesField.set(coordinates);
         return this;
     }
 
     public AddLocationPopUpComponent sendKeysPhoneField(String phoneNumber) {
-        phoneField.sendKeys(phoneNumber);
+        phoneField.set(phoneNumber);
         return this;
     }
 
+    @Step("Click on add ...")
     public AddCenterPopUpComponent clickOnAddButtonToCenterPopUp() {
         addButton.click();
         return new AddCenterPopUpComponent(driver);

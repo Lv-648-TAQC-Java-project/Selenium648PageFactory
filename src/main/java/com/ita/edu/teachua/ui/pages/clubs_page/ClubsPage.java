@@ -40,7 +40,7 @@ public class ClubsPage extends BasePage {
             }
             sleep(100);
         }
-        List<WebElement> titles = cartTitles;
+        List<WebElement> titles = cartTitles; // TODO change to cards list
         boolean isPresent = false;
         String res = "";
         for (WebElement t : titles) {
