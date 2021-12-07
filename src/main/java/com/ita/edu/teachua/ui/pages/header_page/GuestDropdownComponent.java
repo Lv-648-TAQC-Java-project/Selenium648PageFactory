@@ -4,6 +4,7 @@ package com.ita.edu.teachua.ui.pages.header_page;
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.locators.header_locators.GuestDropdownComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -18,7 +19,7 @@ public class GuestDropdownComponent extends BasePage {
     public GuestDropdownComponent(WebDriver driver) {
         super(driver);
     }
-
+    @Step("Click on register button")
     public RegisterPopUpComponent clickOnRegisterButton() {
         registerButton.click();
         return new RegisterPopUpComponent(driver);

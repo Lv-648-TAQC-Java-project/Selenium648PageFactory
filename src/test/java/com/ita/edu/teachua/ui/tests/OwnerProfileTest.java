@@ -340,7 +340,7 @@ public class OwnerProfileTest extends TestRunner {
         softassert.assertEquals(actual2, "Світлана");
         softassert.assertEquals(actual3, "svitlanawhite@gmail.com");
         softassert.assertEquals(actual4, "12345678");
-
+        softassert.assertAll();
 
     }
 
