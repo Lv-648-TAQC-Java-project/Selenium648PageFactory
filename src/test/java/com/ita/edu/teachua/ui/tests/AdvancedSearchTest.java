@@ -88,7 +88,9 @@ public class AdvancedSearchTest extends TestRunner {
 
     }
 
-    @Test(description = "TUA-509 Verify that all parameters are activated with the selected 'Гурток' radio button")
+    @Description("TUA-509 Verify that all parameters are activated with the selected 'Гурток' radio button")
+    @Issue("TUA-509")
+    @Test
     public void verifyAllParametersActiveClubsAdvancedSearch() {
         SoftAssert softAssert = new SoftAssert();
         AdvancedSearchPage advancedSearchPage = new MainPage(driver).clickAdvancedSearchButton();
