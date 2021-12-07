@@ -3,6 +3,8 @@ package com.ita.edu.teachua.ui.tests;
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
 import com.ita.edu.teachua.ui.pages.advanced_search.ClubsItemComponent;
 import com.ita.edu.teachua.ui.pages.main_page.MainPage;
+import io.qameta.allure.Description;
+import io.qameta.allure.Issue;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -42,8 +44,9 @@ public class AdvancedSearchTest extends TestRunner {
 
         softAssert.assertAll();
     }
-
-    @Test(description = "TUA-224 Advanced search button opens Розширений пошук section")
+    @Description("TUA-224 Advanced search button opens Розширений пошук section")
+    @Issue("TUA-224")
+    @Test
     public void openAdvancedSearchFieldTest() {
         SoftAssert softAssert = new SoftAssert();
         MainPage mainPage = new MainPage(driver);

@@ -7,12 +7,15 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.elements.custom_elements.Label;
 import com.ita.edu.teachua.ui.locators.pages_locators.profile_locators.ProfileEditPopUpLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+
+import java.time.Duration;
 
 public class ProfileEditPopUpComponent extends BasePage {
 
@@ -92,6 +95,7 @@ public class ProfileEditPopUpComponent extends BasePage {
         return this;
     }
 
+    @Step("Click on Save change button")
     public ProfileEditPopUpComponent clickOnSaveChangeButton() {
         saveChangeButton.click();
         return this;
@@ -110,62 +114,44 @@ public class ProfileEditPopUpComponent extends BasePage {
     }
 
     public String getCurrentPasswordInputBorderColor() {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        sleep(200);
         return currentPasswordInput.getCssValue("border-color");
     }
 
     public String getNewPasswordInputBorderColor() {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        sleep(200);
         return newPasswordInput.getCssValue("border-color");
     }
 
     public String getConfirmPasswordInputBorderColor() {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        sleep(200);
         return confirmPasswordInput.getCssValue("border-color");
     }
 
+    @Step("Fill in current password input: '{currentPassword}'")
     public ProfileEditPopUpComponent fillInCurrentPasswordInput(String currentPassword) {
-        waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.CURRENT_PASSWORD_INPUT_XPATH),5);
-        Actions act = new Actions(driver);
-        act.doubleClick(currentPasswordInput).perform();
-        currentPasswordInput.sendKeys(Keys.DELETE);
-        currentPasswordInput.sendKeys(currentPassword);
+        waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.CURRENT_PASSWORD_INPUT_XPATH), 5);
+        currentPasswordInput.set(currentPassword);
         return this;
     }
 
+    @Step("Fill in new password input: '{newPassword}'")
     public ProfileEditPopUpComponent fillInNewPasswordInput(String newPassword) {
         waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.NEW_PASSWORD_INPUT_XPATH), 5);
-        Actions act = new Actions(driver);
-        act.doubleClick(newPasswordInput).perform();
-        newPasswordInput.sendKeys(Keys.DELETE);
-        newPasswordInput.sendKeys(newPassword);
+        newPasswordInput.set(newPassword);
         return this;
     }
 
+    @Step("Fill in confirm password input: '{confirmPassword}'")
     public ProfileEditPopUpComponent fillInConfirmPasswordInput(String confirmPassword) {
         waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.CONFIRM_PASSWORD_INPUT_XPATH), 5);
-        Actions act = new Actions(driver);
-        act.doubleClick(confirmPasswordInput).perform();
-        confirmPasswordInput.sendKeys(Keys.DELETE);
-        confirmPasswordInput.sendKeys(confirmPassword);
+        confirmPasswordInput.set(confirmPassword);
         return this;
     }
 
-    public ProfileEditPopUpComponent checkChangePasswordCheckBox(){
+    @Step("Select Change password checkbox")
+    public ProfileEditPopUpComponent checkChangePasswordCheckBox() {
         waitUntilVisibilityOfElementLocated(By.xpath(ProfileEditPopUpLocators.PASSWORD_EDIT_CHECKBOX_XPATH), 5);
-
         changePassword.toggle();
         return this;
     }

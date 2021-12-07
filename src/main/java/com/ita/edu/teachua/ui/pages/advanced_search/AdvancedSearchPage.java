@@ -5,6 +5,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.*;
 import com.ita.edu.teachua.ui.locators.pages_locators.advanced_search.AdvancedSearchPageLocators;
 import com.ita.edu.teachua.ui.locators.pages_locators.clubs_page_locators.ClubsPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -303,9 +304,6 @@ public class AdvancedSearchPage extends BasePage {
         return clubBlocks;
     }
 
-    public boolean isAdvanceSearchFieldDisappear() {
-        return searchFields.size() == 0;
-    }
 
     public String getTitleOfAdvancedSearchField() {
         return advancedSearchFieldTitle.getText();
