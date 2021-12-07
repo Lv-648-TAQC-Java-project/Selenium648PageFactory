@@ -42,7 +42,7 @@ public class AddLocationPopUpComponent extends BasePage {
         super(driver);
     }
 
-    @Step("Click on 'Додати' button")
+    @Step("Checking that 'Додати' button is disabled")
     public boolean checkAddButton() {
         return addButtonDisabled.isEnabled();
     }

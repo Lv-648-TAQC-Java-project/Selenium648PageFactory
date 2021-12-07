@@ -5,6 +5,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.locators.header_locators.RestoringBeginPopUpLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.utils.GmailContentExtractor;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -19,12 +20,13 @@ public class RestoringBeginPopUpComponent extends BasePage {
         super(driver);
     }
 
+    @Step("Filling email field")
     public RestoringBeginPopUpComponent inputEmail(String email) {
         editEmail.clear();
         editEmail.sendKeys(email);
         return this;
     }
-
+    @Step("Click on 'Відновити' button")
     public RestoringPasswordFinishPopUpComponent clickOnRestore() {
         restore.click();
         sleep(5000);

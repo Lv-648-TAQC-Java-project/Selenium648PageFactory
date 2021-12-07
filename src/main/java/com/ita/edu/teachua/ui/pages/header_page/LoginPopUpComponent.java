@@ -53,6 +53,7 @@ public class LoginPopUpComponent extends BasePage {
         return new HeaderPage(driver);
     }
 
+    @Step("Click on 'Забули пароль' button.")
     public RestoringBeginPopUpComponent clickOnForgotPasswordButton(){
 
         //waitElementToBeClickable(LoginPopUpComponentLocators.FORGOT_PASSWORD_BUTTON,5);
