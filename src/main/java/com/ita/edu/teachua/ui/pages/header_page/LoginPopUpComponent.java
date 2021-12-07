@@ -47,7 +47,7 @@ public class LoginPopUpComponent extends BasePage {
         return new HeaderPage(driver);
     }
 
-    @Step("Set value for `Емейл` and `Пароль` fields")
+    @Step("Set values '{email}'/'{password}' for `Емейл` and `Пароль` fields")
     public HeaderPage fillLoginFields(String email, String password) {
         sendKeysEmailField(email);
         sendKeysPasswordField(password);

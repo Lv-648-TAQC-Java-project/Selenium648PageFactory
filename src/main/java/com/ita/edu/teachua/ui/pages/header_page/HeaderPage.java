@@ -20,14 +20,14 @@ public class HeaderPage extends BasePage {
         super(driver);
     }
 
-    @Step("Click on guest dropdown")
+    @Step("Click on guest dropdown in the right top corner")
     public GuestDropdownComponent clickOnGuestDropdown() {
         guestDropdown.click();
         sleep(2000);
         return new GuestDropdownComponent(driver);
     }
 
-    @Step("Click on owner dropdown")
+    @Step("Click on owner dropdown in the right top corner")
     public OwnerDropdownComponent clickOnOwnerDropdown() {
         guestDropdown.click();
         return new OwnerDropdownComponent(driver);

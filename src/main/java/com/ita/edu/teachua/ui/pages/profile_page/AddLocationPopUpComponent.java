@@ -56,7 +56,7 @@ public class AddLocationPopUpComponent extends BasePage {
         return this;
     }
 
-    @Step("Set value for `Назва` field")
+    @Step("Set value '{locationName}' for `Назва` field")
     public AddLocationPopUpComponent sendKeysLocationNameField(String locationName) {
         locationNameField.sendKeys(locationName);
         return this;
@@ -85,7 +85,7 @@ public class AddLocationPopUpComponent extends BasePage {
         return this;
     }
 
-    @Step("Set value for `Адреса` field")
+    @Step("Set value '{address}' for `Адреса` field")
     public AddLocationPopUpComponent sendKeysAddressField(String address) {
         addressField.sendKeys(address);
         return this;
@@ -96,7 +96,7 @@ public class AddLocationPopUpComponent extends BasePage {
         return this;
     }
 
-    @Step("Set value for `Географічні координати` field")
+    @Step("Set value '{coordinates}' for `Географічні координати` field")
     public AddLocationPopUpComponent sendKeysCoordinatesField(String coordinates) {
         coordinatesField.sendKeys(coordinates);
         return this;
@@ -107,7 +107,7 @@ public class AddLocationPopUpComponent extends BasePage {
         return this;
     }
 
-    @Step("Set value for `Номер телефону` field")
+    @Step("Set value '{phoneNumber}' for `Номер телефону` field")
     public AddLocationPopUpComponent sendKeysPhoneField(String phoneNumber) {
         phoneField.sendKeys(phoneNumber);
         return this;
