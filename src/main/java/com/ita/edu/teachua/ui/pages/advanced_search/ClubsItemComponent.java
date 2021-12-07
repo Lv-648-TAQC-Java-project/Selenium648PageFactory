@@ -1,5 +1,6 @@
 package com.ita.edu.teachua.ui.pages.advanced_search;
 
+import com.ita.edu.teachua.ui.locators.advanced_search_page_locators.ClubsItemComponentLocators;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
