@@ -26,12 +26,14 @@ public class HeaderPage extends BasePage {
         return new GuestDropdownComponent(driver);
     }
 
+
     @Step("Click on dropdown for authorized user in top right corner of header")
     public OwnerDropdownComponent clickOnOwnerDropdown() {
         guestDropdown.click();
         return new OwnerDropdownComponent(driver);
     }
-    @Step("Doing authorization by {email} email and {password} password")
+
+    @Step("Authorize user with valid email {email} and password {password}")
     public HeaderPage authorize(String email, String password) {
         clickOnGuestDropdown().clickOnLoginButton().fillLoginFields(email, password);
         sleep(3000);

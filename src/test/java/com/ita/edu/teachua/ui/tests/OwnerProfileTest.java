@@ -8,6 +8,8 @@ import com.ita.edu.teachua.ui.pages.profile_page.AddLocationPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfileEditPopUpComponent;
 import io.qameta.allure.Description;
 import io.qameta.allure.Issue;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -485,6 +487,10 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
+
+    @Description("TUA-173 Verify that the ‘Опис’ text field is filled in with valid data")
+    @Severity(SeverityLevel.CRITICAL)
+    @Issue("TUA-173")
     @Test(dataProvider = "specialCharactersData")
     public void checkDescriptionFieldWithValidLettersAndSymbols(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
@@ -525,6 +531,9 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
+    @Description("TUA-176-Verify that error message ‘Опис гуртка закороткий’ appears when the user enters less than 40 symbols into the field")
+    @Severity(SeverityLevel.CRITICAL)
+    @Issue("TUA-176")
     @Test(dataProvider = "lessThan40SymbolsData")
     public void checkDescriptionFieldWithLessThan40Symbols(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
@@ -575,6 +584,9 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
+    @Description("TUA-177-Verify that error message ‘Опис гуртка задовгий’ appears when the user enters more than 1500 symbols into the field")
+    @Severity(SeverityLevel.CRITICAL)
+    @Issue("TUA-177")
     @Test(dataProvider = "lessAndMoreThan1500data")
     public void checkDescriptionFieldWithLessAndMoreThan1500Symbols(String[] input) {
         SoftAssert softAssert = new SoftAssert();
@@ -632,6 +644,9 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
+    @Description("TUA-172-Verify that the ‘Опис’ text field is filled in with valid data when a user enters from 40 to 1500 symbols into the field")
+    @Severity(SeverityLevel.CRITICAL)
+    @Issue("TUA-172")
     @Test(dataProvider = "differentSizeData")
     public void checkButtonIsEnabledWithValidInput(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
