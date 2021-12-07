@@ -5,6 +5,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.*;
 import com.ita.edu.teachua.ui.locators.advanced_search.AdvancedSearchPageLocators;
 import com.ita.edu.teachua.ui.locators.clubs_page_locators.ClubsPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -274,27 +275,30 @@ public class AdvancedSearchPage extends BasePage {
         return ageLabel;
     }
 
-
+    @Step("Get 'Гурток' radiobutton")
     public RadioButton getWorkshopRadioButton() {
         return workShopRadioButton;
     }
 
+    @Step("Click on  'Центр' radiobutton")
     public AdvancedSearchPage clickOnCenterRadioButton() {
         centerRadioButton.click();
         return this;
     }
 
+    @Step("Get 'Центр' radiobutton")
     public RadioButton getCenterRadioButton() {
         return centerRadioButton;
     }
 
+    @Step("Click on list icon")
     public AdvancedSearchPage clickOnListIcon() {
         listIcon.click();
         sleep(1000);
         return this;
     }
 
-    //?
+    @Step("Get all clubs")
     public List<ClubsItemComponent> getCards() {
         List<ClubsItemComponent> clubBlocks = new ArrayList<>();
         for (WebElement j : centerBlocks) {
@@ -307,6 +311,7 @@ public class AdvancedSearchPage extends BasePage {
         return searchFields.size() == 0;
     }
 
+    @Step("Get text of title 'Розширений пошук'")
     public String getTitleOfAdvancedSearchField() {
         return advancedSearchFieldTitle.getText();
     }

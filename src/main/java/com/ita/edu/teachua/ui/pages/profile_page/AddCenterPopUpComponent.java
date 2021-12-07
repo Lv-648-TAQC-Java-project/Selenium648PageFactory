@@ -35,7 +35,7 @@ public class AddCenterPopUpComponent extends BasePage {
         super(driver);
     }
 
-    @Step("Click on 'Додати локацію' button")
+    @Step("Click on '+Додати локацію' button")
     public AddLocationPopUpComponent clickOnAddLocation() {
         addLocation.click();
         return new AddLocationPopUpComponent(driver);

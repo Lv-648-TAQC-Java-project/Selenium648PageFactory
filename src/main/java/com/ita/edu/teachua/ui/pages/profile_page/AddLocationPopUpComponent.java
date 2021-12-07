@@ -42,88 +42,90 @@ public class AddLocationPopUpComponent extends BasePage {
         super(driver);
     }
 
+    @Step("Click on 'Додати' button")
     public boolean checkAddButton() {
         return addButtonDisabled.isEnabled();
     }
 
+    @Step("Checking that 'Додати локацію' pop-up is opened")
     public boolean addLocationPopUpBlockIsDisplayed() {
         waitUntilVisibilityOfElementLocated(By.xpath(AddLocationPopUpComponentLocators.ADD_LOCATION_BLOCK_HEADER_XPATH), 5);
         return addLocationPopUpBlock.isDisplayed();
     }
-
+    @Step("Clic on 'location name field'")
     public AddLocationPopUpComponent clickOnLocationNameField() {
         locationNameField.click();
         return this;
     }
-
-    @Step("Set value '{locationName}' for `Назва` field")
+  
+    @Step("Enter data into the 'Назва' field of 'Додати локацію' pop-up ")
     public AddLocationPopUpComponent sendKeysLocationNameField(String locationName) {
         locationNameField.sendKeys(locationName);
         return this;
     }
 
-    @Step("Click on `Місто` dropdown")
+    @Step("Click on 'Місто' dropdown")
     public CityDropdownComponent clickOnCityDropdown() {
         cityDropdown.click();
         sleep(1000);
         return new CityDropdownComponent(driver);
     }
 
-
+    @Step("Click on 'Район міста' dropdown")
     public DistrictDropdownComponent clickOnDistrictDropdown() {
         districtDropdown.click();
         return new DistrictDropdownComponent(driver);
     }
-
+    @Step("Click on 'Метро/Місцевість' dropdown")
     public LocalityDropdownComponent clickOnLocalityDropdown() {
         localityDropdown.click();
         return new LocalityDropdownComponent(driver);
     }
-
+    @Step("Click on 'Адреса' field")
     public AddLocationPopUpComponent clickOnAddressField() {
         addressField.click();
         return this;
     }
 
-    @Step("Set value '{address}' for `Адреса` field")
+    @Step("Enter data {address} into the 'Адреса' field")
     public AddLocationPopUpComponent sendKeysAddressField(String address) {
         addressField.sendKeys(address);
         return this;
     }
-
+    @Step("Click on 'Географічні координати' field")
     public AddLocationPopUpComponent clickOnCoordinatesField() {
         coordinatesField.click();
         return this;
     }
 
-    @Step("Set value '{coordinates}' for `Географічні координати` field")
+    @Step("Enter data {coordinates} into the 'Географічні координати' field ")
     public AddLocationPopUpComponent sendKeysCoordinatesField(String coordinates) {
         coordinatesField.sendKeys(coordinates);
         return this;
     }
-
+    @Step("Click on 'Номер телефону' field")
     public AddLocationPopUpComponent clickOnPhoneField() {
         phoneField.click();
         return this;
     }
 
-    @Step("Set value '{phoneNumber}' for `Номер телефону` field")
+    @Step("Enter data {phoneNumber} into the 'Номер телефону' field")
     public AddLocationPopUpComponent sendKeysPhoneField(String phoneNumber) {
         phoneField.sendKeys(phoneNumber);
         return this;
     }
-
-    @Step("Click on `Додати` button")
+  
+    @Step("Click the 'Додати' button")
     public AddCenterPopUpComponent clickOnAddButtonToCenterPopUp() {
         addButton.click();
         return new AddCenterPopUpComponent(driver);
     }
-
+    @Step("Click the 'Додати' button")
     public AddClubPopUpComponent clickOnAddButtonToClubPopUp() {
         addButtonToClubPopUp.click();
         return new AddClubPopUpComponent(driver);
     }
-
+    @Step("Check if data for the field with Id {id} is accepted")
     public boolean isDataAccepted(String id) {
         try {
             fieldAcceptLabel = new LabelElement(new ProfileDynamicLabelsLocators().addLocationPopUpDynamicIdByXPath(driver, id));

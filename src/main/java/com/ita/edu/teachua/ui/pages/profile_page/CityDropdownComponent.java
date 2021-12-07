@@ -16,7 +16,7 @@ public class CityDropdownComponent extends BasePage {
         super(driver);
     }
 
-    @Step("Click on `Київ` button")
+    @Step("Choose a 'Київ' city from the 'Місто' drop-down list")
     public AddLocationPopUpComponent clickOnKyivButton() {
         kyivButton.click();
         return new AddLocationPopUpComponent(driver);

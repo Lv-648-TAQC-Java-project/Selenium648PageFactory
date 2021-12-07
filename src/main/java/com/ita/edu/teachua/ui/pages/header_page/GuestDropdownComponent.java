@@ -19,7 +19,7 @@ public class GuestDropdownComponent extends BasePage {
     public GuestDropdownComponent(WebDriver driver) {
         super(driver);
     }
-
+    @Step("Click on register button")
     public RegisterPopUpComponent clickOnRegisterButton() {
         registerButton.click();
         return new RegisterPopUpComponent(driver);
