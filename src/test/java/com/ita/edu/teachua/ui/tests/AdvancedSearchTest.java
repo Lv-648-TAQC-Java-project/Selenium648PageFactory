@@ -3,6 +3,10 @@ package com.ita.edu.teachua.ui.tests;
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
 import com.ita.edu.teachua.ui.pages.advanced_search.ClubsItemComponent;
 import com.ita.edu.teachua.ui.pages.main_page.MainPage;
+import io.qameta.allure.Description;
+import io.qameta.allure.Issue;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -107,7 +111,9 @@ public class AdvancedSearchTest extends TestRunner {
         softAssert.assertAll();
     }
 
-
+    @Description("TUA-513-Verify that the centers in the results of advanced search can be displayed as a list")
+    @Severity(SeverityLevel.CRITICAL)
+    @Issue("TUA-513")
     @Test
     public void checkIfCentersAreDisplayedAsAList() {
         SoftAssert softAssert = new SoftAssert();

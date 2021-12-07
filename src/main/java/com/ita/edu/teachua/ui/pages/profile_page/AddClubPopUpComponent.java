@@ -4,6 +4,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.*;
 import com.ita.edu.teachua.ui.locators.profile_locators.AddClubPopUpComponentLocators;
 import com.ita.edu.teachua.ui.locators.profile_locators.ProfileDynamicLabelsLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -65,20 +66,21 @@ public class AddClubPopUpComponent extends BasePage {
         super(driver);
     }
 
+    @Step("Fill 'Назва' field with {text}")
     public AddClubPopUpComponent enterNameOfClub(String text) {
         waitUntilElementToBeClickable(By.id(AddClubPopUpComponentLocators.NAME_OF_CLUB_ID), 5);
-        nameOfClub.click();
-        nameOfClub.clear();
-        nameOfClub.sendKeys(text);
+        nameOfClub.set(text);
         return this;
     }
 
+    @Step("Click on 'Танці, хореографія' checkbox")
     public AddClubPopUpComponent clickOnDancesCheckbox() {
         waitUntilElementToBeClickable(By.xpath(AddClubPopUpComponentLocators.DANCES_CHECKBOX_XPATH), 5);
         dancesCheckbox.click();
         return this;
     }
 
+    @Step("Hover to {id} element")
     public AddClubPopUpComponent hoverToElement(String id) {
         WebElement element = driver.findElement(By.id(id));
         Actions actions = new Actions(driver);
@@ -86,13 +88,14 @@ public class AddClubPopUpComponent extends BasePage {
         return this;
     }
 
+    @Step("Click 6 times on upper arrow in 'Від' field")
     public AddClubPopUpComponent severalClicksOnFromAgeUpperArrow() {
         for (int i = 0; i <= 6; i++) {
             ageFrom.sendKeys(Keys.ARROW_UP);
         }
         return this;
     }
-
+    @Step("Click 7 times on upper arrow in 'до' field")
     public AddClubPopUpComponent severalClicksOnAgeToUpperArrow() {
         for (int i = 0; i <= 7; i++) {
             ageTo.sendKeys(Keys.ARROW_UP);
@@ -103,8 +106,7 @@ public class AddClubPopUpComponent extends BasePage {
 
     /*Base info area start*/
     public AddClubPopUpComponent fillClubNameField(String clubName) {
-        clubNameInput.clear();
-        clubNameInput.sendKeys(clubName);
+        clubNameInput.set(clubName);
         return this;
     }
 
@@ -122,15 +124,15 @@ public class AddClubPopUpComponent extends BasePage {
 
     }
 
+    @Step("Click on 'Наступний крок' button")
     public AddClubPopUpComponent clickOnNextStepButton() {
         nextStepButton.click();
         return this;
     }
 
-
+    @Step("Fill 'Опис' field with {text}")
     public AddClubPopUpComponent inputInDescriptionField(String text) {
-        descriptionField.clear();
-        descriptionField.sendKeys(text);
+        descriptionField.set(text);
         sleep(1000);
         return this;
     }
@@ -140,14 +142,16 @@ public class AddClubPopUpComponent extends BasePage {
         return this;
     }
 
+    @Step("Get 'Завершити' button")
     public Button getEndButton() {
         return endButton;
     }
-
+    @Step("Get tick")
     public Label getTick() {
         return tick;
     }
 
+    @Step("Get error message")
     public Label getError() {
         return error;
     }
@@ -163,9 +167,9 @@ public class AddClubPopUpComponent extends BasePage {
         return new AddLocationPopUpComponent(driver);
     }
 
+    @Step("Fill 'Контакти' field with {number}")
     public AddClubPopUpComponent enterValidTelephoneNumber(String number) {
-        telephoneNumber.clear();
-        telephoneNumber.sendKeys(number);
+        telephoneNumber.set(number);
         return this;
     }
 

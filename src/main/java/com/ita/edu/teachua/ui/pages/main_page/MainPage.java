@@ -7,6 +7,7 @@ import com.ita.edu.teachua.ui.locators.main_page_locators.MainPageLocators;
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.ui.pages.clubs_page.ClubsPage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -28,10 +29,12 @@ public class MainPage extends BasePage {
         super(driver);
     }
 
+    @Step("Get url being on the main page")
     public String getMainPageUrL() {
         return driver.getCurrentUrl();
     }
 
+    @Step("Click on 'Розширений пошук' icon")
     public AdvancedSearchPage clickAdvancedSearchButton() {
         advancedSearch.click();
         return new AdvancedSearchPage(driver);

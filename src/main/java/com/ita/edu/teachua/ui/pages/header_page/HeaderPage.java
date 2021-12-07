@@ -3,6 +3,7 @@ package com.ita.edu.teachua.ui.pages.header_page;
 import com.ita.edu.teachua.ui.elements.custom_elements.Dropdown;
 import com.ita.edu.teachua.ui.locators.header_locators.HeaderPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -25,11 +26,13 @@ public class HeaderPage extends BasePage {
         return new GuestDropdownComponent(driver);
     }
 
+    @Step("Click on owner dropdown in the right upper corner")
     public OwnerDropdownComponent clickOnOwnerDropdown() {
         guestDropdown.click();
         return new OwnerDropdownComponent(driver);
     }
 
+    @Step("Authorize user with valid email {0} and password {1}")
     public HeaderPage authorize(String email, String password) {
         clickOnGuestDropdown().clickOnLoginButton().fillLoginFields(email, password);
         sleep(3000);

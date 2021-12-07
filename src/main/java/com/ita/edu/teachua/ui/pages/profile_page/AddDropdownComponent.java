@@ -3,6 +3,7 @@ package com.ita.edu.teachua.ui.pages.profile_page;
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.locators.profile_locators.AddDropDownComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -25,6 +26,7 @@ public class AddDropdownComponent extends BasePage {
         return new AddCenterPopUpComponent(driver);
     }
 
+    @Step("Click on 'Додати гурток'")
     public AddClubPopUpComponent clickOnAddClubButton() {
         waitUntilVisibilityOfElementLocated(By.xpath(AddDropDownComponentLocators.ADD_CLUB_BUTTON_XPATH), 5);
         addClubButton.click();
