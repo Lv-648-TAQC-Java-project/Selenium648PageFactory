@@ -284,6 +284,7 @@ public class OwnerProfileTest extends TestRunner {
     }
 
     @Description("TUA-159: verify that a user can add location to the list of locations after filling in only mandatory fields with valid data")
+    @Issue("TUA-159")
     @Test(dataProvider = "verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider")
     public void addLocationWithValidDataOfMandatoryFields(String name, String town, String address, String coordinates, String phoneNumber) {
         boolean actualResult = new HeaderPage(driver).authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
