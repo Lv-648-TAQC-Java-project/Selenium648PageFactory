@@ -59,8 +59,9 @@ public class OwnerProfileTest extends TestRunner {
         }
         softAssert.assertAll();
     }
-
-    @Test(description = "TUA-160 This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty")
+    @Issue("TUA-160")
+    @Description("This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty")
+    @Test(description = "TUA-160")
     public void VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty() {
         HeaderPage header = new HeaderPage(driver);
         boolean addLocationPopUpBlockIsDisplayed = header
@@ -96,8 +97,8 @@ public class OwnerProfileTest extends TestRunner {
     }
 
     @Issue("TUA-237")
-    @Description("TUA-237 This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.")
-    @Test(dataProvider = "addClubPopUpComponentData")
+    @Description("This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.")
+    @Test(dataProvider = "addClubPopUpComponentData", description = "TUA-237")
     public void VerifyThatOwnerCanAddLocationOfClub(String validName,
                                                     String ageFrom,
                                                     String ageTo,
@@ -205,7 +206,7 @@ public class OwnerProfileTest extends TestRunner {
     }
 
     @Issue("TUA-252")
-    @Description("TUA-252 This test case verifies that user cannot create a center with invalid data in 'Назва' field")
+    @Description("This test case verifies that error messages is displayed after user leaves fields empty and clicks 'Наступний крок' button on 'Основна інформація' tab")
     @Test(description = "TUA-252")
     public void VerifyThatErrorMessagesIsDisplayedAfterUserLeavesFieldsEmptyAndClicksNextStepButton() {
         boolean errorsIsDisplayed = new HeaderPage(driver)

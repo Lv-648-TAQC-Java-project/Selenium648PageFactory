@@ -58,17 +58,17 @@ public class AddCenterPopUpComponent extends BasePage {
         description.sendKeys(text);
         return new AddLocationPopUpComponent(driver);
     }
-
+    @Step("Delete possible values from 'Назва центру' field")
     public AddCenterPopUpComponent clearCenterName() {
         centerName.clear();
         return this;
     }
-
+    @Step("Click on 'Наступний крок' button")
     public AddCenterPopUpComponent clickOnNextStepButton() {
         nextStepButton.click();
         return this;
     }
-
+    @Step("Checking that error message 'Некоректна назва центру’ appears under 'Назва центру' field")
     public boolean errorsIsDisplayed() {
         waitUntilVisibilityOfElementLocated(By.cssSelector(AddCenterPopUpComponentLocators.CENTER_NAME_ERROR_BLOCK_CSS_SELECTOR), 5);
         return errorBlock.isDisplayed();

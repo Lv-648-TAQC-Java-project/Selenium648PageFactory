@@ -4,6 +4,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.locators.header_locators.RestoringPasswordFinishPopUpLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -23,6 +24,7 @@ public class RestoringPasswordFinishPopUpComponent extends BasePage {
     }
 
 
+    @Step("Filling passwords fields by random valid values")
     public void setNewRandomPassword(){
         String newRandomPassword = String.format("Test_%d",new Date().getTime());
         enterPassword.set("");
