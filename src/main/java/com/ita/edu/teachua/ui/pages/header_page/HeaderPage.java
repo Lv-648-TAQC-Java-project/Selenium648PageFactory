@@ -19,13 +19,13 @@ public class HeaderPage extends BasePage {
     public HeaderPage(WebDriver driver) {
         super(driver);
     }
+
     @Step("Click on guest dropdown")
     public GuestDropdownComponent clickOnGuestDropdown() {
         guestDropdown.click();
         sleep(2000);
         return new GuestDropdownComponent(driver);
     }
-
 
     @Step("Click on dropdown for authorized user in top right corner of header")
     public OwnerDropdownComponent clickOnOwnerDropdown() {

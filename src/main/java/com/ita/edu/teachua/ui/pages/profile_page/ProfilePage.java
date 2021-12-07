@@ -26,7 +26,6 @@ public class ProfilePage extends BasePage {
         super(driver);
     }
 
-
     @Step("Click on 'Додати' button")
     public AddDropdownComponent clickOnAddButton() {
         addButton.click();
@@ -44,7 +43,7 @@ public class ProfilePage extends BasePage {
         return this;
     }
 
-    public ClubPagePopUpComponent clickAddClub() throws InterruptedException {
+    public ClubPagePopUpComponent clickAddClub() {
         addClubButton.click();
         return new ClubPagePopUpComponent(driver);
     }

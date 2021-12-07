@@ -57,11 +57,13 @@ public class AddLocationPopUpComponent extends BasePage {
         locationNameField.click();
         return this;
     }
+  
     @Step("Enter data into the 'Назва' field of 'Додати локацію' pop-up ")
     public AddLocationPopUpComponent sendKeysLocationNameField(String locationName) {
         locationNameField.sendKeys(locationName);
         return this;
     }
+
     @Step("Click on 'Місто' dropdown")
     public CityDropdownComponent clickOnCityDropdown() {
         cityDropdown.click();
@@ -84,6 +86,7 @@ public class AddLocationPopUpComponent extends BasePage {
         addressField.click();
         return this;
     }
+
     @Step("Enter data {address} into the 'Адреса' field")
     public AddLocationPopUpComponent sendKeysAddressField(String address) {
         addressField.sendKeys(address);
@@ -94,6 +97,7 @@ public class AddLocationPopUpComponent extends BasePage {
         coordinatesField.click();
         return this;
     }
+
     @Step("Enter data {coordinates} into the 'Географічні координати' field ")
     public AddLocationPopUpComponent sendKeysCoordinatesField(String coordinates) {
         coordinatesField.sendKeys(coordinates);
@@ -104,11 +108,13 @@ public class AddLocationPopUpComponent extends BasePage {
         phoneField.click();
         return this;
     }
+
     @Step("Enter data {phoneNumber} into the 'Номер телефону' field")
     public AddLocationPopUpComponent sendKeysPhoneField(String phoneNumber) {
         phoneField.sendKeys(phoneNumber);
         return this;
     }
+  
     @Step("Click the 'Додати' button")
     public AddCenterPopUpComponent clickOnAddButtonToCenterPopUp() {
         addButton.click();

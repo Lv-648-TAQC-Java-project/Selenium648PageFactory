@@ -21,7 +21,7 @@ public class OwnerDropdownComponent extends BasePage {
     public OwnerDropdownComponent(WebDriver driver) {
         super(driver);
     }
-    @Step("Click on profile")
+
     @Step("Click on 'Додати центр' button ")
     public AddCenterPopUpComponent clickOnAddCenterButton() {
         addCenterButton.click();

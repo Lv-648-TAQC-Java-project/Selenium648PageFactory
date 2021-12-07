@@ -20,6 +20,7 @@ public class AddDropdownComponent extends BasePage {
         super(driver);
     }
 
+    @Step("Click on 'Додати центр' button")
     public AddCenterPopUpComponent clickOnAddCenterButton() {
         waitUntilElementToBeClickable(By.xpath(AddDropDownComponentLocators.ADD_CENTER_BUTTON_XPATH), 5);
         addCenterButton.click();

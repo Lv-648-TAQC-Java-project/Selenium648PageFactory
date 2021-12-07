@@ -25,6 +25,7 @@ public class GuestDropdownComponent extends BasePage {
         return new RegisterPopUpComponent(driver);
     }
 
+    @Step("Click on `Увійти` button")
     public LoginPopUpComponent clickOnLoginButton() {
         waitUntilElementToBeClickable(By.xpath(GuestDropdownComponentLocators.LOGIN_BUTTON_XPATH), 5);
         loginButton.click();
