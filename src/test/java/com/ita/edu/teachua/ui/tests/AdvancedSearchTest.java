@@ -127,23 +127,23 @@ public class AdvancedSearchTest extends TestRunner {
         SoftAssert softAssert = new SoftAssert();
         MainPage mainPage = new MainPage(driver);
         String urlMainPage = mainPage.getMainPageUrL();
-        softAssert.assertEquals("https://speak-ukrainian.org.ua/dev/", urlMainPage);
+        softAssert.assertEquals("https://speak-ukrainian.org.ua/dev/", urlMainPage, "URLs did NOT match");
 
         AdvancedSearchPage advancedSearchPage = mainPage.clickAdvancedSearchButton();
         String title = advancedSearchPage.getTitleOfAdvancedSearchField();
-        softAssert.assertEquals(title, "Розширений пошук");
+        softAssert.assertEquals(title, "Розширений пошук" , "Title did NOT match");
 
         boolean checkThatWorkshopRadioButtonIsChosenByDefault = advancedSearchPage.getWorkshopRadioButton().isDisplayed();
-        softAssert.assertTrue(checkThatWorkshopRadioButtonIsChosenByDefault, "workshop radiobutton is NOT selected");
+        softAssert.assertTrue(checkThatWorkshopRadioButtonIsChosenByDefault, "Workshop radiobutton is NOT selected");
 
         boolean CenterRadioButtonSelected = advancedSearchPage
                 .clickOnCenterRadioButton()
                 .getCenterRadioButton().isDisplayed();
-        softAssert.assertTrue(CenterRadioButtonSelected, "center radiobutton is NOT selected");
+        softAssert.assertTrue(CenterRadioButtonSelected, "Center radiobutton is NOT selected");
 
         advancedSearchPage.clickOnListIcon();
         for (ClubsItemComponent club : advancedSearchPage.getCards()) {
-            softAssert.assertTrue(club.isList());
+            softAssert.assertTrue(club.isList(), "Clubs are NOT displayed as list");
         }
         softAssert.assertAll();
     }

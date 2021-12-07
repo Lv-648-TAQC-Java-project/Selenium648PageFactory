@@ -468,9 +468,7 @@ public class OwnerProfileTest extends TestRunner {
         softAssert.assertAll();
     }
 
-    /**
-     * 173-Verify that the ‘Опис’ text field is filled in with valid data
-     **/
+
     @DataProvider
     public Object[][] specialCharactersData() {
         return new Object[][]{
@@ -484,7 +482,7 @@ public class OwnerProfileTest extends TestRunner {
     @Description("TUA-173 Verify that the ‘Опис’ text field is filled in with valid data")
     @Severity(SeverityLevel.CRITICAL)
     @Issue("TUA-173")
-    @Test(dataProvider = "specialCharactersData")
+    @Test(dataProvider = "specialCharactersData", description = "TUA-173")
     public void checkDescriptionFieldWithValidLettersAndSymbols(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage
@@ -507,14 +505,12 @@ public class OwnerProfileTest extends TestRunner {
             boolean checkDescriptionFiledWithDifferentSymbols = new AddClubPopUpComponent(driver)
                     .inputInDescriptionField(data)
                     .getTick().isDisplayed();
-            softAssert.assertTrue(checkDescriptionFiledWithDifferentSymbols, "field is NOT valid");
+            softAssert.assertTrue(checkDescriptionFiledWithDifferentSymbols, "Field is NOT valid");
         }
         softAssert.assertAll();
     }
 
-    /**
-     * 176-Verify that error message ‘Опис гуртка закороткий’ appears when the user enters less than 40 symbols into the field
-     **/
+
     @DataProvider
     public Object[][] lessThan40SymbolsData() {
         return new Object[][]{
@@ -524,11 +520,11 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
-    @Description("TUA-176-Verify that error message ‘Опис гуртка закороткий’ appears when the user enters less than 40 symbols into the field")
+    @Description("TUA-176-Verify that error message ‘Некоректний опис гуртка\\n\" + \"Опис гуртка може містити від 40 до 1500 символів.’ appears when the user enters less than 40 symbols into the field")
     @Severity(SeverityLevel.CRITICAL)
     @Issue("TUA-176")
-    @Test(dataProvider = "lessThan40SymbolsData")
-    public void checkDescriptionFieldWithLessThan40Symbols(String[] input) {
+    @Test(dataProvider = "lessThan40SymbolsData", description = "TUA-176")
+    public void checkDescriptionFieldWithLessTha40Symbols(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -550,15 +546,12 @@ public class OwnerProfileTest extends TestRunner {
             String checkDescriptionFiledWithLessThan40Symbols = new AddClubPopUpComponent(driver)
                     .inputInDescriptionField(data)
                     .getError().getText();
-            softAssert.assertEquals(checkDescriptionFiledWithLessThan40Symbols, "Некоректний опис гуртка\n" + "Опис гуртка може містити від 40 до 1500 символів.");
+            softAssert.assertEquals(checkDescriptionFiledWithLessThan40Symbols, "Некоректний опис гуртка\n" + "Опис гуртка може містити від 40 до 1500 символів.", "Error message did NOT appear");
         }
         softAssert.assertAll();
     }
 
 
-    /**
-     * 177-Verify that error message ‘Опис гуртка задовгий’ appears when the user enters more than 1500 symbols into the field
-     **/
     @DataProvider
     public Object[][] lessAndMoreThan1500data() {
         return new Object[][]{
@@ -577,10 +570,10 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
-    @Description("TUA-177-Verify that error message ‘Опис гуртка задовгий’ appears when the user enters more than 1500 symbols into the field")
+    @Description("TUA-177-Verify that error message ‘Опис гуртка може містити від 40 до 1500 символів.’ appears when the user enters more than 1500 symbols into the field or that field is valid when the user enters less than 1500 symbols")
     @Severity(SeverityLevel.CRITICAL)
     @Issue("TUA-177")
-    @Test(dataProvider = "lessAndMoreThan1500data")
+    @Test(dataProvider = "lessAndMoreThan1500data", description = "TUA-177")
     public void checkDescriptionFieldWithLessAndMoreThan1500Symbols(String[] input) {
         SoftAssert softAssert = new SoftAssert();
         boolean checkIfValidFiledWith1500Symbols = new HeaderPage(driver)
@@ -610,20 +603,17 @@ public class OwnerProfileTest extends TestRunner {
         String checkIfValidFiledWith1501Symbol = new AddClubPopUpComponent(driver)
                 .inputInDescriptionField(input[2])
                 .getError().getText();
-        softAssert.assertEquals(checkIfValidFiledWith1501Symbol, "Опис гуртка може містити від 40 до 1500 символів.");
+        softAssert.assertEquals(checkIfValidFiledWith1501Symbol, "Опис гуртка може містити від 40 до 1500 символів.", "Error message did NOT appear");
 
         String checkIfValidFiledWithMoreThan1500Symbols = new AddClubPopUpComponent(driver)
                 .inputInDescriptionField(input[3])
                 .getError().getText();
-        softAssert.assertEquals(checkIfValidFiledWithMoreThan1500Symbols, "Опис гуртка може містити від 40 до 1500 символів.");
+        softAssert.assertEquals(checkIfValidFiledWithMoreThan1500Symbols, "Опис гуртка може містити від 40 до 1500 символів.", "Error message did NOT appear");
 
         softAssert.assertAll();
     }
 
 
-    /**
-     * 172-Verify that the ‘Опис’ text field is filled in with valid data when a user enters from 40 to 1500 symbols into the field
-     **/
     @DataProvider
     public Object[][] differentSizeData() {
         return new Object[][]{
@@ -640,7 +630,7 @@ public class OwnerProfileTest extends TestRunner {
     @Description("TUA-172-Verify that the ‘Опис’ text field is filled in with valid data when a user enters from 40 to 1500 symbols into the field")
     @Severity(SeverityLevel.CRITICAL)
     @Issue("TUA-172")
-    @Test(dataProvider = "differentSizeData")
+    @Test(dataProvider = "differentSizeData", description = "172")
     public void checkButtonIsEnabledWithValidInput(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage
