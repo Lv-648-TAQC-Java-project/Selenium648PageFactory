@@ -39,8 +39,9 @@ public class OwnerProfileTest extends TestRunner {
                         "", "Будь ласка введіть Ваш номер телефону"}
         };
     }
-
-    @Test(dataProvider = "phoneDataProvider")
+    @Issue("TUA-356")
+    @Description("Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field")
+    @Test(dataProvider = "phoneDataProvider", description = "TUA-356")
     public void TestUserCheckInvalidDataForFieldPhone(String[] dataAndExpected) {
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
@@ -305,8 +306,9 @@ public class OwnerProfileTest extends TestRunner {
                 .isDisplayed();
         Assert.assertTrue(actualResult, "Location was not create");
     }
-
-    @Test
+    @Issue("TUA-454")
+    @Description("This test check that last entered data on the ‘Реєстрація’ page are remembered #31")
+    @Test(description = "TUA-454")
     public void checkLastVerifyEnteredDataInRegistrationRemembered() {
         HeaderPage header = new HeaderPage(driver);
         RegisterPopUpComponent registerCheck = header.clickOnGuestDropdown()
@@ -370,8 +372,9 @@ public class OwnerProfileTest extends TestRunner {
                         "", "Будь ласка введіть Ваше прізвище"}
         };
     }
-
-    @Test(dataProvider = "lastNameDataProvider")
+    @Issue("TUA-343")
+    @Description("Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data into the 'Прізвище' field")
+    @Test(dataProvider = "lastNameDataProvider", description = "TUA-343")
     public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String[] dataAndExpected) {
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
@@ -419,8 +422,9 @@ public class OwnerProfileTest extends TestRunner {
                         "", "Будь ласка введіть Ваше ім'я"}
         };
     }
-
-    @Test(dataProvider = "firstNameDataProvider")
+    @Issue("TUA-328")
+    @Description("Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data into the 'Ім'я' field")
+    @Test(dataProvider = "firstNameDataProvider", description = "TUA-328")
     public void checkErrorMsWhenFillInvalidDataIntoFirstNameField(String dataAndExpected[]) {
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
