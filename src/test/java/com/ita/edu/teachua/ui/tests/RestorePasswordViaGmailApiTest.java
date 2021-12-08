@@ -6,12 +6,10 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Issue;
 import com.ita.edu.teachua.ui.pages.header_page.RestoringBeginPopUpComponent;
 import com.ita.edu.teachua.ui.pages.header_page.RestoringPasswordFinishPopUpComponent;
-import io.qameta.allure.Description;
-import io.qameta.allure.Issue;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class ResorePasswordViaGmailApi extends TestRunner {
+public class RestorePasswordViaGmailApiTest extends TestRunner {
 
     @Issue("TUA-318")
     @Description("This test case verifies that the user can recover or change the password, using valid values for 'New password' field.")
