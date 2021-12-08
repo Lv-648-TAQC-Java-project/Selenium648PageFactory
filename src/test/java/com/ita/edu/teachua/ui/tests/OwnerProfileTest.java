@@ -39,8 +39,9 @@ public class OwnerProfileTest extends TestRunner {
                         "", "Будь ласка введіть Ваш номер телефону"}
         };
     }
-
-    @Test(dataProvider = "phoneDataProvider")
+    @Issue("TUA-356")
+    @Description("Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field")
+    @Test(dataProvider = "phoneDataProvider", description = "TUA-356")
     public void TestUserCheckInvalidDataForFieldPhone(String[] dataAndExpected) {
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
@@ -48,7 +49,7 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile();
-        SoftAssert softAssert=new SoftAssert();
+        SoftAssert softAssert = new SoftAssert();
         for (int i = 0; i < dataAndExpected.length; i += 2) {
             String actual = edit
                     .fillPhone(dataAndExpected[i])
@@ -59,8 +60,9 @@ public class OwnerProfileTest extends TestRunner {
         }
         softAssert.assertAll();
     }
-
-    @Test(description = "TUA-160 This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty")
+    @Issue("TUA-160")
+    @Description("This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty")
+    @Test(description = "TUA-160")
     public void VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty() {
         HeaderPage header = new HeaderPage(driver);
         boolean addLocationPopUpBlockIsDisplayed = header
@@ -96,8 +98,8 @@ public class OwnerProfileTest extends TestRunner {
     }
 
     @Issue("TUA-237")
-    @Description("TUA-237 This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.")
-    @Test(dataProvider = "addClubPopUpComponentData")
+    @Description("This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.")
+    @Test(dataProvider = "addClubPopUpComponentData", description = "TUA-237")
     public void VerifyThatOwnerCanAddLocationOfClub(String validName,
                                                     String ageFrom,
                                                     String ageTo,
@@ -205,7 +207,7 @@ public class OwnerProfileTest extends TestRunner {
     }
 
     @Issue("TUA-252")
-    @Description("TUA-252 This test case verifies that user cannot create a center with invalid data in 'Назва' field")
+    @Description("This test case verifies that error messages is displayed after user leaves fields empty and clicks 'Наступний крок' button on 'Основна інформація' tab")
     @Test(description = "TUA-252")
     public void VerifyThatErrorMessagesIsDisplayedAfterUserLeavesFieldsEmptyAndClicksNextStepButton() {
         boolean errorsIsDisplayed = new HeaderPage(driver)
@@ -325,6 +327,7 @@ public class OwnerProfileTest extends TestRunner {
     }
 
     @Description("TUA-159: verify that a user can add location to the list of locations after filling in only mandatory fields with valid data")
+    @Issue("TUA-159")
     @Test(dataProvider = "verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider")
     public void addLocationWithValidDataOfMandatoryFields(String name, String town, String address, String coordinates, String phoneNumber) {
         boolean actualResult = new HeaderPage(driver).authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -343,8 +346,9 @@ public class OwnerProfileTest extends TestRunner {
                 .isLocationCheckboxDisplayed(name);
         Assert.assertTrue(actualResult, "Location was not create");
     }
-
-    @Test
+    @Issue("TUA-454")
+    @Description("This test check that last entered data on the ‘Реєстрація’ page are remembered #31")
+    @Test(description = "TUA-454")
     public void checkLastVerifyEnteredDataInRegistrationRemembered() {
         HeaderPage header = new HeaderPage(driver);
         RegisterPopUpComponent registerCheck = header.clickOnGuestDropdown()
@@ -408,8 +412,9 @@ public class OwnerProfileTest extends TestRunner {
                         "", "Будь ласка введіть Ваше прізвище"}
         };
     }
-
-    @Test(dataProvider = "lastNameDataProvider")
+    @Issue("TUA-343")
+    @Description("Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data into the 'Прізвище' field")
+    @Test(dataProvider = "lastNameDataProvider", description = "TUA-343")
     public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String[] dataAndExpected) {
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
@@ -457,8 +462,9 @@ public class OwnerProfileTest extends TestRunner {
                         "", "Будь ласка введіть Ваше ім'я"}
         };
     }
-
-    @Test(dataProvider = "firstNameDataProvider")
+    @Issue("TUA-328")
+    @Description("Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data into the 'Ім'я' field")
+    @Test(dataProvider = "firstNameDataProvider", description = "TUA-328")
     public void checkErrorMsWhenFillInvalidDataIntoFirstNameField(String dataAndExpected[]) {
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
@@ -507,9 +513,7 @@ public class OwnerProfileTest extends TestRunner {
         softAssert.assertAll();
     }
 
-    /**
-     * 173-Verify that the ‘Опис’ text field is filled in with valid data
-     **/
+
     @DataProvider
     public Object[][] specialCharactersData() {
         return new Object[][]{
@@ -523,7 +527,7 @@ public class OwnerProfileTest extends TestRunner {
     @Description("TUA-173 Verify that the ‘Опис’ text field is filled in with valid data")
     @Severity(SeverityLevel.CRITICAL)
     @Issue("TUA-173")
-    @Test(dataProvider = "specialCharactersData")
+    @Test(dataProvider = "specialCharactersData", description = "TUA-173")
     public void checkDescriptionFieldWithValidLettersAndSymbols(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage
@@ -546,14 +550,12 @@ public class OwnerProfileTest extends TestRunner {
             boolean checkDescriptionFiledWithDifferentSymbols = new AddClubPopUpComponent(driver)
                     .inputInDescriptionField(data)
                     .getTick().isDisplayed();
-            softAssert.assertTrue(checkDescriptionFiledWithDifferentSymbols, "field is NOT valid");
+            softAssert.assertTrue(checkDescriptionFiledWithDifferentSymbols, "Field is NOT valid");
         }
         softAssert.assertAll();
     }
 
-    /**
-     * 176-Verify that error message ‘Опис гуртка закороткий’ appears when the user enters less than 40 symbols into the field
-     **/
+
     @DataProvider
     public Object[][] lessThan40SymbolsData() {
         return new Object[][]{
@@ -563,11 +565,11 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
-    @Description("TUA-176-Verify that error message ‘Опис гуртка закороткий’ appears when the user enters less than 40 symbols into the field")
+    @Description("TUA-176-Verify that error message ‘Некоректний опис гуртка\\n\" + \"Опис гуртка може містити від 40 до 1500 символів.’ appears when the user enters less than 40 symbols into the field")
     @Severity(SeverityLevel.CRITICAL)
     @Issue("TUA-176")
-    @Test(dataProvider = "lessThan40SymbolsData")
-    public void checkDescriptionFieldWithLessThan40Symbols(String[] input) {
+    @Test(dataProvider = "lessThan40SymbolsData", description = "TUA-176")
+    public void checkDescriptionFieldWithLessTha40Symbols(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -589,15 +591,12 @@ public class OwnerProfileTest extends TestRunner {
             String checkDescriptionFiledWithLessThan40Symbols = new AddClubPopUpComponent(driver)
                     .inputInDescriptionField(data)
                     .getError().getText();
-            softAssert.assertEquals(checkDescriptionFiledWithLessThan40Symbols, "Некоректний опис гуртка\n" + "Опис гуртка може містити від 40 до 1500 символів.");
+            softAssert.assertEquals(checkDescriptionFiledWithLessThan40Symbols, "Некоректний опис гуртка\n" + "Опис гуртка може містити від 40 до 1500 символів.", "Error message did NOT appear");
         }
         softAssert.assertAll();
     }
 
 
-    /**
-     * 177-Verify that error message ‘Опис гуртка задовгий’ appears when the user enters more than 1500 symbols into the field
-     **/
     @DataProvider
     public Object[][] lessAndMoreThan1500data() {
         return new Object[][]{
@@ -616,10 +615,10 @@ public class OwnerProfileTest extends TestRunner {
         };
     }
 
-    @Description("TUA-177-Verify that error message ‘Опис гуртка задовгий’ appears when the user enters more than 1500 symbols into the field")
+    @Description("TUA-177-Verify that error message ‘Опис гуртка може містити від 40 до 1500 символів.’ appears when the user enters more than 1500 symbols into the field or that field is valid when the user enters less than 1500 symbols")
     @Severity(SeverityLevel.CRITICAL)
     @Issue("TUA-177")
-    @Test(dataProvider = "lessAndMoreThan1500data")
+    @Test(dataProvider = "lessAndMoreThan1500data", description = "TUA-177")
     public void checkDescriptionFieldWithLessAndMoreThan1500Symbols(String[] input) {
         SoftAssert softAssert = new SoftAssert();
         boolean checkIfValidFiledWith1500Symbols = new HeaderPage(driver)
@@ -649,20 +648,17 @@ public class OwnerProfileTest extends TestRunner {
         String checkIfValidFiledWith1501Symbol = new AddClubPopUpComponent(driver)
                 .inputInDescriptionField(input[2])
                 .getError().getText();
-        softAssert.assertEquals(checkIfValidFiledWith1501Symbol, "Опис гуртка може містити від 40 до 1500 символів.");
+        softAssert.assertEquals(checkIfValidFiledWith1501Symbol, "Опис гуртка може містити від 40 до 1500 символів.", "Error message did NOT appear");
 
         String checkIfValidFiledWithMoreThan1500Symbols = new AddClubPopUpComponent(driver)
                 .inputInDescriptionField(input[3])
                 .getError().getText();
-        softAssert.assertEquals(checkIfValidFiledWithMoreThan1500Symbols, "Опис гуртка може містити від 40 до 1500 символів.");
+        softAssert.assertEquals(checkIfValidFiledWithMoreThan1500Symbols, "Опис гуртка може містити від 40 до 1500 символів.", "Error message did NOT appear");
 
         softAssert.assertAll();
     }
 
 
-    /**
-     * 172-Verify that the ‘Опис’ text field is filled in with valid data when a user enters from 40 to 1500 symbols into the field
-     **/
     @DataProvider
     public Object[][] differentSizeData() {
         return new Object[][]{
@@ -679,7 +675,7 @@ public class OwnerProfileTest extends TestRunner {
     @Description("TUA-172-Verify that the ‘Опис’ text field is filled in with valid data when a user enters from 40 to 1500 symbols into the field")
     @Severity(SeverityLevel.CRITICAL)
     @Issue("TUA-172")
-    @Test(dataProvider = "differentSizeData")
+    @Test(dataProvider = "differentSizeData", description = "172")
     public void checkButtonIsEnabledWithValidInput(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage

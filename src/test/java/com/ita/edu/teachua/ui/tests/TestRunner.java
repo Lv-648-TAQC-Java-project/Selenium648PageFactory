@@ -27,6 +27,7 @@ public class TestRunner {
         valueProvider = new ValueProvider();
 
     }
+
     @SneakyThrows()
     @BeforeMethod
     public void beforeMethod(ITestContext context) {
@@ -35,7 +36,7 @@ public class TestRunner {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(valueProvider.getBaseUrl());
-        context.setAttribute("driver",driver);
+        context.setAttribute("driver", driver);
     }
 
     @AfterMethod

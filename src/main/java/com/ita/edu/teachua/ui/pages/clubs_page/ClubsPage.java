@@ -4,6 +4,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.Label;
 import com.ita.edu.teachua.ui.locators.clubs_page_locators.ClubsPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,6 +33,7 @@ public class ClubsPage extends BasePage {
         return invalidSearchPageTitle.getText();
     }
 
+    @Step("Check if club {title} is present on the page")
     public boolean isClubPresent(String title) {
         int attempts = 10;
         for (int i = 0; i < attempts; i++) {
@@ -44,9 +46,9 @@ public class ClubsPage extends BasePage {
         boolean isPresent = false;
         String res = "";
         for (WebElement t : titles) {
-            try{
+            try {
                 res = t.getText();
-            }catch (StaleElementReferenceException e){
+            } catch (StaleElementReferenceException e) {
                 sleep(100);
                 return isClubPresent(title);
             }

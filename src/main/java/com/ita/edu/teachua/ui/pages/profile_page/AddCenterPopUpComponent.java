@@ -68,8 +68,8 @@ public class AddCenterPopUpComponent extends BasePage {
         description.set(text);
         return this;
     }
-
-    @Step("Clear center name field")
+  
+    @Step("Delete possible values from 'Назва центру' field")
     public AddCenterPopUpComponent clearCenterName() {
         centerName.clear();
         return this;
@@ -80,7 +80,7 @@ public class AddCenterPopUpComponent extends BasePage {
         nextStepButton.click();
         return this;
     }
-
+    @Step("Checking that error message 'Некоректна назва центру’ appears under 'Назва центру' field")
     public boolean errorsIsDisplayed() {
         waitUntilVisibilityOfElementLocated(By.cssSelector(AddCenterPopUpComponentLocators.CENTER_NAME_ERROR_BLOCK_CSS_SELECTOR), 5);
         return errorBlock.isDisplayed();
@@ -114,6 +114,4 @@ public class AddCenterPopUpComponent extends BasePage {
         clubCheckBox.check();
         return this;
     }
-
-
 }

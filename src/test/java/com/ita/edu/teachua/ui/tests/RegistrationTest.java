@@ -3,6 +3,8 @@ package com.ita.edu.teachua.ui.tests;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
 import com.ita.edu.teachua.ui.pages.header_page.RegisterPopUpComponent;
+import io.qameta.allure.Description;
+import io.qameta.allure.Issue;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -13,6 +15,8 @@ import java.util.List;
 
 public class RegistrationTest extends TestRunner {
 
+    @Description("TUA-510 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up")
+    @Issue("TUA-359")
     @Test(invocationCount = 1)
     public void checkAlertsFieldsWhenEmpty() {
         HeaderPage profile = new HeaderPage(driver);

@@ -34,11 +34,13 @@ public class LoginPopUpComponent extends BasePage {
         return this;
     }
 
+    @Step("Fill in Password field: '{passwordValue}'")
     public LoginPopUpComponent sendKeysPasswordField(String passwordValue) {
         passwordField.set(passwordValue);
         return this;
     }
 
+    @Step("Click on Submit button")
     public HeaderPage clickLoginSubmitButton() {
         loginSubmitButton.click();
         sleep(2000);
@@ -53,10 +55,11 @@ public class LoginPopUpComponent extends BasePage {
         return new HeaderPage(driver);
     }
 
-    /*public RestoringPopUpComponent clickOnForgotPasswordButton(){
-        forgotPasswordButton = new LinkElement(driver,LoginPopUpComponentLocators.FORGOT_PASSWORD_BUTTON);
-        waitElementToBeClickable(LoginPopUpComponentLocators.FORGOT_PASSWORD_BUTTON,5);
+    @Step("Click on 'Забули пароль' button.")
+    public RestoringBeginPopUpComponent clickOnForgotPasswordButton(){
+        sleep(500);
+        //waitElementToBeClickable(LoginPopUpComponentLocators.FORGOT_PASSWORD_BUTTON,5);
         forgotPasswordButton.click();
-        return new RestoringPopUpComponent(driver);
-    }*/
+        return new RestoringBeginPopUpComponent(driver);
+    }
 }

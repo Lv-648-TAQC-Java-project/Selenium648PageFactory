@@ -50,12 +50,13 @@ public class MainPage extends BasePage {
         return new ClubsPage(driver);
     }
 
-
+    @Step("Type *{input}* in search field")
     public ClubsPage inputStringInSearchField(String input) {
         searchInput.sendKeys(input);
         return new ClubsPage(driver);
     }
 
+    @Step("Insert from clipboard *{input}* in search field")
     public ClubsPage pasteClipBoardStringInSearchField(String input) {
         StringSelection stringSelection = new StringSelection(input);
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();

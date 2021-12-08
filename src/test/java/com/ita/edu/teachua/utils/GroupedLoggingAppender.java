@@ -1,10 +1,13 @@
 package com.ita.edu.teachua.utils;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileFilter;
-import java.io.FileWriter;
-import java.io.IOException;
+import org.apache.log4j.AppenderSkeleton;
+import org.apache.log4j.PatternLayout;
+import org.apache.log4j.spi.LoggingEvent;
+import org.testng.IReporter;
+import org.testng.ISuite;
+import org.testng.xml.XmlSuite;
+
+import java.io.*;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -14,19 +17,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.apache.log4j.AppenderSkeleton;
-import org.apache.log4j.PatternLayout;
-import org.apache.log4j.spi.LoggingEvent;
-import org.testng.IReporter;
-import org.testng.ISuite;
-import org.testng.xml.XmlSuite;
-
 public class GroupedLoggingAppender extends AppenderSkeleton implements IReporter {
+    public static final String ext = ".threadlog.txt";
     private final ConcurrentHashMap<Long, BufferedWriter> tid2file = new ConcurrentHashMap<Long, BufferedWriter>();
-
     private final String outputDir;
     private final String outputFile;
-    public static final String ext = ".threadlog.txt";
 
     public GroupedLoggingAppender() {
         setLayout(new PatternLayout("%d{ABSOLUTE} %5p %c{1}:%L - %m%n"));
