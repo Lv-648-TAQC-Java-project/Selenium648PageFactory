@@ -78,6 +78,8 @@ public class AdvancedSearchTest extends TestRunner {
         };
     }
 
+    @Description("TUA-210 Verify that input field 'Вік дитини' accepts only positive integers from 2 to 18")
+    @Issue("TUA-210")
     @Test(dataProvider = "checkByAgeDataProvider")
     public void checkByValidAgeDataProvider(String input, String expectedResult) {
         String actualResult = new MainPage(driver).clickAdvancedSearchButton()
