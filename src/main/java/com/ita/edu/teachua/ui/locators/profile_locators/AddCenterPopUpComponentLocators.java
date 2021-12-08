@@ -9,5 +9,6 @@ public class AddCenterPopUpComponentLocators {
     public static final String FINISH_BUTTON_XPATH = "//button[@class='finish-btn']";
     public static final String CENTER_NAME_INPUT_ID = "basic_name";
     public static final String CENTER_NAME_ERROR_BLOCK_CSS_SELECTOR = "div[role='alert']";
+    public static final String ADD_CENTER_BLOCK_HEADER_XPATH = "//div[contains(text(),'Додати центр')]";
 
 }

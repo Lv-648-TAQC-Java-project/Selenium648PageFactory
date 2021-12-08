@@ -304,7 +304,6 @@ public class AdvancedSearchPage extends BasePage {
         return clubBlocks;
     }
 
-
     @Step("Get text of title 'Розширений пошук'")
     public String getTitleOfAdvancedSearchField() {
         return advancedSearchFieldTitle.getText();
@@ -326,21 +325,13 @@ public class AdvancedSearchPage extends BasePage {
 
     @Step("Get number of pages with clubs")
     public int getNumberOfPagesWithClubs() {
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        sleep(1000);
         return Integer.parseInt(lastPageButton.getInnerText());
     }
 
     @Step("Click on arrow up to sort clubs in descending order")
     public AdvancedSearchPage clickOnArrowUpButton() {
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        sleep(1000);
         arrowUpButton.click();
         return this;
     }
