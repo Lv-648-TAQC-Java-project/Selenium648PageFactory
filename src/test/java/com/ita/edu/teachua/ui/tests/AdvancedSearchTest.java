@@ -20,7 +20,7 @@ public class AdvancedSearchTest extends TestRunner {
 
     @Description("TUA-510 Verify that 'Доступний онлайн', 'Категорії', 'Вік дитини' parameters are deactivated after selecting 'Центр' radio button")
     @Issue("TUA-510")
-    @Test
+    @Test(description = "TUA-510")
     public void verifyAllParametersActiveCenterAdvancedSearch() {
         SoftAssert softAssert = new SoftAssert();
         AdvancedSearchPage advancedSearchPage = new MainPage(driver).clickAdvancedSearchButton().clickOnCenterRadioButton();

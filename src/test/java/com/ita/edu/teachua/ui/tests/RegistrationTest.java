@@ -17,7 +17,7 @@ public class RegistrationTest extends TestRunner {
 
     @Description("TUA-510 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up")
     @Issue("TUA-359")
-    @Test(invocationCount = 1)
+    @Test(invocationCount = 1,description = "TUA-359")
     public void checkAlertsFieldsWhenEmpty() {
         HeaderPage profile = new HeaderPage(driver);
         RegisterPopUpComponent registration = profile.clickOnGuestDropdown().clickOnRegisterButton();

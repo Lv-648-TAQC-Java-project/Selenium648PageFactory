@@ -24,7 +24,7 @@ public class BasicSearchTest extends TestRunner {
 
     @Description("TUA-226 Verify that user can perform basic search by inserting name of a club")
     @Issue("TUA-226")
-    @Test(invocationCount = 1, dataProvider = "clubsNameSearchTestDataProvider")
+    @Test(invocationCount = 1, dataProvider = "clubsNameSearchTestDataProvider",description = "TUA-226")
     public void checkSearchWithNameOfClubsClipBoard(String data) {
         boolean isPresent = new MainPage(driver)
                 .pasteClipBoardStringInSearchField(data)
