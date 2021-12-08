@@ -34,11 +34,13 @@ public class LoginPopUpComponent extends BasePage {
         return this;
     }
 
+    @Step("Fill in Password field: '{passwordValue}'")
     public LoginPopUpComponent sendKeysPasswordField(String passwordValue) {
         passwordField.set(passwordValue);
         return this;
     }
 
+    @Step("Click on Submit button")
     public HeaderPage clickLoginSubmitButton() {
         loginSubmitButton.click();
         sleep(2000);
@@ -55,7 +57,7 @@ public class LoginPopUpComponent extends BasePage {
 
     @Step("Click on 'Забули пароль' button.")
     public RestoringBeginPopUpComponent clickOnForgotPasswordButton(){
-
+        sleep(500);
         //waitElementToBeClickable(LoginPopUpComponentLocators.FORGOT_PASSWORD_BUTTON,5);
         forgotPasswordButton.click();
         return new RestoringBeginPopUpComponent(driver);
