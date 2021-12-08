@@ -307,6 +307,7 @@ public class OwnerProfileTest extends TestRunner {
                 .fillPhoneNumberField(validPhone)
                 .clickOnNextStepButton()
                 .fillDescriptionField(validDescription)
+                .clickOnNextStepButton()
                 .clickOnClubCheckBoxByName(validClubName)
                 .clickOnFinishButton();
     }

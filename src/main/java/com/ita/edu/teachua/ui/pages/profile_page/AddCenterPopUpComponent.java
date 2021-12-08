@@ -24,7 +24,7 @@ public class AddCenterPopUpComponent extends BasePage {
     private Div errorBlock;
     @FindBy(how = How.ID, using = AddCenterPopUpComponentLocators.CENTER_NAME_INPUT_ID)
     private Input nameField;
-    @FindBy(how = How.XPATH, using = AddCenterPopUpComponentLocators.PHONE_NUMBER_FIELD_ID)
+    @FindBy(how = How.ID, using = AddCenterPopUpComponentLocators.PHONE_NUMBER_FIELD_ID)
     private Input phoneNumberField;
     @FindBy(how = How.ID, using = AddCenterPopUpComponentLocators.DESCRIPTION_FIELD_ID)
     private Input description;
