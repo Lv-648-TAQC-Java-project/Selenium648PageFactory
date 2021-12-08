@@ -14,6 +14,4 @@ public class ProfileDynamicLabelsLocators {
         return driver.findElement(By.xpath(String.format("//input[contains(@id,'%s')]/ancestor::div[@class='ant-row ant-form-item add-club-contact ant-form-item-has-feedback ant-form-item-has-success']//span[@aria-label='check-circle']", id)));
         ////input[contains(@id,'basic_contactТелефон')]/ancestor::div[@class='ant-row ant-form-item add-club-contact ant-form-item-has-feedback ant-form-item-has-success']//span[@aria-label='check-circle']
     }
-
-
 }

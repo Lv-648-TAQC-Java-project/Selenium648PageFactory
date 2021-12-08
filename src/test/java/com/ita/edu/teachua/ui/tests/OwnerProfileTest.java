@@ -67,7 +67,7 @@ public class OwnerProfileTest extends TestRunner {
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnAddCenterButton()
-                .clickOnAddLocation()
+                .clickOnAddLocationButton()
                 .addLocationPopUpBlockIsDisplayed();// check first expected condition
         Assert.assertTrue(addLocationPopUpBlockIsDisplayed);
 
@@ -167,9 +167,9 @@ public class OwnerProfileTest extends TestRunner {
 
         AddClubPopUpComponent addClubPopUpComponent = addLocationPopUpComponent
                 .clickOnAddButtonToClubPopUp();
-        Title addedLoactionTitle = addClubPopUpComponent
+        Title addedLocationTitle = addClubPopUpComponent
                 .getAddedLocationTitle();
-        softAssert.assertTrue(addedLoactionTitle.isDisplayed());
+        softAssert.assertTrue(addedLocationTitle.isDisplayed());
 
 
         isDataAccepted = addClubPopUpComponent
@@ -221,51 +221,92 @@ public class OwnerProfileTest extends TestRunner {
 
     }
 
+    @DataProvider
+    public Object[][] addLocationPopUpComponentData() {
+        return new Object[][]{
+                {"ValidLocationName",
+                        "ValidAddress",
+                        "49.829104498711104, 24.005058710351314",
+                        "0966666666"
+                }
+        };
+    }
+
     @Issue("TUA-158")
     @Description("Verify that a 'Керівник' can add location to the list of locations after filling in all mandatory and all optional fields with valid data")
-    @Test(description = "TUA-158")
-    public void testAddLocationByOwner() {
+    @Test(dataProvider = "addLocationPopUpComponentData", description = "TUA-158")
+    public void testAddLocationByOwner(String validLocationName,
+                                       String validAddress,
+                                       String validCoordinates,
+                                       String validPhone) {
         HeaderPage header = new HeaderPage(driver);
         boolean actual = header.authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnAddCenterButton()
-                .clickOnAddLocation()
-                .sendKeysLocationNameField("LocationTestName")
+                .clickOnAddLocationButton()
+                .sendKeysLocationNameField(validLocationName)
                 .clickOnCityDropdown()
                 .clickOnKyivButton()
                 .clickOnDistrictDropdown()
                 .clickOnDesnianskyiButton()
                 .clickOnLocalityDropdown()
                 .clickOnAkademmistechkoButton()
-                .sendKeysAddressField("SomeAddress")
-                .sendKeysCoordinatesField("50.46403522497495, 30.36469393119765")
-                .sendKeysPhoneField("0432143210")
+                .sendKeysAddressField(validAddress)
+                .sendKeysCoordinatesField(validCoordinates)
+                .sendKeysPhoneField(validPhone)
                 .clickOnAddButtonToCenterPopUp()
-                .getCheckBoxByName("LocationTestName")
-                .isDisplayed();
+                .isLocationCheckboxDisplayed(validLocationName);
         Assert.assertTrue(actual);
+    }
+
+    @DataProvider
+    public Object[][] addCenterPopUpComponentData() {
+        return new Object[][]{
+                {"ValidLocationName",
+                        "ValidAddress",
+                        "49.829104498711104, 24.005058710351314",
+                        "0966666666",
+                        "ValidCenterName",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                        "ValidName"
+                }
+        };
     }
 
     @Issue("UA-214")
     @Description("Verify that user can create a center with valid data")
-    @Test(description = "UA-214")
-    public void testAddLocationFromProfilePage() {
-        HeaderPage header = new HeaderPage(driver);// TODO create dropDown element from profile page
+    @Test(dataProvider = "addCenterPopUpComponentData", description = "UA-214")
+    public void testAddLocationFromProfilePage(String validLocationName,
+                                               String validAddress,
+                                               String validCoordinates,
+                                               String validPhone,
+                                               String validCenterName,
+                                               String validDescription,
+                                               String validClubName) {
+        HeaderPage header = new HeaderPage(driver);
         header.authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnAddCenterButton()
-                .clickOnAddLocation()
-                .sendKeysLocationNameField("LocationTestName")
+                .clickOnAddLocationButton()
+                .sendKeysLocationNameField(validLocationName)
                 .clickOnCityDropdown()
                 .clickOnKyivButton()
                 .clickOnDistrictDropdown()
                 .clickOnDesnianskyiButton()
                 .clickOnLocalityDropdown()
                 .clickOnAkademmistechkoButton()
-                .sendKeysAddressField("SomeAddress")
-                .sendKeysCoordinatesField("50.46403522497495, 30.36469393119765")
-                .sendKeysPhoneField("0432143210")
-                .clickOnAddButtonToCenterPopUp();
+                .sendKeysAddressField(validAddress)
+                .sendKeysCoordinatesField(validCoordinates)
+                .sendKeysPhoneField(validPhone)
+                .clickOnAddButtonToCenterPopUp()
+                .clickOnLocationCheckBoxByName(validLocationName)
+                .fillNameField(validCenterName)
+                .clickOnNextStepButton()
+                .fillPhoneNumberField(validPhone)
+                .clickOnNextStepButton()
+                .fillDescriptionField(validDescription)
+                .clickOnClubCheckBoxByName(validClubName)
+                .clickOnFinishButton();
     }
 
     @Issue("TUA-321")
@@ -291,7 +332,7 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnProfile()
                 .clickOnAddButton()
                 .clickOnAddCenterButton()
-                .clickOnAddLocation()
+                .clickOnAddLocationButton()
                 .sendKeysLocationNameField(name)
                 .clickOnCityDropdown()
                 .clickOnKyivButton()
@@ -299,8 +340,7 @@ public class OwnerProfileTest extends TestRunner {
                 .sendKeysCoordinatesField(coordinates)
                 .sendKeysPhoneField(phoneNumber)
                 .clickOnAddButtonToCenterPopUp()
-                .getCheckBoxByName(name)
-                .isDisplayed();
+                .isLocationCheckboxDisplayed(name);
         Assert.assertTrue(actualResult, "Location was not create");
     }
 

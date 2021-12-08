@@ -29,7 +29,7 @@ public class HeaderPage extends BasePage {
 
     @Step("Click on dropdown for authorized user in top right corner of header")
     public OwnerDropdownComponent clickOnOwnerDropdown() {
-        guestDropdown.click();
+        ownerDropdown.click();
         return new OwnerDropdownComponent(driver);
     }
 

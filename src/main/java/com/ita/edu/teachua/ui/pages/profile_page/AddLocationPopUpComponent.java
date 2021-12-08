@@ -107,6 +107,7 @@ public class AddLocationPopUpComponent extends BasePage {
         addButtonToClubPopUp.click();
         return new AddClubPopUpComponent(driver);
     }
+
     @Step("Check if data for the field with Id {id} is accepted")
     public boolean isDataAccepted(String id) {
         try {

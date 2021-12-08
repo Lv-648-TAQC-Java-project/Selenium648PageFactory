@@ -156,7 +156,7 @@ public class AdvancedSearchTest extends TestRunner {
 
     @Issue("TUA-103")
     @Description("Verify that sorting for advanced search works correctly (In descending order)")
-    @Test(description = "[TUA-103] Verify that sorting for advanced search works correctly (In descending order)")
+    @Test(description = "TUA-103")
     public void checkSortingClubsByNameInDescendingOrder() {
         MainPage mainPage = new MainPage(driver);
         AdvancedSearchPage advSearch = mainPage.clickAdvancedSearchButton().clickOnArrowUpButton();
@@ -165,19 +165,14 @@ public class AdvancedSearchTest extends TestRunner {
     }
 
     public List<String> getTitlesFromAllPages(AdvancedSearchPage advancedSearchPage) {
-        //List<WebElement> titles;
+        List<ClubsItemComponent> titles;
         List<String> stringCards = new ArrayList<>();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         int n = advancedSearchPage.getNumberOfPagesWithClubs();
         for (int i = 0; i < n; i++) {
-            /*titles = advancedSearchPage.getAllTitlesOfCards(); TODO fix
-            for (WebElement card : titles) {
-                stringCards.add(card.getText());
-            }*/
+            titles = advancedSearchPage.getCards();
+            for (ClubsItemComponent card : titles) {
+                stringCards.add(card.getCardTitle());
+            }
             advancedSearchPage.clickOnNextPageButton();
         }
         return stringCards;
