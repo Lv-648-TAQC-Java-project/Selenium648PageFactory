@@ -483,7 +483,7 @@ public class OwnerProfileTest extends TestRunner {
 
     @Description("TUA-359 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up")
     @Issue("TUA-359")
-    @Test
+    @Test(description = "TUA-359")
     public void getErrorMessageInChangePasswordPopUpTest() {
         HeaderPage headerPage = new HeaderPage(driver);
         ProfileEditPopUpComponent editProfile = new ProfileEditPopUpComponent(driver);

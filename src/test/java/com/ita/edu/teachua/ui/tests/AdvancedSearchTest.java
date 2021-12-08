@@ -53,7 +53,7 @@ public class AdvancedSearchTest extends TestRunner {
 
     @Description("TUA-224 Advanced search button opens Розширений пошук section")
     @Issue("TUA-224")
-    @Test
+    @Test(description = "TUA-224")
     public void openAdvancedSearchFieldTest() {
         SoftAssert softAssert = new SoftAssert();
         MainPage mainPage = new MainPage(driver);

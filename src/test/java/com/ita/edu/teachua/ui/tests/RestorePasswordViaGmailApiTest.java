@@ -36,7 +36,7 @@ public class RestorePasswordViaGmailApiTest extends TestRunner {
 
     @Description("TUA-322 Verify if error message is displayed if passwords in 'Введіть новий пароль', 'Введіть новий пароль повторно' are not equal")
     @Issue("TUA-322")
-    @Test
+    @Test(description = "TUA-322")
     public void verifyErrorPasswordAndReenterPasswordNotEqualTest() {
         HeaderPage header = new HeaderPage(driver);
         RestoringPasswordFinishPopUpComponent restoringPassword = new RestoringPasswordFinishPopUpComponent(driver);
@@ -56,7 +56,7 @@ public class RestorePasswordViaGmailApiTest extends TestRunner {
 
     @Description("TUA-319 Verify if  user can change the password entering incorrect email")
     @Issue("TUA-319")
-    @Test
+    @Test(description = "TUA-322")
     public void restorePasswordWithInvalidEmailTest() {
         HeaderPage header = new HeaderPage(driver);
         RestoringBeginPopUpComponent restoringPopUp =new RestoringBeginPopUpComponent(driver);
