@@ -36,16 +36,16 @@ public class AdvancedSearchTest extends TestRunner {
         softAssert.assertNull(advancedSearchPage.getRemoteLabel(), "Remote label is displayed");
         softAssert.assertNull(advancedSearchPage.getAvailableOnlineCheckBox(), "Available online checkbox is displayed");
         softAssert.assertNull(advancedSearchPage.getSportSectionsCheckBox(), "Sport sections checkbox is displayed");
-        softAssert.assertNull(advancedSearchPage.getDanceChoreographyCheckBox(), "Dance checkbox check box is  displayed");
-        softAssert.assertNull(advancedSearchPage.getEarlyDevelopStudiesCheckBox(), "Early development studies checkbox check box is displayed");
-        softAssert.assertNull(advancedSearchPage.getProgrammingStemCheckBox(), "Programming, STEM checkbox check box is displayed");
-        softAssert.assertNull(advancedSearchPage.getArtDesignCheckBox(), "Art studio, design checkbox check box is displayed");
-        softAssert.assertNull(advancedSearchPage.getVocalMusicCheckBox(), "Vocal studio, music checkbox check box is displayed");
-        softAssert.assertNull(advancedSearchPage.getActorsTheaterCheckBox(), "Actors, theater checkbox check box is displayed");
-        softAssert.assertNull(advancedSearchPage.getPersonalDevelopmentCheckBox(), "Personal development checkbox check box is displayed");
-        softAssert.assertNull(advancedSearchPage.getJournalismEditVideoCheckBox(), "Journalism, editing video checkbox check box is displayed");
-        softAssert.assertNull(advancedSearchPage.getDevelopCenterCheckBox(), "Develop center checkbox check box is displayed");
-        softAssert.assertNull(advancedSearchPage.getOtherCheckBox(), "Other checkbox check box is displayed");
+        softAssert.assertNull(advancedSearchPage.getDanceChoreographyCheckBox(), "Dance checkbox is  displayed");
+        softAssert.assertNull(advancedSearchPage.getEarlyDevelopStudiesCheckBox(), "Early development studies checkbox is displayed");
+        softAssert.assertNull(advancedSearchPage.getProgrammingStemCheckBox(), "Programming, STEM checkbox is displayed");
+        softAssert.assertNull(advancedSearchPage.getArtDesignCheckBox(), "Art studio, design checkbox is displayed");
+        softAssert.assertNull(advancedSearchPage.getVocalMusicCheckBox(), "Vocal studio, music checkbox is displayed");
+        softAssert.assertNull(advancedSearchPage.getActorsTheaterCheckBox(), "Actors, theater checkbox is displayed");
+        softAssert.assertNull(advancedSearchPage.getPersonalDevelopmentCheckBox(), "Personal development checkbox is displayed");
+        softAssert.assertNull(advancedSearchPage.getJournalismEditVideoCheckBox(), "Journalism, editing video checkbox is displayed");
+        softAssert.assertNull(advancedSearchPage.getDevelopCenterCheckBox(), "Develop center checkbox is displayed");
+        softAssert.assertNull(advancedSearchPage.getOtherCheckBox(), "Other checkbox is displayed");
         softAssert.assertNull(advancedSearchPage.getAgeLabel(), "Age label is displayed");
 
         softAssert.assertAll();
@@ -88,9 +88,9 @@ public class AdvancedSearchTest extends TestRunner {
 
     }
 
-    @Description("TUA-509 Verify that all parameters are activated with the selected 'Гурток' radio button")
+    @Description("Verify that all parameters are activated with the selected 'Гурток' radio button")
     @Issue("TUA-509")
-    @Test
+    @Test(description = "TUA-509")
     public void verifyAllParametersActiveClubsAdvancedSearch() {
         SoftAssert softAssert = new SoftAssert();
         AdvancedSearchPage advancedSearchPage = new MainPage(driver).clickAdvancedSearchButton();
