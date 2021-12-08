@@ -230,7 +230,7 @@ public class AdvancedSearchPage extends BasePage {
         return ageInput;
     }
 
-    @Step("Press 'Enter' key after filling in 'Вік дитини' field")
+    @Step("press 'Enter' key after filling in 'Вік дитини' field")
     public AdvancedSearchPage pressEnterAgeInput() {
         ageInput.pressEnter();
         return this;
