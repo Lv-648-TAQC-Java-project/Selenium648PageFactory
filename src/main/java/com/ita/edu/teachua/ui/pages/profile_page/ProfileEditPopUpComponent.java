@@ -47,14 +47,14 @@ public class ProfileEditPopUpComponent extends BasePage {
         super(driver);
     }
 
-    @Step("Fill phone number in (phone field)")
+    @Step("Fill {phoneNumber} in phone field")
     public ProfileEditPopUpComponent fillPhone(String phoneNumber) {
         phone.set(phoneNumber);
         sleep(2000);
         return this;
     }
 
-    @Step("Fill first name in (first name field)")
+    @Step("Fill {firstNameFill} in first name field")
     public ProfileEditPopUpComponent fillFirstName(String firstNameFill) {
         sleep(100);
         firstName.clear();
@@ -62,7 +62,7 @@ public class ProfileEditPopUpComponent extends BasePage {
         return this;
     }
 
-    @Step("Fill last name in (last name field)")
+    @Step("Fill {lastNameFill} in last name field")
     public ProfileEditPopUpComponent fillLastName(String lastNameFill) {
         lastName.clear();
         lastName.set(lastNameFill);
