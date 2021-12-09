@@ -80,7 +80,7 @@ public class AdvancedSearchTest extends TestRunner {
 
     @Description("TUA-210 Verify that input field 'Вік дитини' accepts only positive integers from 2 to 18")
     @Issue("TUA-210")
-    @Test(dataProvider = "checkByAgeDataProvider")
+    @Test(dataProvider = "checkByAgeDataProvider",description = "TUA-210")
     public void checkByValidAgeDataProvider(String input, String expectedResult) {
         String actualResult = new MainPage(driver).clickAdvancedSearchButton()
                 .setValueAgeInput(input)
@@ -124,7 +124,7 @@ public class AdvancedSearchTest extends TestRunner {
     @Description("TUA-513-Verify that the centers in the results of advanced search can be displayed as a list")
     @Severity(SeverityLevel.CRITICAL)
     @Issue("TUA-513")
-    @Test
+    @Test(description = "TUA-513")
     public void checkIfCentersAreDisplayedAsAList() {
         SoftAssert softAssert = new SoftAssert();
         MainPage mainPage = new MainPage(driver);

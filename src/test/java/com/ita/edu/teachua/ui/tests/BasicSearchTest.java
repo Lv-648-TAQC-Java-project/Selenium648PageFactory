@@ -34,7 +34,7 @@ public class BasicSearchTest extends TestRunner {
 
     @Description("TUA-226 Verify that user can perform basic search by typing name of a club")
     @Issue("TUA-226")
-    @Test(invocationCount = 1, dataProvider = "clubsNameSearchTestDataProvider")
+    @Test(invocationCount = 1, dataProvider = "clubsNameSearchTestDataProvider",description = "TUA-226")
     public void checkSearchWithNameOfClubsTyping(String data) {
         boolean isPresent = new MainPage(driver)
                 .inputStringInSearchField(data)
@@ -53,7 +53,7 @@ public class BasicSearchTest extends TestRunner {
 
     @Description("Verify search field behavior for invalid number of symbols entered")
     @Issue("TUA-428")
-    @Test(dataProvider = "checkInvalidSymbolsAndQuantityDataProvider")
+    @Test(dataProvider = "checkInvalidSymbolsAndQuantityDataProvider", description = "TUA-428")
     public void checkInvalidSymbolsAndQuantityTyping(String input, String expectedResult) {
         String actualResult = new MainPage(driver).inputStringInSearchField(input)
                 .getTitleOfInvalidSearchPage();
@@ -62,7 +62,7 @@ public class BasicSearchTest extends TestRunner {
 
     @Description("Verify search field behavior for invalid number of symbols pasted")
     @Issue("TUA-428")
-    @Test(dataProvider = "checkInvalidSymbolsAndQuantityDataProvider")
+    @Test(dataProvider = "checkInvalidSymbolsAndQuantityDataProvider",description = "TUA-428")
     public void checkInvalidSymbolsAndQuantityPaste(String input, String expectedResult) {
         String actualResult = new MainPage(driver).pasteClipBoardStringInSearchField(input)
                 .getTitleOfInvalidSearchPage();
