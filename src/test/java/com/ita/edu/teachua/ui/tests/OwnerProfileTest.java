@@ -39,6 +39,7 @@ public class OwnerProfileTest extends TestRunner {
                         "", "Будь ласка введіть Ваш номер телефону"}
         };
     }
+
     @Issue("TUA-356")
     @Description("Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field")
     @Test(dataProvider = "phoneDataProvider", description = "TUA-356")
@@ -60,6 +61,7 @@ public class OwnerProfileTest extends TestRunner {
         }
         softAssert.assertAll();
     }
+
     @Issue("TUA-160")
     @Description("This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty")
     @Test(description = "TUA-160")
@@ -323,14 +325,18 @@ public class OwnerProfileTest extends TestRunner {
     @DataProvider
     public Object[][] verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider() {
         return new Object[][]{
-                {"ТестЛокація2", "Харків", "Сумська 2/3", "50.00100346155677, 36.234188917163884", "0977777777"}
+                {
+                        "ТестЛокація2",
+                        "Сумська 2/3",
+                        "50.00100346155677, 36.234188917163884",
+                        "0977777777"}
         };
     }
 
     @Description("Verify that a user can add location to the list of locations after filling in only mandatory fields with valid data")
     @Issue("TUA-159")
     @Test(dataProvider = "verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider", description = "TUA-159")
-    public void addLocationWithValidDataOfMandatoryFields(String name, String town, String address, String coordinates, String phoneNumber) {
+    public void addLocationWithValidDataOfMandatoryFields(String name, String address, String coordinates, String phoneNumber) {
         boolean actualResult = new HeaderPage(driver).authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
@@ -347,6 +353,7 @@ public class OwnerProfileTest extends TestRunner {
                 .isLocationCheckboxDisplayed(name);
         Assert.assertTrue(actualResult, "Location was not create");
     }
+
     @Issue("TUA-454")
     @Description("This test check that last entered data on the ‘Реєстрація’ page are remembered #31")
     @Test(description = "TUA-454")
@@ -413,6 +420,7 @@ public class OwnerProfileTest extends TestRunner {
                         "", "Будь ласка введіть Ваше прізвище"}
         };
     }
+
     @Issue("TUA-343")
     @Description("Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data into the 'Прізвище' field")
     @Test(dataProvider = "lastNameDataProvider", description = "TUA-343")
@@ -463,6 +471,7 @@ public class OwnerProfileTest extends TestRunner {
                         "", "Будь ласка введіть Ваше ім'я"}
         };
     }
+
     @Issue("TUA-328")
     @Description("Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data into the 'Ім'я' field")
     @Test(dataProvider = "firstNameDataProvider", description = "TUA-328")
