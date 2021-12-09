@@ -24,7 +24,7 @@ public class TestNgListeners implements ITestListener {
         log.warn("Test FAILED: {}", result.getName());
         long tid = Thread.currentThread().getId();
         attachLogFile(tid);
-        if (result.getInstance().getClass().getName().toLowerCase().contains("greencity.api")) {
+        if (result.getInstance().getClass().getName().toLowerCase().contains("api")) {
             //If this is an API test
             attachRequestLogFile(result.getName());
         }
@@ -71,23 +71,11 @@ public class TestNgListeners implements ITestListener {
 
     //-- Attachments -------------------------------------------------------------------------------
 
-    /**
-     * Attaches a page screenshot to the Allure report.
-     *
-     * @param driver An instance of WebDriver.
-     *               This is a test class's (test runner's) field with the exact name "driver"
-     */
     @Attachment(value = "Page screenshot", type = "image/png")
     public byte[] attachScreenshot(WebDriver driver) {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 
-    /**
-     * Attaches logs from a particular thread to the Allure report.
-     * These logs are named like "thread_output_0001.threadlog.txt" and stored in the root of "target" directory
-     *
-     * @param tid ID of the thread: Thread.currentThread().getId()
-     */
     @Attachment(value = "Logs for thread {tid}", type = "text/plain", fileExtension = ".log")
     public byte[] attachLogFile(long tid) {
         try {
@@ -100,12 +88,6 @@ public class TestNgListeners implements ITestListener {
         return null;
     }
 
-    /**
-     * Attaches logs from REST-assured listeners to the Allure report.
-     * These logs are named like "testName_requests.log" and stored in the root of "target" directory
-     *
-     * @param testName Name of test method: ITestResult.getName()
-     */
     @Attachment(value = "Request logs for {testName}", type = "text/plain", fileExtension = ".log")
     public byte[] attachRequestLogFile(String testName) {
         try {
