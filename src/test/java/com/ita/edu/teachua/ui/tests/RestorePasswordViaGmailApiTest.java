@@ -49,14 +49,15 @@ public class RestorePasswordViaGmailApiTest extends TestRunner {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(restoringPassword.isPresentGreenMark());
         restoringPassword.fillReenterNewPasswordField("Rampam12@");
-        softAssert.assertEquals(restoringPassword.getErrorMessagePasswordNotEqual(), "Значення поля ‘Підтвердити новий пароль’ має бути еквівалентним значенню поля ‘Новий пароль’");
+        softAssert.assertEquals(restoringPassword.getErrorMessagePasswordNotEqual(),
+                "Значення поля ‘Підтвердити новий пароль’ має бути еквівалентним значенню поля ‘Новий пароль’");
         softAssert.assertAll();
     }
 
 
     @Description("TUA-319 Verify if  user can change the password entering incorrect email")
     @Issue("TUA-319")
-    @Test(description = "TUA-322")
+    @Test(description = "TUA-319")
     public void restorePasswordWithInvalidEmailTest() {
         HeaderPage header = new HeaderPage(driver);
         RestoringBeginPopUpComponent restoringPopUp =new RestoringBeginPopUpComponent(driver);
