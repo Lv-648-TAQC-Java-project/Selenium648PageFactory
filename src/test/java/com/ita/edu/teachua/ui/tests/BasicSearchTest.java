@@ -51,6 +51,8 @@ public class BasicSearchTest extends TestRunner {
         };
     }
 
+    @Description("Verify search field behavior for invalid number of symbols entered")
+    @Issue("TUA-428")
     @Test(dataProvider = "checkInvalidSymbolsAndQuantityDataProvider")
     public void checkInvalidSymbolsAndQuantityTyping(String input, String expectedResult) {
         String actualResult = new MainPage(driver).inputStringInSearchField(input)
@@ -58,6 +60,8 @@ public class BasicSearchTest extends TestRunner {
         Assert.assertEquals(actualResult, expectedResult);
     }
 
+    @Description("Verify search field behavior for invalid number of symbols pasted")
+    @Issue("TUA-428")
     @Test(dataProvider = "checkInvalidSymbolsAndQuantityDataProvider")
     public void checkInvalidSymbolsAndQuantityPaste(String input, String expectedResult) {
         String actualResult = new MainPage(driver).pasteClipBoardStringInSearchField(input)

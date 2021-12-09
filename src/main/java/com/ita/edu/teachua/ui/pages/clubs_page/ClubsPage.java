@@ -29,6 +29,7 @@ public class ClubsPage extends BasePage {
         super(driver);
     }
 
+    @Step("Check if {title} of invalid search results is present on the page")
     public String getTitleOfInvalidSearchPage() {
         return invalidSearchPageTitle.getText();
     }

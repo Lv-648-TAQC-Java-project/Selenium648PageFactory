@@ -94,6 +94,7 @@ public class AdvancedSearchPage extends BasePage {
         super(driver);
     }
 
+    @Step("Type *{input}* in age field")
     public AdvancedSearchPage setValueAgeInput(String input) {
         ageInput.clear();
         ageInput.sendKeys(input);
@@ -224,10 +225,12 @@ public class AdvancedSearchPage extends BasePage {
         return otherCheckBox;
     }
 
+    @Step("Get text of 'Вік дитини' field")
     public Input getAgeInput() {
         return ageInput;
     }
 
+    @Step("press 'Enter' key after filling in 'Вік дитини' field")
     public AdvancedSearchPage pressEnterAgeInput() {
         ageInput.pressEnter();
         return this;
