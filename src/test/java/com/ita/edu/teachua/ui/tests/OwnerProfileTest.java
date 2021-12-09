@@ -579,7 +579,7 @@ public class OwnerProfileTest extends TestRunner {
     @Severity(SeverityLevel.CRITICAL)
     @Issue("TUA-176")
     @Test(dataProvider = "lessThan40SymbolsData", description = "TUA-176")
-    public void checkDescriptionFieldWithLessTha40Symbols(String[] input) {
+    public void checkDescriptionFieldWithLessThan40Symbols(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage
                 .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
@@ -648,12 +648,12 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnNextStepButton()
                 .inputInDescriptionField(input[0])
                 .getTick().isDisplayed();
-        softAssert.assertTrue(checkIfValidFiledWith1500Symbols, "field is NOT valid");
+        softAssert.assertTrue(checkIfValidFiledWith1500Symbols, "Field is NOT valid");
 
         boolean checkIfValidFiledWithLessThan1500Symbols = new AddClubPopUpComponent(driver)
                 .inputInDescriptionField(input[1])
                 .getTick().isDisplayed();
-        softAssert.assertTrue(checkIfValidFiledWithLessThan1500Symbols, "field is NOT valid");
+        softAssert.assertTrue(checkIfValidFiledWithLessThan1500Symbols, "Field is NOT valid");
 
         String checkIfValidFiledWith1501Symbol = new AddClubPopUpComponent(driver)
                 .inputInDescriptionField(input[2])
@@ -685,7 +685,7 @@ public class OwnerProfileTest extends TestRunner {
     @Description("TUA-172-Verify that the ‘Опис’ text field is filled in with valid data when a user enters from 40 to 1500 symbols into the field")
     @Severity(SeverityLevel.CRITICAL)
     @Issue("TUA-172")
-    @Test(dataProvider = "differentSizeData", description = "172")
+    @Test(dataProvider = "differentSizeData", description = "TUA-172")
     public void checkButtonIsEnabledWithValidInput(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage
@@ -708,7 +708,7 @@ public class OwnerProfileTest extends TestRunner {
             boolean checkIfButtonIsEnabled = new AddClubPopUpComponent(driver)
                     .inputInDescriptionField(data)
                     .getEndButton().isEnabled();
-            softAssert.assertTrue(checkIfButtonIsEnabled, "button is NOT enabled");
+            softAssert.assertTrue(checkIfButtonIsEnabled, "Button is NOT enabled");
         }
         softAssert.assertAll();
     }

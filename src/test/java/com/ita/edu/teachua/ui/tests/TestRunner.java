@@ -25,13 +25,11 @@ public class TestRunner {
     public void beforeSuite() throws IOException {
         WebDriverManager.chromedriver().setup();
         valueProvider = new ValueProvider();
-
     }
 
     @SneakyThrows()
     @BeforeMethod
     public void beforeMethod(ITestContext context) {
-
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
