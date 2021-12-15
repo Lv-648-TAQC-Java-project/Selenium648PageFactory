@@ -1,9 +1,12 @@
-package com.ita.edu.teachua.api.models.club.add_club;
+package com.ita.edu.teachua.api.models.club;
 
-public class District {
+public class District{
     private Integer id;
     private String name;
     private City city;
+
+    public District() {
+    }
 
     public District(Integer id, String name, City city) {
         this.id = id;
@@ -15,11 +18,23 @@ public class District {
         return id;
     }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public City getCity() {
         return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
     }
 }

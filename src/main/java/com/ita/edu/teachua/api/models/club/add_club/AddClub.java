@@ -16,7 +16,10 @@ public class AddClub {
     private String contacts;
     private Integer centerId;
 
-    public AddClub(List<String> categoriesName, String name, int ageFrom, int ageTo, Object urlLogo, Object urlBackground, boolean isOnline, String description, String userId, List<Location> locations, String contacts, int centerId) {
+    public AddClub() {
+    }
+
+    public AddClub(List<String> categoriesName, String name, Integer ageFrom, Integer ageTo, Object urlLogo, Object urlBackground, Boolean isOnline, String description, String userId, List<Location> locations, String contacts, Integer centerId) {
         this.categoriesName = categoriesName;
         this.name = name;
         this.ageFrom = ageFrom;
@@ -39,11 +42,11 @@ public class AddClub {
         return name;
     }
 
-    public int getAgeFrom() {
+    public Integer getAgeFrom() {
         return ageFrom;
     }
 
-    public int getAgeTo() {
+    public Integer getAgeTo() {
         return ageTo;
     }
 
@@ -55,7 +58,7 @@ public class AddClub {
         return urlBackground;
     }
 
-    public boolean isOnline() {
+    public Boolean getOnline() {
         return isOnline;
     }
 
@@ -75,25 +78,7 @@ public class AddClub {
         return contacts;
     }
 
-    public int getCenterId() {
+    public Integer getCenterId() {
         return centerId;
-    }
-
-    @Override
-    public String toString() {
-        return "{\"AddClub\":{"
-                + "\"categoriesName\":" + categoriesName
-                + ", \"name\":\"" + name + "\""
-                + ", \"ageFrom\":\"" + ageFrom + "\""
-                + ", \"ageTo\":\"" + ageTo + "\""
-                + ", \"urlLogo\":" + urlLogo
-                + ", \"urlBackground\":" + urlBackground
-                + ", \"isOnline\":\"" + isOnline + "\""
-                + ", \"description\":\"" + description + "\""
-                + ", \"userId\":\"" + userId + "\""
-                + ", \"locations\":" + locations
-                + ", \"contacts\":\"" + contacts + "\""
-                + ", \"centerId\":\"" + centerId + "\""
-                + "}}";
     }
 }

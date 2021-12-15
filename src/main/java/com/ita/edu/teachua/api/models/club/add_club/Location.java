@@ -1,55 +1,26 @@
 package com.ita.edu.teachua.api.models.club.add_club;
 
 public class Location {
-    private Integer id;
-    private String name;
-    private String address;
-    private Double latitude;
-    private Double longitude;
-    private District district;
-    private Station station;
-    private City city;
+    public String name;
+    public String cityName;
+    public String districtName;
+    public String stationName;
+    public String address;
+    public String coordinates;
+    public String phone;
+    public Double key;
 
-    public Location(Integer id, String name, String address, Double latitude, Double longitude, District district, Station station, City city) {
-        this.id = id;
+    public Location() {
+    }
+
+    public Location(String name, String cityName, String districtName, String stationName, String address, String coordinates, String phone, Double key) {
         this.name = name;
+        this.cityName = cityName;
+        this.districtName = districtName;
+        this.stationName = stationName;
         this.address = address;
-        this.latitude = latitude;
-        this.longitude = longitude;
-        this.district = district;
-        this.station = station;
-        this.city = city;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public Double getLatitude() {
-        return latitude;
-    }
-
-    public Double getLongitude() {
-        return longitude;
-    }
-
-    public District getDistrict() {
-        return district;
-    }
-
-    public Station getStation() {
-        return station;
-    }
-
-    public City getCity() {
-        return city;
+        this.coordinates = coordinates;
+        this.phone = phone;
+        this.key = key;
     }
 }

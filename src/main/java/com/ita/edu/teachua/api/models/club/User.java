@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.api.models.club.add_club;
+package com.ita.edu.teachua.api.models.club;
 
 public class User {
     private Integer id;
@@ -7,13 +7,17 @@ public class User {
     private String firstName;
     private String lastName;
     private String phone;
-    private Object urlLogo;
-    private Object provider;
-    private Object providerId;
+    private String urlLogo;
+    private Role role;
+    private String provider;
+    private String providerId;
     private Boolean status;
-    private Object verificationCode;
+    private String verificationCode;
 
-    public User(Integer id, String email, String password, String firstName, String lastName, String phone, Object urlLogo, Object provider, Object providerId, Boolean status, Object verificationCode) {
+    public User() {
+    }
+
+    public User(Integer id, String email, String password, String firstName, String lastName, String phone, String urlLogo, Role role, String provider, String providerId, Boolean status, String verificationCode) {
         this.id = id;
         this.email = email;
         this.password = password;
@@ -21,6 +25,7 @@ public class User {
         this.lastName = lastName;
         this.phone = phone;
         this.urlLogo = urlLogo;
+        this.role = role;
         this.provider = provider;
         this.providerId = providerId;
         this.status = status;
@@ -51,15 +56,19 @@ public class User {
         return phone;
     }
 
-    public Object getUrlLogo() {
+    public String getUrlLogo() {
         return urlLogo;
     }
 
-    public Object getProvider() {
+    public Role getRole() {
+        return role;
+    }
+
+    public String getProvider() {
         return provider;
     }
 
-    public Object getProviderId() {
+    public String getProviderId() {
         return providerId;
     }
 
@@ -67,7 +76,7 @@ public class User {
         return status;
     }
 
-    public Object getVerificationCode() {
+    public String getVerificationCode() {
         return verificationCode;
     }
 }

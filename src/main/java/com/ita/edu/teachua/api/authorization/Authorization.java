@@ -22,6 +22,7 @@ public class Authorization {
         this.request = RestAssured.given();
     }
     public RequestSpecification prepareAuthorizedRequest(){
+
         return request.header("Authorization","Bearer " + token);
     }
 

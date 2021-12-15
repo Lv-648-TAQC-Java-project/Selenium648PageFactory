@@ -5,11 +5,10 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 
-import io.restassured.response.ExtractableResponse;
+
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
-import static io.restassured.RestAssured.given;
 
 public abstract class BaseClient {
     protected final String baseApiUrl;

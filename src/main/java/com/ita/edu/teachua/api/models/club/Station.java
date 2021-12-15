@@ -1,9 +1,12 @@
-package com.ita.edu.teachua.api.models.club.add_club;
+package com.ita.edu.teachua.api.models.club;
 
-public class Station {
+public class Station{
     private Integer id;
     private String name;
     private City city;
+
+    public Station() {
+    }
 
     public Station(Integer id, String name, City city) {
         this.id = id;

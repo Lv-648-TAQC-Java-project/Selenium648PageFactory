@@ -1,4 +1,6 @@
-package com.ita.edu.teachua.api.models.club.add_club;
+package com.ita.edu.teachua.api.models.club;
+
+import java.util.List;
 
 public class Category {
     private Integer id;
@@ -9,8 +11,12 @@ public class Category {
     private String backgroundColor;
     private String tagBackgroundColor;
     private String tagTextColor;
+    private List<Club> clubs;
 
-    public Category(Integer id, Integer sortby, String name, String description, String urlLogo, String backgroundColor, String tagBackgroundColor, String tagTextColor) {
+    public Category() {
+    }
+
+    public Category(Integer id, Integer sortby, String name, String description, String urlLogo, String backgroundColor, String tagBackgroundColor, String tagTextColor, List<Club> clubs) {
         this.id = id;
         this.sortby = sortby;
         this.name = name;
@@ -19,6 +25,7 @@ public class Category {
         this.backgroundColor = backgroundColor;
         this.tagBackgroundColor = tagBackgroundColor;
         this.tagTextColor = tagTextColor;
+        this.clubs = clubs;
     }
 
     public Integer getId() {
@@ -51,5 +58,9 @@ public class Category {
 
     public String getTagTextColor() {
         return tagTextColor;
+    }
+
+    public List<Club> getClubs() {
+        return clubs;
     }
 }
