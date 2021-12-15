@@ -1,10 +1,5 @@
 package com.ita.edu.teachua.api.models.club;
 
-import com.ita.edu.teachua.api.models.club.add_club.Category;
-import com.ita.edu.teachua.api.models.club.add_club.Center;
-import com.ita.edu.teachua.api.models.club.add_club.Location;
-import com.ita.edu.teachua.api.models.club.add_club.User;
-
 import java.util.List;
 
 public class Club {
@@ -13,20 +8,27 @@ public class Club {
     private Integer ageTo;
     private String name;
     private String description;
-    private Object urlWeb;
-    private Object urlLogo;
-    private Object urlBackground;
-    private Object urlGallery;
-    private Object workTime;
-    private List<Category> categories;
-    private User user;
-    private Center center;
-    private Object rating;
-    private List<Location> locations;
-    private Object isApproved;
+    private String urlWeb;
+    private String urlLogo;
+    private String urlBackground;
+    private List<String> urlGallery;
+    private String workTime;
+    private Integer rating;
+    private Integer feedbackCount;
     private Boolean isOnline;
+    private List<String> locations;
+    private List<String> categories;
+    private User user;
+    private String center;
+    private Boolean isApproved;
+    private String contacts;
+    private Integer clubExternalId;
+    private Integer centerExternalId;
 
-    public Club(Integer id, Integer ageFrom, Integer ageTo, String name, String description, Object urlWeb, Object urlLogo, Object urlBackground, Object urlGallery, Object workTime, List<Category> categories, User user, Center center, Object rating, List<Location> locations, Object isApproved, boolean isOnline) {
+    public Club() {
+    }
+
+    public Club(Integer id, Integer ageFrom, Integer ageTo, String name, String description, String urlWeb, String urlLogo, String urlBackground, List<String> urlGallery, String workTime, Integer rating, Integer feedbackCount, Boolean isOnline, List<String> locations, List<String> categories, User user, String center, Boolean isApproved, String contacts, Integer clubExternalId, Integer centerExternalId) {
         this.id = id;
         this.ageFrom = ageFrom;
         this.ageTo = ageTo;
@@ -37,13 +39,17 @@ public class Club {
         this.urlBackground = urlBackground;
         this.urlGallery = urlGallery;
         this.workTime = workTime;
+        this.rating = rating;
+        this.feedbackCount = feedbackCount;
+        this.isOnline = isOnline;
+        this.locations = locations;
         this.categories = categories;
         this.user = user;
         this.center = center;
-        this.rating = rating;
-        this.locations = locations;
         this.isApproved = isApproved;
-        this.isOnline = isOnline;
+        this.contacts = contacts;
+        this.clubExternalId = clubExternalId;
+        this.centerExternalId = centerExternalId;
     }
 
     public Integer getId() {
@@ -66,27 +72,43 @@ public class Club {
         return description;
     }
 
-    public Object getUrlWeb() {
+    public String getUrlWeb() {
         return urlWeb;
     }
 
-    public Object getUrlLogo() {
+    public String getUrlLogo() {
         return urlLogo;
     }
 
-    public Object getUrlBackground() {
+    public String getUrlBackground() {
         return urlBackground;
     }
 
-    public Object getUrlGallery() {
+    public List<String> getUrlGallery() {
         return urlGallery;
     }
 
-    public Object getWorkTime() {
+    public String getWorkTime() {
         return workTime;
     }
 
-    public List<Category> getCategories() {
+    public Integer getRating() {
+        return rating;
+    }
+
+    public Integer getFeedbackCount() {
+        return feedbackCount;
+    }
+
+    public Boolean getOnline() {
+        return isOnline;
+    }
+
+    public List<String> getLocations() {
+        return locations;
+    }
+
+    public List<String> getCategories() {
         return categories;
     }
 
@@ -94,46 +116,23 @@ public class Club {
         return user;
     }
 
-    public Center getCenter() {
+    public String getCenter() {
         return center;
     }
 
-    public Object getRating() {
-        return rating;
-    }
-
-    public List<Location> getLocations() {
-        return locations;
-    }
-
-    public Object getIsApproved() {
+    public Boolean getApproved() {
         return isApproved;
     }
 
-    public boolean isOnline() {
-        return isOnline;
+    public String getContacts() {
+        return contacts;
     }
 
-    @Override
-    public String toString() {
-        return "{\"Club\":{"
-                + "\"id\":\"" + id + "\""
-                + ", \"ageFrom\":\"" + ageFrom + "\""
-                + ", \"ageTo\":\"" + ageTo + "\""
-                + ", \"name\":\"" + name + "\""
-                + ", \"description\":\"" + description + "\""
-                + ", \"urlWeb\":" + urlWeb
-                + ", \"urlLogo\":" + urlLogo
-                + ", \"urlBackground\":" + urlBackground
-                + ", \"urlGallery\":" + urlGallery
-                + ", \"workTime\":" + workTime
-                + ", \"categories\":" + categories
-                + ", \"user\":" + user
-                + ", \"center\":" + center
-                + ", \"rating\":" + rating
-                + ", \"locations\":" + locations
-                + ", \"isApproved\":" + isApproved
-                + ", \"isOnline\":\"" + isOnline + "\""
-                + "}}";
+    public Integer getClubExternalId() {
+        return clubExternalId;
+    }
+
+    public Integer getCenterExternalId() {
+        return centerExternalId;
     }
 }
