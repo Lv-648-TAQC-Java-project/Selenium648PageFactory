@@ -23,4 +23,15 @@ public class ValueProvider {
     public String getAdminEmail() {
         return properties.getProperty("adminEmail");
     }
+
+    public String getBaseApiUrl() {
+        return properties.getProperty("baseApiUrl");
+    }
+
+    public String getSignInClientUrl() {
+        return properties.getProperty("signInClientUrl");
+    }
+    public String getClubClientUrl() {
+        return properties.getProperty("clubClientUrl");
+    }
 }
