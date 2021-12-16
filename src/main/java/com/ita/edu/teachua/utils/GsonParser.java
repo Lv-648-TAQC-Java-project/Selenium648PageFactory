@@ -8,11 +8,14 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class GsonParser {
-    private AddClub addClub;
     private Gson gson;
+
+    private AddClub addClub;
+
     public GsonParser() {
         gson = new Gson();
     }
+
     public void parseAddClubJson(){
         try(FileReader reader = new FileReader("src/main/resources/addClub.json")) {
             this.addClub = gson.fromJson(reader,AddClub.class);
@@ -22,6 +25,7 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
+
     public AddClub getAddClub(){
         return addClub;
     }

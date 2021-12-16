@@ -15,10 +15,6 @@ public class ClubClient extends BaseClient {
     private final String clientUrl;
     protected ValueProvider valueProvider;
     private String token;
-    /*private AddClub addClub;
-    private ClubRoot clubRoot;*/
-
-
 
     public ClubClient(String token) {
         super();
@@ -38,9 +34,6 @@ public class ClubClient extends BaseClient {
                 .body(new ClientDataTransfer().getAddClub())
                 .when()
                 .post(clientUrl);
-                /*.then().log().all()
-                .extract()
-                .as(ClubRoot.class);*/
     }
 
 }

@@ -12,14 +12,14 @@ import org.testng.annotations.Test;
 public class CreateClubTest extends AuthorizedApiTestRunner {
     @Test(description="TUA-463")
     public void VerifyThatUserAsOwnerCanCreateNewClubWhichRegisteredOnHim(){
-       ClubClient clubClient = new ClubClient(authorization.getToken());
+        Specifications.setResponseSpecification(200);
+        ClubClient clubClient = new ClubClient(authorization.getToken());
+
        Response response = clubClient.addNewClub();
-       response.then().log().all()
+       ClubRoot clubRoot = response.then().log().all()
                .extract()
                .as(ClubRoot.class);
-       System.out.println(response);
-
-       //System.out.println(clubClient.getNewClub());
+        System.out.println(clubRoot.getId());
 
     }
 }

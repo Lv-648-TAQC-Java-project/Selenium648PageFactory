@@ -15,13 +15,11 @@ public class Authorization {
         this.userSimple = new User_Simple(email, password);
         this.signInClient = new SignInClient();
         this.token = signInClient
-                .successSignInRequest()
+                .successSignInRequest(userSimple)
                 .getAccessToken();
     }
 
     public String getToken(){
-        /*this.request = RestAssured.given();
-        return request.header("Authorization","Bearer " + token);*/
         return token;
     }
 

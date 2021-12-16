@@ -25,9 +25,8 @@ public class SignInClient extends BaseClient {
         this.clientUrl = valueProvider.getSignInClientUrl();
     }
 
-    public SuccessSignIn successSignInRequest(){
-        User_Simple userSimple = new User_Simple(valueProvider.getAdminEmail(), valueProvider.getAdminPassword());
-        successSignIn = given()
+    public SuccessSignIn successSignInRequest(User_Simple userSimple){
+        successSignIn = preparedRequest()
                 .body(userSimple)
                 .when()
                 .post(clientUrl)

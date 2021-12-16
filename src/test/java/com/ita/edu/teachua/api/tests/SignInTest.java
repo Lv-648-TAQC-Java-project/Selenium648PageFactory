@@ -11,7 +11,7 @@ public class SignInTest extends ApiTestRunner {
     public void successSignInTest(){
         SignInClient signInClient = new SignInClient();
         String token = signInClient
-                .successSignInRequest()
+                .successSignInRequest(new User_Simple("admin@gmail.com","admin"))
                 .getAccessToken();
         Assert.assertNotNull(token);
     }
