@@ -4,21 +4,22 @@ package com.ita.edu.teachua.api.tests;
 import com.ita.edu.teachua.api.authorization.Authorization;
 import com.ita.edu.teachua.api.clients.ClubClient;
 import com.ita.edu.teachua.api.clients.SignInClient;
+import com.ita.edu.teachua.api.models.club.ClubRoot;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
-public class CreateClubTest extends ApiTestRunner {
+public class CreateClubTest extends AuthorizedApiTestRunner {
     @Test(description="TUA-463")
     public void VerifyThatUserAsOwnerCanCreateNewClubWhichRegisteredOnHim(){
-       authorization = new Authorization(new SignInClient(
-               valueProvider.getBaseApiUrl(),
-               ContentType.JSON,
-               valueProvider.getSignInClientUrl(),
-               200),
-               "TestTeach.ua@meta.ua","123456789");
-       ClubClient clubClient = new ClubClient(valueProvider.getBaseApiUrl(),ContentType.JSON,valueProvider.getClubClientUrl(),200);
-       clubClient.addNewClub(authorization.prepareAuthorizedRequest());
-       System.out.println(clubClient.getNewClub());
+        Specifications.setResponseSpecification(200);
+        ClubClient clubClient = new ClubClient(authorization.getToken());
+
+       Response response = clubClient.addNewClub();
+       ClubRoot clubRoot = response.then().log().all()
+               .extract()
+               .as(ClubRoot.class);
+        System.out.println(clubRoot.getId());
 
     }
 }

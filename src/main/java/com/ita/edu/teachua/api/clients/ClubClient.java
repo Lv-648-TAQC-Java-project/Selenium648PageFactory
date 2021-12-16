@@ -2,59 +2,38 @@ package com.ita.edu.teachua.api.clients;
 
 import com.ita.edu.teachua.api.models.club.ClubRoot;
 import com.ita.edu.teachua.api.models.club.add_club.AddClub;
+import com.ita.edu.teachua.utils.ClientDataTransfer;
 import com.ita.edu.teachua.utils.GsonParser;
+import com.ita.edu.teachua.utils.ValueProvider;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+
+import java.io.IOException;
 
 public class ClubClient extends BaseClient {
     private final String clientUrl;
-    private AddClub addClub;
-    private ClubRoot clubRoot;
+    protected ValueProvider valueProvider;
+    private String token;
 
+    public ClubClient(String token) {
+        super();
+        try {
+            valueProvider = new ValueProvider();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        this.clientUrl = valueProvider.getClubClientUrl();
+        this.token = token;
 
-
-    public ClubClient(String baseApiUrl, ContentType contentType, String clientUrl, int status) {
-        super(baseApiUrl, contentType, status);
-        this.clientUrl = clientUrl;
-        setAddClubFromJson();
     }
-    public void setAddClubFromJson(){
-        GsonParser parser = new GsonParser();
-        parser.parseAddClubJson();
-        this.addClub = parser.getAddClub();
-    }
-    public void addNewClub(RequestSpecification preparedRequest){
-        clubRoot = preparedRequest
-                .body(addClub)
+
+    public Response addNewClub(){
+        return preparedRequest()
+                .header("Authorization","Bearer " + token)
+                .body(new ClientDataTransfer().getAddClub())
                 .when()
-                .post(clientUrl)
-                .then().log().all()
-                .extract()
-                .as(ClubRoot.class);
+                .post(clientUrl);
     }
-    public ClubRoot getNewClub(){
-        return clubRoot;
-    }
-    /*private AddClub fillAddClub(){
 
-        addClub = given()
-                .body(payLoad)
-                .when()
-                .post("clientUrl")
-                .then().log().all()
-                .extract().
-                as(AddClub.class);
-        return addClub;
-    }*/
-
-    /*public SuccessSignIn successSignInRequest(User user){
-        successSignIn = given()
-                .body(user)
-                .when()
-                .post(clientUrl)
-                .then().log().all()
-                .extract()
-                .as(SuccessSignIn.class);
-        return successSignIn;
-    }*/
 }
