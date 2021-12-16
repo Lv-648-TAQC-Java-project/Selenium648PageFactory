@@ -4,6 +4,7 @@ public class Station{
     private Integer id;
     private String name;
     private City city;
+    public District district;
 
     public Station() {
     }

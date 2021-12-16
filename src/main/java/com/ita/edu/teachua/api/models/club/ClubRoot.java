@@ -18,8 +18,8 @@ public class ClubRoot {
     private Center center;
     private Integer rating;
     private List<Location> locations;
-    private Object isApproved;
-    private Object isOnline;
+    private Boolean isApproved;
+    private Boolean isOnline;
 
     public ClubRoot() {
     }

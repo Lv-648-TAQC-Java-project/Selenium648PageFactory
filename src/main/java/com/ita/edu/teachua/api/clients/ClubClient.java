@@ -35,26 +35,7 @@ public class ClubClient extends BaseClient {
     public ClubRoot getNewClub(){
         return clubRoot;
     }
-    /*private AddClub fillAddClub(){
 
-        addClub = given()
-                .body(payLoad)
-                .when()
-                .post("clientUrl")
-                .then().log().all()
-                .extract().
-                as(AddClub.class);
-        return addClub;
-    }*/
 
-    /*public SuccessSignIn successSignInRequest(User user){
-        successSignIn = given()
-                .body(user)
-                .when()
-                .post(clientUrl)
-                .then().log().all()
-                .extract()
-                .as(SuccessSignIn.class);
-        return successSignIn;
-    }*/
+
 }
