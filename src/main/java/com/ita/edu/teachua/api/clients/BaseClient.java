@@ -1,5 +1,6 @@
 package com.ita.edu.teachua.api.clients;
 
+import com.ita.edu.teachua.utils.ValueProvider;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -7,36 +8,30 @@ import io.restassured.http.ContentType;
 
 
 import io.restassured.specification.RequestSpecification;
-import io.restassured.specification.ResponseSpecification;
+import static io.restassured.RestAssured.given;
+
+import java.io.IOException;
 
 
-public abstract class BaseClient {
+public class BaseClient {
     protected final String baseApiUrl;
     protected final ContentType contentType;
-    protected final int status;
+    protected ValueProvider valueProvider;
 
-    public BaseClient(String baseApiUrl, ContentType contentType, int status) {
-        this.baseApiUrl=baseApiUrl;
-        this.contentType = contentType;
-        this.status = status;
-        setSpecification(requestSpecification(),responseSpecification());
-    }
-    public RequestSpecification requestSpecification(){
-        return new RequestSpecBuilder()
-                .setBaseUri(baseApiUrl)
-                .setContentType(contentType)
-                .build();
+    public BaseClient()  {
+        try {
+            valueProvider = new ValueProvider();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        this.baseApiUrl=valueProvider.getBaseApiUrl();
+        this.contentType = ContentType.JSON;
     }
 
-    public ResponseSpecification responseSpecification(){
-        return new ResponseSpecBuilder()
-                .expectStatusCode(status)
-                .build();
+    protected RequestSpecification preparedRequest() {
+        return given()
+                .baseUri(baseApiUrl)
+                .contentType(contentType)
+                .accept(contentType);
     }
-
-    public void setSpecification(RequestSpecification request, ResponseSpecification response){
-        RestAssured.requestSpecification = request;
-        RestAssured.responseSpecification = response;
-    }
-
 }

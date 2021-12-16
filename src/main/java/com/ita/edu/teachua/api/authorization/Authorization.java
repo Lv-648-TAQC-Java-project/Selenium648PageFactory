@@ -9,21 +9,20 @@ public class Authorization {
     User_Simple userSimple;
     SignInClient signInClient;
     String token;
-
     RequestSpecification request;
 
-    public Authorization(SignInClient signInClient,String email, String password) {
-        this.signInClient = signInClient;
+    public Authorization(String email, String password) {
         this.userSimple = new User_Simple(email, password);
+        this.signInClient = new SignInClient();
         this.token = signInClient
-                .successSignInRequest(userSimple)
+                .successSignInRequest()
                 .getAccessToken();
-        //RestAssured.baseURI="https://speak-ukrainian.org.ua/dev/api";
-        this.request = RestAssured.given();
     }
-    public RequestSpecification prepareAuthorizedRequest(){
 
-        return request.header("Authorization","Bearer " + token);
+    public String getToken(){
+        /*this.request = RestAssured.given();
+        return request.header("Authorization","Bearer " + token);*/
+        return token;
     }
 
 }

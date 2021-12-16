@@ -9,12 +9,10 @@ public class SignInTest extends ApiTestRunner {
 
     @Test(description="TUA-406")
     public void successSignInTest(){
-        User_Simple userSimple = new User_Simple(valueProvider.getAdminEmail(), valueProvider.getAdminPassword());
-        SignInClient signInClient = new SignInClient(valueProvider.getBaseApiUrl(), ContentType.JSON, valueProvider.getSignInClientUrl(),200);
+        SignInClient signInClient = new SignInClient();
         String token = signInClient
-                .successSignInRequest(userSimple)
+                .successSignInRequest()
                 .getAccessToken();
-
         Assert.assertNotNull(token);
     }
 }
