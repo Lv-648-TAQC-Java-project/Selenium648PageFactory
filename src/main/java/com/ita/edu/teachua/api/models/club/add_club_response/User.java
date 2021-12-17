@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.api.models.club;
+package com.ita.edu.teachua.api.models.club.add_club_response;
 
 public class User {
     private Integer id;

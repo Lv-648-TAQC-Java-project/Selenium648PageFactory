@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.api.models.club.add_club;
+package com.ita.edu.teachua.api.models.club.add_club_request;
 
 public class Location {
     public String name;

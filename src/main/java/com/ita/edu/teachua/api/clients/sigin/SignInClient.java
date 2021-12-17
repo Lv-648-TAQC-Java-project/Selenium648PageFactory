@@ -1,18 +1,16 @@
 package com.ita.edu.teachua.api.clients.sigin;
 
 import com.ita.edu.teachua.api.clients.BaseClient;
-import com.ita.edu.teachua.api.models.singin.SuccessSignIn;
 import com.ita.edu.teachua.api.models.user.User_Simple;
 import com.ita.edu.teachua.utils.MainValueProvider;
+import io.restassured.response.Response;
 
 import java.io.IOException;
 
-import static io.restassured.RestAssured.given;
 
 public class SignInClient extends BaseClient {
 
     private final String clientUrl;
-    private  SuccessSignIn successSignIn;
     protected MainValueProvider mainValueProvider;
 
     public SignInClient() throws IOException {
@@ -21,15 +19,11 @@ public class SignInClient extends BaseClient {
         this.clientUrl = mainValueProvider.getSignInClientUrl();
     }
 
-    public SuccessSignIn successSignInRequest(User_Simple userSimple){
-        successSignIn = preparedRequest()
+    public Response successSignInRequest(User_Simple userSimple){
+        return preparedRequest()
                 .body(userSimple)
                 .when()
-                .post(clientUrl)
-                .then().log().all()
-                .extract()
-                .as(SuccessSignIn.class);
-        return successSignIn;
+                .post(clientUrl);
     }
 
 }

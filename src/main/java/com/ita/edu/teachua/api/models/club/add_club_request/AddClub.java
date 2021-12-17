@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.api.models.club.add_club;
+package com.ita.edu.teachua.api.models.club.add_club_request;
 
 import java.util.List;
 
@@ -19,7 +19,7 @@ public class AddClub {
     public AddClub() {
     }
 
-    public AddClub(List<String> categoriesName, String name, Integer ageFrom, Integer ageTo, Object urlLogo, Object urlBackground, Boolean isOnline, String description, String userId, List<Location> locations, String contacts, Integer centerId) {
+    /*public AddClub(List<String> categoriesName, String name, Integer ageFrom, Integer ageTo, Object urlLogo, Object urlBackground, Boolean isOnline, String description, String userId, List<Location> locations, String contacts, Integer centerId) {
         this.categoriesName = categoriesName;
         this.name = name;
         this.ageFrom = ageFrom;
@@ -32,7 +32,7 @@ public class AddClub {
         this.locations = locations;
         this.contacts = contacts;
         this.centerId = centerId;
-    }
+    }*/
 
     public List<String> getCategoriesName() {
         return categoriesName;

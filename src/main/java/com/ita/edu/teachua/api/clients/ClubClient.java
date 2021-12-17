@@ -21,10 +21,16 @@ public class ClubClient extends BaseClient {
 
     public Response addNewClub(){
         return preparedRequest()
-                .header("Authorization","Bearer " + token)
+                .header("Authorization", String.format("Bearer %s",token))
                 .body(new ClientDataTransfer().getAddClub())
                 .when()
                 .post(clientUrl);
+    }
+    public void deleteClub(Integer id){
+        preparedRequest()
+                .header("Authorization", String.format("Bearer %s",token))
+                .when()
+                .delete(String.format("%s/%d",clientUrl,id));
     }
 
 }
