@@ -1,7 +1,7 @@
 package com.ita.edu.teachua.utils;
 
 import com.google.gson.Gson;
-import com.ita.edu.teachua.api.models.club.add_club.AddClub;
+import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

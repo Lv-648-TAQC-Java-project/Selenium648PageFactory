@@ -1,6 +1,6 @@
 package com.ita.edu.teachua.utils;
 
-import com.ita.edu.teachua.api.models.club.add_club.AddClub;
+import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 
 public class ClientDataTransfer {
     GsonParser parser;
@@ -10,4 +10,5 @@ public class ClientDataTransfer {
         parser.parseAddClubJson();
         return parser.getAddClub();
     }
+
 }
