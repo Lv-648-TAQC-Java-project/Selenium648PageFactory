@@ -1,9 +1,9 @@
-package com.ita.edu.teachua.api.clients;
+package com.ita.edu.teachua.api.clients.sigin;
 
+import com.ita.edu.teachua.api.clients.BaseClient;
 import com.ita.edu.teachua.api.models.singin.SuccessSignIn;
 import com.ita.edu.teachua.api.models.user.User_Simple;
-import com.ita.edu.teachua.utils.ValueProvider;
-import io.restassured.http.ContentType;
+import com.ita.edu.teachua.utils.MainValueProvider;
 
 import java.io.IOException;
 
@@ -13,16 +13,12 @@ public class SignInClient extends BaseClient {
 
     private final String clientUrl;
     private  SuccessSignIn successSignIn;
-    protected ValueProvider valueProvider;
+    protected MainValueProvider mainValueProvider;
 
-    public SignInClient()  {
+    public SignInClient() throws IOException {
         super();
-        try {
-            valueProvider = new ValueProvider();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        this.clientUrl = valueProvider.getSignInClientUrl();
+        mainValueProvider = new MainValueProvider();
+        this.clientUrl = mainValueProvider.getSignInClientUrl();
     }
 
     public SuccessSignIn successSignInRequest(User_Simple userSimple){

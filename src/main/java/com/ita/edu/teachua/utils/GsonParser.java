@@ -17,7 +17,7 @@ public class GsonParser {
     }
 
     public void parseAddClubJson(){
-        try(FileReader reader = new FileReader("src/main/resources/addClub.json")) {
+        try(FileReader reader = new FileReader("src/main/resources/request_bodies/club/addClub.json")) {
             this.addClub = gson.fromJson(reader,AddClub.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
