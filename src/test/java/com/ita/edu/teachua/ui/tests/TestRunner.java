@@ -1,7 +1,7 @@
 package com.ita.edu.teachua.ui.tests;
 
 import com.ita.edu.teachua.utils.TestNgListeners;
-import com.ita.edu.teachua.utils.ValueProvider;
+import com.ita.edu.teachua.utils.TestValueProvider;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import lombok.SneakyThrows;
 import org.openqa.selenium.WebDriver;
@@ -18,13 +18,13 @@ import java.time.Duration;
 @Listeners(TestNgListeners.class)
 public class TestRunner {
 
-    protected static ValueProvider valueProvider;
+    protected static TestValueProvider testValueProvider;
     protected WebDriver driver;
 
     @BeforeSuite
     public void beforeSuite() throws IOException {
         WebDriverManager.chromedriver().setup();
-        valueProvider = new ValueProvider();
+        testValueProvider = new TestValueProvider();
     }
 
     @SneakyThrows()
@@ -33,7 +33,7 @@ public class TestRunner {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get(valueProvider.getBaseUrl());
+        driver.get(testValueProvider.getBaseUrl());
         context.setAttribute("driver", driver);
     }
 

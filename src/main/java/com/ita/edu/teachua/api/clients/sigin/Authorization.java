@@ -1,17 +1,16 @@
-package com.ita.edu.teachua.api.authorization;
-
-import com.ita.edu.teachua.api.clients.SignInClient;
+package com.ita.edu.teachua.api.clients.sigin;
 import com.ita.edu.teachua.api.models.user.User_Simple;
-import io.restassured.RestAssured;
-import io.restassured.specification.RequestSpecification;
+
+import java.io.IOException;
+
 
 public class Authorization {
     User_Simple userSimple;
     SignInClient signInClient;
     String token;
-    RequestSpecification request;
 
-    public Authorization(String email, String password) {
+    public Authorization(String email, String password) throws IOException {
+
         this.userSimple = new User_Simple(email, password);
         this.signInClient = new SignInClient();
         this.token = signInClient

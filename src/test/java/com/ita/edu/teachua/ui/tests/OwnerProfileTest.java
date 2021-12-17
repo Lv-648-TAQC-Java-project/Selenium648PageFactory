@@ -46,7 +46,7 @@ public class OwnerProfileTest extends TestRunner {
     public void TestUserCheckInvalidDataForFieldPhone(String[] dataAndExpected) {
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
-                .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+                .authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile();
@@ -68,7 +68,7 @@ public class OwnerProfileTest extends TestRunner {
     public void VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty() {
         HeaderPage header = new HeaderPage(driver);
         boolean addLocationPopUpBlockIsDisplayed = header
-                .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+                .authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnAddCenterButton()
                 .clickOnAddLocationButton()
@@ -116,7 +116,7 @@ public class OwnerProfileTest extends TestRunner {
         String[] clubPopUpComponentId = addClubPopUpComponentId.split(",");
         SoftAssert softAssert = new SoftAssert();
         AddLocationPopUpComponent addLocationPopUpComponent = new HeaderPage(driver)
-                .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+                .authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickOnAddButton()
@@ -213,7 +213,7 @@ public class OwnerProfileTest extends TestRunner {
     @Test(description = "TUA-252")
     public void VerifyThatErrorMessagesIsDisplayedAfterUserLeavesFieldsEmptyAndClicksNextStepButton() {
         boolean errorsIsDisplayed = new HeaderPage(driver)
-                .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+                .authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickOnAddButton()
@@ -244,7 +244,7 @@ public class OwnerProfileTest extends TestRunner {
                                        String validCoordinates,
                                        String validPhone) {
         HeaderPage header = new HeaderPage(driver);
-        boolean actual = header.authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+        boolean actual = header.authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnAddCenterButton()
                 .clickOnAddLocationButton()
@@ -288,7 +288,7 @@ public class OwnerProfileTest extends TestRunner {
                                                String validDescription,
                                                String validClubName) {
         HeaderPage header = new HeaderPage(driver);
-        header.authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+        header.authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnAddCenterButton()
                 .clickOnAddLocationButton()
@@ -337,7 +337,7 @@ public class OwnerProfileTest extends TestRunner {
     @Issue("TUA-159")
     @Test(dataProvider = "verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider", description = "TUA-159")
     public void addLocationWithValidDataOfMandatoryFields(String name, String address, String coordinates, String phoneNumber) {
-        boolean actualResult = new HeaderPage(driver).authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+        boolean actualResult = new HeaderPage(driver).authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickOnAddButton()
@@ -427,7 +427,7 @@ public class OwnerProfileTest extends TestRunner {
     public void checkErrorMsWhenFillInvalidDataIntoLastNameField(String[] dataAndExpected) {
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
-                .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+                .authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile();
@@ -478,7 +478,7 @@ public class OwnerProfileTest extends TestRunner {
     public void checkErrorMsWhenFillInvalidDataIntoFirstNameField(String dataAndExpected[]) {
         HeaderPage profile = new HeaderPage(driver);
         ProfileEditPopUpComponent edit = profile
-                .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+                .authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile();
@@ -496,7 +496,7 @@ public class OwnerProfileTest extends TestRunner {
     public void getErrorMessageInChangePasswordPopUpTest() {
         HeaderPage headerPage = new HeaderPage(driver);
         ProfileEditPopUpComponent editProfile = new ProfileEditPopUpComponent(driver);
-        headerPage.authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+        headerPage.authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickEditProfile()
@@ -508,13 +508,13 @@ public class OwnerProfileTest extends TestRunner {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(editProfile.getErrorMessageCurrentPasswordInput(), "Введіть старий пароль");
         softAssert.assertEquals(editProfile.getCurrentPasswordInputBorderColor(), "rgb(255, 77, 79)", "Current password input isn't red");
-        editProfile.fillInCurrentPasswordInput(valueProvider.getAdminPassword())
+        editProfile.fillInCurrentPasswordInput(testValueProvider.getAdminPassword())
                 .fillInNewPasswordInput("")
                 .fillInConfirmPasswordInput("NewPassword101!")
                 .clickOnSaveChangeButton();
         softAssert.assertEquals(editProfile.getErrorMessageNewPasswordInput(), "Будь ласка, введіть новий пароль");
         softAssert.assertEquals(editProfile.getNewPasswordInputBorderColor(), "rgb(255, 77, 79)", "New password input isn't red");
-        editProfile.fillInCurrentPasswordInput(valueProvider.getAdminPassword())
+        editProfile.fillInCurrentPasswordInput(testValueProvider.getAdminPassword())
                 .fillInNewPasswordInput("NewPassword101!")
                 .fillInConfirmPasswordInput("")
                 .clickOnSaveChangeButton();
@@ -541,7 +541,7 @@ public class OwnerProfileTest extends TestRunner {
     public void checkDescriptionFieldWithValidLettersAndSymbols(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage
-                .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+                .authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickOnAddButton()
@@ -582,7 +582,7 @@ public class OwnerProfileTest extends TestRunner {
     public void checkDescriptionFieldWithLessThan40Symbols(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage
-                .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+                .authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickOnAddButton()
@@ -632,7 +632,7 @@ public class OwnerProfileTest extends TestRunner {
     public void checkDescriptionFieldWithLessAndMoreThan1500Symbols(String[] input) {
         SoftAssert softAssert = new SoftAssert();
         boolean checkIfValidFiledWith1500Symbols = new HeaderPage(driver)
-                .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+                .authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickOnAddButton()
@@ -689,7 +689,7 @@ public class OwnerProfileTest extends TestRunner {
     public void checkButtonIsEnabledWithValidInput(String[] input) {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage
-                .authorize(valueProvider.getAdminEmail(), valueProvider.getAdminPassword())
+                .authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
                 .clickOnOwnerDropdown()
                 .clickOnProfile()
                 .clickOnAddButton()

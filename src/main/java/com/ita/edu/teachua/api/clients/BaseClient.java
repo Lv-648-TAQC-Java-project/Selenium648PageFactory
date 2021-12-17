@@ -1,30 +1,23 @@
 package com.ita.edu.teachua.api.clients;
 
-import com.ita.edu.teachua.utils.ValueProvider;
-import io.restassured.RestAssured;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.builder.ResponseSpecBuilder;
+import com.ita.edu.teachua.utils.MainValueProvider;
 import io.restassured.http.ContentType;
-
-
 import io.restassured.specification.RequestSpecification;
-import static io.restassured.RestAssured.given;
 
 import java.io.IOException;
+
+import static io.restassured.RestAssured.given;
+
 
 
 public class BaseClient {
     protected final String baseApiUrl;
     protected final ContentType contentType;
-    protected ValueProvider valueProvider;
+    protected MainValueProvider mainValueProvider;
 
-    public BaseClient()  {
-        try {
-            valueProvider = new ValueProvider();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        this.baseApiUrl=valueProvider.getBaseApiUrl();
+    public BaseClient() throws IOException {
+        mainValueProvider = new MainValueProvider();
+        this.baseApiUrl = mainValueProvider.getBaseApiUrl();
         this.contentType = ContentType.JSON;
     }
 
