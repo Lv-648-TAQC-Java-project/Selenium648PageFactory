@@ -1,5 +1,6 @@
 package com.ita.edu.teachua.utils;
 
+import com.ita.edu.teachua.api.models.category.CategoryModel;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 
 public class ClientDataTransfer {
@@ -10,5 +11,9 @@ public class ClientDataTransfer {
         parser.parseAddClubJson();
         return parser.getAddClub();
     }
-
+    public CategoryModel getAddCategory(){
+        parser = new GsonParser();
+        parser.parseAddCategoryJson();
+        return parser.getAddCategory();
+    }
 }

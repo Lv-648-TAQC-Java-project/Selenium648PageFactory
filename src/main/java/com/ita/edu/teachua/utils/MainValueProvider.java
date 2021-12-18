@@ -24,4 +24,7 @@ public class MainValueProvider {
     public String getClubClientUrl() {
         return properties.getProperty("clubClientUrl");
     }
+    public String getCategoryClientUrl() {
+        return properties.getProperty("categoryClientUrl");
+    }
 }
