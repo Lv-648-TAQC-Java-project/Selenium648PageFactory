@@ -1,7 +1,10 @@
 package com.ita.edu.teachua.api.models.club.add_club_response;
 
+import lombok.Data;
+
 import java.util.List;
 
+@Data
 public class ClubRoot {
     private Integer id;
     private Integer ageFrom;
@@ -24,106 +27,4 @@ public class ClubRoot {
     private Integer status;
     private String message;
 
-    public ClubRoot() {
-    }
-
-    public ClubRoot(Integer id, Integer ageFrom, Integer ageTo, String name, String description, String urlWeb, String urlLogo, String urlBackground, List<UrlGallery> urlGallery, String workTime, List<Category> categories, User user, Center center, Integer rating, List<Location> locations, Boolean isApproved, Boolean isOnline) {
-        this.id = id;
-        this.ageFrom = ageFrom;
-        this.ageTo = ageTo;
-        this.name = name;
-        this.description = description;
-        this.urlWeb = urlWeb;
-        this.urlLogo = urlLogo;
-        this.urlBackground = urlBackground;
-        this.urlGallery = urlGallery;
-        this.workTime = workTime;
-        this.categories = categories;
-        this.user = user;
-        this.center = center;
-        this.rating = rating;
-        this.locations = locations;
-        this.isApproved = isApproved;
-        this.isOnline = isOnline;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public Integer getAgeFrom() {
-        return ageFrom;
-    }
-
-    public Integer getAgeTo() {
-        return ageTo;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public String getUrlWeb() {
-        return urlWeb;
-    }
-
-    public String getUrlLogo() {
-        return urlLogo;
-    }
-
-    public String getUrlBackground() {
-        return urlBackground;
-    }
-
-    public List<UrlGallery> getUrlGallery() {
-        return urlGallery;
-    }
-
-    public String getWorkTime() {
-        return workTime;
-    }
-
-    public List<Category> getCategories() {
-        return categories;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public Center getCenter() {
-        return center;
-    }
-
-    public Integer getRating() {
-        return rating;
-    }
-
-    public List<Location> getLocations() {
-        return locations;
-    }
-
-    public Boolean getIsApproved() {
-        return isApproved;
-    }
-
-    public Boolean getIsOnline() {
-        return isOnline;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public String getMessage() {
-        return message;
-    }
 }

@@ -10,8 +10,6 @@ public class MainValueProvider {
     public MainValueProvider() throws IOException {
         FileInputStream fileInputStream = new FileInputStream("src/main/resources/data.properties");
         properties.load(fileInputStream);
-
-
     }
 
     public String getBaseApiUrl() {
