@@ -11,6 +11,11 @@ public class ClientDataTransfer {
         parser.parseAddClubJson();
         return parser.getAddClub();
     }
+    public AddClub getAddRusClub() {
+        parser = new GsonParser();
+        parser.parseAddRusClubJson();
+        return parser.getAddClub();
+    }
     public CategoryModel getAddCategory(){
         parser = new GsonParser();
         parser.parseAddCategoryJson();

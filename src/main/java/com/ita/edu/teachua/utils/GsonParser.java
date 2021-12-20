@@ -27,6 +27,15 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
+    public void parseAddRusClubJson(){
+        try(FileReader reader = new FileReader("src/main/resources/request_bodies/club/addRusClub.json")) {
+            this.addClub = gson.fromJson(reader,AddClub.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public AddClub getAddClub() {
         return addClub;

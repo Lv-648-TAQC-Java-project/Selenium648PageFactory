@@ -27,4 +27,18 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         Assert.assertEquals(clubRegisteredUserId,currentAuthorizedUserId);
 
     }
+    @Test(description="TUA-501")
+    public void VerifyThatUserCannotCreateNewClubWithRussianCharactersInNamefield() throws IOException {
+        Specifications.setResponseSpecification(400);
+        ClubClient clubClient = new ClubClient(authorization.getToken());
+        Response response = clubClient.addNewClubWithRussianName();
+        ClubRoot clubRoot = response.then().log().all()
+                .extract()
+                .as(ClubRoot.class);
+
+        Assert.assertEquals(clubRoot.getStatus(),(Integer)400);
+        Assert.assertEquals(clubRoot.getMessage(),"name can't contain russian letters");
+
+
+    }
 }

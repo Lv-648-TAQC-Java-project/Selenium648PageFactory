@@ -21,6 +21,9 @@ public class ClubRoot {
     private Boolean isApproved;
     private Boolean isOnline;
 
+    private Integer status;
+    private String message;
+
     public ClubRoot() {
     }
 
@@ -42,6 +45,10 @@ public class ClubRoot {
         this.locations = locations;
         this.isApproved = isApproved;
         this.isOnline = isOnline;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Integer getId() {
@@ -104,11 +111,19 @@ public class ClubRoot {
         return locations;
     }
 
-    public Object getIsApproved() {
+    public Boolean getIsApproved() {
         return isApproved;
     }
 
-    public Object getIsOnline() {
+    public Boolean getIsOnline() {
         return isOnline;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public String getMessage() {
+        return message;
     }
 }
