@@ -2,6 +2,7 @@ package com.ita.edu.teachua.utils;
 
 import com.google.gson.Gson;
 import com.ita.edu.teachua.api.models.category.CategoryModel;
+import com.ita.edu.teachua.api.models.center.center_request.CenterModel;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 
 import java.io.FileNotFoundException;
@@ -13,6 +14,7 @@ public class GsonParser {
 
     private AddClub addClub;
     private CategoryModel categoryModel;
+    private CenterModel centerModel;
 
     public GsonParser() {
         gson = new Gson();
@@ -33,7 +35,7 @@ public class GsonParser {
     }
 
     public void parseAddCategoryJson() {
-        try (FileReader reader = new FileReader("category.json")) {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/category/category.json")) {
             this.categoryModel = gson.fromJson(reader, CategoryModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -44,5 +46,19 @@ public class GsonParser {
 
     public CategoryModel getAddCategory() {
         return categoryModel;
+    }
+
+    public void parseAddCenterJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/center/center.json")) {
+            this.centerModel = gson.fromJson(reader, CenterModel.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public CenterModel getAddCenter() {
+        return centerModel;
     }
 }

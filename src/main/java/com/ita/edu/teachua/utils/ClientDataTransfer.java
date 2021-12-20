@@ -1,6 +1,7 @@
 package com.ita.edu.teachua.utils;
 
 import com.ita.edu.teachua.api.models.category.CategoryModel;
+import com.ita.edu.teachua.api.models.center.center_request.CenterModel;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 
 public class ClientDataTransfer {
@@ -15,5 +16,10 @@ public class ClientDataTransfer {
         parser = new GsonParser();
         parser.parseAddCategoryJson();
         return parser.getAddCategory();
+    }
+    public CenterModel getAddCenter(){
+        parser = new GsonParser();
+        parser.parseAddCenterJson();
+        return parser.getAddCenter();
     }
 }
