@@ -34,10 +34,16 @@ public class GsonParser {
         }
     }
 
-    public void  parseAddChallengeJson(){
-        try(FileReader reader = new FileReader("src/main/resources/request_body.challenge/addChallenge.json")) {
-            this.addChallengeResponse = gson.fromJson(reader,AddChallengeResponse.class);
+    public void  parseAddChallengeJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_body.challenge/addChallenge.json")) {
+            this.addChallengeResponse = gson.fromJson(reader, AddChallengeResponse.class);
 
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public void parseAddRusClubJson(){
         try(FileReader reader = new FileReader("src/main/resources/request_bodies/club/addRusClub.json")) {
             this.addClub = gson.fromJson(reader,AddClub.class);
