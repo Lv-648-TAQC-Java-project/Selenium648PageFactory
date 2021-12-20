@@ -23,6 +23,10 @@ public class MainValueProvider {
     public String getClubClientUrl() {
         return properties.getProperty("clubClientUrl");
     }
+
+    public String getResetPasswordUrl(){return properties.getProperty("resetPasswordUrl");}
+    public String getChallengeUrl(){return properties.getProperty("challengeUrl");}
+
     public String getCategoryClientUrl() {
         return properties.getProperty("categoryClientUrl");
     }
@@ -32,4 +36,5 @@ public class MainValueProvider {
     public String getCenterClientUrl() {
         return properties.getProperty("centerClientUrl");
     }
+
 }
