@@ -77,7 +77,7 @@ public class GsonParser {
     }
 
     public void parseAddDistrictJson(){
-        try (FileReader reader = new FileReader("district.json")) {
+        try (FileReader reader = new FileReader("src/main/resources/request_body.district/district.json")) {
             this.districtModel = gson.fromJson(reader, DistrictModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
