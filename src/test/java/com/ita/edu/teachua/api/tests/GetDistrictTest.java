@@ -16,7 +16,8 @@ public class GetDistrictTest extends AuthorizedAsAdminApiTestRunner{
         DistrictClient districtClient = new DistrictClient(authorization.getToken());
         Response response = districtClient.addNewDistrict();
 
-        SuccessDistrictModel successDistrictModel = response.then().log().all()
+        SuccessDistrictModel successDistrictModel = response
+                .then().log().all()
                 .extract().as(SuccessDistrictModel.class);
 
         System.out.println(successDistrictModel.getId());
