@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class GetDistrictTest extends AuthorizedAsAdminApiTestRunner{
+public class DistrictTest extends AuthorizedAsAdminApiTestRunner{
     @Test
     public void createDistrict() throws IOException {
         Specifications.setResponseSpecification(200);
