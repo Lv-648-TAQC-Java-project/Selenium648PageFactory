@@ -3,6 +3,7 @@ package com.ita.edu.teachua.utils;
 import com.google.gson.Gson;
 import com.ita.edu.teachua.api.models.category.CategoryModel;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
+import com.ita.edu.teachua.api.models.district.DistrictModel;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -13,6 +14,7 @@ public class GsonParser {
 
     private AddClub addClub;
     private CategoryModel categoryModel;
+    private DistrictModel districtModel;
 
     public GsonParser() {
         gson = new Gson();
@@ -42,7 +44,21 @@ public class GsonParser {
         }
     }
 
+    public void parseAddDistrictJson(){
+        try (FileReader reader = new FileReader("district.json")) {
+            this.districtModel = gson.fromJson(reader, DistrictModel.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public CategoryModel getAddCategory() {
         return categoryModel;
+    }
+
+    public DistrictModel getAddDistrict() {
+        return districtModel;
     }
 }
