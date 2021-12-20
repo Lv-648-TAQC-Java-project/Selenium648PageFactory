@@ -24,4 +24,6 @@ public class MainValueProvider {
     public String getClubClientUrl() {
         return properties.getProperty("clubClientUrl");
     }
+    public String getResetPasswordUrl(){return properties.getProperty("resetPasswordUrl");}
+    public String getChallengeUrl(){return properties.getProperty("challengeUrl");}
 }
