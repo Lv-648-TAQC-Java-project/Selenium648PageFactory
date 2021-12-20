@@ -27,4 +27,7 @@ public class MainValueProvider {
     public String getCategoryClientUrl() {
         return properties.getProperty("categoryClientUrl");
     }
+    public String getDistrictClientUrl() {
+        return properties.getProperty("districtClientUrl");
+    }
 }
