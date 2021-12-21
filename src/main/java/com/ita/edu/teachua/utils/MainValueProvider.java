@@ -8,8 +8,7 @@ public class MainValueProvider {
     Properties properties = new Properties();
 
     public MainValueProvider() throws IOException {
-        FileInputStream fileInputStream = null;
-        fileInputStream = new FileInputStream("src/main/resources/data.properties");
+        FileInputStream fileInputStream = new FileInputStream("src/main/resources/data.properties");
         properties.load(fileInputStream);
 
 
@@ -18,13 +17,29 @@ public class MainValueProvider {
     public String getBaseApiUrl() {
         return properties.getProperty("baseApiUrl");
     }
+
     public String getSignInClientUrl() {
         return properties.getProperty("signInClientUrl");
     }
+
     public String getClubClientUrl() {
         return properties.getProperty("clubClientUrl");
     }
+
     public String getCategoryClientUrl() {
         return properties.getProperty("categoryClientUrl");
     }
+
+    public String getCitiesUrl() {
+        return properties.getProperty("citiesUrl");
+    }
+
+    public String getCityUrl() {
+        return properties.getProperty("cityUrl");
+    }
+
+    public String getFeedbackUrl() {
+        return properties.getProperty("feedbackUrl");
+    }
+
 }
