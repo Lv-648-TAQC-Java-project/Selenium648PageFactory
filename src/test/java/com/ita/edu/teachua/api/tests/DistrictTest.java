@@ -2,14 +2,16 @@ package com.ita.edu.teachua.api.tests;
 
 
 import com.ita.edu.teachua.api.clients.DistrictClient;
-import com.ita.edu.teachua.api.models.district.DistrictModel;
+import com.ita.edu.teachua.api.models.category.CategoryModel;
 import com.ita.edu.teachua.api.models.district.SuccessDistrictModel;
 import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.List;
 
-public class DistrictTest extends AuthorizedAsAdminApiTestRunner{
+public class DistrictTest extends AuthorizedAsAdminApiTestRunner {
     @Test
     public void createDistrict() throws IOException {
         Specifications.setResponseSpecification(200);
@@ -20,7 +22,18 @@ public class DistrictTest extends AuthorizedAsAdminApiTestRunner{
                 .then().log().all()
                 .extract().as(SuccessDistrictModel.class);
 
-        System.out.println(successDistrictModel.getId());
+        Response delete = districtClient.deleteNewDistrict(successDistrictModel.getId());
+        Assert.assertEquals(delete.getStatusCode(), 200);
     }
 
+    @Test
+    public void getListOfDistricts() throws IOException {
+        Specifications.setResponseSpecification(200);
+        DistrictClient districtClient = new DistrictClient(authorization.getToken());
+        Response response = districtClient.getDistricts();
+        List<SuccessDistrictModel> districts = response.then().log()
+                .all().extract().jsonPath()
+                .getList(".", SuccessDistrictModel.class);
+        Assert.assertEquals(response.getStatusCode(), 200);
+    }
 }
