@@ -23,8 +23,4 @@ public class ClubRoot {
     private List<Location> locations;
     private Boolean isApproved;
     private Boolean isOnline;
-
-    private Integer status;
-    private String message;
-
 }
