@@ -26,6 +26,13 @@ public class ClubClient extends BaseClient {
                 .when()
                 .post(clientUrl);
     }
+    public Response addNewClubWithRussianName(){
+        return preparedRequest()
+                .header("Authorization", String.format("Bearer %s",token))
+                .body(new ClientDataTransfer().getAddRusClub())
+                .when()
+                .post(clientUrl);
+    }
     public void deleteClub(Integer id){
         preparedRequest()
                 .header("Authorization", String.format("Bearer %s",token))
