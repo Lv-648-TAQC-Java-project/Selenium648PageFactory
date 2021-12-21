@@ -1,5 +1,6 @@
 package com.ita.edu.teachua.api.clients;
 
+import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.utils.ClientDataTransfer;
 import com.ita.edu.teachua.utils.MainValueProvider;
 import io.restassured.response.Response;
@@ -19,20 +20,14 @@ public class ClubClient extends BaseClient {
 
     }
 
-    public Response addNewClub(){
+    public Response addNewClub(AddClub addClub){
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s",token))
-                .body(new ClientDataTransfer().getAddClub())
+                .body(addClub)
                 .when()
                 .post(clientUrl);
     }
-    public Response addNewClubWithRussianName(){
-        return preparedRequest()
-                .header("Authorization", String.format("Bearer %s",token))
-                .body(new ClientDataTransfer().getAddRusClub())
-                .when()
-                .post(clientUrl);
-    }
+
     public void deleteClub(Integer id){
         preparedRequest()
                 .header("Authorization", String.format("Bearer %s",token))
