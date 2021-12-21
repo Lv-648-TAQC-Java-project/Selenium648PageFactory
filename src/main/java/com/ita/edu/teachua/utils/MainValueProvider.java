@@ -15,15 +15,39 @@ public class MainValueProvider {
     public String getBaseApiUrl() {
         return properties.getProperty("baseApiUrl");
     }
+
     public String getSignInClientUrl() {
         return properties.getProperty("signInClientUrl");
     }
+
     public String getClubClientUrl() {
         return properties.getProperty("clubClientUrl");
     }
 
-    public String getResetPasswordUrl(){return properties.getProperty("resetPasswordUrl");}
-    public String getChallengeUrl(){return properties.getProperty("challengeUrl");}
+
+    public String getCategoryClientUrl() {
+        return properties.getProperty("categoryClientUrl");
+    }
+
+    public String getCitiesUrl() {
+        return properties.getProperty("citiesUrl");
+    }
+
+    public String getCityUrl() {
+        return properties.getProperty("cityUrl");
+    }
+
+    public String getFeedbackUrl() {
+        return properties.getProperty("feedbackUrl");
+    }
+  
+    public String getResetPasswordUrl() {
+        return properties.getProperty("resetPasswordUrl");
+    }
+      
+    public String getChallengeUrl() {
+        return properties.getProperty("challengeUrl");
+    }
 
     public String getCategoryClientUrl() {
         return properties.getProperty("categoryClientUrl");
@@ -36,6 +60,7 @@ public class MainValueProvider {
     }
     public String getCenterClientUrl() {
         return properties.getProperty("centerClientUrl");
+
     }
     public String getDistrictsListUrl() {
         return properties.getProperty("districtsListUrl");
