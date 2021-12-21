@@ -37,5 +37,8 @@ public class MainValueProvider {
     public String getCenterClientUrl() {
         return properties.getProperty("centerClientUrl");
     }
+    public String getDistrictsListUrl() {
+        return properties.getProperty("districtsListUrl");
+    }
 
 }
