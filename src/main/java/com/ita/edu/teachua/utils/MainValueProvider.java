@@ -24,11 +24,6 @@ public class MainValueProvider {
         return properties.getProperty("clubClientUrl");
     }
 
-
-    public String getCategoryClientUrl() {
-        return properties.getProperty("categoryClientUrl");
-    }
-
     public String getCitiesUrl() {
         return properties.getProperty("citiesUrl");
     }
@@ -64,6 +59,13 @@ public class MainValueProvider {
     }
     public String getDistrictsListUrl() {
         return properties.getProperty("districtsListUrl");
+    }
+
+    public String getBannerClientUrl() {
+        return properties.getProperty("bannerClientUrl");
+    }
+    public String getBannersClientUrl() {
+        return properties.getProperty("bannersClientUrl");
     }
 
 }
