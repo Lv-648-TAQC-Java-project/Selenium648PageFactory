@@ -9,31 +9,30 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.List;
 
-public class BannerTest extends AuthorizedApiTestRunner {
-    @Test
-    public void addInvalidNewBannerTest() throws IOException {
-        BannerClient bannerClient = new BannerClient(authorization.getToken());
-        BannerModel banner = BannerModel.builder()
-                .title("demo banner")
-                .subtitle("myBanner")
-                .link("/upload/*/*.png")
-                .picture("sdftrbhj")
-                .sequenceNumber(1)
-                .build();
-        Response response = bannerClient.addNewBanner(banner);
-        Assert.assertEquals(response.getStatusCode(), 400, "picture Incorrect file path. It must be like /upload/*/*.png");
-    }
+public class BannerTest extends AuthorizedAsAdminApiTestRunner {
 
     @Test
     public void getListOfBanners() throws IOException {
         Specifications.setResponseSpecification(200);
         BannerClient bannerClient = new BannerClient(authorization.getToken());
-        Response get = bannerClient.getBanners();
-        List<BannerModel> banners = get
+        Response response = bannerClient.getBanners();
+        List<BannerModel> banners = response
                 .then().log().all()
                 .extract().body().jsonPath().getList(".", BannerModel.class);
-        banners.forEach(x->Assert.assertTrue(x.getPicture().contains("/upload/banner/")));
-        //List<Integer> sequenceNumber = banners.stream().map(BannerModel::getSequenceNumber).collect(Collectors.toList());
+        Assert.assertEquals(response.getStatusCode(), 200);
 
     }
+
+    @Test
+    public void getBanner() throws IOException {
+        Specifications.setResponseSpecification(200);
+        BannerClient bannerClient = new BannerClient(authorization.getToken());
+        Response response = bannerClient.getBanner(11);
+        BannerModel bannerModel = response
+                .then().log().all()
+                .extract().as(BannerModel.class);
+        Assert.assertEquals(bannerModel.getId(),(Integer) 11);
+        Assert.assertEquals(bannerModel.getSequenceNumber(), (Integer) 1);
+    }
+
 }
