@@ -2,6 +2,7 @@ package com.ita.edu.teachua.utils;
 
 import com.google.gson.Gson;
 
+import com.ita.edu.teachua.api.models.banner.BannerModel;
 import com.ita.edu.teachua.api.models.challenge.response.AddChallengeResponse;
 import com.ita.edu.teachua.api.models.category.CategoryModel;
 import com.ita.edu.teachua.api.models.center.center_request.CenterModel;
@@ -21,6 +22,7 @@ public class GsonParser {
     private CenterModel centerModel;
 
     private DistrictModel districtModel;
+    private BannerModel bannerModel;
 
     public GsonParser() {
         gson = new Gson();
@@ -95,5 +97,18 @@ public class GsonParser {
 
     public DistrictModel getAddDistrict() {
         return districtModel;
+    }
+
+    public void parseAddNewBannerJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/banner/banner")) {
+            this.bannerModel = gson.fromJson(reader, BannerModel.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public BannerModel getAddNewBanner() {
+        return bannerModel;
     }
 }
