@@ -26,7 +26,7 @@ public class AboutUsClient extends BaseClient {
     public Response addNewAboutUs() {
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s", token))
-                .body(new ClientDataTransfer().getAddCategory()) //TODO
+                .body(new ClientDataTransfer().getAddAboutUs())
                 .when()
                 .post(aboutUsUrl);
     }
@@ -34,7 +34,7 @@ public class AboutUsClient extends BaseClient {
     public Response changeAboutUs(int id) {
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s", token))
-                .body(new ClientDataTransfer().getAddCategory()) //TODO
+                .body(new ClientDataTransfer().getChangeAboutUs())
                 .when()
                 .put(String.format("%s/%d", aboutUsUrl, id));
     }
