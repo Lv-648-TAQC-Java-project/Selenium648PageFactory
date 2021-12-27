@@ -57,6 +57,7 @@ public class RestoringPasswordFinishPopUpComponent extends BasePage {
         reenterPasswordInput.set(password);
         return this;
     }
+
     @Step("Click on Change password button")
     public RestoringPasswordFinishPopUpComponent clickChangePasswordButton() {
         changePasswordButton.click();
@@ -67,13 +68,18 @@ public class RestoringPasswordFinishPopUpComponent extends BasePage {
         return changePasswordMessageError.getAttribute("innerText");
     }
 
+    @Step("Check if green mark is present")
     public boolean isPresentGreenMark() {
         return greenMark.isDisplayed();
     }
 
-
-    public String getErrorMessagePasswordNotEqual() {
+    @Step("Get password error message")
+    public String getMessagePasswordError() {
         return messagePasswordError.getAttribute("innerText");
     }
 
+    @Step("Get password input field")
+    public Input getEnterPassword(){
+        return enterPassword;
+    }
 }

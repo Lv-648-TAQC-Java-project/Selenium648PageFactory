@@ -48,6 +48,10 @@ public class MainValueProvider {
         return properties.getProperty("districtClientUrl");
     }
 
+    public String getCategoryClientUrl() {
+        return properties.getProperty("categoryClientUrl");
+    }
+
     public String getCategoriesClientUrl() {
         return properties.getProperty("categoriesClientUrl");
     }
@@ -76,6 +80,7 @@ public class MainValueProvider {
     public String getBannerClientUrl() {
         return properties.getProperty("bannerClientUrl");
     }
+
     public String getBannersClientUrl() {
         return properties.getProperty("bannersClientUrl");
     }
