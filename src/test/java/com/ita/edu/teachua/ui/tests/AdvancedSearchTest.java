@@ -80,7 +80,7 @@ public class AdvancedSearchTest extends TestRunner {
 
     @Description("TUA-210 Verify that input field 'Вік дитини' accepts only positive integers from 2 to 18")
     @Issue("TUA-210")
-    @Test(dataProvider = "checkByAgeDataProvider",description = "TUA-210")
+    @Test(dataProvider = "checkByAgeDataProvider", description = "TUA-210")
     public void checkByValidAgeDataProvider(String input, String expectedResult) {
         String actualResult = new MainPage(driver).clickAdvancedSearchButton()
                 .setValueAgeInput(input)
@@ -133,7 +133,7 @@ public class AdvancedSearchTest extends TestRunner {
 
         AdvancedSearchPage advancedSearchPage = mainPage.clickAdvancedSearchButton();
         String title = advancedSearchPage.getTitleOfAdvancedSearchField();
-        softAssert.assertEquals(title, "Розширений пошук" , "Title did NOT match");
+        softAssert.assertEquals(title, "Розширений пошук", "Title did NOT match");
 
         boolean checkThatWorkshopRadioButtonIsChosenByDefault = advancedSearchPage.getWorkshopRadioButton().isDisplayed();
         softAssert.assertTrue(checkThatWorkshopRadioButtonIsChosenByDefault, "Workshop radiobutton is NOT selected");
@@ -151,7 +151,7 @@ public class AdvancedSearchTest extends TestRunner {
     }
 
     @Issue("TUA-103")
-    @Description("Verify that sorting for advanced search works correctly (In ascending order)")
+    @Description("Verify that sorting by name for advanced search works correctly (In ascending order)")
     @Test(description = "TUA-103")
     public void checkSortingClubsByNameInAscendingOrder() {
         MainPage mainPage = new MainPage(driver);
@@ -161,22 +161,24 @@ public class AdvancedSearchTest extends TestRunner {
     }
 
     @Issue("TUA-103")
-    @Description("Verify that sorting for advanced search works correctly (In descending order)")
+    @Description("Verify that sorting by name for advanced search works correctly (In descending order)")
     @Test(description = "TUA-103")
     public void checkSortingClubsByNameInDescendingOrder() {
         MainPage mainPage = new MainPage(driver);
-        AdvancedSearchPage advSearch = mainPage.clickAdvancedSearchButton().clickOnArrowUpButton();
+        AdvancedSearchPage advSearch = mainPage
+                .clickAdvancedSearchButton()
+                .clickOnArrowUpButton();
         boolean actual = isAlphabeticallySorted(getTitlesFromAllPages(advSearch), false);
         Assert.assertTrue(actual);
     }
 
     public List<String> getTitlesFromAllPages(AdvancedSearchPage advancedSearchPage) {
-        List<ClubsItemComponent> titles;
+        List<ClubsItemComponent> cards;
         List<String> stringCards = new ArrayList<>();
         int n = advancedSearchPage.getNumberOfPagesWithClubs();
         for (int i = 0; i < n; i++) {
-            titles = advancedSearchPage.getCards();
-            for (ClubsItemComponent card : titles) {
+            cards = advancedSearchPage.getCards();
+            for (ClubsItemComponent card : cards) {
                 stringCards.add(card.getCardTitle());
             }
             advancedSearchPage.clickOnNextPageButton();
@@ -186,8 +188,8 @@ public class AdvancedSearchTest extends TestRunner {
 
     public boolean isAlphabeticallySorted(List<String> titles, boolean asc) {
         for (int j = 0; j < titles.size() - 1; j++) {
-            char[] firstTitle = titles.get(j).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9]", "").toCharArray();
-            char[] secondTitle = titles.get(j + 1).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9]", "").toCharArray();
+            char[] firstTitle = titles.get(j).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9ІЇії]", "").toCharArray();
+            char[] secondTitle = titles.get(j + 1).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9ІЇії]", "").toCharArray();
             int wordLength = Math.min(firstTitle.length, secondTitle.length);
             for (int k = 0; k < wordLength; k++) {
                 if (asc) {
@@ -203,6 +205,67 @@ public class AdvancedSearchTest extends TestRunner {
                     } else if (firstTitle[k] < secondTitle[k]) {
                         return false;
                     }
+                }
+            }
+        }
+        return true;
+    }
+
+    @Issue("TUA-103")
+    @Description("Verify that sorting by rating for advanced search works correctly (In ascending order)")
+    @Test(description = "TUA-103")
+    public void checkSortingClubsByRatingInAscendingOrder() {
+        MainPage mainPage = new MainPage(driver);
+        AdvancedSearchPage advSearch = mainPage
+                .clickAdvancedSearchButton()
+                .clickOnSortByRatingButton();
+        boolean actual = isSortedByRating(getRatingsFromAllPages(advSearch), true);
+        Assert.assertTrue(actual);
+    }
+
+    @Issue("TUA-103")
+    @Description("Verify that sorting by rating for advanced search works correctly (In descending order)")
+    @Test(description = "TUA-103")
+    public void checkSortingClubsByRatingInDescendingOrder() {
+        MainPage mainPage = new MainPage(driver);
+        AdvancedSearchPage advSearch = mainPage
+                .clickAdvancedSearchButton()
+                .clickOnSortByRatingButton()
+                .clickOnArrowUpButton();
+        boolean actual = isSortedByRating(getRatingsFromAllPages(advSearch), false);
+        Assert.assertTrue(actual);
+    }
+
+    public List<Integer> getRatingsFromAllPages(AdvancedSearchPage advancedSearchPage) {
+        List<ClubsItemComponent> cards;
+        List<Integer> ratings = new ArrayList<>();
+        int n = advancedSearchPage.getNumberOfPagesWithClubs();
+        for (int i = 0; i < n; i++) {
+            cards = advancedSearchPage.getCards();
+            for (ClubsItemComponent card : cards) {
+                ratings.add(card.getRating());
+                System.out.println("Rating: " + card.getRating());
+            }
+            advancedSearchPage.clickOnNextPageButton();
+        }
+        return ratings;
+    }
+
+    public boolean isSortedByRating(List<Integer> ratings, boolean asc) {
+        for (int j = 0; j < ratings.size() - 1; j++) {
+            System.out.println("Ratings: " + ratings.get(j) + " and " + ratings.get(j + 1));
+            if (asc) {
+                if (ratings.get(j) < ratings.get(j + 1)) {
+                    break;
+                } else if (ratings.get(j) > ratings.get(j + 1)) {
+                    return false;
+                }
+            }
+            if (!asc) {
+                if (ratings.get(j) > ratings.get(j + 1)) {
+                    break;
+                } else if (ratings.get(j) < ratings.get(j + 1)) {
+                    return false;
                 }
             }
         }

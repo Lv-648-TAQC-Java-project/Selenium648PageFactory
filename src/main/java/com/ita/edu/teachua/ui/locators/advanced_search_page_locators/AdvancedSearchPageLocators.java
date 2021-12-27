@@ -37,5 +37,5 @@ public class AdvancedSearchPageLocators {
     public static final String LAST_PAGE_BUTTON_XPATH = "//li[@title='Next Page']/preceding-sibling::*[1]";
     public static final String CENTER_BLOCKS_CSS_SELECTOR = ".ant-card.ant-card-bordered.card.center-list-rectangle-item";
     public static final String ARROW_UPP_BUTTON_XPATH = "//span[@aria-label='arrow-up']";
-
+    public static final String SORT_BY_RATING_BUTTON_XPATH = "//span[contains(text(),'за рейтингом')]";
 }
