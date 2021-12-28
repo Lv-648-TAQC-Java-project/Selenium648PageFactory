@@ -89,6 +89,8 @@ public class AdvancedSearchPage extends BasePage {
     private List<Button> searchFields;
     @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.ARROW_UPP_BUTTON_XPATH)
     private Button arrowUpButton;
+    @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.SORT_BY_RATING_BUTTON_XPATH)
+    private Button sortByRatingButton;
 
     public AdvancedSearchPage(WebDriver driver) {
         super(driver);
@@ -336,6 +338,13 @@ public class AdvancedSearchPage extends BasePage {
     public AdvancedSearchPage clickOnArrowUpButton() {
         sleep(1000);
         arrowUpButton.click();
+        return this;
+    }
+
+    @Step("Click on 'за рейтингом' to sort clubs by rating in descending order")
+    public AdvancedSearchPage clickOnSortByRatingButton() {
+        sleep(1000);
+        sortByRatingButton.click();
         return this;
     }
 }

@@ -19,9 +19,22 @@ public class TestValueProvider {
     public String getAdminPassword() {
         return properties.getProperty("adminPassword");
     }
-
     public String getAdminEmail() {
         return properties.getProperty("adminEmail");
+    }
+
+    public String getManagerEmail() {
+        return properties.getProperty("managerRoleEmail");
+    }
+    public String getManagerPassword() {
+        return properties.getProperty("managerRolePassword");
+    }
+
+    public String getUserEmail() {
+        return properties.getProperty("userRoleEmail");
+    }
+    public String getUserPassword() {
+        return properties.getProperty("userRolePassword");
     }
 
     public String getTestTeachUaMetaEmail() {

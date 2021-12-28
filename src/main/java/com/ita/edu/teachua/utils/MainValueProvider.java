@@ -35,35 +35,59 @@ public class MainValueProvider {
     public String getFeedbackUrl() {
         return properties.getProperty("feedbackUrl");
     }
-  
+
     public String getResetPasswordUrl() {
         return properties.getProperty("resetPasswordUrl");
     }
-      
+
     public String getChallengeUrl() {
         return properties.getProperty("challengeUrl");
+    }
+
+    public String getDistrictClientUrl() {
+        return properties.getProperty("districtClientUrl");
     }
 
     public String getCategoryClientUrl() {
         return properties.getProperty("categoryClientUrl");
     }
-    public String getDistrictClientUrl() {
-        return properties.getProperty("districtClientUrl");
-    }
+
     public String getCategoriesClientUrl() {
         return properties.getProperty("categoriesClientUrl");
     }
+<
     public String getCategoriesSearchClientUrl() {
         return properties.getProperty("categoriesSearchClientUrl");
     }
+
     public String getCenterClientUrl() {
         return properties.getProperty("centerClientUrl");
     }
     public String getCentersClientUrl() {
         return properties.getProperty("centersClientUrl");
     }
+
     public String getDistrictsListUrl() {
         return properties.getProperty("districtsListUrl");
     }
 
+    public String getAboutUsUrl() {
+        return properties.getProperty("aboutUsUrl");
+    }
+
+    public String getContactUrl() {
+        return properties.getProperty("contactUrl");
+    }
+
+    public String getStationUrl() {
+        return properties.getProperty("stationUrl");
+    }
+
+    public String getBannerClientUrl() {
+        return properties.getProperty("bannerClientUrl");
+    }
+
+    public String getBannersClientUrl() {
+        return properties.getProperty("bannersClientUrl");
+    }
 }

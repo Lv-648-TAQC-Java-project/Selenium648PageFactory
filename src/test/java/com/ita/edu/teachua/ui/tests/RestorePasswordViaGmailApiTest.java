@@ -33,6 +33,26 @@ public class RestorePasswordViaGmailApiTest extends TestRunner {
 
     }
 
+    @Issue("TUA-321")
+    @Description("Verify if error message is displayed after inputting invalid data for recover or change the password.")
+    @Test(description = "TUA-321")
+    public void testPasswordRecovery() {
+        HeaderPage header = new HeaderPage(driver);
+        RestoringPasswordFinishPopUpComponent restoringPassword = new RestoringPasswordFinishPopUpComponent(driver);
+        header.clickOnGuestDropdown().clickOnLoginButton()
+                .clickOnForgotPasswordButton()
+                .inputEmail("speak.ukrainian.atqc.test@gmail.com")
+                .clickOnRestore();
+        SoftAssert softAssert = new SoftAssert();
+        String errorText = restoringPassword.fillInNewPasswordField("1!q").getMessagePasswordError();
+        softAssert.assertEquals(errorText, "Пароль не може бути коротшим, ніж 8 та довшим, ніж 20 символів");
+        restoringPassword.getEnterPassword().clear();
+        errorText = restoringPassword.fillInNewPasswordField("1q2w3e4r").getMessagePasswordError();
+        softAssert.assertEquals(errorText, "Пароль повинен містити великі/маленькі літери латинського алфавіту, цифри та спеціальні символи");
+        restoringPassword.getEnterPassword().clear();
+        errorText = restoringPassword.fillInNewPasswordField("1q!Qqwertyqwertyqwerty").getMessagePasswordError();
+        softAssert.assertEquals(errorText, "Пароль не може бути коротшим, ніж 8 та довшим, ніж 20 символів");
+    }
 
     @Description("TUA-322 Verify if error message is displayed if passwords in 'Введіть новий пароль', 'Введіть новий пароль повторно' are not equal")
     @Issue("TUA-322")
@@ -49,7 +69,7 @@ public class RestorePasswordViaGmailApiTest extends TestRunner {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(restoringPassword.isPresentGreenMark());
         restoringPassword.fillReenterNewPasswordField("Rampam12@");
-        softAssert.assertEquals(restoringPassword.getErrorMessagePasswordNotEqual(),
+        softAssert.assertEquals(restoringPassword.getMessagePasswordError(),
                 "Значення поля ‘Підтвердити новий пароль’ має бути еквівалентним значенню поля ‘Новий пароль’");
         softAssert.assertAll();
     }

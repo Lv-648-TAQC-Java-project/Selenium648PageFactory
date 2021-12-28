@@ -314,14 +314,6 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnFinishButton();
     }
 
-    @Issue("TUA-321")
-    @Description("Verify if error message is displayed after inputting invalid data for recover or change the password.")
-    @Test(description = "TUA-321")
-    public void testPasswordRecovery() {
-        HeaderPage header = new HeaderPage(driver);
-        header.clickOnGuestDropdown();
-    }
-
     @DataProvider
     public Object[][] verifyThatOwnerCanAddLocationToTheListOfLocationsWithValidDataDataProvider() {
         return new Object[][]{
