@@ -55,7 +55,7 @@ public class MainValueProvider {
     public String getCategoriesClientUrl() {
         return properties.getProperty("categoriesClientUrl");
     }
-<
+
     public String getCategoriesSearchClientUrl() {
         return properties.getProperty("categoriesSearchClientUrl");
     }

@@ -7,6 +7,7 @@ import com.ita.edu.teachua.api.models.challenge.response.AddChallengeResponse;
 import com.ita.edu.teachua.api.models.category.Category;
 import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
+import com.ita.edu.teachua.api.models.club.add_club_response.District;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
 import com.ita.edu.teachua.api.models.district.DistrictModel;
 import com.ita.edu.teachua.api.models.station.StationModel;
@@ -27,19 +28,19 @@ public class ClientDataTransfer {
     }
 
 
-    public CategoryModel getAddCategory() {
+    public Category getAddCategory() {
         parser = new GsonParser();
         parser.parseAddCategoryJson();
         return parser.getAddCategory();
     }
 
-    public DistrictModel getAddDistrict() {
+    public District getAddDistrict() {
         parser = new GsonParser();
         parser.parseAddDistrictJson();
         return parser.getAddDistrict();
     }
 
-    public CenterModel getAddCenter() {
+    public Center getAddCenter() {
         parser = new GsonParser();
         parser.parseAddCenterJson();
         return parser.getAddCenter();
