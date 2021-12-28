@@ -17,6 +17,8 @@ public class OwnerDropdownComponent extends BasePage {
     private Button addCenterButton;
     @FindBy(how = How.XPATH, using = OwnerDropdownComponentLocators.MY_PROFILE_BUTTON_XPATH)
     private Button myProfileButton;
+    @FindBy(how = How.XPATH, using = OwnerDropdownComponentLocators.ADMINISTRATION_BUTTON_XPATH)
+    private Button administrationButton;
 
     public OwnerDropdownComponent(WebDriver driver) {
         super(driver);
@@ -34,5 +36,13 @@ public class OwnerDropdownComponent extends BasePage {
         waitUntilElementToBeClickable(By.xpath(OwnerDropdownComponentLocators.MY_PROFILE_BUTTON_XPATH), 5);
         myProfileButton.click();
         return new ProfilePage(driver);
+    }
+
+    @Step("Click on 'Адміністрування' button in dropdown")
+    public AdministrationDropdownComponent clickOnAdministrationButton() {
+        sleep(200);
+        administrationButton.click();
+        sleep(200);
+        return new AdministrationDropdownComponent(driver);
     }
 }

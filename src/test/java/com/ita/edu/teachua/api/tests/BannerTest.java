@@ -35,4 +35,5 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
         Assert.assertEquals(bannerModel.getSequenceNumber(), (Integer) 1);
     }
 
+
 }
