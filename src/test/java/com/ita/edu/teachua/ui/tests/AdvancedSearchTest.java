@@ -244,7 +244,6 @@ public class AdvancedSearchTest extends TestRunner {
             cards = advancedSearchPage.getCards();
             for (ClubsItemComponent card : cards) {
                 ratings.add(card.getRating());
-                System.out.println("Rating: " + card.getRating());
             }
             advancedSearchPage.clickOnNextPageButton();
         }
@@ -253,7 +252,6 @@ public class AdvancedSearchTest extends TestRunner {
 
     public boolean isSortedByRating(List<Integer> ratings, boolean asc) {
         for (int j = 0; j < ratings.size() - 1; j++) {
-            System.out.println("Ratings: " + ratings.get(j) + " and " + ratings.get(j + 1));
             if (asc) {
                 if (ratings.get(j) < ratings.get(j + 1)) {
                     break;
