@@ -6,8 +6,8 @@ import java.util.List;
 
 @Data
 public class CenterRoot {
-    private int id;
-    private int userId;
+    private Integer id;
+    private Integer userId;
     private String name;
     private Object email;
     private Object phones;

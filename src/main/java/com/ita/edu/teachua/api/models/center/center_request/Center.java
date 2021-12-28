@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class CenterModel {
+public class Center {
     private String name;
     private String description;
     private String userId;

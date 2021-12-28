@@ -3,8 +3,8 @@ package com.ita.edu.teachua.utils;
 import com.google.gson.Gson;
 
 import com.ita.edu.teachua.api.models.challenge.response.AddChallengeResponse;
-import com.ita.edu.teachua.api.models.category.CategoryModel;
-import com.ita.edu.teachua.api.models.center.center_request.CenterModel;
+import com.ita.edu.teachua.api.models.category.Category;
+import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.district.DistrictModel;
 
@@ -17,8 +17,8 @@ public class GsonParser {
 
     private AddClub addClub;
     private AddChallengeResponse addChallengeResponse;
-    private CategoryModel categoryModel;
-    private CenterModel centerModel;
+    private Category category;
+    private Center center;
 
     private DistrictModel districtModel;
 
@@ -57,7 +57,7 @@ public class GsonParser {
 
     public void parseAddCategoryJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/category/category.json")) {
-            this.categoryModel = gson.fromJson(reader, CategoryModel.class);
+            this.category = gson.fromJson(reader, Category.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -75,13 +75,13 @@ public class GsonParser {
         }
     }
 
-    public CategoryModel getAddCategory() {
-        return categoryModel;
+    public Category getAddCategory() {
+        return category;
     }
 
     public void parseAddCenterJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/center/center.json")) {
-            this.centerModel = gson.fromJson(reader, CenterModel.class);
+            this.center = gson.fromJson(reader, Center.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -89,8 +89,8 @@ public class GsonParser {
         }
     }
 
-    public CenterModel getAddCenter() {
-        return centerModel;
+    public Center getAddCenter() {
+        return center;
     }
 
     public DistrictModel getAddDistrict() {
