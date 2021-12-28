@@ -6,4 +6,8 @@ import lombok.Data;
 public class BaseErrorBody {
     private Integer status;
     private String message;
+
+    private Long timestamp;
+    private String error;
+    private String path;
 }

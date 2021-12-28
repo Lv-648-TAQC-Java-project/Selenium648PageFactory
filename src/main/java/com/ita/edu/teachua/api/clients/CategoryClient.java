@@ -1,16 +1,16 @@
 package com.ita.edu.teachua.api.clients;
 
-import com.ita.edu.teachua.api.models.category.CategoryModel;
+import com.ita.edu.teachua.api.models.category.Category;
 import com.ita.edu.teachua.utils.ClientDataTransfer;
 import com.ita.edu.teachua.utils.MainValueProvider;
 import io.restassured.response.Response;
 import java.io.IOException;
-import java.util.List;
 
 public class CategoryClient extends BaseClient{
 
     private final String clientUrl;
     private final String categoryListUrl;
+    private final String categoryListUrlSearch;
     protected MainValueProvider valueProvider;
     private String token;
 
@@ -23,6 +23,7 @@ public class CategoryClient extends BaseClient{
         }
         this.clientUrl = valueProvider.getCategoryClientUrl();
         this.categoryListUrl=valueProvider.getCategoriesClientUrl();
+        this.categoryListUrlSearch=valueProvider.getCategoriesSearchClientUrl();
         this.token = token;
     }
 
@@ -34,21 +35,21 @@ public class CategoryClient extends BaseClient{
                 .post(clientUrl);
     }
 
-    public Response changeNewCategory(int id){
+    public Response changeNewCategory(Category category, Integer id){
         return preparedRequest()
                 .header("Authorization",String.format("Bearer %s",token))
-                .body(new ClientDataTransfer().getAddCategory())
+                .body(category)
                 .when()
                 .put(String.format("%s/%d", clientUrl, id));
     }
 
-    public Response deleteNewCategory(int id){
+    public Response deleteNewCategory(Integer id){
         return preparedRequest()
                 .header("Authorization",String.format("Bearer %s",token))
                 .delete(String.format("%s/%d", clientUrl, id));
     }
 
-    public Response getNewCategory(int id){
+    public Response getNewCategory(Integer id){
         return preparedRequest()
                 .header("Authorization",String.format("Bearer %s",token))
                 .get(String.format("%s/%d", clientUrl, id));
@@ -58,6 +59,12 @@ public class CategoryClient extends BaseClient{
         return preparedRequest()
                 .header("Authorization",String.format("Bearer %s",token))
                 .get(categoryListUrl);
+    }
+
+    public Response getCategoriesSearch(){
+        return preparedRequest()
+                .header("Authorization",String.format("Bearer %s",token))
+                .get(categoryListUrlSearch);
     }
 
 }

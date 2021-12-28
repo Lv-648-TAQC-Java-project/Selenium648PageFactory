@@ -4,19 +4,19 @@ import lombok.Data;
 
 @Data
 public class Locations {
-    private int id;
+    private Integer id;
     private String name;
     private String address;
-    private int cityId;
-    private int districtId;
-    private int stationId;
+    private Integer cityId;
+    private Integer districtId;
+    private Integer stationId;
     private String cityName;
     private String districtName;
     private String stationName;
     private Object coordinates;
-    private double longitude;
-    private double latitude;
-    private int centerId;
+    private Double longitude;
+    private Double latitude;
+    private Integer centerId;
     private Object clubId;
     private String phone;
 }

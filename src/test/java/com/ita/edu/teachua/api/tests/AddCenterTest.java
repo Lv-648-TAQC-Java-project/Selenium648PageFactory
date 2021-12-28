@@ -1,16 +1,18 @@
 package com.ita.edu.teachua.api.tests;
 
 import com.ita.edu.teachua.api.clients.CenterClient;
+import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.center.center_response.CenterRoot;
+import com.ita.edu.teachua.api.models.center.change_response.Root;
+import com.ita.edu.teachua.api.models.center.resprose_swagger.CenterRoot2;
 import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
 import com.ita.edu.teachua.ui.pages.profile_page.CentersItemComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfilePage;
+import com.ita.edu.teachua.utils.ClientDataTransfer;
 import io.restassured.response.Response;
-import net.bytebuddy.implementation.bytecode.Throw;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.IOException;
-import java.util.List;
 
 public class AddCenterTest extends AuthorizedAsAdminApiTestRunner{
 
@@ -23,7 +25,7 @@ public class AddCenterTest extends AuthorizedAsAdminApiTestRunner{
                 .extract().as(CenterRoot.class);
 
         Assert.assertEquals(centerRoot.getName(), "API_testing5 ");
-        Assert.assertEquals(centerRoot.getUserId(), 1);
+        Assert.assertEquals(centerRoot.getUserId(), (Integer) 1);
 
         HeaderPage header = new HeaderPage(driver);
          ProfilePage profilePage = header
@@ -36,12 +38,6 @@ public class AddCenterTest extends AuthorizedAsAdminApiTestRunner{
             if(center.getCenterTitle().getText().contains("API_testing")){
                 System.out.println("Center has been created");
             }
-        }
-
-        try {
-            Thread.sleep(15000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
 
         Response response1 = centerClient.deleteNewCenter(centerRoot.getId());

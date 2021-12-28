@@ -52,6 +52,10 @@ public class MainValueProvider {
         return properties.getProperty("districtClientUrl");
     }
 
+    public String getCategoryClientUrl() {
+        return properties.getProperty("categoryClientUrl");
+    }
+
     public String getCategoriesClientUrl() {
         return properties.getProperty("categoriesClientUrl");
     }
@@ -60,10 +64,16 @@ public class MainValueProvider {
     public String getCategoryClientUrl() {
         return properties.getProperty("categoryClientUrl");
     }
+  
+    public String getCategoriesSearchClientUrl() {
+        return properties.getProperty("categoriesSearchClientUrl");
+    }
 
     public String getCenterClientUrl() {
         return properties.getProperty("centerClientUrl");
-
+    }
+    public String getCentersClientUrl() {
+        return properties.getProperty("centersClientUrl");
     }
 
     public String getDistrictsListUrl() {
@@ -85,6 +95,7 @@ public class MainValueProvider {
     public String getBannerClientUrl() {
         return properties.getProperty("bannerClientUrl");
     }
+
     public String getBannersClientUrl() {
         return properties.getProperty("bannersClientUrl");
     }

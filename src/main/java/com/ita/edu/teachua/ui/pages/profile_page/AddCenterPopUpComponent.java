@@ -17,7 +17,7 @@ public class AddCenterPopUpComponent extends BasePage {
     @FindBy(how = How.CLASS_NAME, using = AddCenterPopUpComponentLocators.ADD_LOCATION_BUTTON_CLASS_NAME)
     private Button addLocation;
     @FindBy(how = How.ID, using = AddCenterPopUpComponentLocators.CENTER_NAME_INPUT_ID)
-    private Input centerName;
+    private Input centerNameField;
     @FindBy(how = How.CSS, using = AddCenterPopUpComponentLocators.NEXT_STEP_BUTTON_CSS_SELECTOR)
     private Button nextStepButton;
     @FindBy(how = How.CSS, using = AddCenterPopUpComponentLocators.CENTER_NAME_ERROR_BLOCK_CSS_SELECTOR)
@@ -71,7 +71,7 @@ public class AddCenterPopUpComponent extends BasePage {
   
     @Step("Delete possible values from 'Назва центру' field")
     public AddCenterPopUpComponent clearCenterName() {
-        centerName.clear();
+        centerNameField.clear();
         return this;
     }
 

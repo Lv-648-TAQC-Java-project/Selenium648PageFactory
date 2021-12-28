@@ -18,4 +18,22 @@ public class AddClub {
     private List<Location> locations;
     private String contacts;
     private Integer centerId;
+
+    @Override
+    public String toString() {
+        return
+                 "{\"categoriesName\":" + categoriesName
+                + ", \"name\":\"" + name + "\""
+                + ", \"ageFrom\":\"" + ageFrom + "\""
+                + ", \"ageTo\":\"" + ageTo + "\""
+                + ", \"urlLogo\":" + urlLogo
+                + ", \"urlBackground\":" + urlBackground
+                + ", \"isOnline\":\"" + isOnline + "\""
+                + ", \"description\":\"" + description + "\""
+                + ", \"userId\":\"" + userId + "\""
+                + ", \"locations\":" + locations
+                + ", \"contacts\":\"" + contacts + "\""
+                + ", \"centerId\":\"" + centerId + "\""
+                + "}";
+    }
 }
