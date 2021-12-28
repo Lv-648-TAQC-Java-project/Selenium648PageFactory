@@ -4,9 +4,9 @@ import com.ita.edu.teachua.api.clients.CategoryClient;
 import lombok.Data;
 
 @Data
-public class CategoryModel {
-    private int id;
-    private int sortby;
+public class Category {
+    private Integer id;
+    private Integer sortby;
     private String name;
     private String description;
     private String urlLogo;

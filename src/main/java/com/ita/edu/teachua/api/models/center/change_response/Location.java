@@ -1,9 +1,9 @@
-package com.ita.edu.teachua.api.models.center.center_response;
+package com.ita.edu.teachua.api.models.center.change_response;
 
 import lombok.Data;
 
 @Data
-public class Locations {
+public class Location {
     private Integer id;
     private String name;
     private String address;

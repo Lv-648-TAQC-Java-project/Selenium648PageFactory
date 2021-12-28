@@ -4,8 +4,8 @@ package com.ita.edu.teachua.utils;
 import com.ita.edu.teachua.api.models.about_us.AboutUsRequestModel;
 import com.ita.edu.teachua.api.models.banner.BannerModel;
 import com.ita.edu.teachua.api.models.challenge.response.AddChallengeResponse;
-import com.ita.edu.teachua.api.models.category.CategoryModel;
-import com.ita.edu.teachua.api.models.center.center_request.CenterModel;
+import com.ita.edu.teachua.api.models.category.Category;
+import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
 import com.ita.edu.teachua.api.models.district.DistrictModel;
@@ -25,6 +25,7 @@ public class ClientDataTransfer {
         parser.parseAddChallengeJson();
         return parser.getAddChallengeResponse();
     }
+
 
     public CategoryModel getAddCategory() {
         parser = new GsonParser();

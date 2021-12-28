@@ -2,7 +2,6 @@ package com.ita.edu.teachua.api.tests;
 
 
 import com.ita.edu.teachua.api.clients.DistrictClient;
-import com.ita.edu.teachua.api.models.category.CategoryModel;
 import com.ita.edu.teachua.api.models.district.SuccessDistrictModel;
 import io.restassured.response.Response;
 import org.testng.Assert;

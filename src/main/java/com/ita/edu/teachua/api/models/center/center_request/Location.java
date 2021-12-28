@@ -11,5 +11,5 @@ public class Location {
     private String address;
     private String coordinates;
     private String phone;
-    private double key;
+    private Double key;
 }
