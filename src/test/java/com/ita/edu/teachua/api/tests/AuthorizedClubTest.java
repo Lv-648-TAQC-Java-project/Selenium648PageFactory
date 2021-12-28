@@ -7,9 +7,8 @@ import com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot;
 import com.ita.edu.teachua.api.models.error.BaseErrorBody;
 import com.ita.edu.teachua.utils.ClientDataTransfer;
 import io.restassured.response.Response;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -20,6 +19,113 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AuthorizedClubTest extends AuthorizedApiTestRunner {
+
+    @Test(description="TUA-405")
+    public void VerifyThatClubCannotBeCreatedWhenOneOfTheMandatoryFieldsAreNotFilled() throws IOException{
+
+        SoftAssert softAssert = new SoftAssert();
+        ClubClient clubClient = new ClubClient(authorization.getToken());
+        AddClub addClub = new ClientDataTransfer().getAddClub();
+
+        JSONObject addClubJSON = new JSONObject(addClub);
+        BaseErrorBody baseErrorBody;
+        Response response;
+
+        JSONArray categoriesName;
+        String name;
+        Integer ageFrom;
+        Integer ageTo;
+        String description;
+        JSONObject contacts;
+
+
+        categoriesName = (JSONArray)addClubJSON.remove("categoriesName");
+        response = clubClient.addNewClub(addClubJSON);
+        baseErrorBody = response.then().log().all()
+                .extract()
+                .as(BaseErrorBody.class);
+        softAssert.assertEquals(baseErrorBody.getStatus(),(Integer)500);
+        softAssert.assertEquals(baseErrorBody.getError(),"Internal Server Error");
+        addClubJSON.put("categoriesName",categoriesName);
+
+        description =  (String)addClubJSON.remove("description");
+        response = clubClient.addNewClub(addClubJSON);
+        baseErrorBody = response.then().log().all()
+                .extract()
+                .as(BaseErrorBody.class);
+        softAssert.assertEquals(baseErrorBody.getStatus(),(Integer)500);
+        softAssert.assertEquals(baseErrorBody.getError(),"Internal Server Error");
+        addClubJSON.put("description", description);
+
+
+        name = (String)addClubJSON.remove("name");
+        response = clubClient.addNewClub(addClubJSON);
+        baseErrorBody = response.then().log().all()
+                .extract()
+                .as(BaseErrorBody.class);
+        softAssert.assertEquals(baseErrorBody.getStatus(),(Integer)400);
+        softAssert.assertEquals(baseErrorBody.getMessage(),"name must not be empty");
+        addClubJSON.put("name", name);
+
+        ageFrom = (Integer)addClubJSON.remove("ageFrom");
+        response = clubClient.addNewClub(addClubJSON);
+        baseErrorBody = response.then().log().all()
+                .extract()
+                .as(BaseErrorBody.class);
+        softAssert.assertEquals(baseErrorBody.getStatus(),(Integer)400);
+        softAssert.assertEquals(baseErrorBody.getMessage(),"ageFrom поле не може бути пустим");
+        addClubJSON.put("ageFrom", ageFrom);
+
+        ageTo = (Integer)addClubJSON.remove("ageTo");
+        response = clubClient.addNewClub(addClubJSON);
+        baseErrorBody = response.then().log().all()
+                .extract()
+                .as(BaseErrorBody.class);
+        softAssert.assertEquals(baseErrorBody.getStatus(),(Integer)400);
+        softAssert.assertEquals(baseErrorBody.getMessage(),"ageTo поле не може бути пустим");
+        addClubJSON.put("ageTo", ageTo);
+
+
+
+        addClubJSON.remove("contacts");
+        response = clubClient.addNewClub(addClubJSON);
+
+        if(response.getStatusCode()==200) {
+            clubClient.deleteClub(response.getBody().jsonPath().get("id"));
+        } else {
+            baseErrorBody = response.then().log().all()
+                    .extract()
+                    .as(BaseErrorBody.class);
+            softAssert.assertEquals(baseErrorBody.getMessage(),"contacts must not be empty");
+        }
+
+
+
+        softAssert.assertAll();
+
+    }
+    @Test(description="TUA-371/372/463")
+    public void VerifyThatUserAsOwnerCanCreateNewClubWhichRegisteredOnHim() throws IOException {
+
+        ClubClient clubClient = new ClubClient(authorization.getToken());
+        AddClub addClub = new ClientDataTransfer().getAddClub();
+
+        Specifications.setResponseSpecification(200);
+        Response response = clubClient.addNewClub(addClub);
+        ClubRoot clubRoot = response.then().log().all()
+                .extract()
+                .as(ClubRoot.class);
+
+        Integer clubRegisteredUserId = clubRoot.getUser().getId();
+        Integer currentAuthorizedUserId = authorization.getCurrentAuthorizedUserID();
+
+        clubClient.deleteClub(clubRoot.getId());
+
+        Assert.assertEquals(clubRegisteredUserId,currentAuthorizedUserId);
+
+    }
+
+
     @DataProvider
     public Object[][] VerifyThatClubCannotBeCreatedWhenEenteringInvalidDataDataProvider() {
         return new Object[][]{
@@ -50,7 +156,7 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
     }
 
     @Test(description="TUA-409",dataProvider = "VerifyThatClubCannotBeCreatedWhenEenteringInvalidDataDataProvider")
-    public void VerifyThatClubCannotBeCreatedWhenEenteringInvalidData(String notExistingCategoryName,
+    public void VerifyThatClubCannotBeCreatedWhenEnteringInvalidData(String notExistingCategoryName,
                                                                       String categoryNotFoundMessage,
                                                                       String existingCategoryName,
                                                                       String russianCharactersClubName,
@@ -70,7 +176,7 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
                                                                       String toShortDescription,
                                                                       String toShortDescriptionMessage,
                                                                       String toLongDescription,
-                                                                      String toLongDescriptionMessage) throws IOException, ParseException {
+                                                                      String toLongDescriptionMessage) throws IOException {
 
         SoftAssert softAssert = new SoftAssert();
         ClubClient clubClient = new ClubClient(authorization.getToken());
@@ -145,14 +251,13 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
 
         addClub.setAgeTo(validAgeTo); //setting valid age for "age from"
 
-        //parsing stringify JSON field description of addClub model for further change according to the test steps
-        JSONObject clubDescription = (JSONObject)new JSONParser().parse(addClub.getDescription());
-        String validClubDescription = clubDescription.toJSONString();
-        List<JSONObject> blocks = (List<JSONObject>) clubDescription.get("blocks");
+        //getting stringify JSON field description of addClub model for further change according to the test steps
+        JSONObject clubDescription = new JSONObject(addClub.getDescription());
+        JSONArray blocks = (JSONArray) clubDescription.get("blocks");
 
-        blocks.get(0).put("text", russianCharactersDescription); //setting description which contains russian characters
+        ((JSONObject) blocks.get(0)).put("text", russianCharactersDescription); //setting description which contains russian characters
         clubDescription.put("blocks",blocks);
-        addClub.setDescription(clubDescription.toJSONString());
+        addClub.setDescription(String.valueOf(clubDescription));
 
         response = clubClient.addNewClub(addClub);
         errorBody = response.then().log().all()
@@ -162,9 +267,9 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         softAssert.assertEquals(errorBody.getMessage(),allowedDescriptionCharactersMessage);
         //addClub.setDescription(validClubDescription);
 
-        blocks.get(0).put("text",toShortDescription); //setting to short description
+        ((JSONObject) blocks.get(0)).put("text",toShortDescription); //setting to short description
         clubDescription.put("blocks",blocks);
-        addClub.setDescription(clubDescription.toJSONString());response = clubClient.addNewClub(addClub);
+        addClub.setDescription(clubDescription.toString());response = clubClient.addNewClub(addClub);
 
         errorBody = response.then().log().all()
                 .extract()
@@ -172,9 +277,9 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
 
         softAssert.assertEquals(errorBody.getMessage(),toShortDescriptionMessage);
         //addClub.setDescription(validClubDescription);
-        blocks.get(0).put("text",toLongDescription); //setting to long description
+        ((JSONObject) blocks.get(0)).put("text",toLongDescription); //setting to long description
         clubDescription.put("blocks",blocks);
-        addClub.setDescription(clubDescription.toJSONString());
+        addClub.setDescription(clubDescription.toString());
 
         response = clubClient.addNewClub(addClub);
         errorBody = response.then().log().all()
@@ -185,26 +290,9 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
 
         softAssert.assertAll();
     }
-    @Test(description="TUA-463")
-    public void VerifyThatUserAsOwnerCanCreateNewClubWhichRegisteredOnHim() throws IOException {
-        Specifications.setResponseSpecification(200);
-        ClubClient clubClient = new ClubClient(authorization.getToken());
-        AddClub addClub = new ClientDataTransfer().getAddClub();
-        Response response = clubClient.addNewClub(addClub);
-        ClubRoot clubRoot = response.then().log().all()
-               .extract()
-               .as(ClubRoot.class);
 
-        Integer clubRegisteredUserId = clubRoot.getUser().getId();
-        Integer currentAuthorizedUserId = authorization.getCurrentAuthorizedUserID();
-
-        clubClient.deleteClub(clubRoot.getId());
-
-        Assert.assertEquals(clubRegisteredUserId,currentAuthorizedUserId);
-
-    }
     @Test(description="TUA-501")
-    public void VerifyThatUserCannotCreateNewClubWithRussianCharactersInNamefield() throws IOException {
+    public void VerifyThatUserCannotCreateNewClubWithRussianCharactersInNameField() throws IOException {
         Specifications.setResponseSpecification(400);
         ClubClient clubClient = new ClubClient(authorization.getToken());
         AddClub addClub = new ClientDataTransfer().getAddClub();

@@ -4,6 +4,7 @@ import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.utils.ClientDataTransfer;
 import com.ita.edu.teachua.utils.MainValueProvider;
 import io.restassured.response.Response;
+import org.json.JSONObject;
 
 import java.io.IOException;
 
@@ -24,6 +25,13 @@ public class ClubClient extends BaseClient {
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s",token))
                 .body(addClub)
+                .when()
+                .post(clientUrl);
+    }
+    public Response addNewClub(JSONObject addClub){
+        return preparedRequest()
+                .header("Authorization", String.format("Bearer %s",token))
+                .body(addClub.toString())
                 .when()
                 .post(clientUrl);
     }
