@@ -36,8 +36,6 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         Integer ageFrom;
         Integer ageTo;
         String description;
-        JSONObject contacts;
-
 
         categoriesName = (JSONArray)addClubJSON.remove("categoriesName");
         response = clubClient.addNewClub(addClubJSON);
@@ -90,15 +88,12 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         addClubJSON.remove("contacts");
         response = clubClient.addNewClub(addClubJSON);
 
+        softAssert.assertEquals(response.getStatusCode(),400);
+        softAssert.assertEquals(response.getBody().jsonPath().get("message"),"contacts must not be empty");
+
         if(response.getStatusCode()==200) {
             clubClient.deleteClub(response.getBody().jsonPath().get("id"));
-        } else {
-            baseErrorBody = response.then().log().all()
-                    .extract()
-                    .as(BaseErrorBody.class);
-            softAssert.assertEquals(baseErrorBody.getMessage(),"contacts must not be empty");
         }
-
 
 
         softAssert.assertAll();
@@ -109,8 +104,6 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
 
         ClubClient clubClient = new ClubClient(authorization.getToken());
         AddClub addClub = new ClientDataTransfer().getAddClub();
-
-        Specifications.setResponseSpecification(200);
         Response response = clubClient.addNewClub(addClub);
         ClubRoot clubRoot = response.then().log().all()
                 .extract()
@@ -120,7 +113,7 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         Integer currentAuthorizedUserId = authorization.getCurrentAuthorizedUserID();
 
         clubClient.deleteClub(clubRoot.getId());
-
+        Assert.assertEquals(response.getStatusCode(),200);
         Assert.assertEquals(clubRegisteredUserId,currentAuthorizedUserId);
 
     }
@@ -188,12 +181,11 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         categoriesName.add(notExistingCategoryName);
         addClub.setCategoriesName(categoriesName);  //adding a name for a category that does not exist
 
-        Specifications.setResponseSpecification(404);
-
         response = clubClient.addNewClub(addClub);
         errorBody = response.then().log().all()
                 .extract()
                 .as(BaseErrorBody.class);
+        softAssert.assertEquals(errorBody.getStatus(),(Integer)404);
         softAssert.assertEquals(errorBody.getMessage(),categoryNotFoundMessage);
 
         categoriesName.clear();
@@ -202,13 +194,12 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         addClub.setCategoriesName(categoriesName);
         addClub.setName(russianCharactersClubName); //setting club name with russian characters
 
-        Specifications.setResponseSpecification(400);
-
         response = clubClient.addNewClub(addClub);
         errorBody = response.then().log().all()
                 .extract()
                 .as(BaseErrorBody.class);
 
+        softAssert.assertEquals(errorBody.getStatus(),(Integer)400);
         softAssert.assertEquals(errorBody.getMessage(),russianClubNameForbiddenMessage);
 
         addClub.setName(toShortClubName); // setting a short name for the club
@@ -218,6 +209,7 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
                 .extract()
                 .as(BaseErrorBody.class);
 
+        softAssert.assertEquals(errorBody.getStatus(),(Integer)400);
         softAssert.assertEquals(errorBody.getMessage(),invalidLengthClubNameMessage);
 
         addClub.setName(toLongClubName); // setting a long name for the club
@@ -227,6 +219,7 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
                 .extract()
                 .as(BaseErrorBody.class);
 
+        softAssert.assertEquals(errorBody.getStatus(),(Integer)400);
         softAssert.assertEquals(errorBody.getMessage(),invalidLengthClubNameMessage);
 
         addClub.setName(validClubName); //setting valid club name
@@ -237,6 +230,7 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
                 .extract()
                 .as(BaseErrorBody.class);
 
+        softAssert.assertEquals(errorBody.getStatus(),(Integer)400);
         softAssert.assertEquals(errorBody.getMessage(),ageFromToLowMessage);
 
         addClub.setAgeFrom(validAgeFrom); //setting valid age for "age from"
@@ -247,6 +241,7 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
                 .extract()
                 .as(BaseErrorBody.class);
 
+        softAssert.assertEquals(errorBody.getStatus(),(Integer)400);
         softAssert.assertEquals(errorBody.getMessage(),ageToToHighMessage);
 
         addClub.setAgeTo(validAgeTo); //setting valid age for "age from"
@@ -264,6 +259,7 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
                 .extract()
                 .as(BaseErrorBody.class);
 
+        softAssert.assertEquals(errorBody.getStatus(),(Integer)400);
         softAssert.assertEquals(errorBody.getMessage(),allowedDescriptionCharactersMessage);
         //addClub.setDescription(validClubDescription);
 
@@ -275,6 +271,7 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
                 .extract()
                 .as(BaseErrorBody.class);
 
+        softAssert.assertEquals(errorBody.getStatus(),(Integer)400);
         softAssert.assertEquals(errorBody.getMessage(),toShortDescriptionMessage);
         //addClub.setDescription(validClubDescription);
         ((JSONObject) blocks.get(0)).put("text",toLongDescription); //setting to long description
@@ -293,7 +290,6 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
 
     @Test(description="TUA-501")
     public void VerifyThatUserCannotCreateNewClubWithRussianCharactersInNameField() throws IOException {
-        Specifications.setResponseSpecification(400);
         ClubClient clubClient = new ClubClient(authorization.getToken());
         AddClub addClub = new ClientDataTransfer().getAddClub();
         addClub.setName("Э э ъ Ъ Ы ы");
