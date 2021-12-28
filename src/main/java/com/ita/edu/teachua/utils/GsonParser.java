@@ -6,6 +6,7 @@ import com.ita.edu.teachua.api.models.banner.BannerModel;
 import com.ita.edu.teachua.api.models.challenge.response.AddChallengeResponse;
 import com.ita.edu.teachua.api.models.category.CategoryModel;
 import com.ita.edu.teachua.api.models.center.center_request.CenterModel;
+import com.ita.edu.teachua.api.models.city.City;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.district.DistrictModel;
 
@@ -23,6 +24,7 @@ public class GsonParser {
 
     private DistrictModel districtModel;
     private BannerModel bannerModel;
+    private City city;
 
     public GsonParser() {
         gson = new Gson();
@@ -110,5 +112,19 @@ public class GsonParser {
     }
     public BannerModel getAddNewBanner() {
         return bannerModel;
+    }
+
+
+    public void parseAddNewCityJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/city/city")) {
+            this.city = gson.fromJson(reader, City.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public City getAddNewCity() {
+        return city;
     }
 }

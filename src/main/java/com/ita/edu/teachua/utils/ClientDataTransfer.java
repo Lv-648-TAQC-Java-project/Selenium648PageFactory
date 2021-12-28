@@ -5,6 +5,7 @@ import com.ita.edu.teachua.api.models.banner.BannerModel;
 import com.ita.edu.teachua.api.models.challenge.response.AddChallengeResponse;
 import com.ita.edu.teachua.api.models.category.CategoryModel;
 import com.ita.edu.teachua.api.models.center.center_request.CenterModel;
+import com.ita.edu.teachua.api.models.city.City;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.district.DistrictModel;
 
@@ -17,31 +18,40 @@ public class ClientDataTransfer {
         return parser.getAddClub();
     }
 
-    public AddChallengeResponse getAddChallenge(){
-        parser=new GsonParser();
+    public AddChallengeResponse getAddChallenge() {
+        parser = new GsonParser();
         parser.parseAddChallengeJson();
         return parser.getAddChallengeResponse();
     }
 
-    public CategoryModel getAddCategory(){
+    public CategoryModel getAddCategory() {
         parser = new GsonParser();
         parser.parseAddCategoryJson();
         return parser.getAddCategory();
     }
-    public DistrictModel getAddDistrict(){
+
+    public DistrictModel getAddDistrict() {
         parser = new GsonParser();
         parser.parseAddDistrictJson();
         return parser.getAddDistrict();
     }
-    public CenterModel getAddCenter(){
+
+    public CenterModel getAddCenter() {
         parser = new GsonParser();
         parser.parseAddCenterJson();
         return parser.getAddCenter();
     }
-    public BannerModel getAddBanner(){
+
+    public BannerModel getAddBanner() {
         parser = new GsonParser();
         parser.parseAddNewBannerJson();
         return parser.getAddNewBanner();
+    }
+
+    public City getAddCity() {
+        parser = new GsonParser();
+        parser.parseAddNewBannerJson();
+        return parser.getAddNewCity();
     }
 
 }
