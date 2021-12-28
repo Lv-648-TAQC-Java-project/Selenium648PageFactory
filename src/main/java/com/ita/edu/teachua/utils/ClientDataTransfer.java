@@ -4,6 +4,9 @@ package com.ita.edu.teachua.utils;
 import com.ita.edu.teachua.api.models.about_us.AboutUsRequestModel;
 import com.ita.edu.teachua.api.models.banner.BannerModel;
 import com.ita.edu.teachua.api.models.challenge.response.AddChallengeResponse;
+import com.ita.edu.teachua.api.models.category.CategoryModel;
+import com.ita.edu.teachua.api.models.center.center_request.CenterModel;
+import com.ita.edu.teachua.api.models.city.City;
 import com.ita.edu.teachua.api.models.category.Category;
 import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
@@ -34,11 +37,13 @@ public class ClientDataTransfer {
         return parser.getAddCategory();
     }
 
+
     public District getAddDistrict() {
         parser = new GsonParser();
         parser.parseAddDistrictJson();
         return parser.getAddDistrict();
     }
+
 
     public Center getAddCenter() {
         parser = new GsonParser();
@@ -50,6 +55,13 @@ public class ClientDataTransfer {
         parser = new GsonParser();
         parser.parseAddNewBannerJson();
         return parser.getAddNewBanner();
+    }
+
+
+    public City getAddCity() {
+        parser = new GsonParser();
+        parser.parseAddNewBannerJson();
+        return parser.getAddNewCity();
     }
 
     public AboutUsRequestModel getAddAboutUs() {

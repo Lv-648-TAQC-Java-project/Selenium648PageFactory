@@ -5,6 +5,9 @@ import com.google.gson.Gson;
 import com.ita.edu.teachua.api.models.about_us.AboutUsRequestModel;
 import com.ita.edu.teachua.api.models.banner.BannerModel;
 import com.ita.edu.teachua.api.models.challenge.response.AddChallengeResponse;
+import com.ita.edu.teachua.api.models.category.CategoryModel;
+import com.ita.edu.teachua.api.models.center.center_request.CenterModel;
+import com.ita.edu.teachua.api.models.city.City;
 import com.ita.edu.teachua.api.models.category.Category;
 import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
@@ -27,6 +30,7 @@ public class GsonParser {
 
     private District districtModel;
     private BannerModel bannerModel;
+    private City city;
 
     private AboutUsRequestModel aboutUsRequestModel;
     private ContactModel contactModel;
@@ -122,6 +126,16 @@ public class GsonParser {
     }
 
 
+
+    public void parseAddNewCityJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/city/city")) {
+            this.city = gson.fromJson(reader, City.class);
+   } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+      
     public AboutUsRequestModel getAboutUsRequestModel() {
         return aboutUsRequestModel;
     }
@@ -184,6 +198,10 @@ public class GsonParser {
         }
     }
 
+      public City getAddNewCity() {
+        return city;
+   }
+      
     public void parseChangeStationJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/change_station.json")) {
             this.stationModel = gson.fromJson(reader, StationModel.class);
@@ -193,4 +211,5 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
+      
 }

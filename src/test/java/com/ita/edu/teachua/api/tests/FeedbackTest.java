@@ -1,11 +1,13 @@
 package com.ita.edu.teachua.api.tests;
 
-import com.ita.edu.teachua.api.clients.sigin.FeedbackClient;
-import com.ita.edu.teachua.api.models.feedback.Feedback;
+import com.ita.edu.teachua.api.clients.FeedbackClient;
+import com.ita.edu.teachua.api.models.feedback.feedback_request.FeedbackRequest;
+import com.ita.edu.teachua.api.models.feedback.feedback_response.Feedback;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
 
 import java.io.IOException;
 
@@ -14,33 +16,59 @@ public class FeedbackTest extends AuthorizedApiTestRunner {
     @Test(description = "TUA-370")
     @Description("[API] Verify that feedback without text is not added to the club")
     public void createFeedbackWithEmptyTextFiledTest() throws IOException {
+        Specifications.setResponseSpecification(400);
         FeedbackClient feedbackClient = new FeedbackClient(authorization.getToken());
-        Feedback feedback = Feedback.builder()
+        FeedbackRequest feedback = FeedbackRequest.builder()
                 .rate(4.0f)
                 .text("")
                 .clubId(5)
                 .userId(authorization.getCurrentAuthorizedUserID())
                 .build();
-        Response response = feedbackClient.addNewFeedback(feedback);
-        Assert.assertEquals(response.getStatusCode(), 400);
+        feedbackClient.addNewFeedback(feedback);
     }
 
 
-    @Test(description = "TUA-376")
     @Description("[API] Add feedback to the club")
-    public void addFeedbackToClub() throws IOException {
+    @Test(description = "TUA-376")
+    public void addFeedbackToClubTest() throws IOException {
+        Specifications.setResponseSpecification(200);
         FeedbackClient feedbackClient = new FeedbackClient(authorization.getToken());
-        Feedback feedback = Feedback.builder()
-                .text("It is demo feedback")
-                .rate(5.0f)
+        FeedbackRequest feedback = FeedbackRequest.builder()
+                .text("Some examples of positive feedback")
+                .rate(5f)
                 .clubId(389)
                 .userId(authorization.getCurrentAuthorizedUserID())
                 .build();
+
         Response response = feedbackClient.addNewFeedback(feedback);
-        Assert.assertEquals(response.getStatusCode(), 200);
-        Assert.assertEquals(response.body().path("rate"), feedback.getRate());
-        Assert.assertEquals(response.body().path("text"), feedback.getText());
-        Assert.assertEquals(response.body().path("clubId"), feedback.getClubId());
+        Float rate = response.path("rate");
+        String textFeedback = response.path("text");
+        Integer clubId = response.path("clubId");
+
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertNotNull(response.path("id"));
+        softAssert.assertEquals(rate, 5.0f);
+        softAssert.assertEquals(textFeedback, "Some examples of positive feedback");
+        softAssert.assertEquals(clubId, (Integer) 389);
+        softAssert.assertAll();
+    }
+
+
+    //doesn't work : as
+    @Test
+    public void getFeedbackByIdTest() throws IOException {
+//        Specifications.setResponseSpecification(200);
+        FeedbackClient feedbackClient = new FeedbackClient(authorization.getToken());
+        Response response = feedbackClient.getFeedbackById(10);
+        Feedback feedbackRequest = response
+                .then()
+                .log().all()
+                .extract().as(Feedback.class);
+
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(feedbackRequest.getId(), (Integer) 10);
+        softAssert.assertEquals(feedbackRequest.getText(), "Verify if error message appears if entered data is invalid\n");
+        softAssert.assertAll();
     }
 
 }

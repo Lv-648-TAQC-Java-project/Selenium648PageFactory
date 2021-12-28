@@ -1,12 +1,11 @@
-package com.ita.edu.teachua.api.models.feedback;
-
+package com.ita.edu.teachua.api.models.feedback.feedback_request;
 
 import lombok.Builder;
 import lombok.Data;
 
 @Builder
 @Data
-public class Feedback {
+public class FeedbackRequest {
     private Integer id;
     private Float rate;
     private String text;
