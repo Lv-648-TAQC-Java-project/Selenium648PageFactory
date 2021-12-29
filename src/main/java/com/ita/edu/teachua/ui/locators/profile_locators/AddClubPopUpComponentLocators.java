@@ -22,8 +22,8 @@ public class AddClubPopUpComponentLocators {
     public static final String WHATSAPP_FIELD_ID = "basic_contactWhatsApp";
     public static final String EMAIL_FIELD_ID = "basic_contactПошта";
     public static final String SKYPE_FIELD_ID = "basic_contactSkype";
-    public static final String SITE_FIELD_ID = "basic_contactSite";
-    /*Contacts area end*/;
+    public static final String SITE_FIELD_ID = "basic_contactContact";
+    /*Contacts area end*/
     /*Description area start*/
     public static final String DESCRIPTION_FIELD_ID = "basic_description";
     public static final String COMPLETE_BUTTON_XPATH = "//div[@class='add-club-content-footer']/button[@type='submit']/span[contains(text(),'Завершити')]";

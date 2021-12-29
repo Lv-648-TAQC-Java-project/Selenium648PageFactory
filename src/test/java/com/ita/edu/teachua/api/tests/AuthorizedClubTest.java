@@ -2,6 +2,7 @@ package com.ita.edu.teachua.api.tests;
 
 
 import com.ita.edu.teachua.api.clients.ClubClient;
+import com.ita.edu.teachua.api.clients.sigin.Authorization;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot;
 import com.ita.edu.teachua.api.models.error.BaseErrorBody;
@@ -20,14 +21,47 @@ import java.util.List;
 
 public class AuthorizedClubTest extends AuthorizedApiTestRunner {
 
+    @Test(description="TUA-498")
+    public void VerifyThatUserAsOwnerCanNotDeleteClubThatNotRegisteredByHim() throws IOException {
+        ClubClient clubClient;
+        Response response;
+        SoftAssert softAssert = new SoftAssert();
+
+        //authorization as admin and creating club
+        authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
+        clubClient = new ClubClient(authorization.getToken());
+        AddClub addClub = new ClientDataTransfer().getAddClub();
+        response = clubClient.addNewClub(addClub);
+        ClubRoot clubRoot = response.then().log().all()
+                .extract()
+                .as(ClubRoot.class);
+
+        //authorization as simple user and trying to delete the club
+        authorization = new Authorization(testValueProvider.getTestTeachUaMetaEmail(), testValueProvider.getTestTeachUaMetaPassword());
+        clubClient = new ClubClient(authorization.getToken());
+        response = clubClient.deleteClub(clubRoot.getId());
+
+        softAssert.assertEquals(response.getStatusCode(),403);
+        softAssert.assertEquals(response.jsonPath().get("message"), "The user cannot manage a club that does not belong to the user");
+
+        //again authorization as admin to delete test created club
+        authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
+        clubClient = new ClubClient(authorization.getToken());
+        response = clubClient.deleteClub(clubRoot.getId());
+
+        softAssert.assertEquals(response.getStatusCode(),200);
+        softAssert.assertAll();
+    }
+
     @Test(description="TUA-405")
     public void VerifyThatClubCannotBeCreatedWhenOneOfTheMandatoryFieldsAreNotFilled() throws IOException{
 
         SoftAssert softAssert = new SoftAssert();
         ClubClient clubClient = new ClubClient(authorization.getToken());
-        AddClub addClub = new ClientDataTransfer().getAddClub();
+        //AddClub addClub = new ClientDataTransfer().getAddClub();
 
-        JSONObject addClubJSON = new JSONObject(addClub);
+
+        JSONObject addClubJSON = new JSONObject(new ClientDataTransfer().getAddClub());
         BaseErrorBody baseErrorBody;
         Response response;
 
@@ -120,7 +154,7 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
 
 
     @DataProvider
-    public Object[][] VerifyThatClubCannotBeCreatedWhenEenteringInvalidDataDataProvider() {
+    public Object[][] VerifyThatClubCannotBeCreatedWhenEnteringInvalidDataDataProvider() {
         return new Object[][]{
                 {
                         "Новий тип гуртка",
@@ -148,7 +182,7 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         };
     }
 
-    @Test(description="TUA-409",dataProvider = "VerifyThatClubCannotBeCreatedWhenEenteringInvalidDataDataProvider")
+    @Test(description="TUA-409",dataProvider = "VerifyThatClubCannotBeCreatedWhenEnteringInvalidDataDataProvider")
     public void VerifyThatClubCannotBeCreatedWhenEnteringInvalidData(String notExistingCategoryName,
                                                                       String categoryNotFoundMessage,
                                                                       String existingCategoryName,
