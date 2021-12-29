@@ -36,8 +36,8 @@ public class ClubClient extends BaseClient {
                 .post(clientUrl);
     }
 
-    public void deleteClub(Integer id){
-        preparedRequest()
+    public Response deleteClub(Integer id){
+        return preparedRequest()
                 .header("Authorization", String.format("Bearer %s",token))
                 .when()
                 .delete(String.format("%s/%d",clientUrl,id));
