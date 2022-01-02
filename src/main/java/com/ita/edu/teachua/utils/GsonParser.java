@@ -5,7 +5,7 @@ import com.google.gson.Gson;
 import com.ita.edu.teachua.api.models.about_us.AboutUsRequestModel;
 import com.ita.edu.teachua.api.models.banner.BannerModel;
 import com.ita.edu.teachua.api.models.challenge.response.AddChallengeResponse;
-import com.ita.edu.teachua.api.models.city.City;
+import com.ita.edu.teachua.api.models.city.city_request.City;
 import com.ita.edu.teachua.api.models.category.Category;
 import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
@@ -122,7 +122,6 @@ public class GsonParser {
     }
 
 
-
     public void parseAddNewCityJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/city/city")) {
             this.city = gson.fromJson(reader, City.class);
@@ -132,6 +131,7 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
+
     public AboutUsRequestModel getAboutUsRequestModel() {
         return aboutUsRequestModel;
     }
@@ -194,10 +194,10 @@ public class GsonParser {
         }
     }
 
-      public City getAddNewCity() {
+    public City getAddNewCity() {
         return city;
-   }
-      
+    }
+
     public void parseChangeStationJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/change_station.json")) {
             this.stationModel = gson.fromJson(reader, StationModel.class);
@@ -207,5 +207,4 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
-      
 }

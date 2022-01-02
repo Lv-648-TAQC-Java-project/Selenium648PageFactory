@@ -3,7 +3,6 @@ package com.ita.edu.teachua.api.clients;
 import com.ita.edu.teachua.api.models.feedback.feedback_request.FeedbackRequest;
 import com.ita.edu.teachua.utils.MainValueProvider;
 import io.restassured.response.Response;
-import lombok.Builder;
 
 import java.io.IOException;
 
@@ -35,17 +34,11 @@ public class FeedbackClient extends BaseClient {
                 .post(feedbackUrl);
     }
 
-    public Response getAllFeedbacks() {
-        return preparedRequest()
-                .log().all()
-                .header("Authorization", String.format("Bearer %s", token))
-                .get(feedbacksUrl);
-    }
-
     public Response getFeedbackById(int id) {
         return preparedRequest()
                 .log().all()
                 .header("Authorization", String.format("Bearer %s", token))
+                .when()
                 .get(String.format("%s/%d", feedbackUrl, id));
     }
 

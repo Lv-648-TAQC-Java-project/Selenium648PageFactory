@@ -53,15 +53,13 @@ public class FeedbackTest extends AuthorizedApiTestRunner {
         softAssert.assertAll();
     }
 
-
-    //doesn't work : as
-    @Test
+    @Description("[API] Get feedback by its id")
+    @Test(description = "TUA")
     public void getFeedbackByIdTest() throws IOException {
-//        Specifications.setResponseSpecification(200);
+        Specifications.setResponseSpecification(200);
         FeedbackClient feedbackClient = new FeedbackClient(authorization.getToken());
         Response response = feedbackClient.getFeedbackById(10);
-        Feedback feedbackRequest = response
-                .then()
+        Feedback feedbackRequest = response.then()
                 .log().all()
                 .extract().as(Feedback.class);
 

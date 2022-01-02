@@ -67,6 +67,7 @@ public class MainValueProvider {
     public String getCenterClientUrl() {
         return properties.getProperty("centerClientUrl");
     }
+
     public String getCentersClientUrl() {
         return properties.getProperty("centersClientUrl");
     }
@@ -93,5 +94,13 @@ public class MainValueProvider {
 
     public String getBannersClientUrl() {
         return properties.getProperty("bannersClientUrl");
+    }
+
+    public String getQuestionUrl() {
+        return properties.getProperty("questionUrl");
+    }
+
+    public String getQuestionsUrl() {
+        return properties.getProperty("questionsUrl");
     }
 }

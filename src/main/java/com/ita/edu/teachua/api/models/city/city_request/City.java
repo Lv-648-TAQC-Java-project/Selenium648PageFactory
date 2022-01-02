@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.api.models.city;
+package com.ita.edu.teachua.api.models.city.city_request;
 
 import lombok.Builder;
 import lombok.Data;

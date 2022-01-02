@@ -20,7 +20,7 @@ public class Club {
     private Integer feedbackCount;
     private Object isOnline;
     private List<Object> locations;
-    private List<Feedback> feedbacks;
+    private List<FeedbackResponse> feedbacks;
     private List<Category> categories;
     private User user;
     private Center center;
