@@ -94,7 +94,7 @@ public class OwnerProfileTest extends TestRunner {
                         "example@email.com",
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                         "name,cityName,districtName,stationName,address,coordinates,phone",
-                        "basic_contactТелефон,basic_contactFacebook,basic_contactWhatsApp,basic_contactПошта,basic_contactSkype,basic_contactSite"
+                        "basic_contactТелефон,basic_contactFacebook,basic_contactWhatsApp,basic_contactПошта,basic_contactSkype,basic_contactContact"
                 }
         };
     }
@@ -143,15 +143,15 @@ public class OwnerProfileTest extends TestRunner {
         softAssert.assertTrue(isDataAccepted);
 
         isDataAccepted = addLocationPopUpComponent
-                .clickOnDistrictDropdown()
-                .clickOnDesnianskyiButton()
-                .isDataAccepted(locationPopUpComponentId[2]);
-        softAssert.assertTrue(isDataAccepted);
-
-        isDataAccepted = addLocationPopUpComponent
                 .clickOnLocalityDropdown()
                 .clickOnAkademmistechkoButton()
                 .isDataAccepted(locationPopUpComponentId[3]);
+        softAssert.assertTrue(isDataAccepted);
+
+        isDataAccepted = addLocationPopUpComponent
+                .clickOnDistrictDropdown()
+                .clickOnDesnianskyiButton()
+                .isDataAccepted(locationPopUpComponentId[2]);
         softAssert.assertTrue(isDataAccepted);
 
         isDataAccepted = addLocationPopUpComponent

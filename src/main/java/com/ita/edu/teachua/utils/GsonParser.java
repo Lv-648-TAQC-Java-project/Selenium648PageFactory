@@ -12,7 +12,6 @@ import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.club.add_club_response.District;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
 import com.ita.edu.teachua.api.models.station.StationModel;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
