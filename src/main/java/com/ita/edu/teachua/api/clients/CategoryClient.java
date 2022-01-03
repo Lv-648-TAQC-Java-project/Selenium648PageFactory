@@ -21,7 +21,7 @@ public class CategoryClient extends BaseClient{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        this.clientUrl = valueProvider.getCategoryClientUrl();
+        this.clientUrl = valueProvider.getCategoriesClientUrl();
         this.categoryListUrl=valueProvider.getCategoriesClientUrl();
         this.categoryListUrlSearch=valueProvider.getCategoriesSearchClientUrl();
         this.token = token;

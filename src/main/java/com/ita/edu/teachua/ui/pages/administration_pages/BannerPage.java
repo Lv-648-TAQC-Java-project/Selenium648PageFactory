@@ -17,5 +17,4 @@ public class BannerPage extends BasePage {
     public BannerPage(WebDriver driver) {
         super(driver);
     }
-
 }

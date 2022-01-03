@@ -3,6 +3,7 @@ package com.ita.edu.teachua.utils;
 
 import com.ita.edu.teachua.api.models.about_us.AboutUsRequestModel;
 import com.ita.edu.teachua.api.models.banner.BannerModel;
+import com.ita.edu.teachua.api.models.challenge.patch.PatchChallenge;
 import com.ita.edu.teachua.api.models.challenge.response.AddChallengeResponse;
 import com.ita.edu.teachua.api.models.city.City;
 import com.ita.edu.teachua.api.models.category.Category;
@@ -27,7 +28,11 @@ public class ClientDataTransfer {
         parser.parseAddChallengeJson();
         return parser.getAddChallengeResponse();
     }
-
+    public PatchChallenge getPatchChallenge(){
+        parser=new GsonParser();
+        parser.parsePatchChallengeJson();
+        return parser.getPatchChallenge();
+    }
 
     public Category getAddCategory() {
         parser = new GsonParser();
