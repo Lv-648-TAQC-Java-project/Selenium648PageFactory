@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 
 import com.ita.edu.teachua.api.models.about_us.AboutUsRequestModel;
 import com.ita.edu.teachua.api.models.banner.BannerModel;
+import com.ita.edu.teachua.api.models.challenge.patch.PatchChallenge;
 import com.ita.edu.teachua.api.models.challenge.response.AddChallengeResponse;
 import com.ita.edu.teachua.api.models.city.City;
 import com.ita.edu.teachua.api.models.category.Category;
@@ -21,6 +22,7 @@ public class GsonParser {
 
     private AddClub addClub;
     private AddChallengeResponse addChallengeResponse;
+    private PatchChallenge patchChallenge;
     private Category category;
     private Center center;
 
@@ -47,7 +49,7 @@ public class GsonParser {
     }
 
     public void parseAddChallengeJson() {
-        try (FileReader reader = new FileReader("src/main/resources/request_body.challenge/addChallenge.json")) {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/challenge/addChallenge.json")) {
             this.addChallengeResponse = gson.fromJson(reader, AddChallengeResponse.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -65,6 +67,18 @@ public class GsonParser {
         return addClub;
     }
 
+    public void parsePatchChallengeJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/challenge/patchChallenge.json")) {
+            this.patchChallenge = gson.fromJson(reader, PatchChallenge.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public PatchChallenge getPatchChallenge(){
+        return patchChallenge;
+    }
     public void parseAddCategoryJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/category/category.json")) {
             this.category = gson.fromJson(reader, Category.class);

@@ -62,6 +62,55 @@ public class OwnerProfileTest extends TestRunner {
         softAssert.assertAll();
     }
 
+    @DataProvider
+    public Object[][] descriptionDataProvider() {
+        return new Object[][]{
+                {"sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfЫ",
+                        "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ",
+                        "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfъ",
+                        "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ",
+                        "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö",
+                        "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä",
+                        "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü",
+                        "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü",
+                        "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö",
+                        "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä"}
+        };
+    }
+
+    @Issue("TUA-178")
+    @Description("This test case verifies that  error message appears when user enters letters in Russian or German languages into the field")
+    @Test(description = "TUA-178", dataProvider = "descriptionDataProvider")
+    public void verifyThatErrorMessageAppearsWhenUserEntersLetterInRUSOrGER(String[] data) {
+        HeaderPage profile = new HeaderPage(driver);
+        AddClubPopUpComponent addClubPopUpComponent= profile
+                .authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
+                .clickOnOwnerDropdown()
+                .clickOnProfile()
+                .clickOnAddButton()
+                .clickOnAddClubButton()
+                .enterNameOfClub("Name of club")
+                .chooseSportSections()
+                .fillChildAge("2", "16")
+                .clickOnNextStepButton()
+                .enterValidFacebook("gfhdfghfg")
+                .enterValidEmail("fhfdhgfd@gmail.com")
+                .enterValidWhatsApp("ghdfghf")
+                .enterValidSite("grsgr")
+                .enterValidSkype("efaefs")
+                .enterValidTelephoneNumber("7557565755")
+                .clickOnNextStepButton();
+        SoftAssert softAssert=new SoftAssert();
+        for(int i=0;i<data.length/2-1;i++){
+            addClubPopUpComponent.inputInDescriptionField(data[i]);
+            softAssert.assertEquals(addClubPopUpComponent.getError().getText(),"Опис гуртка не може містити російські літери");
+        }for(int i=data.length/2-1;i<data.length;i++){
+            addClubPopUpComponent.inputInDescriptionField(data[i]);
+            softAssert.assertEquals(addClubPopUpComponent.getError().getText(),"Некоректний опис гуртка");
+        }
+        softAssert.assertAll();
+    }
+
     @Issue("TUA-160")
     @Description("This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty")
     @Test(description = "TUA-160")

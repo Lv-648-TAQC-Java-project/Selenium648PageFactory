@@ -22,22 +22,22 @@ public class AuthorizedAsAdminApiTestRunner {
     public void beforeSuite() throws IOException {
         testValueProvider = new TestValueProvider();
         authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
-        WebDriverManager.chromedriver().setup();
+//        WebDriverManager.chromedriver().setup();
     }
 
-    @BeforeMethod
-    public void beforeMethod(ITestContext context) {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get(testValueProvider.getBaseUrl());
-        context.setAttribute("driver", driver);
-    }
-
-    @AfterMethod
-    public void afterMethod() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+//    @BeforeMethod
+//    public void beforeMethod(ITestContext context) {
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//        driver.get(testValueProvider.getBaseUrl());
+//        context.setAttribute("driver", driver);
+//    }
+//
+//    @AfterMethod
+//    public void afterMethod() {
+//        if (driver != null) {
+//            driver.quit();
+//        }
+//    }
 }
