@@ -87,9 +87,14 @@ public class MainValueProvider {
     public String getBannerClientUrl() {
         return properties.getProperty("bannerClientUrl");
     }
-
     public String getBannersClientUrl() {
         return properties.getProperty("bannersClientUrl");
+    }
+    public String getRoleClientUrl() {
+        return properties.getProperty("roleClientUrl");
+    }
+    public String getRolesClientUrl() {
+        return properties.getProperty("rolesClientUrl");
     }
 
     public String getQuestionUrl() {

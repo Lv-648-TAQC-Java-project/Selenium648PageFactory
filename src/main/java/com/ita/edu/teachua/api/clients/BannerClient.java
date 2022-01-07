@@ -51,8 +51,8 @@ public class BannerClient extends BaseClient {
                 .when()
                 .put(String.format("%s/%d", bannerUrl, id));
     }
-    public void deleteBanner(Integer id){
-        preparedRequest()
+    public Response deleteBanner(Integer id){
+        return preparedRequest()
                 .header("Authorization", String.format("Bearer %s",token))
                 .delete(String.format("%s/%d",bannerUrl,id));
     }
