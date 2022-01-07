@@ -12,6 +12,8 @@ import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.club.add_club_response.District;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
+import com.ita.edu.teachua.api.models.roles.RoleModel;
+import com.ita.edu.teachua.api.models.roles.RolesData;
 import com.ita.edu.teachua.api.models.station.StationModel;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -28,6 +30,8 @@ public class GsonParser {
 
     private District districtModel;
     private BannerModel bannerModel;
+    private RoleModel roleModel;
+    private RolesData rolesData;
     private City city;
 
     private AboutUsRequestModel aboutUsRequestModel;
@@ -130,11 +134,33 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
-
     public BannerModel getAddNewBanner() {
         return bannerModel;
     }
-
+    public void parseAddNewRoleJson() {
+        try (FileReader reader = new FileReader("src/main/java/com/ita/edu/teachua/api/models/roles/RoleModel.java")) {
+            this.roleModel = gson.fromJson(reader, RoleModel.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public RoleModel getAddNewRoleModel() {
+        return roleModel;
+    }
+    public void parseRolesDataJson() {
+        try (FileReader reader = new FileReader("src/main/java/com/ita/edu/teachua/api/models/roles/RolesData.java")) {
+            this.rolesData = gson.fromJson(reader, RolesData.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public RolesData getRolesData() {
+        return rolesData;
+    }
 
 
     public void parseAddNewCityJson() {
