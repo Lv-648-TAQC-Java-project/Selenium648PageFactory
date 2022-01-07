@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class UserResponse {
+public class UserChangePassword {
     private String oldPassword;
     private String newPassword;
     private String newPasswordVerify;

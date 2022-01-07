@@ -99,4 +99,33 @@ public class MainValueProvider {
     public String getQuestionsUrl() {
         return properties.getProperty("questionsUrl");
     }
+
+    public String getUserUrl() {
+        return properties.getProperty("userClientURL");
+    }
+
+    public String getVerifyUrl() {
+        return properties.getProperty("verifyClientURL");
+    }
+
+    public String getRegistrationUrl() {
+        return properties.getProperty("registrationClientURL");
+    }
+
+    public String getTaskUrl() {
+        return properties.getProperty("taskClientURL");
+    }
+
+    public String getTasksUrl() {
+        return properties.getProperty("tasksClientURL");
+    }
+
+    public String getUploadImageUrl() {
+        return properties.getProperty("uploadImageClientURL");
+    }
+
+    public String getDeleteFileUrl() {
+        return properties.getProperty("deleteFileClientURL");
+    }
+
 }

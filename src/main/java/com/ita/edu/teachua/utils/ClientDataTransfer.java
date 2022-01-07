@@ -5,7 +5,6 @@ import com.ita.edu.teachua.api.models.about_us.AboutUsRequestModel;
 import com.ita.edu.teachua.api.models.banner.BannerModel;
 import com.ita.edu.teachua.api.models.challenge.patch.PatchChallenge;
 import com.ita.edu.teachua.api.models.challenge.response.AddChallengeResponse;
-import com.ita.edu.teachua.api.models.city.City;
 import com.ita.edu.teachua.api.models.category.Category;
 import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.city.city_request.City;
