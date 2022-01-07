@@ -59,7 +59,6 @@ public class ClientDataTransfer {
         return parser.getAddNewBanner();
     }
 
-
     public City getAddCity() {
         parser = new GsonParser();
         parser.parseAddNewBannerJson();

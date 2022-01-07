@@ -50,4 +50,10 @@ public class AboutUsClient extends BaseClient {
                 .header("Authorization", String.format("Bearer %s", token))
                 .get(String.format("%s/%d", aboutUsUrl, id));
     }
+
+    public Response getAllAboutUs(){
+        return preparedRequest()
+                .header("Authorization", String.format("Bearer %s", token))
+                .get(aboutUsUrl);
+    }
 }
