@@ -162,6 +162,7 @@ public class GsonParser {
         return rolesData;
     }
 
+
     public void parseAddNewCityJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/city/city")) {
             this.city = gson.fromJson(reader, City.class);
@@ -247,4 +248,5 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
+      
 }
