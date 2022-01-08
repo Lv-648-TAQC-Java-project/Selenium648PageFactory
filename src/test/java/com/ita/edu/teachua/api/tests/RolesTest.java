@@ -24,17 +24,17 @@ public class RolesTest extends AuthorizedAsAdminApiTestRunner{
                 .then().log().all()
                 .extract().body().jsonPath().getList(".", RolesData.class);
         Assert.assertEquals(response.getStatusCode(), 200);
-        Assert.assertEquals(rolesDataList.size(), 3);
+        Assert.assertEquals(rolesDataList.size(), 4);
     }
     @Test(description = "API from swagger")
     @Description("[API] Get role by ID")
     public void getRoleByIDTest() throws IOException {
         RoleClient roleClient = new RoleClient(authorization.getToken());
         Response response = roleClient.getRoleById(3);
-        RoleModel roleModel = response
+        RolesData rolesData = response
                 .then().log().all()
-                .extract().as(RoleModel.class);
-        Assert.assertEquals(roleModel.getRoleName(), "ROLE_MANAGER");
+                .extract().as(RolesData.class);
+        Assert.assertEquals(rolesData.getRoleName(), "ROLE_MANAGER");
         Assert.assertEquals(response.getStatusCode(), 200);
     }
     @Test(description = "API from swagger")
