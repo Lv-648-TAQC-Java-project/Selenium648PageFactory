@@ -17,6 +17,10 @@ import com.ita.edu.teachua.api.models.station.StationRequestModel;
 import com.ita.edu.teachua.api.models.station.StationResponseModel;
 import com.ita.edu.teachua.api.models.roles.RoleModel;
 import com.ita.edu.teachua.api.models.roles.RolesData;
+import com.ita.edu.teachua.api.models.registration.RegisterUser;
+import com.ita.edu.teachua.api.models.station.StationModel;
+import com.ita.edu.teachua.api.models.user.SuccessUpdatedUser;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -40,6 +44,9 @@ public class GsonParser {
     private ContactModel contactModel;
     private StationRequestModel stationModel;
     private Complaint complaintModel;
+
+    private RegisterUser registerUser;
+    private SuccessUpdatedUser successUpdatedUser;
 
     public GsonParser() {
         gson = new Gson();
@@ -262,5 +269,32 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
-      
+
+    public void parseRegisterUserJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/register/registerUser.json")) {
+            this.registerUser = gson.fromJson(reader, RegisterUser.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public RegisterUser getRegisterUser(){
+        return registerUser;
+    }
+
+    public void parseUpdateUserJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/user/updateUser.json")) {
+            this.successUpdatedUser = gson.fromJson(reader, SuccessUpdatedUser.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public SuccessUpdatedUser getUpdateUser(){
+        return successUpdatedUser;
+    }
 }
