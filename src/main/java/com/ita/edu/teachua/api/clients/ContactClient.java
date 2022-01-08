@@ -6,7 +6,7 @@ import io.restassured.response.Response;
 
 import java.io.IOException;
 
-public class ContactClient extends BaseClient{
+public class ContactClient extends BaseClient {
     private final String contactUrl;
     protected MainValueProvider valueProvider;
     private String token;

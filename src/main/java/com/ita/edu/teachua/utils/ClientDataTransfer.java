@@ -10,8 +10,11 @@ import com.ita.edu.teachua.api.models.category.Category;
 import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.club.add_club_response.District;
+import com.ita.edu.teachua.api.models.complaint.Complaint;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
 import com.ita.edu.teachua.api.models.station.StationRequestModel;
+import com.ita.edu.teachua.api.models.roles.RoleModel;
+import com.ita.edu.teachua.api.models.roles.RolesData;
 
 public class ClientDataTransfer {
     GsonParser parser;
@@ -39,7 +42,11 @@ public class ClientDataTransfer {
         return parser.getAddCategory();
     }
 
-
+    public Complaint getAddComplaint(){
+        parser=new GsonParser();
+        parser.parseAddComplaintJson();
+        return parser.getComplaint();
+    }
     public District getAddDistrict() {
         parser = new GsonParser();
         parser.parseAddDistrictJson();
@@ -59,6 +66,16 @@ public class ClientDataTransfer {
         return parser.getAddNewBanner();
     }
 
+    public RoleModel getAddRole() {
+        parser = new GsonParser();
+        parser.parseAddNewRoleJson();
+        return parser.getAddNewRoleModel();
+    }
+    public RolesData getRolesData() {
+        parser = new GsonParser();
+        parser.parseRolesDataJson();
+        return parser.getRolesData();
+    }
 
     public City getAddCity() {
         parser = new GsonParser();

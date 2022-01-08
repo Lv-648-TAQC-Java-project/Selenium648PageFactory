@@ -11,7 +11,8 @@ public class MainValueProvider {
         FileInputStream fileInputStream = new FileInputStream("src/main/resources/data.properties");
         properties.load(fileInputStream);
     }
-
+    public String getComplaintClientUrl(){return  properties.getProperty("complaintClientUrl");}
+    public String getComplainstClientUrl(){return  properties.getProperty("complaintsClientUrl");}
     public String getBaseApiUrl() {
         return properties.getProperty("baseApiUrl");
     }
@@ -87,9 +88,14 @@ public class MainValueProvider {
     public String getBannerClientUrl() {
         return properties.getProperty("bannerClientUrl");
     }
-
     public String getBannersClientUrl() {
         return properties.getProperty("bannersClientUrl");
+    }
+    public String getRoleClientUrl() {
+        return properties.getProperty("roleClientUrl");
+    }
+    public String getRolesClientUrl() {
+        return properties.getProperty("rolesClientUrl");
     }
 
     public String getQuestionUrl() {
