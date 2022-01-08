@@ -178,7 +178,9 @@ public class AdvancedSearchTest extends TestRunner {
     public List<String> getTitlesFromAllPages(AdvancedSearchPage advancedSearchPage) {
         List<String> stringCards = new ArrayList<>();
         int n = advancedSearchPage.getNumberOfPagesWithClubs();
+        System.out.println("Pages: " + n);
         for (int i = 0; i < n; i++) {
+            advancedSearchPage.sleep(2000);
             for (ClubsItemComponent card : advancedSearchPage.getClubCards()) {
                 stringCards.add(card.getCardTitle().getText());
             }
@@ -189,10 +191,12 @@ public class AdvancedSearchTest extends TestRunner {
 
     public boolean isAlphabeticallySorted(List<String> titles, boolean asc) {
         for (int j = 0; j < titles.size() - 1; j++) {
+            System.out.println("First title: " + titles.get(j) + " |Second title: " + titles.get(j+1));
             char[] firstTitle = titles.get(j).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9ІЇії]", "").toCharArray();
             char[] secondTitle = titles.get(j + 1).toLowerCase().replaceAll("[^а-яА-Яa-zA-Z0-9ІЇії]", "").toCharArray();
             int wordLength = Math.min(firstTitle.length, secondTitle.length);
             for (int k = 0; k < wordLength; k++) {
+                System.out.println(firstTitle[k] + " > " + secondTitle[k]);
                 if (asc) {
                     if (firstTitle[k] < secondTitle[k]) {
                         break;
@@ -209,7 +213,7 @@ public class AdvancedSearchTest extends TestRunner {
                 }
             }
         }
-        return titles.size() != 0;
+        return true;
     }
 
    /* @Issue("TUA-103")

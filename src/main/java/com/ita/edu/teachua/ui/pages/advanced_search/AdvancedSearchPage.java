@@ -314,6 +314,7 @@ public class AdvancedSearchPage extends BasePage {
     @Step("Get all clubs cards")
     public List<ClubsItemComponent> getClubCards() {
         List<ClubsItemComponent> cards = new ArrayList<>();
+        this.sleep(2000);
         for (WebElement j : clubCards) {
             cards.add(new ClubsItemComponent(driver, j));
         }
