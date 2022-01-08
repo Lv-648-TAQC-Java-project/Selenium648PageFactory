@@ -11,7 +11,9 @@ import com.ita.edu.teachua.api.models.city.city_request.City;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.club.add_club_response.District;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
+import com.ita.edu.teachua.api.models.registration.RegisterUser;
 import com.ita.edu.teachua.api.models.station.StationModel;
+import com.ita.edu.teachua.api.models.user.SuccessUpdatedUser;
 
 public class ClientDataTransfer {
     GsonParser parser;
@@ -100,5 +102,17 @@ public class ClientDataTransfer {
         parser = new GsonParser();
         parser.parseChangeStationJson();
         return parser.getStationModel();
+    }
+
+    public RegisterUser getRegisterUser(){
+        parser = new GsonParser();
+        parser.parseRegisterUserJson();
+        return parser.getRegisterUser();
+    }
+
+    public SuccessUpdatedUser getUpdateUser(){
+        parser = new GsonParser();
+        parser.parseUpdateUserJson();
+        return parser.getUpdateUser();
     }
 }

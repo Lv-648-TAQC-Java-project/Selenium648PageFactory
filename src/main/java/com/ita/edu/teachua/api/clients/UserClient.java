@@ -4,6 +4,7 @@ import com.ita.edu.teachua.api.models.user.SuccessUpdatedUser;
 import com.ita.edu.teachua.api.models.user.UserChangePassword;
 import com.ita.edu.teachua.utils.MainValueProvider;
 import io.restassured.response.Response;
+import org.json.JSONObject;
 
 import java.io.IOException;
 
@@ -46,15 +47,15 @@ public class UserClient extends BaseClient {
     public Response patchUserPassword(int id, UserChangePassword userChangePassword) {
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s", token))
-                .body(userChangePassword.toString())
+                .body(userChangePassword)
                 .when()
                 .patch(String.format("%s/%d", clientUrl, id));
     }
 
-    public Response putUserNewInfo(int id, SuccessUpdatedUser successUpdatedUser) {
+    public Response putUserNewInfo(int id, SuccessUpdatedUser updatedUserData) {
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s", token))
-                .body(successUpdatedUser.toString())
+                .body(updatedUserData)
                 .when()
                 .put(String.format("%s/%d", clientUrl, id));
     }
