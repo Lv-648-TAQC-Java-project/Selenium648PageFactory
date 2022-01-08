@@ -47,6 +47,12 @@ public class ContactClient extends BaseClient{
     public Response getContact(int id) {
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s", token))
-                .get(String.format("%s/%d", contactUrl, id));
+                .get(String.format("%s/%d", contactUrl + "-view", id));
+    }
+
+    public Response getContacts() {
+        return preparedRequest()
+                .header("Authorization", String.format("Bearer %s", token))
+                .get(contactUrl + "s");
     }
 }
