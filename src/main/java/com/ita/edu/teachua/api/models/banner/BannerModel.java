@@ -1,5 +1,6 @@
 package com.ita.edu.teachua.api.models.banner;
 
+
 import lombok.Data;
 
 @Data
