@@ -3,11 +3,11 @@ package com.ita.edu.teachua.api.tests;
 import com.ita.edu.teachua.api.clients.BannerClient;
 import com.ita.edu.teachua.api.clients.sigin.Authorization;
 import com.ita.edu.teachua.api.models.banner.BannerModel;
+import com.ita.edu.teachua.api.models.error.BaseErrorBody;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
@@ -22,7 +22,7 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
                 .then().log().all()
                 .extract().body().jsonPath().getList(".", BannerModel.class);
         Assert.assertEquals(response.getStatusCode(), 200);
-        Assert.assertEquals(banners.stream().count(), 3);
+        Assert.assertEquals(banners.stream().count(), 4);
     }
 
     @Test
@@ -42,14 +42,15 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
         authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
         BannerClient bannerClient = new BannerClient(authorization.getToken());
         Response response = bannerClient.addNewBanner();
-        Assert.assertEquals(response.getStatusCode(), 400);
-        Assert.assertEquals(response.path("message"), "picture Incorrect file path. It must be like /upload/*/*.png");
+        BaseErrorBody errorBody = response.then().log().all().extract().as(BaseErrorBody.class);
+        Assert.assertEquals((int) errorBody.getStatus(), 400);
+        Assert.assertEquals(errorBody.getMessage(), "picture Incorrect file path. It must be like /upload/*/*.png");
     }
 
     /*public void addNewBanner() throws IOException {
         Specifications.setResponseSpecification(200);
         BannerClient bannerClient = new BannerClient(authorization.getToken());
-        File file = new File("C:\\Users\\s\\Desktop\\banner.png");
+        File file = new File("C:\\Users\\s\\Desktop\\banner.json.png");
         Response response = RestAssured
                 .given()
                 .multiPart("file", file, "application/json")

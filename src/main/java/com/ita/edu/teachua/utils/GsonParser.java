@@ -138,7 +138,7 @@ public class GsonParser {
     }
 
     public void parseAddNewBannerJson() {
-        try (FileReader reader = new FileReader("src/main/resources/request_bodies/banner/banner")) {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/banner.json/banner.json")) {
             this.bannerModel = gson.fromJson(reader, BannerModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -149,8 +149,9 @@ public class GsonParser {
     public BannerModel getAddNewBanner() {
         return bannerModel;
     }
+
     public void parseAddNewRoleJson() {
-        try (FileReader reader = new FileReader("src/main/java/com/ita/edu/teachua/api/models/roles/RoleModel.java")) {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/roles/newRole.json")) {
             this.roleModel = gson.fromJson(reader, RoleModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -162,7 +163,7 @@ public class GsonParser {
         return roleModel;
     }
     public void parseRolesDataJson() {
-        try (FileReader reader = new FileReader("src/main/java/com/ita/edu/teachua/api/models/roles/RolesData.java")) {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/roles/roleManager.json")) {
             this.rolesData = gson.fromJson(reader, RolesData.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
