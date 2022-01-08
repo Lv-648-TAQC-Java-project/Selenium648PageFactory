@@ -1,5 +1,8 @@
 package com.ita.edu.teachua.api.models.about_us;
 
+import lombok.Data;
+
+@Data
 public class AboutUsResponseModel {
     private Integer id;
     private String text;
