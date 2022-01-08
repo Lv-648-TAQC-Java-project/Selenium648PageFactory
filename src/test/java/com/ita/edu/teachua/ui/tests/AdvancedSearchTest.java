@@ -2,7 +2,10 @@ package com.ita.edu.teachua.ui.tests;
 
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
 import com.ita.edu.teachua.ui.pages.advanced_search.ClubsItemComponent;
+import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
 import com.ita.edu.teachua.ui.pages.main_page.MainPage;
+import com.ita.edu.teachua.ui.pages.profile_page.CentersItemComponent;
+import com.ita.edu.teachua.ui.pages.profile_page.ProfilePage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Issue;
 import io.qameta.allure.Severity;
@@ -173,13 +176,11 @@ public class AdvancedSearchTest extends TestRunner {
     }
 
     public List<String> getTitlesFromAllPages(AdvancedSearchPage advancedSearchPage) {
-        List<ClubsItemComponent> cards;
         List<String> stringCards = new ArrayList<>();
         int n = advancedSearchPage.getNumberOfPagesWithClubs();
         for (int i = 0; i < n; i++) {
-            cards = advancedSearchPage.getCards();
-            for (ClubsItemComponent card : cards) {
-                stringCards.add(card.getCardTitle());
+            for (ClubsItemComponent card : advancedSearchPage.getClubCards()) {
+                stringCards.add(card.getCardTitle().getText());
             }
             advancedSearchPage.clickOnNextPageButton();
         }
@@ -208,10 +209,10 @@ public class AdvancedSearchTest extends TestRunner {
                 }
             }
         }
-        return true;
+        return titles.size() != 0;
     }
 
-    @Issue("TUA-103")
+   /* @Issue("TUA-103")
     @Description("Verify that sorting by rating for advanced search works correctly (In ascending order)")
     @Test(description = "TUA-103")
     public void checkSortingClubsByRatingInAscendingOrder() {
@@ -241,7 +242,7 @@ public class AdvancedSearchTest extends TestRunner {
         List<Integer> ratings = new ArrayList<>();
         int n = advancedSearchPage.getNumberOfPagesWithClubs();
         for (int i = 0; i < n; i++) {
-            cards = advancedSearchPage.getCards();
+            cards = advancedSearchPage.getClubCards();
             for (ClubsItemComponent card : cards) {
                 ratings.add(card.getRating());
             }
@@ -267,8 +268,8 @@ public class AdvancedSearchTest extends TestRunner {
                 }
             }
         }
-        return true;
-    }
+        return ratings.size() != 0;
+    }*/
 }
 
 

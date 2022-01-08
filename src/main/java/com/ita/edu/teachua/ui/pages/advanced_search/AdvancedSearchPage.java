@@ -85,6 +85,8 @@ public class AdvancedSearchPage extends BasePage {
     private Button lastPageButton;
     @FindAll(@FindBy(how = How.CSS, using = AdvancedSearchPageLocators.CENTER_BLOCKS_CSS_SELECTOR))
     private List<Button> centerBlocks;
+    @FindAll(@FindBy (how = How.XPATH, using = AdvancedSearchPageLocators.CLUB_CARD_XPATH))
+    private List<WebElement> clubCards;
     @FindAll(@FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.ADVANCED_SEARCH_FIELD_TITLE_XPATH))
     private List<Button> searchFields;
     @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.ARROW_UPP_BUTTON_XPATH)
@@ -307,6 +309,15 @@ public class AdvancedSearchPage extends BasePage {
             clubBlocks.add(new ClubsItemComponent(driver, j));
         }
         return clubBlocks;
+    }
+
+    @Step("Get all clubs cards")
+    public List<ClubsItemComponent> getClubCards() {
+        List<ClubsItemComponent> cards = new ArrayList<>();
+        for (WebElement j : clubCards) {
+            cards.add(new ClubsItemComponent(driver, j));
+        }
+        return cards;
     }
 
     @Step("Get text of title 'Розширений пошук'")
