@@ -1,6 +1,7 @@
 package com.ita.edu.teachua.api.clients;
 
 import com.ita.edu.teachua.utils.MainValueProvider;
+import io.qameta.allure.Step;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
@@ -21,6 +22,7 @@ public class BaseClient {
         this.contentType = ContentType.JSON;
     }
 
+    @Step("Preparing base request")
     protected RequestSpecification preparedRequest() {
         return given()
                 .baseUri(baseApiUrl)

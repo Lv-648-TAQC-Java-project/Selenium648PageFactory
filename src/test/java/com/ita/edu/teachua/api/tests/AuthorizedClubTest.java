@@ -7,6 +7,8 @@ import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot;
 import com.ita.edu.teachua.api.models.error.BaseErrorBody;
 import com.ita.edu.teachua.utils.ClientDataTransfer;
+import io.qameta.allure.Description;
+import io.qameta.allure.Issue;
 import io.restassured.response.Response;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -21,6 +23,8 @@ import java.util.List;
 
 public class AuthorizedClubTest extends AuthorizedApiTestRunner {
 
+    @Issue("TUA-498")
+    @Description("This test case verifies that the User as \"Керiвник гуртка\" can not delete a club that was not registered by him")
     @Test(description="TUA-498")
     public void VerifyThatUserAsOwnerCanNotDeleteClubThatNotRegisteredByHim() throws IOException {
         ClubClient clubClient;
@@ -53,6 +57,8 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         softAssert.assertAll();
     }
 
+    @Issue("TUA-405")
+    @Description("This test case verifies that user cannot create a club when one of the mandatory fields are not filled")
     @Test(description="TUA-405")
     public void VerifyThatClubCannotBeCreatedWhenOneOfTheMandatoryFieldsAreNotFilled() throws IOException{
 
@@ -76,8 +82,8 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         baseErrorBody = response.then().log().all()
                 .extract()
                 .as(BaseErrorBody.class);
-        softAssert.assertEquals(baseErrorBody.getStatus(),(Integer)500);
-        softAssert.assertEquals(baseErrorBody.getError(),"Internal Server Error");
+        softAssert.assertEquals(baseErrorBody.getStatus(),(Integer)400);
+        softAssert.assertEquals(baseErrorBody.getError(),"categories must not be empty");
         addClubJSON.put("categoriesName",categoriesName);
 
         description =  (String)addClubJSON.remove("description");
@@ -85,8 +91,8 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         baseErrorBody = response.then().log().all()
                 .extract()
                 .as(BaseErrorBody.class);
-        softAssert.assertEquals(baseErrorBody.getStatus(),(Integer)500);
-        softAssert.assertEquals(baseErrorBody.getError(),"Internal Server Error");
+        softAssert.assertEquals(baseErrorBody.getStatus(),(Integer)400);
+        softAssert.assertEquals(baseErrorBody.getError(),"description must not be empty");
         addClubJSON.put("description", description);
 
 
@@ -133,6 +139,8 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         softAssert.assertAll();
 
     }
+    @Issue("TUA-463")
+    @Description("This test case verify that user as \"Керiвник гуртка\" can create new club with valid data")
     @Test(description="TUA-371/372/463")
     public void VerifyThatUserAsOwnerCanCreateNewClubWhichRegisteredOnHim() throws IOException {
 
@@ -182,6 +190,8 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         };
     }
 
+    @Issue("TUA-409")
+    @Description("This test case verifies that the club cannot be created when entering invalid data")
     @Test(description="TUA-409",dataProvider = "VerifyThatClubCannotBeCreatedWhenEnteringInvalidDataDataProvider")
     public void VerifyThatClubCannotBeCreatedWhenEnteringInvalidData(String notExistingCategoryName,
                                                                       String categoryNotFoundMessage,
@@ -322,6 +332,8 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
         softAssert.assertAll();
     }
 
+    @Issue("TUA-501")
+    @Description("This test case verify  that User as \"Керiвник гуртка\" cannot create new club is in a center with Russian alphabet for \"Назва\" field")
     @Test(description="TUA-501")
     public void VerifyThatUserCannotCreateNewClubWithRussianCharactersInNameField() throws IOException {
         ClubClient clubClient = new ClubClient(authorization.getToken());
@@ -333,5 +345,20 @@ public class AuthorizedClubTest extends AuthorizedApiTestRunner {
                  .as(BaseErrorBody.class);
         Assert.assertEquals(error.getStatus(),(Integer)400);
         Assert.assertEquals(error.getMessage(),"name can't contain russian letters");
+    }
+
+    @Issue("TUA-502")
+    @Description("This test case verify  that User as \"Керiвник гуртка\" cannot create new club is in a center if \"Назва\" field contain less than 5 characters")
+    @Test(description="TUA-502")
+    public void VerifyThatUserAsOwnerCannotCreateNewClubIsInCenterIfNameFieldContainLessThan5Characters() throws IOException {
+        ClubClient clubClient = new ClubClient(authorization.getToken());
+        AddClub addClub = new ClientDataTransfer().getAddClub();
+        addClub.setName("char");
+        Response response = clubClient.addNewClub(addClub);
+        BaseErrorBody error = response.then().log().all()
+                .extract()
+                .as(BaseErrorBody.class);
+        Assert.assertEquals(error.getStatus(),(Integer)400);
+        Assert.assertEquals(error.getMessage(),"name Довжина назви має бути від 5 до 100 символів");
     }
 }

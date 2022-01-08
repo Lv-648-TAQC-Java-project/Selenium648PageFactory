@@ -16,6 +16,12 @@ import com.ita.edu.teachua.api.models.contact.ContactModel;
 import com.ita.edu.teachua.api.models.news.NewsModel;
 import com.ita.edu.teachua.api.models.roles.RoleModel;
 import com.ita.edu.teachua.api.models.station.StationModel;
+import com.ita.edu.teachua.api.models.station.StationRequestModel;
+import com.ita.edu.teachua.api.models.roles.RoleModel;
+import com.ita.edu.teachua.api.models.roles.RolesData;
+import com.ita.edu.teachua.api.models.registration.RegisterUser;
+import com.ita.edu.teachua.api.models.user.SuccessUpdatedUser;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -38,6 +44,12 @@ public class GsonParser {
 
     private AddChallengeResponse addChallengeResponse;
     private PatchChallenge patchChallenge;
+    private AboutUsRequestModel aboutUsRequestModel;
+    private ContactModel contactModel;
+    private StationRequestModel stationModel;
+    private Complaint complaintModel;
+    private RegisterUser registerUser;
+    private SuccessUpdatedUser successUpdatedUser;
 
     public GsonParser() {
         gson = new Gson();
@@ -253,13 +265,13 @@ public class GsonParser {
         }
     }
 
-    public StationModel getStationModel() {
+    public StationRequestModel getStationModel() {
         return stationModel;
     }
 
     public void parseAddStationJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/station.json")) {
-            this.stationModel = gson.fromJson(reader, StationModel.class);
+            this.stationModel = gson.fromJson(reader, StationRequestModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -273,7 +285,31 @@ public class GsonParser {
 
     public void parseChangeStationJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/change_station.json")) {
-            this.stationModel = gson.fromJson(reader, StationModel.class);
+            this.stationModel = gson.fromJson(reader, StationRequestModel.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void parseRegisterUserJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/register/registerUser.json")) {
+            this.registerUser = gson.fromJson(reader, RegisterUser.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public RegisterUser getRegisterUser(){
+        return registerUser;
+    }
+
+    public void parseUpdateUserJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/user/updateUser.json")) {
+            this.successUpdatedUser = gson.fromJson(reader, SuccessUpdatedUser.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -283,5 +319,9 @@ public class GsonParser {
     public Category getAddCategory() {
         return category;
     }
-      
+
+    public SuccessUpdatedUser getUpdateUser(){
+        return successUpdatedUser;
+    }
+
 }

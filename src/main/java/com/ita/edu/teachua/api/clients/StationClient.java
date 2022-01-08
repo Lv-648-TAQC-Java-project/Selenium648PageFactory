@@ -55,4 +55,10 @@ public class StationClient extends BaseClient{
                 .header("Authorization", String.format("Bearer %s", token))
                 .get(String.format("%s/%s", stationUrl, name));
     }
+
+    public Response getStations() {
+        return preparedRequest()
+                .header("Authorization", String.format("Bearer %s", token))
+                .get(String.format("%s/%s", stationUrl, "s"));
+    }
 }

@@ -173,17 +173,15 @@ public class AdvancedSearchTest extends TestRunner {
     }
 
     public List<String> getTitlesFromAllPages(AdvancedSearchPage advancedSearchPage) {
-        List<ClubsItemComponent> cards;
-        List<String> stringCards = new ArrayList<>();
+        List<String> cardsTitles = new ArrayList<>();
         int n = advancedSearchPage.getNumberOfPagesWithClubs();
         for (int i = 0; i < n; i++) {
-            cards = advancedSearchPage.getCards();
-            for (ClubsItemComponent card : cards) {
-                stringCards.add(card.getCardTitle());
+            for (ClubsItemComponent card : advancedSearchPage.getClubsCards()) {
+                cardsTitles.add(card.getCardTitle());
             }
             advancedSearchPage.clickOnNextPageButton();
         }
-        return stringCards;
+        return cardsTitles;
     }
 
     public boolean isAlphabeticallySorted(List<String> titles, boolean asc) {
