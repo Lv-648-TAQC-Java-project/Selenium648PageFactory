@@ -16,7 +16,6 @@ import com.ita.edu.teachua.api.models.station.StationRequestModel;
 import com.ita.edu.teachua.api.models.roles.RoleModel;
 import com.ita.edu.teachua.api.models.roles.RolesData;
 import com.ita.edu.teachua.api.models.registration.RegisterUser;
-import com.ita.edu.teachua.api.models.station.StationModel;
 import com.ita.edu.teachua.api.models.user.SuccessUpdatedUser;
 
 public class ClientDataTransfer {
