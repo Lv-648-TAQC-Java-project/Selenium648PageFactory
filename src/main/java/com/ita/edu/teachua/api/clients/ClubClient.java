@@ -3,6 +3,7 @@ package com.ita.edu.teachua.api.clients;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.utils.ClientDataTransfer;
 import com.ita.edu.teachua.utils.MainValueProvider;
+import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import org.json.JSONObject;
 
@@ -21,6 +22,7 @@ public class ClubClient extends BaseClient {
 
     }
 
+    @Step("Add new club request")
     public Response addNewClub(AddClub addClub){
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s",token))
@@ -28,6 +30,7 @@ public class ClubClient extends BaseClient {
                 .when()
                 .post(clientUrl);
     }
+    @Step("Add new club request")
     public Response addNewClub(JSONObject addClub){
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s",token))
@@ -36,6 +39,7 @@ public class ClubClient extends BaseClient {
                 .post(clientUrl);
     }
 
+    @Step("Delete club request")
     public Response deleteClub(Integer id){
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s",token))
