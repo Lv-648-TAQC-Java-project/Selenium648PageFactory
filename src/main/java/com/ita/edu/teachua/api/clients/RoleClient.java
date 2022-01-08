@@ -22,7 +22,7 @@ public class RoleClient extends BaseClient{
         }
         this.roleClientUrl = mainValueProvider.getRoleClientUrl();
         this.rolesClientUrl = mainValueProvider.getRolesClientUrl();
-        this.token = this.token;
+        this.token = token;
     }
     public Response addNewRole() {
         return preparedRequest()

@@ -13,6 +13,9 @@ import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.club.add_club_response.District;
 import com.ita.edu.teachua.api.models.complaint.Complaint;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
+import com.ita.edu.teachua.api.models.news.NewsModel;
+import com.ita.edu.teachua.api.models.roles.RoleModel;
+import com.ita.edu.teachua.api.models.station.StationModel;
 import com.ita.edu.teachua.api.models.station.StationRequestModel;
 import com.ita.edu.teachua.api.models.roles.RoleModel;
 import com.ita.edu.teachua.api.models.roles.RolesData;
@@ -27,22 +30,24 @@ public class GsonParser {
     private Gson gson;
 
     private AddClub addClub;
-    private AddChallengeResponse addChallengeResponse;
-    private PatchChallenge patchChallenge;
+    private AboutUsRequestModel aboutUsRequestModel;
+    private ContactModel contactModel;
+    private StationModel stationModel;
+    private Complaint complaintModel;
     private Category category;
     private Center center;
-
     private District districtModel;
     private BannerModel bannerModel;
     private RoleModel roleModel;
-    private RolesData rolesData;
+    private NewsModel newsModel;
     private City city;
 
+    private AddChallengeResponse addChallengeResponse;
+    private PatchChallenge patchChallenge;
     private AboutUsRequestModel aboutUsRequestModel;
     private ContactModel contactModel;
     private StationRequestModel stationModel;
     private Complaint complaintModel;
-
     private RegisterUser registerUser;
     private SuccessUpdatedUser successUpdatedUser;
 
@@ -59,6 +64,9 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
+    public AddClub getAddClub() {
+        return addClub;
+    }
 
     public void parseAddChallengeJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/challenge/addChallenge.json")) {
@@ -72,11 +80,6 @@ public class GsonParser {
 
     public AddChallengeResponse getAddChallengeResponse() {
         return addChallengeResponse;
-    }
-
-
-    public AddClub getAddClub() {
-        return addClub;
     }
 
     public void parsePatchChallengeJson() {
@@ -110,7 +113,10 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
-    public Complaint getComplaint(){return complaintModel;}
+    public District getAddDistrict() {
+        return districtModel;
+    }
+
     public void parseAddComplaintJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/complaint/add_complaint.json")) {
             this.complaintModel = gson.fromJson(reader, Complaint.class);
@@ -120,10 +126,7 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
-
-    public Category getAddCategory() {
-        return category;
-    }
+    public Complaint getComplaint(){return complaintModel;}
 
     public void parseAddCenterJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/center/center.json")) {
@@ -139,12 +142,8 @@ public class GsonParser {
         return center;
     }
 
-    public District getAddDistrict() {
-        return districtModel;
-    }
-
     public void parseAddNewBannerJson() {
-        try (FileReader reader = new FileReader("src/main/resources/request_bodies/banner.json/banner.json")) {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/banner/banner.json")) {
             this.bannerModel = gson.fromJson(reader, BannerModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -153,6 +152,19 @@ public class GsonParser {
         }
     }
     public BannerModel getAddNewBanner() {
+        return bannerModel;
+    }
+
+    public void parseAddBannerWithWrongPathJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/banner/bannerInvalidData.json")) {
+            this.bannerModel = gson.fromJson(reader, BannerModel.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public BannerModel getAddBannerWithWrongPath() {
         return bannerModel;
     }
 
@@ -168,19 +180,32 @@ public class GsonParser {
     public RoleModel getAddNewRoleModel() {
         return roleModel;
     }
+
     public void parseRolesDataJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/roles/roleManager.json")) {
-            this.rolesData = gson.fromJson(reader, RolesData.class);
+            this.roleModel = gson.fromJson(reader, RoleModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    public RolesData getRolesData() {
-        return rolesData;
+    public RoleModel getRolesData() {
+        return roleModel;
     }
 
+    public void parseAddNewsJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/news/news.json")) {
+            this.newsModel = gson.fromJson(reader, NewsModel.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public NewsModel getNewsModel() {
+        return newsModel;
+    }
 
     public void parseAddNewCityJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/city/city")) {
@@ -291,8 +316,12 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
+    public Category getAddCategory() {
+        return category;
+    }
 
     public SuccessUpdatedUser getUpdateUser(){
         return successUpdatedUser;
     }
+
 }

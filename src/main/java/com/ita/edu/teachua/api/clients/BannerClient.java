@@ -32,6 +32,14 @@ public class BannerClient extends BaseClient {
                 .when()
                 .post(bannerUrl);
     }
+    public Response addBannerWithWrongPath(){
+        return preparedRequest()
+                .header("Authorization",String.format("Bearer %s",token))
+                .body(new ClientDataTransfer().getAddBannerWithWrongPath())
+                .log().all()
+                .when()
+                .post(bannerUrl);
+    }
 
     public Response getBanner(Integer id){
         return preparedRequest()
