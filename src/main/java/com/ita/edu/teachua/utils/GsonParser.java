@@ -11,6 +11,7 @@ import com.ita.edu.teachua.api.models.category.Category;
 import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.club.add_club_response.District;
+import com.ita.edu.teachua.api.models.complaint.Complaint;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
 import com.ita.edu.teachua.api.models.station.StationModel;
 import java.io.FileNotFoundException;
@@ -33,6 +34,7 @@ public class GsonParser {
     private AboutUsRequestModel aboutUsRequestModel;
     private ContactModel contactModel;
     private StationModel stationModel;
+    private Complaint complaintModel;
 
     public GsonParser() {
         gson = new Gson();
@@ -92,6 +94,16 @@ public class GsonParser {
     public void parseAddDistrictJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_body.district/district.json")) {
             this.districtModel = gson.fromJson(reader, District.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public Complaint getComplaint(){return complaintModel;}
+    public void parseAddComplaintJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/complaint/add_complaint.json")) {
+            this.complaintModel = gson.fromJson(reader, Complaint.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
