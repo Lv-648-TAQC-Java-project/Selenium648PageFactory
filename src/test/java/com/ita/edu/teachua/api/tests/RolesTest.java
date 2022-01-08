@@ -1,9 +1,7 @@
 package com.ita.edu.teachua.api.tests;
 
 import com.ita.edu.teachua.api.clients.RoleClient;
-import com.ita.edu.teachua.api.clients.sigin.Authorization;
 import com.ita.edu.teachua.api.models.roles.RoleModel;
-import com.ita.edu.teachua.api.models.roles.RolesData;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.testng.Assert;
@@ -20,21 +18,21 @@ public class RolesTest extends AuthorizedAsAdminApiTestRunner{
     public void getListOfRolesTest() throws IOException {
         RoleClient roleClient = new RoleClient(authorization.getToken());
         Response response = roleClient.getListOfRoles();
-        List<RolesData> rolesDataList = response
+        List<RoleModel> roleModelList = response
                 .then().log().all()
-                .extract().body().jsonPath().getList(".", RolesData.class);
+                .extract().body().jsonPath().getList(".", RoleModel.class);
         Assert.assertEquals(response.getStatusCode(), 200);
-        Assert.assertEquals(rolesDataList.size(), 4);
+        Assert.assertEquals(roleModelList.size(), 4);
     }
     @Test(description = "API from swagger")
     @Description("[API] Get role by ID")
     public void getRoleByIDTest() throws IOException {
         RoleClient roleClient = new RoleClient(authorization.getToken());
         Response response = roleClient.getRoleById(3);
-        RolesData rolesData = response
+        RoleModel roleModel = response
                 .then().log().all()
-                .extract().as(RolesData.class);
-        Assert.assertEquals(rolesData.getRoleName(), "ROLE_MANAGER");
+                .extract().as(RoleModel.class);
+        Assert.assertEquals(roleModel.getRoleName(), "ROLE_MANAGER");
         Assert.assertEquals(response.getStatusCode(), 200);
     }
     @Test(description = "API from swagger")
@@ -44,7 +42,7 @@ public class RolesTest extends AuthorizedAsAdminApiTestRunner{
         Response response = roleClient.addNewRole();
         RoleModel roleModel = response
                 .then().log().all()
-                .extract().as((Type) RolesData.class);
+                .extract().as((Type) RoleModel.class);
         Assert.assertEquals(roleModel.getRoleName(), "TEST_ROLE");
         Assert.assertEquals(response.getStatusCode(), 200);
     }

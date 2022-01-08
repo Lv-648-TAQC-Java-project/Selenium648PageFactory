@@ -27,4 +27,5 @@ public class BaseClient {
                 .contentType(contentType)
                 .accept(contentType);
     }
+
 }
