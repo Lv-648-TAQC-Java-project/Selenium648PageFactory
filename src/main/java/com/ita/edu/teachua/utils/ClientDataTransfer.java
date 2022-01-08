@@ -12,9 +12,9 @@ import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.club.add_club_response.District;
 import com.ita.edu.teachua.api.models.complaint.Complaint;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
+import com.ita.edu.teachua.api.models.station.StationRequestModel;
 import com.ita.edu.teachua.api.models.roles.RoleModel;
 import com.ita.edu.teachua.api.models.roles.RolesData;
-import com.ita.edu.teachua.api.models.station.StationModel;
 
 public class ClientDataTransfer {
     GsonParser parser;
@@ -107,13 +107,13 @@ public class ClientDataTransfer {
         return parser.getContactModel();
     }
 
-    public StationModel getAddStation() {
+    public StationRequestModel getAddStation() {
         parser = new GsonParser();
         parser.parseAddAboutUsJson();
         return parser.getStationModel();
     }
 
-    public StationModel getChangeStation() {
+    public StationRequestModel getChangeStation() {
         parser = new GsonParser();
         parser.parseChangeStationJson();
         return parser.getStationModel();

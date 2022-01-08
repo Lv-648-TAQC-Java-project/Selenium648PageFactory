@@ -13,9 +13,10 @@ import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.club.add_club_response.District;
 import com.ita.edu.teachua.api.models.complaint.Complaint;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
+import com.ita.edu.teachua.api.models.station.StationRequestModel;
+import com.ita.edu.teachua.api.models.station.StationResponseModel;
 import com.ita.edu.teachua.api.models.roles.RoleModel;
 import com.ita.edu.teachua.api.models.roles.RolesData;
-import com.ita.edu.teachua.api.models.station.StationModel;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -37,7 +38,7 @@ public class GsonParser {
 
     private AboutUsRequestModel aboutUsRequestModel;
     private ContactModel contactModel;
-    private StationModel stationModel;
+    private StationRequestModel stationModel;
     private Complaint complaintModel;
 
     public GsonParser() {
@@ -234,13 +235,13 @@ public class GsonParser {
         }
     }
 
-    public StationModel getStationModel() {
+    public StationRequestModel getStationModel() {
         return stationModel;
     }
 
     public void parseAddStationJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/station.json")) {
-            this.stationModel = gson.fromJson(reader, StationModel.class);
+            this.stationModel = gson.fromJson(reader, StationRequestModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -254,7 +255,7 @@ public class GsonParser {
 
     public void parseChangeStationJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/change_station.json")) {
-            this.stationModel = gson.fromJson(reader, StationModel.class);
+            this.stationModel = gson.fromJson(reader, StationRequestModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
