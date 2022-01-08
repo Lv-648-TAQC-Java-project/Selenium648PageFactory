@@ -13,7 +13,7 @@ public class RoleClient extends BaseClient{
     protected MainValueProvider mainValueProvider;
     private String token;
 
-    public RoleClient() throws IOException {
+    public RoleClient(String token) throws IOException {
         super();
         try {
             mainValueProvider = new MainValueProvider();
@@ -22,11 +22,11 @@ public class RoleClient extends BaseClient{
         }
         this.roleClientUrl = mainValueProvider.getRoleClientUrl();
         this.rolesClientUrl = mainValueProvider.getRolesClientUrl();
-        this.token = token;
+        this.token = this.token;
     }
     public Response addNewRole() {
         return preparedRequest()
-                .header("Authorization", String.format("Bearer %s",token))
+                .header("Authorization", String.format("Bearer %s", token))
                 .body(new ClientDataTransfer().getAddRole())
                 .log().all()
                 .when()
