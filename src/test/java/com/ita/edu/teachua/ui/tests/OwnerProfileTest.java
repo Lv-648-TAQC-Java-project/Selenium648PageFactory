@@ -149,7 +149,7 @@ public class OwnerProfileTest extends TestRunner {
     }
 
     @Issue("TUA-237")
-    @Description("This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.")
+    @Description("This test case verifies that a 'Керівник' can add a location of a club after filling in mandatory fields with valid data.")
     @Test(dataProvider = "addClubPopUpComponentData", description = "TUA-237")
     public void VerifyThatOwnerCanAddLocationOfClub(String validName,
                                                     String ageFrom,
@@ -321,14 +321,14 @@ public class OwnerProfileTest extends TestRunner {
                         "0966666666",
                         "ValidCenterName",
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                        "ValidName"
+                        "Тестовий гурток для центру"
                 }
         };
     }
 
-    @Issue("UA-214")
+    @Issue("TUA-214")
     @Description("Verify that user can create a center with valid data")
-    @Test(dataProvider = "addCenterPopUpComponentData", description = "UA-214")
+    @Test(dataProvider = "addCenterPopUpComponentData", description = "TUA-214")
     public void testAddLocationFromProfilePage(String validLocationName,
                                                String validAddress,
                                                String validCoordinates,
