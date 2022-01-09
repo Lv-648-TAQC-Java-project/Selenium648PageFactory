@@ -11,8 +11,7 @@ public class MainValueProvider {
         FileInputStream fileInputStream = new FileInputStream("src/main/resources/data.properties");
         properties.load(fileInputStream);
     }
-    public String getComplaintClientUrl(){return  properties.getProperty("complaintClientUrl");}
-    public String getComplainstClientUrl(){return  properties.getProperty("complaintsClientUrl");}
+
     public String getBaseApiUrl() {
         return properties.getProperty("baseApiUrl");
     }
@@ -97,6 +96,15 @@ public class MainValueProvider {
     public String getRolesClientUrl() {
         return properties.getProperty("rolesClientUrl");
     }
+    public String getNewsClientUrl() {
+        return properties.getProperty("newsClientUrl");
+    }
+    public String getNewsListClientUrl() {
+        return properties.getProperty("newsListClientUrl");
+    }
+    public String getNewsListSearchClientUrl() {
+        return properties.getProperty("newsListSearchClientUrl");
+    }
 
     public String getQuestionUrl() {
         return properties.getProperty("questionUrl");
@@ -105,4 +113,35 @@ public class MainValueProvider {
     public String getQuestionsUrl() {
         return properties.getProperty("questionsUrl");
     }
+
+    public String getComplaintClientUrl(){return  properties.getProperty("complaintClientUrl");}
+
+    public String getUserUrl() {
+        return properties.getProperty("userClientURL");
+    }
+
+    public String getVerifyUrl() {
+        return properties.getProperty("verifyClientURL");
+    }
+
+    public String getRegistrationUrl() {
+        return properties.getProperty("registrationClientURL");
+    }
+
+    public String getTaskUrl() {
+        return properties.getProperty("taskClientURL");
+    }
+
+    public String getTasksUrl() {
+        return properties.getProperty("tasksClientURL");
+    }
+
+    public String getUploadImageUrl() {
+        return properties.getProperty("uploadImageClientURL");
+    }
+
+    public String getDeleteFileUrl() {
+        return properties.getProperty("deleteFileClientURL");
+    }
+
 }

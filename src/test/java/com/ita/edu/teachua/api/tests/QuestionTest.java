@@ -26,7 +26,6 @@ public class QuestionTest extends AuthorizedApiTestRunner {
         int questionId = response.path("id");
 
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(response.getStatusCode(), 200);
         softAssert.assertEquals(response.path("title"), "Як допомогти цьому проекту?");
         softAssert.assertEquals(response.path("text"), "Скористайтесь наступним посиланням: " +
                 "https://secure.wayforpay.com/payment/s0f2891d77061");
@@ -34,7 +33,6 @@ public class QuestionTest extends AuthorizedApiTestRunner {
         question.setTitle("Як підтримати ваш проект?");
         Response responseUpdate = questionClient.updateQuestionById(question, questionId);
 
-        softAssert.assertEquals(responseUpdate.getStatusCode(), 200);
         softAssert.assertEquals(responseUpdate.path("title"), "Як підтримати ваш проект?");
 
         questionClient.deleteQuestion(questionId);
@@ -42,8 +40,7 @@ public class QuestionTest extends AuthorizedApiTestRunner {
     }
 
 
-
-    @Description("Get FAQ by id")
+    @Description("[API] Get FAQ by id")
     @Test(description = "TUA")
     public void getQuestionByIdTest() throws IOException {
         Specifications.setResponseSpecification(200);

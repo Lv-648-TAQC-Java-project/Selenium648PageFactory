@@ -11,11 +11,15 @@ import com.ita.edu.teachua.api.models.category.Category;
 import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.club.add_club_response.District;
+import com.ita.edu.teachua.api.models.club.add_club_response.Station;
 import com.ita.edu.teachua.api.models.complaint.Complaint;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
+import com.ita.edu.teachua.api.models.news.NewsModel;
 import com.ita.edu.teachua.api.models.roles.RoleModel;
-import com.ita.edu.teachua.api.models.roles.RolesData;
-import com.ita.edu.teachua.api.models.station.StationModel;
+import com.ita.edu.teachua.api.models.station.StationRequestModel;
+import com.ita.edu.teachua.api.models.registration.RegisterUser;
+import com.ita.edu.teachua.api.models.user.SuccessUpdatedUser;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -24,21 +28,22 @@ public class GsonParser {
     private Gson gson;
 
     private AddClub addClub;
-    private AddChallengeResponse addChallengeResponse;
-    private PatchChallenge patchChallenge;
+    private AboutUsRequestModel aboutUsRequestModel;
+    private ContactModel contactModel;
+    private Station stationModel;
+    private Complaint complaintModel;
     private Category category;
     private Center center;
-
     private District districtModel;
     private BannerModel bannerModel;
     private RoleModel roleModel;
-    private RolesData rolesData;
+    private NewsModel newsModel;
     private City city;
 
-    private AboutUsRequestModel aboutUsRequestModel;
-    private ContactModel contactModel;
-    private StationModel stationModel;
-    private Complaint complaintModel;
+    private AddChallengeResponse addChallengeResponse;
+    private PatchChallenge patchChallenge;
+    private RegisterUser registerUser;
+    private SuccessUpdatedUser successUpdatedUser;
 
     public GsonParser() {
         gson = new Gson();
@@ -53,6 +58,9 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
+    public AddClub getAddClub() {
+        return addClub;
+    }
 
     public void parseAddChallengeJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/challenge/addChallenge.json")) {
@@ -66,11 +74,6 @@ public class GsonParser {
 
     public AddChallengeResponse getAddChallengeResponse() {
         return addChallengeResponse;
-    }
-
-
-    public AddClub getAddClub() {
-        return addClub;
     }
 
     public void parsePatchChallengeJson() {
@@ -96,7 +99,7 @@ public class GsonParser {
     }
 
     public void parseAddDistrictJson() {
-        try (FileReader reader = new FileReader("src/main/resources/request_body.district/district.json")) {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/district/district.json")) {
             this.districtModel = gson.fromJson(reader, District.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -104,7 +107,10 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
-    public Complaint getComplaint(){return complaintModel;}
+    public District getAddDistrict() {
+        return districtModel;
+    }
+
     public void parseAddComplaintJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/complaint/add_complaint.json")) {
             this.complaintModel = gson.fromJson(reader, Complaint.class);
@@ -114,10 +120,7 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
-
-    public Category getAddCategory() {
-        return category;
-    }
+    public Complaint getComplaint(){return complaintModel;}
 
     public void parseAddCenterJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/center/center.json")) {
@@ -133,12 +136,8 @@ public class GsonParser {
         return center;
     }
 
-    public District getAddDistrict() {
-        return districtModel;
-    }
-
     public void parseAddNewBannerJson() {
-        try (FileReader reader = new FileReader("src/main/resources/request_bodies/banner/banner")) {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/banner/banner.json")) {
             this.bannerModel = gson.fromJson(reader, BannerModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -149,8 +148,22 @@ public class GsonParser {
     public BannerModel getAddNewBanner() {
         return bannerModel;
     }
+
+    public void parseAddBannerWithWrongPathJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/banner/bannerInvalidData.json")) {
+            this.bannerModel = gson.fromJson(reader, BannerModel.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public BannerModel getAddBannerWithWrongPath() {
+        return bannerModel;
+    }
+
     public void parseAddNewRoleJson() {
-        try (FileReader reader = new FileReader("src/main/java/com/ita/edu/teachua/api/models/roles/RoleModel.java")) {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/roles/newRole.json")) {
             this.roleModel = gson.fromJson(reader, RoleModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -161,19 +174,32 @@ public class GsonParser {
     public RoleModel getAddNewRoleModel() {
         return roleModel;
     }
+
     public void parseRolesDataJson() {
-        try (FileReader reader = new FileReader("src/main/java/com/ita/edu/teachua/api/models/roles/RolesData.java")) {
-            this.rolesData = gson.fromJson(reader, RolesData.class);
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/roles/roleManager.json")) {
+            this.roleModel = gson.fromJson(reader, RoleModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    public RolesData getRolesData() {
-        return rolesData;
+    public RoleModel getRolesData() {
+        return roleModel;
     }
 
+    public void parseAddNewsJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/news/news.json")) {
+            this.newsModel = gson.fromJson(reader, NewsModel.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public NewsModel getNewsModel() {
+        return newsModel;
+    }
 
     public void parseAddNewCityJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/city/city")) {
@@ -233,13 +259,13 @@ public class GsonParser {
         }
     }
 
-    public StationModel getStationModel() {
+    public Station getStationModel() {
         return stationModel;
     }
 
     public void parseAddStationJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/station.json")) {
-            this.stationModel = gson.fromJson(reader, StationModel.class);
+            this.stationModel = gson.fromJson(reader, Station.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -253,12 +279,43 @@ public class GsonParser {
 
     public void parseChangeStationJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/change_station.json")) {
-            this.stationModel = gson.fromJson(reader, StationModel.class);
+            this.stationModel = gson.fromJson(reader, Station.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-      
+
+    public void parseRegisterUserJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/register/registerUser.json")) {
+            this.registerUser = gson.fromJson(reader, RegisterUser.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public RegisterUser getRegisterUser(){
+        return registerUser;
+    }
+
+    public void parseUpdateUserJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/user/updateUser.json")) {
+            this.successUpdatedUser = gson.fromJson(reader, SuccessUpdatedUser.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public Category getAddCategory() {
+        return category;
+    }
+
+    public SuccessUpdatedUser getUpdateUser(){
+        return successUpdatedUser;
+    }
+
 }

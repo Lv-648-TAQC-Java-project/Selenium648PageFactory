@@ -1,6 +1,9 @@
 package com.ita.edu.teachua.api.models.station;
 
-public class StationModel {
+import lombok.Data;
+
+@Data
+public class StationResponseModel {
     private Integer id;
     private String name;
     private String cityName;

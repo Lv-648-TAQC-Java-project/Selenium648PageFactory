@@ -54,7 +54,7 @@ public class AdvancedSearchTest extends TestRunner {
         softAssert.assertAll();
     }
 
-    @Description("TUA-224 Advanced search button opens Розширений пошук section")
+    @Description("TUA-224 Advanced search button opens 'Розширений пошук' section")
     @Issue("TUA-224")
     @Test(description = "TUA-224")
     public void openAdvancedSearchFieldTest() {
@@ -185,7 +185,7 @@ public class AdvancedSearchTest extends TestRunner {
             }
             advancedSearchPage.clickOnNextPageButton();
         }
-        return stringCards;
+        return cardsTitles;
     }
 
     public boolean isAlphabeticallySorted(List<String> titles, boolean asc) {

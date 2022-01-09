@@ -2,6 +2,7 @@ package com.ita.edu.teachua.api.clients;
 
 import com.ita.edu.teachua.api.models.feedback.feedback_request.FeedbackRequest;
 import com.ita.edu.teachua.utils.MainValueProvider;
+import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
 import java.io.IOException;
@@ -25,6 +26,7 @@ public class FeedbackClient extends BaseClient {
         this.token = token;
     }
 
+    @Step("Add new feedback to the club")
     public Response addNewFeedback(FeedbackRequest feedback) {
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s", token))
@@ -34,6 +36,7 @@ public class FeedbackClient extends BaseClient {
                 .post(feedbackUrl);
     }
 
+    @Step("Get feedback with id = '{id}'")
     public Response getFeedbackById(int id) {
         return preparedRequest()
                 .log().all()

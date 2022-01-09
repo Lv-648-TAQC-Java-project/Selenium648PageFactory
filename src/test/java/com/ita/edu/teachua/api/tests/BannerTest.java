@@ -1,19 +1,20 @@
 package com.ita.edu.teachua.api.tests;
 
 import com.ita.edu.teachua.api.clients.BannerClient;
-import com.ita.edu.teachua.api.clients.sigin.Authorization;
 import com.ita.edu.teachua.api.models.banner.BannerModel;
+import com.ita.edu.teachua.api.models.error.BaseErrorBody;
+import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
 public class BannerTest extends AuthorizedAsAdminApiTestRunner {
 
-    @Test
+    @Test(description = "API from swagger")
+    @Description("[API] Get lists of all banners")
     public void getListOfBanners() throws IOException {
         Specifications.setResponseSpecification(200);
         BannerClient bannerClient = new BannerClient(authorization.getToken());
@@ -22,10 +23,11 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
                 .then().log().all()
                 .extract().body().jsonPath().getList(".", BannerModel.class);
         Assert.assertEquals(response.getStatusCode(), 200);
-        Assert.assertEquals(banners.stream().count(), 3);
+        Assert.assertEquals(banners.stream().count(), 4);
     }
 
-    @Test
+    @Test(description = "API from swagger")
+    @Description("[API] Get banner by ID")
     public void getBanner() throws IOException {
         Specifications.setResponseSpecification(200);
         BannerClient bannerClient = new BannerClient(authorization.getToken());
@@ -37,30 +39,33 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
         Assert.assertEquals(bannerModel.getSequenceNumber(), (Integer) 1);
     }
 
-    @Test
+    @Test(description = "API from swagger")
+    @Description("[API] add new banner with wrong path to picture")
     public void addNewBannerWithInvalidData() throws IOException{
-        authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
         BannerClient bannerClient = new BannerClient(authorization.getToken());
-        Response response = bannerClient.addNewBanner();
-        Assert.assertEquals(response.getStatusCode(), 400);
-        Assert.assertEquals(response.path("message"), "picture Incorrect file path. It must be like /upload/*/*.png");
+        Response response = bannerClient.addBannerWithWrongPath();
+        BaseErrorBody errorBody = response.then().log().all().extract().as(BaseErrorBody.class);
+        Assert.assertEquals((int) errorBody.getStatus(), 400);
+        Assert.assertEquals(errorBody.getMessage(), "picture Incorrect file path. It must be like /upload/*/*.png");
     }
 
-    /*public void addNewBanner() throws IOException {
-        Specifications.setResponseSpecification(200);
+    @Test(description = "API from swagger")
+    @Description("[API] add new banner")
+    public void addNewBanner() throws IOException{
         BannerClient bannerClient = new BannerClient(authorization.getToken());
-        File file = new File("C:\\Users\\s\\Desktop\\banner.png");
-        Response response = RestAssured
-                .given()
-                .multiPart("file", file, "application/json")
-                .post("https://speak-ukrainian.org.ua/dev/api/banner")
-                .thenReturn();
+        Response response = bannerClient.addNewBanner();
         BannerModel bannerModel = response
                 .then().log().all()
                 .extract().as(BannerModel.class);
-        Assert.assertEquals(bannerModel.getSequenceNumber(), (Integer) 4);
-        Assert.assertEquals(response.body().path("2kjbvccvut"), bannerModel.getSubtitle());
-        Response deleteBanner = BannerClient.deleteBanner(bannerModel.getId(19));
-        Assert.assertEquals(deleteBanner.getStatusCode(200));
-    }*/
+        Assert.assertEquals((int) bannerModel.getSequenceNumber(), 5);
+        Assert.assertEquals(bannerModel.getTitle(), "Happy new year");
+        Assert.assertEquals(response.getStatusCode(), 200);
+    }
+    @Test(description = "API from swagger")
+    @Description("[API] delete new banner")
+    public void deleteNewBanner() throws IOException {
+        BannerClient bannerClient = new BannerClient(authorization.getToken());
+        Response deleteBanner = bannerClient.deleteBanner(27);
+        Assert.assertEquals(deleteBanner.getStatusCode(), 200);
+    }
 }

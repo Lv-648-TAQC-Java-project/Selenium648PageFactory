@@ -93,6 +93,8 @@ public class AdvancedSearchPage extends BasePage {
     private Button arrowUpButton;
     @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.SORT_BY_RATING_BUTTON_XPATH)
     private Button sortByRatingButton;
+    @FindAll(@FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.CLUB_CARD_XPATH))
+    private List<WebElement> clubsCards;
 
     public AdvancedSearchPage(WebDriver driver) {
         super(driver);
@@ -319,7 +321,6 @@ public class AdvancedSearchPage extends BasePage {
             cards.add(new ClubsItemComponent(driver, j));
         }
         return cards;
-    }
 
     @Step("Get text of title 'Розширений пошук'")
     public String getTitleOfAdvancedSearchField() {

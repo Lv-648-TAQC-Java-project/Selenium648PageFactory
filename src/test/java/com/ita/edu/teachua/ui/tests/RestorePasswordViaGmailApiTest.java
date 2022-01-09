@@ -66,8 +66,10 @@ public class RestorePasswordViaGmailApiTest extends TestRunner {
                 .inputEmail("speak.ukrainian.atqc.test@gmail.com")
                 .clickOnRestore()
                 .fillInNewPasswordField("Porosh0k!2");
+
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(restoringPassword.isPresentGreenMark());
+
         restoringPassword.fillReenterNewPasswordField("Rampam12@");
         softAssert.assertEquals(restoringPassword.getMessagePasswordError(),
                 "Значення поля ‘Підтвердити новий пароль’ має бути еквівалентним значенню поля ‘Новий пароль’");
@@ -84,15 +86,18 @@ public class RestorePasswordViaGmailApiTest extends TestRunner {
         header.clickOnGuestDropdown()
                 .clickOnLoginButton()
                 .clickOnForgotPasswordButton()
+
                 .inputEmail("kjfdhgiuerehgo")
                 .clickOnRestoreButton();
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(restoringPopUp.isRedMarkVisible());
         softAssert.assertEquals(restoringPopUp.getInputBorderColor(), "rgb(255, 77, 79)");
+
         restoringPopUp.inputEmail("")
                 .clickOnRestoreButton();
         softAssert.assertTrue(restoringPopUp.isRedMarkVisible());
         softAssert.assertEquals(restoringPopUp.getInputBorderColor(), "rgb(255, 77, 79)");
+
         restoringPopUp.inputEmail("val@valera.valeriyovychk")
                 .clickOnRestoreButton();
         softAssert.assertEquals(restoringPopUp.getInvalidEmailError(), "Користувача з вказаним емейлом не знайдено");

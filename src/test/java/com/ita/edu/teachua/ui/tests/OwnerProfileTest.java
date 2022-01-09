@@ -149,7 +149,7 @@ public class OwnerProfileTest extends TestRunner {
     }
 
     @Issue("TUA-237")
-    @Description("This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.")
+    @Description("This test case verifies that a 'Керівник' can add a location of a club after filling in mandatory fields with valid data.")
     @Test(dataProvider = "addClubPopUpComponentData", description = "TUA-237")
     public void VerifyThatOwnerCanAddLocationOfClub(String validName,
                                                     String ageFrom,
@@ -300,10 +300,10 @@ public class OwnerProfileTest extends TestRunner {
                 .sendKeysLocationNameField(validLocationName)
                 .clickOnCityDropdown()
                 .clickOnKyivButton()
-                .clickOnDistrictDropdown()
-                .clickOnDesnianskyiButton()
                 .clickOnLocalityDropdown()
                 .clickOnAkademmistechkoButton()
+                .clickOnDistrictDropdown()
+                .clickOnDesnianskyiButton()
                 .sendKeysAddressField(validAddress)
                 .sendKeysCoordinatesField(validCoordinates)
                 .sendKeysPhoneField(validPhone)
@@ -321,14 +321,14 @@ public class OwnerProfileTest extends TestRunner {
                         "0966666666",
                         "ValidCenterName",
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                        "ValidName"
+                        "Тестовий гурток для центру"
                 }
         };
     }
 
-    @Issue("UA-214")
+    @Issue("TUA-214")
     @Description("Verify that user can create a center with valid data")
-    @Test(dataProvider = "addCenterPopUpComponentData", description = "UA-214")
+    @Test(dataProvider = "addCenterPopUpComponentData", description = "TUA-214")
     public void testAddLocationFromProfilePage(String validLocationName,
                                                String validAddress,
                                                String validCoordinates,
@@ -344,10 +344,10 @@ public class OwnerProfileTest extends TestRunner {
                 .sendKeysLocationNameField(validLocationName)
                 .clickOnCityDropdown()
                 .clickOnKyivButton()
-                .clickOnDistrictDropdown()
-                .clickOnDesnianskyiButton()
                 .clickOnLocalityDropdown()
                 .clickOnAkademmistechkoButton()
+                .clickOnDistrictDropdown()
+                .clickOnDesnianskyiButton()
                 .sendKeysAddressField(validAddress)
                 .sendKeysCoordinatesField(validCoordinates)
                 .sendKeysPhoneField(validPhone)
@@ -542,6 +542,7 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnProfile()
                 .clickEditProfile()
                 .checkChangePasswordCheckBox()
+
                 .fillInCurrentPasswordInput("")
                 .fillInNewPasswordInput("NewPassword101!")
                 .fillInConfirmPasswordInput("NewPassword101!")
@@ -550,12 +551,14 @@ public class OwnerProfileTest extends TestRunner {
         softAssert.assertEquals(editProfile.getErrorMessageCurrentPasswordInput(), "Введіть старий пароль");
         softAssert.assertEquals(editProfile.getCurrentPasswordInputBorderColor(), "rgb(255, 77, 79)", "Current password input isn't red");
         editProfile.fillInCurrentPasswordInput(testValueProvider.getAdminPassword())
+
                 .fillInNewPasswordInput("")
                 .fillInConfirmPasswordInput("NewPassword101!")
                 .clickOnSaveChangeButton();
         softAssert.assertEquals(editProfile.getErrorMessageNewPasswordInput(), "Будь ласка, введіть новий пароль");
         softAssert.assertEquals(editProfile.getNewPasswordInputBorderColor(), "rgb(255, 77, 79)", "New password input isn't red");
         editProfile.fillInCurrentPasswordInput(testValueProvider.getAdminPassword())
+
                 .fillInNewPasswordInput("NewPassword101!")
                 .fillInConfirmPasswordInput("")
                 .clickOnSaveChangeButton();

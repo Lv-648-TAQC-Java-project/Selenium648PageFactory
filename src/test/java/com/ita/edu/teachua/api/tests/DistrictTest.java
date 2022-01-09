@@ -13,7 +13,7 @@ import java.util.List;
 public class DistrictTest extends AuthorizedAsAdminApiTestRunner {
     @Test
     public void createDistrict() throws IOException {
-        Specifications.setResponseSpecification(200);
+        //Specifications.setResponseSpecification(200);
         DistrictClient districtClient = new DistrictClient(authorization.getToken());
         Response response = districtClient.addNewDistrict();
 

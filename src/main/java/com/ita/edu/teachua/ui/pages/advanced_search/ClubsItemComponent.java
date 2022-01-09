@@ -32,7 +32,7 @@ public class ClubsItemComponent {
         return cartTitle;
     }
 
-    @Step("Check if club is displayed as a list")
+    @Step("Check if club is displayed as a list")//TODO rewrite
     public boolean isList() {
         String str = root.getAttribute("class");
         return str.contains("list-rectangle-item");
