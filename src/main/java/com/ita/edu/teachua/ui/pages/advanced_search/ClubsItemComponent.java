@@ -1,9 +1,6 @@
 package com.ita.edu.teachua.ui.pages.advanced_search;
 
-import com.ita.edu.teachua.ui.elements.custom_elements.Label;
 import com.ita.edu.teachua.ui.locators.advanced_search_page_locators.ClubsItemComponentLocators;
-import com.ita.edu.teachua.ui.locators.clubs_page_locators.ClubsPageLocators;
-import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,8 +18,8 @@ public class ClubsItemComponent {
     WebElement root;
     @FindBy(how = How.XPATH, using = ClubsItemComponentLocators.CARD_TITLE_XPATH)
     private WebElement cartTitle;
-    /*@FindAll(@FindBy(how = How.CLASS_NAME, using = ClubsItemComponentLocators.CARD_RATING_STAR_CLASS))
-    private List<WebElement> cardStars;*/
+    @FindAll(@FindBy(how = How.XPATH, using = ClubsItemComponentLocators.CARD_RATING_STAR_XPATH))
+    private List<WebElement> cardStars;
 
     public ClubsItemComponent(WebDriver driver, WebElement root) {
         this.driver=driver;
@@ -46,7 +43,7 @@ public class ClubsItemComponent {
         return !str.contains("list-rectangle-item");
     }
 
-    /*public Integer getRating() {
+    public Integer getRating() {
         return cardStars.size();
-    }*/
+    }
 }
