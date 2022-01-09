@@ -2,6 +2,7 @@ package com.ita.edu.teachua.api.clients;
 
 import com.ita.edu.teachua.api.models.question.question_request.Question;
 import com.ita.edu.teachua.utils.MainValueProvider;
+import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
 import java.io.IOException;
@@ -24,7 +25,9 @@ public class QuestionClient extends BaseClient {
         this.questionsUrl = mainValueProvider.getQuestionsUrl();
         this.token = token;
     }
-    public Response addNewQuestion(Question question){
+
+    @Step("Add new question")
+    public Response addNewQuestion(Question question) {
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s", token))
                 .body(question)
@@ -34,6 +37,7 @@ public class QuestionClient extends BaseClient {
 
     }
 
+    @Step("Delete question with id = '{id}'")
     public Response deleteQuestion(int id) {
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s", token))
@@ -42,7 +46,8 @@ public class QuestionClient extends BaseClient {
                 .delete(String.format("%s/%d", questionUrl, id));
     }
 
-    public Response getQuestionByID(int id){
+    @Step("Get question with id = '{id}'")
+    public Response getQuestionByID(int id) {
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s", token))
                 .log().all()
@@ -50,7 +55,8 @@ public class QuestionClient extends BaseClient {
                 .get(String.format("%s/%d", questionUrl, id));
     }
 
-    public Response updateQuestionById(Question question, int id){
+    @Step("Update question with id = '{id}'")
+    public Response updateQuestionById(Question question, int id) {
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s", token))
                 .body(question)
