@@ -542,6 +542,7 @@ public class OwnerProfileTest extends TestRunner {
                 .clickOnProfile()
                 .clickEditProfile()
                 .checkChangePasswordCheckBox()
+
                 .fillInCurrentPasswordInput("")
                 .fillInNewPasswordInput("NewPassword101!")
                 .fillInConfirmPasswordInput("NewPassword101!")
@@ -550,12 +551,14 @@ public class OwnerProfileTest extends TestRunner {
         softAssert.assertEquals(editProfile.getErrorMessageCurrentPasswordInput(), "Введіть старий пароль");
         softAssert.assertEquals(editProfile.getCurrentPasswordInputBorderColor(), "rgb(255, 77, 79)", "Current password input isn't red");
         editProfile.fillInCurrentPasswordInput(testValueProvider.getAdminPassword())
+
                 .fillInNewPasswordInput("")
                 .fillInConfirmPasswordInput("NewPassword101!")
                 .clickOnSaveChangeButton();
         softAssert.assertEquals(editProfile.getErrorMessageNewPasswordInput(), "Будь ласка, введіть новий пароль");
         softAssert.assertEquals(editProfile.getNewPasswordInputBorderColor(), "rgb(255, 77, 79)", "New password input isn't red");
         editProfile.fillInCurrentPasswordInput(testValueProvider.getAdminPassword())
+
                 .fillInNewPasswordInput("NewPassword101!")
                 .fillInConfirmPasswordInput("")
                 .clickOnSaveChangeButton();
