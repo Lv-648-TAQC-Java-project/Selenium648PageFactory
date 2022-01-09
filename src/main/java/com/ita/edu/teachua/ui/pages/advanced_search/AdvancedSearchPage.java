@@ -321,6 +321,7 @@ public class AdvancedSearchPage extends BasePage {
             cards.add(new ClubsItemComponent(driver, j));
         }
         return cards;
+    }
 
     @Step("Get text of title 'Розширений пошук'")
     public String getTitleOfAdvancedSearchField() {

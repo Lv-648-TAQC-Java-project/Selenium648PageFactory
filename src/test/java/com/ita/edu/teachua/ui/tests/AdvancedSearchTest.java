@@ -185,7 +185,7 @@ public class AdvancedSearchTest extends TestRunner {
             }
             advancedSearchPage.clickOnNextPageButton();
         }
-        return cardsTitles;
+        return stringCards;
     }
 
     public boolean isAlphabeticallySorted(List<String> titles, boolean asc) {

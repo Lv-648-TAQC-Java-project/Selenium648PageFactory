@@ -4,15 +4,9 @@ import com.ita.edu.teachua.ui.elements.base_element.BaseElement;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
-/**
- * TextInput  wrapper.
- */
+
 public class InputElement extends BaseElement implements Input {
-    /**
-     * Creates a Element for a given WebElement.
-     *
-     * @param element element to wrap up
-     */
+
     public InputElement(WebElement element) {
         super(element);
     }
