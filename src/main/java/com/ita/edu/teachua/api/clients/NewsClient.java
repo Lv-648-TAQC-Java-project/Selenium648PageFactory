@@ -1,7 +1,6 @@
 package com.ita.edu.teachua.api.clients;
 
 import com.ita.edu.teachua.api.models.news.NewsModel;
-import com.ita.edu.teachua.api.models.roles.RoleModel;
 import com.ita.edu.teachua.utils.ClientDataTransfer;
 import com.ita.edu.teachua.utils.MainValueProvider;
 import io.restassured.response.Response;
@@ -13,7 +12,7 @@ public class NewsClient extends BaseClient{
     private final String newsListClientUrl;
     private final String newsListSearchClientUrl;
     protected MainValueProvider mainValueProvider;
-    private String token;
+    private final String token;
 
     public NewsClient(String token) throws IOException {
         try {

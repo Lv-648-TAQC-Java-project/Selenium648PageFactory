@@ -8,12 +8,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.lang.reflect.Type;
 import java.util.List;
 
-public class RolesTest extends AuthorizedAsAdminApiTestRunner{
+public class RoleAdminTest extends AuthorizedAsAdminApiTestRunner{
 
-    @Test(description = "API from swagger")
+    @Test(description = "[API admin role] Get list of all roles")
     @Description("[API] Get list of all roles")
     public void getListOfRolesTest() throws IOException {
         RoleClient roleClient = new RoleClient(authorization.getToken());
@@ -22,9 +21,10 @@ public class RolesTest extends AuthorizedAsAdminApiTestRunner{
                 .then().log().all()
                 .extract().body().jsonPath().getList(".", RoleModel.class);
         Assert.assertEquals(response.getStatusCode(), 200);
-        Assert.assertEquals(roleModelList.size(), 4);
+        Assert.assertEquals(roleModelList.size(), 3);
     }
-    @Test(description = "API from swagger")
+
+    @Test(description = "[API admin role] Get role by ID")
     @Description("[API] Get role by ID")
     public void getRoleByIDTest() throws IOException {
         RoleClient roleClient = new RoleClient(authorization.getToken());
@@ -35,22 +35,23 @@ public class RolesTest extends AuthorizedAsAdminApiTestRunner{
         Assert.assertEquals(roleModel.getRoleName(), "ROLE_MANAGER");
         Assert.assertEquals(response.getStatusCode(), 200);
     }
-    @Test(description = "API from swagger")
-    @Description("[API] Create new role")
+
+    @Test(description = "[API admin role] Create new role and delete it")
+    @Description("[API] Create new role and delete it")
     public void createNewRole() throws IOException {
         RoleClient roleClient = new RoleClient(authorization.getToken());
         Response response = roleClient.addNewRole();
         RoleModel roleModel = response
                 .then().log().all()
-                .extract().as((Type) RoleModel.class);
+                .extract().as(RoleModel.class);
         Assert.assertEquals(roleModel.getRoleName(), "TEST_ROLE");
         Assert.assertEquals(response.getStatusCode(), 200);
-    }
-    @Test(description = "API from swagger")
-    @Description("[API] Create new role")
-    public void deleteRole() throws IOException {
-        RoleClient roleClient = new RoleClient(authorization.getToken());
-        Response response = roleClient.deleteRole(39);
-        Assert.assertEquals(response.getStatusCode(), 200);
+
+        response = roleClient.getListOfRoles();
+        List<RoleModel> roleModelList = response
+                .then().log().all()
+                .extract().body().jsonPath().getList(".", RoleModel.class);
+        Response deleteRole = roleClient.deleteRole(roleModelList.get(0).getId());
+        Assert.assertEquals(deleteRole.getStatusCode(), 200);
     }
 }

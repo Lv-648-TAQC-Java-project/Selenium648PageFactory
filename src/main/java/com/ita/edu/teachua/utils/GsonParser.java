@@ -15,8 +15,8 @@ import com.ita.edu.teachua.api.models.club.add_club_response.Station;
 import com.ita.edu.teachua.api.models.complaint.Complaint;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
 import com.ita.edu.teachua.api.models.news.NewsModel;
+import com.ita.edu.teachua.api.models.roles.RoleNameModel;
 import com.ita.edu.teachua.api.models.roles.RoleModel;
-import com.ita.edu.teachua.api.models.station.StationRequestModel;
 import com.ita.edu.teachua.api.models.registration.RegisterUser;
 import com.ita.edu.teachua.api.models.user.SuccessUpdatedUser;
 
@@ -38,9 +38,9 @@ public class GsonParser {
     private District districtModel;
     private BannerModel bannerModel;
     private RoleModel roleModel;
+    private RoleNameModel roleNameModel;
     private NewsModel newsModel;
     private City city;
-
     private AddChallengeResponse addChallengeResponse;
     private PatchChallenge patchChallenge;
     private RegisterUser registerUser;
@@ -163,30 +163,17 @@ public class GsonParser {
         return bannerModel;
     }
 
-    public void parseAddNewRoleJson() {
-        try (FileReader reader = new FileReader("src/main/resources/request_bodies/roles/newRole.json")) {
-            this.roleModel = gson.fromJson(reader, RoleModel.class);
+    public void parseRoleNameJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/roles/roleName.json")) {
+            this.roleNameModel = gson.fromJson(reader, RoleNameModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    public RoleModel getAddNewRoleModel() {
-        return roleModel;
-    }
-
-    public void parseRolesDataJson() {
-        try (FileReader reader = new FileReader("src/main/resources/request_bodies/roles/roleManager.json")) {
-            this.roleModel = gson.fromJson(reader, RoleModel.class);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    public RoleModel getRolesData() {
-        return roleModel;
+    public RoleNameModel getRoleNameModel() {
+        return roleNameModel;
     }
 
     public void parseAddNewsJson() {

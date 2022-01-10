@@ -11,7 +11,7 @@ public class RoleClient extends BaseClient{
     private final String roleClientUrl;
     private final String rolesClientUrl;
     protected MainValueProvider mainValueProvider;
-    private String token;
+    private final String token;
 
     public RoleClient(String token) throws IOException {
         super();
@@ -34,9 +34,8 @@ public class RoleClient extends BaseClient{
     }
     public Response deleteRole(Integer id) {
         return preparedRequest()
+                .when().log().all()
                 .header("Authorization", String.format("Bearer %s",token))
-                .log().all()
-                .when()
                 .delete(String.format("%s/%d", roleClientUrl, id));
     }
     public Response getRoleById(Integer id) {

@@ -2,16 +2,10 @@ package com.ita.edu.teachua.api.tests;
 
 import com.ita.edu.teachua.api.clients.sigin.Authorization;
 import com.ita.edu.teachua.utils.TestValueProvider;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.ITestContext;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import java.io.IOException;
-import java.time.Duration;
 
 public class AuthorizedAsAdminApiTestRunner {
     protected static TestValueProvider testValueProvider;
