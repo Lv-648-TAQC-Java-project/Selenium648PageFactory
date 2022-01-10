@@ -13,8 +13,8 @@ import java.util.List;
 
 public class BannerTest extends AuthorizedAsAdminApiTestRunner {
 
-    @Test(description = "API from swagger")
-    @Description("[API] Get lists of all banners")
+    @Test(description = "[API banner] Get list of all banners")
+    @Description("[API] Get list of all banners")
     public void getListOfBanners() throws IOException {
         Specifications.setResponseSpecification(200);
         BannerClient bannerClient = new BannerClient(authorization.getToken());
@@ -23,10 +23,10 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
                 .then().log().all()
                 .extract().body().jsonPath().getList(".", BannerModel.class);
         Assert.assertEquals(response.getStatusCode(), 200);
-        Assert.assertEquals(banners.stream().count(), 4);
+        Assert.assertEquals((long) banners.size(), 4);
     }
 
-    @Test(description = "API from swagger")
+    @Test(description = "[API banner] Get banner by ID")
     @Description("[API] Get banner by ID")
     public void getBanner() throws IOException {
         Specifications.setResponseSpecification(200);
@@ -39,7 +39,7 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
         Assert.assertEquals(bannerModel.getSequenceNumber(), (Integer) 1);
     }
 
-    @Test(description = "API from swagger")
+    @Test(description = "[API banner] add new banner with wrong path to picture")
     @Description("[API] add new banner with wrong path to picture")
     public void addNewBannerWithInvalidData() throws IOException{
         BannerClient bannerClient = new BannerClient(authorization.getToken());
@@ -49,7 +49,7 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
         Assert.assertEquals(errorBody.getMessage(), "picture Incorrect file path. It must be like /upload/*/*.png");
     }
 
-    @Test(description = "API from swagger")
+    @Test(description = "[API banner] Add banner uccessfully and then delete it")
     @Description("[API] add new banner and delete it")
     public void addNewBannerAndDeleteIt() throws IOException{
         BannerClient bannerClient = new BannerClient(authorization.getToken());

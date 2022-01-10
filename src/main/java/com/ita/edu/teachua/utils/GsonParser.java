@@ -17,7 +17,6 @@ import com.ita.edu.teachua.api.models.contact.ContactModel;
 import com.ita.edu.teachua.api.models.news.NewsModel;
 import com.ita.edu.teachua.api.models.roles.RoleNameModel;
 import com.ita.edu.teachua.api.models.roles.RoleModel;
-import com.ita.edu.teachua.api.models.station.StationRequestModel;
 import com.ita.edu.teachua.api.models.registration.RegisterUser;
 import com.ita.edu.teachua.api.models.user.SuccessUpdatedUser;
 
@@ -43,7 +42,6 @@ public class GsonParser {
     private City city;
     private AddChallengeResponse addChallengeResponse;
     private PatchChallenge patchChallenge;
-    private StationRequestModel stationModel;
     private RegisterUser registerUser;
     private SuccessUpdatedUser successUpdatedUser;
 
