@@ -3,6 +3,7 @@ package com.ita.edu.teachua.api.tests;
 import com.ita.edu.teachua.api.clients.ContactClient;
 import com.ita.edu.teachua.api.clients.sigin.Authorization;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
+import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,8 +12,10 @@ import org.testng.asserts.SoftAssert;
 import java.io.IOException;
 import java.util.List;
 
-public class ContactTests extends AuthorizedAsAdminApiTestRunner{
-    @Test
+public class ContactTests extends AuthorizedAsAdminApiTestRunner {
+
+    @Test(description = "Create, change and delete contact by ID")
+    @Description("[API] Create, change and delete contact by ID")
     public void createChangeAndDeleteContact() throws IOException {
         ContactClient contactClient = new ContactClient(authorization.getToken());
         Response addContactResponse = contactClient.addNewContact();
@@ -30,7 +33,8 @@ public class ContactTests extends AuthorizedAsAdminApiTestRunner{
         Assert.assertEquals(delete.getStatusCode(), 200);
     }
 
-    @Test
+    @Test(description = "Get contact by ID")
+    @Description("[API] Get contact by ID")
     public void getContact() throws IOException {
         Specifications.setResponseSpecification(200);
         authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
@@ -45,7 +49,8 @@ public class ContactTests extends AuthorizedAsAdminApiTestRunner{
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(description = "Get contacts")
+    @Description("[API] Get contact")
     public void getContacts() throws IOException {
         Specifications.setResponseSpecification(200);
         ContactClient contactClient = new ContactClient(authorization.getToken());

@@ -260,20 +260,6 @@ public class GsonParser {
         }
     }
 
-    public Station getStationModel() {
-        return stationModel;
-    }
-
-    public void parseAddStationJson() {
-        try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/station.json")) {
-            this.stationModel = gson.fromJson(reader, Station.class);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     public StationRequestModel getStationRequestModel() {
         return stationRequestModel;
     }

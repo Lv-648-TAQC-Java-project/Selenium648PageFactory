@@ -61,6 +61,7 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
         Assert.assertEquals(bannerModel.getTitle(), "Happy new year");
         Assert.assertEquals(response.getStatusCode(), 200);
     }
+
     @Test(description = "API from swagger")
     @Description("[API] delete new banner")
     public void deleteNewBanner() throws IOException {

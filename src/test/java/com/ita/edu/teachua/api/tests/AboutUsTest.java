@@ -3,6 +3,7 @@ package com.ita.edu.teachua.api.tests;
 import com.ita.edu.teachua.api.clients.AboutUsClient;
 import com.ita.edu.teachua.api.clients.sigin.Authorization;
 import com.ita.edu.teachua.api.models.about_us.AboutUsResponseModel;
+import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,7 +14,8 @@ import java.util.List;
 
 public class AboutUsTest extends AuthorizedAsAdminApiTestRunner {
 
-    @Test
+    @Test(description = "Create, change and delete About Us by ID")
+    @Description("[API] Create, change and delete About Us by ID")
     public void createChangeAndDeleteAboutUs() throws IOException {
         AboutUsClient aboutUsClient = new AboutUsClient(authorization.getToken());
         Response addAboutUsResponse = aboutUsClient.addNewAboutUs();
@@ -32,7 +34,8 @@ public class AboutUsTest extends AuthorizedAsAdminApiTestRunner {
         Assert.assertEquals(delete.getStatusCode(), 200);
     }
 
-    @Test
+    @Test(description = "Get About Us by ID")
+    @Description("[API] Get About Us by ID")
     public void getAboutUs() throws IOException {
         Specifications.setResponseSpecification(200);
         authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
@@ -47,7 +50,8 @@ public class AboutUsTest extends AuthorizedAsAdminApiTestRunner {
         softAssert.assertEquals(aboutUsResponseModel.getType(),Integer.valueOf(4));
     }
 
-    @Test
+    @Test(description = "Get all About Us by ID")
+    @Description("[API] Get all About Us by ID")
     public void getAllAboutUs() throws IOException {
         Specifications.setResponseSpecification(200);
         AboutUsClient aboutUsClient = new AboutUsClient(authorization.getToken());
