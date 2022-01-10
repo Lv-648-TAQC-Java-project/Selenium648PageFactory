@@ -34,9 +34,8 @@ public class RoleClient extends BaseClient{
     }
     public Response deleteRole(Integer id) {
         return preparedRequest()
+                .when().log().all()
                 .header("Authorization", String.format("Bearer %s",token))
-                .log().all()
-                .when()
                 .delete(String.format("%s/%d", roleClientUrl, id));
     }
     public Response getRoleById(Integer id) {
