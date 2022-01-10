@@ -12,7 +12,7 @@ import java.util.List;
 
 public class RoleAdminTest extends AuthorizedAsAdminApiTestRunner{
 
-    @Test(description = "API from swagger")
+    @Test(description = "[API admin role] Get list of all roles")
     @Description("[API] Get list of all roles")
     public void getListOfRolesTest() throws IOException {
         RoleClient roleClient = new RoleClient(authorization.getToken());
@@ -24,7 +24,7 @@ public class RoleAdminTest extends AuthorizedAsAdminApiTestRunner{
         Assert.assertEquals(roleModelList.size(), 3);
     }
 
-    @Test(description = "API from swagger")
+    @Test(description = "[API admin role] Get role by ID")
     @Description("[API] Get role by ID")
     public void getRoleByIDTest() throws IOException {
         RoleClient roleClient = new RoleClient(authorization.getToken());
@@ -36,8 +36,8 @@ public class RoleAdminTest extends AuthorizedAsAdminApiTestRunner{
         Assert.assertEquals(response.getStatusCode(), 200);
     }
 
-    @Test(description = "API from swagger")
-    @Description("[API] Create new role")
+    @Test(description = "[API admin role] Create new role and delete it")
+    @Description("[API] Create new role and delete it")
     public void createNewRole() throws IOException {
         RoleClient roleClient = new RoleClient(authorization.getToken());
         Response response = roleClient.addNewRole();

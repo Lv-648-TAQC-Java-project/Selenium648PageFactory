@@ -1,6 +1,5 @@
 package com.ita.edu.teachua.api.clients;
 
-import com.ita.edu.teachua.api.models.banner.BannerModel;
 import com.ita.edu.teachua.utils.ClientDataTransfer;
 import com.ita.edu.teachua.utils.MainValueProvider;
 import io.restassured.response.Response;
@@ -11,7 +10,7 @@ public class BannerClient extends BaseClient {
     private final String bannerUrl;
     private final String bannersUrl;
     protected MainValueProvider valueProvider;
-    private String token;
+    private final String token;
 
     public BannerClient(String token) throws IOException{
         super();

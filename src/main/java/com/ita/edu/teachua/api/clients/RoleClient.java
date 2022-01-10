@@ -11,7 +11,7 @@ public class RoleClient extends BaseClient{
     private final String roleClientUrl;
     private final String rolesClientUrl;
     protected MainValueProvider mainValueProvider;
-    private String token;
+    private final String token;
 
     public RoleClient(String token) throws IOException {
         super();
