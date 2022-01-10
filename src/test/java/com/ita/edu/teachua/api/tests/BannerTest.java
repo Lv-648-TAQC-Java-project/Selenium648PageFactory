@@ -49,7 +49,7 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
         Assert.assertEquals(errorBody.getMessage(), "picture Incorrect file path. It must be like /upload/*/*.png");
     }
 
-    @Test(description = "[API banner] Add banner uccessfully and then delete it")
+    @Test(description = "[API banner] Add banner successfully and then delete it")
     @Description("[API] add new banner and delete it")
     public void addNewBannerAndDeleteIt() throws IOException{
         BannerClient bannerClient = new BannerClient(authorization.getToken());
