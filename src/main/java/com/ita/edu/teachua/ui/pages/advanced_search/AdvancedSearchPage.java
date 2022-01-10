@@ -84,7 +84,9 @@ public class AdvancedSearchPage extends BasePage {
     @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.LAST_PAGE_BUTTON_XPATH)
     private Button lastPageButton;
     @FindAll(@FindBy(how = How.CSS, using = AdvancedSearchPageLocators.CENTER_BLOCKS_CSS_SELECTOR))
-    private List<WebElement> centerBlocks;
+    private List<Button> centerBlocks;
+    @FindAll(@FindBy (how = How.XPATH, using = AdvancedSearchPageLocators.CLUB_CARD_XPATH))
+    private List<WebElement> clubCards;
     @FindAll(@FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.ADVANCED_SEARCH_FIELD_TITLE_XPATH))
     private List<Button> searchFields;
     @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.ARROW_UPP_BUTTON_XPATH)
@@ -311,13 +313,14 @@ public class AdvancedSearchPage extends BasePage {
         return clubBlocks;
     }
 
-    @Step("Get all clubs cards from advanced search page")
-    public List<ClubsItemComponent> getClubsCards() {
-        List<ClubsItemComponent> clubBlocks = new ArrayList<>();
-        for (WebElement j : clubsCards) {
-            clubBlocks.add(new ClubsItemComponent(driver, j));
+    @Step("Get all clubs cards")
+    public List<ClubsItemComponent> getClubCards() {
+        List<ClubsItemComponent> cards = new ArrayList<>();
+        this.sleep(3000);
+        for (WebElement j : clubCards) {
+            cards.add(new ClubsItemComponent(driver, j));
         }
-        return clubBlocks;
+        return cards;
     }
 
     @Step("Get text of title 'Розширений пошук'")
@@ -341,7 +344,7 @@ public class AdvancedSearchPage extends BasePage {
 
     @Step("Get number of pages with clubs")
     public int getNumberOfPagesWithClubs() {
-        sleep(1500);
+        this.sleep(2000);
         return Integer.parseInt(lastPageButton.getInnerText());
     }
 

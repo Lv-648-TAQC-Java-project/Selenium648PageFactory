@@ -13,24 +13,23 @@ import org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory;
 import java.util.List;
 
 public class ClubsItemComponent {
-    WebElement root;
-    WebDriver driver;
     DefaultElementLocatorFactory parentContext;
+    WebDriver driver;
+    WebElement root;
     @FindBy(how = How.XPATH, using = ClubsItemComponentLocators.CARD_TITLE_XPATH)
-    private WebElement cardTitle;
-    @FindAll(@FindBy(how = How.CLASS_NAME, using = ClubsItemComponentLocators.CARD_RATING_STAR_CLASS))
+    private WebElement cartTitle;
+    @FindAll(@FindBy(how = How.XPATH, using = ClubsItemComponentLocators.CARD_RATING_STAR_XPATH))
     private List<WebElement> cardStars;
 
     public ClubsItemComponent(WebDriver driver, WebElement root) {
-        this.driver = driver;
-        this.root = root;
+        this.driver=driver;
         parentContext = new DefaultElementLocatorFactory(root);
         PageFactory.initElements(parentContext, this);
     }
 
     @Step("Get title of the card")
-    public String getCardTitle() {
-        return cardTitle.getText();
+    public WebElement getCardTitle() {
+        return cartTitle;
     }
 
     @Step("Check if club is displayed as a list")//TODO rewrite

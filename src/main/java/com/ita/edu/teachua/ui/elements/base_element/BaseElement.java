@@ -6,19 +6,12 @@ import org.openqa.selenium.interactions.Locatable;
 
 import java.util.List;
 
-/**
- * An implementation of the Element interface. Delegates its work to an underlying WebElement instance for
- * custom functionality.
- */
+
 public class BaseElement implements Element {
 
     private final WebElement element;
 
-    /**
-     * Creates a Element for a given WebElement.
-     *
-     * @param element element to wrap up
-     */
+
     public BaseElement(final WebElement element) {
         this.element = element;
     }

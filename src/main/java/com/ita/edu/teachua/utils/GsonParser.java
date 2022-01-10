@@ -11,6 +11,7 @@ import com.ita.edu.teachua.api.models.category.Category;
 import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.club.add_club_response.District;
+import com.ita.edu.teachua.api.models.club.add_club_response.Station;
 import com.ita.edu.teachua.api.models.complaint.Complaint;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
 import com.ita.edu.teachua.api.models.news.NewsModel;
@@ -30,6 +31,7 @@ public class GsonParser {
     private AddClub addClub;
     private AboutUsRequestModel aboutUsRequestModel;
     private ContactModel contactModel;
+    private Station stationModel;
     private Complaint complaintModel;
     private Category category;
     private Center center;
@@ -99,7 +101,7 @@ public class GsonParser {
     }
 
     public void parseAddDistrictJson() {
-        try (FileReader reader = new FileReader("src/main/resources/request_body.district/district.json")) {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/district/district.json")) {
             this.districtModel = gson.fromJson(reader, District.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -246,13 +248,13 @@ public class GsonParser {
         }
     }
 
-    public StationRequestModel getStationModel() {
+    public Station getStationModel() {
         return stationModel;
     }
 
     public void parseAddStationJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/station.json")) {
-            this.stationModel = gson.fromJson(reader, StationRequestModel.class);
+            this.stationModel = gson.fromJson(reader, Station.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -266,7 +268,7 @@ public class GsonParser {
 
     public void parseChangeStationJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/change_station.json")) {
-            this.stationModel = gson.fromJson(reader, StationRequestModel.class);
+            this.stationModel = gson.fromJson(reader, Station.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
