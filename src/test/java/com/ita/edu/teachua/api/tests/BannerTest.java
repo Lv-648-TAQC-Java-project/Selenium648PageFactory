@@ -50,8 +50,8 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
     }
 
     @Test(description = "API from swagger")
-    @Description("[API] add new banner")
-    public void addNewBanner() throws IOException{
+    @Description("[API] add new banner and delete it")
+    public void addNewBannerAndDeleteIt() throws IOException{
         BannerClient bannerClient = new BannerClient(authorization.getToken());
         Response response = bannerClient.addNewBanner();
         BannerModel bannerModel = response
@@ -60,12 +60,7 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
         Assert.assertEquals((int) bannerModel.getSequenceNumber(), 5);
         Assert.assertEquals(bannerModel.getTitle(), "Happy new year");
         Assert.assertEquals(response.getStatusCode(), 200);
-    }
-    @Test(description = "API from swagger")
-    @Description("[API] delete new banner")
-    public void deleteNewBanner() throws IOException {
-        BannerClient bannerClient = new BannerClient(authorization.getToken());
-        Response deleteBanner = bannerClient.deleteBanner(27);
+        Response deleteBanner = bannerClient.deleteBanner(bannerModel.getId());
         Assert.assertEquals(deleteBanner.getStatusCode(), 200);
     }
 }
