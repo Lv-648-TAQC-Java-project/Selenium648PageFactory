@@ -16,7 +16,7 @@ import java.io.IOException;
 
 public class AddCenterTest extends AuthorizedAsAdminApiTestRunner{
 
-    @Test(description = "TUA-261")
+   /* @Test(description = "TUA-261")
     public void createCenter() throws IOException {
         Specifications.setResponseSpecification(200);
         CenterClient centerClient = new CenterClient(authorization.getToken());
@@ -42,5 +42,5 @@ public class AddCenterTest extends AuthorizedAsAdminApiTestRunner{
 
         Response response1 = centerClient.deleteNewCenter(centerRoot.getId());
         Assert.assertEquals(response1.getStatusCode(), 200);
-    }
+    }*/
 }

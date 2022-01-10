@@ -50,15 +50,15 @@ public class StationClient extends BaseClient{
                 .get(String.format("%s/%d", stationUrl, id));
     }
 
-    public Response getStation(String name) {
+    public Response getStationsByCityName(String name) {
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s", token))
-                .get(String.format("%s/%s", stationUrl, name));
+                .get(String.format("%s/%s", stationUrl + "s", name));
     }
 
     public Response getStations() {
         return preparedRequest()
                 .header("Authorization", String.format("Bearer %s", token))
-                .get(String.format("%s/%s", stationUrl, "s"));
+                .get( stationUrl + "s");
     }
 }

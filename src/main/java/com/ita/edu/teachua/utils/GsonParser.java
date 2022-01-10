@@ -29,6 +29,7 @@ public class GsonParser {
 
     private AddClub addClub;
     private AboutUsRequestModel aboutUsRequestModel;
+    private StationRequestModel stationRequestModel;
     private ContactModel contactModel;
     private Station stationModel;
     private Complaint complaintModel;
@@ -246,13 +247,13 @@ public class GsonParser {
         }
     }
 
-    public Station getStationModel() {
-        return stationModel;
+    public StationRequestModel getStationRequestModel() {
+        return stationRequestModel;
     }
 
-    public void parseAddStationJson() {
+    public void parseAddStationRequestJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/station.json")) {
-            this.stationModel = gson.fromJson(reader, Station.class);
+            this.stationRequestModel = gson.fromJson(reader, StationRequestModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -267,6 +268,16 @@ public class GsonParser {
     public void parseChangeStationJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/change_station.json")) {
             this.stationModel = gson.fromJson(reader, Station.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void parseChangeStationRequestJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/station/change_station.json")) {
+            this.stationRequestModel = gson.fromJson(reader, StationRequestModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

@@ -10,7 +10,6 @@ import com.ita.edu.teachua.api.models.category.Category;
 import com.ita.edu.teachua.api.models.center.center_request.Center;
 import com.ita.edu.teachua.api.models.club.add_club_request.AddClub;
 import com.ita.edu.teachua.api.models.club.add_club_response.District;
-import com.ita.edu.teachua.api.models.club.add_club_response.Station;
 import com.ita.edu.teachua.api.models.complaint.Complaint;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
 import com.ita.edu.teachua.api.models.news.NewsModel;
@@ -116,16 +115,16 @@ public class ClientDataTransfer {
         return parser.getContactModel();
     }
 
-    public Station getAddStation() {
+    public StationRequestModel getAddStation() {
         parser = new GsonParser();
-        parser.parseAddAboutUsJson();
-        return parser.getStationModel();
+        parser.parseAddStationRequestJson();
+        return parser.getStationRequestModel();
     }
 
-    public Station getChangeStation() {
+    public StationRequestModel getChangeStation() {
         parser = new GsonParser();
-        parser.parseChangeStationJson();
-        return parser.getStationModel();
+        parser.parseChangeStationRequestJson();
+        return parser.getStationRequestModel();
     }
 
     public RegisterUser getRegisterUser(){
