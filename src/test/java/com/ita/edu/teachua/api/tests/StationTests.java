@@ -14,26 +14,7 @@ import java.util.List;
 public class StationTests extends AuthorizedAsAdminApiTestRunner {
 
     @Test
-    public void createChangeAndDeleteStation() throws IOException {
-        StationClient stationClient = new StationClient(authorization.getToken());
-        Response addStationResponse = stationClient.addNewStation();
-        StationResponseModel stationResponseModel = addStationResponse.then().log().all()
-                .extract().as(StationResponseModel.class);
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(stationResponseModel.getName(), "Т");
-
-        Response changeStationResponse = stationClient.changeStation(stationResponseModel.getId());
-        StationResponseModel changedStation = changeStationResponse.then().log().all()
-                .extract().as(StationResponseModel.class);
-        softAssert.assertEquals(changedStation.getName(), "Т");
-        softAssert.assertAll();
-
-        Response delete = stationClient.deleteStation(stationResponseModel.getId());
-        Assert.assertEquals(delete.getStatusCode(), 200);
-    }
-
-    @Test
-    public void getStation() throws IOException {
+    public void getStationByID() throws IOException {
         Specifications.setResponseSpecification(200);
         authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
         SoftAssert softAssert = new SoftAssert();
@@ -42,7 +23,24 @@ public class StationTests extends AuthorizedAsAdminApiTestRunner {
         StationResponseModel stationResponseModel = get.then().log().all()
                 .extract().as(StationResponseModel.class);
         Assert.assertEquals(get.getStatusCode(), 200);
-        softAssert.assertEquals(stationResponseModel.getName(), "F");
+        softAssert.assertEquals(stationResponseModel.getName(), "Берестейська");
+        softAssert.assertEquals(stationResponseModel.getCityName(), "Київ");
+        softAssert.assertAll();
+    }
+
+    @Test
+    public void getStationsByName() throws IOException {
+        Specifications.setResponseSpecification(200);
+        SoftAssert softAssert = new SoftAssert();
+        StationClient stationClient = new StationClient(authorization.getToken());
+        Response response = stationClient.getStationsByCityName("Київ");
+        List<StationResponseModel> stationModelList = response
+                .then().log().all()
+                .extract().body().jsonPath().getList(".", StationResponseModel.class);
+        Assert.assertEquals(response.getStatusCode(), 200);
+        softAssert.assertEquals(stationModelList.get(0).getId(), Integer.valueOf(1));
+        softAssert.assertEquals(stationModelList.get(0).getName(), "Академмістечко");
+        softAssert.assertEquals(stationModelList.get(0).getCityName(), "Київ");
         softAssert.assertAll();
     }
 
@@ -51,7 +49,7 @@ public class StationTests extends AuthorizedAsAdminApiTestRunner {
         Specifications.setResponseSpecification(200);
         StationClient stationClient = new StationClient(authorization.getToken());
         Response response = stationClient.getStations();
-        List<StationResponseModel> contactModelList = response
+        List<StationResponseModel> stationsResponseModelList = response
                 .then().log().all()
                 .extract().body().jsonPath().getList(".", StationResponseModel.class);
         Assert.assertEquals(response.getStatusCode(), 200);

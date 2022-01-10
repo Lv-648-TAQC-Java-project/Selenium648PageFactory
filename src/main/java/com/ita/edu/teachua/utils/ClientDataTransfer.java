@@ -114,16 +114,16 @@ public class ClientDataTransfer {
         return parser.getContactModel();
     }
 
-    public Station getAddStation() {
+    public StationRequestModel getAddStation() {
         parser = new GsonParser();
-        parser.parseAddAboutUsJson();
-        return parser.getStationModel();
+        parser.parseAddStationRequestJson();
+        return parser.getStationRequestModel();
     }
 
-    public Station getChangeStation() {
+    public StationRequestModel getChangeStation() {
         parser = new GsonParser();
-        parser.parseChangeStationJson();
-        return parser.getStationModel();
+        parser.parseChangeStationRequestJson();
+        return parser.getStationRequestModel();
     }
 
     public RegisterUser getRegisterUser(){
