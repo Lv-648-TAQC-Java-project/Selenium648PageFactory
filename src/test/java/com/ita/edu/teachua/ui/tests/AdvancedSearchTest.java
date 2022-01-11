@@ -2,10 +2,7 @@ package com.ita.edu.teachua.ui.tests;
 
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
 import com.ita.edu.teachua.ui.pages.advanced_search.ClubsItemComponent;
-import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
 import com.ita.edu.teachua.ui.pages.main_page.MainPage;
-import com.ita.edu.teachua.ui.pages.profile_page.CentersItemComponent;
-import com.ita.edu.teachua.ui.pages.profile_page.ProfilePage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Issue;
 import io.qameta.allure.Severity;
