@@ -36,7 +36,6 @@ public class ContactTests extends AuthorizedAsAdminApiTestRunner {
     @Test(description = "Get contact by ID")
     @Description("[API] Get contact by ID")
     public void getContact() throws IOException {
-        Specifications.setResponseSpecification(200);
         authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
         SoftAssert softAssert = new SoftAssert();
         ContactClient contactClient = new ContactClient(authorization.getToken());
@@ -52,7 +51,6 @@ public class ContactTests extends AuthorizedAsAdminApiTestRunner {
     @Test(description = "Get contacts")
     @Description("[API] Get contact")
     public void getContacts() throws IOException {
-        Specifications.setResponseSpecification(200);
         ContactClient contactClient = new ContactClient(authorization.getToken());
         Response response = contactClient.getContacts();
         List<ContactModel> contactModelList = response

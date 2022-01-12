@@ -37,7 +37,6 @@ public class AboutUsTest extends AuthorizedAsAdminApiTestRunner {
     @Test(description = "Get About Us by ID")
     @Description("[API] Get About Us by ID")
     public void getAboutUs() throws IOException {
-        Specifications.setResponseSpecification(200);
         authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
         SoftAssert softAssert = new SoftAssert();
         AboutUsClient aboutUsClient = new AboutUsClient(authorization.getToken());
@@ -53,7 +52,6 @@ public class AboutUsTest extends AuthorizedAsAdminApiTestRunner {
     @Test(description = "Get all About Us by ID")
     @Description("[API] Get all About Us by ID")
     public void getAllAboutUs() throws IOException {
-        Specifications.setResponseSpecification(200);
         AboutUsClient aboutUsClient = new AboutUsClient(authorization.getToken());
         Response response = aboutUsClient.getAllAboutUs();
         List<AboutUsResponseModel> aboutUsResponseModelList = response

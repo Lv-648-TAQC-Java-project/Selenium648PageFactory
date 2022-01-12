@@ -17,7 +17,6 @@ public class StationTests extends AuthorizedAsAdminApiTestRunner {
     @Test(description = "Get station by name")
     @Description("[API] Get station by id")
     public void getStationByID() throws IOException {
-        Specifications.setResponseSpecification(200);
         authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
         SoftAssert softAssert = new SoftAssert();
         StationClient stationClient = new StationClient(authorization.getToken());
@@ -33,7 +32,6 @@ public class StationTests extends AuthorizedAsAdminApiTestRunner {
     @Test(description = "Get station by name")
     @Description("[API] Get station by name")
     public void getStationsByName() throws IOException {
-        Specifications.setResponseSpecification(200);
         SoftAssert softAssert = new SoftAssert();
         StationClient stationClient = new StationClient(authorization.getToken());
         Response response = stationClient.getStationsByCityName("Київ");
@@ -50,7 +48,6 @@ public class StationTests extends AuthorizedAsAdminApiTestRunner {
     @Test(description = "Get stations by name of the city")
     @Description("[API] Get station by the name of the city")
     public void getStations() throws IOException {
-        Specifications.setResponseSpecification(200);
         StationClient stationClient = new StationClient(authorization.getToken());
         Response response = stationClient.getStations();
         List<StationResponseModel> stationsResponseModelList = response
