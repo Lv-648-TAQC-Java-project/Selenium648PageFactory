@@ -37,8 +37,8 @@ public class UserTest extends ApiTestRunner {
     @Issue("TUA-375")
     @Test(description = "TUA-375")
     public void testUserDataIsAvailableToUser() throws IOException {
+        Response response;
         final int expectedStatus = 200;
-        Specifications.setResponseSpecification(expectedStatus);
 
         //register a user
         RegistrationClient regClient = new RegistrationClient();
@@ -57,12 +57,14 @@ public class UserTest extends ApiTestRunner {
         //Check if data is available
         Authorization authAsUser = new Authorization(userData.getEmail(), userData.getPassword());
         UserClient userClientAsUser = new UserClient(authAsUser.getToken());
-        UserInfo userInfo = userClientAsUser.getUser(id).then().log().all()
+        response = userClientAsUser.getUser(id);
+        UserInfo userInfo = response.then().log().all()
                 .extract().as(UserInfo.class);
 
         //Delete user
         userClientAsAdmin.deleteUser(id);
 
+        Assert.assertEquals(response.statusCode(), expectedStatus);
         Assert.assertNotNull(userInfo);
 
     }
@@ -75,7 +77,6 @@ public class UserTest extends ApiTestRunner {
         final String newFirstName = "Andrii";
         final String newLastName = "Yaya";
         final String newPhone = "0999999999";
-        Specifications.setResponseSpecification(expectedStatus);
 
         //register a user
         RegistrationClient regClient = new RegistrationClient();
@@ -103,12 +104,14 @@ public class UserTest extends ApiTestRunner {
         userClientAsUser.putUserNewInfo(id, updateUserData).then().log().all();
 
         //Check if data is changed
-        UserInfo userInfo = userClientAsUser.getUser(id).then().log().all()
+        Response response = userClientAsUser.getUser(id);
+        UserInfo userInfo = response.then().log().all()
                 .extract().as(UserInfo.class);
 
         //Delete user
         userClientAsAdmin.deleteUser(id);
 
+        Assert.assertEquals(response.statusCode(),expectedStatus);
         Assert.assertEquals(userInfo.getLastName(), newLastName);
         Assert.assertEquals(userInfo.getFirstName(), newFirstName);
         Assert.assertEquals(userInfo.getPhone(), newPhone);
@@ -124,7 +127,6 @@ public class UserTest extends ApiTestRunner {
         final String newFirstName = "Andrii";
         final String newLastName = "Yaya";
         final String newPhone = "0999999999";
-        Specifications.setResponseSpecification(200);
         SoftAssert softAssert = new SoftAssert();
         SuccessUpdatedUser updateUserData;
 
@@ -145,8 +147,6 @@ public class UserTest extends ApiTestRunner {
         //Check if user can change data
         Authorization authAsUser = new Authorization(userData.getEmail(), userData.getPassword());
         UserClient userClientAsUser = new UserClient(authAsUser.getToken());
-
-        Specifications.setResponseSpecification(expectedStatus);
 
         //No Last name
         updateUserData = (new ClientDataTransfer()).getUpdateUser();
@@ -182,7 +182,6 @@ public class UserTest extends ApiTestRunner {
         softAssert.assertEquals(error.getMessage(), "phone must not be blank");
 
         //Delete user
-        Specifications.setResponseSpecification(200);
         userClientAsAdmin.deleteUser(id);
 
         softAssert.assertAll();

@@ -10,6 +10,7 @@ import com.ita.edu.teachua.api.models.user.UserInfo;
 import com.ita.edu.teachua.utils.ClientDataTransfer;
 import io.qameta.allure.Description;
 import io.qameta.allure.Issue;
+import io.restassured.response.Response;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
@@ -29,7 +30,6 @@ public class RegistrationTest extends ApiTestRunner {
         final String expectedErrorMessageEmpty = " can`t be empty";
         final String expectedErrorMessageBlank = " must not be blank";
 
-        Specifications.setResponseSpecification(expectedStatus);
         SoftAssert softAssert = new SoftAssert();
         RegistrationClient regClient = new RegistrationClient();
         RegisterUser registerUser = (new ClientDataTransfer()).getRegisterUser();
@@ -90,7 +90,6 @@ public class RegistrationTest extends ApiTestRunner {
     public void testRegisterWithExistingCredentials() throws IOException {
         BaseErrorBody error;
         final int expectedStatus = 401;
-        Specifications.setResponseSpecification(200);
         JSONArray allUsers = (new JSONArray(new UserClient().getUsers().body().asString()));
         JSONObject userInfo = allUsers.getJSONObject(allUsers.length() - 1);
         RegisterUser existingUser = new RegisterUser(
@@ -102,7 +101,6 @@ public class RegistrationTest extends ApiTestRunner {
                 userInfo.getString("roleName")
         );
 
-        Specifications.setResponseSpecification(expectedStatus);
         RegistrationClient regClient = new RegistrationClient();
 
         error = regClient.registerUser(existingUser).then().log().all()
@@ -120,7 +118,6 @@ public class RegistrationTest extends ApiTestRunner {
         RegisterUser registerUser = (new ClientDataTransfer()).getRegisterUser();
         registerUser.setRoleName("SOME_ROLE");
 
-        Specifications.setResponseSpecification(expectedStatus);
         RegistrationClient regClient = new RegistrationClient();
 
         error = regClient.registerUser(registerUser).then().log().all()
@@ -138,7 +135,6 @@ public class RegistrationTest extends ApiTestRunner {
         final String emptyString = "";
         RegisterUser registerUser = new RegisterUser(emptyString, emptyString, emptyString, emptyString, emptyString, emptyString);
 
-        Specifications.setResponseSpecification(expectedStatus);
         RegistrationClient regClient = new RegistrationClient();
 
         error = regClient.registerUser(registerUser).then().log().all()
@@ -151,13 +147,14 @@ public class RegistrationTest extends ApiTestRunner {
     @Test(description = "TUA-499")
     public void testRegisterWithInvalidPassword() throws IOException {
         BaseErrorBody error;
+        Response response;
         final int expectedStatus = 400;
         RegisterUser registerUser = (new ClientDataTransfer()).getRegisterUser();
         registerUser.setPassword("123456");
-        Specifications.setResponseSpecification(expectedStatus);
         RegistrationClient regClient = new RegistrationClient();
 
-        error = regClient.registerUser(registerUser).then().log().all()
+        response =regClient.registerUser(registerUser);
+        error = response.then().log().all()
                 .extract().as(BaseErrorBody.class);
         Assert.assertEquals(error.getStatus().intValue(), expectedStatus);
     }
@@ -169,13 +166,15 @@ public class RegistrationTest extends ApiTestRunner {
         BaseErrorBody error;
         final int expectedStatus = 400;
         RegisterUser registerUser = (new ClientDataTransfer()).getRegisterUser();
-        Specifications.setResponseSpecification(expectedStatus);
         RegistrationClient regClient = new RegistrationClient();
+        Response response;
         SoftAssert softAssert = new SoftAssert();
 
         //Numbers in First name
         registerUser.setFirstName("218934");
-        error = regClient.registerUser(registerUser).then().log().all()
+        response = regClient.registerUser(registerUser);
+        softAssert.assertEquals(response.statusCode(), expectedStatus);
+        error = response.then().log().all()
                 .extract().as(BaseErrorBody.class);
         softAssert.assertEquals(error.getStatus().intValue(), expectedStatus);
         softAssert.assertEquals(error.getMessage(), "\"firstName\" can`t contain numbers");
@@ -183,7 +182,9 @@ public class RegistrationTest extends ApiTestRunner {
         //Special symbols in First name
         registerUser = (new ClientDataTransfer()).getRegisterUser();
         registerUser.setFirstName("&(*#@*$#@^");
-        error = regClient.registerUser(registerUser).then().log().all()
+        response = regClient.registerUser(registerUser);
+        softAssert.assertEquals(response.statusCode(), expectedStatus);
+        error = response.then().log().all()
                 .extract().as(BaseErrorBody.class);
         softAssert.assertEquals(error.getStatus().intValue(), expectedStatus);
         softAssert.assertEquals(error.getMessage(), "\"firstName\" can contain only ukrainian and english letters");
@@ -191,7 +192,9 @@ public class RegistrationTest extends ApiTestRunner {
         //More than 25 symbols in First name
         registerUser = (new ClientDataTransfer()).getRegisterUser();
         registerUser.setFirstName("Kukukukukukukukukukukukukukukuku");
-        error = regClient.registerUser(registerUser).then().log().all()
+        response = regClient.registerUser(registerUser);
+        softAssert.assertEquals(response.statusCode(), expectedStatus);
+        error = response.then().log().all()
                 .extract().as(BaseErrorBody.class);
         softAssert.assertEquals(error.getStatus().intValue(), expectedStatus);
         softAssert.assertEquals(error.getMessage(), "\"firstName\" can contain from 1 to 25 letters");
@@ -199,7 +202,9 @@ public class RegistrationTest extends ApiTestRunner {
         //Numbers in Last name
         registerUser = (new ClientDataTransfer()).getRegisterUser();
         registerUser.setLastName("218934");
-        error = regClient.registerUser(registerUser).then().log().all()
+        response = regClient.registerUser(registerUser);
+        softAssert.assertEquals(response.statusCode(), expectedStatus);
+        error = response.then().log().all()
                 .extract().as(BaseErrorBody.class);
         softAssert.assertEquals(error.getStatus().intValue(), expectedStatus);
         softAssert.assertEquals(error.getMessage(), "\"lastName\" can`t contain numbers");
@@ -207,7 +212,9 @@ public class RegistrationTest extends ApiTestRunner {
         //Special symbols in Last name
         registerUser = (new ClientDataTransfer()).getRegisterUser();
         registerUser.setLastName("&(*#@*$#@^");
-        error = regClient.registerUser(registerUser).then().log().all()
+        response = regClient.registerUser(registerUser);
+        softAssert.assertEquals(response.statusCode(), expectedStatus);
+        error = response.then().log().all()
                 .extract().as(BaseErrorBody.class);
         softAssert.assertEquals(error.getStatus().intValue(), expectedStatus);
         softAssert.assertEquals(error.getMessage(), "\"lastName\" can contain only ukrainian and english letters");
@@ -215,7 +222,9 @@ public class RegistrationTest extends ApiTestRunner {
         //More than 25 symbols in Last name
         registerUser = (new ClientDataTransfer()).getRegisterUser();
         registerUser.setLastName("Kukukukukukukukukukukukukukukuku");
-        error = regClient.registerUser(registerUser).then().log().all()
+        response = regClient.registerUser(registerUser);
+        softAssert.assertEquals(response.statusCode(), expectedStatus);
+        error = response.then().log().all()
                 .extract().as(BaseErrorBody.class);
         softAssert.assertEquals(error.getStatus().intValue(), expectedStatus);
         softAssert.assertEquals(error.getMessage(), "\"lastName\" can contain from 1 to 25 letters");
@@ -228,12 +237,15 @@ public class RegistrationTest extends ApiTestRunner {
     @Test(description = "TUA-457")
     public void testRegisterWithValidData() throws IOException {
         SuccessRegistration successRegistration;
+        Response response;
         final int expectedStatus = 200;
         RegisterUser registerUser = (new ClientDataTransfer()).getRegisterUser();
-        Specifications.setResponseSpecification(expectedStatus);
         RegistrationClient regClient = new RegistrationClient();
 
-        successRegistration = regClient.registerUser(registerUser).then().log().all()
+        response = regClient.registerUser(registerUser);
+        Assert.assertEquals(response.statusCode(), expectedStatus);
+
+        successRegistration = response.then().log().all()
                 .extract().as(SuccessRegistration.class);
 
         Assert.assertNotNull(successRegistration.getId());
