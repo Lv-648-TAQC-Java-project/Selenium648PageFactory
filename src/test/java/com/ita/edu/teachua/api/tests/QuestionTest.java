@@ -15,7 +15,6 @@ public class QuestionTest extends AuthorizedApiTestRunner {
     @Description("[API] Update title of Frequently Asked Question")
     @Test(description = "TUA")
     public void updateTitleOfFAQTest() throws IOException {
-        Specifications.setResponseSpecification(200);
         authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
         QuestionClient questionClient = new QuestionClient(authorization.getToken());
         Question question = Question.builder()
@@ -26,6 +25,7 @@ public class QuestionTest extends AuthorizedApiTestRunner {
         int questionId = response.path("id");
 
         SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(response.getStatusCode(), 200);
         softAssert.assertEquals(response.path("title"), "Як допомогти цьому проекту?");
         softAssert.assertEquals(response.path("text"), "Скористайтесь наступним посиланням: " +
                 "https://secure.wayforpay.com/payment/s0f2891d77061");
@@ -33,9 +33,12 @@ public class QuestionTest extends AuthorizedApiTestRunner {
         question.setTitle("Як підтримати ваш проект?");
         Response responseUpdate = questionClient.updateQuestionById(question, questionId);
 
+        softAssert.assertEquals(responseUpdate.getStatusCode(), 200);
         softAssert.assertEquals(responseUpdate.path("title"), "Як підтримати ваш проект?");
 
-        questionClient.deleteQuestion(questionId);
+        Response responseDelete = questionClient.deleteQuestion(questionId);
+        softAssert.assertEquals(responseDelete.getStatusCode(), 200);
+
         softAssert.assertAll();
     }
 
@@ -43,16 +46,13 @@ public class QuestionTest extends AuthorizedApiTestRunner {
     @Description("[API] Get FAQ by id")
     @Test(description = "TUA")
     public void getQuestionByIdTest() throws IOException {
-        Specifications.setResponseSpecification(200);
         QuestionClient questionClient = new QuestionClient(authorization.getToken());
         Response response = questionClient.getQuestionByID(3);
-        QuestionResponse questionResponse = response.then()
-                .log().all()
-                .extract().as(QuestionResponse.class);
 
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(questionResponse.getTitle(), "Що має містити скарга?");
-        softAssert.assertEquals(questionResponse.getText(), "У скарзі обов’язково має бути зазначено: прізвище," +
+        softAssert.assertEquals(response.getStatusCode(), 200);
+        softAssert.assertEquals(response.path("title "), "Що має містити скарга?");
+        softAssert.assertEquals(response.path("text"), "У скарзі обов’язково має бути зазначено: прізвище," +
                 " ім’я, по батькові, місце проживання особи, викладено суть скарги, який саме суб’єкт/працівник суб’єкта," +
                 " коли, за якою адресою, яким чином порушив право скаржника. Рекомендуємо також додати докази на підтвердження.");
         softAssert.assertAll();

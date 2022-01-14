@@ -14,11 +14,9 @@ import java.io.IOException;
 
 public class CityTest extends AuthorizedApiTestRunner {
 
-
     @Description("[API] Change the values of the longitude and latitude of the city")
     @Test(description = "TUA")
     public void changeLongitudeAndLatitudeOfCityTest() throws IOException {
-        Specifications.setResponseSpecification(200);
         authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
         CityClient cityClient = new CityClient(authorization.getToken());
         City city = City.builder()
@@ -27,25 +25,25 @@ public class CityTest extends AuthorizedApiTestRunner {
                 .longitude(49.2542f)
                 .build();
 
-        CityResponse cityResponse = cityClient.addNewCity(city)
-                .then()
-                .log().all()
-                .extract().as(CityResponse.class);
+        Response responseCreate = cityClient.addNewCity(city);
 
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(cityResponse.getName(), "Черкаси_1");
-        softAssert.assertEquals(cityResponse.getLatitude(), 32.0643f);
-        softAssert.assertEquals(cityResponse.getLongitude(), 49.2542f);
+        softAssert.assertEquals(responseCreate.getStatusCode(), 200);
+        softAssert.assertEquals(responseCreate.path("name"), "Черкаси_1");
+        softAssert.assertEquals(responseCreate.path("latitude"), 32.0643f);
+        softAssert.assertEquals(responseCreate.path("longitude"), 49.2542f);
 
-        int id = cityResponse.getId();
+        int id = responseCreate.path("id");
         city.setLatitude(49.2542f);
         city.setLongitude(32.0643f);
         Response responseUpdate = cityClient.updateCityById(city, id);
 
+        softAssert.assertEquals(responseUpdate.getStatusCode(), 200);
         softAssert.assertEquals(responseUpdate.path("latitude"), 49.2542f);
         softAssert.assertEquals(responseUpdate.path("longitude"), 32.0643f);
 
-        cityClient.deleteCityById(id);
+        Response responseDelete = cityClient.deleteCityById(id);
+        softAssert.assertEquals(responseDelete.getStatusCode(), 200);
         softAssert.assertAll();
     }
 
@@ -68,7 +66,6 @@ public class CityTest extends AuthorizedApiTestRunner {
     @Description("[API] Get array of cities")
     @Test(description = "TUA")
     public void getListOfCitiesTest() throws IOException {
-        Specifications.setResponseSpecification(200);
         CityClient cityClient = new CityClient(authorization.getToken());
         Response response = cityClient.getCities();
         CityResponse[] cityResponses = response.then()
@@ -76,6 +73,7 @@ public class CityTest extends AuthorizedApiTestRunner {
                 .extract().as(CityResponse[].class);
 
         SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(response.getStatusCode(), 200);
         softAssert.assertEquals(cityResponses[0].getName(), "Київ");
         softAssert.assertEquals(cityResponses[1].getName(), "Харків");
         softAssert.assertEquals(cityResponses[2].getName(), "Дніпро");
