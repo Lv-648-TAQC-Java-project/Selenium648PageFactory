@@ -7,6 +7,7 @@ import com.ita.edu.teachua.api.models.feedback.feedback_response.FeedbackRespons
 import io.qameta.allure.Description;
 import io.qameta.allure.Issue;
 import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -18,7 +19,6 @@ public class FeedbackTest extends AuthorizedApiTestRunner {
     @Issue("TUA-376")
     @Test(description = "TUA-376")
     public void addFeedbackToClubTest() throws IOException {
-        Specifications.setResponseSpecification(200);
         FeedbackClient feedbackClient = new FeedbackClient(authorization.getToken());
         FeedbackRequest feedback = FeedbackRequest.builder()
                 .text("An example of positive feedback")
@@ -27,16 +27,14 @@ public class FeedbackTest extends AuthorizedApiTestRunner {
                 .userId(authorization.getCurrentAuthorizedUserID())
                 .build();
 
-        FeedbackResponse response = feedbackClient.addNewFeedback(feedback)
-                .then()
-                .log().all()
-                .extract().as(FeedbackResponse.class);
+        Response response = feedbackClient.addNewFeedback(feedback);
 
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertNotNull(response.getId());
-        softAssert.assertEquals(response.getRate(), 5.0f);
-        softAssert.assertEquals(response.getText(), "An example of positive feedback");
-        softAssert.assertEquals(response.getClubId(), (Integer) 389);
+        softAssert.assertEquals(response.getStatusCode(), 200);
+        softAssert.assertNotNull(response.path("id"));
+        softAssert.assertEquals(response.path("rate"), 5.0f);
+        softAssert.assertEquals(response.path("text"), "An example of positive feedback");
+        softAssert.assertEquals(response.path("clubId"), (Integer) 389);
         softAssert.assertAll();
     }
 
@@ -45,7 +43,6 @@ public class FeedbackTest extends AuthorizedApiTestRunner {
     @Issue("TUA-370")
     @Test(description = "TUA-370")
     public void createFeedbackWithEmptyTextFiledTest() throws IOException {
-        Specifications.setResponseSpecification(400);
         FeedbackClient feedbackClient = new FeedbackClient(authorization.getToken());
         FeedbackRequest feedback = FeedbackRequest.builder()
                 .rate(4.0f)
@@ -53,23 +50,22 @@ public class FeedbackTest extends AuthorizedApiTestRunner {
                 .clubId(5)
                 .userId(authorization.getCurrentAuthorizedUserID())
                 .build();
-        feedbackClient.addNewFeedback(feedback);
+        Response response = feedbackClient.addNewFeedback(feedback);
+
+        Assert.assertEquals(response.getStatusCode(), 400);
     }
 
 
     @Description("[API] Get feedback by id")
     @Test(description = "TUA")
     public void getFeedbackByIdTest() throws IOException {
-        Specifications.setResponseSpecification(200);
         FeedbackClient feedbackClient = new FeedbackClient(authorization.getToken());
         Response response = feedbackClient.getFeedbackById(10);
-        Feedback feedbackRequest = response.then()
-                .log().all()
-                .extract().as(Feedback.class);
 
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(feedbackRequest.getId(), (Integer) 10);
-        softAssert.assertEquals(feedbackRequest.getText(), "Verify if error message appears if entered data is invalid\n");
+        softAssert.assertEquals(response.getStatusCode(), 200);
+        softAssert.assertEquals(response.path("id"), (Integer) 10);
+        softAssert.assertEquals(response.path("text"), "Verify if error message appears if entered data is invalid\n");
         softAssert.assertAll();
     }
 
