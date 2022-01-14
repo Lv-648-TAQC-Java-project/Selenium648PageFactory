@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.cucumber.CucumberTestRunner;
+package com.ita.edu.teachua.cucumber.cucumberTestRunner;
 
 import io.cucumber.testng.*;
 import org.testng.annotations.AfterClass;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 
 @CucumberOptions(
-        features = "src/test/java/com/ita/edu/teachua/cucumber/features",
+        features = "src/test/resources/features",
         glue = {"com.ita.edu.teachua.cucumber.steps_definitions"}
 
 )
@@ -19,7 +19,7 @@ public class CucumberTestRunner extends AbstractTestNGCucumberTests {
     public void setUpClass(){
         testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
     }
-    @Test(description = "TUA-160", dataProvider = "scenarios")
+    @Test(description = "Club Add Location Test", dataProvider = "scenarios")
     public void scenario(PickleWrapper pickle, FeatureWrapper cucumberFeature) {
         testNGCucumberRunner.runScenario(pickle.getPickle());
     }
