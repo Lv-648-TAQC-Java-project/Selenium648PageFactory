@@ -2,8 +2,8 @@ package com.ita.edu.teachua.cucumber.steps_definitions;
 
 
 
-import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
-import com.ita.edu.teachua.ui.pages.profile_page.AddCenterPopUpComponent;
+import com.ita.edu.teachua.ui.pages.AllPages;
+
 import com.ita.edu.teachua.ui.pages.profile_page.AddLocationPopUpComponent;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -13,41 +13,49 @@ import org.testng.asserts.SoftAssert;
 
 
 import java.io.IOException;
-
+import java.lang.reflect.InvocationTargetException;
 
 
 public class CannotAddLocation  {
-    private BaseDefinition baseDef;
-    private Object obj;
+    private final BaseDefinition baseDef;
+    private AllPages allPages;
     private SoftAssert softAssert;
     public CannotAddLocation(BaseDefinition baseDef) throws IOException {
        this.baseDef = baseDef;
-
+       allPages = new AllPages(baseDef.getDriver());
+       softAssert = new SoftAssert();
     }
 
     @Given("Log in as an Керівник email = {string}, password = {string}")
     public void logInAsAnКерівникEmailPassword(String email, String password) {
-        softAssert = new SoftAssert();
-        HeaderPage header = new HeaderPage(baseDef.getDriver());
-        obj = header
-                .authorize(email, password);
-
+        allPages.getHeaderPage().authorize(email,password);
     }
 
     @Then("Go to the Додати центр")
     public void goToTheДодатиЦентр() {
-        obj = ((HeaderPage) obj).clickOnOwnerDropdown().clickOnAddCenterButton();
+        allPages.setCurrentComponent(allPages.getHeaderPage().clickOnOwnerDropdown().clickOnAddCenterButton());
     }
 
     @And("Click on Додати локацію button")
-    public void clickOnДодатиЛокаціюButton() {
-        obj = ((AddCenterPopUpComponent) obj).clickOnAddLocationButton();
+    public void clickOnДодатиЛокаціюButton() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+
+        allPages.setCurrentComponent(
+                allPages.getCurrentComponent()
+                        .getClass()
+                        .getMethod("clickOnAddLocationButton").
+                        invoke(allPages.getCurrentComponent())
+        );
 
     }
 
     @Then("Check if Додати локацію pop up is opened")
-    public void checkIfДодатиЛокаціюPopUpIsOpened() {
-        softAssert.assertTrue(((AddLocationPopUpComponent) obj).addLocationPopUpBlockIsDisplayed());
+    public void checkIfДодатиЛокаціюPopUpIsOpened() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        softAssert.assertTrue(
+                (Boolean) allPages.getCurrentComponent()
+                        .getClass()
+                        .getMethod("addLocationPopUpBlockIsDisplayed")
+                        .invoke(allPages.getCurrentComponent())
+        );
     }
 
 

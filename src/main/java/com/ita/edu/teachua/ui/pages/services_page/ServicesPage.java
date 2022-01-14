@@ -7,4 +7,8 @@ public class ServicesPage extends BasePage {
     public ServicesPage(WebDriver driver) {
         super(driver);
     }
+
+    public ServicesPage getServicesPage(){
+        return this;
+    }
 }

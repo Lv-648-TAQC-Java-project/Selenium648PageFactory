@@ -79,4 +79,8 @@ public class ProfilePage extends BasePage {
     public String verifyPage(){
     return title.getText();
     }
+
+    public ProfilePage getProfilePage(){
+        return this;
+    }
 }

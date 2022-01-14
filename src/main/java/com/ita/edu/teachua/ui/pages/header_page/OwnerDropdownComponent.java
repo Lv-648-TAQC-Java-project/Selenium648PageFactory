@@ -45,4 +45,8 @@ public class OwnerDropdownComponent extends BasePage {
         sleep(200);
         return new AdministrationDropdownComponent(driver);
     }
+
+    public OwnerDropdownComponent getOwnerDropdownComponent(){
+        return this;
+    }
 }

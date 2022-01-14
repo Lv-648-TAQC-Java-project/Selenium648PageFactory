@@ -68,4 +68,8 @@ public class ClubsPage extends BasePage {
     public int getNumberOfPagesWithClubs() {
         return Integer.parseInt(lastPageButton.getText());
     }
+
+    public ClubsPage getClubsPage(){
+        return this;
+    }
 }

@@ -82,4 +82,8 @@ public class RestoringPasswordFinishPopUpComponent extends BasePage {
     public Input getEnterPassword(){
         return enterPassword;
     }
+
+    public RestoringPasswordFinishPopUpComponent getRestoringPasswordFinishPopUpComponent(){
+        return this;
+    }
 }

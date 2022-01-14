@@ -7,4 +7,8 @@ public class ShowOnMapPopUpComponent extends BasePage {
     public ShowOnMapPopUpComponent(WebDriver driver) {
         super(driver);
     }
+
+    public ShowOnMapPopUpComponent getShowOnMapPopUpComponent(){
+        return this;
+    }
 }

@@ -7,4 +7,8 @@ public class ChallengePage extends BasePage {
     public ChallengePage(WebDriver driver) {
         super(driver);
     }
+
+    public ChallengePage getChallengePage(){
+        return this;
+    }
 }

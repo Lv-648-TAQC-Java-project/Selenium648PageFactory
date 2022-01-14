@@ -62,4 +62,8 @@ public class RestoringBeginPopUpComponent extends BasePage {
         return this;
     }
 
+    public RestoringBeginPopUpComponent getRestoringBeginPopUpComponent(){
+        return this;
+    }
+
 }

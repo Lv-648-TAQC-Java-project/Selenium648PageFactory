@@ -64,4 +64,8 @@ public class MainPage extends BasePage {
         searchInput.sendKeys(Keys.CONTROL + "V");
         return new ClubsPage(driver);
     }
+
+    public MainPage getMainPage(){
+        return this;
+    }
 }

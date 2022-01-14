@@ -40,4 +40,8 @@ public class HeaderPage extends BasePage {
         sleep(3000);
         return new HeaderPage(driver);
     }
+
+    public HeaderPage getHeaderPage(){
+        return this;
+    }
 }

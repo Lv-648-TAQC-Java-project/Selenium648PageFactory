@@ -46,4 +46,8 @@ public class ClubsItemComponent {
     public Integer getRating() {
         return cardStars.size();
     }
+
+    public ClubsItemComponent getClubsItemComponent(){
+        return this;
+    }
 }

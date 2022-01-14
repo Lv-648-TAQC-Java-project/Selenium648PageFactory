@@ -225,4 +225,7 @@ public class AddClubPopUpComponent extends BasePage {
         }
     }
     /*Contacts area end*/
+    public AddClubPopUpComponent getAddClubPopUpComponent(){
+        return this;
+    }
 }

@@ -33,4 +33,8 @@ public class GuestDropdownComponent extends BasePage {
         return new LoginPopUpComponent(driver);
     }
 
+    public GuestDropdownComponent getGuestDropdownComponent(){
+        return this;
+    }
+
 }

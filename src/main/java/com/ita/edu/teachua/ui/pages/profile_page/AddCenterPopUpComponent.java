@@ -114,4 +114,7 @@ public class AddCenterPopUpComponent extends BasePage {
         clubCheckBox.check();
         return this;
     }
+    public AddCenterPopUpComponent getAddCenterPopUpComponent(){
+        return this;
+    }
 }

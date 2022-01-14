@@ -7,4 +7,8 @@ public class AboutUsPage extends BasePage {
     public AboutUsPage(WebDriver driver) {
         super(driver);
     }
+
+    public AboutUsPage getAboutUsPage(){
+        return this;
+    }
 }

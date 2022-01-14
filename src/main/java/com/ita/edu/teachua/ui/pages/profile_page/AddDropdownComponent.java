@@ -33,4 +33,8 @@ public class AddDropdownComponent extends BasePage {
         addClubButton.click();
         return new AddClubPopUpComponent(driver);
     }
+
+    public AddDropdownComponent getAddDropdownComponent(){
+        return this;
+    }
 }
