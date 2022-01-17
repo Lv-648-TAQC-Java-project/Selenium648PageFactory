@@ -252,16 +252,16 @@ public class AdvancedSearchTest extends TestRunner {
     public boolean isSortedByRating(List<Integer> ratings, boolean asc) {
         for (int j = 0; j < ratings.size() - 1; j++) {
             if (asc) {
-                if (ratings.get(j) < ratings.get(j + 1)) {
+                if (ratings.get(j) > ratings.get(j + 1)) {
                     break;
-                } else if (ratings.get(j) > ratings.get(j + 1)) {
+                } else if (ratings.get(j) < ratings.get(j + 1)) {
                     return false;
                 }
             }
             if (!asc) {
-                if (ratings.get(j) > ratings.get(j + 1)) {
+                if (ratings.get(j) < ratings.get(j + 1)) {
                     break;
-                } else if (ratings.get(j) < ratings.get(j + 1)) {
+                } else if (ratings.get(j) > ratings.get(j + 1)) {
                     return false;
                 }
             }
