@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.lang.reflect.InvocationTargetException;
 
-public class AllPages<T> {
+public class AllPages {
     private WebDriver driver;
 
     private HeaderPage headerPage;
@@ -26,17 +26,7 @@ public class AllPages<T> {
     private BannerPage bannerPage;
     private AboutUsPage aboutUsPage;
 
-    private T currentComponent;
 
-
-    public void setCurrentComponent(T currentComponent) {
-        this.currentComponent = currentComponent;
-
-    }
-
-    public T getCurrentComponent() {
-        return currentComponent;
-    }
 
     public AllPages(WebDriver driver){
         this.driver = driver;
@@ -80,5 +70,45 @@ public class AllPages<T> {
 
     public AboutUsPage getAboutUsPage() {
         return aboutUsPage == null ? new AboutUsPage(driver) : aboutUsPage;
+    }
+
+    public void setDriver(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public void setHeaderPage(HeaderPage headerPage) {
+        this.headerPage = headerPage;
+    }
+
+    public void setMainPage(MainPage mainPage) {
+        this.mainPage = mainPage;
+    }
+
+    public void setProfilePage(ProfilePage profilePage) {
+        this.profilePage = profilePage;
+    }
+
+    public void setServicesPage(ServicesPage servicesPage) {
+        this.servicesPage = servicesPage;
+    }
+
+    public void setClubsPage(ClubsPage clubsPage) {
+        this.clubsPage = clubsPage;
+    }
+
+    public void setChallengePage(ChallengePage challengePage) {
+        this.challengePage = challengePage;
+    }
+
+    public void setAdvancedSearchPage(AdvancedSearchPage advancedSearchPage) {
+        this.advancedSearchPage = advancedSearchPage;
+    }
+
+    public void setBannerPage(BannerPage bannerPage) {
+        this.bannerPage = bannerPage;
+    }
+
+    public void setAboutUsPage(AboutUsPage aboutUsPage) {
+        this.aboutUsPage = aboutUsPage;
     }
 }

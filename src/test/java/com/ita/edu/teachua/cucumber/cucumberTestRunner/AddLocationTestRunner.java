@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
         glue = {"com.ita.edu.teachua.cucumber.steps_definitions"}
 
 )
-public class CucumberTestRunner extends AbstractTestNGCucumberTests {
+public class AddLocationTestRunner extends AbstractTestNGCucumberTests {
     private TestNGCucumberRunner testNGCucumberRunner;
 
     @BeforeClass(alwaysRun=true)
