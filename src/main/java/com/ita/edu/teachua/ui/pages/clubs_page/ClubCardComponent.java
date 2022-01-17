@@ -7,4 +7,8 @@ public class ClubCardComponent extends BasePage {
     public ClubCardComponent(WebDriver driver) {
         super(driver);
     }
+
+    public ClubCardComponent getClubCardComponent(){
+        return this;
+    }
 }

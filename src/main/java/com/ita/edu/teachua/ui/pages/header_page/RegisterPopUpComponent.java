@@ -188,4 +188,8 @@ public class RegisterPopUpComponent extends BasePage {
     public String getPhoneNumberText() {
         return phoneNumber.getText();
     }
+
+    public RegisterPopUpComponent getRegisterPopUpComponent(){
+        return this;
+    }
 }

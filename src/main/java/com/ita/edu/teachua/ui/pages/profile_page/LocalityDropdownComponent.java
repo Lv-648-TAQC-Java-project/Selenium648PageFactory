@@ -23,4 +23,8 @@ public class LocalityDropdownComponent extends BasePage {
         akademmistechkoButton.click();
         return new AddLocationPopUpComponent(driver);
     }
+
+    public LocalityDropdownComponent getLocalityDropdownComponent(){
+        return this;
+    }
 }

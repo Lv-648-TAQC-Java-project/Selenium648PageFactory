@@ -7,4 +7,8 @@ public class ChallengeDropdownComponent extends BasePage {
     public ChallengeDropdownComponent(WebDriver driver) {
         super(driver);
     }
+
+    public ChallengeDropdownComponent getChallengeDropdownComponent(){
+        return this;
+    }
 }

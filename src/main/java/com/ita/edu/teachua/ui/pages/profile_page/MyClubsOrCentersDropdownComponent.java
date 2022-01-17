@@ -23,4 +23,8 @@ public class MyClubsOrCentersDropdownComponent extends BasePage {
         sleep(200);
         return new ProfilePage(driver);
     }
+
+    public MyClubsOrCentersDropdownComponent getMyClubsOrCentersDropdownComponent(){
+        return this;
+    }
 }

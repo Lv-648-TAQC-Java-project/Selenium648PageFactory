@@ -117,4 +117,8 @@ public class AddLocationPopUpComponent extends BasePage {
             return false;
         }
     }
+
+    public AddLocationPopUpComponent getAddLocationPopUpComponent(){
+        return this;
+    }
 }

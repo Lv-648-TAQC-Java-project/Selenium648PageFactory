@@ -7,4 +7,8 @@ public class ClubPagePopUpComponent extends BasePage {
     public ClubPagePopUpComponent(WebDriver driver) {
         super(driver);
     }
+
+    public ClubPagePopUpComponent getClubPagePopUpComponent(){
+        return this;
+    }
 }

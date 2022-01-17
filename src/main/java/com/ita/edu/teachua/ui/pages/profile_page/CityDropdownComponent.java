@@ -22,4 +22,8 @@ public class CityDropdownComponent extends BasePage {
         kyivButton.click();
         return new AddLocationPopUpComponent(driver);
     }
+
+    public CityDropdownComponent getCityDropdownComponent(){
+        return this;
+    }
 }

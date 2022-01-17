@@ -22,4 +22,8 @@ public class AdministrationDropdownComponent extends BasePage {
         bannerButton.click();
         return new BannerPage(driver);
     }
+
+    public AdministrationDropdownComponent getAdministrationDropdownComponent(){
+        return this;
+    }
 }

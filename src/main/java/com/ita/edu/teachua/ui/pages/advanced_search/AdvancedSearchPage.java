@@ -361,4 +361,8 @@ public class AdvancedSearchPage extends BasePage {
         sortByRatingButton.click();
         return this;
     }
+
+    public AdvancedSearchPage getAdvancedSearchPage(){
+        return this;
+    }
 }

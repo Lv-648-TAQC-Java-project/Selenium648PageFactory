@@ -155,4 +155,7 @@ public class ProfileEditPopUpComponent extends BasePage {
         return this;
     }
 
+    public ProfileEditPopUpComponent getProfileEditPopUpComponent(){
+        return this;
+    }
 }

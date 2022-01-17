@@ -21,4 +21,8 @@ public class DistrictDropdownComponent extends BasePage {
         desnianskyiButton.click();
         return new AddLocationPopUpComponent(driver);
     }
+
+    public DistrictDropdownComponent getDistrictDropdownComponent(){
+        return this;
+    }
 }

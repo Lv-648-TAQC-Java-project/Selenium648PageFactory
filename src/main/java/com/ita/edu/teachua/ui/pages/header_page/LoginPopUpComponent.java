@@ -62,4 +62,8 @@ public class LoginPopUpComponent extends BasePage {
         forgotPasswordButton.click();
         return new RestoringBeginPopUpComponent(driver);
     }
+
+    public LoginPopUpComponent getLoginPopUpComponent(){
+        return this;
+    }
 }
