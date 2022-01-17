@@ -128,7 +128,7 @@ public class OwnerProfileTest extends TestRunner {
                 .checkAddButton(); // check last expected condition
 
         Assert.assertFalse(addLocationButtonEnable);
-//
+
     }
 
     @DataProvider
