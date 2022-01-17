@@ -7,6 +7,7 @@ import com.ita.edu.teachua.ui.pages.challenge_page.ChallengePage;
 import com.ita.edu.teachua.ui.pages.clubs_page.ClubsPage;
 import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
 import com.ita.edu.teachua.ui.pages.main_page.MainPage;
+import com.ita.edu.teachua.ui.pages.profile_page.ProfileEditPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfilePage;
 import com.ita.edu.teachua.ui.pages.services_page.ServicesPage;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +26,6 @@ public class AllPages {
     private AdvancedSearchPage advancedSearchPage;
     private BannerPage bannerPage;
     private AboutUsPage aboutUsPage;
-
 
 
     public AllPages(WebDriver driver){

@@ -72,5 +72,13 @@ public class BaseDefinition {
     public String validAddress(String validAddress) {
         return validAddress;
     }
+    @ParameterType("([^\"]*)")
+    public String[] fieldPhone(String phone) {
+        return phone.split(",");
+    }
+    @ParameterType("([^\"]*)")
+    public String[] message(String message) {
+        return message.split(",");
+    }
 
 }
