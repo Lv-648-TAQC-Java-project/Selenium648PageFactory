@@ -6,6 +6,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import lombok.SneakyThrows;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -30,7 +31,9 @@ public class TestRunner {
     @SneakyThrows()
     @BeforeMethod
     public void beforeMethod(ITestContext context) {
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(testValueProvider.getBaseUrl());
