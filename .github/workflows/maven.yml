@@ -23,6 +23,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
+      run: |
+          mvn test -Dtest=OwnerProfileTest#VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty
       env: 
-        BASE_URL: ${{ secrets.BASE_URL }}
-      run: mvn test -Dtest=OwnerProfileTest#VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty
+          BASE_URL: ${{ secrets.BASE_URL }}
+          BASE_URL2: testURL2
