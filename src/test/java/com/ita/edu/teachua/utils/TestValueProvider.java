@@ -27,7 +27,7 @@ public class TestValueProvider {
         return  properties != null ? properties.getProperty("adminEmail") : System.getenv("ADMIN_PASSWORD");
     }
     public String getAdminEmail() {
-        return  properties != null ? properties.getProperty("adminPassword") : System.getenv("ADMIN_EMAIL");
+        return  properties != null ? properties.getProperty("adminPassword") : System.getenv("ADMIN_EMAILl");
     }
 
     public String getTestTeachUaMetaEmail() {
