@@ -13,6 +13,7 @@ public class TestValueProvider {
     }
 
     public String getBaseUrl() {
+        System.out.println(properties.getProperty("baseURL"));
         return properties.getProperty("baseURL");
     }
 
