@@ -17,11 +17,12 @@ public class TestValueProvider {
         System.out.println(properties.getProperty("baseURL"));
         Map<String, String> env = System.getenv();
 
-      // Java 8
-      env.forEach((k, v) -> System.out.println(">>T"+k + ":" + ">>T"+ v));
+        // Java 8
+        env.forEach((k, v) -> System.out.println(">>T"+k + ":" + ">>T"+ v));
 
         //return properties.getProperty("baseURL");
-        rerutn System.getenv("BASE_URL");
+        String java_home = System.getenv("BASE_URL");
+        return java_home;
     }
 
     public String getAdminPassword() {
