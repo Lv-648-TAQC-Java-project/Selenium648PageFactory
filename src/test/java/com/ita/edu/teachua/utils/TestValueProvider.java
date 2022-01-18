@@ -6,28 +6,34 @@ import java.util.Properties;
 import java.util.Map;
 
 public class TestValueProvider {
-    Properties properties = new Properties();
+    Properties properties;
 
-    public TestValueProvider() throws IOException {
-        FileInputStream fileInputStream = new FileInputStream("src/test/resources/data.properties");
-        properties.load(fileInputStream);
+    public TestValueProvider(){
+        try {
+            FileInputStream fileInputStream = new FileInputStream("src/test/resources/data.properties");
+            properties = new Properties()
+            properties.load(fileInputStream);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+            System.out.println("Use systen env");
+        }
     }
 
     public String getBaseUrl() {
-        return properties.getProperty("baseURL");
+        return  properties != null ? properties.getProperty("baseURL") : System.getenv("BASE_URL");
     }
 
     public String getAdminPassword() {
-        return properties.getProperty("adminPassword");
+        return  properties != null ? properties.getProperty("adminPassword") : System.getenv("ADMIN_EMAIL");
     }
     public String getAdminEmail() {
-        return properties.getProperty("adminEmail");
+        return  properties != null ? properties.getProperty("adminEmail") : System.getenv("ADMIN_PASSWORD");
     }
 
     public String getTestTeachUaMetaEmail() {
-        return properties.getProperty("TestTeachUaMetaEmail");
+        return  properties != null ? properties.getProperty("TestTeachUaMetaEmail") : System.getenv("TEST_TEACH_UA_META_EMAIL");
     }
     public String getTestTeachUaMetaPassword() {
-        return properties.getProperty("TestTeachUaMetaPassword");
+        return  properties != null ? properties.getProperty("TestTeachUaMetaPassword") : System.getenv("TEST_TEACH_UA_META_PASSWORD");
     }
 }
