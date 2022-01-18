@@ -1,6 +1,12 @@
 name: allure-testng-maven
 
-on: [ push ]
+#on: [ push ]
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
@@ -16,7 +22,7 @@ jobs:
 
       - name: Run Test
         if: always()
-        run: mvn package
+        run: mvn test -Dtest=OwnerProfileTest#VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty
         continue-on-error: true
 
       - name: Get Allure history
@@ -44,3 +50,8 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
+          BASE_URL: ${{ secrets.BASE_URL }}
+          ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          TEST_TEACH_UA_META_EMAIL: ${{ secrets.TEST_TEACH_UA_META_EMAIL }}
+          TEST_TEACH_UA_META_PASSWORD: ${{ secrets.TEST_TEACH_UA_META_PASSWORD }}
