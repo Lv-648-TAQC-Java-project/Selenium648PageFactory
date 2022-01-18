@@ -23,4 +23,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
+      env: 
+        BASE_URL:${{secrets.BASE_URL}}
       run: mvn test -Dtest=OwnerProfileTest#VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty
