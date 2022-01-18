@@ -14,15 +14,7 @@ public class TestValueProvider {
     }
 
     public String getBaseUrl() {
-        System.out.println(properties.getProperty("baseURL"));
-        Map<String, String> env = System.getenv();
-
-        // Java 8
-        env.forEach((k, v) -> System.out.println(">>T"+k + ":" + ">>T"+ v));
-
-        //return properties.getProperty("baseURL");
-        String java_home = System.getenv("BASE_URL");
-        return java_home;
+        return properties.getProperty("baseURL");
     }
 
     public String getAdminPassword() {
