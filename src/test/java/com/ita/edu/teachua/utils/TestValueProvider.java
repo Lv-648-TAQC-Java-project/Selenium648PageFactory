@@ -21,7 +21,7 @@ public class TestValueProvider {
       env.forEach((k, v) -> System.out.println(">>T"+k + ":" + ">>T"+ v));
 
         //return properties.getProperty("baseURL");
-        rerutn System.getenv("BASE_URL")
+        rerutn System.getenv("BASE_URL");
     }
 
     public String getAdminPassword() {
