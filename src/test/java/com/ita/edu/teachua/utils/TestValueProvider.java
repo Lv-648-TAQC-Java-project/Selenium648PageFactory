@@ -18,7 +18,7 @@ public class TestValueProvider {
         Map<String, String> env = System.getenv();
 
       // Java 8
-      env.forEach((k, v) -> System.out.println(k + ":" + v));
+      env.forEach((k, v) -> System.out.println(">>T"+k + ":" ">>T"+ v));
 
         return properties.getProperty("baseURL");
     }
