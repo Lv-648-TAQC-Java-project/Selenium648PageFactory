@@ -30,7 +30,7 @@ public class TestValueProvider {
     public String getAdminEmail() {
         return  properties != null ? properties.getProperty("adminPassword") : System.getenv("ADMIN_EMAIL");
     }
-//
+
     public String getTestTeachUaMetaEmail() {
         return  properties != null ? properties.getProperty("TestTeachUaMetaEmail") : System.getenv("TEST_TEACH_UA_META_EMAIL");
     }
