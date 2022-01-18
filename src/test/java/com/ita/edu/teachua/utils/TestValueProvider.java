@@ -20,7 +20,8 @@ public class TestValueProvider {
       // Java 8
       env.forEach((k, v) -> System.out.println(">>T"+k + ":" + ">>T"+ v));
 
-        return properties.getProperty("baseURL");
+        //return properties.getProperty("baseURL");
+        rerutn System.getenv("BASE_URL")
     }
 
     public String getAdminPassword() {
