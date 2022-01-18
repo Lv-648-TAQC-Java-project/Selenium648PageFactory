@@ -11,7 +11,7 @@ public class TestValueProvider {
     public TestValueProvider(){
         try {
             FileInputStream fileInputStream = new FileInputStream("src/test/resources/data.properties");
-            properties = new Properties()
+            properties = new Properties();
             properties.load(fileInputStream);
         } catch (IOException e) {
             System.out.println(e.getMessage());
