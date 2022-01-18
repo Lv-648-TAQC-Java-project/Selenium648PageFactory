@@ -24,6 +24,12 @@ jobs:
         if: always()
         run: mvn test -Dtest=OwnerProfileTest#VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty
         continue-on-error: true
+        env:
+          BASE_URL: ${{ secrets.BASE_URL }}
+          ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          TEST_TEACH_UA_META_EMAIL: ${{ secrets.TEST_TEACH_UA_META_EMAIL }}
+          TEST_TEACH_UA_META_PASSWORD: ${{ secrets.TEST_TEACH_UA_META_PASSWORD }}
 
       - name: Get Allure history
         uses: actions/checkout@v2
@@ -50,8 +56,3 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
-          BASE_URL: ${{ secrets.BASE_URL }}
-          ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
-          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
-          TEST_TEACH_UA_META_EMAIL: ${{ secrets.TEST_TEACH_UA_META_EMAIL }}
-          TEST_TEACH_UA_META_PASSWORD: ${{ secrets.TEST_TEACH_UA_META_PASSWORD }}
