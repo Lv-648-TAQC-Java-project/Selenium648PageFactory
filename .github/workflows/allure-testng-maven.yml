@@ -19,7 +19,14 @@ jobs:
         with:
           java-version: '8'
           distribution: 'adopt'
-
+      
+      - name: Set up CI environment
+        run: .github/setup.sh
+      - name: Install xvfb
+        run: sudo apt-get install xvfb
+      - name: Execute the build using xfvb
+        run: xvfb-run --auto-servernum .github/build.sh 
+     
       - name: Run Test
         if: always()
         run: mvn test #-Dtest=OwnerProfileTest#VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty
