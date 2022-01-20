@@ -21,7 +21,7 @@ jobs:
           distribution: 'adopt'
 
       - name: Run xvfb
-        run: xvfb-run --auto-servernum --server-num=1 
+        run: xvfb-run
      
       - name: Run Test
         if: always()
