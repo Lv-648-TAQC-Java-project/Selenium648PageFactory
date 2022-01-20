@@ -1,0 +1,341 @@
+{
+  "uid" : "51dc1867f1034292",
+  "name" : "TUA",
+  "fullName" : "com.ita.edu.teachua.api.tests.QuestionTest.updateTitleOfFAQTest",
+  "historyId" : "32b7341d28277e3b5060ddbe5addbd73",
+  "time" : {
+    "start" : 1642709346403,
+    "stop" : 1642709351138,
+    "duration" : 4735
+  },
+  "description" : "[API] Update title of Frequently Asked Question",
+  "descriptionHtml" : "<p>[API] Update title of Frequently Asked Question</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1642709344484,
+      "stop" : 1642709345528,
+      "duration" : 1044
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1642709344485,
+        "stop" : 1642709344485,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642709274183,
+      "stop" : 1642709276260,
+      "duration" : 2077
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "[API] Update title of Frequently Asked Question",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1642709346404,
+        "stop" : 1642709346404,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Add new question",
+      "time" : {
+        "start" : 1642709348631,
+        "stop" : 1642709349437,
+        "duration" : 806
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1642709348631,
+          "stop" : 1642709348631,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "question",
+        "value" : "Question(id=null, title=Як допомогти цьому проекту?, text=Скористайтесь наступним посиланням: https://secure.wayforpay.com/payment/s0f2891d77061)"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Update question with id = '255'",
+      "time" : {
+        "start" : 1642709349478,
+        "stop" : 1642709350284,
+        "duration" : 806
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1642709349478,
+          "stop" : 1642709349478,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "question",
+        "value" : "Question(id=null, title=Як підтримати ваш проект?, text=Скористайтесь наступним посиланням: https://secure.wayforpay.com/payment/s0f2891d77061)"
+      }, {
+        "name" : "id",
+        "value" : "255"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Delete question with id = '255'",
+      "time" : {
+        "start" : 1642709350308,
+        "stop" : 1642709351138,
+        "duration" : 830
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1642709350308,
+          "stop" : 1642709350309,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "255"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.QuestionTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.QuestionTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "updateTitleOfFAQTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.QuestionTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-933"
+  }, {
+    "name" : "thread",
+    "value" : "2827@fv-az74-933.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 1,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 11
+      },
+      "items" : [ {
+        "uid" : "5916ec8259d491c3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/24//#testresult/5916ec8259d491c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642704071035,
+          "stop" : 1642704076029,
+          "duration" : 4994
+        }
+      }, {
+        "uid" : "5d7e5a6294e85faa",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/23//#testresult/5d7e5a6294e85faa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642702978224,
+          "stop" : 1642702982962,
+          "duration" : 4738
+        }
+      }, {
+        "uid" : "3ad122b9f79ae3e2",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/22//#testresult/3ad122b9f79ae3e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642701972730,
+          "stop" : 1642701978260,
+          "duration" : 5530
+        }
+      }, {
+        "uid" : "78d24210a27eba4d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/21//#testresult/78d24210a27eba4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642701009996,
+          "stop" : 1642701016463,
+          "duration" : 6467
+        }
+      }, {
+        "uid" : "8b49dce1344166a",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/20//#testresult/8b49dce1344166a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642699829047,
+          "stop" : 1642699834858,
+          "duration" : 5811
+        }
+      }, {
+        "uid" : "6b928f7f3df11100",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/6b928f7f3df11100",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642696939148,
+          "stop" : 1642696944015,
+          "duration" : 4867
+        }
+      }, {
+        "uid" : "73a79c349c7993c4",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/73a79c349c7993c4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642695099304,
+          "stop" : 1642695104150,
+          "duration" : 4846
+        }
+      }, {
+        "uid" : "c4b6b72669dc906f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/c4b6b72669dc906f",
+        "status" : "skipped",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+        "time" : {
+          "start" : 1642693824132,
+          "stop" : 1642693824132,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "a885d470ae4148f2",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/18//#testresult/a885d470ae4148f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642684749850,
+          "stop" : 1642684755980,
+          "duration" : 6130
+        }
+      }, {
+        "uid" : "56b120d61422c637",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/17//#testresult/56b120d61422c637",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642678893627,
+          "stop" : 1642678899244,
+          "duration" : 5617
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "51dc1867f1034292.json",
+  "parameterValues" : [ ]
+}
