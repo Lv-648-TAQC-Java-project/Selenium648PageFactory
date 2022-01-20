@@ -87,6 +87,7 @@ public class CanAddLocation {
         pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent()
                 .clickOnCityDropdown()
                 .clickOnKyivButton();
+
     }
 
     @And("Check if The Kyiv city accepted from the drop-down list by when choosing it in dropdown with {addLocationPopUpIds} at 1 index")
