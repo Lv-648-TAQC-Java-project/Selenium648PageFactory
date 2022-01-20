@@ -1,0 +1,243 @@
+{
+  "uid" : "da55ffbe9964bd83",
+  "name" : "TUA-428",
+  "fullName" : "com.ita.edu.teachua.ui.tests.BasicSearchTest.checkInvalidSymbolsAndQuantityPaste",
+  "historyId" : "779a9f92fedfe4ba5b40844902b96850",
+  "time" : {
+    "start" : 1642701716142,
+    "stop" : 1642701716769,
+    "duration" : 627
+  },
+  "description" : "Verify search field behavior for invalid number of symbols pasted",
+  "descriptionHtml" : "<p>Verify search field behavior for invalid number of symbols pasted</p>\n",
+  "status" : "broken",
+  "statusMessage" : "\nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.",
+  "statusTrace" : "java.awt.HeadlessException: \nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.\n\tat sun.awt.HeadlessToolkit.getSystemClipboard(HeadlessToolkit.java:309)\n\tat com.ita.edu.teachua.ui.pages.main_page.MainPage.pasteClipBoardStringInSearchField(MainPage.java:62)\n\tat com.ita.edu.teachua.ui.tests.BasicSearchTest.checkInvalidSymbolsAndQuantityPaste(BasicSearchTest.java:67)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642701712097,
+      "stop" : 1642701716140,
+      "duration" : 4043
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642700942696,
+      "stop" : 1642700945757,
+      "duration" : 3061
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify search field behavior for invalid number of symbols pasted",
+    "status" : "broken",
+    "statusMessage" : "\nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.",
+    "statusTrace" : "java.awt.HeadlessException: \nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.\n\tat sun.awt.HeadlessToolkit.getSystemClipboard(HeadlessToolkit.java:309)\n\tat com.ita.edu.teachua.ui.pages.main_page.MainPage.pasteClipBoardStringInSearchField(MainPage.java:62)\n\tat com.ita.edu.teachua.ui.tests.BasicSearchTest.checkInvalidSymbolsAndQuantityPaste(BasicSearchTest.java:67)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+    "steps" : [ {
+      "name" : "Insert from clipboard *///* in search field",
+      "time" : {
+        "start" : 1642701716142,
+        "stop" : 1642701716255,
+        "duration" : 113
+      },
+      "status" : "broken",
+      "statusMessage" : "\nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.",
+      "statusTrace" : "java.awt.HeadlessException: \nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.\n\tat sun.awt.HeadlessToolkit.getSystemClipboard(HeadlessToolkit.java:309)\n\tat com.ita.edu.teachua.ui.pages.main_page.MainPage.pasteClipBoardStringInSearchField(MainPage.java:62)\n\tat com.ita.edu.teachua.ui.tests.BasicSearchTest.checkInvalidSymbolsAndQuantityPaste(BasicSearchTest.java:67)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "///"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "6f9cffc5f27b919e",
+      "name" : "Logs for thread 14",
+      "source" : "6f9cffc5f27b919e.log",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "8415edb7354e067e",
+      "name" : "Page screenshot",
+      "source" : "8415edb7354e067e.png",
+      "type" : "image/png",
+      "size" : 835285
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642701716770,
+      "stop" : 1642701716835,
+      "duration" : 65
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkInvalidSymbolsAndQuantityPaste"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az42-839"
+  }, {
+    "name" : "thread",
+    "value" : "2827@fv-az42-839.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "///"
+  }, {
+    "name" : "arg1",
+    "value" : "За критеріями пошуку гуртків не знайдено"
+  } ],
+  "links" : [ {
+    "name" : "TUA-428",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 7,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "9e91c0d86845f20a",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/20//#testresult/9e91c0d86845f20a",
+        "status" : "broken",
+        "statusDetails" : "\nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.",
+        "time" : {
+          "start" : 1642700572415,
+          "stop" : 1642700573015,
+          "duration" : 600
+        }
+      }, {
+        "uid" : "8a9e142cb65959cb",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/8a9e142cb65959cb",
+        "status" : "broken",
+        "statusDetails" : "\nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.",
+        "time" : {
+          "start" : 1642697462759,
+          "stop" : 1642697463027,
+          "duration" : 268
+        }
+      }, {
+        "uid" : "30398e94f8219a75",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/30398e94f8219a75",
+        "status" : "broken",
+        "statusDetails" : "\nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.",
+        "time" : {
+          "start" : 1642695792957,
+          "stop" : 1642695793284,
+          "duration" : 327
+        }
+      }, {
+        "uid" : "640bb0e45a4b6246",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/640bb0e45a4b6246",
+        "status" : "broken",
+        "statusDetails" : "\nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.",
+        "time" : {
+          "start" : 1642694378193,
+          "stop" : 1642694378609,
+          "duration" : 416
+        }
+      }, {
+        "uid" : "14a711ee16e4d162",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/18//#testresult/14a711ee16e4d162",
+        "status" : "broken",
+        "statusDetails" : "\nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.",
+        "time" : {
+          "start" : 1642685291845,
+          "stop" : 1642685292160,
+          "duration" : 315
+        }
+      }, {
+        "uid" : "3ab5196352e1a346",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/17//#testresult/3ab5196352e1a346",
+        "status" : "broken",
+        "statusDetails" : "\nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.",
+        "time" : {
+          "start" : 1642679569941,
+          "stop" : 1642679570283,
+          "duration" : 342
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "da55ffbe9964bd83.json",
+  "parameterValues" : [ "///", "За критеріями пошуку гуртків не знайдено" ]
+}

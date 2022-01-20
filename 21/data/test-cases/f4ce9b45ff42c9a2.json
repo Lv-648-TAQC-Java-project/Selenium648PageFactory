@@ -1,0 +1,230 @@
+{
+  "uid" : "f4ce9b45ff42c9a2",
+  "name" : "TUA-226",
+  "fullName" : "com.ita.edu.teachua.ui.tests.BasicSearchTest.checkSearchWithNameOfClubsTyping",
+  "historyId" : "2a3ed44920881dcfdad1cde347fbfa3a",
+  "time" : {
+    "start" : 1642701808785,
+    "stop" : 1642701810146,
+    "duration" : 1361
+  },
+  "description" : "TUA-226 Verify that user can perform basic search by typing name of a club",
+  "descriptionHtml" : "<p>TUA-226 Verify that user can perform basic search by typing name of a club</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642701804338,
+      "stop" : 1642701808784,
+      "duration" : 4446
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642700942696,
+      "stop" : 1642700945757,
+      "duration" : 3061
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "TUA-226 Verify that user can perform basic search by typing name of a club",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Type *LESKIV-SCHOOL* in search field",
+      "time" : {
+        "start" : 1642701808785,
+        "stop" : 1642701808961,
+        "duration" : 176
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "LESKIV-SCHOOL"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if club LESKIV-SCHOOL is present on the page",
+      "time" : {
+        "start" : 1642701808961,
+        "stop" : 1642701810146,
+        "duration" : 1185
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "LESKIV-SCHOOL"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642701810147,
+      "stop" : 1642701810213,
+      "duration" : 66
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkSearchWithNameOfClubsTyping"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az42-839"
+  }, {
+    "name" : "thread",
+    "value" : "2827@fv-az42-839.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "LESKIV-SCHOOL"
+  } ],
+  "links" : [ {
+    "name" : "TUA-226",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "9a04e31088ddbcc2",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/20//#testresult/9a04e31088ddbcc2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642700676368,
+          "stop" : 1642700677638,
+          "duration" : 1270
+        }
+      }, {
+        "uid" : "7665ae8dbbc5e940",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/7665ae8dbbc5e940",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642697561354,
+          "stop" : 1642697562614,
+          "duration" : 1260
+        }
+      }, {
+        "uid" : "e4b3ab0885670a66",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/e4b3ab0885670a66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642695892642,
+          "stop" : 1642695894152,
+          "duration" : 1510
+        }
+      }, {
+        "uid" : "23d0c33783db1535",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/23d0c33783db1535",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642694470005,
+          "stop" : 1642694471255,
+          "duration" : 1250
+        }
+      }, {
+        "uid" : "b2abd1ed63b6c230",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/18//#testresult/b2abd1ed63b6c230",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642685390425,
+          "stop" : 1642685391734,
+          "duration" : 1309
+        }
+      }, {
+        "uid" : "466396370a9712a9",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/17//#testresult/466396370a9712a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642679660307,
+          "stop" : 1642679661517,
+          "duration" : 1210
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f4ce9b45ff42c9a2.json",
+  "parameterValues" : [ "LESKIV-SCHOOL" ]
+}
