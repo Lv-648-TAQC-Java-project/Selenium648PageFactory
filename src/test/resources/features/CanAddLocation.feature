@@ -2,7 +2,7 @@ Feature: Verify that a 'Керівник' can add a location of a club
 
   Scenario Outline: This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.
 
-    Given Log in as an Керівник email = <adminEmail>, password = <adminPassword>
+    Given Log in as an Керівник
     Then Go to the Мій профіль
     Then Click the Додати гурток button
     And Enter valid data into the Назва field of Основна інформація tab <validClubName>
@@ -27,7 +27,7 @@ Feature: Verify that a 'Керівник' can add a location of a club
 
 
     Examples:
-      | adminEmail      | adminPassword | validClubName | ageFrom | ageTo | validLocationName | addLocationPopUpIds                                              |validAddress|
-      | admin@gmail.com | admin         | ValidName2    | 2       | 18    | ValidLocationName | name,cityName,stationName,districtName,address,coordinates,phone |ValidAddress|
+      | validClubName | ageFrom | ageTo | validLocationName | addLocationPopUpIds                                              |validAddress|
+      | ValidName2    | 2       | 18    | ValidLocationName | name,cityName,stationName,districtName,address,coordinates,phone |ValidAddress|
 
 

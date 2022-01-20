@@ -39,6 +39,10 @@ public class BaseDefinition {
         }
     }
 
+    public static TestValueProvider getTestValueProvider() {
+        return testValueProvider;
+    }
+
     public WebDriver getDriver(){
         return driver;
     }
