@@ -1,0 +1,251 @@
+{
+  "uid" : "185c1eab5bc3082e",
+  "name" : "TUA-210",
+  "fullName" : "com.ita.edu.teachua.ui.tests.AdvancedSearchTest.checkByValidAgeDataProvider",
+  "historyId" : "1320133d17102c5e335bfc94129af197",
+  "time" : {
+    "start" : 1642700173812,
+    "stop" : 1642700174188,
+    "duration" : 376
+  },
+  "description" : "TUA-210 Verify that input field 'Вік дитини' accepts only positive integers from 2 to 18",
+  "descriptionHtml" : "<p>TUA-210 Verify that input field 'Вік дитини' accepts only positive integers from 2 to 18</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642700169085,
+      "stop" : 1642700173810,
+      "duration" : 4725
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642699749677,
+      "stop" : 1642699751838,
+      "duration" : 2161
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "TUA-210 Verify that input field 'Вік дитини' accepts only positive integers from 2 to 18",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click on 'Розширений пошук' icon",
+      "time" : {
+        "start" : 1642700173812,
+        "stop" : 1642700173952,
+        "duration" : 140
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Type *18* in age field",
+      "time" : {
+        "start" : 1642700173952,
+        "stop" : 1642700174133,
+        "duration" : 181
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "18"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "press 'Enter' key after filling in 'Вік дитини' field",
+      "time" : {
+        "start" : 1642700174133,
+        "stop" : 1642700174161,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get text of 'Вік дитини' field",
+      "time" : {
+        "start" : 1642700174161,
+        "stop" : 1642700174161,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642700174189,
+      "stop" : 1642700174253,
+      "duration" : 64
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.AdvancedSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.AdvancedSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkByValidAgeDataProvider"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.AdvancedSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az135-188"
+  }, {
+    "name" : "thread",
+    "value" : "2902@fv-az135-188.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "18"
+  }, {
+    "name" : "arg1",
+    "value" : "18"
+  } ],
+  "links" : [ {
+    "name" : "TUA-210",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "5ef450cc83152c9b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/5ef450cc83152c9b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642697261294,
+          "stop" : 1642697261721,
+          "duration" : 427
+        }
+      }, {
+        "uid" : "b23a9b65cc6fdc74",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/b23a9b65cc6fdc74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642695591210,
+          "stop" : 1642695591595,
+          "duration" : 385
+        }
+      }, {
+        "uid" : "2e5c37bfd575a03e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/2e5c37bfd575a03e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642694184356,
+          "stop" : 1642694184789,
+          "duration" : 433
+        }
+      }, {
+        "uid" : "fbc9cef18f5331b2",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/18//#testresult/fbc9cef18f5331b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642685089715,
+          "stop" : 1642685090067,
+          "duration" : 352
+        }
+      }, {
+        "uid" : "d6890cf9fdf1d2d9",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/17//#testresult/d6890cf9fdf1d2d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642679217534,
+          "stop" : 1642679217867,
+          "duration" : 333
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "185c1eab5bc3082e.json",
+  "parameterValues" : [ "18", "18" ]
+}
