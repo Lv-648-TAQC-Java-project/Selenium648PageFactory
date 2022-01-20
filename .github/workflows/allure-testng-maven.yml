@@ -25,7 +25,7 @@ jobs:
      
       - name: Run Test
         if: always()
-        run: xvfb-run --auto-servernum | mvn test 
+        run: xvfb-run --auto-servernum --server-num=1 xlogo | mvn test 
         continue-on-error: true
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
