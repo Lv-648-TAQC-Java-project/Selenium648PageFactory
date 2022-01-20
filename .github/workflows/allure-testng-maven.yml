@@ -20,12 +20,12 @@ jobs:
           java-version: '8'
           distribution: 'adopt'
 
-      - name: Install xvfb
-        run: sudo apt-get install xvfb
+      - name: Run xvfb
+        run: xvfb-run --auto-servernum --server-num=1 xlogo
      
       - name: Run Test
         if: always()
-        run: xvfb-run --auto-servernum --server-num=1 xlogo | mvn test 
+        run: mvn test 
         continue-on-error: true
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
