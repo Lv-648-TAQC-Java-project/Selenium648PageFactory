@@ -61,8 +61,8 @@ public class MainPage extends BasePage {
         StringSelection stringSelection = new StringSelection(input);
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         clipboard.setContents(stringSelection, null);
-        //searchInput.sendKeys(Keys.CONTROL + "V");
-        searchInput.sendKeys(Keys.SHIFT, Keys.INSERT);
+        searchInput.sendKeys(Keys.CONTROL + "V");
+        //searchInput.sendKeys(Keys.SHIFT, Keys.INSERT);
         return new ClubsPage(driver);
     }
 
