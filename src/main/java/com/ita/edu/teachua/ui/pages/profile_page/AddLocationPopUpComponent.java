@@ -62,7 +62,7 @@ public class AddLocationPopUpComponent extends BasePage {
     @Step("Click on 'Місто' dropdown")
     public CityDropdownComponent clickOnCityDropdown() {
         cityDropdown.click();
-        sleep(1500);//TODO ask why
+        //sleep(1500);
         return new CityDropdownComponent(driver);
     }
 

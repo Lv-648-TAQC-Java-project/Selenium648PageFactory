@@ -316,7 +316,7 @@ public class AdvancedSearchPage extends BasePage {
     @Step("Get all clubs cards")
     public List<ClubsItemComponent> getClubCards() {
         List<ClubsItemComponent> cards = new ArrayList<>();
-        this.sleep(2000);
+        //this.sleep(2000);
         for (WebElement j : clubCards) {
             cards.add(new ClubsItemComponent(driver, j));
         }
@@ -344,20 +344,20 @@ public class AdvancedSearchPage extends BasePage {
 
     @Step("Get number of pages with clubs")
     public int getNumberOfPagesWithClubs() {
-        this.sleep(1000);
+        //this.sleep(1000);
         return Integer.parseInt(lastPageButton.getInnerText());
     }
 
     @Step("Click on arrow up to sort clubs in descending order")
     public AdvancedSearchPage clickOnArrowUpButton() {
-        sleep(1000);
+        //sleep(1000);
         arrowUpButton.click();
         return this;
     }
 
     @Step("Click on 'за рейтингом' to sort clubs by rating in descending order")
     public AdvancedSearchPage clickOnSortByRatingButton() {
-        sleep(1000);
+        //sleep(1000);
         sortByRatingButton.click();
         return this;
     }

@@ -25,9 +25,9 @@ public class OwnerDropdownComponent extends BasePage {
     }
     @Step("Click on 'Додати центр' button ")
     public AddCenterPopUpComponent clickOnAddCenterButton() {
-        sleep(200);
+        //sleep(200);
         addCenterButton.click();
-        sleep(200);
+        //sleep(200);
         return new AddCenterPopUpComponent(driver);
     }
 
@@ -40,9 +40,9 @@ public class OwnerDropdownComponent extends BasePage {
 
     @Step("Click on 'Адміністрування' button in dropdown")
     public AdministrationDropdownComponent clickOnAdministrationButton() {
-        sleep(200);
+        //sleep(200);
         administrationButton.click();
-        sleep(200);
+        //sleep(200);
         return new AdministrationDropdownComponent(driver);
     }
 
