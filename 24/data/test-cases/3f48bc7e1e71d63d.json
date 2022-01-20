@@ -1,0 +1,492 @@
+{
+  "uid" : "3f48bc7e1e71d63d",
+  "name" : "TUA-160",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty",
+  "historyId" : "91a4eadc8fcaed5ef2a2eb00eeebe764",
+  "time" : {
+    "start" : 1642704105592,
+    "stop" : 1642704115612,
+    "duration" : 10020
+  },
+  "description" : "This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty",
+  "descriptionHtml" : "<p>This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642704101131,
+      "stop" : 1642704105591,
+      "duration" : 4460
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642704002282,
+      "stop" : 1642704003989,
+      "duration" : 1707
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1642704105593,
+        "stop" : 1642704113734,
+        "duration" : 8141
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1642704105593,
+          "stop" : 1642704107727,
+          "duration" : 2134
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1642704107727,
+          "stop" : 1642704107888,
+          "duration" : 161
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1642704107888,
+          "stop" : 1642704110734,
+          "duration" : 2846
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1642704108582,
+            "stop" : 1642704108676,
+            "duration" : 94
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1642704108676,
+            "stop" : 1642704110734,
+            "duration" : 2058
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1642704113734,
+        "stop" : 1642704114358,
+        "duration" : 624
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Додати центр' button ",
+      "time" : {
+        "start" : 1642704114358,
+        "stop" : 1642704114857,
+        "duration" : 499
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on '+Додати локацію' button",
+      "time" : {
+        "start" : 1642704114858,
+        "stop" : 1642704114950,
+        "duration" : 92
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Checking that 'Додати локацію' pop-up is opened",
+      "time" : {
+        "start" : 1642704114950,
+        "stop" : 1642704115582,
+        "duration" : 632
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Checking that 'Додати' button is disabled",
+      "time" : {
+        "start" : 1642704115582,
+        "stop" : 1642704115611,
+        "duration" : 29
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642704115612,
+      "stop" : 1642704115675,
+      "duration" : 63
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az33-58"
+  }, {
+    "name" : "thread",
+    "value" : "3048@fv-az33-58.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-160",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 16,
+        "unknown" : 0,
+        "total" : 20
+      },
+      "items" : [ {
+        "uid" : "4ffed039a389f667",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/23//#testresult/4ffed039a389f667",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642703009691,
+          "stop" : 1642703021010,
+          "duration" : 11319
+        }
+      }, {
+        "uid" : "4508b26d7bfb875f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/22//#testresult/4508b26d7bfb875f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642702004245,
+          "stop" : 1642702015029,
+          "duration" : 10784
+        }
+      }, {
+        "uid" : "32998b6ce58668c3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/21//#testresult/32998b6ce58668c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642701052884,
+          "stop" : 1642701062525,
+          "duration" : 9641
+        }
+      }, {
+        "uid" : "d13261db0bf4edd",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/20//#testresult/d13261db0bf4edd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642699861230,
+          "stop" : 1642699872815,
+          "duration" : 11585
+        }
+      }, {
+        "uid" : "e296a0db4fa75749",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/e296a0db4fa75749",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642696965203,
+          "stop" : 1642696976436,
+          "duration" : 11233
+        }
+      }, {
+        "uid" : "229ba580fd429f29",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/229ba580fd429f29",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az121-65', ip: '10.1.0.11', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [49ebbd387112837ea53578875a889c9e, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.rzoweg}, goog:chromeOptions: {debuggerAddress: localhost:45397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45397/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 49ebbd387112837ea53578875a889c9e",
+        "time" : {
+          "start" : 1642695129992,
+          "stop" : 1642695150219,
+          "duration" : 20227
+        }
+      }, {
+        "uid" : "efae9170f16ef48d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/efae9170f16ef48d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642693903516,
+          "stop" : 1642693915559,
+          "duration" : 12043
+        }
+      }, {
+        "uid" : "79cb3eb92402b9a5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/18//#testresult/79cb3eb92402b9a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642684782333,
+          "stop" : 1642684792763,
+          "duration" : 10430
+        }
+      }, {
+        "uid" : "6bb5eb46a30493c6",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/17//#testresult/6bb5eb46a30493c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642678928199,
+          "stop" : 1642678942745,
+          "duration" : 14546
+        }
+      }, {
+        "uid" : "368bc523e79bcbb6",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/14//#testresult/368bc523e79bcbb6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642669841851,
+          "stop" : 1642669851792,
+          "duration" : 9941
+        }
+      }, {
+        "uid" : "9551a67a349eb7b9",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/13//#testresult/9551a67a349eb7b9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642667366679,
+          "stop" : 1642667377210,
+          "duration" : 10531
+        }
+      }, {
+        "uid" : "1d13e198e60f728f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/12//#testresult/1d13e198e60f728f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642579158200,
+          "stop" : 1642579169543,
+          "duration" : 11343
+        }
+      }, {
+        "uid" : "f227d6141814c51c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/11//#testresult/f227d6141814c51c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642529165142,
+          "stop" : 1642529174765,
+          "duration" : 9623
+        }
+      }, {
+        "uid" : "34324cb4709c767c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/10//#testresult/34324cb4709c767c",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLoginrrr\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.82', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [f798af85695f3d2ad8aa14e8e0ecb940, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLoginrrr}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.XU50lU}, goog:chromeOptions: {debuggerAddress: localhost:45597}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45597/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f798af85695f3d2ad8aa14e8e0ecb940",
+        "time" : {
+          "start" : 1642528856215,
+          "stop" : 1642528875730,
+          "duration" : 19515
+        }
+      }, {
+        "uid" : "6876c2121b8181a8",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/9//#testresult/6876c2121b8181a8",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLoginrrr\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az135-188', ip: '10.1.0.119', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [1b2a5331748ff83fd7b3e3a0d7100621, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLoginrrr}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.AH1sRu}, goog:chromeOptions: {debuggerAddress: localhost:35821}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35821/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1b2a5331748ff83fd7b3e3a0d7100621",
+        "time" : {
+          "start" : 1642528592802,
+          "stop" : 1642528612335,
+          "duration" : 19533
+        }
+      }, {
+        "uid" : "889be2e006cb305b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/8//#testresult/889be2e006cb305b",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLoginrrr\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az39-968', ip: '10.1.0.181', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [29502f53658188307a57386acf5679f1, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLoginrrr}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.uL82z8}, goog:chromeOptions: {debuggerAddress: localhost:44577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44577/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 29502f53658188307a57386acf5679f1",
+        "time" : {
+          "start" : 1642528197324,
+          "stop" : 1642528216999,
+          "duration" : 19675
+        }
+      }, {
+        "uid" : "efb55e82494de857",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/7//#testresult/efb55e82494de857",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642527942963,
+          "stop" : 1642527953697,
+          "duration" : 10734
+        }
+      }, {
+        "uid" : "6626a24e8a3f3cf5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/6//#testresult/6626a24e8a3f3cf5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642527662324,
+          "stop" : 1642527671991,
+          "duration" : 9667
+        }
+      }, {
+        "uid" : "1420c49856ebadef",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/5//#testresult/1420c49856ebadef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642527517198,
+          "stop" : 1642527527858,
+          "duration" : 10660
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3f48bc7e1e71d63d.json",
+  "parameterValues" : [ ]
+}
