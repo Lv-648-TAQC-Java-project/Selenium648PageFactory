@@ -34,7 +34,6 @@ public class CenterTests extends AuthorizedApiTestRunner {
 
     @Test //response swagger
     public void getCenter2() throws IOException {
-        Specifications.setResponseSpecification(200);
         CenterClient centerClient = new CenterClient(authorization.getToken());
         Response response = centerClient.getNewCenter(267);
         Content centerRoot2 = response.then().log().all()
@@ -46,7 +45,6 @@ public class CenterTests extends AuthorizedApiTestRunner {
 
     @Test //response swagger
     public void deleteCenter() throws IOException {
-        Specifications.setResponseSpecification(200);
         CenterClient centerClient = new CenterClient(authorization.getToken());
         Response response = centerClient.deleteNewCenter(265);
         CenterRoot2 centerRoot2 = response.then().log().all()
@@ -56,7 +54,6 @@ public class CenterTests extends AuthorizedApiTestRunner {
 
     @Test //change response
     public void changeCenter() throws IOException {
-        Specifications.setResponseSpecification(200);
         CenterClient centerClient = new CenterClient(authorization.getToken());
         Center center = new ClientDataTransfer().getAddCenter();
         center.setName("Java13");
@@ -70,7 +67,6 @@ public class CenterTests extends AuthorizedApiTestRunner {
 
     @Test //response swagger
     public void getListOfCenters() throws IOException {
-        Specifications.setResponseSpecification(200);
         CenterClient centerClient = new CenterClient(authorization.getToken());
         Response get = centerClient.getCenters();
         List<CenterRoot2> centers = get.then().log().all()
@@ -82,7 +78,6 @@ public class CenterTests extends AuthorizedApiTestRunner {
 
     @Test //pageable swagger
     public void getListOfCentersById() throws IOException {
-        Specifications.setResponseSpecification(200);
         CenterClient centerClient = new CenterClient(authorization.getToken());
         Response get = centerClient.getCentersById(29);
         Root2 centers = get.then().log().all()

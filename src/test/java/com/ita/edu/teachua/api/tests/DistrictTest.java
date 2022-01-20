@@ -13,7 +13,6 @@ import java.util.List;
 public class DistrictTest extends AuthorizedAsAdminApiTestRunner {
     @Test
     public void createDistrict() throws IOException {
-        //Specifications.setResponseSpecification(200);
         DistrictClient districtClient = new DistrictClient(authorization.getToken());
         Response response = districtClient.addNewDistrict();
 
@@ -27,7 +26,6 @@ public class DistrictTest extends AuthorizedAsAdminApiTestRunner {
 
     @Test
     public void getListOfDistricts() throws IOException {
-        Specifications.setResponseSpecification(200);
         DistrictClient districtClient = new DistrictClient(authorization.getToken());
         Response response = districtClient.getDistricts();
         List<SuccessDistrictModel> districts = response.then().log()

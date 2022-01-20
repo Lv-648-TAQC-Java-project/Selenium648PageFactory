@@ -15,7 +15,6 @@ public class GetCategoryTest extends AuthorizedApiTestRunner{
 
     @Test
     public void createCategory() throws IOException {
-        Specifications.setResponseSpecification(200);
         CategoryClient categoryClient = new CategoryClient(authorization.getToken());
         Response response = categoryClient.addNewCategory();
         Category category = response.then().log().all()
@@ -31,7 +30,6 @@ public class GetCategoryTest extends AuthorizedApiTestRunner{
 
     @Test
     public void getListOfCategories() throws IOException {
-        Specifications.setResponseSpecification(200);
         CategoryClient categoryClient = new CategoryClient(authorization.getToken());
         Response get = categoryClient.getCategories();
         List<Category> categories = get.then().log().all()
@@ -45,7 +43,6 @@ public class GetCategoryTest extends AuthorizedApiTestRunner{
 
     @Test
     public void getListOfCategoriesSearch() throws IOException {
-        Specifications.setResponseSpecification(200);
         CategoryClient categoryClient = new CategoryClient(authorization.getToken());
         Response get = categoryClient.getCategoriesSearch();
         CategoryRoot2 categoryRoot2 = get.then().log().all()
@@ -58,7 +55,6 @@ public class GetCategoryTest extends AuthorizedApiTestRunner{
 
     @Test
     public void deleteCategory() throws IOException {
-        Specifications.setResponseSpecification(200);
         CategoryClient categoryClient = new CategoryClient(authorization.getToken());
         Response delete = categoryClient.deleteNewCategory(13);
         Category category = delete.then().log().all()
@@ -72,7 +68,6 @@ public class GetCategoryTest extends AuthorizedApiTestRunner{
 
     @Test
     public void getCategory() throws IOException {
-        Specifications.setResponseSpecification(200);
         CategoryClient categoryClient = new CategoryClient(authorization.getToken());
         Response get = categoryClient.getNewCategory(12);
         Category category = get.then().log().all()
@@ -85,7 +80,6 @@ public class GetCategoryTest extends AuthorizedApiTestRunner{
 
     @Test
     public void changeCategory() throws IOException {
-        Specifications.setResponseSpecification(200);
         CategoryClient categoryClient = new CategoryClient(authorization.getToken());
         Category category = new ClientDataTransfer().getAddCategory();
         category.setDescription("description aaa bbb");
