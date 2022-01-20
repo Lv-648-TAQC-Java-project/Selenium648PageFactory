@@ -1,0 +1,158 @@
+{
+  "uid" : "6be0459dabb0b678",
+  "name" : "TUA-502",
+  "fullName" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest.VerifyThatUserAsOwnerCannotCreateNewClubIsInCenterIfNameFieldContainLessThan5Characters",
+  "historyId" : "c820dbadcb14cd1b7056c1876d08d7dc",
+  "time" : {
+    "start" : 1642678873047,
+    "stop" : 1642678874245,
+    "duration" : 1198
+  },
+  "description" : "This test case verify  that User as \"Керiвник гуртка\" cannot create new club is in a center if \"Назва\" field contain less than 5 characters",
+  "descriptionHtml" : "<p>This test case verify  that User as &quot;Керiвник гуртка&quot; cannot create new club is in a center if &quot;Назва&quot; field contain less than 5 characters</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1642678844062,
+      "stop" : 1642678845895,
+      "duration" : 1833
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1642678844063,
+        "stop" : 1642678844070,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642678818999,
+      "stop" : 1642678822090,
+      "duration" : 3091
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test case verify  that User as \"Керiвник гуртка\" cannot create new club is in a center if \"Назва\" field contain less than 5 characters",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1642678873051,
+        "stop" : 1642678874240,
+        "duration" : 1189
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1642678873051,
+          "stop" : 1642678873052,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Вокальна студія, музика, музичні інструменти], \"name\":\"char\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"blocks\":[{\"key\":\"brl63\",\"text\":\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\",\"type\":\"unstyled\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "VerifyThatUserAsOwnerCannotCreateNewClubIsInCenterIfNameFieldContainLessThan5Characters"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az36-128"
+  }, {
+    "name" : "thread",
+    "value" : "2944@fv-az36-128.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-502",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6be0459dabb0b678.json",
+  "parameterValues" : [ ]
+}

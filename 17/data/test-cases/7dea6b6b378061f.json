@@ -1,0 +1,165 @@
+{
+  "uid" : "7dea6b6b378061f",
+  "name" : "TUA-226",
+  "fullName" : "com.ita.edu.teachua.ui.tests.BasicSearchTest.checkSearchWithNameOfClubsTyping",
+  "historyId" : "23e0b8f3f6e3de147d2e580b38a3d984",
+  "time" : {
+    "start" : 1642679648868,
+    "stop" : 1642679650405,
+    "duration" : 1537
+  },
+  "description" : "TUA-226 Verify that user can perform basic search by typing name of a club",
+  "descriptionHtml" : "<p>TUA-226 Verify that user can perform basic search by typing name of a club</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642679644727,
+      "stop" : 1642679648867,
+      "duration" : 4140
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642678818999,
+      "stop" : 1642678822090,
+      "duration" : 3091
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "TUA-226 Verify that user can perform basic search by typing name of a club",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Type *Театральна Студія \"Зоряні Діти''* in search field",
+      "time" : {
+        "start" : 1642679648868,
+        "stop" : 1642679649130,
+        "duration" : 262
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "Театральна Студія \"Зоряні Діти''"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if club Театральна Студія \"Зоряні Діти'' is present on the page",
+      "time" : {
+        "start" : 1642679649130,
+        "stop" : 1642679650404,
+        "duration" : 1274
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Театральна Студія \"Зоряні Діти''"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642679650405,
+      "stop" : 1642679650475,
+      "duration" : 70
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkSearchWithNameOfClubsTyping"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az36-128"
+  }, {
+    "name" : "thread",
+    "value" : "2944@fv-az36-128.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Театральна Студія \"Зоряні Діти''"
+  } ],
+  "links" : [ {
+    "name" : "TUA-226",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7dea6b6b378061f.json",
+  "parameterValues" : [ "Театральна Студія \"Зоряні Діти''" ]
+}
