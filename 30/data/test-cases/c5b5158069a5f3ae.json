@@ -1,0 +1,275 @@
+{
+  "uid" : "c5b5158069a5f3ae",
+  "name" : "TUA-226",
+  "fullName" : "com.ita.edu.teachua.ui.tests.BasicSearchTest.checkSearchWithNameOfClubsTyping",
+  "historyId" : "5256eff01a03fd2e09912517ec4fae2a",
+  "time" : {
+    "start" : 1642708917248,
+    "stop" : 1642708918622,
+    "duration" : 1374
+  },
+  "description" : "TUA-226 Verify that user can perform basic search by typing name of a club",
+  "descriptionHtml" : "<p>TUA-226 Verify that user can perform basic search by typing name of a club</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642708913081,
+      "stop" : 1642708917246,
+      "duration" : 4165
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642708798899,
+      "stop" : 1642708800718,
+      "duration" : 1819
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "TUA-226 Verify that user can perform basic search by typing name of a club",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Type *IT освіта: курси \"ГРАНД\"* in search field",
+      "time" : {
+        "start" : 1642708917248,
+        "stop" : 1642708917530,
+        "duration" : 282
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "IT освіта: курси \"ГРАНД\""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if club IT освіта: курси \"ГРАНД\" is present on the page",
+      "time" : {
+        "start" : 1642708917530,
+        "stop" : 1642708918622,
+        "duration" : 1092
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "IT освіта: курси \"ГРАНД\""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642708918623,
+      "stop" : 1642708918690,
+      "duration" : 67
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkSearchWithNameOfClubsTyping"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az42-839"
+  }, {
+    "name" : "thread",
+    "value" : "2812@fv-az42-839.TestNG-tests-1(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "IT освіта: курси \"ГРАНД\""
+  } ],
+  "links" : [ {
+    "name" : "TUA-226",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 12,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "6e7849635ea3f607",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/29//#testresult/6e7849635ea3f607",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642708326529,
+          "stop" : 1642708327856,
+          "duration" : 1327
+        }
+      }, {
+        "uid" : "e5c993ec100f2d9f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/24//#testresult/e5c993ec100f2d9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642704847580,
+          "stop" : 1642704848890,
+          "duration" : 1310
+        }
+      }, {
+        "uid" : "a56aff244c5270da",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/23//#testresult/a56aff244c5270da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642703757123,
+          "stop" : 1642703758462,
+          "duration" : 1339
+        }
+      }, {
+        "uid" : "9593bc7b0401faeb",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/22//#testresult/9593bc7b0401faeb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642702777099,
+          "stop" : 1642702778429,
+          "duration" : 1330
+        }
+      }, {
+        "uid" : "606e6cf200961ef1",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/21//#testresult/606e6cf200961ef1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642701785711,
+          "stop" : 1642701787035,
+          "duration" : 1324
+        }
+      }, {
+        "uid" : "e40c56d160b23df",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/20//#testresult/e40c56d160b23df",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642700650630,
+          "stop" : 1642700651991,
+          "duration" : 1361
+        }
+      }, {
+        "uid" : "7534ca59b7f580dc",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/7534ca59b7f580dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642697536187,
+          "stop" : 1642697537489,
+          "duration" : 1302
+        }
+      }, {
+        "uid" : "effc475e773fcad5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/effc475e773fcad5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642695867723,
+          "stop" : 1642695869090,
+          "duration" : 1367
+        }
+      }, {
+        "uid" : "3b012a21ef929523",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/19//#testresult/3b012a21ef929523",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642694446776,
+          "stop" : 1642694448165,
+          "duration" : 1389
+        }
+      }, {
+        "uid" : "2dfc2b6046e9844f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/18//#testresult/2dfc2b6046e9844f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642685365082,
+          "stop" : 1642685366399,
+          "duration" : 1317
+        }
+      }, {
+        "uid" : "b392e1a3a6386899",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/17//#testresult/b392e1a3a6386899",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642679637568,
+          "stop" : 1642679638895,
+          "duration" : 1327
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c5b5158069a5f3ae.json",
+  "parameterValues" : [ "IT освіта: курси \"ГРАНД\"" ]
+}
