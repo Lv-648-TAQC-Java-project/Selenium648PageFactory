@@ -1,0 +1,823 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Unrecognized field \"timestamp\" (class com.ita.edu.teachua.api.models.category.Category), not marked as ignorable (8 known properties: \"sortby\", \"urlLogo\", \"id\", \"description\", \"backgroundColor\", \"name\", \"tagTextColor\", \"tagBackgroundColor\"])\n at [Source: (String)\"{\"timestamp\":1642693797745,\"status\":404,\"error\":\"Not Found\",\"message\":\"\",\"path\":\"/dev/api/categories/12\"}\"; line: 1, column: 27] (through reference chain: com.ita.edu.teachua.api.models.category.Category[\"timestamp\"])",
+      "children" : [ {
+        "name" : "changeCategory",
+        "uid" : "b9ab51e7b1c70109",
+        "parentUid" : "a7ec6b1d3bb0a41501a7c03b7773feab",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693796861,
+          "stop" : 1642693797828,
+          "duration" : 967
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a7ec6b1d3bb0a41501a7c03b7773feab"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.category.Category), not marked as ignorable (8 known properties: \"sortby\", \"urlLogo\", \"id\", \"description\", \"backgroundColor\", \"name\", \"tagTextColor\", \"tagBackgroundColor\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.category.Category[\"status\"])",
+      "children" : [ {
+        "name" : "createCategory",
+        "uid" : "97541af697502ff5",
+        "parentUid" : "5c681d67d5bdfac31e73151677c452c4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693797838,
+          "stop" : 1642693798642,
+          "duration" : 804
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5c681d67d5bdfac31e73151677c452c4"
+    }, {
+      "name" : "Unrecognized field \"timestamp\" (class com.ita.edu.teachua.api.models.category.Category), not marked as ignorable (8 known properties: \"sortby\", \"urlLogo\", \"id\", \"description\", \"backgroundColor\", \"name\", \"tagTextColor\", \"tagBackgroundColor\"])\n at [Source: (String)\"{\"timestamp\":1642693799385,\"status\":404,\"error\":\"Not Found\",\"message\":\"\",\"path\":\"/dev/api/categories/13\"}\"; line: 1, column: 27] (through reference chain: com.ita.edu.teachua.api.models.category.Category[\"timestamp\"])",
+      "children" : [ {
+        "name" : "deleteCategory",
+        "uid" : "1e3c743505797c72",
+        "parentUid" : "b50da8d364d84190b174a35f3f3bc529",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693798660,
+          "stop" : 1642693799464,
+          "duration" : 804
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b50da8d364d84190b174a35f3f3bc529"
+    }, {
+      "name" : "Unrecognized field \"timestamp\" (class com.ita.edu.teachua.api.models.category.Category), not marked as ignorable (8 known properties: \"sortby\", \"urlLogo\", \"id\", \"description\", \"backgroundColor\", \"name\", \"tagTextColor\", \"tagBackgroundColor\"])\n at [Source: (String)\"{\"timestamp\":1642693800288,\"status\":404,\"error\":\"Not Found\",\"message\":\"\",\"path\":\"/dev/api/categories/12\"}\"; line: 1, column: 27] (through reference chain: com.ita.edu.teachua.api.models.category.Category[\"timestamp\"])",
+      "children" : [ {
+        "name" : "getCategory",
+        "uid" : "3ddae91b0d3043d3",
+        "parentUid" : "5022cd0715d1b3e67139a7a9ab9818a0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693799469,
+          "stop" : 1642693800364,
+          "duration" : 895
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5022cd0715d1b3e67139a7a9ab9818a0"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+      "children" : [ {
+        "name" : "TUA-371/372/463",
+        "uid" : "1f81be14cc6f702e",
+        "parentUid" : "b2b7b2038509f1e5af5d98e87637ef9a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693817881,
+          "stop" : 1642693818752,
+          "duration" : 871
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b2b7b2038509f1e5af5d98e87637ef9a"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+      "children" : [ {
+        "name" : "TUA-498",
+        "uid" : "e3f31f7e83e9a9be",
+        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693818755,
+          "stop" : 1642693819585,
+          "duration" : 830
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "d4f86bc968f8e5c0",
+        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693822114,
+          "stop" : 1642693822114,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "f8b6207a898c740b",
+        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693822942,
+          "stop" : 1642693822942,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "8433ccf3d0405bcb",
+        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693824129,
+          "stop" : 1642693824130,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "3afa4b4f77d30345",
+        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693824928,
+          "stop" : 1642693824928,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "a9ec727d0d36b6e2",
+        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693828139,
+          "stop" : 1642693828139,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "bda8b7bb88032774",
+        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693829734,
+          "stop" : 1642693829735,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "6a4843a5a3afb9ed",
+        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693830518,
+          "stop" : 1642693830518,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "da68154edaa58f35",
+        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693831324,
+          "stop" : 1642693831324,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "f2439be5ac003cc3",
+        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693832125,
+          "stop" : 1642693832125,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "5179e987cbc05150",
+        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693832932,
+          "stop" : 1642693832932,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6489d332fcd1a2de884a93083ab22427"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.180', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [ca3c02aade480930fe75e761ab2e91e9, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.GuWJ7E}, goog:chromeOptions: {debuggerAddress: localhost:41043}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41043/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ca3c02aade480930fe75e761ab2e91e9",
+      "children" : [ {
+        "name" : "Runs Cucumber Scenarios",
+        "uid" : "cdf4d18626c9956a",
+        "parentUid" : "df4978ea51a99550308212b79e3bfc67",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693819616,
+          "stop" : 1642693840767,
+          "duration" : 21151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\"", "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\"" ]
+      } ],
+      "uid" : "df4978ea51a99550308212b79e3bfc67"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.registration.SuccessRegistration), not marked as ignorable (3 known properties: \"roleName\", \"id\", \"email\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.registration.SuccessRegistration[\"status\"])",
+      "children" : [ {
+        "name" : "TUA-408",
+        "uid" : "c63b2246f24088cb",
+        "parentUid" : "f21d5cc7481554e192d93627868782f9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693824932,
+          "stop" : 1642693825731,
+          "duration" : 799
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-411",
+        "uid" : "5af273187d239f40",
+        "parentUid" : "f21d5cc7481554e192d93627868782f9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693825738,
+          "stop" : 1642693826537,
+          "duration" : 799
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-375",
+        "uid" : "1a7f9283db60640",
+        "parentUid" : "f21d5cc7481554e192d93627868782f9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693826540,
+          "stop" : 1642693827329,
+          "duration" : 789
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f21d5cc7481554e192d93627868782f9"
+    }, {
+      "name" : "A JSONArray text must start with '[' at 1 [character 2 line 1]",
+      "children" : [ {
+        "name" : "TUA-418",
+        "uid" : "6a8555f6b5bb6b7c",
+        "parentUid" : "4fb0080759f4091fc43af31895744d35",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693833762,
+          "stop" : 1642693834581,
+          "duration" : 819
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4fb0080759f4091fc43af31895744d35"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.180', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5ad44c63ab4b445bc25f813b4e4e7f00, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.lzrTIj}, goog:chromeOptions: {debuggerAddress: localhost:41937}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41937/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5ad44c63ab4b445bc25f813b4e4e7f00",
+      "children" : [ {
+        "name" : "Example of BDD suite",
+        "uid" : "5e1d0bdf3bde8166",
+        "parentUid" : "0808db59916031f1b73214c50bc3da03",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693840776,
+          "stop" : 1642693863018,
+          "duration" : 22242
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.\"", "\"Optional[Verify that a 'Керівник' can add a location of a club]\"" ]
+      } ],
+      "uid" : "0808db59916031f1b73214c50bc3da03"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.180', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [aef75454149e424a8264b6bd85fc8e28, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.dTQacb}, goog:chromeOptions: {debuggerAddress: localhost:34871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34871/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: aef75454149e424a8264b6bd85fc8e28",
+      "children" : [ {
+        "name" : "TUA-252",
+        "uid" : "f05d8c929ada8e3a",
+        "parentUid" : "18167964e32aa20e4d7955868523ef9d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642693847231,
+          "stop" : 1642693865406,
+          "duration" : 18175
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "18167964e32aa20e4d7955868523ef9d"
+    }, {
+      "name" : "element not interactable: element has zero size\n  (Session info: headless chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.180', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [ddb9cca99c18596bff765d96c1ab26d6, clickElement {id=0ad9a977-5ef9-496e-a08b-ffdc51cfc929}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Ze4a5M}, goog:chromeOptions: {debuggerAddress: localhost:39349}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39349/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (ddb9cca99c18596bff765d96c1ab26d6)] -> id: lastName]\nSession ID: ddb9cca99c18596bff765d96c1ab26d6",
+      "children" : [ {
+        "name" : "TUA-454",
+        "uid" : "1de408b322b0e347",
+        "parentUid" : "15ab6a2c7c82c0b5e51446dace858293",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694090019,
+          "stop" : 1642694092478,
+          "duration" : 2459
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "15ab6a2c7c82c0b5e51446dace858293"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label[class='ant-radio-button-wrapper club-view-button']\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.180', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [d85c758d0a58bb0a8fb9f909a875040b, findElement {using=css selector, value=label[class='ant-radio-button-wrapper club-view-button']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.gQrRxU}, goog:chromeOptions: {debuggerAddress: localhost:44419}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44419/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d85c758d0a58bb0a8fb9f909a875040b",
+      "children" : [ {
+        "name" : "TUA-513",
+        "uid" : "33e7a5ba954f67fc",
+        "parentUid" : "fceb9ad52aa02e8dfcc94d25082cfab5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694197903,
+          "stop" : 1642694208431,
+          "duration" : 10528
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fceb9ad52aa02e8dfcc94d25082cfab5"
+    }, {
+      "name" : "element not interactable\n  (Session info: headless chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.180', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [94630a45d57e118321e00a4ffbefd4f9, clickElement {id=21eff6a0-fbd6-48b9-aba3-b36a8aad6c59}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.OdFfEX}, goog:chromeOptions: {debuggerAddress: localhost:33657}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33657/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (94630a45d57e118321e00a4ffbefd4f9)] -> xpath: //span[@aria-label='right']//*[name()='svg']]\nSession ID: 94630a45d57e118321e00a4ffbefd4f9",
+      "children" : [ {
+        "name" : "TUA-103",
+        "uid" : "5c22c8a16ee5881c",
+        "parentUid" : "7d9b6d4419d39710050d73df065307ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694212779,
+          "stop" : 1642694229213,
+          "duration" : 16434
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7d9b6d4419d39710050d73df065307ca"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@aria-label='arrow-up']\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.180', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [c9e5ca0c2125f590cae7e4dc885d004e, findElement {using=xpath, value=//span[@aria-label='arrow-up']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.hOYV12}, goog:chromeOptions: {debuggerAddress: localhost:41191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41191/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c9e5ca0c2125f590cae7e4dc885d004e",
+      "children" : [ {
+        "name" : "TUA-103",
+        "uid" : "1c8c08c3dc41ae0a",
+        "parentUid" : "0a9e86245325e57421ba056219ba7d4d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694234008,
+          "stop" : 1642694245281,
+          "duration" : 11273
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0a9e86245325e57421ba056219ba7d4d"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'за рейтингом')]\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.180', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5a5c60f109820eeb39af5ee2070a0dc2, findElement {using=xpath, value=//span[contains(text(),'за рейтингом')]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.s3FkOp}, goog:chromeOptions: {debuggerAddress: localhost:33131}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33131/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5a5c60f109820eeb39af5ee2070a0dc2",
+      "children" : [ {
+        "name" : "TUA-103",
+        "uid" : "186fb3520d7cbed6",
+        "parentUid" : "b4e14928d9d74f2c0644b15d251acf46",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694249340,
+          "stop" : 1642694260613,
+          "duration" : 11273
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b4e14928d9d74f2c0644b15d251acf46"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'за рейтингом')]\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.180', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [d3e0710d97be92a28de6c6320c77b2b2, findElement {using=xpath, value=//span[contains(text(),'за рейтингом')]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.ZczbSv}, goog:chromeOptions: {debuggerAddress: localhost:43295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43295/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d3e0710d97be92a28de6c6320c77b2b2",
+      "children" : [ {
+        "name" : "TUA-103",
+        "uid" : "475b32c751d94e6d",
+        "parentUid" : "17533c2f4330ce988e7cb23538046f24",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694265062,
+          "stop" : 1642694276329,
+          "duration" : 11267
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "17533c2f4330ce988e7cb23538046f24"
+    }, {
+      "name" : "java.lang.NullPointerException",
+      "children" : [ {
+        "name" : "TUA-509",
+        "uid" : "25734c42145f907",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694300099,
+          "stop" : 1642694311026,
+          "duration" : 10927
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5592898b36d684905e31486a23088bda"
+    }, {
+      "name" : "java.io.FileNotFoundException: /home/runner/work/Selenium648PageFactory/Selenium648PageFactory/src/test/resources/credentials.json (No such file or directory)",
+      "children" : [ {
+        "name" : "TUA-318",
+        "uid" : "ca6b9450e3b874b",
+        "parentUid" : "e20bf73326dc7b2deecba733645cd7e8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694315208,
+          "stop" : 1642694323606,
+          "duration" : 8398
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-321",
+        "uid" : "7b02d2aac41e2f02",
+        "parentUid" : "e20bf73326dc7b2deecba733645cd7e8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694342612,
+          "stop" : 1642694350870,
+          "duration" : 8258
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-322",
+        "uid" : "1eb1551865b17394",
+        "parentUid" : "e20bf73326dc7b2deecba733645cd7e8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694355102,
+          "stop" : 1642694363258,
+          "duration" : 8156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e20bf73326dc7b2deecba733645cd7e8"
+    }, {
+      "name" : "\nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.",
+      "children" : [ {
+        "name" : "TUA-428",
+        "uid" : "640bb0e45a4b6246",
+        "parentUid" : "5446a20c28c65bdf4f04a51b835d16d9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694378193,
+          "stop" : 1642694378609,
+          "duration" : 416
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "///", "За критеріями пошуку гуртків не знайдено" ]
+      }, {
+        "name" : "TUA-428",
+        "uid" : "f933833fe485480b",
+        "parentUid" : "5446a20c28c65bdf4f04a51b835d16d9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694382892,
+          "stop" : 1642694383102,
+          "duration" : 210
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "150rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv", "За критеріями пошуку гуртків не знайдено" ]
+      }, {
+        "name" : "TUA-428",
+        "uid" : "112abf531c99d6bd",
+        "parentUid" : "5446a20c28c65bdf4f04a51b835d16d9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694387341,
+          "stop" : 1642694387545,
+          "duration" : 204
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "152rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv+1", "За критеріями пошуку гуртків не знайдено" ]
+      }, {
+        "name" : "TUA-226",
+        "uid" : "86c52f750f7ec24d",
+        "parentUid" : "5446a20c28c65bdf4f04a51b835d16d9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694409809,
+          "stop" : 1642694410039,
+          "duration" : 230
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "American Gymnastics Club" ]
+      }, {
+        "name" : "TUA-226",
+        "uid" : "a959c513761b0550",
+        "parentUid" : "5446a20c28c65bdf4f04a51b835d16d9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694414808,
+          "stop" : 1642694415004,
+          "duration" : 196
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "IT освіта: курси \"ГРАНД\"" ]
+      }, {
+        "name" : "TUA-226",
+        "uid" : "33955bad165feaf8",
+        "parentUid" : "5446a20c28c65bdf4f04a51b835d16d9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694419263,
+          "stop" : 1642694419690,
+          "duration" : 427
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Онлайн-школа точних наук YOUSTUD" ]
+      }, {
+        "name" : "TUA-226",
+        "uid" : "a98b8601477f53d0",
+        "parentUid" : "5446a20c28c65bdf4f04a51b835d16d9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694423431,
+          "stop" : 1642694423639,
+          "duration" : 208
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Театральна Студія \"Зоряні Діти''" ]
+      }, {
+        "name" : "TUA-226",
+        "uid" : "b9792a684ddca62a",
+        "parentUid" : "5446a20c28c65bdf4f04a51b835d16d9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694427755,
+          "stop" : 1642694427958,
+          "duration" : 203
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Студія танцю \"Несамовиті\"" ]
+      }, {
+        "name" : "TUA-226",
+        "uid" : "74939ad266bac6a2",
+        "parentUid" : "5446a20c28c65bdf4f04a51b835d16d9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694432094,
+          "stop" : 1642694432299,
+          "duration" : 205
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "LESKIV-SCHOOL" ]
+      }, {
+        "name" : "TUA-226",
+        "uid" : "54009798afc6a13f",
+        "parentUid" : "5446a20c28c65bdf4f04a51b835d16d9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642694436644,
+          "stop" : 1642694436860,
+          "duration" : 216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Школа танців Dream Team" ]
+      } ],
+      "uid" : "5446a20c28c65bdf4f04a51b835d16d9"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [405],\n\texpected [contacts must not be empty] but found [Request method 'POST' not supported]",
+      "children" : [ {
+        "name" : "TUA-405",
+        "uid" : "e3f6d37f3fd70787",
+        "parentUid" : "72c63d63795898eb50b306b670e4f3e5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642693811573,
+          "stop" : 1642693817871,
+          "duration" : 6298
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "72c63d63795898eb50b306b670e4f3e5"
+    }, {
+      "name" : "expected [400] but found [405]",
+      "children" : [ {
+        "name" : "TUA-502",
+        "uid" : "dda400c8c2d50268",
+        "parentUid" : "fef3e07c182ef6856c06eef9ada22c87",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642693819588,
+          "stop" : 1642693820452,
+          "duration" : 864
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-501",
+        "uid" : "a8d1702d62088757",
+        "parentUid" : "fef3e07c182ef6856c06eef9ada22c87",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642693820455,
+          "stop" : 1642693821285,
+          "duration" : 830
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-420",
+        "uid" : "b700e58bedfcf285",
+        "parentUid" : "fef3e07c182ef6856c06eef9ada22c87",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642693832947,
+          "stop" : 1642693833758,
+          "duration" : 811
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-499",
+        "uid" : "6d0e11eda4490984",
+        "parentUid" : "fef3e07c182ef6856c06eef9ada22c87",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642693839373,
+          "stop" : 1642693840649,
+          "duration" : 1276
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fef3e07c182ef6856c06eef9ada22c87"
+    }, {
+      "name" : "expected [200] but found [405]",
+      "children" : [ {
+        "name" : "resetPasswordTest",
+        "uid" : "b9969f627f1ff3a1",
+        "parentUid" : "f9559f3144ebf90991ea0b891b475203",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642693828147,
+          "stop" : 1642693828936,
+          "duration" : 789
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-457",
+        "uid" : "f06ad7b7ace24faa",
+        "parentUid" : "f9559f3144ebf90991ea0b891b475203",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642693846685,
+          "stop" : 1642693847572,
+          "duration" : 887
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f9559f3144ebf90991ea0b891b475203"
+    }, {
+      "name" : "The following asserts failed:\n\texpected [400] but found [405],\n\texpected [400] but found [405],\n\texpected [\"firstName\" can`t contain numbers] but found [Request method 'POST' not supported],\n\texpected [400] but found [405],\n\texpected [400] but found [405],\n\texpected [\"firstName\" can contain only ukrainian and english letters] but found [Request method 'POST' not supported],\n\texpected [400] but found [405],\n\texpected [400] but found [405],\n\texpected [\"firstName\" can contain from 1 to 25 letters] but found [Request method 'POST' not supported],\n\texpected [400] but found [405],\n\texpected [400] but found [405],\n\texpected [\"lastName\" can`t contain numbers] but found [Request method 'POST' not supported],\n\texpected [400] but found [405],\n\texpected [400] but found [405],\n\texpected [\"lastName\" can contain only ukrainian and english letters] but found [Request method 'POST' not supported],\n\texpected [400] but found [405],\n\texpected [400] but found [405],\n\texpected [\"lastName\" can contain from 1 to 25 letters] but found [Request method 'POST' not supported]",
+      "children" : [ {
+        "name" : "TUA-423",
+        "uid" : "67eef102388387fc",
+        "parentUid" : "d6104fab6c23de9ca40c764b3d82b8bb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642693834584,
+          "stop" : 1642693839370,
+          "duration" : 4786
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d6104fab6c23de9ca40c764b3d82b8bb"
+    }, {
+      "name" : "expected [404] but found [405]",
+      "children" : [ {
+        "name" : "TUA-419",
+        "uid" : "8111bd3b5b82441d",
+        "parentUid" : "4063687b06de6b21acdde232df281469",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642693840652,
+          "stop" : 1642693841465,
+          "duration" : 813
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4063687b06de6b21acdde232df281469"
+    }, {
+      "name" : "The following asserts failed:\n\tNo first name responded 405 expected [400] but found [405],\n\texpected [\"firstName\" can`t be empty] but found [Request method 'POST' not supported],\n\tNo last name responded 405 expected [400] but found [405],\n\texpected [\"lastName\" can`t be empty] but found [Request method 'POST' not supported],\n\tNo email responded 405 expected [400] but found [405],\n\texpected [true] but found [false],\n\tNo password responded 405 expected [400] but found [405],\n\texpected [true] but found [false],\n\tNo phone responded 405 expected [400] but found [405],\n\texpected [true] but found [false],\n\tNo role name responded 405 expected [400] but found [405],\n\texpected [true] but found [false]",
+      "children" : [ {
+        "name" : "TUA-377",
+        "uid" : "7ba4c0a4e4d9c2d8",
+        "parentUid" : "a040e869d2b1d7d64b1af6d8b98c2e4c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642693841467,
+          "stop" : 1642693846681,
+          "duration" : 5214
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a040e869d2b1d7d64b1af6d8b98c2e4c"
+    }, {
+      "name" : "The following asserts failed:\n\texpected [] but found [Ім'я не може містити більше, ніж 25 символів]",
+      "children" : [ {
+        "name" : "TUA-328",
+        "uid" : "f6e4b77a75ae2b5c",
+        "parentUid" : "9a8ba44869f6d8f03e4ae80d41dc7c9d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642694045304,
+          "stop" : 1642694065454,
+          "duration" : 20150
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "[AfBbCcDdEeFfGgHhIiJjKkLlMmNn, Ім'я не може містити більше, ніж 25 символів, AfBbCcDdEeFfGgHhIiJjKkLlMm, Ім'я не може містити більше, ніж 25 символів, , Будь ласка введіть Ваше ім'я, 1Admin, Ім'я не може містити цифри, 2Admin, Ім'я не може містити цифри, 3Admin, Ім'я не може містити цифри, 4Admin, Ім'я не може містити цифри, -Name, Ім'я повинно починатися і закінчуватися літерою, < Name>, Ім'я не може містити спеціальні символи, 'Name, Ім'я повинно починатися і закінчуватися літерою, Name-, Ім'я повинно починатися і закінчуватися літерою, <Name >, Ім'я не може містити спеціальні символи, Name', Ім'я повинно починатися і закінчуватися літерою, !Admin, Ім'я не може містити спеціальні символи, @Admin, Ім'я не може містити спеціальні символи, #Admin, Ім'я не може містити спеціальні символи, $Admin, Ім'я не може містити спеціальні символи, %Admin, Ім'я не може містити спеціальні символи, ^Admin, Ім'я не може містити спеціальні символи, &Admin, Ім'я не може містити спеціальні символи, *Admin, Ім'я не може містити спеціальні символи, (Admin, Ім'я не може містити спеціальні символи, _Admin, Ім'я не може містити спеціальні символи, +Admin, Ім'я не може містити спеціальні символи, .Admin, Ім'я не може містити спеціальні символи, :Admin, Ім'я не може містити спеціальні символи, , Будь ласка введіть Ваше ім'я]" ]
+      } ],
+      "uid" : "9a8ba44869f6d8f03e4ae80d41dc7c9d"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
