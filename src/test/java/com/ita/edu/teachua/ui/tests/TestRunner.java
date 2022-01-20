@@ -31,9 +31,9 @@ public class TestRunner {
     @SneakyThrows()
     @BeforeMethod
     public void beforeMethod(ITestContext context) {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        driver = new ChromeDriver(options);
+/*        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");*/
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(testValueProvider.getBaseUrl());
