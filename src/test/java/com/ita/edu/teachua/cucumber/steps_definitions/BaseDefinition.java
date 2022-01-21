@@ -87,5 +87,12 @@ public class BaseDefinition {
     public String[] message(String message) {
         return message.split(",");
     }
-
+    @ParameterType("([^\"]*)")
+    public String email(String email) {
+        return email;
+    }
+    @ParameterType("([^\"]*)")
+    public String color(String color) {
+        return color;
+    }
 }

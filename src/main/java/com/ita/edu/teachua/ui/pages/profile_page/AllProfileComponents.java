@@ -16,6 +16,7 @@ public class AllProfileComponents {
     private LocalityDropdownComponent localityDropdownComponent;
     private ProfileEditPopUpComponent profileEditPopUpComponent;
 
+
     public AllProfileComponents(WebDriver driver) {
         this.driver=driver;
     }
@@ -59,4 +60,5 @@ public class AllProfileComponents {
     public ProfileEditPopUpComponent getProfileEditPopUpComponent() {
         return profileEditPopUpComponent == null ? new ProfileEditPopUpComponent (driver) : profileEditPopUpComponent;
     }
+
 }
