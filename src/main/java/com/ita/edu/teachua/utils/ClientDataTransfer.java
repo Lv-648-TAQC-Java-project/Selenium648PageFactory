@@ -3,6 +3,8 @@ package com.ita.edu.teachua.utils;
 
 import com.ita.edu.teachua.api.models.about_us.AboutUsRequestModel;
 import com.ita.edu.teachua.api.models.banner.BannerModel;
+
+import com.ita.edu.teachua.api.models.center.change_response.Root;
 import com.ita.edu.teachua.api.models.challenge.patch.PatchChallenge;
 import com.ita.edu.teachua.api.models.challenge.response.AddChallengeResponse;
 import com.ita.edu.teachua.api.models.city.city_request.City;
@@ -33,8 +35,9 @@ public class ClientDataTransfer {
         parser.parseAddChallengeJson();
         return parser.getAddChallengeResponse();
     }
-    public PatchChallenge getPatchChallenge(){
-        parser=new GsonParser();
+
+    public PatchChallenge getPatchChallenge() {
+        parser = new GsonParser();
         parser.parsePatchChallengeJson();
         return parser.getPatchChallenge();
     }
@@ -45,11 +48,12 @@ public class ClientDataTransfer {
         return parser.getAddCategory();
     }
 
-    public Complaint getAddComplaint(){
-        parser=new GsonParser();
+    public Complaint getAddComplaint() {
+        parser = new GsonParser();
         parser.parseAddComplaintJson();
         return parser.getComplaint();
     }
+
     public District getAddDistrict() {
         parser = new GsonParser();
         parser.parseAddDistrictJson();
@@ -67,6 +71,7 @@ public class ClientDataTransfer {
         parser.parseAddNewBannerJson();
         return parser.getAddNewBanner();
     }
+
     public BannerModel getAddBannerWithWrongPath() {
         parser = new GsonParser();
         parser.parseAddBannerWithWrongPathJson();
@@ -123,19 +128,27 @@ public class ClientDataTransfer {
 
     public StationRequestModel getChangeStation() {
         parser = new GsonParser();
-        parser.parseChangeStationRequestJson();
+        parser.parseCenterRequestJson();
         return parser.getStationRequestModel();
     }
 
-    public RegisterUser getRegisterUser(){
+
+    public RegisterUser getRegisterUser() {
         parser = new GsonParser();
         parser.parseRegisterUserJson();
         return parser.getRegisterUser();
     }
 
-    public SuccessUpdatedUser getUpdateUser(){
+    public SuccessUpdatedUser getUpdateUser() {
         parser = new GsonParser();
         parser.parseUpdateUserJson();
         return parser.getUpdateUser();
     }
+
+    public Root getChangeCenter() {
+        parser = new GsonParser();
+        parser.parseCenterRequestJson();
+        return parser.getCenterRoot();
+    }
+
 }
