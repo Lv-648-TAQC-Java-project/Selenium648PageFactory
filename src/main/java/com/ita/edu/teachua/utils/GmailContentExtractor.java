@@ -55,6 +55,7 @@ public class GmailContentExtractor {
         InputStream in = null;
         try {
             in = new FileInputStream(CREDENTIALS_FILE_PATH);
+            System.out.println("Credentials.json: "+in);
         } catch (FileNotFoundException e) {
             //in = new ByteArrayInputStream(System.getenv("GMAIL_CREDENTIALS").getBytes(StandardCharsets.UTF_8));
         }
