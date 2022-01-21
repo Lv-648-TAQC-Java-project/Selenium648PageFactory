@@ -4,6 +4,7 @@ import com.ita.edu.teachua.api.clients.CategoryClient;
 import com.ita.edu.teachua.api.models.category.Category;
 import com.ita.edu.teachua.api.models.category.search_response.CategoryRoot2;
 import com.ita.edu.teachua.utils.ClientDataTransfer;
+import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.apache.commons.lang.RandomStringUtils;
 import org.testng.Assert;
@@ -11,9 +12,10 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.List;
 
-public class GetCategoryTest extends AuthorizedApiTestRunner{
+public class CategoryTest extends AuthorizedAsAdminApiTestRunner{
 
-    @Test
+    @Test(description = "[API category] Create new category and delete it")
+    @Description("[API] Create new category and delete it")
     public void createCategory() throws IOException {
         CategoryClient categoryClient = new CategoryClient(authorization.getToken());
         Response response = categoryClient.addNewCategory();
@@ -28,7 +30,8 @@ public class GetCategoryTest extends AuthorizedApiTestRunner{
         Assert.assertEquals(deleteResponse.getStatusCode(), 200);
     }
 
-    @Test
+    @Test(description = "[API category] Get list of all categories")
+    @Description("[API] Get list of all categories")
     public void getListOfCategories() throws IOException {
         CategoryClient categoryClient = new CategoryClient(authorization.getToken());
         Response get = categoryClient.getCategories();
@@ -41,7 +44,8 @@ public class GetCategoryTest extends AuthorizedApiTestRunner{
         Assert.assertTrue(categories.stream().allMatch(x-> x.getTagTextColor().contains("#")));
     }
 
-    @Test
+    @Test(description = "[API category] Get list of all categories search with pagination")
+    @Description("[API] Get list of all categories search with pagination")
     public void getListOfCategoriesSearch() throws IOException {
         CategoryClient categoryClient = new CategoryClient(authorization.getToken());
         Response get = categoryClient.getCategoriesSearch();
@@ -53,20 +57,8 @@ public class GetCategoryTest extends AuthorizedApiTestRunner{
         Assert.assertEquals(categoryRoot2.getTotalPages(), 4);
     }
 
-    @Test
-    public void deleteCategory() throws IOException {
-        CategoryClient categoryClient = new CategoryClient(authorization.getToken());
-        Response delete = categoryClient.deleteNewCategory(13);
-        Category category = delete.then().log().all()
-                .extract().as(Category.class);
-
-        /*Response getResponse = categoryClient.getNewCategory(13);
-        Category category2 = delete.then().log().all()
-                .extract().as(Category.class);
-        Assert.assertEquals(getResponse.getStatusCode(), 404);*/
-    }
-
-    @Test
+    @Test(description = "[API category] Get category by ID")
+    @Description("[API] Get category by ID")
     public void getCategory() throws IOException {
         CategoryClient categoryClient = new CategoryClient(authorization.getToken());
         Response get = categoryClient.getNewCategory(12);
@@ -78,7 +70,8 @@ public class GetCategoryTest extends AuthorizedApiTestRunner{
 
     }
 
-    @Test
+    @Test(description = "[API category] Change category by ID")
+    @Description("[API] Change category by ID")
     public void changeCategory() throws IOException {
         CategoryClient categoryClient = new CategoryClient(authorization.getToken());
         Category category = new ClientDataTransfer().getAddCategory();

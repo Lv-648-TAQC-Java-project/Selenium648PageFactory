@@ -90,15 +90,6 @@ public class GsonParser {
     public PatchChallenge getPatchChallenge(){
         return patchChallenge;
     }
-    public void parseAddCategoryJson() {
-        try (FileReader reader = new FileReader("src/main/resources/request_bodies/category/category.json")) {
-            this.category = gson.fromJson(reader, Category.class);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     public void parseAddDistrictJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/district/district.json")) {
@@ -309,12 +300,20 @@ public class GsonParser {
             e.printStackTrace();
         }
     }
-    public Category getAddCategory() {
-        return category;
-    }
-
     public SuccessUpdatedUser getUpdateUser(){
         return successUpdatedUser;
     }
 
+    public Category getAddCategory() {
+        return category;
+    }
+    public void parseAddCategoryJson() {
+        try (FileReader reader = new FileReader("src/main/resources/request_bodies/category/category.json")) {
+            this.category = gson.fromJson(reader, Category.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
