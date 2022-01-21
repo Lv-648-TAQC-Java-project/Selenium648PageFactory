@@ -31,9 +31,13 @@ public class TestRunner {
     @SneakyThrows()
     @BeforeMethod
     public void beforeMethod(ITestContext context) {
+
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        options.addArguments("window-size=1920,1080");
+        if (testValueProvider.getHeadlessMode()) {
+            options.addArguments("--headless");
+            options.addArguments("--window-size=1920,1080", "--no-sandbox", "'--disable-dev-shm-usage");
+        }
+
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

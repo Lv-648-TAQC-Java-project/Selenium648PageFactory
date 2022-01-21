@@ -3,8 +3,10 @@ package com.ita.edu.teachua.ui.pages.advanced_search;
 
 import com.ita.edu.teachua.ui.elements.custom_elements.*;
 import com.ita.edu.teachua.ui.locators.advanced_search_page_locators.AdvancedSearchPageLocators;
+import com.ita.edu.teachua.ui.locators.header_locators.GuestDropdownComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,6 +14,7 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -317,6 +320,7 @@ public class AdvancedSearchPage extends BasePage {
     public List<ClubsItemComponent> getClubCards() {
         List<ClubsItemComponent> cards = new ArrayList<>();
         this.sleep(2000);
+        waitUntilVisibilityOfElementLocated(By.xpath(AdvancedSearchPageLocators.CLUB_CARD_XPATH), 5);
         for (WebElement j : clubCards) {
             cards.add(new ClubsItemComponent(driver, j));
         }
@@ -337,27 +341,30 @@ public class AdvancedSearchPage extends BasePage {
         }
     }
 
-    @Step("go to next page with clubs")
+    @Step("Go to the next page with clubs")
     public void clickOnNextPageButton() {
         nextPageButton.click();
     }
 
     @Step("Get number of pages with clubs")
     public int getNumberOfPagesWithClubs() {
-        this.sleep(1000);
+        this.sleep(2000);
+        implicitlyWaitInMs(5000);
+        waitUntilVisibilityOfElementLocated(By.xpath(AdvancedSearchPageLocators.LAST_PAGE_BUTTON_XPATH), 5);
         return Integer.parseInt(lastPageButton.getInnerText());
     }
 
     @Step("Click on arrow up to sort clubs in descending order")
     public AdvancedSearchPage clickOnArrowUpButton() {
-        sleep(1000);
+        //sleep(1000);
+        implicitlyWaitInMs(5000);
         arrowUpButton.click();
         return this;
     }
 
     @Step("Click on 'за рейтингом' to sort clubs by rating in descending order")
     public AdvancedSearchPage clickOnSortByRatingButton() {
-        sleep(1000);
+        this.sleep(1000);
         sortByRatingButton.click();
         return this;
     }

@@ -1,7 +1,10 @@
 package com.ita.edu.teachua.ui.pages.advanced_search;
 
 import com.ita.edu.teachua.ui.locators.advanced_search_page_locators.ClubsItemComponentLocators;
+import com.ita.edu.teachua.ui.pages.administration_pages.BannerPage;
+import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -12,7 +15,7 @@ import org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory;
 
 import java.util.List;
 
-public class ClubsItemComponent {
+public class ClubsItemComponent extends BasePage {
     DefaultElementLocatorFactory parentContext;
     WebDriver driver;
     WebElement root;
@@ -22,7 +25,7 @@ public class ClubsItemComponent {
     private List<WebElement> cardStars;
 
     public ClubsItemComponent(WebDriver driver, WebElement root) {
-        this.driver=driver;
+        super(driver);
         parentContext = new DefaultElementLocatorFactory(root);
         PageFactory.initElements(parentContext, this);
     }
@@ -32,7 +35,7 @@ public class ClubsItemComponent {
         return cartTitle;
     }
 
-    @Step("Check if club is displayed as a list")//TODO rewrite
+    @Step("Check if club is displayed as a list")
     public boolean isList() {
         String str = root.getAttribute("class");
         return str.contains("list-rectangle-item");

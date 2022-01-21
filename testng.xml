@@ -6,18 +6,23 @@
             <package name="com.ita.edu.teachua.cucumber.cucumberTestRunner"/>
 
         </packages>
-    </test> <!-- Test -->
+    </test>
 
     <test name="UI Tests" annotations="JDK" preserve-order="true">
         <packages>
             <package name="com.ita.edu.teachua.ui.tests"/>
         </packages>
-    </test> <!-- Test -->
+    </test>
 
     <test name="API Tests" annotations="JDK" preserve-order="true">
         <packages>
             <package name="com.ita.edu.teachua.api.tests"/>
         </packages>
-    </test> <!-- Test -->
-</suite> <!-- Suite -->
+    </test>
+    <!--<test name="UI Tests" annotations="JDK" preserve-order="true">
+        <classes>
+            <class name="com.ita.edu.teachua.ui.tests.BasicSearchTest"/>
+        </classes>
+    </test>-->
+</suite>
 

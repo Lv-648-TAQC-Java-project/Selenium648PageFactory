@@ -24,7 +24,7 @@ public class HeaderPage extends BasePage {
     @Step("Click on guest dropdown")
     public GuestDropdownComponent clickOnGuestDropdown() {
         guestDropdown.click();
-        sleep(2000);
+        //sleep(2000);
         return new GuestDropdownComponent(driver);
     }
 
@@ -37,7 +37,7 @@ public class HeaderPage extends BasePage {
     @Step("Authorize user with valid email {email} and password {password}")
     public HeaderPage authorize(String email, String password) {
         clickOnGuestDropdown().clickOnLoginButton().fillLoginFields(email, password);
-        sleep(3000);
+        //sleep(3000);
         return new HeaderPage(driver);
     }
 
