@@ -1,0 +1,229 @@
+{
+  "uid" : "1a98ea3d060863ab",
+  "name" : "TUA-371/372/463",
+  "fullName" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest.VerifyThatUserAsOwnerCanCreateNewClubWhichRegisteredOnHim",
+  "historyId" : "be8a3f279d3cefcda92917759da7d2b2",
+  "time" : {
+    "start" : 1642760728451,
+    "stop" : 1642760730427,
+    "duration" : 1976
+  },
+  "description" : "This test case verify that user as \"Керiвник гуртка\" can create new club with valid data",
+  "descriptionHtml" : "<p>This test case verify that user as &quot;Керiвник гуртка&quot; can create new club with valid data</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1642760704312,
+      "stop" : 1642760708050,
+      "duration" : 3738
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1642760704313,
+        "stop" : 1642760704314,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642760670776,
+      "stop" : 1642760673587,
+      "duration" : 2811
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test case verify that user as \"Керiвник гуртка\" can create new club with valid data",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1642760728452,
+        "stop" : 1642760729378,
+        "duration" : 926
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1642760728452,
+          "stop" : 1642760728453,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Вокальна студія, музика, музичні інструменти], \"name\":\"Голосистi діти\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"blocks\":[{\"key\":\"brl63\",\"text\":\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\",\"type\":\"unstyled\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Delete club request",
+      "time" : {
+        "start" : 1642760729427,
+        "stop" : 1642760730427,
+        "duration" : 1000
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1642760729427,
+          "stop" : 1642760729430,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "1430"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "VerifyThatUserAsOwnerCanCreateNewClubWhichRegisteredOnHim"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az135-188"
+  }, {
+    "name" : "thread",
+    "value" : "2825@fv-az135-188.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-463",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "26da46e9588a0be8",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/26da46e9588a0be8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642760734240,
+          "stop" : 1642760736352,
+          "duration" : 2112
+        }
+      }, {
+        "uid" : "2b17d76b5e601ca0",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/35//#testresult/2b17d76b5e601ca0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759832247,
+          "stop" : 1642759834457,
+          "duration" : 2210
+        }
+      }, {
+        "uid" : "9f328111b9c3b78",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/9f328111b9c3b78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759133282,
+          "stop" : 1642759135424,
+          "duration" : 2142
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1a98ea3d060863ab.json",
+  "parameterValues" : [ ]
+}
