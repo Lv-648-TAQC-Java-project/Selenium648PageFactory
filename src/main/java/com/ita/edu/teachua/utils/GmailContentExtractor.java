@@ -31,13 +31,13 @@ public class GmailContentExtractor {
      * If modifying these scopes, delete your previously saved tokens/ folder.
      */
     private static final List<String> SCOPES = Collections.singletonList(GmailScopes.MAIL_GOOGLE_COM);
-    private static final String CREDENTIALS_FILE_PATH =
-            System.getProperty("user.dir") +
+    private static final String CREDENTIALS_FILE_PATH = "src/test/resources/credentials.json";
+            /*System.getProperty("user.dir") +
                     File.separator + "src" +
                     File.separator + "test" +
                     File.separator + "resources" +
                     //File.separator + "credentials" +
-                    File.separator + "credentials.json";
+                    File.separator + "credentials.json";*/
 
     private static final String TOKENS_DIRECTORY_PATH = System.getProperty("user.dir") +
             File.separator + "src" +
