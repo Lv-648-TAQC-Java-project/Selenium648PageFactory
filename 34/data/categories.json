@@ -1,0 +1,277 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Unrecognized field \"timestamp\" (class com.ita.edu.teachua.api.models.category.Category), not marked as ignorable (8 known properties: \"sortby\", \"urlLogo\", \"id\", \"description\", \"backgroundColor\", \"name\", \"tagTextColor\", \"tagBackgroundColor\"])\n at [Source: (String)\"{\"timestamp\":1642759794730,\"status\":404,\"error\":\"Not Found\",\"message\":\"\",\"path\":\"/dev/api/categories/12\"}\"; line: 1, column: 27] (through reference chain: com.ita.edu.teachua.api.models.category.Category[\"timestamp\"])",
+      "children" : [ {
+        "name" : "changeCategory",
+        "uid" : "cc73590d4bd3de66",
+        "parentUid" : "9259c26763163dfea071ec5d0114ed08",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642759793324,
+          "stop" : 1642759794829,
+          "duration" : 1505
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9259c26763163dfea071ec5d0114ed08"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.category.Category), not marked as ignorable (8 known properties: \"sortby\", \"urlLogo\", \"id\", \"description\", \"backgroundColor\", \"name\", \"tagTextColor\", \"tagBackgroundColor\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.category.Category[\"status\"])",
+      "children" : [ {
+        "name" : "createCategory",
+        "uid" : "dea21310a5b23b46",
+        "parentUid" : "5c681d67d5bdfac31e73151677c452c4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642759794835,
+          "stop" : 1642759796753,
+          "duration" : 1918
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5c681d67d5bdfac31e73151677c452c4"
+    }, {
+      "name" : "Unrecognized field \"timestamp\" (class com.ita.edu.teachua.api.models.category.Category), not marked as ignorable (8 known properties: \"sortby\", \"urlLogo\", \"id\", \"description\", \"backgroundColor\", \"name\", \"tagTextColor\", \"tagBackgroundColor\"])\n at [Source: (String)\"{\"timestamp\":1642759797674,\"status\":404,\"error\":\"Not Found\",\"message\":\"\",\"path\":\"/dev/api/categories/13\"}\"; line: 1, column: 27] (through reference chain: com.ita.edu.teachua.api.models.category.Category[\"timestamp\"])",
+      "children" : [ {
+        "name" : "deleteCategory",
+        "uid" : "bd7e8418f3102d27",
+        "parentUid" : "0f5ba3d7e03a8bfc00af109b486794fa",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642759796755,
+          "stop" : 1642759797762,
+          "duration" : 1007
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0f5ba3d7e03a8bfc00af109b486794fa"
+    }, {
+      "name" : "Unrecognized field \"timestamp\" (class com.ita.edu.teachua.api.models.category.Category), not marked as ignorable (8 known properties: \"sortby\", \"urlLogo\", \"id\", \"description\", \"backgroundColor\", \"name\", \"tagTextColor\", \"tagBackgroundColor\"])\n at [Source: (String)\"{\"timestamp\":1642759798498,\"status\":404,\"error\":\"Not Found\",\"message\":\"\",\"path\":\"/dev/api/categories/12\"}\"; line: 1, column: 27] (through reference chain: com.ita.edu.teachua.api.models.category.Category[\"timestamp\"])",
+      "children" : [ {
+        "name" : "getCategory",
+        "uid" : "83ebad12aced252d",
+        "parentUid" : "37b9c6498bb463863ac2ae02ff85453b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642759797765,
+          "stop" : 1642759798578,
+          "duration" : 813
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "37b9c6498bb463863ac2ae02ff85453b"
+    }, {
+      "name" : "element not interactable: element has zero size\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az83-73', ip: '10.1.0.34', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [43307c598efa5893f8f24ab62ea4f157, clickElement {id=9429536b-f514-40a9-9797-6e0aa6e910f8}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.EVdDlc}, goog:chromeOptions: {debuggerAddress: localhost:44519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44519/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (43307c598efa5893f8f24ab62ea4f157)] -> class: add-club-location]\nSession ID: 43307c598efa5893f8f24ab62ea4f157",
+      "children" : [ {
+        "name" : "TUA-159",
+        "uid" : "15d23d35d13db051",
+        "parentUid" : "f34466973be6fde468f3b449c08480cc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642759891804,
+          "stop" : 1642759910535,
+          "duration" : 18731
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "ТестЛокація2", "Сумська 2/3", "50.00100346155677, 36.234188917163884", "0977777777" ]
+      } ],
+      "uid" : "f34466973be6fde468f3b449c08480cc"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.center.change_response.Root), not marked as ignorable (11 known properties: \"urlBackgroundPicture\", \"contacts\", \"urlWeb\", \"userId\", \"clubsId\", \"urlLogo\", \"id\", \"description\", \"locations\", \"name\", \"centerExternalId\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Center already exist with name: Java13\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.center.change_response.Root[\"status\"])",
+      "children" : [ {
+        "name" : "changeCenter",
+        "uid" : "e3c8e8558499b09c",
+        "parentUid" : "dae401ed9fdd436cbac45cc5a2e2ef8d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642759984568,
+          "stop" : 1642759985896,
+          "duration" : 1328
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dae401ed9fdd436cbac45cc5a2e2ef8d"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.center.resprose_swagger.CenterRoot2), not marked as ignorable (13 known properties: \"urlBackgroundPicture\", \"phones\", \"name\", \"socialLinks\", \"contacts\", \"urlLogo\", \"id\", \"email\", \"clubs\", \"locations\", \"urlWeb\", \"user\", \"description\"])\n at [Source: (String)\"{\"status\":404,\"message\":\"Center not found by id: 265\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.center.resprose_swagger.CenterRoot2[\"status\"])",
+      "children" : [ {
+        "name" : "deleteCenter",
+        "uid" : "357ef2b4047745aa",
+        "parentUid" : "f984883986692a20f42d37b94c2bf87e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642759985901,
+          "stop" : 1642759986770,
+          "duration" : 869
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f984883986692a20f42d37b94c2bf87e"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.district.SuccessDistrictModel), not marked as ignorable (3 known properties: \"id\", \"cityName\", \"name\"])\n at [Source: (String)\"{\"status\":400,\"message\":\"JSON parse error: Unrecognized field \\\"id\\\" (class com.softserve.teachua.dto.district.DistrictProfile), not marked as ignorable; nested exception is com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \\\"id\\\" (class com.softserve.teachua.dto.district.DistrictProfile), not marked as ignorable (2 known properties: \\\"name\\\", \\\"cityName\\\"])\\n at [Source: (PushbackInputStream); line: 1, column: 11] (through reference chain: com.softserve.teachu\"[truncated 41 chars]; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.district.SuccessDistrictModel[\"status\"])",
+      "children" : [ {
+        "name" : "createDistrict",
+        "uid" : "7547707d7fd48eac",
+        "parentUid" : "f48da5f53c22c99a4fb17fcd7e4284f0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642760008790,
+          "stop" : 1642760009659,
+          "duration" : 869
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f48da5f53c22c99a4fb17fcd7e4284f0"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='root']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az83-73', ip: '10.1.0.34', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a10e8e29a73bcf6a9daf5cdad4f216f2, findChildElement {id=85fe6f69-f6e6-4fae-900b-4fe7cf394b11, using=css selector, value=*[name='root']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.rAC8wG}, goog:chromeOptions: {debuggerAddress: localhost:35433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35433/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a10e8e29a73bcf6a9daf5cdad4f216f2",
+      "children" : [ {
+        "name" : "TUA-513",
+        "uid" : "23685a0305d2f9cf",
+        "parentUid" : "863620f237e2064187e1266f236b2d12",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642760183106,
+          "stop" : 1642760204717,
+          "duration" : 21611
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "863620f237e2064187e1266f236b2d12"
+    }, {
+      "name" : "java.lang.NullPointerException",
+      "children" : [ {
+        "name" : "TUA-509",
+        "uid" : "e8df7b267ac1b5d",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642760392298,
+          "stop" : 1642760403273,
+          "duration" : 10975
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5592898b36d684905e31486a23088bda"
+    }, {
+      "name" : "java.io.FileNotFoundException: /home/runner/work/Selenium648PageFactory/Selenium648PageFactory/src/test/resources/credentials.json (No such file or directory)",
+      "children" : [ {
+        "name" : "TUA-318",
+        "uid" : "c3f7b8982c349a3",
+        "parentUid" : "e20bf73326dc7b2deecba733645cd7e8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642760407908,
+          "stop" : 1642760414861,
+          "duration" : 6953
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-321",
+        "uid" : "7ff53c87d2a9a0d",
+        "parentUid" : "e20bf73326dc7b2deecba733645cd7e8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642760433114,
+          "stop" : 1642760439959,
+          "duration" : 6845
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-322",
+        "uid" : "72d779d3c615731b",
+        "parentUid" : "e20bf73326dc7b2deecba733645cd7e8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642760444742,
+          "stop" : 1642760451591,
+          "duration" : 6849
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e20bf73326dc7b2deecba733645cd7e8"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+      "children" : [ {
+        "name" : "TUA-405",
+        "uid" : "13f5b9f4aa2e6ad6",
+        "parentUid" : "0f1afb5282055acdb48f63753e2580f7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642759812563,
+          "stop" : 1642759819746,
+          "duration" : 7183
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0f1afb5282055acdb48f63753e2580f7"
+    }, {
+      "name" : "expected [null] but found [/upload/center/Avavvv/background/NASA_Earth.jpg]",
+      "children" : [ {
+        "name" : "getListOfCenters",
+        "uid" : "cde97114db04f57f",
+        "parentUid" : "b96802d01f4d312a168c6d7b5daa81d1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642759987999,
+          "stop" : 1642759992562,
+          "duration" : 4563
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b96802d01f4d312a168c6d7b5daa81d1"
+    }, {
+      "name" : "expected [true] but found [false]",
+      "children" : [ {
+        "name" : "TUA-103",
+        "uid" : "a365a88b5ee83990",
+        "parentUid" : "067aa11ae245eca950dc984999fefd6d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642760244549,
+          "stop" : 1642760275659,
+          "duration" : 31110
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "067aa11ae245eca950dc984999fefd6d"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
