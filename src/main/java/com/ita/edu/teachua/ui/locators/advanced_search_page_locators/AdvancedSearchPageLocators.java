@@ -33,7 +33,7 @@ public class AdvancedSearchPageLocators {
     public static final String ADVANCED_SEARCH_BLOCK_CSS_SELECTOR = "aside.ant-layout-sider.ant-layout-sider-dark.club-list-sider";
     public static final String CENTER_ITEM_XPATH = "//*[@class='ant-card-body']";
     public static final String CENTER_ADDRESS_XPATH = "//*[@class='oneAddress']";
-    public static final String NEXT_PAGE_BUTTON_XPATH = "//span[@aria-label='right']//*[name()='svg']";
+    public static final String NEXT_PAGE_BUTTON_XPATH = "//li[@title='Next Page']//button[@type='button']";
     public static final String LAST_PAGE_BUTTON_XPATH = "//li[@title='Next Page']/preceding-sibling::*[1]";
     public static final String CENTER_BLOCKS_CSS_SELECTOR = ".ant-card.ant-card-bordered.card.center-list-rectangle-item";
     public static final String ARROW_UPP_BUTTON_XPATH = "//span[@aria-label='arrow-up']";

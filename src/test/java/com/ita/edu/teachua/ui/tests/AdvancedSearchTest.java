@@ -175,12 +175,13 @@ public class AdvancedSearchTest extends TestRunner {
     public List<String> getTitlesFromAllPages(AdvancedSearchPage advancedSearchPage) {
         List<String> stringCards = new ArrayList<>();
         int n = advancedSearchPage.getNumberOfPagesWithClubs();
-        for (int i = 0; i < n; i++) {
-            advancedSearchPage.sleep(3000);
+        for (int i = 0; i < n; ++i) {
             for (ClubsItemComponent card : advancedSearchPage.getClubCards()) {
                 stringCards.add(card.getCardTitle().getText());
             }
-            advancedSearchPage.clickOnNextPageButton();
+            if (i < n - 1) {
+                advancedSearchPage.clickOnNextPageButton();
+            }
         }
         return stringCards;
     }
@@ -239,7 +240,7 @@ public class AdvancedSearchTest extends TestRunner {
         List<ClubsItemComponent> cards;
         List<Integer> ratings = new ArrayList<>();
         int n = advancedSearchPage.getNumberOfPagesWithClubs();
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; ++i) {
             cards = advancedSearchPage.getClubCards();
             for (ClubsItemComponent card : cards) {
                 ratings.add(card.getRating());
@@ -269,6 +270,3 @@ public class AdvancedSearchTest extends TestRunner {
         return ratings.size() != 0;
     }
 }
-
-
-

@@ -31,7 +31,7 @@ public class TestRunner {
     @SneakyThrows()
     @BeforeMethod
     public void beforeMethod(ITestContext context) {
-        
+
         ChromeOptions options = new ChromeOptions();
         if (testValueProvider.getHeadlessMode()) {
             options.addArguments("--headless");
