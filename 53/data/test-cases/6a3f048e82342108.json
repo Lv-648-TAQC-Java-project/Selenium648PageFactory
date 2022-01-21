@@ -1,0 +1,239 @@
+{
+  "uid" : "6a3f048e82342108",
+  "name" : "TUA-226",
+  "fullName" : "com.ita.edu.teachua.ui.tests.BasicSearchTest.checkSearchWithNameOfClubsClipBoard",
+  "historyId" : "f5d380ec5768611fd71e32728e26a1a0",
+  "time" : {
+    "start" : 1642786182754,
+    "stop" : 1642786183983,
+    "duration" : 1229
+  },
+  "description" : "TUA-226 Verify that user can perform basic search by inserting name of a club",
+  "descriptionHtml" : "<p>TUA-226 Verify that user can perform basic search by inserting name of a club</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642786177380,
+      "stop" : 1642786182752,
+      "duration" : 5372
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642785234217,
+      "stop" : 1642785236072,
+      "duration" : 1855
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "TUA-226 Verify that user can perform basic search by inserting name of a club",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Insert from clipboard *Онлайн-школа точних наук YOUSTUD* in search field",
+      "time" : {
+        "start" : 1642786182756,
+        "stop" : 1642786182907,
+        "duration" : 151
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "Онлайн-школа точних наук YOUSTUD"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Check if club Онлайн-школа точних наук YOUSTUD is present on the page",
+      "time" : {
+        "start" : 1642786182907,
+        "stop" : 1642786183982,
+        "duration" : 1075
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Онлайн-школа точних наук YOUSTUD"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642786183983,
+      "stop" : 1642786184053,
+      "duration" : 70
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkSearchWithNameOfClubsClipBoard"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az126-328"
+  }, {
+    "name" : "thread",
+    "value" : "2825@fv-az126-328.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Онлайн-школа точних наук YOUSTUD"
+  } ],
+  "links" : [ {
+    "name" : "TUA-226",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "75a9114a19369070",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/41//#testresult/75a9114a19369070",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642773629439,
+          "stop" : 1642773630649,
+          "duration" : 1210
+        }
+      }, {
+        "uid" : "a71cc23489b86e79",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/39//#testresult/a71cc23489b86e79",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642769674392,
+          "stop" : 1642769675568,
+          "duration" : 1176
+        }
+      }, {
+        "uid" : "bf73057f63c4f58c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/bf73057f63c4f58c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642762934478,
+          "stop" : 1642762935659,
+          "duration" : 1181
+        }
+      }, {
+        "uid" : "f124b5088de33c87",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/f124b5088de33c87",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642761668629,
+          "stop" : 1642761669852,
+          "duration" : 1223
+        }
+      }, {
+        "uid" : "49f0f88d111ca53",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/49f0f88d111ca53",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642761647116,
+          "stop" : 1642761648332,
+          "duration" : 1216
+        }
+      }, {
+        "uid" : "8e206b9941609a19",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/35//#testresult/8e206b9941609a19",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642760516535,
+          "stop" : 1642760517715,
+          "duration" : 1180
+        }
+      }, {
+        "uid" : "2e0c126ff30ed4a0",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/2e0c126ff30ed4a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759965618,
+          "stop" : 1642759966819,
+          "duration" : 1201
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6a3f048e82342108.json",
+  "parameterValues" : [ "Онлайн-школа точних наук YOUSTUD" ]
+}

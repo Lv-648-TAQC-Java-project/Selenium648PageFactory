@@ -1,0 +1,496 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Unrecognized field \"timestamp\" (class com.ita.edu.teachua.api.models.category.Category), not marked as ignorable (8 known properties: \"sortby\", \"urlLogo\", \"id\", \"description\", \"backgroundColor\", \"name\", \"tagTextColor\", \"tagBackgroundColor\"])\n at [Source: (String)\"{\"timestamp\":1642785279629,\"status\":404,\"error\":\"Not Found\",\"message\":\"\",\"path\":\"/dev/api/categories/12\"}\"; line: 1, column: 27] (through reference chain: com.ita.edu.teachua.api.models.category.Category[\"timestamp\"])",
+      "children" : [ {
+        "name" : "changeCategory",
+        "uid" : "c54fd3a3d2b37766",
+        "parentUid" : "f52337f5c892d9488bba6e27b521701e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785278588,
+          "stop" : 1642785279767,
+          "duration" : 1179
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f52337f5c892d9488bba6e27b521701e"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.category.Category), not marked as ignorable (8 known properties: \"sortby\", \"urlLogo\", \"id\", \"description\", \"backgroundColor\", \"name\", \"tagTextColor\", \"tagBackgroundColor\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.category.Category[\"status\"])",
+      "children" : [ {
+        "name" : "createCategory",
+        "uid" : "d8c13ed89e04cee8",
+        "parentUid" : "5c681d67d5bdfac31e73151677c452c4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785279769,
+          "stop" : 1642785280833,
+          "duration" : 1064
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5c681d67d5bdfac31e73151677c452c4"
+    }, {
+      "name" : "Unrecognized field \"timestamp\" (class com.ita.edu.teachua.api.models.category.Category), not marked as ignorable (8 known properties: \"sortby\", \"urlLogo\", \"id\", \"description\", \"backgroundColor\", \"name\", \"tagTextColor\", \"tagBackgroundColor\"])\n at [Source: (String)\"{\"timestamp\":1642785281758,\"status\":404,\"error\":\"Not Found\",\"message\":\"\",\"path\":\"/dev/api/categories/13\"}\"; line: 1, column: 27] (through reference chain: com.ita.edu.teachua.api.models.category.Category[\"timestamp\"])",
+      "children" : [ {
+        "name" : "deleteCategory",
+        "uid" : "a14e26b4a9c59001",
+        "parentUid" : "5ee39307d704734aa1d69f34170fb265",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785280837,
+          "stop" : 1642785281856,
+          "duration" : 1019
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5ee39307d704734aa1d69f34170fb265"
+    }, {
+      "name" : "Unrecognized field \"timestamp\" (class com.ita.edu.teachua.api.models.category.Category), not marked as ignorable (8 known properties: \"sortby\", \"urlLogo\", \"id\", \"description\", \"backgroundColor\", \"name\", \"tagTextColor\", \"tagBackgroundColor\"])\n at [Source: (String)\"{\"timestamp\":1642785282726,\"status\":404,\"error\":\"Not Found\",\"message\":\"\",\"path\":\"/dev/api/categories/12\"}\"; line: 1, column: 27] (through reference chain: com.ita.edu.teachua.api.models.category.Category[\"timestamp\"])",
+      "children" : [ {
+        "name" : "getCategory",
+        "uid" : "1e3a1e4eb9e6139a",
+        "parentUid" : "8e7c2c7cdaf9dfcf92c6108946db75d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785281858,
+          "stop" : 1642785282814,
+          "duration" : 956
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8e7c2c7cdaf9dfcf92c6108946db75d8"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+      "children" : [ {
+        "name" : "TUA-371/372/463",
+        "uid" : "90f712374d894b8a",
+        "parentUid" : "1268d6ccad54242b054cbd82dca899f9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785305347,
+          "stop" : 1642785307475,
+          "duration" : 2128
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-498",
+        "uid" : "28c3083b438476f5",
+        "parentUid" : "1268d6ccad54242b054cbd82dca899f9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785307480,
+          "stop" : 1642785311926,
+          "duration" : 4446
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1268d6ccad54242b054cbd82dca899f9"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#name\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az126-328', ip: '10.1.0.162', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [e5408eafc5f4996dcd123e8547d8cdf8, findElement {using=id, value=name}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Aasyok}, goog:chromeOptions: {debuggerAddress: localhost:35847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35847/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e5408eafc5f4996dcd123e8547d8cdf8",
+      "children" : [ {
+        "name" : "TUA-159",
+        "uid" : "8efba501341c5287",
+        "parentUid" : "b20b6d7b92efa495fe35b020d001a520",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785386975,
+          "stop" : 1642785410959,
+          "duration" : 23984
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "ТестЛокація2", "Сумська 2/3", "50.00100346155677, 36.234188917163884", "0977777777" ]
+      } ],
+      "uid" : "b20b6d7b92efa495fe35b020d001a520"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az126-328', ip: '10.1.0.162', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [32a74935b5ac05890815f366a9441e40, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.XK2pVe}, goog:chromeOptions: {debuggerAddress: localhost:37947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37947/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 32a74935b5ac05890815f366a9441e40",
+      "children" : [ {
+        "name" : "Example of BDD suite",
+        "uid" : "b44667dc3071b806",
+        "parentUid" : "af1ab706092dad32df41d96934d83919",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785451780,
+          "stop" : 1642785484599,
+          "duration" : 32819
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\"", "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\"" ]
+      } ],
+      "uid" : "af1ab706092dad32df41d96934d83919"
+    }, {
+      "name" : "Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=iso-8859-1'.",
+      "children" : [ {
+        "name" : "TUA-411",
+        "uid" : "dc1044c42ea81297",
+        "parentUid" : "81b5bd7ce118210cb70603e21802f7a8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785453359,
+          "stop" : 1642785472793,
+          "duration" : 19434
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-375",
+        "uid" : "237c218d38e127a6",
+        "parentUid" : "81b5bd7ce118210cb70603e21802f7a8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785472795,
+          "stop" : 1642785473679,
+          "duration" : 884
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "e39494180ef2da0f",
+        "parentUid" : "81b5bd7ce118210cb70603e21802f7a8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785474550,
+          "stop" : 1642785474551,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "9fdc0ea3f8dda35e",
+        "parentUid" : "81b5bd7ce118210cb70603e21802f7a8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785476845,
+          "stop" : 1642785476845,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "b7b4f2e3c251321c",
+        "parentUid" : "81b5bd7ce118210cb70603e21802f7a8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785477744,
+          "stop" : 1642785477744,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "33f59f73d9f2193d",
+        "parentUid" : "81b5bd7ce118210cb70603e21802f7a8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785478658,
+          "stop" : 1642785478658,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "b04a3d61893db2c5",
+        "parentUid" : "81b5bd7ce118210cb70603e21802f7a8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785480063,
+          "stop" : 1642785480063,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "beforeClass",
+        "uid" : "de2389d0e5f0c8c1",
+        "parentUid" : "81b5bd7ce118210cb70603e21802f7a8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785480978,
+          "stop" : 1642785480978,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-420",
+        "uid" : "2640c6eb89a26bc6",
+        "parentUid" : "81b5bd7ce118210cb70603e21802f7a8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785480983,
+          "stop" : 1642785481878,
+          "duration" : 895
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "81b5bd7ce118210cb70603e21802f7a8"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az126-328', ip: '10.1.0.162', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [3e1cd24cdcc8f10cd85c7ebef51bd73f, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.H0UGWu}, goog:chromeOptions: {debuggerAddress: localhost:43585}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43585/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3e1cd24cdcc8f10cd85c7ebef51bd73f",
+      "children" : [ {
+        "name" : "TUA-177",
+        "uid" : "27afec9c866d862e",
+        "parentUid" : "2f40641e7f4e95fd3c7e75c1fe41dcb5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785460811,
+          "stop" : 1642785474511,
+          "duration" : 13700
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalv, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square., Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd. With its numerous parks and gardens, Kiev is perfect for picnics and outdoor activities.\nHidropark is an island in the Dnieper River whose natural beaches are very popular during the summer. Besides swimming, you can also play beach volleyball, eat delicious street food or simply sunbathe.]" ]
+      } ],
+      "uid" : "2f40641e7f4e95fd3c7e75c1fe41dcb5"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az126-328', ip: '10.1.0.162', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [79051722185abe1bdbe42e4cac40ea07, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.SBa5to}, goog:chromeOptions: {debuggerAddress: localhost:37095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37095/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 79051722185abe1bdbe42e4cac40ea07",
+      "children" : [ {
+        "name" : "TUA-176",
+        "uid" : "fbbe44f7c61fa0fd",
+        "parentUid" : "afadff046028ea5e14e00e3dd24ddd52",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785475685,
+          "stop" : 1642785485812,
+          "duration" : 10127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[Also known as the Mo, 1, Also known as the Monastery of the ghfg]" ]
+      } ],
+      "uid" : "afadff046028ea5e14e00e3dd24ddd52"
+    }, {
+      "name" : "java.util.concurrent.TimeoutException\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az126-328', ip: '10.1.0.162', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [e0643673901dd2e97a625ac9784fa11f, get {url=https://speak-ukrainian.org.ua/dev/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.kiLHHW}, goog:chromeOptions: {debuggerAddress: localhost:37811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37811/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e0643673901dd2e97a625ac9784fa11f",
+      "children" : [ {
+        "name" : "beforeMethod",
+        "uid" : "e46ffdad81f26a01",
+        "parentUid" : "3728a9bb97c0b0829fbe8ccbe1dfce1b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785666501,
+          "stop" : 1642785666502,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3728a9bb97c0b0829fbe8ccbe1dfce1b"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@class='ant-btn flooded-button add-club-content-next']/span[contains(text(),'Додати')]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az126-328', ip: '10.1.0.162', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [7cc2a350612179bfacd364734a496891, findElement {using=xpath, value=//button[@class='ant-btn flooded-button add-club-content-next']/span[contains(text(),'Додати')]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.seoIkj}, goog:chromeOptions: {debuggerAddress: localhost:39103}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39103/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7cc2a350612179bfacd364734a496891",
+      "children" : [ {
+        "name" : "TUA-158",
+        "uid" : "2eddbdc04160dc6b",
+        "parentUid" : "3cf41d06b3fa4e6632c051c79dd6d4ae",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785800366,
+          "stop" : 1642785820578,
+          "duration" : 20212
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "ValidLocationName", "ValidAddress", "49.829104498711104, 24.005058710351314", "0966666666" ]
+      } ],
+      "uid" : "3cf41d06b3fa4e6632c051c79dd6d4ae"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@class='ant-btn flooded-button add-club-content-next']/span[contains(text(),'Додати')]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az126-328', ip: '10.1.0.162', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [8bc1ee3b07bb99ee714827026211b59e, findElement {using=xpath, value=//button[@class='ant-btn flooded-button add-club-content-next']/span[contains(text(),'Додати')]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.sFbMp4}, goog:chromeOptions: {debuggerAddress: localhost:40417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40417/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8bc1ee3b07bb99ee714827026211b59e",
+      "children" : [ {
+        "name" : "TUA-214",
+        "uid" : "c9e4213d16b3cb61",
+        "parentUid" : "721f905840b95077c20d4a856667dc93",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642785826042,
+          "stop" : 1642785846562,
+          "duration" : 20520
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "ValidLocationName", "ValidAddress", "49.829104498711104, 24.005058710351314", "0966666666", "ValidCenterName", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "Тестовий гурток для центру" ]
+      } ],
+      "uid" : "721f905840b95077c20d4a856667dc93"
+    }, {
+      "name" : "java.lang.NullPointerException",
+      "children" : [ {
+        "name" : "TUA-318",
+        "uid" : "5ce3e64925b56c0f",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642786082502,
+          "stop" : 1642786089484,
+          "duration" : 6982
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-321",
+        "uid" : "427308313cb194da",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642786109249,
+          "stop" : 1642786116091,
+          "duration" : 6842
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-322",
+        "uid" : "c1c878e466086f57",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642786120629,
+          "stop" : 1642786127436,
+          "duration" : 6807
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5592898b36d684905e31486a23088bda"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "The following asserts failed:\n\texpected [404] but found [403],\n\texpected [Category not found by name: Новий тип гуртка] but found [Club already exist with name: Голосистi діти]",
+      "children" : [ {
+        "name" : "TUA-409",
+        "uid" : "5e10b67b6e84ed76",
+        "parentUid" : "403c37ad5edbb158a95e373ddb679fcf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642785286026,
+          "stop" : 1642785296460,
+          "duration" : 10434
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Новий тип гуртка", "Category not found by name: Новий тип гуртка", "ageFrom must be greater than or equal to 2", "2", "19", "18", "ageTo must be less than or equal to 18", "ЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁ", "Це поле може містити тільки українські та англійські літери, цифри та спеціальні символи", "Description", "Довжина опису не може бути меншою за 40 символів", "descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptndescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptionriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriiptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescrasdfw", "Танці, хореографія", "Довжина опису не може бути більшою за 1500 символів", "ЪЫЭЁЁ", "name can't contain russian letters", "name", "name Довжина назви має бути від 5 до 100 символів", "characterscharacsterscharacterscharacterscharacterscharacterscharacterscharacterschacharacterscharact", "testName", "1" ]
+      } ],
+      "uid" : "403c37ad5edbb158a95e373ddb679fcf"
+    }, {
+      "name" : "The following asserts failed:\n\texpected [400] but found [403],\n\texpected [categories must not be empty] but found [null],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [403],\n\texpected [contacts must not be empty] but found [Club already exist with name: Голосистi діти]",
+      "children" : [ {
+        "name" : "TUA-405",
+        "uid" : "5c68c0581e9be5c3",
+        "parentUid" : "ff09c8309d6771ba1b7709e89d518166",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642785296466,
+          "stop" : 1642785305344,
+          "duration" : 8878
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ff09c8309d6771ba1b7709e89d518166"
+    }, {
+      "name" : "expected [200] but found [503]",
+      "children" : [ {
+        "name" : "resetPasswordTest",
+        "uid" : "2669d17a6512963",
+        "parentUid" : "524342d09836c1e90f6458b29a724cf8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642785474560,
+          "stop" : 1642785475466,
+          "duration" : 906
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "524342d09836c1e90f6458b29a724cf8"
+    }, {
+      "name" : "expected [404] but found [401]",
+      "children" : [ {
+        "name" : "TUA-419",
+        "uid" : "6ef314492fd61c7",
+        "parentUid" : "b536eef98b4b92ad94f63ef178992a3a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642785678178,
+          "stop" : 1642785679166,
+          "duration" : 988
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b536eef98b4b92ad94f63ef178992a3a"
+    }, {
+      "name" : "expected [200] but found [401]",
+      "children" : [ {
+        "name" : "TUA-457",
+        "uid" : "11ce9f8e885aa7b0",
+        "parentUid" : "919568951de77eb0bbf43a9a376df8e5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642785685299,
+          "stop" : 1642785686383,
+          "duration" : 1084
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "919568951de77eb0bbf43a9a376df8e5"
+    }, {
+      "name" : "expected [true] but found [false]",
+      "children" : [ {
+        "name" : "TUA-103",
+        "uid" : "78a05f6b6228214",
+        "parentUid" : "067aa11ae245eca950dc984999fefd6d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642785945346,
+          "stop" : 1642785976414,
+          "duration" : 31068
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "067aa11ae245eca950dc984999fefd6d"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
