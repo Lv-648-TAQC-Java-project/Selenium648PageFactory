@@ -1,0 +1,185 @@
+{
+  "uid" : "d90547af79f01666",
+  "name" : "TUA-226",
+  "fullName" : "com.ita.edu.teachua.ui.tests.BasicSearchTest.checkSearchWithNameOfClubsClipBoard",
+  "historyId" : "4cd147a9f2768621279074e50032bc73",
+  "time" : {
+    "start" : 1642760538670,
+    "stop" : 1642760539853,
+    "duration" : 1183
+  },
+  "description" : "TUA-226 Verify that user can perform basic search by inserting name of a club",
+  "descriptionHtml" : "<p>TUA-226 Verify that user can perform basic search by inserting name of a club</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642760534589,
+      "stop" : 1642760538665,
+      "duration" : 4076
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642759772883,
+      "stop" : 1642759775567,
+      "duration" : 2684
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "TUA-226 Verify that user can perform basic search by inserting name of a club",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Insert from clipboard *Школа танців Dream Team* in search field",
+      "time" : {
+        "start" : 1642760538670,
+        "stop" : 1642760538785,
+        "duration" : 115
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "Школа танців Dream Team"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if club Школа танців Dream Team is present on the page",
+      "time" : {
+        "start" : 1642760538785,
+        "stop" : 1642760539853,
+        "duration" : 1068
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Школа танців Dream Team"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642760539854,
+      "stop" : 1642760539922,
+      "duration" : 68
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkSearchWithNameOfClubsClipBoard"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-933"
+  }, {
+    "name" : "thread",
+    "value" : "2959@fv-az74-933.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Школа танців Dream Team"
+  } ],
+  "links" : [ {
+    "name" : "TUA-226",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "528d834a8300fff3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/528d834a8300fff3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759989484,
+          "stop" : 1642759990685,
+          "duration" : 1201
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d90547af79f01666.json",
+  "parameterValues" : [ "Школа танців Dream Team" ]
+}

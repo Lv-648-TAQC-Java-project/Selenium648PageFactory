@@ -1,0 +1,185 @@
+{
+  "uid" : "e6efc894e34f45a",
+  "name" : "TUA-428",
+  "fullName" : "com.ita.edu.teachua.ui.tests.BasicSearchTest.checkInvalidSymbolsAndQuantityPaste",
+  "historyId" : "779a9f92fedfe4ba5b40844902b96850",
+  "time" : {
+    "start" : 1642760470829,
+    "stop" : 1642760472292,
+    "duration" : 1463
+  },
+  "description" : "Verify search field behavior for invalid number of symbols pasted",
+  "descriptionHtml" : "<p>Verify search field behavior for invalid number of symbols pasted</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642760466664,
+      "stop" : 1642760470827,
+      "duration" : 4163
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642759772883,
+      "stop" : 1642759775567,
+      "duration" : 2684
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify search field behavior for invalid number of symbols pasted",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Insert from clipboard *///* in search field",
+      "time" : {
+        "start" : 1642760470830,
+        "stop" : 1642760471257,
+        "duration" : 427
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "///"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if {title} of invalid search results is present on the page",
+      "time" : {
+        "start" : 1642760471257,
+        "stop" : 1642760472292,
+        "duration" : 1035
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642760472293,
+      "stop" : 1642760472364,
+      "duration" : 71
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkInvalidSymbolsAndQuantityPaste"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-933"
+  }, {
+    "name" : "thread",
+    "value" : "2959@fv-az74-933.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "///"
+  }, {
+    "name" : "arg1",
+    "value" : "За критеріями пошуку гуртків не знайдено"
+  } ],
+  "links" : [ {
+    "name" : "TUA-428",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "3d2a8b1b7d2313e5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/3d2a8b1b7d2313e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759912287,
+          "stop" : 1642759913723,
+          "duration" : 1436
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e6efc894e34f45a.json",
+  "parameterValues" : [ "///", "За критеріями пошуку гуртків не знайдено" ]
+}
