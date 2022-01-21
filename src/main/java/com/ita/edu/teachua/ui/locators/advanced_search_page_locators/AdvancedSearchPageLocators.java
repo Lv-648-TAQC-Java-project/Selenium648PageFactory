@@ -16,13 +16,14 @@ public class AdvancedSearchPageLocators {
     public static final String DANCE_CHOREOGRAPHY_CHECKBOX_XPATH = "//label[contains(@class,'ant-checkbox-wrapper')]//span[contains(text(),'Танці, хореографія')]";
     public static final String EARLY_DEVELOPMENT_STUDIES_CHECKBOX_XPATH = "//label[contains(@class,'ant-checkbox-wrapper')]//span[contains(text(),'Студії раннього розвитку')]";
     public static final String PROGRAMING_STEM_CHECKBOX_XPATH = "//label[contains(@class,'ant-checkbox-wrapper')]//span[contains(text(),'Програмування, робототехніка, STEM')]";
-    public static final String ART_DESIGN_CHECKBOX_XPATH = "//label[contains(@class,'ant-checkbox-wrapper')]//span[contains(text(),'Художня студія, мистецтво, дизайн')]";
+    public static final String BASICS_XPATH = "//label[contains(@class,'ant-checkbox-wrapper')]//span[contains(text(),'Основи')]";
+    public static final String BASICS_JAVA444_XPATH = "//label[contains(@class,'ant-checkbox-wrapper')]//span[contains(text(),'Основи Java444')]";
     public static final String VOCAL_MUSIC_CHECKBOX_XPATH = "//label[contains(@class,'ant-checkbox-wrapper')]//span[contains(text(),'Вокальна студія, музика, музичні інструменти')]";
     public static final String ACTORS_THEATER_CHECKBOX_XPATH = "//label[contains(@class,'ant-checkbox-wrapper')]//span[contains(text(),'Акторська майстерність, театр')]";
     public static final String PERSONAL_DEVELOPMENT_CHECKBOX_XPATH = "//label[contains(@class,'ant-checkbox-wrapper')]//span[contains(text(),'Особистісний розвиток')]";
     public static final String JOURNALISM_EDITING_VIDEO_CHECKBOX_XPATH = "//label[contains(@class,'ant-checkbox-wrapper')]//span[contains(text(),'Журналістика, дитяче телебачення, монтаж відео, влогів')]";
     public static final String DEVELOPMENT_CENTER_CHECKBOX_XPATH = "//label[contains(@class,'ant-checkbox-wrapper')]//span[contains(text(),'Центр розвитку')]";
-    public static final String OTHER_CHECKBOX_XPATH = "//label[contains(@class,'ant-checkbox-wrapper')]//span[contains(text(),'Центр розвитку')]";
+    public static final String OTHER_CHECKBOX_XPATH = "//label[contains(@class,'ant-checkbox-wrapper')]//span[contains(text(),'Інше')]";
     public static final String AGE_LABEL_XPATH = "//label[@for= 'basic_age']";
     public static final String AGE_INPUT_CSS_SELECTOR = "input[role='spinbutton']";
     public static final String WORKSHOP_RADIO_BUTTON_XPATH = "//span[@class='ant-radio ant-radio-checked']";

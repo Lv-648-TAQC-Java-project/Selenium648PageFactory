@@ -3,7 +3,6 @@ package com.ita.edu.teachua.ui.pages.advanced_search;
 
 import com.ita.edu.teachua.ui.elements.custom_elements.*;
 import com.ita.edu.teachua.ui.locators.advanced_search_page_locators.AdvancedSearchPageLocators;
-import com.ita.edu.teachua.ui.locators.header_locators.GuestDropdownComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -14,7 +13,6 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,8 +46,10 @@ public class AdvancedSearchPage extends BasePage {
     private CheckBox earlyDevelopStudiesCheckBox;
     @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.PROGRAMING_STEM_CHECKBOX_XPATH)
     private CheckBox programmingStemCheckBox;
-    @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.ART_DESIGN_CHECKBOX_XPATH)
-    private CheckBox artDesignCheckBox;
+    @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.BASICS_XPATH)
+    private CheckBox basicsCheckBox;
+    @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.BASICS_JAVA444_XPATH)
+    private CheckBox basicsJava444CheckBox;
     @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.VOCAL_MUSIC_CHECKBOX_XPATH)
     private CheckBox vocalMusicCheckBox;
     @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.ACTORS_THEATER_CHECKBOX_XPATH)
@@ -180,13 +180,22 @@ public class AdvancedSearchPage extends BasePage {
         return programmingStemCheckBox;
     }
 
-    public CheckBox getArtDesignCheckBox() {
+    public CheckBox getBasicsCheckBox() {
         try {
-            artDesignCheckBox.isDisplayed();
+            basicsCheckBox.isDisplayed();
         } catch (NoSuchElementException e) {
             return null;
         }
-        return artDesignCheckBox;
+        return basicsCheckBox;
+    }
+
+    public CheckBox getBasicsJava444CheckBox() {
+        try {
+            basicsJava444CheckBox.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return null;
+        }
+        return basicsJava444CheckBox;
     }
 
     public CheckBox getActorsTheaterCheckBox() {
