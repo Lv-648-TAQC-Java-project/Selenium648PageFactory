@@ -6,15 +6,18 @@ import java.util.List;
 
 @Data
 public class Root {
-    public int id;
+    public Integer id;
     public String name;
     public List<Location> locations;
     public String description;
     public String urlWeb;
     public String urlBackgroundPicture;
+    //
+    public String email;
+    public String phones;
     public String urlLogo;
     public List<Integer> clubsId;
-    public int userId;
+    public Integer userId;
     public String contacts;
-    public int centerExternalId;
+    public Integer centerExternalId;
 }

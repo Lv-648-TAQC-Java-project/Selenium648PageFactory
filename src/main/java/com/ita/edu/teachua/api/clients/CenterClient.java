@@ -9,7 +9,7 @@ import io.restassured.response.Response;
 import java.io.IOException;
 
 public class CenterClient extends BaseClient{
-    private final String clientUrl;
+    private final String centerUrl;
     private final String centerListUrl;
     protected MainValueProvider valueProvider;
     private String token;
@@ -21,7 +21,7 @@ public class CenterClient extends BaseClient{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        this.clientUrl = valueProvider.getCenterClientUrl();
+        this.centerUrl = valueProvider.getCenterClientUrl();
         this.centerListUrl=valueProvider.getCentersClientUrl();
         this.token = token;
     }
@@ -31,19 +31,19 @@ public class CenterClient extends BaseClient{
                 .header("Authorization",String.format("Bearer %s",token))
                 .body(new ClientDataTransfer().getAddCenter())
                 .when()
-                .post(clientUrl);
+                .post(centerUrl);
     }
 
     public Response deleteNewCenter(Integer id){
         return preparedRequest()
                 .header("Authorization",String.format("Bearer %s",token))
-                .delete(String.format("%s/%d", clientUrl, id));
+                .delete(String.format("%s/%d", centerUrl, id));
     }
 
     public Response getNewCenter(Integer id){
         return preparedRequest()
                 .header("Authorization",String.format("Bearer %s",token))
-                .get(String.format("%s/%d", clientUrl, id));
+                .get(String.format("%s/%d", centerUrl, id));
     }
 
     public Response getCenters(){
@@ -58,11 +58,11 @@ public class CenterClient extends BaseClient{
                 .get(String.format("%s/%d", centerListUrl, id));
     }
 
-    public Response changeCenter(Center center, Integer id){
+    public Response changeCenter(Integer id){
         return preparedRequest()
                 .header("Authorization",String.format("Bearer %s",token))
-                .body(center)
+                .body(new ClientDataTransfer().getChangeCenter())
                 .when()
-                .put(String.format("%s/%d", clientUrl, id));
+                .put(String.format("%s/%d", centerUrl, id));
     }
 }
