@@ -1,0 +1,229 @@
+{
+  "uid" : "2ed6b8aed6dc94da",
+  "name" : "Get contact by ID",
+  "fullName" : "com.ita.edu.teachua.api.tests.ContactTests.getContact",
+  "historyId" : "2a4856f21c557d7f0df259a2076eb705",
+  "time" : {
+    "start" : 1642787157156,
+    "stop" : 1642787157157,
+    "duration" : 1
+  },
+  "description" : "[API] Get contact by ID",
+  "descriptionHtml" : "<p>[API] Get contact by ID</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+  "statusTrace" : "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])\n\tat com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:843)\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1206)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4218)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3214)\n\tat com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)\n\tat io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)\n\tat io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)\n\tat io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)\n\tat io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)\n\tat io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)\n\tat io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)\n\tat io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)\n\tat com.ita.edu.teachua.api.clients.sigin.Authorization.<init>(Authorization.java:21)\n\tat com.ita.edu.teachua.api.tests.AuthorizedAsAdminApiTestRunner.beforeClass(AuthorizedAsAdminApiTestRunner.java:18)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)\n\tat org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1642787156334,
+      "stop" : 1642787157152,
+      "duration" : 818
+    },
+    "description" : "",
+    "status" : "broken",
+    "statusMessage" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+    "statusTrace" : "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])\n\tat com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:843)\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1206)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4218)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3214)\n\tat com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)\n\tat io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)\n\tat io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)\n\tat io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)\n\tat io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)\n\tat io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)\n\tat io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)\n\tat io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)\n\tat com.ita.edu.teachua.api.clients.sigin.Authorization.<init>(Authorization.java:21)\n\tat com.ita.edu.teachua.api.tests.AuthorizedAsAdminApiTestRunner.beforeClass(AuthorizedAsAdminApiTestRunner.java:18)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)\n\tat org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1642787156344,
+        "stop" : 1642787156351,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642787006241,
+      "stop" : 1642787010141,
+      "duration" : 3900
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.ContactTests"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.ContactTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "getContact"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.ContactTests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az77-149"
+  }, {
+    "name" : "thread",
+    "value" : "2827@fv-az77-149.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 4,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "adcfe23e7fe9481",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/adcfe23e7fe9481",
+        "status" : "skipped",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+        "time" : {
+          "start" : 1642787154734,
+          "stop" : 1642787154734,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "61c2e68a29dd6ba2",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/61c2e68a29dd6ba2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786545503,
+          "stop" : 1642786551504,
+          "duration" : 6001
+        }
+      }, {
+        "uid" : "13fbece1a40a8bd8",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/13fbece1a40a8bd8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786538822,
+          "stop" : 1642786543834,
+          "duration" : 5012
+        }
+      }, {
+        "uid" : "c1fca599e48f764",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/53//#testresult/c1fca599e48f764",
+        "status" : "skipped",
+        "statusDetails" : "Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=iso-8859-1'.",
+        "time" : {
+          "start" : 1642785477747,
+          "stop" : 1642785477747,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "5654efd728a18b39",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/41//#testresult/5654efd728a18b39",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642773084316,
+          "stop" : 1642773090461,
+          "duration" : 6145
+        }
+      }, {
+        "uid" : "52d172c29fb39a9",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/39//#testresult/52d172c29fb39a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642769093885,
+          "stop" : 1642769102220,
+          "duration" : 8335
+        }
+      }, {
+        "uid" : "33f2b8bde48787e7",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/33f2b8bde48787e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642762364005,
+          "stop" : 1642762366702,
+          "duration" : 2697
+        }
+      }, {
+        "uid" : "aad38f202b8c815d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/aad38f202b8c815d",
+        "status" : "broken",
+        "statusDetails" : "Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=iso-8859-1'.",
+        "time" : {
+          "start" : 1642760866258,
+          "stop" : 1642760868240,
+          "duration" : 1982
+        }
+      }, {
+        "uid" : "3f9d395c9746af4",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/3f9d395c9746af4",
+        "status" : "skipped",
+        "statusDetails" : "Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=iso-8859-1'.",
+        "time" : {
+          "start" : 1642760871302,
+          "stop" : 1642760871302,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "bf90a88996a7c3b4",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/35//#testresult/bf90a88996a7c3b4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759953121,
+          "stop" : 1642759956512,
+          "duration" : 3391
+        }
+      }, {
+        "uid" : "525ff7ecf217ea78",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/525ff7ecf217ea78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759244790,
+          "stop" : 1642759248203,
+          "duration" : 3413
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2ed6b8aed6dc94da.json",
+  "parameterValues" : [ ]
+}
