@@ -56,7 +56,7 @@ public class GmailContentExtractor {
         try {
             in = new FileInputStream(CREDENTIALS_FILE_PATH);
         } catch (FileNotFoundException e) {
-            in = new ByteArrayInputStream(System.getenv("GMAIL_CREDENTIALS").getBytes(StandardCharsets.UTF_8));
+            //in = new ByteArrayInputStream(System.getenv("GMAIL_CREDENTIALS").getBytes(StandardCharsets.UTF_8));
         }
         if (in == null) {
             //throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
