@@ -6,6 +6,7 @@ import io.cucumber.java.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 
 import java.io.IOException;
@@ -23,7 +24,9 @@ public class BaseDefinition {
     }
     @Before
     public void before(){
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(testValueProvider.getBaseUrl());
@@ -34,6 +37,10 @@ public class BaseDefinition {
         if (driver != null) {
             driver.quit();
         }
+    }
+
+    public static TestValueProvider getTestValueProvider() {
+        return testValueProvider;
     }
 
     public WebDriver getDriver(){

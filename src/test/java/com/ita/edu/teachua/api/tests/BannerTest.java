@@ -16,7 +16,6 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
     @Test(description = "[API banner] Get list of all banners")
     @Description("[API] Get list of all banners")
     public void getListOfBanners() throws IOException {
-        Specifications.setResponseSpecification(200);
         BannerClient bannerClient = new BannerClient(authorization.getToken());
         Response response = bannerClient.getBanners();
         List<BannerModel> banners = response
@@ -29,7 +28,6 @@ public class BannerTest extends AuthorizedAsAdminApiTestRunner {
     @Test(description = "[API banner] Get banner by ID")
     @Description("[API] Get banner by ID")
     public void getBanner() throws IOException {
-        Specifications.setResponseSpecification(200);
         BannerClient bannerClient = new BannerClient(authorization.getToken());
         Response response = bannerClient.getBanner(10);
         BannerModel bannerModel = response

@@ -19,11 +19,10 @@ public class CanAddLocation {
         softAssert = new SoftAssert();
     }
 
-    @Given("Log in as an Керівник email = {adminEmail}, password = {adminPassword}")
-    public void logInAsAnКерівникEmailEmailPasswordPassword(String email, String password) {
-        pageContext.getAllPages().getHeaderPage().authorize(email, password);
+    @Given("Log in as an Керівник")
+    public void logInAsAnКерівник() {
+        pageContext.getAllPages().getHeaderPage().authorize(BaseDefinition.getTestValueProvider().getAdminEmail(), BaseDefinition.getTestValueProvider().getAdminPassword());
     }
-
     @Then("Go to the Мій профіль")
     public void goToTheМійПрофіль() {
         pageContext.getAllPages().getHeaderPage()
@@ -87,6 +86,7 @@ public class CanAddLocation {
         pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent()
                 .clickOnCityDropdown()
                 .clickOnKyivButton();
+
     }
 
     @And("Check if The Kyiv city accepted from the drop-down list by when choosing it in dropdown with {addLocationPopUpIds} at 1 index")

@@ -25,10 +25,9 @@ public class CannotAddLocation  {
        allPages = new AllPages(baseDef.getDriver());
        softAssert = new SoftAssert();
     }
-
-    @Given("Log in as an Керівник email = {string}, password = {string}")
-    public void logInAsAnКерівникEmailPassword(String email, String password) {
-        allPages.getHeaderPage().authorize(email,password);
+    @Given("Log in as Керівник")
+    public void logInAsКерівник() {
+        allPages.getHeaderPage().authorize(BaseDefinition.getTestValueProvider().getAdminEmail(), BaseDefinition.getTestValueProvider().getAdminPassword());
     }
 
     @Then("Go to the Додати центр")

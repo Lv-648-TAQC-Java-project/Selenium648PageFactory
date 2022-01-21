@@ -3,7 +3,7 @@ package com.ita.edu.teachua.api.tests;
 import com.ita.edu.teachua.api.clients.sigin.Authorization;
 import com.ita.edu.teachua.utils.TestValueProvider;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeClass;
 
 import java.io.IOException;
 
@@ -12,8 +12,8 @@ public class AuthorizedAsAdminApiTestRunner {
     protected Authorization authorization;
     protected WebDriver driver;
 
-    @BeforeSuite
-    public void beforeSuite() throws IOException {
+    @BeforeClass
+    public void beforeClass() throws IOException {
         testValueProvider = new TestValueProvider();
         authorization = new Authorization(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword());
 //        WebDriverManager.chromedriver().setup();

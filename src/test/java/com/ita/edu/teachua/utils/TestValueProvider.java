@@ -24,11 +24,12 @@ public class TestValueProvider {
     }
 
     public String getAdminPassword() {
-        return  properties != null ? properties.getProperty("adminPassword") : System.getenv("ADMIN_PASSWORD");
+         return  properties != null ? properties.getProperty("adminPassword") : System.getenv("ADMIN_PASSWORD");
         
     }
     public String getAdminEmail() {
         return  properties != null ? properties.getProperty("adminEmail") : System.getenv("ADMIN_EMAIL");
+
     }
 
     public String getTestTeachUaMetaEmail() {
@@ -36,6 +37,9 @@ public class TestValueProvider {
     }
     public String getTestTeachUaMetaPassword() {
         return  properties != null ? properties.getProperty("TestTeachUaMetaPassword") : System.getenv("TEST_TEACH_UA_META_PASSWORD");
+    }
+    public boolean getHeadlessMode() {
+        return  properties != null ? Boolean.parseBoolean(properties.getProperty("HeadlessMode")) : Boolean.parseBoolean(System.getenv("TEST_TEACH_UA_HEADLESS_MODE"));
     }
 }
 //

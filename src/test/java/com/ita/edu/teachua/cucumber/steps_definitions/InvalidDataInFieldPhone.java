@@ -2,6 +2,7 @@ package com.ita.edu.teachua.cucumber.steps_definitions;
 
 import com.ita.edu.teachua.ui.pages.header_page.OwnerDropdownComponent;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -42,5 +43,10 @@ public class InvalidDataInFieldPhone {
             softAssert.assertEquals(pageContext.getAllProfilePageComponents().getProfileEditPopUpComponent().fillPhone(actual[i]).getMessage(),expected[i]);
         softAssert.assertEquals(pageContext.getAllProfilePageComponents().getProfileEditPopUpComponent().fillPhone("").getMessage(),expected[expected.length-1]);
         softAssert.assertAll();
+    }
+
+    @Given("Log in as an Керівник email = <email>, password = <password>")
+    public void logInAsAnКерівникEmailEmailPasswordPassword() {
+        pageContext.getAllPages().getHeaderPage().authorize(BaseDefinition.getTestValueProvider().getAdminEmail(), BaseDefinition.getTestValueProvider().getAdminPassword());
     }
 }

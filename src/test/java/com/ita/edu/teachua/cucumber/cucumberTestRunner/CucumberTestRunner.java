@@ -12,14 +12,14 @@ import org.testng.annotations.Test;
         glue = {"com.ita.edu.teachua.cucumber.steps_definitions"}
 
 )
-public class AddLocationTestRunner extends AbstractTestNGCucumberTests {
+public class CucumberTestRunner extends AbstractTestNGCucumberTests {
     private TestNGCucumberRunner testNGCucumberRunner;
 
     @BeforeClass(alwaysRun=true)
     public void setUpClass(){
         testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
     }
-    @Test(description = "Club Add Location Test", dataProvider = "scenarios")
+    @Test(description = "Example of BDD suite", dataProvider = "scenarios")
     public void scenario(PickleWrapper pickle, FeatureWrapper cucumberFeature) {
         testNGCucumberRunner.runScenario(pickle.getPickle());
     }
