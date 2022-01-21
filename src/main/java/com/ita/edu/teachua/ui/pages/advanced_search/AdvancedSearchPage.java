@@ -312,17 +312,16 @@ public class AdvancedSearchPage extends BasePage {
     @Step("Click on list icon")
     public AdvancedSearchPage clickOnListIcon() {
         listIcon.click();
-        sleep(1000);
         return this;
     }
 
-    @Step("Get all clubs")
-    public List<ClubsItemComponent> getCards() {
-        List<ClubsItemComponent> clubBlocks = new ArrayList<>();
-        for (WebElement j : centerBlocks) {
-            clubBlocks.add(new ClubsItemComponent(driver, j));
+    @Step("Get centers cards")
+    public List<CentersItemComponent> getCards() {
+        List<CentersItemComponent> centerBlocks = new ArrayList<>();
+        for (WebElement j : this.centerBlocks) {
+            centerBlocks.add(new CentersItemComponent(driver, j));
         }
-        return clubBlocks;
+        return centerBlocks;
     }
 
     @Step("Get all clubs cards")
