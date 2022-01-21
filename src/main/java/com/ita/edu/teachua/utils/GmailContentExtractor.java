@@ -18,6 +18,7 @@ import com.google.api.services.gmail.model.Thread;
 import io.restassured.path.json.JsonPath;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.util.*;
 
@@ -55,11 +56,7 @@ public class GmailContentExtractor {
         try {
             in = new FileInputStream(CREDENTIALS_FILE_PATH);
         } catch (FileNotFoundException e) {
-            try {
-                in = new FileInputStream(System.getenv("GMAIL_CREDENTIALS"));
-            } catch (FileNotFoundException ex) {
-                ex.printStackTrace();
-            }
+            in = new ByteArrayInputStream(System.getenv("GMAIL_CREDENTIALS").getBytes(StandardCharsets.UTF_8));
         }
         if (in == null) {
             //throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
