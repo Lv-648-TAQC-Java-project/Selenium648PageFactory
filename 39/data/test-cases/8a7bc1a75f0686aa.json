@@ -1,0 +1,221 @@
+{
+  "uid" : "8a7bc1a75f0686aa",
+  "name" : "TUA-428",
+  "fullName" : "com.ita.edu.teachua.ui.tests.BasicSearchTest.checkInvalidSymbolsAndQuantityPaste",
+  "historyId" : "779a9f92fedfe4ba5b40844902b96850",
+  "time" : {
+    "start" : 1642769626493,
+    "stop" : 1642769627926,
+    "duration" : 1433
+  },
+  "description" : "Verify search field behavior for invalid number of symbols pasted",
+  "descriptionHtml" : "<p>Verify search field behavior for invalid number of symbols pasted</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642769621748,
+      "stop" : 1642769626491,
+      "duration" : 4743
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642768934584,
+      "stop" : 1642768936446,
+      "duration" : 1862
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify search field behavior for invalid number of symbols pasted",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Insert from clipboard *///* in search field",
+      "time" : {
+        "start" : 1642769626494,
+        "stop" : 1642769626892,
+        "duration" : 398
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "///"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if {title} of invalid search results is present on the page",
+      "time" : {
+        "start" : 1642769626892,
+        "stop" : 1642769627925,
+        "duration" : 1033
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642769627926,
+      "stop" : 1642769627994,
+      "duration" : 68
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkInvalidSymbolsAndQuantityPaste"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az135-188"
+  }, {
+    "name" : "thread",
+    "value" : "2821@fv-az135-188.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "///"
+  }, {
+    "name" : "arg1",
+    "value" : "За критеріями пошуку гуртків не знайдено"
+  } ],
+  "links" : [ {
+    "name" : "TUA-428",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "19b5dc851a5b7dfd",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/19b5dc851a5b7dfd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642762886701,
+          "stop" : 1642762888358,
+          "duration" : 1657
+        }
+      }, {
+        "uid" : "6b2bf881dfd74671",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/6b2bf881dfd74671",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642761616853,
+          "stop" : 1642761618487,
+          "duration" : 1634
+        }
+      }, {
+        "uid" : "817548543eab134e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/817548543eab134e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642761599070,
+          "stop" : 1642761600491,
+          "duration" : 1421
+        }
+      }, {
+        "uid" : "e6efc894e34f45a",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/35//#testresult/e6efc894e34f45a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642760470829,
+          "stop" : 1642760472292,
+          "duration" : 1463
+        }
+      }, {
+        "uid" : "3d2a8b1b7d2313e5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/3d2a8b1b7d2313e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759912287,
+          "stop" : 1642759913723,
+          "duration" : 1436
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8a7bc1a75f0686aa.json",
+  "parameterValues" : [ "///", "За критеріями пошуку гуртків не знайдено" ]
+}
