@@ -17,8 +17,6 @@ import java.util.List;
 
 public class ClubsItemComponent extends BasePage {
     DefaultElementLocatorFactory parentContext;
-    WebDriver driver;
-    WebElement root;
     @FindBy(how = How.XPATH, using = ClubsItemComponentLocators.CARD_TITLE_XPATH)
     private WebElement cartTitle;
     @FindAll(@FindBy(how = How.XPATH, using = ClubsItemComponentLocators.CARD_RATING_STAR_XPATH))
@@ -33,17 +31,6 @@ public class ClubsItemComponent extends BasePage {
     @Step("Get title of the card")
     public WebElement getCardTitle() {
         return cartTitle;
-    }
-
-    @Step("Check if club is displayed as a list")
-    public boolean isList() {
-        String str = root.getAttribute("class");
-        return str.contains("list-rectangle-item");
-    }
-
-    public boolean isBlock() {
-        String str = root.getAttribute("class");
-        return !str.contains("list-rectangle-item");
     }
 
     public Integer getRating() {

@@ -80,7 +80,7 @@ public class ProfileEditPopUpComponent extends BasePage {
 
 
     public String getMessage() {
-        sleep(100);
+        sleep(1000);
         return messageInvalidInput.getText();
     }
 

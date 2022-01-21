@@ -18,6 +18,7 @@ import com.google.api.services.gmail.model.Thread;
 import io.restassured.path.json.JsonPath;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.util.*;
 
@@ -30,13 +31,13 @@ public class GmailContentExtractor {
      * If modifying these scopes, delete your previously saved tokens/ folder.
      */
     private static final List<String> SCOPES = Collections.singletonList(GmailScopes.MAIL_GOOGLE_COM);
-    private static final String CREDENTIALS_FILE_PATH =
-            System.getProperty("user.dir") +
+    private static final String CREDENTIALS_FILE_PATH = "src/test/resources/credentials.json";
+            /*System.getProperty("user.dir") +
                     File.separator + "src" +
                     File.separator + "test" +
                     File.separator + "resources" +
                     //File.separator + "credentials" +
-                    File.separator + "credentials.json";
+                    File.separator + "credentials.json";*/
 
     private static final String TOKENS_DIRECTORY_PATH = System.getProperty("user.dir") +
             File.separator + "src" +
@@ -51,9 +52,14 @@ public class GmailContentExtractor {
      */
     private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
         // Load client secrets.
-        InputStream in = new FileInputStream(CREDENTIALS_FILE_PATH);
+        InputStream in = null;
+        try {
+            in = new FileInputStream(CREDENTIALS_FILE_PATH);
+        } catch (FileNotFoundException e) {
+            in = new ByteArrayInputStream(System.getenv("GMAIL_CREDENTIALS").getBytes(StandardCharsets.UTF_8));
+        }
         if (in == null) {
-            throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
+            //throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
         }
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
         // Build flow and trigger user authorization request.

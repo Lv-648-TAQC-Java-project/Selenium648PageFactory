@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class CategoryClient extends BaseClient{
 
-    private final String clientUrl;
+    private final String categoryUrl;
     private final String categoryListUrl;
     private final String categoryListUrlSearch;
     protected MainValueProvider valueProvider;
@@ -21,7 +21,7 @@ public class CategoryClient extends BaseClient{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        this.clientUrl = valueProvider.getCategoriesClientUrl();
+        this.categoryUrl = valueProvider.getCategoryClientUrl();
         this.categoryListUrl=valueProvider.getCategoriesClientUrl();
         this.categoryListUrlSearch=valueProvider.getCategoriesSearchClientUrl();
         this.token = token;
@@ -32,7 +32,7 @@ public class CategoryClient extends BaseClient{
                 .header("Authorization",String.format("Bearer %s",token))
                 .body(new ClientDataTransfer().getAddCategory())
                 .when()
-                .post(clientUrl);
+                .post(categoryUrl);
     }
 
     public Response changeNewCategory(Category category, Integer id){
@@ -40,19 +40,19 @@ public class CategoryClient extends BaseClient{
                 .header("Authorization",String.format("Bearer %s",token))
                 .body(category)
                 .when()
-                .put(String.format("%s/%d", clientUrl, id));
+                .put(String.format("%s/%d", categoryUrl, id));
     }
 
     public Response deleteNewCategory(Integer id){
         return preparedRequest()
                 .header("Authorization",String.format("Bearer %s",token))
-                .delete(String.format("%s/%d", clientUrl, id));
+                .delete(String.format("%s/%d", categoryUrl, id));
     }
 
     public Response getNewCategory(Integer id){
         return preparedRequest()
                 .header("Authorization",String.format("Bearer %s",token))
-                .get(String.format("%s/%d", clientUrl, id));
+                .get(String.format("%s/%d", categoryUrl, id));
     }
 
     public Response getCategories(){
