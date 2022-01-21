@@ -51,10 +51,18 @@ public class GmailContentExtractor {
      */
     private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
         // Load client secrets.
-        InputStream in = new FileInputStream(CREDENTIALS_FILE_PATH);
+        InputStream in = null;
+        try {
+            in = new FileInputStream(CREDENTIALS_FILE_PATH);
+        } catch (FileNotFoundException e) {
+            try {
+                in = new FileInputStream(System.getenv("GMAIL_CREDENTIALS"));
+            } catch (FileNotFoundException ex) {
+                ex.printStackTrace();
+            }
+        }
         if (in == null) {
             //throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
-            in = new FileInputStream(System.getenv("GMAIL_CREDENTIALS"));
         }
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
         // Build flow and trigger user authorization request.
