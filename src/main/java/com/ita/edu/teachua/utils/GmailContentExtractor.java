@@ -53,7 +53,8 @@ public class GmailContentExtractor {
         // Load client secrets.
         InputStream in = new FileInputStream(CREDENTIALS_FILE_PATH);
         if (in == null) {
-            throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
+            //throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
+            in = new FileInputStream(System.getenv("GMAIL_CREDENTIALS"));
         }
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
         // Build flow and trigger user authorization request.
