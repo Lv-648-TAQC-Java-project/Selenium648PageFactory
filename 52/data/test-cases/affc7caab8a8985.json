@@ -1,0 +1,403 @@
+{
+  "uid" : "affc7caab8a8985",
+  "name" : "TUA-321",
+  "fullName" : "com.ita.edu.teachua.ui.tests.RestorePasswordViaGmailApiTest.testPasswordRecovery",
+  "historyId" : "1b357d7d3e0df694619d7b2cb5b398cb",
+  "time" : {
+    "start" : 1642784501804,
+    "stop" : 1642784508864,
+    "duration" : 7060
+  },
+  "description" : "Verify if error message is displayed after inputting invalid data for recover or change the password.",
+  "descriptionHtml" : "<p>Verify if error message is displayed after inputting invalid data for recover or change the password.</p>\n",
+  "status" : "broken",
+  "statusMessage" : "java.lang.NullPointerException",
+  "statusTrace" : "java.lang.RuntimeException: java.lang.NullPointerException\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getGmailData(GmailContentExtractor.java:130)\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getGmailMessageLink(GmailContentExtractor.java:199)\n\tat com.ita.edu.teachua.ui.pages.header_page.RestoringBeginPopUpComponent.clickOnRestore(RestoringBeginPopUpComponent.java:40)\n\tat com.ita.edu.teachua.ui.tests.RestorePasswordViaGmailApiTest.testPasswordRecovery(RestorePasswordViaGmailApiTest.java:45)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: java.lang.NullPointerException\n\tat java.io.Reader.<init>(Reader.java:78)\n\tat java.io.InputStreamReader.<init>(InputStreamReader.java:72)\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getCredentials(GmailContentExtractor.java:65)\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getService(GmailContentExtractor.java:80)\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getGmailData(GmailContentExtractor.java:108)\n\t... 26 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642784497204,
+      "stop" : 1642784501797,
+      "duration" : 4593
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642784464582,
+      "stop" : 1642784466680,
+      "duration" : 2098
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify if error message is displayed after inputting invalid data for recover or change the password.",
+    "status" : "broken",
+    "statusMessage" : "java.lang.NullPointerException",
+    "statusTrace" : "java.lang.RuntimeException: java.lang.NullPointerException\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getGmailData(GmailContentExtractor.java:130)\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getGmailMessageLink(GmailContentExtractor.java:199)\n\tat com.ita.edu.teachua.ui.pages.header_page.RestoringBeginPopUpComponent.clickOnRestore(RestoringBeginPopUpComponent.java:40)\n\tat com.ita.edu.teachua.ui.tests.RestorePasswordViaGmailApiTest.testPasswordRecovery(RestorePasswordViaGmailApiTest.java:45)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: java.lang.NullPointerException\n\tat java.io.Reader.<init>(Reader.java:78)\n\tat java.io.InputStreamReader.<init>(InputStreamReader.java:72)\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getCredentials(GmailContentExtractor.java:65)\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getService(GmailContentExtractor.java:80)\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getGmailData(GmailContentExtractor.java:108)\n\t... 26 more\n",
+    "steps" : [ {
+      "name" : "Click on guest dropdown",
+      "time" : {
+        "start" : 1642784501809,
+        "stop" : 1642784501917,
+        "duration" : 108
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on `Увійти` button",
+      "time" : {
+        "start" : 1642784501918,
+        "stop" : 1642784502587,
+        "duration" : 669
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Забули пароль' button.",
+      "time" : {
+        "start" : 1642784502588,
+        "stop" : 1642784503171,
+        "duration" : 583
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Filling email field",
+      "time" : {
+        "start" : 1642784503172,
+        "stop" : 1642784503529,
+        "duration" : 357
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "speak.ukrainian.atqc.test@gmail.com"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on 'Відновити' button",
+      "time" : {
+        "start" : 1642784503529,
+        "stop" : 1642784508606,
+        "duration" : 5077
+      },
+      "status" : "broken",
+      "statusMessage" : "java.lang.NullPointerException",
+      "statusTrace" : "java.lang.RuntimeException: java.lang.NullPointerException\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getGmailData(GmailContentExtractor.java:130)\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getGmailMessageLink(GmailContentExtractor.java:199)\n\tat com.ita.edu.teachua.ui.pages.header_page.RestoringBeginPopUpComponent.clickOnRestore(RestoringBeginPopUpComponent.java:40)\n\tat com.ita.edu.teachua.ui.tests.RestorePasswordViaGmailApiTest.testPasswordRecovery(RestorePasswordViaGmailApiTest.java:45)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: java.lang.NullPointerException\n\tat java.io.Reader.<init>(Reader.java:78)\n\tat java.io.InputStreamReader.<init>(InputStreamReader.java:72)\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getCredentials(GmailContentExtractor.java:65)\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getService(GmailContentExtractor.java:80)\n\tat com.ita.edu.teachua.utils.GmailContentExtractor.getGmailData(GmailContentExtractor.java:108)\n\t... 26 more\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "cf9065cd75433ee8",
+      "name" : "Logs for thread 13",
+      "source" : "cf9065cd75433ee8.log",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "fd2088b3ea378eb2",
+      "name" : "Request logs for testPasswordRecovery",
+      "source" : "fd2088b3ea378eb2.log",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "68aa3e4323a67480",
+      "name" : "Page screenshot",
+      "source" : "68aa3e4323a67480.png",
+      "type" : "image/png",
+      "size" : 234687
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642784508867,
+      "stop" : 1642784508942,
+      "duration" : 75
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.RestorePasswordViaGmailApiTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.RestorePasswordViaGmailApiTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testPasswordRecovery"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.RestorePasswordViaGmailApiTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-933"
+  }, {
+    "name" : "thread",
+    "value" : "2858@fv-az74-933.TestNG-tests-1(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-321",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 17,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 17
+      },
+      "items" : [ {
+        "uid" : "1430896cee8c9cbf",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/51//#testresult/1430896cee8c9cbf",
+        "status" : "broken",
+        "statusDetails" : "java.lang.NullPointerException",
+        "time" : {
+          "start" : 1642783858851,
+          "stop" : 1642783865430,
+          "duration" : 6579
+        }
+      }, {
+        "uid" : "7d2f575c59c0c959",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/50//#testresult/7d2f575c59c0c959",
+        "status" : "broken",
+        "statusDetails" : "java.lang.NullPointerException",
+        "time" : {
+          "start" : 1642783012606,
+          "stop" : 1642783019498,
+          "duration" : 6892
+        }
+      }, {
+        "uid" : "a703fce491672973",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/49//#testresult/a703fce491672973",
+        "status" : "broken",
+        "statusDetails" : "java.lang.NullPointerException",
+        "time" : {
+          "start" : 1642782423150,
+          "stop" : 1642782430031,
+          "duration" : 6881
+        }
+      }, {
+        "uid" : "6bfb614a1908edb",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/48//#testresult/6bfb614a1908edb",
+        "status" : "broken",
+        "statusDetails" : "java.lang.NullPointerException",
+        "time" : {
+          "start" : 1642782070135,
+          "stop" : 1642782076992,
+          "duration" : 6857
+        }
+      }, {
+        "uid" : "4e6f6faf9d6f0e7d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/48//#testresult/4e6f6faf9d6f0e7d",
+        "status" : "broken",
+        "statusDetails" : "java.lang.NullPointerException",
+        "time" : {
+          "start" : 1642781079241,
+          "stop" : 1642781085776,
+          "duration" : 6535
+        }
+      }, {
+        "uid" : "8da9afd7facc66c7",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/46//#testresult/8da9afd7facc66c7",
+        "status" : "broken",
+        "statusDetails" : "java.lang.NullPointerException",
+        "time" : {
+          "start" : 1642780693377,
+          "stop" : 1642780700274,
+          "duration" : 6897
+        }
+      }, {
+        "uid" : "990dba4a883c9aa9",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/45//#testresult/990dba4a883c9aa9",
+        "status" : "broken",
+        "statusDetails" : "java.lang.NullPointerException",
+        "time" : {
+          "start" : 1642779896449,
+          "stop" : 1642779903355,
+          "duration" : 6906
+        }
+      }, {
+        "uid" : "53ada89530b10435",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/44//#testresult/53ada89530b10435",
+        "status" : "broken",
+        "statusDetails" : "java.lang.NullPointerException",
+        "time" : {
+          "start" : 1642777771645,
+          "stop" : 1642777778543,
+          "duration" : 6898
+        }
+      }, {
+        "uid" : "abbce955fc0b7a7",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/43//#testresult/abbce955fc0b7a7",
+        "status" : "broken",
+        "statusDetails" : "java.io.FileNotFoundException: /home/runner/work/Selenium648PageFactory/Selenium648PageFactory/src/test/resources/credentials.json (No such file or directory)",
+        "time" : {
+          "start" : 1642777152970,
+          "stop" : 1642777159635,
+          "duration" : 6665
+        }
+      }, {
+        "uid" : "c53e6ca8616168ee",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/41//#testresult/c53e6ca8616168ee",
+        "status" : "broken",
+        "statusDetails" : "java.io.FileNotFoundException: /home/runner/work/Selenium648PageFactory/Selenium648PageFactory/src/test/resources/credentials.json (No such file or directory)",
+        "time" : {
+          "start" : 1642773554165,
+          "stop" : 1642773561091,
+          "duration" : 6926
+        }
+      }, {
+        "uid" : "9b81a5023a65bcd8",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/39//#testresult/9b81a5023a65bcd8",
+        "status" : "broken",
+        "statusDetails" : "java.io.FileNotFoundException: /home/runner/work/Selenium648PageFactory/Selenium648PageFactory/src/test/resources/credentials.json (No such file or directory)",
+        "time" : {
+          "start" : 1642769603270,
+          "stop" : 1642769610137,
+          "duration" : 6867
+        }
+      }, {
+        "uid" : "10d4fbc7ad8dedc4",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/10d4fbc7ad8dedc4",
+        "status" : "broken",
+        "statusDetails" : "java.io.FileNotFoundException: /home/runner/work/Selenium648PageFactory/Selenium648PageFactory/src/test/resources/credentials.json (No such file or directory)",
+        "time" : {
+          "start" : 1642762863799,
+          "stop" : 1642762870655,
+          "duration" : 6856
+        }
+      }, {
+        "uid" : "74347557ff7f757",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/74347557ff7f757",
+        "status" : "broken",
+        "statusDetails" : "java.io.FileNotFoundException: /home/runner/work/Selenium648PageFactory/Selenium648PageFactory/src/test/resources/credentials.json (No such file or directory)",
+        "time" : {
+          "start" : 1642761593454,
+          "stop" : 1642761599989,
+          "duration" : 6535
+        }
+      }, {
+        "uid" : "c8cffef9d91d65fd",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/c8cffef9d91d65fd",
+        "status" : "broken",
+        "statusDetails" : "java.io.FileNotFoundException: /home/runner/work/Selenium648PageFactory/Selenium648PageFactory/src/test/resources/credentials.json (No such file or directory)",
+        "time" : {
+          "start" : 1642761576324,
+          "stop" : 1642761583210,
+          "duration" : 6886
+        }
+      }, {
+        "uid" : "255a3f7bc5eaee87",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/35//#testresult/255a3f7bc5eaee87",
+        "status" : "broken",
+        "statusDetails" : "java.io.FileNotFoundException: /home/runner/work/Selenium648PageFactory/Selenium648PageFactory/src/test/resources/credentials.json (No such file or directory)",
+        "time" : {
+          "start" : 1642760448525,
+          "stop" : 1642760455379,
+          "duration" : 6854
+        }
+      }, {
+        "uid" : "76b6a5261225840e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/76b6a5261225840e",
+        "status" : "broken",
+        "statusDetails" : "java.io.FileNotFoundException: /home/runner/work/Selenium648PageFactory/Selenium648PageFactory/src/test/resources/credentials.json (No such file or directory)",
+        "time" : {
+          "start" : 1642759883631,
+          "stop" : 1642759891966,
+          "duration" : 8335
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "affc7caab8a8985.json",
+  "parameterValues" : [ ]
+}
