@@ -1,0 +1,136 @@
+{
+  "uid" : "7fd0887c1793059",
+  "name" : "beforeClass",
+  "fullName" : "com.ita.edu.teachua.api.tests.AuthorizedAsAdminApiTestRunner.beforeClass",
+  "historyId" : "6893a14e26c3bdfecdee91a7a2d57dc4",
+  "time" : {
+    "start" : 1642760875368,
+    "stop" : 1642760875368,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "Couldn't kickstart handshaking",
+  "statusTrace" : "javax.net.ssl.SSLException: Couldn't kickstart handshaking\n\tat sun.security.ssl.Alert.createSSLException(Alert.java:127)\n\tat sun.security.ssl.TransportContext.fatal(TransportContext.java:324)\n\tat sun.security.ssl.TransportContext.fatal(TransportContext.java:267)\n\tat sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:438)\n\tat org.apache.http.conn.ssl.SSLSocketFactory.createLayeredSocket(SSLSocketFactory.java:570)\n\tat org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:554)\n\tat org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:415)\n\tat org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)\n\tat org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)\n\tat org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)\n\tat org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)\n\tat org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)\n\tat org.apache.http.client.HttpClient$execute$0.call(Unknown Source)\n\tat io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2072)\n\tat io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:350)\n\tat io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)\n\tat io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1183)\n\tat sun.reflect.GeneratedMethodAccessor107.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)\n\tat io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)\n\tat io.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat io.restassured.filter.Filter$filter.call(Unknown Source)\n\tat io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)\n\tat io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)\n\tat io.restassured.filter.Filter$filter.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat io.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)\n\tat io.restassured.filter.FilterContext$next.call(Unknown Source)\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1672)\n\tat sun.reflect.GeneratedMethodAccessor101.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1678)\n\tat sun.reflect.GeneratedMethodAccessor100.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\n\tat io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:177)\n\tat io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)\n\tat com.ita.edu.teachua.api.clients.sigin.SignInClient.successSignInRequest(SignInClient.java:26)\n\tat com.ita.edu.teachua.api.clients.sigin.Authorization.<init>(Authorization.java:19)\n\tat com.ita.edu.teachua.api.tests.AuthorizedAsAdminApiTestRunner.beforeClass(AuthorizedAsAdminApiTestRunner.java:18)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)\n\tat org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n\tSuppressed: java.net.SocketException: Broken pipe (Write failed)\n\t\tat java.net.SocketOutputStream.socketWrite0(Native Method)\n\t\tat java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)\n\t\tat java.net.SocketOutputStream.write(SocketOutputStream.java:155)\n\t\tat sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)\n\t\tat sun.security.ssl.TransportContext.fatal(TransportContext.java:355)\n\t\t... 91 more\nCaused by: java.net.SocketException: Connection reset\n\tat java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:115)\n\tat java.net.SocketOutputStream.write(SocketOutputStream.java:155)\n\tat sun.security.ssl.SSLSocketOutputRecord.flush(SSLSocketOutputRecord.java:251)\n\tat sun.security.ssl.HandshakeOutStream.flush(HandshakeOutStream.java:89)\n\tat sun.security.ssl.ClientHello$ClientHelloKickstartProducer.produce(ClientHello.java:580)\n\tat sun.security.ssl.SSLHandshake.kickstart(SSLHandshake.java:500)\n\tat sun.security.ssl.ClientHandshakeContext.kickstart(ClientHandshakeContext.java:107)\n\tat sun.security.ssl.TransportContext.kickstart(TransportContext.java:231)\n\tat sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:428)\n\t... 89 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642760676948,
+      "stop" : 1642760678730,
+      "duration" : 1782
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1642760873065,
+      "stop" : 1642760875367,
+      "duration" : 2302
+    },
+    "description" : "",
+    "status" : "broken",
+    "statusMessage" : "Couldn't kickstart handshaking",
+    "statusTrace" : "javax.net.ssl.SSLException: Couldn't kickstart handshaking\n\tat sun.security.ssl.Alert.createSSLException(Alert.java:127)\n\tat sun.security.ssl.TransportContext.fatal(TransportContext.java:324)\n\tat sun.security.ssl.TransportContext.fatal(TransportContext.java:267)\n\tat sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:438)\n\tat org.apache.http.conn.ssl.SSLSocketFactory.createLayeredSocket(SSLSocketFactory.java:570)\n\tat org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:554)\n\tat org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:415)\n\tat org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)\n\tat org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)\n\tat org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)\n\tat org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)\n\tat org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)\n\tat org.apache.http.client.HttpClient$execute$0.call(Unknown Source)\n\tat io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2072)\n\tat io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:350)\n\tat io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)\n\tat io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1183)\n\tat sun.reflect.GeneratedMethodAccessor107.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)\n\tat io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)\n\tat io.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat io.restassured.filter.Filter$filter.call(Unknown Source)\n\tat io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)\n\tat io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)\n\tat io.restassured.filter.Filter$filter.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat io.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)\n\tat io.restassured.filter.FilterContext$next.call(Unknown Source)\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1672)\n\tat sun.reflect.GeneratedMethodAccessor101.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1678)\n\tat sun.reflect.GeneratedMethodAccessor100.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\n\tat io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:177)\n\tat io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)\n\tat com.ita.edu.teachua.api.clients.sigin.SignInClient.successSignInRequest(SignInClient.java:26)\n\tat com.ita.edu.teachua.api.clients.sigin.Authorization.<init>(Authorization.java:19)\n\tat com.ita.edu.teachua.api.tests.AuthorizedAsAdminApiTestRunner.beforeClass(AuthorizedAsAdminApiTestRunner.java:18)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)\n\tat org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n\tSuppressed: java.net.SocketException: Broken pipe (Write failed)\n\t\tat java.net.SocketOutputStream.socketWrite0(Native Method)\n\t\tat java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)\n\t\tat java.net.SocketOutputStream.write(SocketOutputStream.java:155)\n\t\tat sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)\n\t\tat sun.security.ssl.TransportContext.fatal(TransportContext.java:355)\n\t\t... 91 more\nCaused by: java.net.SocketException: Connection reset\n\tat java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:115)\n\tat java.net.SocketOutputStream.write(SocketOutputStream.java:155)\n\tat sun.security.ssl.SSLSocketOutputRecord.flush(SSLSocketOutputRecord.java:251)\n\tat sun.security.ssl.HandshakeOutStream.flush(HandshakeOutStream.java:89)\n\tat sun.security.ssl.ClientHello$ClientHelloKickstartProducer.produce(ClientHello.java:580)\n\tat sun.security.ssl.SSLHandshake.kickstart(SSLHandshake.java:500)\n\tat sun.security.ssl.ClientHandshakeContext.kickstart(ClientHandshakeContext.java:107)\n\tat sun.security.ssl.TransportContext.kickstart(TransportContext.java:231)\n\tat sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:428)\n\t... 89 more\n",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1642760873066,
+        "stop" : 1642760873066,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642760676948,
+      "stop" : 1642760678730,
+      "duration" : 1782
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.DistrictTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.DistrictTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "beforeClass"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.DistrictTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az42-839"
+  }, {
+    "name" : "thread",
+    "value" : "2830@fv-az42-839.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "AS_ID",
+    "value" : "-1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "7fd0887c1793059.json",
+  "parameterValues" : [ ]
+}
