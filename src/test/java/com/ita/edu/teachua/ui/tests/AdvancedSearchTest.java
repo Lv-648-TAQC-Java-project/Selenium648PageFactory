@@ -1,6 +1,7 @@
 package com.ita.edu.teachua.ui.tests;
 
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
+import com.ita.edu.teachua.ui.pages.advanced_search.CentersItemComponent;
 import com.ita.edu.teachua.ui.pages.advanced_search.ClubsItemComponent;
 import com.ita.edu.teachua.ui.pages.main_page.MainPage;
 import io.qameta.allure.Description;
@@ -145,7 +146,7 @@ public class AdvancedSearchTest extends TestRunner {
         softAssert.assertTrue(CenterRadioButtonSelected, "Center radiobutton is NOT selected");
 
         advancedSearchPage.clickOnListIcon();
-        for (ClubsItemComponent club : advancedSearchPage.getCards()) {
+        for (CentersItemComponent club : advancedSearchPage.getCards()) {
             softAssert.assertTrue(club.isList(), "Clubs are NOT displayed as list");
         }
         softAssert.assertAll();
