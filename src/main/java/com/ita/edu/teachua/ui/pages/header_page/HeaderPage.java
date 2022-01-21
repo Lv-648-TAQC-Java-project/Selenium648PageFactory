@@ -41,7 +41,4 @@ public class HeaderPage extends BasePage {
         return new HeaderPage(driver);
     }
 
-    public HeaderPage getHeaderPage(){
-        return this;
-    }
 }

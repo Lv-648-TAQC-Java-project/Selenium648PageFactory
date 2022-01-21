@@ -128,4 +128,5 @@ public class CanAddLocation {
     public void checkIfDataInTheАдресаFieldIsAcceptedByInputWithAddLocationPopUpIdsAtIndex(String[] addLocationPopUpIds) {
         pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent().isDataAccepted(addLocationPopUpIds[4]);
     }
+
 }

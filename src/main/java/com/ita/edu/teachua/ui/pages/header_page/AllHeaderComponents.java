@@ -47,6 +47,6 @@ public class AllHeaderComponents {
     }
 
     public GuestDropdownComponent getGuestDropdownComponent() {
-        return guestDropdownComponent;
+        return guestDropdownComponent == null ? new GuestDropdownComponent(driver) : guestDropdownComponent;
     }
 }
