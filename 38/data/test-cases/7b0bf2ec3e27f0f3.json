@@ -1,0 +1,296 @@
+{
+  "uid" : "7b0bf2ec3e27f0f3",
+  "name" : "TUA",
+  "fullName" : "com.ita.edu.teachua.api.tests.CityTest.changeLongitudeAndLatitudeOfCityTest",
+  "historyId" : "f8c5c9eef8230b231218bbecca871bb5",
+  "time" : {
+    "start" : 1642768994225,
+    "stop" : 1642768999311,
+    "duration" : 5086
+  },
+  "description" : "[API] Change the values of the longitude and latitude of the city",
+  "descriptionHtml" : "<p>[API] Change the values of the longitude and latitude of the city</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1642768988621,
+      "stop" : 1642768990728,
+      "duration" : 2107
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1642768988622,
+        "stop" : 1642768988622,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642768929798,
+      "stop" : 1642768931478,
+      "duration" : 1680
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "[API] Change the values of the longitude and latitude of the city",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1642768994225,
+        "stop" : 1642768994226,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Add new city",
+      "time" : {
+        "start" : 1642768996398,
+        "stop" : 1642768997262,
+        "duration" : 864
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1642768996398,
+          "stop" : 1642768996398,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "city",
+        "value" : "City(id=null, name=Черкаси_1, latitude=32.0643, longitude=49.2542)"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Update city with id = '139'",
+      "time" : {
+        "start" : 1642768997317,
+        "stop" : 1642768998435,
+        "duration" : 1118
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1642768997317,
+          "stop" : 1642768997317,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "city",
+        "value" : "City(id=null, name=Черкаси_1, latitude=49.2542, longitude=32.0643)"
+      }, {
+        "name" : "id",
+        "value" : "139"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Delete city with id = '139'",
+      "time" : {
+        "start" : 1642768998464,
+        "stop" : 1642768999311,
+        "duration" : 847
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1642768998464,
+          "stop" : 1642768998465,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "139"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.CityTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.CityTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "changeLongitudeAndLatitudeOfCityTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.CityTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-933"
+  }, {
+    "name" : "thread",
+    "value" : "2979@fv-az74-933.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "ca9546c700a96282",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/ca9546c700a96282",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642762265142,
+          "stop" : 1642762273721,
+          "duration" : 8579
+        }
+      }, {
+        "uid" : "446e00123dbb71e2",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/446e00123dbb71e2",
+        "status" : "broken",
+        "statusDetails" : "java.lang.NullPointerException",
+        "time" : {
+          "start" : 1642760754887,
+          "stop" : 1642760770619,
+          "duration" : 15732
+        }
+      }, {
+        "uid" : "1c6324ca9c5bcc26",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/1c6324ca9c5bcc26",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642760752787,
+          "stop" : 1642760771696,
+          "duration" : 18909
+        }
+      }, {
+        "uid" : "20c30b6bb4de6838",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/35//#testresult/20c30b6bb4de6838",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759860768,
+          "stop" : 1642759869903,
+          "duration" : 9135
+        }
+      }, {
+        "uid" : "f9922bf099199685",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/f9922bf099199685",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759152355,
+          "stop" : 1642759157373,
+          "duration" : 5018
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7b0bf2ec3e27f0f3.json",
+  "parameterValues" : [ ]
+}
