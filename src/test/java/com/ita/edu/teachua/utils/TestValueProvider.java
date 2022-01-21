@@ -41,5 +41,6 @@ public class TestValueProvider {
     public boolean getHeadlessMode() {
         return  properties != null ? Boolean.parseBoolean(properties.getProperty("HeadlessMode")) : Boolean.parseBoolean(System.getenv("TEST_TEACH_UA_HEADLESS_MODE"));
     }
+
 }
 //
