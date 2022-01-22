@@ -55,6 +55,7 @@ public class AddLocationPopUpComponent extends BasePage {
 
     @Step("Enter data into the 'Назва' field of 'Додати локацію' pop-up ")
     public AddLocationPopUpComponent sendKeysLocationNameField(String locationName) {
+        waitUntilVisibilityOfElementLocated(By.id(AddLocationPopUpComponentLocators.LOCATION_NAME_FIELD_ID),30);
         locationNameField.set(locationName);
         return this;
     }
