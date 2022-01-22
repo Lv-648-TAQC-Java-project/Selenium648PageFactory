@@ -40,9 +40,11 @@ public class ProfilePage extends BasePage {
 
     @Step("Click on 'Додати' button")
     public AddDropdownComponent clickOnAddButton() {
-        addButton.click();
-        addButton.click();
-        return new AddDropdownComponent(driver);
+        if(addButton.isDisplayed()) {
+            addButton.click();
+            return new AddDropdownComponent(driver);
+        }
+        return clickOnAddButton();
     }
 
     @Step("Click edit pop up")
