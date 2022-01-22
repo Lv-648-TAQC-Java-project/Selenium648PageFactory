@@ -1,0 +1,235 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+      "children" : [ {
+        "name" : "TUA-405",
+        "uid" : "7bbcdcd682df18ec",
+        "parentUid" : "0f1afb5282055acdb48f63753e2580f7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642876088211,
+          "stop" : 1642876095473,
+          "duration" : 7262
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0f1afb5282055acdb48f63753e2580f7"
+    }, {
+      "name" : "expected [3] but found [4]",
+      "children" : [ {
+        "name" : "[API admin role] Get list of all roles",
+        "uid" : "10f044aaa739f480",
+        "parentUid" : "b0b6196622561566a1d7e5ab1b656c96",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642876150969,
+          "stop" : 1642876151768,
+          "duration" : 799
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b0b6196622561566a1d7e5ab1b656c96"
+    }, {
+      "name" : "expected [404] but found [401]",
+      "children" : [ {
+        "name" : "TUA-419",
+        "uid" : "a82b7b4bffdc8ca9",
+        "parentUid" : "b536eef98b4b92ad94f63ef178992a3a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642876208860,
+          "stop" : 1642876209822,
+          "duration" : 962
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b536eef98b4b92ad94f63ef178992a3a"
+    }, {
+      "name" : "expected [200] but found [401]",
+      "children" : [ {
+        "name" : "TUA-457",
+        "uid" : "3dcc6f1b222e9cdd",
+        "parentUid" : "919568951de77eb0bbf43a9a376df8e5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642876214799,
+          "stop" : 1642876216085,
+          "duration" : 1286
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "919568951de77eb0bbf43a9a376df8e5"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.registration.SuccessRegistration), not marked as ignorable (3 known properties: \"roleName\", \"id\", \"email\"])\n at [Source: (String)\"{\"status\":401,\"message\":\"Email awdcftgbhumiookk@gmail.com already exist\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.registration.SuccessRegistration[\"status\"])",
+      "children" : [ {
+        "name" : "TUA-408",
+        "uid" : "d15379d6fed0ab33",
+        "parentUid" : "7ea2bd05a0d84b4a32076d3173e660f3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642876144280,
+          "stop" : 1642876145367,
+          "duration" : 1087
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-411",
+        "uid" : "f68192ec8c874943",
+        "parentUid" : "7ea2bd05a0d84b4a32076d3173e660f3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642876145373,
+          "stop" : 1642876146190,
+          "duration" : 817
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-375",
+        "uid" : "865b8540b93144d4",
+        "parentUid" : "7ea2bd05a0d84b4a32076d3173e660f3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642876146196,
+          "stop" : 1642876147014,
+          "duration" : 818
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7ea2bd05a0d84b4a32076d3173e660f3"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.roles.RoleModel), not marked as ignorable (2 known properties: \"roleName\", \"id\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Role already exist with name: TEST_ROLE\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.roles.RoleModel[\"status\"])",
+      "children" : [ {
+        "name" : "[API admin role] Create new role and delete it",
+        "uid" : "9afff7a6ca188aad",
+        "parentUid" : "3df9dd2ed4089f539e3136af7a3eb19f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642876149730,
+          "stop" : 1642876150966,
+          "duration" : 1236
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3df9dd2ed4089f539e3136af7a3eb19f"
+    }, {
+      "name" : "Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(text(),'Додати локацію')] (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az77-149', ip: '10.1.0.28', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.V04qvV}, goog:chromeOptions: {debuggerAddress: localhost:44311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44311/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 65b17dcf0950715e2a9633ca30133c36",
+      "children" : [ {
+        "name" : "TUA-160",
+        "uid" : "62863b1504e327fc",
+        "parentUid" : "e1f6277ee4ecd370528ffbc9a566cae7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642876183749,
+          "stop" : 1642876202494,
+          "duration" : 18745
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e1f6277ee4ecd370528ffbc9a566cae7"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.district.SuccessDistrictModel), not marked as ignorable (3 known properties: \"id\", \"cityName\", \"name\"])\n at [Source: (String)\"{\"status\":400,\"message\":\"JSON parse error: Unrecognized field \\\"id\\\" (class com.softserve.teachua.dto.district.DistrictProfile), not marked as ignorable; nested exception is com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \\\"id\\\" (class com.softserve.teachua.dto.district.DistrictProfile), not marked as ignorable (2 known properties: \\\"name\\\", \\\"cityName\\\"])\\n at [Source: (PushbackInputStream); line: 1, column: 11] (through reference chain: com.softserve.teachu\"[truncated 41 chars]; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.district.SuccessDistrictModel[\"status\"])",
+      "children" : [ {
+        "name" : "createDistrict",
+        "uid" : "fc596e97673af78d",
+        "parentUid" : "f48da5f53c22c99a4fb17fcd7e4284f0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642876196427,
+          "stop" : 1642876197254,
+          "duration" : 827
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f48da5f53c22c99a4fb17fcd7e4284f0"
+    }, {
+      "name" : "element click intercepted: Element <span class=\"add-club-location\">...</span> is not clickable at point (626, 363). Other element would receive the click: <div class=\"checkbox-item\">...</div>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az77-149', ip: '10.1.0.28', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4768fddc79c41ab979faca4d5fd91924, clickElement {id=7d05192f-bdd2-4803-b063-04d4cf642c30}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Kp70Hi}, goog:chromeOptions: {debuggerAddress: localhost:45427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45427/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (4768fddc79c41ab979faca4d5fd91924)] -> class: add-club-location]\nSession ID: 4768fddc79c41ab979faca4d5fd91924",
+      "children" : [ {
+        "name" : "TUA-214",
+        "uid" : "6e9176bd89b5754a",
+        "parentUid" : "a2df02c2c245825f41d5b5c07800bba9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642876475570,
+          "stop" : 1642876484872,
+          "duration" : 9302
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "ValidLocationName", "ValidAddress", "49.829104498711104, 24.005058710351314", "0966666666", "ValidCenterName", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "Тестовий гурток для центру" ]
+      } ],
+      "uid" : "a2df02c2c245825f41d5b5c07800bba9"
+    }, {
+      "name" : "java.lang.NullPointerException",
+      "children" : [ {
+        "name" : "TUA-318",
+        "uid" : "defd9274736d9f5e",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642876737190,
+          "stop" : 1642876744371,
+          "duration" : 7181
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-321",
+        "uid" : "34559d4ed212a9f3",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642876762904,
+          "stop" : 1642876769817,
+          "duration" : 6913
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-322",
+        "uid" : "dd61bf995cd05269",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642876774760,
+          "stop" : 1642876781779,
+          "duration" : 7019
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5592898b36d684905e31486a23088bda"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
