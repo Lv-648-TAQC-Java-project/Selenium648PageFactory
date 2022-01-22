@@ -6,13 +6,13 @@
       "name" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
       "children" : [ {
         "name" : "TUA-405",
-        "uid" : "a0247e217c34f68e",
+        "uid" : "f55ca5ca8e42b079",
         "parentUid" : "0f1afb5282055acdb48f63753e2580f7",
         "status" : "failed",
         "time" : {
-          "start" : 1642878468234,
-          "stop" : 1642878475438,
-          "duration" : 7204
+          "start" : 1642879748767,
+          "stop" : 1642879756198,
+          "duration" : 7431
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,13 +23,13 @@
       "name" : "expected [3] but found [4]",
       "children" : [ {
         "name" : "[API admin role] Get list of all roles",
-        "uid" : "9da77334dc8aa976",
+        "uid" : "d2457979e0cca2c6",
         "parentUid" : "b0b6196622561566a1d7e5ab1b656c96",
         "status" : "failed",
         "time" : {
-          "start" : 1642878527896,
-          "stop" : 1642878528715,
-          "duration" : 819
+          "start" : 1642879809082,
+          "stop" : 1642879809879,
+          "duration" : 797
         },
         "flaky" : false,
         "newFailed" : false,
@@ -40,13 +40,13 @@
       "name" : "expected [404] but found [401]",
       "children" : [ {
         "name" : "TUA-419",
-        "uid" : "fa43e7b8e03061b2",
+        "uid" : "821f6623e253c677",
         "parentUid" : "b536eef98b4b92ad94f63ef178992a3a",
         "status" : "failed",
         "time" : {
-          "start" : 1642878588202,
-          "stop" : 1642878589243,
-          "duration" : 1041
+          "start" : 1642879867591,
+          "stop" : 1642879868388,
+          "duration" : 797
         },
         "flaky" : false,
         "newFailed" : false,
@@ -57,13 +57,13 @@
       "name" : "expected [200] but found [401]",
       "children" : [ {
         "name" : "TUA-457",
-        "uid" : "62e841bbf10e6dad",
+        "uid" : "b5ea72eb073b3686",
         "parentUid" : "919568951de77eb0bbf43a9a376df8e5",
         "status" : "failed",
         "time" : {
-          "start" : 1642878594320,
-          "stop" : 1642878595137,
-          "duration" : 817
+          "start" : 1642879873683,
+          "stop" : 1642879874478,
+          "duration" : 795
         },
         "flaky" : true,
         "newFailed" : false,
@@ -74,16 +74,16 @@
       "name" : "expected [true] but found [false]",
       "children" : [ {
         "name" : "TUA-103",
-        "uid" : "18f6325126d7b9b",
+        "uid" : "82f44211ac578f1c",
         "parentUid" : "067aa11ae245eca950dc984999fefd6d",
         "status" : "failed",
         "time" : {
-          "start" : 1642878930578,
-          "stop" : 1642878961899,
-          "duration" : 31321
+          "start" : 1642880206372,
+          "stop" : 1642880237725,
+          "duration" : 31353
         },
         "flaky" : true,
-        "newFailed" : true,
+        "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "067aa11ae245eca950dc984999fefd6d"
@@ -92,76 +92,42 @@
   }, {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "invalid element state: Element is not currently interactable and may not be manipulated\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.73', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [e58a4c07638a06232fca68d5d05c11b6, clearElement {id=1abe4731-972b-409a-9081-b58c8fc0514a}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.QbbSG6}, goog:chromeOptions: {debuggerAddress: localhost:36679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36679/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (e58a4c07638a06232fca68d5d05c11b6)] -> id: basic_name]\nSession ID: e58a4c07638a06232fca68d5d05c11b6",
-      "children" : [ {
-        "name" : "TUA-252",
-        "uid" : "1d8cc5420656098b",
-        "parentUid" : "82623f186b5d9a065f2f636ba275eb6d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642878516053,
-          "stop" : 1642878525332,
-          "duration" : 9279
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "82623f186b5d9a065f2f636ba275eb6d"
-    }, {
-      "name" : "Couldn't kickstart handshaking",
-      "children" : [ {
-        "name" : "TUA-429/432/435",
-        "uid" : "21746840f0a7ace2",
-        "parentUid" : "701bea175940965e4be40d652e44b7d1",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642878516500,
-          "stop" : 1642878519986,
-          "duration" : 3486
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "701bea175940965e4be40d652e44b7d1"
-    }, {
       "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.registration.SuccessRegistration), not marked as ignorable (3 known properties: \"roleName\", \"id\", \"email\"])\n at [Source: (String)\"{\"status\":401,\"message\":\"Email awdcftgbhumiookk@gmail.com already exist\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.registration.SuccessRegistration[\"status\"])",
       "children" : [ {
         "name" : "TUA-408",
-        "uid" : "d763d8f7fe15795f",
+        "uid" : "fc20d164e1ec2",
         "parentUid" : "7ea2bd05a0d84b4a32076d3173e660f3",
         "status" : "broken",
         "time" : {
-          "start" : 1642878520834,
-          "stop" : 1642878521719,
-          "duration" : 885
+          "start" : 1642879803674,
+          "stop" : 1642879804694,
+          "duration" : 1020
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "TUA-411",
-        "uid" : "6cd4afa8b4cb09ca",
+        "uid" : "9bd8f0f80b6a9edc",
         "parentUid" : "7ea2bd05a0d84b4a32076d3173e660f3",
         "status" : "broken",
         "time" : {
-          "start" : 1642878521722,
-          "stop" : 1642878522537,
-          "duration" : 815
+          "start" : 1642879804700,
+          "stop" : 1642879805507,
+          "duration" : 807
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "TUA-375",
-        "uid" : "2a6072d9a63756f9",
+        "uid" : "5a5b979e38c425b",
         "parentUid" : "7ea2bd05a0d84b4a32076d3173e660f3",
         "status" : "broken",
         "time" : {
-          "start" : 1642878522540,
-          "stop" : 1642878523345,
-          "duration" : 805
+          "start" : 1642879805509,
+          "stop" : 1642879806315,
+          "duration" : 806
         },
         "flaky" : false,
         "newFailed" : false,
@@ -172,13 +138,13 @@
       "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.roles.RoleModel), not marked as ignorable (2 known properties: \"roleName\", \"id\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Role already exist with name: TEST_ROLE\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.roles.RoleModel[\"status\"])",
       "children" : [ {
         "name" : "[API admin role] Create new role and delete it",
-        "uid" : "5de8abd4fea44d93",
+        "uid" : "57461cc7dae53183",
         "parentUid" : "3df9dd2ed4089f539e3136af7a3eb19f",
         "status" : "broken",
         "time" : {
-          "start" : 1642878525919,
-          "stop" : 1642878527894,
-          "duration" : 1975
+          "start" : 1642879808263,
+          "stop" : 1642879809080,
+          "duration" : 817
         },
         "flaky" : false,
         "newFailed" : false,
@@ -186,33 +152,33 @@
       } ],
       "uid" : "3df9dd2ed4089f539e3136af7a3eb19f"
     }, {
-      "name" : "element click intercepted: Element <span class=\"add-club-location\">...</span> is not clickable at point (638, 338). Other element would receive the click: <div class=\"ant-col ant-form-item-label\">...</div>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.73', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a8bad0b864d97b5144a5cc7fb481d7e1, clickElement {id=1db253bb-5448-4a16-8133-d0e61fb85aa9}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.WzbU3U}, goog:chromeOptions: {debuggerAddress: localhost:44085}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44085/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (a8bad0b864d97b5144a5cc7fb481d7e1)] -> class: add-club-location]\nSession ID: a8bad0b864d97b5144a5cc7fb481d7e1",
+      "name" : "element not interactable: element has zero size\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az83-73', ip: '10.1.0.67', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [b75668c47fa6259f16a0d1225c6907fc, clickElement {id=b188370e-1e41-456e-84d8-dd821616bd3f}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Yv7bSa}, goog:chromeOptions: {debuggerAddress: localhost:35987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35987/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (b75668c47fa6259f16a0d1225c6907fc)] -> class: add-club-location]\nSession ID: b75668c47fa6259f16a0d1225c6907fc",
       "children" : [ {
-        "name" : "TUA-160",
-        "uid" : "5e6200c61722a2c",
-        "parentUid" : "23340c8f4b628cc6eeb5c6f1858fe07f",
+        "name" : "TUA-159",
+        "uid" : "d9fe9485350ac8ee",
+        "parentUid" : "bf23d9a1155483377a26ff8aeca606b5",
         "status" : "broken",
         "time" : {
-          "start" : 1642878551852,
-          "stop" : 1642878560641,
-          "duration" : 8789
+          "start" : 1642879847599,
+          "stop" : 1642879856697,
+          "duration" : 9098
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ ]
+        "parameters" : [ "ТестЛокація2", "Сумська 2/3", "50.00100346155677, 36.234188917163884", "0977777777" ]
       } ],
-      "uid" : "23340c8f4b628cc6eeb5c6f1858fe07f"
+      "uid" : "bf23d9a1155483377a26ff8aeca606b5"
     }, {
       "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.district.SuccessDistrictModel), not marked as ignorable (3 known properties: \"id\", \"cityName\", \"name\"])\n at [Source: (String)\"{\"status\":400,\"message\":\"JSON parse error: Unrecognized field \\\"id\\\" (class com.softserve.teachua.dto.district.DistrictProfile), not marked as ignorable; nested exception is com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \\\"id\\\" (class com.softserve.teachua.dto.district.DistrictProfile), not marked as ignorable (2 known properties: \\\"name\\\", \\\"cityName\\\"])\\n at [Source: (PushbackInputStream); line: 1, column: 11] (through reference chain: com.softserve.teachu\"[truncated 41 chars]; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.district.SuccessDistrictModel[\"status\"])",
       "children" : [ {
         "name" : "createDistrict",
-        "uid" : "f937026baa1a3707",
+        "uid" : "76cd4477955a613e",
         "parentUid" : "f48da5f53c22c99a4fb17fcd7e4284f0",
         "status" : "broken",
         "time" : {
-          "start" : 1642878577040,
-          "stop" : 1642878577875,
-          "duration" : 835
+          "start" : 1642879857074,
+          "stop" : 1642879857879,
+          "duration" : 805
         },
         "flaky" : false,
         "newFailed" : false,
@@ -223,39 +189,39 @@
       "name" : "java.lang.NullPointerException",
       "children" : [ {
         "name" : "TUA-318",
-        "uid" : "95fff26429b890a6",
+        "uid" : "7d3f2086012ba356",
         "parentUid" : "5592898b36d684905e31486a23088bda",
         "status" : "broken",
         "time" : {
-          "start" : 1642879088619,
-          "stop" : 1642879095619,
-          "duration" : 7000
+          "start" : 1642880361957,
+          "stop" : 1642880368964,
+          "duration" : 7007
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "TUA-321",
-        "uid" : "b589d5cc69c75159",
+        "uid" : "8b30c0776e4c29e",
         "parentUid" : "5592898b36d684905e31486a23088bda",
         "status" : "broken",
         "time" : {
-          "start" : 1642879114247,
-          "stop" : 1642879121101,
-          "duration" : 6854
+          "start" : 1642880387641,
+          "stop" : 1642880394537,
+          "duration" : 6896
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "TUA-322",
-        "uid" : "80e747f75a42cac",
+        "uid" : "67e72f1c68f23517",
         "parentUid" : "5592898b36d684905e31486a23088bda",
         "status" : "broken",
         "time" : {
-          "start" : 1642879125356,
-          "stop" : 1642879132216,
-          "duration" : 6860
+          "start" : 1642880398907,
+          "stop" : 1642880405788,
+          "duration" : 6881
         },
         "flaky" : false,
         "newFailed" : false,

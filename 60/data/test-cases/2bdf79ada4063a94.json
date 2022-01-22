@@ -1,0 +1,722 @@
+{
+  "uid" : "2bdf79ada4063a94",
+  "name" : "TUA-173",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.checkDescriptionFieldWithValidLettersAndSymbols",
+  "historyId" : "b7ac9b53f5d9b6f4eed1873f046f8de3",
+  "time" : {
+    "start" : 1642879954534,
+    "stop" : 1642879969554,
+    "duration" : 15020
+  },
+  "description" : "TUA-173 Verify that the ‘Опис’ text field is filled in with valid data",
+  "descriptionHtml" : "<p>TUA-173 Verify that the ‘Опис’ text field is filled in with valid data</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642879950454,
+      "stop" : 1642879954532,
+      "duration" : 4078
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642879716193,
+      "stop" : 1642879717826,
+      "duration" : 1633
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "TUA-173 Verify that the ‘Опис’ text field is filled in with valid data",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1642879954534,
+        "stop" : 1642879958153,
+        "duration" : 3619
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1642879954534,
+          "stop" : 1642879954620,
+          "duration" : 86
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1642879954620,
+          "stop" : 1642879955314,
+          "duration" : 694
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1642879955314,
+          "stop" : 1642879958153,
+          "duration" : 2839
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1642879956001,
+            "stop" : 1642879956094,
+            "duration" : 93
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1642879956094,
+            "stop" : 1642879958153,
+            "duration" : 2059
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1642879958153,
+        "stop" : 1642879962172,
+        "duration" : 4019
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1642879962172,
+        "stop" : 1642879962539,
+        "duration" : 367
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Додати' button",
+      "time" : {
+        "start" : 1642879962539,
+        "stop" : 1642879962593,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Додати гурток' button",
+      "time" : {
+        "start" : 1642879962593,
+        "stop" : 1642879963422,
+        "duration" : 829
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Назва' field with Танці, хореографія",
+      "time" : {
+        "start" : 1642879963422,
+        "stop" : 1642879964134,
+        "duration" : 712
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Танці, хореографія"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on 'Танці, хореографія' checkbox",
+      "time" : {
+        "start" : 1642879964134,
+        "stop" : 1642879964256,
+        "duration" : 122
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Hover to basic_ageFrom element",
+      "time" : {
+        "start" : 1642879964257,
+        "stop" : 1642879964385,
+        "duration" : 128
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "basic_ageFrom"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click 6 times on upper arrow in 'Від' field",
+      "time" : {
+        "start" : 1642879964385,
+        "stop" : 1642879964752,
+        "duration" : 367
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Hover to basic_ageTo element",
+      "time" : {
+        "start" : 1642879964752,
+        "stop" : 1642879964900,
+        "duration" : 148
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "basic_ageTo"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click 7 times on upper arrow in 'до' field",
+      "time" : {
+        "start" : 1642879964900,
+        "stop" : 1642879965270,
+        "duration" : 370
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Наступний крок' button",
+      "time" : {
+        "start" : 1642879965271,
+        "stop" : 1642879965367,
+        "duration" : 96
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Enter 9632548777 data into Phone number field of 'Контакти' area ",
+      "time" : {
+        "start" : 1642879965367,
+        "stop" : 1642879965562,
+        "duration" : 195
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "number",
+        "value" : "9632548777"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on 'Наступний крок' button",
+      "time" : {
+        "start" : 1642879965562,
+        "stop" : 1642879965650,
+        "duration" : 88
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with Education, students, Школа балетуee and so ",
+      "time" : {
+        "start" : 1642879965651,
+        "stop" : 1642879966931,
+        "duration" : 1280
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Education, students, Школа балетуee and so "
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get tick",
+      "time" : {
+        "start" : 1642879966931,
+        "stop" : 1642879966931,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with 12345678901234567890123456789012345678656",
+      "time" : {
+        "start" : 1642879966971,
+        "stop" : 1642879968215,
+        "duration" : 1244
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "12345678901234567890123456789012345678656"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get tick",
+      "time" : {
+        "start" : 1642879968215,
+        "stop" : 1642879968215,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with !#$%&'()*+,-./:;<=>?@[]^_`{}~^&^%%^&***#",
+      "time" : {
+        "start" : 1642879968240,
+        "stop" : 1642879969534,
+        "duration" : 1294
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "!#$%&'()*+,-./:;<=>?@[]^_`{}~^&^%%^&***#"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get tick",
+      "time" : {
+        "start" : 1642879969534,
+        "stop" : 1642879969534,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 25,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642879969554,
+      "stop" : 1642879969625,
+      "duration" : 71
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkDescriptionFieldWithValidLettersAndSymbols"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az83-73"
+  }, {
+    "name" : "thread",
+    "value" : "2821@fv-az83-73.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "[Education, students, Школа балетуee and so , 12345678901234567890123456789012345678656, !#$%&'()*+,-./:;<=>?@[]^_`{}~^&^%%^&***#]"
+  } ],
+  "links" : [ {
+    "name" : "TUA-173",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 6,
+        "skipped" : 0,
+        "passed" : 13,
+        "unknown" : 0,
+        "total" : 19
+      },
+      "items" : [ {
+        "uid" : "70e11d153302a294",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/70e11d153302a294",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642878674741,
+          "stop" : 1642878689445,
+          "duration" : 14704
+        }
+      }, {
+        "uid" : "30811fda632d179b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/59//#testresult/30811fda632d179b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642876320500,
+          "stop" : 1642876335189,
+          "duration" : 14689
+        }
+      }, {
+        "uid" : "ae308986cdb2e820",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/58//#testresult/ae308986cdb2e820",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642870555859,
+          "stop" : 1642870570149,
+          "duration" : 14290
+        }
+      }, {
+        "uid" : "91e9898c0a2ad487",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/91e9898c0a2ad487",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642868118569,
+          "stop" : 1642868133438,
+          "duration" : 14869
+        }
+      }, {
+        "uid" : "255e54e6afb44490",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/255e54e6afb44490",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642849717487,
+          "stop" : 1642849732827,
+          "duration" : 15340
+        }
+      }, {
+        "uid" : "5abbe069716a923e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/5abbe069716a923e",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [b77bfe473d611cd4b0a7bfa5aac4c240, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.e58Opq}, goog:chromeOptions: {debuggerAddress: localhost:34213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34213/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b77bfe473d611cd4b0a7bfa5aac4c240",
+        "time" : {
+          "start" : 1642792388805,
+          "stop" : 1642792402650,
+          "duration" : 13845
+        }
+      }, {
+        "uid" : "56c3db1ec7d17095",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/56c3db1ec7d17095",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.98', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a34f579e0e611c422decd2f477c8405c, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.feZjam}, goog:chromeOptions: {debuggerAddress: localhost:37961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37961/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a34f579e0e611c422decd2f477c8405c",
+        "time" : {
+          "start" : 1642789724649,
+          "stop" : 1642789738368,
+          "duration" : 13719
+        }
+      }, {
+        "uid" : "5ea7ef00684bbaa3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/5ea7ef00684bbaa3",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az77-149', ip: '10.1.0.181', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [ede8053cdf7d06e7f7cdffc6d55551f0, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.LveywV}, goog:chromeOptions: {debuggerAddress: localhost:37695}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37695/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ede8053cdf7d06e7f7cdffc6d55551f0",
+        "time" : {
+          "start" : 1642787240740,
+          "stop" : 1642787254705,
+          "duration" : 13965
+        }
+      }, {
+        "uid" : "a26295d589fa41df",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/a26295d589fa41df",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.188', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [9876ae4a8182935377f1af774669c882, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.WCAf6y}, goog:chromeOptions: {debuggerAddress: localhost:41699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41699/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9876ae4a8182935377f1af774669c882",
+        "time" : {
+          "start" : 1642787218078,
+          "stop" : 1642787231775,
+          "duration" : 13697
+        }
+      }, {
+        "uid" : "e0bd41e359cc137e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/e0bd41e359cc137e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786680129,
+          "stop" : 1642786695101,
+          "duration" : 14972
+        }
+      }, {
+        "uid" : "ad2457f549525516",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/ad2457f549525516",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786677458,
+          "stop" : 1642786692728,
+          "duration" : 15270
+        }
+      }, {
+        "uid" : "3c9a04fcc8e7356b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/41//#testresult/3c9a04fcc8e7356b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642773158721,
+          "stop" : 1642773173468,
+          "duration" : 14747
+        }
+      }, {
+        "uid" : "ff4f96b18df5b9ca",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/39//#testresult/ff4f96b18df5b9ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642769201079,
+          "stop" : 1642769216285,
+          "duration" : 15206
+        }
+      }, {
+        "uid" : "171de8c12b74e042",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/171de8c12b74e042",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642762435443,
+          "stop" : 1642762450871,
+          "duration" : 15428
+        }
+      }, {
+        "uid" : "2187400d034e1539",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/2187400d034e1539",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az135-188', ip: '10.1.0.33', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [3f2eb14fcb1ea7bb60b0b1639f2fbaef, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.apB4HP}, goog:chromeOptions: {debuggerAddress: localhost:35493}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35493/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3f2eb14fcb1ea7bb60b0b1639f2fbaef",
+        "time" : {
+          "start" : 1642761103606,
+          "stop" : 1642761117427,
+          "duration" : 13821
+        }
+      }, {
+        "uid" : "d55667c4a2c88ded",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/d55667c4a2c88ded",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.106', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [0f7ca358aeddaf25733ca91212a4cce3, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.DScDI2}, goog:chromeOptions: {debuggerAddress: localhost:44225}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44225/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0f7ca358aeddaf25733ca91212a4cce3",
+        "time" : {
+          "start" : 1642761103046,
+          "stop" : 1642761116805,
+          "duration" : 13759
+        }
+      }, {
+        "uid" : "d6c126125f6c32ae",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/35//#testresult/d6c126125f6c32ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642760027113,
+          "stop" : 1642760041998,
+          "duration" : 14885
+        }
+      }, {
+        "uid" : "b64e7533c0c37fb1",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/b64e7533c0c37fb1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759341838,
+          "stop" : 1642759358958,
+          "duration" : 17120
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2bdf79ada4063a94.json",
+  "parameterValues" : [ "[Education, students, Школа балетуee and so , 12345678901234567890123456789012345678656, !#$%&'()*+,-./:;<=>?@[]^_`{}~^&^%%^&***#]" ]
+}
