@@ -1,1280 +1,282 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "The following asserts failed:\n\texpected [404] but found [403],\n\texpected [Category not found by name: Новий тип гуртка] but found [Club already exist with name: Голосистi діти]",
+      "children" : [ {
+        "name" : "TUA-409",
+        "uid" : "d848a4d45de5fe78",
+        "parentUid" : "403c37ad5edbb158a95e373ddb679fcf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642849493893,
+          "stop" : 1642849502808,
+          "duration" : 8915
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Новий тип гуртка", "Category not found by name: Новий тип гуртка", "ageFrom must be greater than or equal to 2", "2", "19", "18", "ageTo must be less than or equal to 18", "ЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁ", "Це поле може містити тільки українські та англійські літери, цифри та спеціальні символи", "Description", "Довжина опису не може бути меншою за 40 символів", "descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptndescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptionriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriiptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescrasdfw", "Танці, хореографія", "Довжина опису не може бути більшою за 1500 символів", "ЪЫЭЁЁ", "name can't contain russian letters", "name", "name Довжина назви має бути від 5 до 100 символів", "characterscharacsterscharacterscharacterscharacterscharacterscharacterscharacterschacharacterscharact", "testName", "1" ]
+      } ],
+      "uid" : "403c37ad5edbb158a95e373ddb679fcf"
+    }, {
+      "name" : "The following asserts failed:\n\texpected [400] but found [403],\n\texpected [categories must not be empty] but found [null],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [403],\n\texpected [contacts must not be empty] but found [Club already exist with name: Голосистi діти]",
+      "children" : [ {
+        "name" : "TUA-405",
+        "uid" : "eead35385bf22bcc",
+        "parentUid" : "ff09c8309d6771ba1b7709e89d518166",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642849502812,
+          "stop" : 1642849509122,
+          "duration" : 6310
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ff09c8309d6771ba1b7709e89d518166"
+    }, {
+      "name" : "expected [3] but found [4]",
+      "children" : [ {
+        "name" : "[API admin role] Get list of all roles",
+        "uid" : "37368ef19e653f95",
+        "parentUid" : "b0b6196622561566a1d7e5ab1b656c96",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642849559637,
+          "stop" : 1642849560700,
+          "duration" : 1063
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b0b6196622561566a1d7e5ab1b656c96"
+    }, {
+      "name" : "expected [404] but found [401]",
+      "children" : [ {
+        "name" : "TUA-419",
+        "uid" : "f2523fa609019d06",
+        "parentUid" : "b536eef98b4b92ad94f63ef178992a3a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642849622967,
+          "stop" : 1642849623858,
+          "duration" : 891
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b536eef98b4b92ad94f63ef178992a3a"
+    }, {
+      "name" : "expected [200] but found [401]",
+      "children" : [ {
+        "name" : "TUA-457",
+        "uid" : "6b2d7ff4c38a069e",
+        "parentUid" : "919568951de77eb0bbf43a9a376df8e5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642849629761,
+          "stop" : 1642849630578,
+          "duration" : 817
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "919568951de77eb0bbf43a9a376df8e5"
+    }, {
+      "name" : "expected [true] but found [false]",
+      "children" : [ {
+        "name" : "TUA-103",
+        "uid" : "fe4479b808031f10",
+        "parentUid" : "067aa11ae245eca950dc984999fefd6d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642849987848,
+          "stop" : 1642850020217,
+          "duration" : 32369
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "067aa11ae245eca950dc984999fefd6d"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [b0dff4da88a2015b7aa0476d7b793feb, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.4whF5g}, goog:chromeOptions: {debuggerAddress: localhost:44981}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44981/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b0dff4da88a2015b7aa0476d7b793feb",
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
       "children" : [ {
-        "name" : "Runs Cucumber Scenarios",
-        "uid" : "f2a95bd4ec3725a2",
-        "parentUid" : "1c05c4340bbe982fb3cdbeeb9b77d834",
+        "name" : "TUA-371/372/463",
+        "uid" : "b5348e252918fe62",
+        "parentUid" : "1268d6ccad54242b054cbd82dca899f9",
         "status" : "broken",
         "time" : {
-          "start" : 1642792239364,
-          "stop" : 1642792260399,
-          "duration" : 21035
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "\"This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.\"", "\"Optional[Verify that a 'Керівник' can add a location of a club]\"" ]
-      } ],
-      "uid" : "1c05c4340bbe982fb3cdbeeb9b77d834"
-    }, {
-      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
-      "children" : [ {
-        "name" : "beforeClass",
-        "uid" : "fbad6325d50ed3cf",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792245473,
-          "stop" : 1642792245474,
-          "duration" : 1
+          "start" : 1642849509125,
+          "stop" : 1642849510059,
+          "duration" : 934
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "TUA-406",
-        "uid" : "31163be7d4affd6f",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
+        "name" : "TUA-498",
+        "uid" : "67511e157a4ff10e",
+        "parentUid" : "1268d6ccad54242b054cbd82dca899f9",
         "status" : "broken",
         "time" : {
-          "start" : 1642792245748,
-          "stop" : 1642792246589,
-          "duration" : 841
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "beforeClass",
-        "uid" : "9b8a96a8e1d1bfe4",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792247411,
-          "stop" : 1642792247412,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "beforeClass",
-        "uid" : "bbee2e42ef66bb13",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792249245,
-          "stop" : 1642792249245,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "beforeClass",
-        "uid" : "48f0d00de10582a8",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792250073,
-          "stop" : 1642792250073,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "beforeClass",
-        "uid" : "9286ce0b21da521e",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792251374,
-          "stop" : 1642792251374,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "beforeClass",
-        "uid" : "66f54420818c37e9",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792252224,
-          "stop" : 1642792252224,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "beforeClass",
-        "uid" : "934d4157249b29e8",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792253079,
-          "stop" : 1642792253079,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "beforeClass",
-        "uid" : "95fdac0e25bd8f00",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792257481,
-          "stop" : 1642792257481,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "beforeClass",
-        "uid" : "7969da7177a5efa7",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792259591,
-          "stop" : 1642792259591,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "beforeClass",
-        "uid" : "a5f7aee86caff0f8",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792260826,
-          "stop" : 1642792260826,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "beforeClass",
-        "uid" : "375e214f15da026",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792261738,
-          "stop" : 1642792261738,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "beforeClass",
-        "uid" : "e50baaf481464413",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792262590,
-          "stop" : 1642792262590,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "beforeClass",
-        "uid" : "befed8a363850f59",
-        "parentUid" : "6489d332fcd1a2de884a93083ab22427",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792263451,
-          "stop" : 1642792263451,
-          "duration" : 0
+          "start" : 1642849510062,
+          "stop" : 1642849512704,
+          "duration" : 2642
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "6489d332fcd1a2de884a93083ab22427"
+      "uid" : "1268d6ccad54242b054cbd82dca899f9"
     }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [3156784353458c095b7d9313aaae8ae6, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Zz1yRp}, goog:chromeOptions: {debuggerAddress: localhost:34501}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34501/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3156784353458c095b7d9313aaae8ae6",
-      "children" : [ {
-        "name" : "TUA-356",
-        "uid" : "c72fc78234b28889",
-        "parentUid" : "07ebfe1f573d67081c6a6b05a7c92f98",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792246926,
-          "stop" : 1642792260224,
-          "duration" : 13298
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "[6895, Телефон не відповідає вказаному формату, 65987458, Телефон не відповідає вказаному формату, 6593859632586, Телефон не відповідає вказаному формату, jngeoлщшогнеп, Телефон не може містити літери, !96397180, Телефон не відповідає вказаному формату, @96397180, Телефон не відповідає вказаному формату, #96397180, Телефон не відповідає вказаному формату, $96397180, Телефон не відповідає вказаному формату, %96397180, Телефон не відповідає вказаному формату, ^96397180, Телефон не відповідає вказаному формату, &96397180, Телефон не відповідає вказаному формату, *96397180, Телефон не відповідає вказаному формату, (96397180, Телефон не відповідає вказаному формату, _96397180, Телефон не відповідає вказаному формату, +96397180, Телефон не відповідає вказаному формату, .96397180, Телефон не відповідає вказаному формату, :96397180, Телефон не відповідає вказаному формату, , Будь ласка введіть Ваш номер телефону]" ]
-      } ],
-      "uid" : "07ebfe1f573d67081c6a6b05a7c92f98"
-    }, {
-      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.registration.SuccessRegistration), not marked as ignorable (3 known properties: \"roleName\", \"id\", \"email\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.registration.SuccessRegistration[\"status\"])",
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.registration.SuccessRegistration), not marked as ignorable (3 known properties: \"roleName\", \"id\", \"email\"])\n at [Source: (String)\"{\"status\":401,\"message\":\"Email awdcftgbhumiookk@gmail.com already exist\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.registration.SuccessRegistration[\"status\"])",
       "children" : [ {
         "name" : "TUA-408",
-        "uid" : "381cf494e74bca8d",
-        "parentUid" : "f21d5cc7481554e192d93627868782f9",
+        "uid" : "8980161b4904b3b9",
+        "parentUid" : "7ea2bd05a0d84b4a32076d3173e660f3",
         "status" : "broken",
         "time" : {
-          "start" : 1642792253086,
-          "stop" : 1642792254987,
-          "duration" : 1901
+          "start" : 1642849553659,
+          "stop" : 1642849554553,
+          "duration" : 894
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "TUA-411",
-        "uid" : "110655d5588bef5b",
-        "parentUid" : "f21d5cc7481554e192d93627868782f9",
+        "uid" : "24a530566c8813c9",
+        "parentUid" : "7ea2bd05a0d84b4a32076d3173e660f3",
         "status" : "broken",
         "time" : {
-          "start" : 1642792254996,
-          "stop" : 1642792255843,
-          "duration" : 847
+          "start" : 1642849554555,
+          "stop" : 1642849555370,
+          "duration" : 815
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "TUA-375",
-        "uid" : "bc83d8d0d0eab1b6",
-        "parentUid" : "f21d5cc7481554e192d93627868782f9",
+        "uid" : "3dcf7ad4ad249923",
+        "parentUid" : "7ea2bd05a0d84b4a32076d3173e660f3",
         "status" : "broken",
         "time" : {
-          "start" : 1642792255853,
-          "stop" : 1642792256678,
+          "start" : 1642849555373,
+          "stop" : 1642849556198,
           "duration" : 825
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "f21d5cc7481554e192d93627868782f9"
+      "uid" : "7ea2bd05a0d84b4a32076d3173e660f3"
     }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [18f6eb80fa945c8003e65661294ee2c3, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.uxGWpQ}, goog:chromeOptions: {debuggerAddress: localhost:44535}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44535/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 18f6eb80fa945c8003e65661294ee2c3",
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.roles.RoleModel), not marked as ignorable (2 known properties: \"roleName\", \"id\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Role already exist with name: TEST_ROLE\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.roles.RoleModel[\"status\"])",
       "children" : [ {
-        "name" : "TUA-252",
-        "uid" : "28f836f64dee8312",
-        "parentUid" : "76978e96c58ac3857ba0ee117f5df8d0",
+        "name" : "[API admin role] Create new role and delete it",
+        "uid" : "abdf3b2ff015401",
+        "parentUid" : "3df9dd2ed4089f539e3136af7a3eb19f",
         "status" : "broken",
         "time" : {
-          "start" : 1642792264323,
-          "stop" : 1642792278069,
-          "duration" : 13746
+          "start" : 1642849558677,
+          "stop" : 1642849559634,
+          "duration" : 957
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "76978e96c58ac3857ba0ee117f5df8d0"
+      "uid" : "3df9dd2ed4089f539e3136af7a3eb19f"
     }, {
-      "name" : "A JSONArray text must start with '[' at 1 [character 2 line 1]",
+      "name" : "element not interactable\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az36-128', ip: '10.1.0.46', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4a0913444917bca60a7a42b5631e083d, sendKeysToElement {id=4d3706df-e765-4162-8fda-1d67a7d25eca, value=[Ljava.lang.CharSequence;@5037566f}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.2jO0H6}, goog:chromeOptions: {debuggerAddress: localhost:44525}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44525/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (4a0913444917bca60a7a42b5631e083d)] -> id: firstName]\nSession ID: 4a0913444917bca60a7a42b5631e083d",
       "children" : [ {
-        "name" : "TUA-418",
-        "uid" : "683f8d360b6c49b1",
-        "parentUid" : "4fb0080759f4091fc43af31895744d35",
+        "name" : "TUA-454",
+        "uid" : "18ffb0c6f260414",
+        "parentUid" : "697ab85cab6304fc7314b489a15f93e1",
         "status" : "broken",
         "time" : {
-          "start" : 1642792264352,
-          "stop" : 1642792265261,
-          "duration" : 909
+          "start" : 1642849829690,
+          "stop" : 1642849840945,
+          "duration" : 11255
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "4fb0080759f4091fc43af31895744d35"
+      "uid" : "697ab85cab6304fc7314b489a15f93e1"
     }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [97516895a78e28ff2ea5a66bbee331aa, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.HGSTI7}, goog:chromeOptions: {debuggerAddress: localhost:34419}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34419/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 97516895a78e28ff2ea5a66bbee331aa",
-      "children" : [ {
-        "name" : "TUA-237",
-        "uid" : "52ee5005a6e5e299",
-        "parentUid" : "218e625367b81cf2f0a25f4da3ae5721",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792281978,
-          "stop" : 1642792295498,
-          "duration" : 13520
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "ValidName2", "2", "18", "ValidAddress", "49.829104498711104, 24.005058710351314", "0966666666", "example@email.com", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "name,cityName,districtName,stationName,address,coordinates,phone", "basic_contactТелефон,basic_contactFacebook,basic_contactWhatsApp,basic_contactПошта,basic_contactSkype,basic_contactContact" ]
-      } ],
-      "uid" : "218e625367b81cf2f0a25f4da3ae5721"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a3d953978387cdaeb88d17ca95e422ac, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.1Bcmu3}, goog:chromeOptions: {debuggerAddress: localhost:43725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43725/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a3d953978387cdaeb88d17ca95e422ac",
-      "children" : [ {
-        "name" : "Runs Cucumber Scenarios",
-        "uid" : "acedcca5ee52ff19",
-        "parentUid" : "6262de1f6bebf953d0f8e28b858a0f10",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792291145,
-          "stop" : 1642792308106,
-          "duration" : 16961
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\"", "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\"" ]
-      } ],
-      "uid" : "6262de1f6bebf953d0f8e28b858a0f10"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [dc5c6a82a0a21c9fd871514ff3775f74, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.YdKH6R}, goog:chromeOptions: {debuggerAddress: localhost:39785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39785/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dc5c6a82a0a21c9fd871514ff3775f74",
-      "children" : [ {
-        "name" : "TUA-160",
-        "uid" : "3cba7e5cdd3cb860",
-        "parentUid" : "dd906f90b140b9065be4230e9f54630d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792299595,
-          "stop" : 1642792313089,
-          "duration" : 13494
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "dd906f90b140b9065be4230e9f54630d"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [2b3be10aa1c06bfa2e9cd947f35e2dbb, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.kbHn0E}, goog:chromeOptions: {debuggerAddress: localhost:40237}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40237/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2b3be10aa1c06bfa2e9cd947f35e2dbb",
-      "children" : [ {
-        "name" : "Example of BDD suite",
-        "uid" : "364fb0374838c17f",
-        "parentUid" : "166be23a5c862618812258a9b25145d1",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792308109,
-          "stop" : 1642792325143,
-          "duration" : 17034
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "\"This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.\"", "\"Optional[Verify that a 'Керівник' can add a location of a club]\"" ]
-      } ],
-      "uid" : "166be23a5c862618812258a9b25145d1"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [0b720a1beca41689dc9d63da3a5d3bf8, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.YYllty}, goog:chromeOptions: {debuggerAddress: localhost:46203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46203/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0b720a1beca41689dc9d63da3a5d3bf8",
-      "children" : [ {
-        "name" : "TUA-159",
-        "uid" : "53f42d84d175e8be",
-        "parentUid" : "2a30882a73aeb9454101abd48d119389",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792316900,
-          "stop" : 1642792330709,
-          "duration" : 13809
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "ТестЛокація2", "Сумська 2/3", "50.00100346155677, 36.234188917163884", "0977777777" ]
-      } ],
-      "uid" : "2a30882a73aeb9454101abd48d119389"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [308ce99b7052cd0878a7a2460c9474f3, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.35Bhqr}, goog:chromeOptions: {debuggerAddress: localhost:35487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35487/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 308ce99b7052cd0878a7a2460c9474f3",
-      "children" : [ {
-        "name" : "TUA-172",
-        "uid" : "9040e3d8bea6aa52",
-        "parentUid" : "7b147a05f9c70deac5df5d68ca887bc0",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792334783,
-          "stop" : 1642792348693,
-          "duration" : 13910
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "[Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\\n\" +\n\"Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\\n\" +\n\"On the top of the column stands a bronze figurine of a woman holding a whe are you so sad& i think that is, Also known as the Monastery of the Caves, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\\n\" +\n\"Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\\n\" +\n\"On the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 b]" ]
-      } ],
-      "uid" : "7b147a05f9c70deac5df5d68ca887bc0"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [ee1e2dcb98d9ebe5dd87542eb8d0bfcc, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.WvUhIA}, goog:chromeOptions: {debuggerAddress: localhost:34725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34725/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ee1e2dcb98d9ebe5dd87542eb8d0bfcc",
-      "children" : [ {
-        "name" : "TUA-177",
-        "uid" : "6d3a284c10b01ccd",
-        "parentUid" : "a5b1d56015c3c6b542aa5769ea09d825",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792353195,
-          "stop" : 1642792366876,
-          "duration" : 13681
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "[Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalv, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square., Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd. With its numerous parks and gardens, Kiev is perfect for picnics and outdoor activities.\nHidropark is an island in the Dnieper River whose natural beaches are very popular during the summer. Besides swimming, you can also play beach volleyball, eat delicious street food or simply sunbathe.]" ]
-      } ],
-      "uid" : "a5b1d56015c3c6b542aa5769ea09d825"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [13727494899b12bdaa5e69e7c14c1939, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.frcW90}, goog:chromeOptions: {debuggerAddress: localhost:34435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34435/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 13727494899b12bdaa5e69e7c14c1939",
-      "children" : [ {
-        "name" : "Example of BDD suite",
-        "uid" : "c49b2ba0401425d",
-        "parentUid" : "5d41c3764e8d3ff4b2cb18b9364061e6",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792354459,
-          "stop" : 1642792371539,
-          "duration" : 17080
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\"", "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\"" ]
-      } ],
-      "uid" : "5d41c3764e8d3ff4b2cb18b9364061e6"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [1444331fb8b1c7bf99f5e3e29801426c, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Hqletp}, goog:chromeOptions: {debuggerAddress: localhost:34093}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34093/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1444331fb8b1c7bf99f5e3e29801426c",
-      "children" : [ {
-        "name" : "TUA-176",
-        "uid" : "94f0ad68f72de467",
-        "parentUid" : "97feda85dc8663e364f038aadd4e58f8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792371429,
-          "stop" : 1642792384997,
-          "duration" : 13568
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "[Also known as the Mo, 1, Also known as the Monastery of the ghfg]" ]
-      } ],
-      "uid" : "97feda85dc8663e364f038aadd4e58f8"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [b77bfe473d611cd4b0a7bfa5aac4c240, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.e58Opq}, goog:chromeOptions: {debuggerAddress: localhost:34213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34213/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b77bfe473d611cd4b0a7bfa5aac4c240",
-      "children" : [ {
-        "name" : "TUA-173",
-        "uid" : "5abbe069716a923e",
-        "parentUid" : "cb6c6863367b4851d0140c73887cefdf",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792388805,
-          "stop" : 1642792402650,
-          "duration" : 13845
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "[Education, students, Школа балетуee and so , 12345678901234567890123456789012345678656, !#$%&'()*+,-./:;<=>?@[]^_`{}~^&^%%^&***#]" ]
-      } ],
-      "uid" : "cb6c6863367b4851d0140c73887cefdf"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [958b9cf4d8dffc05730ece9b0d5f5cbd, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.PAUNE5}, goog:chromeOptions: {debuggerAddress: localhost:37925}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37925/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 958b9cf4d8dffc05730ece9b0d5f5cbd",
-      "children" : [ {
-        "name" : "TUA-328",
-        "uid" : "35e798ca337c85cb",
-        "parentUid" : "4fb60f18e6c3a75bcfac420e75233690",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792406250,
-          "stop" : 1642792420128,
-          "duration" : 13878
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "[AfBbCcDdEeFfGgHhIiJjKkLlMmNn, Ім'я не може містити більше, ніж 25 символів, AfBbCcDdEeFfGgHhIiJjKkLlMm, Ім'я не може містити більше, ніж 25 символів, , Будь ласка введіть Ваше ім'я, 1Admin, Ім'я не може містити цифри, 2Admin, Ім'я не може містити цифри, 3Admin, Ім'я не може містити цифри, 4Admin, Ім'я не може містити цифри, -Name, Ім'я повинно починатися і закінчуватися літерою, < Name>, Ім'я не може містити спеціальні символи, 'Name, Ім'я повинно починатися і закінчуватися літерою, Name-, Ім'я повинно починатися і закінчуватися літерою, <Name >, Ім'я не може містити спеціальні символи, Name', Ім'я повинно починатися і закінчуватися літерою, !Admin, Ім'я не може містити спеціальні символи, @Admin, Ім'я не може містити спеціальні символи, #Admin, Ім'я не може містити спеціальні символи, $Admin, Ім'я не може містити спеціальні символи, %Admin, Ім'я не може містити спеціальні символи, ^Admin, Ім'я не може містити спеціальні символи, &Admin, Ім'я не може містити спеціальні символи, *Admin, Ім'я не може містити спеціальні символи, (Admin, Ім'я не може містити спеціальні символи, _Admin, Ім'я не може містити спеціальні символи, +Admin, Ім'я не може містити спеціальні символи, .Admin, Ім'я не може містити спеціальні символи, :Admin, Ім'я не може містити спеціальні символи, , Будь ласка введіть Ваше ім'я]" ]
-      } ],
-      "uid" : "4fb60f18e6c3a75bcfac420e75233690"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [296448d64a64eb3f57900d5d7f42df71, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.GYw9BA}, goog:chromeOptions: {debuggerAddress: localhost:42781}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42781/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 296448d64a64eb3f57900d5d7f42df71",
-      "children" : [ {
-        "name" : "TUA-343",
-        "uid" : "6de1ed8af8c9f67f",
-        "parentUid" : "6fc8ae3eb2fbc3d292c64caf186b491f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792424962,
-          "stop" : 1642792438458,
-          "duration" : 13496
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "[AfBbCcDdEeFfGgHhIiJjKkLlMmNn, Прізвище не може містити більше, ніж 25 символів, AfBbCcDdEeFfGgHhIiJjKkLlMm, Прізвище не може містити більше, ніж 25 символів, 1Admin, Прізвище не може містити цифри, 2Admin, Прізвище не може містити цифри, 3Admin, Прізвище не може містити цифри, 4Admin, Прізвище не може містити цифри, -Lastname, Прізвище повинно починатися і закінчуватися літерою, < Lastname>, Прізвище не може містити спеціальні символи, 'Lastname, Прізвище повинно починатися і закінчуватися літерою, Lastname-, Прізвище повинно починатися і закінчуватися літерою, <Lastname >, Прізвище не може містити спеціальні символи, Lastname', Прізвище повинно починатися і закінчуватися літерою, !Admin, Прізвище не може містити спеціальні символи, @Admin, Прізвище не може містити спеціальні символи, #Admin, Прізвище не може містити спеціальні символи, $Admin, Прізвище не може містити спеціальні символи, %Admin, Прізвище не може містити спеціальні символи, ^Admin, Прізвище не може містити спеціальні символи, &Admin, Прізвище не може містити спеціальні символи, *Admin, Прізвище не може містити спеціальні символи, (Admin, Прізвище не може містити спеціальні символи, _Admin, Прізвище не може містити спеціальні символи, +Admin, Прізвище не може містити спеціальні символи, .Admin, Прізвище не може містити спеціальні символи, :Admin, Прізвище не може містити спеціальні символи, , Будь ласка введіть Ваше прізвище]" ]
-      } ],
-      "uid" : "6fc8ae3eb2fbc3d292c64caf186b491f"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [82f76ae6390d7a53b6125323873df076, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.YAmM1w}, goog:chromeOptions: {debuggerAddress: localhost:43917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43917/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 82f76ae6390d7a53b6125323873df076",
-      "children" : [ {
-        "name" : "TUA-359",
-        "uid" : "7911d6d02edf7e88",
-        "parentUid" : "f15d34e2a459d88b1d3fa82513568b50",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792448531,
-          "stop" : 1642792462332,
-          "duration" : 13801
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "f15d34e2a459d88b1d3fa82513568b50"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5696d366a37766f381b8f08db95070b8, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.og7zmO}, goog:chromeOptions: {debuggerAddress: localhost:37865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37865/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5696d366a37766f381b8f08db95070b8",
+      "name" : "element click intercepted: Element <span class=\"add-club-location\">...</span> is not clickable at point (626, 364). Other element would receive the click: <div class=\"ant-form-item-control-input-content\">...</div>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az36-128', ip: '10.1.0.46', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [3a8a875b4d2de1e3dd282a79bae7c039, clickElement {id=0ba8b73d-d3e9-4d03-a453-69a840fd6bb3}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.sUYTfm}, goog:chromeOptions: {debuggerAddress: localhost:35723}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35723/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (3a8a875b4d2de1e3dd282a79bae7c039)] -> class: add-club-location]\nSession ID: 3a8a875b4d2de1e3dd282a79bae7c039",
       "children" : [ {
         "name" : "TUA-158",
-        "uid" : "fe1f73016bf7a31b",
-        "parentUid" : "a83e04a2b01bb993b61e009fbe0327bc",
+        "uid" : "d279cdc250099cde",
+        "parentUid" : "2d883084dfb0b20138db307b485f1472",
         "status" : "broken",
         "time" : {
-          "start" : 1642792465882,
-          "stop" : 1642792479700,
-          "duration" : 13818
+          "start" : 1642849861925,
+          "stop" : 1642849870743,
+          "duration" : 8818
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "ValidLocationName", "ValidAddress", "49.829104498711104, 24.005058710351314", "0966666666" ]
       } ],
-      "uid" : "a83e04a2b01bb993b61e009fbe0327bc"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [6719ab0ef183f21deb1b1969e9ab8d8f, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.q6CUwF}, goog:chromeOptions: {debuggerAddress: localhost:34313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34313/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6719ab0ef183f21deb1b1969e9ab8d8f",
-      "children" : [ {
-        "name" : "TUA-214",
-        "uid" : "82c185e1edc17be3",
-        "parentUid" : "05ad7b0864cb4ce8f120ca2175054fb3",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792483484,
-          "stop" : 1642792497229,
-          "duration" : 13745
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "ValidLocationName", "ValidAddress", "49.829104498711104, 24.005058710351314", "0966666666", "ValidCenterName", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "Тестовий гурток для центру" ]
-      } ],
-      "uid" : "05ad7b0864cb4ce8f120ca2175054fb3"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4bceb48c0c9a2ac39d3ff77225ea53f0, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.LOoM8R}, goog:chromeOptions: {debuggerAddress: localhost:39793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39793/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4bceb48c0c9a2ac39d3ff77225ea53f0",
-      "children" : [ {
-        "name" : "TUA-178",
-        "uid" : "1eff1c44a85291c5",
-        "parentUid" : "3c0ec2154044ea7bafcf6e1dcbc3c8ab",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792500808,
-          "stop" : 1642792514583,
-          "duration" : 13775
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "[sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfЫ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfъ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä]" ]
-      } ],
-      "uid" : "3c0ec2154044ea7bafcf6e1dcbc3c8ab"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [76b8eb1eecb4073972eab0d4056244f5, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.AUPWFW}, goog:chromeOptions: {debuggerAddress: localhost:41785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41785/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 76b8eb1eecb4073972eab0d4056244f5",
-      "children" : [ {
-        "name" : "TUA-210",
-        "uid" : "e149d75902722b29",
-        "parentUid" : "3cfb8d2a08d629778b95ab1787ee4db2",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792518689,
-          "stop" : 1642792528880,
-          "duration" : 10191
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "2", "2" ]
-      } ],
-      "uid" : "3cfb8d2a08d629778b95ab1787ee4db2"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [47fd25487400549f63ad67df89b522a0, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.6eONGj}, goog:chromeOptions: {debuggerAddress: localhost:34143}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34143/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 47fd25487400549f63ad67df89b522a0",
-      "children" : [ {
-        "name" : "TUA-210",
-        "uid" : "66c661a58e4c1195",
-        "parentUid" : "c0b88b604738e5818011dd0f14e8e3e1",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792532519,
-          "stop" : 1642792542693,
-          "duration" : 10174
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "18", "18" ]
-      } ],
-      "uid" : "c0b88b604738e5818011dd0f14e8e3e1"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [aa50f831df20f1464a2a608ec2c5bc60, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.1N9HBc}, goog:chromeOptions: {debuggerAddress: localhost:33021}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33021/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: aa50f831df20f1464a2a608ec2c5bc60",
-      "children" : [ {
-        "name" : "TUA-210",
-        "uid" : "fd6c140a390a4990",
-        "parentUid" : "45904b8d87bf3999a60db4c4142c933e",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792546175,
-          "stop" : 1642792556350,
-          "duration" : 10175
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "1", "2" ]
-      } ],
-      "uid" : "45904b8d87bf3999a60db4c4142c933e"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [bc2510559217a846f29ec5e0d455a1e4, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.gk4WoC}, goog:chromeOptions: {debuggerAddress: localhost:40349}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40349/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: bc2510559217a846f29ec5e0d455a1e4",
-      "children" : [ {
-        "name" : "TUA-210",
-        "uid" : "9e0b9ffe82df379e",
-        "parentUid" : "3d00a561c3f1222e618453643f7eb469",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792559821,
-          "stop" : 1642792569990,
-          "duration" : 10169
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "19", "18" ]
-      } ],
-      "uid" : "3d00a561c3f1222e618453643f7eb469"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [611c8064a7e7f077e60dca47e837048f, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.wb0iq9}, goog:chromeOptions: {debuggerAddress: localhost:44945}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44945/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 611c8064a7e7f077e60dca47e837048f",
-      "children" : [ {
-        "name" : "TUA-513",
-        "uid" : "b572995416959d0a",
-        "parentUid" : "45cf36df0d51cb9fcaf4fc339c984b2d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792573764,
-          "stop" : 1642792583960,
-          "duration" : 10196
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "45cf36df0d51cb9fcaf4fc339c984b2d"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [354ecfdce82a221ffa1fe66a271152aa, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.HdqHtI}, goog:chromeOptions: {debuggerAddress: localhost:41917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41917/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 354ecfdce82a221ffa1fe66a271152aa",
-      "children" : [ {
-        "name" : "TUA-103",
-        "uid" : "ea804c9d941d3687",
-        "parentUid" : "190300a2c87c9731cccefcf2dc81a01a",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792587363,
-          "stop" : 1642792597532,
-          "duration" : 10169
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "190300a2c87c9731cccefcf2dc81a01a"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [8e7582de48b2d7311606d2a2f343a3ca, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Cxhuky}, goog:chromeOptions: {debuggerAddress: localhost:33753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33753/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8e7582de48b2d7311606d2a2f343a3ca",
-      "children" : [ {
-        "name" : "TUA-103",
-        "uid" : "2905db9274fbe318",
-        "parentUid" : "2674a61d1451864c0c0a482c8d5b7c16",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792601219,
-          "stop" : 1642792611413,
-          "duration" : 10194
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "2674a61d1451864c0c0a482c8d5b7c16"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [6719d785b76f79b16b408fa58304ff56, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.kxyYtM}, goog:chromeOptions: {debuggerAddress: localhost:45311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45311/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6719d785b76f79b16b408fa58304ff56",
-      "children" : [ {
-        "name" : "TUA-103",
-        "uid" : "5143554ce72abc11",
-        "parentUid" : "6c58e5dc2140dfe4bcbccab3fea6b4f3",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792615795,
-          "stop" : 1642792626001,
-          "duration" : 10206
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "6c58e5dc2140dfe4bcbccab3fea6b4f3"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [7476925d41371ab1a35075cf756a93d5, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.m2R7hG}, goog:chromeOptions: {debuggerAddress: localhost:38123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38123/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7476925d41371ab1a35075cf756a93d5",
-      "children" : [ {
-        "name" : "TUA-103",
-        "uid" : "9a44a77d5acc8715",
-        "parentUid" : "61b590e04e133b9e64827facd512a884",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792629745,
-          "stop" : 1642792639917,
-          "duration" : 10172
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "61b590e04e133b9e64827facd512a884"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [6dc4668050e6a9ab19c2d14c3dd5987a, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.QQlePi}, goog:chromeOptions: {debuggerAddress: localhost:43483}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43483/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6dc4668050e6a9ab19c2d14c3dd5987a",
-      "children" : [ {
-        "name" : "TUA-224",
-        "uid" : "610a8b2ca0685e87",
-        "parentUid" : "3da8a4478ea3f69a7afe4cab3c0e3654",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792645163,
-          "stop" : 1642792655345,
-          "duration" : 10182
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "3da8a4478ea3f69a7afe4cab3c0e3654"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [76182084a5e16145867c2476a18107b5, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.f71qUC}, goog:chromeOptions: {debuggerAddress: localhost:45235}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45235/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 76182084a5e16145867c2476a18107b5",
-      "children" : [ {
-        "name" : "TUA-510",
-        "uid" : "ba40c38b36641ae4",
-        "parentUid" : "72d4f6119ae9881b93db6aa298af9603",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792658875,
-          "stop" : 1642792669082,
-          "duration" : 10207
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "72d4f6119ae9881b93db6aa298af9603"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a59c9a81193292a1cee02c627df401e3, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.039yWL}, goog:chromeOptions: {debuggerAddress: localhost:43231}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43231/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a59c9a81193292a1cee02c627df401e3",
-      "children" : [ {
-        "name" : "TUA-509",
-        "uid" : "49243222fe1979d4",
-        "parentUid" : "58be5f8f539353c56da080307d88542a",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792672959,
-          "stop" : 1642792683150,
-          "duration" : 10191
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "58be5f8f539353c56da080307d88542a"
+      "uid" : "2d883084dfb0b20138db307b485f1472"
     }, {
       "name" : "java.lang.NullPointerException",
       "children" : [ {
         "name" : "TUA-318",
-        "uid" : "7be2e4a5c5666d19",
+        "uid" : "ad9275cc035dcb4d",
         "parentUid" : "5592898b36d684905e31486a23088bda",
         "status" : "broken",
         "time" : {
-          "start" : 1642792686777,
-          "stop" : 1642792693796,
-          "duration" : 7019
+          "start" : 1642850141294,
+          "stop" : 1642850148527,
+          "duration" : 7233
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "TUA-321",
-        "uid" : "331ea7b9d84aa68",
+        "uid" : "37f42215d24c3db9",
         "parentUid" : "5592898b36d684905e31486a23088bda",
         "status" : "broken",
         "time" : {
-          "start" : 1642792710878,
-          "stop" : 1642792717720,
-          "duration" : 6842
+          "start" : 1642850167978,
+          "stop" : 1642850174651,
+          "duration" : 6673
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "TUA-322",
-        "uid" : "4c0f7676c136c25e",
+        "uid" : "2ae79fb53cee600",
         "parentUid" : "5592898b36d684905e31486a23088bda",
         "status" : "broken",
         "time" : {
-          "start" : 1642792721689,
-          "stop" : 1642792728574,
-          "duration" : 6885
+          "start" : 1642850179711,
+          "stop" : 1642850186915,
+          "duration" : 7204
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "5592898b36d684905e31486a23088bda"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [cd250ef4ec4c12b26826b1a7c5c73eea, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.7RGtTx}, goog:chromeOptions: {debuggerAddress: localhost:37167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37167/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cd250ef4ec4c12b26826b1a7c5c73eea",
-      "children" : [ {
-        "name" : "TUA-428",
-        "uid" : "72a11fbc132154bb",
-        "parentUid" : "56be978aa48add1686d395cf5e354931",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792732208,
-          "stop" : 1642792742758,
-          "duration" : 10550
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "///", "За критеріями пошуку гуртків не знайдено" ]
-      } ],
-      "uid" : "56be978aa48add1686d395cf5e354931"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [df329110e5ef33e26d36135c6dad5317, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.nz23a8}, goog:chromeOptions: {debuggerAddress: localhost:37981}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37981/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: df329110e5ef33e26d36135c6dad5317",
-      "children" : [ {
-        "name" : "TUA-428",
-        "uid" : "8acdab50de38cce1",
-        "parentUid" : "0d6d1c8334c9f32b558e86af510dea33",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792746583,
-          "stop" : 1642792756773,
-          "duration" : 10190
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "150rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv", "За критеріями пошуку гуртків не знайдено" ]
-      } ],
-      "uid" : "0d6d1c8334c9f32b558e86af510dea33"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [0fdc91901841fadad3b02d6504bad363, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.MVfNas}, goog:chromeOptions: {debuggerAddress: localhost:37677}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37677/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0fdc91901841fadad3b02d6504bad363",
-      "children" : [ {
-        "name" : "TUA-428",
-        "uid" : "cb3e9942e12467d",
-        "parentUid" : "f0ab43ec2588a508df3635627fe03f2c",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792760651,
-          "stop" : 1642792770849,
-          "duration" : 10198
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "152rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv+1", "За критеріями пошуку гуртків не знайдено" ]
-      } ],
-      "uid" : "f0ab43ec2588a508df3635627fe03f2c"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4d8e99868cf81738449124600b51e96c, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.UZfPcO}, goog:chromeOptions: {debuggerAddress: localhost:39357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39357/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4d8e99868cf81738449124600b51e96c",
-      "children" : [ {
-        "name" : "TUA-428",
-        "uid" : "16136fde848b6104",
-        "parentUid" : "4ab1bd48640e0a8e490cbe56b24cbaed",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792774680,
-          "stop" : 1642792784871,
-          "duration" : 10191
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "///", "За критеріями пошуку гуртків не знайдено" ]
-      } ],
-      "uid" : "4ab1bd48640e0a8e490cbe56b24cbaed"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [749808e111f98f34024f3159578a5935, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Cn68lk}, goog:chromeOptions: {debuggerAddress: localhost:44971}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44971/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 749808e111f98f34024f3159578a5935",
-      "children" : [ {
-        "name" : "TUA-428",
-        "uid" : "ede5253f63744462",
-        "parentUid" : "2e1e62fee044fbe6f3df527acbbb18e8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792788272,
-          "stop" : 1642792798472,
-          "duration" : 10200
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "150rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv", "За критеріями пошуку гуртків не знайдено" ]
-      } ],
-      "uid" : "2e1e62fee044fbe6f3df527acbbb18e8"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [add28c8792029dac1bfd1b3b2ef63ff6, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.lmKoUh}, goog:chromeOptions: {debuggerAddress: localhost:45543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45543/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: add28c8792029dac1bfd1b3b2ef63ff6",
-      "children" : [ {
-        "name" : "TUA-428",
-        "uid" : "b76141e2cb59d7ca",
-        "parentUid" : "6da47c654b7846348c38e3436162e650",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792803273,
-          "stop" : 1642792813436,
-          "duration" : 10163
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "152rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv+1", "За критеріями пошуку гуртків не знайдено" ]
-      } ],
-      "uid" : "6da47c654b7846348c38e3436162e650"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [395750d9752664585ae6d0ec755ff8f2, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.R4H2i0}, goog:chromeOptions: {debuggerAddress: localhost:43649}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43649/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 395750d9752664585ae6d0ec755ff8f2",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "a8afdb79583ae790",
-        "parentUid" : "f01ebd77c6f98c6446250d58de32a0af",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792817158,
-          "stop" : 1642792827337,
-          "duration" : 10179
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "American Gymnastics Club" ]
-      } ],
-      "uid" : "f01ebd77c6f98c6446250d58de32a0af"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [124bac195b5f15552ebea47388410b12, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.nr4T80}, goog:chromeOptions: {debuggerAddress: localhost:39195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39195/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 124bac195b5f15552ebea47388410b12",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "a864e7572095690b",
-        "parentUid" : "173bf6224466216742fbe01175b1d0ef",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792831023,
-          "stop" : 1642792841195,
-          "duration" : 10172
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "IT освіта: курси \"ГРАНД\"" ]
-      } ],
-      "uid" : "173bf6224466216742fbe01175b1d0ef"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [19b3022b3258319c587ac66a38b35455, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.yEx9LK}, goog:chromeOptions: {debuggerAddress: localhost:38681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38681/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 19b3022b3258319c587ac66a38b35455",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "44abaeaea75447ae",
-        "parentUid" : "6d4a22250141c4e1ca9652d6f27336b8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792845320,
-          "stop" : 1642792855497,
-          "duration" : 10177
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "Онлайн-школа точних наук YOUSTUD" ]
-      } ],
-      "uid" : "6d4a22250141c4e1ca9652d6f27336b8"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [b11aca714a554ac38c8240235e80cffd, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.t7yUF9}, goog:chromeOptions: {debuggerAddress: localhost:37341}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37341/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b11aca714a554ac38c8240235e80cffd",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "c26559f0a4b20a7b",
-        "parentUid" : "c11264bea7ec552fa175dc9543019d4d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792859143,
-          "stop" : 1642792869312,
-          "duration" : 10169
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "Театральна Студія \"Зоряні Діти''" ]
-      } ],
-      "uid" : "c11264bea7ec552fa175dc9543019d4d"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [2e93d9434789be409895359cffcf656b, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.5U1pp0}, goog:chromeOptions: {debuggerAddress: localhost:32989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:32989/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2e93d9434789be409895359cffcf656b",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "59cb3ac7af142708",
-        "parentUid" : "61f8fc45f0613265e7226af23c2cd8b8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792873207,
-          "stop" : 1642792883390,
-          "duration" : 10183
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "Студія танцю \"Несамовиті\"" ]
-      } ],
-      "uid" : "61f8fc45f0613265e7226af23c2cd8b8"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [b0c33a805d8b1f04e17c419c61338650, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.E03Tnu}, goog:chromeOptions: {debuggerAddress: localhost:33023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33023/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b0c33a805d8b1f04e17c419c61338650",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "6502c7504bb0696e",
-        "parentUid" : "c4f8e63b21c23df1bd5a5bb49ed94d39",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792886985,
-          "stop" : 1642792897217,
-          "duration" : 10232
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "LESKIV-SCHOOL" ]
-      } ],
-      "uid" : "c4f8e63b21c23df1bd5a5bb49ed94d39"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [6999c61d48fa5af2ddf1a8a6e29e213a, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.rhfp6p}, goog:chromeOptions: {debuggerAddress: localhost:40753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40753/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6999c61d48fa5af2ddf1a8a6e29e213a",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "39ff0001dbd95ad6",
-        "parentUid" : "58d1dc505e3c7f633ac2fb1ca29f6c62",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792901029,
-          "stop" : 1642792911204,
-          "duration" : 10175
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "Школа танців Dream Team" ]
-      } ],
-      "uid" : "58d1dc505e3c7f633ac2fb1ca29f6c62"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [231d40071dccd1b09e1a918b1f4adc9d, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.7g1Pqj}, goog:chromeOptions: {debuggerAddress: localhost:35369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35369/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 231d40071dccd1b09e1a918b1f4adc9d",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "4fec65fbcf963523",
-        "parentUid" : "7284b933ca0eba0668df661fad259c3b",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792915500,
-          "stop" : 1642792925685,
-          "duration" : 10185
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "American Gymnastics Club" ]
-      } ],
-      "uid" : "7284b933ca0eba0668df661fad259c3b"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [2ba5f99c57be459911c3f14d4f77746f, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.roBn2S}, goog:chromeOptions: {debuggerAddress: localhost:39573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39573/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2ba5f99c57be459911c3f14d4f77746f",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "30644b49b09bf2de",
-        "parentUid" : "60fc60c3279a60abf125f42a391a3070",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792929185,
-          "stop" : 1642792939342,
-          "duration" : 10157
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "IT освіта: курси \"ГРАНД\"" ]
-      } ],
-      "uid" : "60fc60c3279a60abf125f42a391a3070"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [e9c7eb934aa084d5b09863b20e55fc7c, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.4ddlwU}, goog:chromeOptions: {debuggerAddress: localhost:43389}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43389/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e9c7eb934aa084d5b09863b20e55fc7c",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "9a0252155ae9c4f",
-        "parentUid" : "4bb34724ef7f7c780acd0ba8504aed25",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792942956,
-          "stop" : 1642792953102,
-          "duration" : 10146
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "Онлайн-школа точних наук YOUSTUD" ]
-      } ],
-      "uid" : "4bb34724ef7f7c780acd0ba8504aed25"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [8fc1453bd9543afaf9515e9ef8946aaf, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.hkLGLE}, goog:chromeOptions: {debuggerAddress: localhost:40477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40477/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8fc1453bd9543afaf9515e9ef8946aaf",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "3460b27f757b1dec",
-        "parentUid" : "cda3dde38b583ce5ea2c8531d44a0a80",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792958173,
-          "stop" : 1642792968355,
-          "duration" : 10182
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "Театральна Студія \"Зоряні Діти''" ]
-      } ],
-      "uid" : "cda3dde38b583ce5ea2c8531d44a0a80"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [d9cc0c60269b8557e5eec58534b61113, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.6nrHF4}, goog:chromeOptions: {debuggerAddress: localhost:39795}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39795/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d9cc0c60269b8557e5eec58534b61113",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "1969d91d9f6db358",
-        "parentUid" : "81ad11d2be97fd99a27f7dda51412c04",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792972128,
-          "stop" : 1642792982301,
-          "duration" : 10173
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "Студія танцю \"Несамовиті\"" ]
-      } ],
-      "uid" : "81ad11d2be97fd99a27f7dda51412c04"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [b4a99d8d9e908a57c33f8737e5ae5b1a, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.HXr4KW}, goog:chromeOptions: {debuggerAddress: localhost:38673}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38673/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b4a99d8d9e908a57c33f8737e5ae5b1a",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "30dc987421d69ff6",
-        "parentUid" : "229767df7c92fa7d2d41703baf0d51d4",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792986106,
-          "stop" : 1642792996296,
-          "duration" : 10190
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "LESKIV-SCHOOL" ]
-      } ],
-      "uid" : "229767df7c92fa7d2d41703baf0d51d4"
-    }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [bc5364bc88e7823d8ac051a9b446a751, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.x5zbln}, goog:chromeOptions: {debuggerAddress: localhost:39577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39577/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: bc5364bc88e7823d8ac051a9b446a751",
-      "children" : [ {
-        "name" : "TUA-226",
-        "uid" : "a4beeff2403bc076",
-        "parentUid" : "0cf53d994fc9c9451a79709bbebba83e",
-        "status" : "broken",
-        "time" : {
-          "start" : 1642792999820,
-          "stop" : 1642793009981,
-          "duration" : 10161
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "Школа танців Dream Team" ]
-      } ],
-      "uid" : "0cf53d994fc9c9451a79709bbebba83e"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
-  }, {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "expected [200] but found [405]",
-      "children" : [ {
-        "name" : "resetPasswordTest",
-        "uid" : "6b638b991c28275d",
-        "parentUid" : "f9559f3144ebf90991ea0b891b475203",
-        "status" : "failed",
-        "time" : {
-          "start" : 1642792257489,
-          "stop" : 1642792258770,
-          "duration" : 1281
-        },
-        "flaky" : true,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "TUA-457",
-        "uid" : "a1956c20647d506a",
-        "parentUid" : "f9559f3144ebf90991ea0b891b475203",
-        "status" : "failed",
-        "time" : {
-          "start" : 1642792277752,
-          "stop" : 1642792278568,
-          "duration" : 816
-        },
-        "flaky" : true,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "f9559f3144ebf90991ea0b891b475203"
-    }, {
-      "name" : "expected [400] but found [405]",
-      "children" : [ {
-        "name" : "TUA-420",
-        "uid" : "5e6b581e243fd828",
-        "parentUid" : "fef3e07c182ef6856c06eef9ada22c87",
-        "status" : "failed",
-        "time" : {
-          "start" : 1642792263495,
-          "stop" : 1642792264350,
-          "duration" : 855
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "TUA-499",
-        "uid" : "2f6179c1c31c220d",
-        "parentUid" : "fef3e07c182ef6856c06eef9ada22c87",
-        "status" : "failed",
-        "time" : {
-          "start" : 1642792270698,
-          "stop" : 1642792271495,
-          "duration" : 797
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "fef3e07c182ef6856c06eef9ada22c87"
-    }, {
-      "name" : "The following asserts failed:\n\texpected [400] but found [405],\n\texpected [400] but found [405],\n\texpected [\"firstName\" can`t contain numbers] but found [Request method 'POST' not supported],\n\texpected [400] but found [405],\n\texpected [400] but found [405],\n\texpected [\"firstName\" can contain only ukrainian and english letters] but found [Request method 'POST' not supported],\n\texpected [400] but found [405],\n\texpected [400] but found [405],\n\texpected [\"firstName\" can contain from 1 to 25 letters] but found [Request method 'POST' not supported],\n\texpected [400] but found [405],\n\texpected [400] but found [405],\n\texpected [\"lastName\" can`t contain numbers] but found [Request method 'POST' not supported],\n\texpected [400] but found [405],\n\texpected [400] but found [405],\n\texpected [\"lastName\" can contain only ukrainian and english letters] but found [Request method 'POST' not supported],\n\texpected [400] but found [405],\n\texpected [400] but found [405],\n\texpected [\"lastName\" can contain from 1 to 25 letters] but found [Request method 'POST' not supported]",
-      "children" : [ {
-        "name" : "TUA-423",
-        "uid" : "51f8e684d29cae16",
-        "parentUid" : "d6104fab6c23de9ca40c764b3d82b8bb",
-        "status" : "failed",
-        "time" : {
-          "start" : 1642792265263,
-          "stop" : 1642792270696,
-          "duration" : 5433
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "d6104fab6c23de9ca40c764b3d82b8bb"
-    }, {
-      "name" : "expected [404] but found [405]",
-      "children" : [ {
-        "name" : "TUA-419",
-        "uid" : "f9651a585369b276",
-        "parentUid" : "4063687b06de6b21acdde232df281469",
-        "status" : "failed",
-        "time" : {
-          "start" : 1642792271498,
-          "stop" : 1642792272311,
-          "duration" : 813
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "4063687b06de6b21acdde232df281469"
-    }, {
-      "name" : "The following asserts failed:\n\tNo first name responded 405 expected [400] but found [405],\n\texpected [\"firstName\" can`t be empty] but found [Request method 'POST' not supported],\n\tNo last name responded 405 expected [400] but found [405],\n\texpected [\"lastName\" can`t be empty] but found [Request method 'POST' not supported],\n\tNo email responded 405 expected [400] but found [405],\n\texpected [true] but found [false],\n\tNo password responded 405 expected [400] but found [405],\n\texpected [true] but found [false],\n\tNo phone responded 405 expected [400] but found [405],\n\texpected [true] but found [false],\n\tNo role name responded 405 expected [400] but found [405],\n\texpected [true] but found [false]",
-      "children" : [ {
-        "name" : "TUA-377",
-        "uid" : "73d71dfa21fd55a",
-        "parentUid" : "a040e869d2b1d7d64b1af6d8b98c2e4c",
-        "status" : "failed",
-        "time" : {
-          "start" : 1642792272313,
-          "stop" : 1642792277750,
-          "duration" : 5437
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "a040e869d2b1d7d64b1af6d8b98c2e4c"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
   "name" : "categories"
 }

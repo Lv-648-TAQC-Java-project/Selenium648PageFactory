@@ -1,0 +1,720 @@
+{
+  "uid" : "7472b8f8827f8794",
+  "name" : "TUA-177",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.checkDescriptionFieldWithLessAndMoreThan1500Symbols",
+  "historyId" : "fc0c1bb1d1dc8464f8e200dc7f1659d9",
+  "time" : {
+    "start" : 1642849653493,
+    "stop" : 1642849692626,
+    "duration" : 39133
+  },
+  "description" : "TUA-177-Verify that error message ‘Опис гуртка може містити від 40 до 1500 символів.’ appears when the user enters more than 1500 symbols into the field or that field is valid when the user enters less than 1500 symbols",
+  "descriptionHtml" : "<p>TUA-177-Verify that error message ‘Опис гуртка може містити від 40 до 1500 символів.’ appears when the user enters more than 1500 symbols into the field or that field is valid when the user enters less than 1500 symbols</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642849648589,
+      "stop" : 1642849653490,
+      "duration" : 4901
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642849467704,
+      "stop" : 1642849470970,
+      "duration" : 3266
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "TUA-177-Verify that error message ‘Опис гуртка може містити від 40 до 1500 символів.’ appears when the user enters more than 1500 symbols into the field or that field is valid when the user enters less than 1500 symbols",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1642849653493,
+        "stop" : 1642849657083,
+        "duration" : 3590
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1642849653493,
+          "stop" : 1642849653572,
+          "duration" : 79
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1642849653572,
+          "stop" : 1642849654220,
+          "duration" : 648
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1642849654220,
+          "stop" : 1642849657083,
+          "duration" : 2863
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1642849654919,
+            "stop" : 1642849655021,
+            "duration" : 102
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "shouldDisplayMessage" : false,
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1642849655021,
+            "stop" : 1642849657083,
+            "duration" : 2062
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1642849657083,
+        "stop" : 1642849660670,
+        "duration" : 3587
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1642849660670,
+        "stop" : 1642849661056,
+        "duration" : 386
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Додати' button",
+      "time" : {
+        "start" : 1642849661056,
+        "stop" : 1642849661184,
+        "duration" : 128
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Додати гурток' button",
+      "time" : {
+        "start" : 1642849661184,
+        "stop" : 1642849662053,
+        "duration" : 869
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill 'Назва' field with Танці, хореографія",
+      "time" : {
+        "start" : 1642849662053,
+        "stop" : 1642849662787,
+        "duration" : 734
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Танці, хореографія"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Танці, хореографія' checkbox",
+      "time" : {
+        "start" : 1642849662787,
+        "stop" : 1642849662890,
+        "duration" : 103
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Hover to basic_ageFrom element",
+      "time" : {
+        "start" : 1642849662890,
+        "stop" : 1642849663029,
+        "duration" : 139
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "basic_ageFrom"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click 6 times on upper arrow in 'Від' field",
+      "time" : {
+        "start" : 1642849663029,
+        "stop" : 1642849663337,
+        "duration" : 308
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Hover to basic_ageTo element",
+      "time" : {
+        "start" : 1642849663337,
+        "stop" : 1642849663462,
+        "duration" : 125
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "basic_ageTo"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click 7 times on upper arrow in 'до' field",
+      "time" : {
+        "start" : 1642849663462,
+        "stop" : 1642849663858,
+        "duration" : 396
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Наступний крок' button",
+      "time" : {
+        "start" : 1642849663858,
+        "stop" : 1642849664000,
+        "duration" : 142
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter 9632548777 data into Phone number field of 'Контакти' area ",
+      "time" : {
+        "start" : 1642849664000,
+        "stop" : 1642849664237,
+        "duration" : 237
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "number",
+        "value" : "9632548777"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Наступний крок' button",
+      "time" : {
+        "start" : 1642849664237,
+        "stop" : 1642849664320,
+        "duration" : 83
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill 'Опис' field with Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalv",
+      "time" : {
+        "start" : 1642849664320,
+        "stop" : 1642849672410,
+        "duration" : 8090
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalv"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Get tick",
+      "time" : {
+        "start" : 1642849672410,
+        "stop" : 1642849672410,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill 'Опис' field with Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.",
+      "time" : {
+        "start" : 1642849672439,
+        "stop" : 1642849676948,
+        "duration" : 4509
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square."
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Get tick",
+      "time" : {
+        "start" : 1642849676948,
+        "stop" : 1642849676948,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill 'Опис' field with Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd",
+      "time" : {
+        "start" : 1642849676973,
+        "stop" : 1642849684061,
+        "duration" : 7088
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1642849684061,
+        "stop" : 1642849684061,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill 'Опис' field with Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd. With its numerous parks and gardens, Kiev is perfect for picnics and outdoor activities.\nHidropark is an island in the Dnieper River whose natural beaches are very popular during the summer. Besides swimming, you can also play beach volleyball, eat delicious street food or simply sunbathe.",
+      "time" : {
+        "start" : 1642849684092,
+        "stop" : 1642849692606,
+        "duration" : 8514
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd. With its numerous parks and gardens, Kiev is perfect for picnics and outdoor activities.\nHidropark is an island in the Dnieper River whose natural beaches are very popular during the summer. Besides swimming, you can also play beach volleyball, eat delicious street food or simply sunbathe."
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1642849692606,
+        "stop" : 1642849692606,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 27,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642849692627,
+      "stop" : 1642849692698,
+      "duration" : 71
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkDescriptionFieldWithLessAndMoreThan1500Symbols"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az36-128"
+  }, {
+    "name" : "thread",
+    "value" : "2831@fv-az36-128.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "[Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalv, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square., Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd. With its numerous parks and gardens, Kiev is perfect for picnics and outdoor activities.\nHidropark is an island in the Dnieper River whose natural beaches are very popular during the summer. Besides swimming, you can also play beach volleyball, eat delicious street food or simply sunbathe.]"
+  } ],
+  "links" : [ {
+    "name" : "TUA-177",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 7,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "6d3a284c10b01ccd",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/6d3a284c10b01ccd",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [ee1e2dcb98d9ebe5dd87542eb8d0bfcc, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.WvUhIA}, goog:chromeOptions: {debuggerAddress: localhost:34725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34725/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ee1e2dcb98d9ebe5dd87542eb8d0bfcc",
+        "time" : {
+          "start" : 1642792353195,
+          "stop" : 1642792366876,
+          "duration" : 13681
+        }
+      }, {
+        "uid" : "e8b6d3905826abdb",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/e8b6d3905826abdb",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.98', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [dc0b854805fd75b8d22aa1f7fca6c868, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Gc5rG0}, goog:chromeOptions: {debuggerAddress: localhost:38171}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38171/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dc0b854805fd75b8d22aa1f7fca6c868",
+        "time" : {
+          "start" : 1642789689927,
+          "stop" : 1642789703757,
+          "duration" : 13830
+        }
+      }, {
+        "uid" : "3f905b82716af3d6",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/3f905b82716af3d6",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az77-149', ip: '10.1.0.181', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [0e42d3468710f9c996b100914be46412, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.YshLGl}, goog:chromeOptions: {debuggerAddress: localhost:37723}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37723/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0e42d3468710f9c996b100914be46412",
+        "time" : {
+          "start" : 1642787204814,
+          "stop" : 1642787218577,
+          "duration" : 13763
+        }
+      }, {
+        "uid" : "dd6948e65a769efb",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/dd6948e65a769efb",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.188', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a8790e0fdc11c8466ae6077e77e86ff1, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.9xSaHq}, goog:chromeOptions: {debuggerAddress: localhost:35793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35793/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a8790e0fdc11c8466ae6077e77e86ff1",
+        "time" : {
+          "start" : 1642787183721,
+          "stop" : 1642787197531,
+          "duration" : 13810
+        }
+      }, {
+        "uid" : "1023aa847832ad3c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/1023aa847832ad3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786616250,
+          "stop" : 1642786656106,
+          "duration" : 39856
+        }
+      }, {
+        "uid" : "b6d343a5af9e6200",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/b6d343a5af9e6200",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786612325,
+          "stop" : 1642786654152,
+          "duration" : 41827
+        }
+      }, {
+        "uid" : "27afec9c866d862e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/53//#testresult/27afec9c866d862e",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az126-328', ip: '10.1.0.162', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [3e1cd24cdcc8f10cd85c7ebef51bd73f, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.H0UGWu}, goog:chromeOptions: {debuggerAddress: localhost:43585}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43585/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3e1cd24cdcc8f10cd85c7ebef51bd73f",
+        "time" : {
+          "start" : 1642785460811,
+          "stop" : 1642785474511,
+          "duration" : 13700
+        }
+      }, {
+        "uid" : "80d451c77919a0c1",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/41//#testresult/80d451c77919a0c1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642773089502,
+          "stop" : 1642773134964,
+          "duration" : 45462
+        }
+      }, {
+        "uid" : "1f4d22e14993a777",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/39//#testresult/1f4d22e14993a777",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642769138394,
+          "stop" : 1642769176309,
+          "duration" : 37915
+        }
+      }, {
+        "uid" : "55a54a4442d76504",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/55a54a4442d76504",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642762370328,
+          "stop" : 1642762411441,
+          "duration" : 41113
+        }
+      }, {
+        "uid" : "7a392722dca1be56",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/7a392722dca1be56",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az135-188', ip: '10.1.0.33', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [92e82cf3a6adf6651ef073ad4098ecda, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.mVL1Jx}, goog:chromeOptions: {debuggerAddress: localhost:41625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41625/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 92e82cf3a6adf6651ef073ad4098ecda",
+        "time" : {
+          "start" : 1642760868932,
+          "stop" : 1642760879087,
+          "duration" : 10155
+        }
+      }, {
+        "uid" : "6e2f4caca88e9811",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/6e2f4caca88e9811",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.106', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [88ce2097ba593be490ddb1197132d4bd, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.RhiORh}, goog:chromeOptions: {debuggerAddress: localhost:40081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40081/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 88ce2097ba593be490ddb1197132d4bd",
+        "time" : {
+          "start" : 1642760870351,
+          "stop" : 1642760880526,
+          "duration" : 10175
+        }
+      }, {
+        "uid" : "9dbc2ee396b48915",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/35//#testresult/9dbc2ee396b48915",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759964409,
+          "stop" : 1642760001650,
+          "duration" : 37241
+        }
+      }, {
+        "uid" : "c4d94ea840ebfc2e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/c4d94ea840ebfc2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759277495,
+          "stop" : 1642759315568,
+          "duration" : 38073
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7472b8f8827f8794.json",
+  "parameterValues" : [ "[Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalv, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square., Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd. With its numerous parks and gardens, Kiev is perfect for picnics and outdoor activities.\nHidropark is an island in the Dnieper River whose natural beaches are very popular during the summer. Besides swimming, you can also play beach volleyball, eat delicious street food or simply sunbathe.]" ]
+}

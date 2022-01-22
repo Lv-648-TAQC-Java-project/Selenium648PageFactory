@@ -1,0 +1,760 @@
+{
+  "uid" : "b2d436c2453c360a",
+  "name" : "Example of BDD suite",
+  "fullName" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner.scenario",
+  "historyId" : "74a6d17bc6c34a88871ca30a40dae59e",
+  "time" : {
+    "start" : 1642849655207,
+    "stop" : 1642849726347,
+    "duration" : 71140
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1642849471042,
+      "stop" : 1642849472295,
+      "duration" : 1253
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1642849472296,
+      "stop" : 1642849472364,
+      "duration" : 68
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642849467704,
+      "stop" : 1642849470970,
+      "duration" : 3266
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1642849659717,
+        "stop" : 1642849663556,
+        "duration" : 3839
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1642849659717,
+          "stop" : 1642849659856,
+          "duration" : 139
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1642849659856,
+          "stop" : 1642849660537,
+          "duration" : 681
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1642849660537,
+          "stop" : 1642849663556,
+          "duration" : 3019
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1642849661376,
+            "stop" : 1642849661490,
+            "duration" : 114
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "shouldDisplayMessage" : false,
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1642849661490,
+            "stop" : 1642849663556,
+            "duration" : 2066
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1642849663557,
+        "stop" : 1642849667861,
+        "duration" : 4304
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1642849667861,
+        "stop" : 1642849668655,
+        "duration" : 794
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click edit pop up",
+      "time" : {
+        "start" : 1642849668656,
+        "stop" : 1642849668788,
+        "duration" : 132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill 4352 in phone field",
+      "time" : {
+        "start" : 1642849668789,
+        "stop" : 1642849671112,
+        "duration" : 2323
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "4352"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill 65987458 in phone field",
+      "time" : {
+        "start" : 1642849672138,
+        "stop" : 1642849674281,
+        "duration" : 2143
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "65987458"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill 6593859632586 in phone field",
+      "time" : {
+        "start" : 1642849675297,
+        "stop" : 1642849677509,
+        "duration" : 2212
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "6593859632586"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill jngeoлщшогнеп in phone field",
+      "time" : {
+        "start" : 1642849678523,
+        "stop" : 1642849680742,
+        "duration" : 2219
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "jngeoлщшогнеп"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill !96397180 in phone field",
+      "time" : {
+        "start" : 1642849681758,
+        "stop" : 1642849683907,
+        "duration" : 2149
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "!96397180"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill @96397180 in phone field",
+      "time" : {
+        "start" : 1642849684921,
+        "stop" : 1642849687122,
+        "duration" : 2201
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "@96397180"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill #96397180 in phone field",
+      "time" : {
+        "start" : 1642849688139,
+        "stop" : 1642849690315,
+        "duration" : 2176
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "#96397180"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill $96397180 in phone field",
+      "time" : {
+        "start" : 1642849691331,
+        "stop" : 1642849693467,
+        "duration" : 2136
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "$96397180"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill %96397180 in phone field",
+      "time" : {
+        "start" : 1642849694497,
+        "stop" : 1642849696662,
+        "duration" : 2165
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "%96397180"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill ^96397180 in phone field",
+      "time" : {
+        "start" : 1642849697680,
+        "stop" : 1642849699813,
+        "duration" : 2133
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "^96397180"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill &96397180 in phone field",
+      "time" : {
+        "start" : 1642849700829,
+        "stop" : 1642849703007,
+        "duration" : 2178
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "&96397180"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill *96397180 in phone field",
+      "time" : {
+        "start" : 1642849704024,
+        "stop" : 1642849706251,
+        "duration" : 2227
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "*96397180"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill (96397180 in phone field",
+      "time" : {
+        "start" : 1642849707284,
+        "stop" : 1642849709468,
+        "duration" : 2184
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "(96397180"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill _96397180 in phone field",
+      "time" : {
+        "start" : 1642849710483,
+        "stop" : 1642849712635,
+        "duration" : 2152
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "_96397180"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill +96397180 in phone field",
+      "time" : {
+        "start" : 1642849713650,
+        "stop" : 1642849715803,
+        "duration" : 2153
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "+96397180"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill .96397180 in phone field",
+      "time" : {
+        "start" : 1642849716820,
+        "stop" : 1642849719002,
+        "duration" : 2182
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : ".96397180"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill :96397180 in phone field",
+      "time" : {
+        "start" : 1642849720019,
+        "stop" : 1642849722169,
+        "duration" : 2150
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : ":96397180"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill  in phone field",
+      "time" : {
+        "start" : 1642849723186,
+        "stop" : 1642849725266,
+        "duration" : 2080
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : ""
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 27,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1642849726348,
+      "stop" : 1642849726363,
+      "duration" : 15
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testMethod",
+    "value" : "scenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "BDD Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "host",
+    "value" : "fv-az36-128"
+  }, {
+    "name" : "thread",
+    "value" : "2831@fv-az36-128.TestNG-tests-1(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\""
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 7,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "c49b2ba0401425d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/c49b2ba0401425d",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [13727494899b12bdaa5e69e7c14c1939, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.frcW90}, goog:chromeOptions: {debuggerAddress: localhost:34435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34435/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 13727494899b12bdaa5e69e7c14c1939",
+        "time" : {
+          "start" : 1642792354459,
+          "stop" : 1642792371539,
+          "duration" : 17080
+        }
+      }, {
+        "uid" : "a6584aba9d05250d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/a6584aba9d05250d",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.98', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [eee1d69b8afd73ee81fcd8759b4bfe8b, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.ULJbDq}, goog:chromeOptions: {debuggerAddress: localhost:37705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37705/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: eee1d69b8afd73ee81fcd8759b4bfe8b",
+        "time" : {
+          "start" : 1642789694842,
+          "stop" : 1642789711955,
+          "duration" : 17113
+        }
+      }, {
+        "uid" : "84d1ed28a6aba6a3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/84d1ed28a6aba6a3",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az77-149', ip: '10.1.0.181', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [9606a1b6d172aa7910cf95e4628cfab2, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.yN1RNK}, goog:chromeOptions: {debuggerAddress: localhost:37139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37139/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9606a1b6d172aa7910cf95e4628cfab2",
+        "time" : {
+          "start" : 1642787204930,
+          "stop" : 1642787222469,
+          "duration" : 17539
+        }
+      }, {
+        "uid" : "2a8e27f11fd18ce6",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/2a8e27f11fd18ce6",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.188', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [9d1f2b2c16d3e0548b8883393e2fec9f, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.GtMijP}, goog:chromeOptions: {debuggerAddress: localhost:34149}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34149/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9d1f2b2c16d3e0548b8883393e2fec9f",
+        "time" : {
+          "start" : 1642787192704,
+          "stop" : 1642787210340,
+          "duration" : 17636
+        }
+      }, {
+        "uid" : "73c2a7b8bf93b6f5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/73c2a7b8bf93b6f5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786599627,
+          "stop" : 1642786670871,
+          "duration" : 71244
+        }
+      }, {
+        "uid" : "7085f7ccd9f82d3a",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/7085f7ccd9f82d3a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786610938,
+          "stop" : 1642786683339,
+          "duration" : 72401
+        }
+      }, {
+        "uid" : "b44667dc3071b806",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/53//#testresult/b44667dc3071b806",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az126-328', ip: '10.1.0.162', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [32a74935b5ac05890815f366a9441e40, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.XK2pVe}, goog:chromeOptions: {debuggerAddress: localhost:37947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37947/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 32a74935b5ac05890815f366a9441e40",
+        "time" : {
+          "start" : 1642785451780,
+          "stop" : 1642785484599,
+          "duration" : 32819
+        }
+      }, {
+        "uid" : "7d77fcb88f7ff44c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/41//#testresult/7d77fcb88f7ff44c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642773090581,
+          "stop" : 1642773148466,
+          "duration" : 57885
+        }
+      }, {
+        "uid" : "fb2028a79da111c6",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/39//#testresult/fb2028a79da111c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642769126572,
+          "stop" : 1642769183120,
+          "duration" : 56548
+        }
+      }, {
+        "uid" : "966ce5c892bbbe3b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/966ce5c892bbbe3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642762360050,
+          "stop" : 1642762415467,
+          "duration" : 55417
+        }
+      }, {
+        "uid" : "4cacdcf0dcdb8148",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/4cacdcf0dcdb8148",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az135-188', ip: '10.1.0.33', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [f83e616934d81dd16dcc06c967808952, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.KuNswH}, goog:chromeOptions: {debuggerAddress: localhost:39563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39563/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f83e616934d81dd16dcc06c967808952",
+        "time" : {
+          "start" : 1642760863867,
+          "stop" : 1642760876437,
+          "duration" : 12570
+        }
+      }, {
+        "uid" : "3c0608d19430e7c1",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/3c0608d19430e7c1",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.106', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [28b93471777bc1e7414ba4ef1f4a1747, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.yeuLE7}, goog:chromeOptions: {debuggerAddress: localhost:37135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37135/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 28b93471777bc1e7414ba4ef1f4a1747",
+        "time" : {
+          "start" : 1642760863480,
+          "stop" : 1642760876378,
+          "duration" : 12898
+        }
+      }, {
+        "uid" : "323d1210e7e51976",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/35//#testresult/323d1210e7e51976",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759901232,
+          "stop" : 1642759964126,
+          "duration" : 62894
+        }
+      }, {
+        "uid" : "15aa3ac120f066d7",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/15aa3ac120f066d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759218239,
+          "stop" : 1642759278249,
+          "duration" : 60010
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b2d436c2453c360a.json",
+  "parameterValues" : [ "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\"", "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\"" ]
+}

@@ -1,0 +1,908 @@
+{
+  "uid" : "6033284fc0da1ff4",
+  "name" : "TUA-328",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.checkErrorMsWhenFillInvalidDataIntoFirstNameField",
+  "historyId" : "b6d9eefd96432b03af8846a2579c8d61",
+  "time" : {
+    "start" : 1642849738188,
+    "stop" : 1642849781112,
+    "duration" : 42924
+  },
+  "description" : "Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data into the 'Ім'я' field",
+  "descriptionHtml" : "<p>Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data into the 'Ім'я' field</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642849732900,
+      "stop" : 1642849738186,
+      "duration" : 5286
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642849467704,
+      "stop" : 1642849470970,
+      "duration" : 3266
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data into the 'Ім'я' field",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1642849738188,
+        "stop" : 1642849741789,
+        "duration" : 3601
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1642849738188,
+          "stop" : 1642849738276,
+          "duration" : 88
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1642849738276,
+          "stop" : 1642849738918,
+          "duration" : 642
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1642849738918,
+          "stop" : 1642849741789,
+          "duration" : 2871
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1642849739608,
+            "stop" : 1642849739703,
+            "duration" : 95
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "shouldDisplayMessage" : false,
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1642849739703,
+            "stop" : 1642849741789,
+            "duration" : 2086
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1642849741789,
+        "stop" : 1642849745514,
+        "duration" : 3725
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1642849745514,
+        "stop" : 1642849746216,
+        "duration" : 702
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click edit pop up",
+      "time" : {
+        "start" : 1642849746216,
+        "stop" : 1642849746291,
+        "duration" : 75
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill AfBbCcDdEeFfGgHhIiJjKkLlMmNn in first name field",
+      "time" : {
+        "start" : 1642849746291,
+        "stop" : 1642849746885,
+        "duration" : 594
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "AfBbCcDdEeFfGgHhIiJjKkLlMmNn"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill AfBbCcDdEeFfGgHhIiJjKkLlMm in first name field",
+      "time" : {
+        "start" : 1642849747910,
+        "stop" : 1642849748248,
+        "duration" : 338
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "AfBbCcDdEeFfGgHhIiJjKkLlMm"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill  in first name field",
+      "time" : {
+        "start" : 1642849749269,
+        "stop" : 1642849749471,
+        "duration" : 202
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : ""
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill 1Admin in first name field",
+      "time" : {
+        "start" : 1642849750488,
+        "stop" : 1642849750683,
+        "duration" : 195
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "1Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill 2Admin in first name field",
+      "time" : {
+        "start" : 1642849751699,
+        "stop" : 1642849751980,
+        "duration" : 281
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "2Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill 3Admin in first name field",
+      "time" : {
+        "start" : 1642849752998,
+        "stop" : 1642849753249,
+        "duration" : 251
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "3Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill 4Admin in first name field",
+      "time" : {
+        "start" : 1642849754269,
+        "stop" : 1642849754506,
+        "duration" : 237
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "4Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill -Name in first name field",
+      "time" : {
+        "start" : 1642849755525,
+        "stop" : 1642849755770,
+        "duration" : 245
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "-Name"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill < Name> in first name field",
+      "time" : {
+        "start" : 1642849756795,
+        "stop" : 1642849757067,
+        "duration" : 272
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "< Name>"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill 'Name in first name field",
+      "time" : {
+        "start" : 1642849758086,
+        "stop" : 1642849758353,
+        "duration" : 267
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "'Name"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill Name- in first name field",
+      "time" : {
+        "start" : 1642849759369,
+        "stop" : 1642849759641,
+        "duration" : 272
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "Name-"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill <Name > in first name field",
+      "time" : {
+        "start" : 1642849760660,
+        "stop" : 1642849760928,
+        "duration" : 268
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "<Name >"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill Name' in first name field",
+      "time" : {
+        "start" : 1642849761950,
+        "stop" : 1642849762214,
+        "duration" : 264
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "Name'"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill !Admin in first name field",
+      "time" : {
+        "start" : 1642849763234,
+        "stop" : 1642849763485,
+        "duration" : 251
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "!Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill @Admin in first name field",
+      "time" : {
+        "start" : 1642849764505,
+        "stop" : 1642849764762,
+        "duration" : 257
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "@Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill #Admin in first name field",
+      "time" : {
+        "start" : 1642849765780,
+        "stop" : 1642849766032,
+        "duration" : 252
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "#Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill $Admin in first name field",
+      "time" : {
+        "start" : 1642849767049,
+        "stop" : 1642849767300,
+        "duration" : 251
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "$Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill %Admin in first name field",
+      "time" : {
+        "start" : 1642849768335,
+        "stop" : 1642849768590,
+        "duration" : 255
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "%Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill ^Admin in first name field",
+      "time" : {
+        "start" : 1642849769607,
+        "stop" : 1642849769854,
+        "duration" : 247
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "^Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill &Admin in first name field",
+      "time" : {
+        "start" : 1642849770873,
+        "stop" : 1642849771129,
+        "duration" : 256
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "&Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill *Admin in first name field",
+      "time" : {
+        "start" : 1642849772149,
+        "stop" : 1642849772402,
+        "duration" : 253
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "*Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill (Admin in first name field",
+      "time" : {
+        "start" : 1642849773421,
+        "stop" : 1642849773688,
+        "duration" : 267
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "(Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill _Admin in first name field",
+      "time" : {
+        "start" : 1642849774709,
+        "stop" : 1642849774965,
+        "duration" : 256
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "_Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill +Admin in first name field",
+      "time" : {
+        "start" : 1642849775984,
+        "stop" : 1642849776248,
+        "duration" : 264
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : "+Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill .Admin in first name field",
+      "time" : {
+        "start" : 1642849777265,
+        "stop" : 1642849777544,
+        "duration" : 279
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : ".Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill :Admin in first name field",
+      "time" : {
+        "start" : 1642849778565,
+        "stop" : 1642849778846,
+        "duration" : 281
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : ":Admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Fill  in first name field",
+      "time" : {
+        "start" : 1642849779864,
+        "stop" : 1642849780094,
+        "duration" : 230
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstNameFill",
+        "value" : ""
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 36,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642849781113,
+      "stop" : 1642849781190,
+      "duration" : 77
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkErrorMsWhenFillInvalidDataIntoFirstNameField"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az36-128"
+  }, {
+    "name" : "thread",
+    "value" : "2831@fv-az36-128.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "[AfBbCcDdEeFfGgHhIiJjKkLlMmNn, Ім'я не може містити більше, ніж 25 символів, AfBbCcDdEeFfGgHhIiJjKkLlMm, Ім'я не може містити більше, ніж 25 символів, , Будь ласка введіть Ваше ім'я, 1Admin, Ім'я не може містити цифри, 2Admin, Ім'я не може містити цифри, 3Admin, Ім'я не може містити цифри, 4Admin, Ім'я не може містити цифри, -Name, Ім'я повинно починатися і закінчуватися літерою, < Name>, Ім'я не може містити спеціальні символи, 'Name, Ім'я повинно починатися і закінчуватися літерою, Name-, Ім'я повинно починатися і закінчуватися літерою, <Name >, Ім'я не може містити спеціальні символи, Name', Ім'я повинно починатися і закінчуватися літерою, !Admin, Ім'я не може містити спеціальні символи, @Admin, Ім'я не може містити спеціальні символи, #Admin, Ім'я не може містити спеціальні символи, $Admin, Ім'я не може містити спеціальні символи, %Admin, Ім'я не може містити спеціальні символи, ^Admin, Ім'я не може містити спеціальні символи, &Admin, Ім'я не може містити спеціальні символи, *Admin, Ім'я не може містити спеціальні символи, (Admin, Ім'я не може містити спеціальні символи, _Admin, Ім'я не може містити спеціальні символи, +Admin, Ім'я не може містити спеціальні символи, .Admin, Ім'я не може містити спеціальні символи, :Admin, Ім'я не може містити спеціальні символи, , Будь ласка введіть Ваше ім'я]"
+  } ],
+  "links" : [ {
+    "name" : "TUA-328",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "35e798ca337c85cb",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/35e798ca337c85cb",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [958b9cf4d8dffc05730ece9b0d5f5cbd, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.PAUNE5}, goog:chromeOptions: {debuggerAddress: localhost:37925}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37925/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 958b9cf4d8dffc05730ece9b0d5f5cbd",
+        "time" : {
+          "start" : 1642792406250,
+          "stop" : 1642792420128,
+          "duration" : 13878
+        }
+      }, {
+        "uid" : "545780dee2b53b99",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/545780dee2b53b99",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.98', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [89a8f6c917ac514e44ed769bfc153d9d, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Qi0PYS}, goog:chromeOptions: {debuggerAddress: localhost:40087}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40087/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 89a8f6c917ac514e44ed769bfc153d9d",
+        "time" : {
+          "start" : 1642789741840,
+          "stop" : 1642789755250,
+          "duration" : 13410
+        }
+      }, {
+        "uid" : "e0b1e02c68c11ad4",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/e0b1e02c68c11ad4",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az77-149', ip: '10.1.0.181', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [e97a19e7a05f634b2c0d43f42504331f, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.QSSWJh}, goog:chromeOptions: {debuggerAddress: localhost:33743}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33743/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e97a19e7a05f634b2c0d43f42504331f",
+        "time" : {
+          "start" : 1642787258571,
+          "stop" : 1642787272478,
+          "duration" : 13907
+        }
+      }, {
+        "uid" : "c93bf32f5e14e95c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/c93bf32f5e14e95c",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.188', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [6462e662382c78a7d7d11df992db1300, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.BZe9dN}, goog:chromeOptions: {debuggerAddress: localhost:45599}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45599/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6462e662382c78a7d7d11df992db1300",
+        "time" : {
+          "start" : 1642787235407,
+          "stop" : 1642787249092,
+          "duration" : 13685
+        }
+      }, {
+        "uid" : "1b9253eeacc330cf",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/1b9253eeacc330cf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786699515,
+          "stop" : 1642786741095,
+          "duration" : 41580
+        }
+      }, {
+        "uid" : "e3e6097bf5303c68",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/e3e6097bf5303c68",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786698470,
+          "stop" : 1642786740459,
+          "duration" : 41989
+        }
+      }, {
+        "uid" : "df7d5baad60605d3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/53//#testresult/df7d5baad60605d3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642785675369,
+          "stop" : 1642785722005,
+          "duration" : 46636
+        }
+      }, {
+        "uid" : "8f9d5dea79ca67db",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/41//#testresult/8f9d5dea79ca67db",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [] but found [Ім'я не може містити більше, ніж 25 символів]",
+        "time" : {
+          "start" : 1642773178496,
+          "stop" : 1642773196643,
+          "duration" : 18147
+        }
+      }, {
+        "uid" : "d90446b9c54ba3d2",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/39//#testresult/d90446b9c54ba3d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642769221230,
+          "stop" : 1642769238962,
+          "duration" : 17732
+        }
+      }, {
+        "uid" : "d8d801e6aa435ed1",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/d8d801e6aa435ed1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642762455882,
+          "stop" : 1642762473694,
+          "duration" : 17812
+        }
+      }, {
+        "uid" : "7c35dd95c9e2e665",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/7c35dd95c9e2e665",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642761144033,
+          "stop" : 1642761168006,
+          "duration" : 23973
+        }
+      }, {
+        "uid" : "ae5b3c845955965d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/ae5b3c845955965d",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [] but found [Ім'я не може містити більше, ніж 25 символів]",
+        "time" : {
+          "start" : 1642761143812,
+          "stop" : 1642761168101,
+          "duration" : 24289
+        }
+      }, {
+        "uid" : "c618cc0c76b45c2d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/35//#testresult/c618cc0c76b45c2d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642760046545,
+          "stop" : 1642760063295,
+          "duration" : 16750
+        }
+      }, {
+        "uid" : "b1d92776700ddea",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/b1d92776700ddea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759363706,
+          "stop" : 1642759382756,
+          "duration" : 19050
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6033284fc0da1ff4.json",
+  "parameterValues" : [ "[AfBbCcDdEeFfGgHhIiJjKkLlMmNn, Ім'я не може містити більше, ніж 25 символів, AfBbCcDdEeFfGgHhIiJjKkLlMm, Ім'я не може містити більше, ніж 25 символів, , Будь ласка введіть Ваше ім'я, 1Admin, Ім'я не може містити цифри, 2Admin, Ім'я не може містити цифри, 3Admin, Ім'я не може містити цифри, 4Admin, Ім'я не може містити цифри, -Name, Ім'я повинно починатися і закінчуватися літерою, < Name>, Ім'я не може містити спеціальні символи, 'Name, Ім'я повинно починатися і закінчуватися літерою, Name-, Ім'я повинно починатися і закінчуватися літерою, <Name >, Ім'я не може містити спеціальні символи, Name', Ім'я повинно починатися і закінчуватися літерою, !Admin, Ім'я не може містити спеціальні символи, @Admin, Ім'я не може містити спеціальні символи, #Admin, Ім'я не може містити спеціальні символи, $Admin, Ім'я не може містити спеціальні символи, %Admin, Ім'я не може містити спеціальні символи, ^Admin, Ім'я не може містити спеціальні символи, &Admin, Ім'я не може містити спеціальні символи, *Admin, Ім'я не може містити спеціальні символи, (Admin, Ім'я не може містити спеціальні символи, _Admin, Ім'я не може містити спеціальні символи, +Admin, Ім'я не може містити спеціальні символи, .Admin, Ім'я не може містити спеціальні символи, :Admin, Ім'я не може містити спеціальні символи, , Будь ласка введіть Ваше ім'я]" ]
+}

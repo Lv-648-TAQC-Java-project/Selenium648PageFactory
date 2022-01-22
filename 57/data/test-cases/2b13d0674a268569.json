@@ -1,0 +1,763 @@
+{
+  "uid" : "2b13d0674a268569",
+  "name" : "Example of BDD suite",
+  "fullName" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner.scenario",
+  "historyId" : "8df50aa5aaebd5b49a2be373930a0741",
+  "time" : {
+    "start" : 1642849600022,
+    "stop" : 1642849619168,
+    "duration" : 19146
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1642849471042,
+      "stop" : 1642849472295,
+      "duration" : 1253
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1642849472296,
+      "stop" : 1642849472364,
+      "duration" : 68
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642849467704,
+      "stop" : 1642849470970,
+      "duration" : 3266
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1642849604729,
+        "stop" : 1642849609052,
+        "duration" : 4323
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1642849604729,
+          "stop" : 1642849604849,
+          "duration" : 120
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1642849604849,
+          "stop" : 1642849606018,
+          "duration" : 1169
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1642849606018,
+          "stop" : 1642849609052,
+          "duration" : 3034
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1642849606812,
+            "stop" : 1642849606930,
+            "duration" : 118
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "shouldDisplayMessage" : false,
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1642849606930,
+            "stop" : 1642849609052,
+            "duration" : 2122
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1642849609052,
+        "stop" : 1642849613872,
+        "duration" : 4820
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1642849613873,
+        "stop" : 1642849614726,
+        "duration" : 853
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Додати' button",
+      "time" : {
+        "start" : 1642849614726,
+        "stop" : 1642849614890,
+        "duration" : 164
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Додати гурток' button",
+      "time" : {
+        "start" : 1642849614890,
+        "stop" : 1642849615912,
+        "duration" : 1022
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter ValidName2 data into the 'Назва' field of 'Основна інформація' tab",
+      "time" : {
+        "start" : 1642849615913,
+        "stop" : 1642849616260,
+        "duration" : 347
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "clubName",
+        "value" : "ValidName2"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Check off 'Спортивні секції' check-box from 'Категорія' group box",
+      "time" : {
+        "start" : 1642849616261,
+        "stop" : 1642849616343,
+        "duration" : 82
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter 2 into the first age input and 18 in second age input",
+      "time" : {
+        "start" : 1642849616344,
+        "stop" : 1642849616680,
+        "duration" : 336
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ageFrom",
+        "value" : "2"
+      }, {
+        "name" : "ageTo",
+        "value" : "18"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Наступний крок' button",
+      "time" : {
+        "start" : 1642849616681,
+        "stop" : 1642849616821,
+        "duration" : 140
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click the 'Додати локацію' link on the 'Контакти' tab",
+      "time" : {
+        "start" : 1642849616821,
+        "stop" : 1642849617029,
+        "duration" : 208
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Checking that 'Додати локацію' pop-up is opened",
+      "time" : {
+        "start" : 1642849617029,
+        "stop" : 1642849617118,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter data into the 'Назва' field of 'Додати локацію' pop-up ",
+      "time" : {
+        "start" : 1642849617118,
+        "stop" : 1642849617389,
+        "duration" : 271
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locationName",
+        "value" : "ValidLocationName"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Check if data for the field with Id name is accepted",
+      "time" : {
+        "start" : 1642849617390,
+        "stop" : 1642849617408,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "name"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Місто' dropdown",
+      "time" : {
+        "start" : 1642849617408,
+        "stop" : 1642849617604,
+        "duration" : 196
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Choose a 'Київ' city from the 'Місто' drop-down list",
+      "time" : {
+        "start" : 1642849617605,
+        "stop" : 1642849617920,
+        "duration" : 315
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Check if data for the field with Id cityName is accepted",
+      "time" : {
+        "start" : 1642849617920,
+        "stop" : 1642849617938,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "cityName"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Метро/Місцевість' dropdown",
+      "time" : {
+        "start" : 1642849617939,
+        "stop" : 1642849618205,
+        "duration" : 266
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Choose a 'Академмістечко' locality from the 'Метро/Міцевість' drop-down list",
+      "time" : {
+        "start" : 1642849618205,
+        "stop" : 1642849618388,
+        "duration" : 183
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Check if data for the field with Id stationName is accepted",
+      "time" : {
+        "start" : 1642849618389,
+        "stop" : 1642849618411,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "stationName"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Район міста' dropdown",
+      "time" : {
+        "start" : 1642849618412,
+        "stop" : 1642849618523,
+        "duration" : 111
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Choose a 'Деснянський' district from the 'Місто' drop-down list",
+      "time" : {
+        "start" : 1642849618523,
+        "stop" : 1642849618854,
+        "duration" : 331
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Check if data for the field with Id districtName is accepted",
+      "time" : {
+        "start" : 1642849618854,
+        "stop" : 1642849618876,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "districtName"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Enter data ValidAddress into the 'Адреса' field",
+      "time" : {
+        "start" : 1642849618877,
+        "stop" : 1642849619076,
+        "duration" : 199
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "address",
+        "value" : "ValidAddress"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Check if data for the field with Id address is accepted",
+      "time" : {
+        "start" : 1642849619076,
+        "stop" : 1642849619102,
+        "duration" : 26
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "address"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 29,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1642849726348,
+      "stop" : 1642849726363,
+      "duration" : 15
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testMethod",
+    "value" : "scenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "BDD Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "host",
+    "value" : "fv-az36-128"
+  }, {
+    "name" : "thread",
+    "value" : "2831@fv-az36-128.TestNG-tests-1(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Optional[Verify that a 'Керівник' can add a location of a club]\""
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 11,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "364fb0374838c17f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/364fb0374838c17f",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [2b3be10aa1c06bfa2e9cd947f35e2dbb, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.kbHn0E}, goog:chromeOptions: {debuggerAddress: localhost:40237}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40237/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2b3be10aa1c06bfa2e9cd947f35e2dbb",
+        "time" : {
+          "start" : 1642792308109,
+          "stop" : 1642792325143,
+          "duration" : 17034
+        }
+      }, {
+        "uid" : "d94f213970831916",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/d94f213970831916",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.98', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [14433fe112730bde4ad607fc8e532a01, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.fToMHT}, goog:chromeOptions: {debuggerAddress: localhost:38513}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38513/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 14433fe112730bde4ad607fc8e532a01",
+        "time" : {
+          "start" : 1642789647335,
+          "stop" : 1642789664641,
+          "duration" : 17306
+        }
+      }, {
+        "uid" : "d9b177b118df5193",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/d9b177b118df5193",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az77-149', ip: '10.1.0.181', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [9e6c8df55b0a5a3279469d83d85b1063, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.MjqkLu}, goog:chromeOptions: {debuggerAddress: localhost:39987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39987/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9e6c8df55b0a5a3279469d83d85b1063",
+        "time" : {
+          "start" : 1642787156179,
+          "stop" : 1642787173473,
+          "duration" : 17294
+        }
+      }, {
+        "uid" : "18ef862ac4e9fb11",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/18ef862ac4e9fb11",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: headless chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.188', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [1a50677d3e2e18cf66be3fdf7d6f220f, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.vTK1tk}, goog:chromeOptions: {debuggerAddress: localhost:39959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39959/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1a50677d3e2e18cf66be3fdf7d6f220f",
+        "time" : {
+          "start" : 1642787139574,
+          "stop" : 1642787160661,
+          "duration" : 21087
+        }
+      }, {
+        "uid" : "c1eea492e8750d86",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/c1eea492e8750d86",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786543009,
+          "stop" : 1642786562917,
+          "duration" : 19908
+        }
+      }, {
+        "uid" : "f7721230a1c9d336",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/f7721230a1c9d336",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786549759,
+          "stop" : 1642786575365,
+          "duration" : 25606
+        }
+      }, {
+        "uid" : "b32cde70e0b2c9fa",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/53//#testresult/b32cde70e0b2c9fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642785373861,
+          "stop" : 1642785403354,
+          "duration" : 29493
+        }
+      }, {
+        "uid" : "7135443626a8e24c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/41//#testresult/7135443626a8e24c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642773027529,
+          "stop" : 1642773053150,
+          "duration" : 25621
+        }
+      }, {
+        "uid" : "2a5d97a2298c0b61",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/39//#testresult/2a5d97a2298c0b61",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642769062521,
+          "stop" : 1642769087870,
+          "duration" : 25349
+        }
+      }, {
+        "uid" : "f316e5cd01690dac",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/f316e5cd01690dac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642762310990,
+          "stop" : 1642762327295,
+          "duration" : 16305
+        }
+      }, {
+        "uid" : "2807ce1588d4558f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/2807ce1588d4558f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642760798761,
+          "stop" : 1642760823514,
+          "duration" : 24753
+        }
+      }, {
+        "uid" : "18cc1dcab3f568b0",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/18cc1dcab3f568b0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642760800665,
+          "stop" : 1642760825885,
+          "duration" : 25220
+        }
+      }, {
+        "uid" : "2a41d522fd789e22",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/35//#testresult/2a41d522fd789e22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759867149,
+          "stop" : 1642759891581,
+          "duration" : 24432
+        }
+      }, {
+        "uid" : "92cb6b68ea79dd",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/92cb6b68ea79dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759185276,
+          "stop" : 1642759205179,
+          "duration" : 19903
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2b13d0674a268569.json",
+  "parameterValues" : [ "\"This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.\"", "\"Optional[Verify that a 'Керівник' can add a location of a club]\"" ]
+}

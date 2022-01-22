@@ -1,0 +1,291 @@
+{
+  "uid" : "37368ef19e653f95",
+  "name" : "[API admin role] Get list of all roles",
+  "fullName" : "com.ita.edu.teachua.api.tests.RoleAdminTest.getListOfRolesTest",
+  "historyId" : "acb1b3c122e9130cabef4d68aa09efd5",
+  "time" : {
+    "start" : 1642849559637,
+    "stop" : 1642849560700,
+    "duration" : 1063
+  },
+  "description" : "[API] Get list of all roles",
+  "descriptionHtml" : "<p>[API] Get list of all roles</p>\n",
+  "status" : "failed",
+  "statusMessage" : "expected [3] but found [4]",
+  "statusTrace" : "java.lang.AssertionError: expected [3] but found [4]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\n\tat org.testng.Assert.assertEquals(Assert.java:122)\n\tat org.testng.Assert.assertEquals(Assert.java:907)\n\tat org.testng.Assert.assertEquals(Assert.java:917)\n\tat com.ita.edu.teachua.api.tests.RoleAdminTest.getListOfRolesTest(RoleAdminTest.java:24)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1642849556199,
+      "stop" : 1642849558676,
+      "duration" : 2477
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1642849556201,
+        "stop" : 1642849556201,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642849467704,
+      "stop" : 1642849470970,
+      "duration" : 3266
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "[API] Get list of all roles",
+    "status" : "failed",
+    "statusMessage" : "expected [3] but found [4]",
+    "statusTrace" : "java.lang.AssertionError: expected [3] but found [4]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\n\tat org.testng.Assert.assertEquals(Assert.java:122)\n\tat org.testng.Assert.assertEquals(Assert.java:907)\n\tat org.testng.Assert.assertEquals(Assert.java:917)\n\tat com.ita.edu.teachua.api.tests.RoleAdminTest.getListOfRolesTest(RoleAdminTest.java:24)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1642849559637,
+        "stop" : 1642849559637,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.RoleAdminTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.RoleAdminTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "getListOfRolesTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.RoleAdminTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az36-128"
+  }, {
+    "name" : "thread",
+    "value" : "2831@fv-az36-128.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 5,
+        "broken" : 1,
+        "skipped" : 4,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "ecfb0788e167377e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/ecfb0788e167377e",
+        "status" : "skipped",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+        "time" : {
+          "start" : 1642792257485,
+          "stop" : 1642792257485,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "76265ddb6eb8f15b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/76265ddb6eb8f15b",
+        "status" : "skipped",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+        "time" : {
+          "start" : 1642789595328,
+          "stop" : 1642789595328,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "e316b76887e5e35d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/e316b76887e5e35d",
+        "status" : "skipped",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+        "time" : {
+          "start" : 1642787154312,
+          "stop" : 1642787154324,
+          "duration" : 12
+        }
+      }, {
+        "uid" : "b41c29fe79737d9a",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/b41c29fe79737d9a",
+        "status" : "failed",
+        "statusDetails" : "expected [3] but found [4]",
+        "time" : {
+          "start" : 1642787126101,
+          "stop" : 1642787126909,
+          "duration" : 808
+        }
+      }, {
+        "uid" : "cb927e53da5c1d67",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/cb927e53da5c1d67",
+        "status" : "failed",
+        "statusDetails" : "expected [3] but found [4]",
+        "time" : {
+          "start" : 1642786520896,
+          "stop" : 1642786522074,
+          "duration" : 1178
+        }
+      }, {
+        "uid" : "778ba767f42ab580",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/778ba767f42ab580",
+        "status" : "failed",
+        "statusDetails" : "expected [3] but found [4]",
+        "time" : {
+          "start" : 1642786518727,
+          "stop" : 1642786519710,
+          "duration" : 983
+        }
+      }, {
+        "uid" : "e57ab3cb68e6d474",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/53//#testresult/e57ab3cb68e6d474",
+        "status" : "skipped",
+        "statusDetails" : "Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=iso-8859-1'.",
+        "time" : {
+          "start" : 1642785474557,
+          "stop" : 1642785474557,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "3f002cc38058d41a",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/41//#testresult/3f002cc38058d41a",
+        "status" : "failed",
+        "statusDetails" : "expected [3] but found [4]",
+        "time" : {
+          "start" : 1642773058344,
+          "stop" : 1642773059205,
+          "duration" : 861
+        }
+      }, {
+        "uid" : "a8c7d4ec7553b814",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/39//#testresult/a8c7d4ec7553b814",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642769054191,
+          "stop" : 1642769055718,
+          "duration" : 1527
+        }
+      }, {
+        "uid" : "d29fa5264b7dbf65",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/d29fa5264b7dbf65",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642762342882,
+          "stop" : 1642762343691,
+          "duration" : 809
+        }
+      }, {
+        "uid" : "d890b4290272076b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/d890b4290272076b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642760814505,
+          "stop" : 1642760815423,
+          "duration" : 918
+        }
+      }, {
+        "uid" : "4a205eb2ccbb8754",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/4a205eb2ccbb8754",
+        "status" : "broken",
+        "statusDetails" : "Failed to parse the JSON document",
+        "time" : {
+          "start" : 1642760866561,
+          "stop" : 1642760867361,
+          "duration" : 800
+        }
+      }, {
+        "uid" : "46310867e7c9dfa9",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/35//#testresult/46310867e7c9dfa9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759927544,
+          "stop" : 1642759928910,
+          "duration" : 1366
+        }
+      }, {
+        "uid" : "a7cba79be5fb4bd5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/33//#testresult/a7cba79be5fb4bd5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642759222512,
+          "stop" : 1642759223435,
+          "duration" : 923
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "37368ef19e653f95.json",
+  "parameterValues" : [ ]
+}
