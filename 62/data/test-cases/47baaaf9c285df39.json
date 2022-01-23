@@ -1,0 +1,1871 @@
+{
+  "uid" : "47baaaf9c285df39",
+  "name" : "TUA-103",
+  "fullName" : "com.ita.edu.teachua.ui.tests.AdvancedSearchTest.checkSortingClubsByNameInDescendingOrder",
+  "historyId" : "64cb7b38b1cefdd72bbcd9fd804fc48b",
+  "time" : {
+    "start" : 1642944165133,
+    "stop" : 1642944196230,
+    "duration" : 31097
+  },
+  "description" : "Verify that sorting by name for advanced search works correctly (In descending order)",
+  "descriptionHtml" : "<p>Verify that sorting by name for advanced search works correctly (In descending order)</p>\n",
+  "status" : "failed",
+  "statusMessage" : "expected [true] but found [false]",
+  "statusTrace" : "java.lang.AssertionError: expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertTrue(Assert.java:45)\n\tat org.testng.Assert.assertTrue(Assert.java:55)\n\tat com.ita.edu.teachua.ui.tests.AdvancedSearchTest.checkSortingClubsByNameInDescendingOrder(AdvancedSearchTest.java:174)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "flaky" : true,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642944160088,
+      "stop" : 1642944165131,
+      "duration" : 5043
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642943637298,
+      "stop" : 1642943639281,
+      "duration" : 1983
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify that sorting by name for advanced search works correctly (In descending order)",
+    "status" : "failed",
+    "statusMessage" : "expected [true] but found [false]",
+    "statusTrace" : "java.lang.AssertionError: expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertTrue(Assert.java:45)\n\tat org.testng.Assert.assertTrue(Assert.java:55)\n\tat com.ita.edu.teachua.ui.tests.AdvancedSearchTest.checkSortingClubsByNameInDescendingOrder(AdvancedSearchTest.java:174)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+    "steps" : [ {
+      "name" : "Click on 'Розширений пошук' icon",
+      "time" : {
+        "start" : 1642944165134,
+        "stop" : 1642944165268,
+        "duration" : 134
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on arrow up to sort clubs in descending order",
+      "time" : {
+        "start" : 1642944165268,
+        "stop" : 1642944165337,
+        "duration" : 69
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get number of pages with clubs",
+      "time" : {
+        "start" : 1642944165338,
+        "stop" : 1642944167384,
+        "duration" : 2046
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944167384,
+        "stop" : 1642944169418,
+        "duration" : 2034
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944169418,
+        "stop" : 1642944169418,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944169438,
+        "stop" : 1642944169438,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944169457,
+        "stop" : 1642944169457,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944169476,
+        "stop" : 1642944169476,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944169494,
+        "stop" : 1642944169494,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944169514,
+        "stop" : 1642944169514,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944169533,
+        "stop" : 1642944169612,
+        "duration" : 79
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944169612,
+        "stop" : 1642944171636,
+        "duration" : 2024
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944171637,
+        "stop" : 1642944171637,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944171659,
+        "stop" : 1642944171659,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944171678,
+        "stop" : 1642944171678,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944171696,
+        "stop" : 1642944171696,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944171715,
+        "stop" : 1642944171715,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944171733,
+        "stop" : 1642944171733,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944171756,
+        "stop" : 1642944171814,
+        "duration" : 58
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944171814,
+        "stop" : 1642944173842,
+        "duration" : 2028
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944173842,
+        "stop" : 1642944173842,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944173867,
+        "stop" : 1642944173867,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944173890,
+        "stop" : 1642944173890,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944173910,
+        "stop" : 1642944173910,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944173929,
+        "stop" : 1642944173929,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944173948,
+        "stop" : 1642944173948,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944173966,
+        "stop" : 1642944174021,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944174021,
+        "stop" : 1642944176047,
+        "duration" : 2026
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944176047,
+        "stop" : 1642944176047,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944176066,
+        "stop" : 1642944176067,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944176088,
+        "stop" : 1642944176088,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944176108,
+        "stop" : 1642944176108,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944176129,
+        "stop" : 1642944176129,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944176148,
+        "stop" : 1642944176148,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944176168,
+        "stop" : 1642944176263,
+        "duration" : 95
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944176263,
+        "stop" : 1642944178289,
+        "duration" : 2026
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944178289,
+        "stop" : 1642944178289,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944178309,
+        "stop" : 1642944178309,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944178329,
+        "stop" : 1642944178329,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944178348,
+        "stop" : 1642944178348,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944178369,
+        "stop" : 1642944178369,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944178411,
+        "stop" : 1642944178411,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944178440,
+        "stop" : 1642944178499,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944178499,
+        "stop" : 1642944180525,
+        "duration" : 2026
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944180525,
+        "stop" : 1642944180525,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944180545,
+        "stop" : 1642944180545,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944180567,
+        "stop" : 1642944180567,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944180587,
+        "stop" : 1642944180587,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944180606,
+        "stop" : 1642944180606,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944180625,
+        "stop" : 1642944180625,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944180644,
+        "stop" : 1642944180724,
+        "duration" : 80
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944180724,
+        "stop" : 1642944182748,
+        "duration" : 2024
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944182748,
+        "stop" : 1642944182748,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944182770,
+        "stop" : 1642944182770,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944182789,
+        "stop" : 1642944182789,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944182808,
+        "stop" : 1642944182808,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944182827,
+        "stop" : 1642944182827,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944182846,
+        "stop" : 1642944182846,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944182865,
+        "stop" : 1642944182925,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944182925,
+        "stop" : 1642944184950,
+        "duration" : 2025
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944184950,
+        "stop" : 1642944184950,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944184970,
+        "stop" : 1642944184970,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944184990,
+        "stop" : 1642944184990,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944185009,
+        "stop" : 1642944185009,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944185028,
+        "stop" : 1642944185028,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944185047,
+        "stop" : 1642944185047,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944185066,
+        "stop" : 1642944185135,
+        "duration" : 69
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944185135,
+        "stop" : 1642944187164,
+        "duration" : 2029
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944187164,
+        "stop" : 1642944187164,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944187185,
+        "stop" : 1642944187185,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944187204,
+        "stop" : 1642944187204,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944187223,
+        "stop" : 1642944187223,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944187241,
+        "stop" : 1642944187241,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944187260,
+        "stop" : 1642944187260,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944187280,
+        "stop" : 1642944187334,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944187334,
+        "stop" : 1642944189359,
+        "duration" : 2025
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944189359,
+        "stop" : 1642944189359,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944189379,
+        "stop" : 1642944189379,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944189399,
+        "stop" : 1642944189399,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944189420,
+        "stop" : 1642944189420,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944189440,
+        "stop" : 1642944189440,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944189460,
+        "stop" : 1642944189460,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944189482,
+        "stop" : 1642944189555,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944189555,
+        "stop" : 1642944191580,
+        "duration" : 2025
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944191581,
+        "stop" : 1642944191581,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944191601,
+        "stop" : 1642944191601,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944191621,
+        "stop" : 1642944191621,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944191641,
+        "stop" : 1642944191641,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944191660,
+        "stop" : 1642944191660,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944191680,
+        "stop" : 1642944191680,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944191700,
+        "stop" : 1642944191763,
+        "duration" : 63
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944191763,
+        "stop" : 1642944193789,
+        "duration" : 2026
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944193789,
+        "stop" : 1642944193789,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944193809,
+        "stop" : 1642944193809,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944193832,
+        "stop" : 1642944193832,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944193851,
+        "stop" : 1642944193851,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944193877,
+        "stop" : 1642944193877,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944193926,
+        "stop" : 1642944193926,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944193962,
+        "stop" : 1642944194034,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944194034,
+        "stop" : 1642944196058,
+        "duration" : 2024
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get title of the card",
+      "time" : {
+        "start" : 1642944196058,
+        "stop" : 1642944196058,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b986f15ed3f6dd37",
+      "name" : "Logs for thread 14",
+      "source" : "b986f15ed3f6dd37.log",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "be0d9acbeb4051d7",
+      "name" : "Page screenshot",
+      "source" : "be0d9acbeb4051d7.png",
+      "type" : "image/png",
+      "size" : 183340
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 101,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642944196231,
+      "stop" : 1642944196300,
+      "duration" : 69
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.AdvancedSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.AdvancedSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkSortingClubsByNameInDescendingOrder"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.AdvancedSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az127-428"
+  }, {
+    "name" : "thread",
+    "value" : "3140@fv-az127-428.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-103",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 18,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 24
+      },
+      "items" : [ {
+        "uid" : "66b8e2e8c307752f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/66b8e2e8c307752f",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642936494256,
+          "stop" : 1642936526215,
+          "duration" : 31959
+        }
+      }, {
+        "uid" : "67113c0506b725c5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/61//#testresult/67113c0506b725c5",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642886176164,
+          "stop" : 1642886207137,
+          "duration" : 30973
+        }
+      }, {
+        "uid" : "33225e14042f2625",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/33225e14042f2625",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642884527454,
+          "stop" : 1642884559039,
+          "duration" : 31585
+        }
+      }, {
+        "uid" : "82f44211ac578f1c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/82f44211ac578f1c",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642880206372,
+          "stop" : 1642880237725,
+          "duration" : 31353
+        }
+      }, {
+        "uid" : "18f6325126d7b9b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/18f6325126d7b9b",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642878930578,
+          "stop" : 1642878961899,
+          "duration" : 31321
+        }
+      }, {
+        "uid" : "cbaa52d163c49c02",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/59//#testresult/cbaa52d163c49c02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642876581319,
+          "stop" : 1642876612855,
+          "duration" : 31536
+        }
+      }, {
+        "uid" : "c04e59beb9c6b547",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/58//#testresult/c04e59beb9c6b547",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642870813743,
+          "stop" : 1642870844908,
+          "duration" : 31165
+        }
+      }, {
+        "uid" : "83dd8544447c7bd1",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/83dd8544447c7bd1",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642868385668,
+          "stop" : 1642868416653,
+          "duration" : 30985
+        }
+      }, {
+        "uid" : "fe4479b808031f10",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/fe4479b808031f10",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642849987848,
+          "stop" : 1642850020217,
+          "duration" : 32369
+        }
+      }, {
+        "uid" : "2905db9274fbe318",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/2905db9274fbe318",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [8e7582de48b2d7311606d2a2f343a3ca, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Cxhuky}, goog:chromeOptions: {debuggerAddress: localhost:33753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33753/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8e7582de48b2d7311606d2a2f343a3ca",
+        "time" : {
+          "start" : 1642792601219,
+          "stop" : 1642792611413,
+          "duration" : 10194
+        }
+      }, {
+        "uid" : "35136fdca1c44b14",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/35136fdca1c44b14",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.98', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [6e21f42dea4b67d0e01a4bd85cc2a285, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.uCb7ZX}, goog:chromeOptions: {debuggerAddress: localhost:37011}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37011/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6e21f42dea4b67d0e01a4bd85cc2a285",
+        "time" : {
+          "start" : 1642789932542,
+          "stop" : 1642789942728,
+          "duration" : 10186
+        }
+      }, {
+        "uid" : "6d35fb71eea77e85",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/6d35fb71eea77e85",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az77-149', ip: '10.1.0.181', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [e8271ae05600b6c1ef5bbf9dd1990de7, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.a6kxR2}, goog:chromeOptions: {debuggerAddress: localhost:37861}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37861/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e8271ae05600b6c1ef5bbf9dd1990de7",
+        "time" : {
+          "start" : 1642787457295,
+          "stop" : 1642787467487,
+          "duration" : 10192
+        }
+      }, {
+        "uid" : "d937ffee5d7bc731",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/d937ffee5d7bc731",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.188', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [e8e9e6465eaff89599825138d59e7f30, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.ggFK9y}, goog:chromeOptions: {debuggerAddress: localhost:32991}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:32991/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e8e9e6465eaff89599825138d59e7f30",
+        "time" : {
+          "start" : 1642787436152,
+          "stop" : 1642787446288,
+          "duration" : 10136
+        }
+      }, {
+        "uid" : "8dd65f468dd24836",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/8dd65f468dd24836",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642786945627,
+          "stop" : 1642786976751,
+          "duration" : 31124
+        }
+      }, {
+        "uid" : "fe23c48d652bb7c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/fe23c48d652bb7c",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642786936125,
+          "stop" : 1642786967369,
+          "duration" : 31244
+        }
+      }, {
+        "uid" : "78a05f6b6228214",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/53//#testresult/78a05f6b6228214",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642785945346,
+          "stop" : 1642785976414,
+          "duration" : 31068
+        }
+      }, {
+        "uid" : "df0dc99141eb8231",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/41//#testresult/df0dc99141eb8231",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642773389842,
+          "stop" : 1642773421745,
+          "duration" : 31903
+        }
+      }, {
+        "uid" : "67d3cc42efe25ae3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/39//#testresult/67d3cc42efe25ae3",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642769432782,
+          "stop" : 1642769464050,
+          "duration" : 31268
+        }
+      }, {
+        "uid" : "c33d3cc87fd72ac7",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/c33d3cc87fd72ac7",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642762671699,
+          "stop" : 1642762703137,
+          "duration" : 31438
+        }
+      }, {
+        "uid" : "de0bbf68b20fe59e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/de0bbf68b20fe59e",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642761398862,
+          "stop" : 1642761430313,
+          "duration" : 31451
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "47baaaf9c285df39.json",
+  "parameterValues" : [ ]
+}

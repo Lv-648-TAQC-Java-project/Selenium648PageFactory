@@ -1,0 +1,792 @@
+{
+  "uid" : "1a7e7f96ded9e2ce",
+  "name" : "TUA-103",
+  "fullName" : "com.ita.edu.teachua.ui.tests.AdvancedSearchTest.checkSortingClubsByRatingInDescendingOrder",
+  "historyId" : "7ceb502c964097a361bc9f49af951558",
+  "time" : {
+    "start" : 1642944242952,
+    "stop" : 1642944274454,
+    "duration" : 31502
+  },
+  "description" : "Verify that sorting by rating for advanced search works correctly (In descending order)",
+  "descriptionHtml" : "<p>Verify that sorting by rating for advanced search works correctly (In descending order)</p>\n",
+  "status" : "failed",
+  "statusMessage" : "expected [true] but found [false]",
+  "statusTrace" : "java.lang.AssertionError: expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertTrue(Assert.java:45)\n\tat org.testng.Assert.assertTrue(Assert.java:55)\n\tat com.ita.edu.teachua.ui.tests.AdvancedSearchTest.checkSortingClubsByRatingInDescendingOrder(AdvancedSearchTest.java:238)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "flaky" : true,
+  "newFailed" : true,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642944237240,
+      "stop" : 1642944242951,
+      "duration" : 5711
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642943637298,
+      "stop" : 1642943639281,
+      "duration" : 1983
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify that sorting by rating for advanced search works correctly (In descending order)",
+    "status" : "failed",
+    "statusMessage" : "expected [true] but found [false]",
+    "statusTrace" : "java.lang.AssertionError: expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertTrue(Assert.java:45)\n\tat org.testng.Assert.assertTrue(Assert.java:55)\n\tat com.ita.edu.teachua.ui.tests.AdvancedSearchTest.checkSortingClubsByRatingInDescendingOrder(AdvancedSearchTest.java:238)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+    "steps" : [ {
+      "name" : "Click on 'Розширений пошук' icon",
+      "time" : {
+        "start" : 1642944242952,
+        "stop" : 1642944243092,
+        "duration" : 140
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'за рейтингом' to sort clubs by rating in descending order",
+      "time" : {
+        "start" : 1642944243092,
+        "stop" : 1642944244172,
+        "duration" : 1080
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on arrow up to sort clubs in descending order",
+      "time" : {
+        "start" : 1642944244172,
+        "stop" : 1642944244252,
+        "duration" : 80
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get number of pages with clubs",
+      "time" : {
+        "start" : 1642944244252,
+        "stop" : 1642944246296,
+        "duration" : 2044
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944246296,
+        "stop" : 1642944248332,
+        "duration" : 2036
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944248390,
+        "stop" : 1642944248472,
+        "duration" : 82
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944248472,
+        "stop" : 1642944250497,
+        "duration" : 2025
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944250565,
+        "stop" : 1642944250632,
+        "duration" : 67
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944250632,
+        "stop" : 1642944252660,
+        "duration" : 2028
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944252721,
+        "stop" : 1642944252791,
+        "duration" : 70
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944252791,
+        "stop" : 1642944254816,
+        "duration" : 2025
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944254879,
+        "stop" : 1642944254950,
+        "duration" : 71
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944254950,
+        "stop" : 1642944256974,
+        "duration" : 2024
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944257040,
+        "stop" : 1642944257111,
+        "duration" : 71
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944257111,
+        "stop" : 1642944259136,
+        "duration" : 2025
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944259203,
+        "stop" : 1642944259260,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944259260,
+        "stop" : 1642944261288,
+        "duration" : 2028
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944261383,
+        "stop" : 1642944261444,
+        "duration" : 61
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944261444,
+        "stop" : 1642944263468,
+        "duration" : 2024
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944263533,
+        "stop" : 1642944263595,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944263595,
+        "stop" : 1642944265621,
+        "duration" : 2026
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944265686,
+        "stop" : 1642944265744,
+        "duration" : 58
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944265744,
+        "stop" : 1642944267769,
+        "duration" : 2025
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944267841,
+        "stop" : 1642944267898,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944267898,
+        "stop" : 1642944269923,
+        "duration" : 2025
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944270036,
+        "stop" : 1642944270100,
+        "duration" : 64
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944270100,
+        "stop" : 1642944272124,
+        "duration" : 2024
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944272188,
+        "stop" : 1642944272267,
+        "duration" : 79
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get all clubs cards",
+      "time" : {
+        "start" : 1642944272267,
+        "stop" : 1642944274292,
+        "duration" : 2025
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Go to the next page with clubs",
+      "time" : {
+        "start" : 1642944274302,
+        "stop" : 1642944274340,
+        "duration" : 38
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "20f1ddcd52ac69e8",
+      "name" : "Logs for thread 14",
+      "source" : "20f1ddcd52ac69e8.log",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "22461ce4a3867c01",
+      "name" : "Page screenshot",
+      "source" : "22461ce4a3867c01.png",
+      "type" : "image/png",
+      "size" : 89514
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 30,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642944274455,
+      "stop" : 1642944274525,
+      "duration" : 70
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.AdvancedSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.AdvancedSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkSortingClubsByRatingInDescendingOrder"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.AdvancedSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az127-428"
+  }, {
+    "name" : "thread",
+    "value" : "3140@fv-az127-428.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-103",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 18,
+        "unknown" : 0,
+        "total" : 24
+      },
+      "items" : [ {
+        "uid" : "c948f39f6e5d6667",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/c948f39f6e5d6667",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642936571855,
+          "stop" : 1642936603618,
+          "duration" : 31763
+        }
+      }, {
+        "uid" : "f4f5c4ba7104e811",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/61//#testresult/f4f5c4ba7104e811",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642886252316,
+          "stop" : 1642886283585,
+          "duration" : 31269
+        }
+      }, {
+        "uid" : "cfd6d1ac96c6fbb",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/cfd6d1ac96c6fbb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642884605122,
+          "stop" : 1642884636680,
+          "duration" : 31558
+        }
+      }, {
+        "uid" : "dbb8230f090e8897",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/dbb8230f090e8897",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642880299572,
+          "stop" : 1642880330962,
+          "duration" : 31390
+        }
+      }, {
+        "uid" : "84514276636e65c0",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/84514276636e65c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642879022149,
+          "stop" : 1642879053641,
+          "duration" : 31492
+        }
+      }, {
+        "uid" : "67f68fa1fa19e70c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/59//#testresult/67f68fa1fa19e70c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642876673653,
+          "stop" : 1642876705477,
+          "duration" : 31824
+        }
+      }, {
+        "uid" : "ef2c5e8501ff4240",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/58//#testresult/ef2c5e8501ff4240",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642870905278,
+          "stop" : 1642870936737,
+          "duration" : 31459
+        }
+      }, {
+        "uid" : "cb1edf5898c914a0",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/cb1edf5898c914a0",
+        "status" : "failed",
+        "statusDetails" : "expected [true] but found [false]",
+        "time" : {
+          "start" : 1642868457549,
+          "stop" : 1642868488996,
+          "duration" : 31447
+        }
+      }, {
+        "uid" : "e5c99f3cb7a586fa",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/e5c99f3cb7a586fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642850076721,
+          "stop" : 1642850109005,
+          "duration" : 32284
+        }
+      }, {
+        "uid" : "9a44a77d5acc8715",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/9a44a77d5acc8715",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [7476925d41371ab1a35075cf756a93d5, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.m2R7hG}, goog:chromeOptions: {debuggerAddress: localhost:38123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38123/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7476925d41371ab1a35075cf756a93d5",
+        "time" : {
+          "start" : 1642792629745,
+          "stop" : 1642792639917,
+          "duration" : 10172
+        }
+      }, {
+        "uid" : "2482dfb79c288f49",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/2482dfb79c288f49",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.98', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [68cf99322683dba84b2b1e2db9b0c5f2, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.ismPo1}, goog:chromeOptions: {debuggerAddress: localhost:38207}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38207/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 68cf99322683dba84b2b1e2db9b0c5f2",
+        "time" : {
+          "start" : 1642789960089,
+          "stop" : 1642789970278,
+          "duration" : 10189
+        }
+      }, {
+        "uid" : "7499ef479216a5d7",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/7499ef479216a5d7",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az77-149', ip: '10.1.0.181', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [0c871855468b449376c962747edeb594, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.rpeneO}, goog:chromeOptions: {debuggerAddress: localhost:35437}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35437/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0c871855468b449376c962747edeb594",
+        "time" : {
+          "start" : 1642787485900,
+          "stop" : 1642787496105,
+          "duration" : 10205
+        }
+      }, {
+        "uid" : "5dcffc2f942bcd49",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/5dcffc2f942bcd49",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@title='Розширений пошук']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.188', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [f3a6a30d0f85a3384eac4695ac40b832, findElement {using=xpath, value=//span[@title='Розширений пошук']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.4cJa9L}, goog:chromeOptions: {debuggerAddress: localhost:37701}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37701/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f3a6a30d0f85a3384eac4695ac40b832",
+        "time" : {
+          "start" : 1642787463050,
+          "stop" : 1642787473186,
+          "duration" : 10136
+        }
+      }, {
+        "uid" : "bf2e17dd08d3079",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/bf2e17dd08d3079",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642787017128,
+          "stop" : 1642787048530,
+          "duration" : 31402
+        }
+      }, {
+        "uid" : "1cda010e8ac9b9bd",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/1cda010e8ac9b9bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642787008082,
+          "stop" : 1642787039461,
+          "duration" : 31379
+        }
+      }, {
+        "uid" : "59b9f0d7e5c7f11b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/53//#testresult/59b9f0d7e5c7f11b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786017679,
+          "stop" : 1642786049079,
+          "duration" : 31400
+        }
+      }, {
+        "uid" : "5cd0a63d377e2850",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/41//#testresult/5cd0a63d377e2850",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642773462524,
+          "stop" : 1642773494248,
+          "duration" : 31724
+        }
+      }, {
+        "uid" : "a61afcc41c665ed1",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/39//#testresult/a61afcc41c665ed1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642769504831,
+          "stop" : 1642769536294,
+          "duration" : 31463
+        }
+      }, {
+        "uid" : "8924597a4ba9003d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/8924597a4ba9003d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642762763572,
+          "stop" : 1642762795205,
+          "duration" : 31633
+        }
+      }, {
+        "uid" : "a9a34a0495cd39e5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/a9a34a0495cd39e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642761492149,
+          "stop" : 1642761523752,
+          "duration" : 31603
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1a7e7f96ded9e2ce.json",
+  "parameterValues" : [ ]
+}
