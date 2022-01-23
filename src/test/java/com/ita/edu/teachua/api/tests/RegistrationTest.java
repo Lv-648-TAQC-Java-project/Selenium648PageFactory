@@ -114,7 +114,7 @@ public class RegistrationTest extends ApiTestRunner {
     @Test(description = "TUA-419")
     public void testRegisterWithNonExistingRole() throws IOException {
         BaseErrorBody error;
-        final int expectedStatus = 404;
+        final int expectedStatus = 401;
         RegisterUser registerUser = (new ClientDataTransfer()).getRegisterUser();
         registerUser.setRoleName("SOME_ROLE");
 
@@ -234,7 +234,7 @@ public class RegistrationTest extends ApiTestRunner {
 
     @Description("TUA-457 [API. Реєстрація] Verify that a user with valid data can be created")
     @Issue("TUA-457")
-    @Test(description = "TUA-457")
+    @Test(description = "TUA-457",enabled=false)
     public void testRegisterWithValidData() throws IOException {
         SuccessRegistration successRegistration;
         Response response;
