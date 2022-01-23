@@ -14,7 +14,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class AddCenterPopUpComponent extends BasePage {
-    @FindBy(how = How.CLASS_NAME, using = AddCenterPopUpComponentLocators.ADD_LOCATION_BUTTON_CLASS_NAME)
+    @FindBy(how = How.CSS, using = AddCenterPopUpComponentLocators.ADD_LOCATION_BUTTON_CSS_SELECTOR)
     private Button addLocation;
     @FindBy(how = How.ID, using = AddCenterPopUpComponentLocators.CENTER_NAME_INPUT_ID)
     private Input centerNameField;
