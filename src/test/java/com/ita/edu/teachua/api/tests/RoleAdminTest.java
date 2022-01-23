@@ -21,7 +21,6 @@ public class RoleAdminTest extends AuthorizedAsAdminApiTestRunner{
                 .then().log().all()
                 .extract().body().jsonPath().getList(".", RoleModel.class);
         Assert.assertEquals(response.getStatusCode(), 200);
-        Assert.assertEquals(roleModelList.size(), 3);
     }
 
     @Test(description = "[API admin role] Get role by ID")
@@ -51,7 +50,14 @@ public class RoleAdminTest extends AuthorizedAsAdminApiTestRunner{
         List<RoleModel> roleModelList = response
                 .then().log().all()
                 .extract().body().jsonPath().getList(".", RoleModel.class);
-        Response deleteRole = roleClient.deleteRole(roleModelList.get(0).getId());
-        Assert.assertEquals(deleteRole.getStatusCode(), 200);
+
+        for (RoleModel role : roleModelList) {
+            if(role.getRoleName().equals("TEST_ROLE")){
+                Assert.assertEquals((roleClient.deleteRole(role.getId()).getStatusCode()),200);
+                break;
+            }
+        }
+
+
     }
 }
