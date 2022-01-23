@@ -1,0 +1,374 @@
+{
+  "uid" : "8e9c1d3159fa292d",
+  "name" : "TUA-454",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.checkLastVerifyEnteredDataInRegistrationRemembered",
+  "historyId" : "b7ea80f314978665456119401e0051b3",
+  "time" : {
+    "start" : 1642936342497,
+    "stop" : 1642936344333,
+    "duration" : 1836
+  },
+  "description" : "This test check that last entered data on the ‘Реєстрація’ page are remembered #31",
+  "descriptionHtml" : "<p>This test check that last entered data on the ‘Реєстрація’ page are remembered #31</p>\n",
+  "status" : "broken",
+  "statusMessage" : "element click intercepted: Element <input class=\"ant-input registration-box\" placeholder=\"Введіть ваше прізвище\" type=\"text\" id=\"lastName\" value=\"\"> is not clickable at point (731, 254). Other element would receive the click: <div class=\"registration-or\">...</div>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.49', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [8ab6b451ad124922a265f95455aa88a8, clickElement {id=4dfe57fb-a8f9-4d26-b7e8-6244acc886b9}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.LSJdUM}, goog:chromeOptions: {debuggerAddress: localhost:32805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:32805/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (8ab6b451ad124922a265f95455aa88a8)] -> id: lastName]\nSession ID: 8ab6b451ad124922a265f95455aa88a8",
+  "statusTrace" : "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input class=\"ant-input registration-box\" placeholder=\"Введіть ваше прізвище\" type=\"text\" id=\"lastName\" value=\"\"> is not clickable at point (731, 254). Other element would receive the click: <div class=\"registration-or\">...</div>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.49', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [8ab6b451ad124922a265f95455aa88a8, clickElement {id=4dfe57fb-a8f9-4d26-b7e8-6244acc886b9}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.LSJdUM}, goog:chromeOptions: {debuggerAddress: localhost:32805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:32805/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (8ab6b451ad124922a265f95455aa88a8)] -> id: lastName]\nSession ID: 8ab6b451ad124922a265f95455aa88a8\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\n\tat com.ita.edu.teachua.ui.elements.base_element.BaseElement.click(BaseElement.java:21)\n\tat sun.reflect.GeneratedMethodAccessor62.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat com.ita.edu.teachua.ui.pagefactory.ElementHandler.invoke(ElementHandler.java:46)\n\tat com.sun.proxy.$Proxy44.click(Unknown Source)\n\tat com.ita.edu.teachua.ui.pages.header_page.RegisterPopUpComponent.clickLastNameField(RegisterPopUpComponent.java:55)\n\tat com.ita.edu.teachua.ui.tests.OwnerProfileTest.checkLastVerifyEnteredDataInRegistrationRemembered(OwnerProfileTest.java:405)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642936338246,
+      "stop" : 1642936342495,
+      "duration" : 4249
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642935943612,
+      "stop" : 1642935945679,
+      "duration" : 2067
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test check that last entered data on the ‘Реєстрація’ page are remembered #31",
+    "status" : "broken",
+    "statusMessage" : "element click intercepted: Element <input class=\"ant-input registration-box\" placeholder=\"Введіть ваше прізвище\" type=\"text\" id=\"lastName\" value=\"\"> is not clickable at point (731, 254). Other element would receive the click: <div class=\"registration-or\">...</div>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.49', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [8ab6b451ad124922a265f95455aa88a8, clickElement {id=4dfe57fb-a8f9-4d26-b7e8-6244acc886b9}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.LSJdUM}, goog:chromeOptions: {debuggerAddress: localhost:32805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:32805/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (8ab6b451ad124922a265f95455aa88a8)] -> id: lastName]\nSession ID: 8ab6b451ad124922a265f95455aa88a8",
+    "statusTrace" : "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input class=\"ant-input registration-box\" placeholder=\"Введіть ваше прізвище\" type=\"text\" id=\"lastName\" value=\"\"> is not clickable at point (731, 254). Other element would receive the click: <div class=\"registration-or\">...</div>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.49', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [8ab6b451ad124922a265f95455aa88a8, clickElement {id=4dfe57fb-a8f9-4d26-b7e8-6244acc886b9}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.LSJdUM}, goog:chromeOptions: {debuggerAddress: localhost:32805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:32805/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (8ab6b451ad124922a265f95455aa88a8)] -> id: lastName]\nSession ID: 8ab6b451ad124922a265f95455aa88a8\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\n\tat com.ita.edu.teachua.ui.elements.base_element.BaseElement.click(BaseElement.java:21)\n\tat sun.reflect.GeneratedMethodAccessor62.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat com.ita.edu.teachua.ui.pagefactory.ElementHandler.invoke(ElementHandler.java:46)\n\tat com.sun.proxy.$Proxy44.click(Unknown Source)\n\tat com.ita.edu.teachua.ui.pages.header_page.RegisterPopUpComponent.clickLastNameField(RegisterPopUpComponent.java:55)\n\tat com.ita.edu.teachua.ui.tests.OwnerProfileTest.checkLastVerifyEnteredDataInRegistrationRemembered(OwnerProfileTest.java:405)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+    "steps" : [ {
+      "name" : "Click on guest dropdown",
+      "time" : {
+        "start" : 1642936342497,
+        "stop" : 1642936342601,
+        "duration" : 104
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on register button",
+      "time" : {
+        "start" : 1642936342601,
+        "stop" : 1642936342982,
+        "duration" : 381
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "c49aa936d3c36970",
+      "name" : "Logs for thread 14",
+      "source" : "c49aa936d3c36970.log",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "bb462b65721b1da7",
+      "name" : "Page screenshot",
+      "source" : "bb462b65721b1da7.png",
+      "type" : "image/png",
+      "size" : 242405
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642936344335,
+      "stop" : 1642936344413,
+      "duration" : 78
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkLastVerifyEnteredDataInRegistrationRemembered"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-933"
+  }, {
+    "name" : "thread",
+    "value" : "2858@fv-az74-933.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-454",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 8,
+        "skipped" : 0,
+        "passed" : 15,
+        "unknown" : 0,
+        "total" : 23
+      },
+      "items" : [ {
+        "uid" : "6fcbe398359da65b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/61//#testresult/6fcbe398359da65b",
+        "status" : "broken",
+        "statusDetails" : "element click intercepted: Element <input class=\"ant-input registration-box\" placeholder=\"Введіть ваше прізвище\" type=\"text\" id=\"lastName\" value=\"\"> is not clickable at point (829, 223). Other element would receive the click: <div class=\"ant-radio-group ant-radio-group-solid button-container\" id=\"role\">...</div>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az36-128', ip: '10.1.0.21', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [774982cf58d7057418b33903cb186931, clickElement {id=1cde39e7-7bb1-4957-8337-3b8b2440800f}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.tKAiIS}, goog:chromeOptions: {debuggerAddress: localhost:35307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35307/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (774982cf58d7057418b33903cb186931)] -> id: lastName]\nSession ID: 774982cf58d7057418b33903cb186931",
+        "time" : {
+          "start" : 1642886033109,
+          "stop" : 1642886034835,
+          "duration" : 1726
+        }
+      }, {
+        "uid" : "8fe8babce71c27b3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/8fe8babce71c27b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642884388552,
+          "stop" : 1642884390960,
+          "duration" : 2408
+        }
+      }, {
+        "uid" : "79c8d04ea6f12c7b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/79c8d04ea6f12c7b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642880063265,
+          "stop" : 1642880065454,
+          "duration" : 2189
+        }
+      }, {
+        "uid" : "d61ee17fb08eb0e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/d61ee17fb08eb0e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642878783730,
+          "stop" : 1642878786049,
+          "duration" : 2319
+        }
+      }, {
+        "uid" : "bfdadb87f7bbf1cd",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/59//#testresult/bfdadb87f7bbf1cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642876430525,
+          "stop" : 1642876432885,
+          "duration" : 2360
+        }
+      }, {
+        "uid" : "243e8453bf5b44c8",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/58//#testresult/243e8453bf5b44c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642870662691,
+          "stop" : 1642870664921,
+          "duration" : 2230
+        }
+      }, {
+        "uid" : "862cd0af8d9d4a70",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/862cd0af8d9d4a70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642868228131,
+          "stop" : 1642868230367,
+          "duration" : 2236
+        }
+      }, {
+        "uid" : "18ffb0c6f260414",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/18ffb0c6f260414",
+        "status" : "broken",
+        "statusDetails" : "element not interactable\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az36-128', ip: '10.1.0.46', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4a0913444917bca60a7a42b5631e083d, sendKeysToElement {id=4d3706df-e765-4162-8fda-1d67a7d25eca, value=[Ljava.lang.CharSequence;@5037566f}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.2jO0H6}, goog:chromeOptions: {debuggerAddress: localhost:44525}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44525/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (4a0913444917bca60a7a42b5631e083d)] -> id: firstName]\nSession ID: 4a0913444917bca60a7a42b5631e083d",
+        "time" : {
+          "start" : 1642849829690,
+          "stop" : 1642849840945,
+          "duration" : 11255
+        }
+      }, {
+        "uid" : "f4d7339e6c1f5c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/f4d7339e6c1f5c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642792442663,
+          "stop" : 1642792445089,
+          "duration" : 2426
+        }
+      }, {
+        "uid" : "e1cb7284ff5ac5c3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/e1cb7284ff5ac5c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642789776128,
+          "stop" : 1642789778233,
+          "duration" : 2105
+        }
+      }, {
+        "uid" : "cb0a7cd18875ccaf",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/cb0a7cd18875ccaf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642787293989,
+          "stop" : 1642787296567,
+          "duration" : 2578
+        }
+      }, {
+        "uid" : "857ea87c6c9b7aaa",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/857ea87c6c9b7aaa",
+        "status" : "broken",
+        "statusDetails" : "element not interactable\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.188', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [2f394c11ed7cbce699667828c874505e, clickElement {id=41b084e3-4db6-464b-80bd-7182c059d896}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.BMIqjx}, goog:chromeOptions: {debuggerAddress: localhost:32861}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:32861/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (2f394c11ed7cbce699667828c874505e)] -> id: phone]\nSession ID: 2f394c11ed7cbce699667828c874505e",
+        "time" : {
+          "start" : 1642787269904,
+          "stop" : 1642787280843,
+          "duration" : 10939
+        }
+      }, {
+        "uid" : "30d8de67d989e2bf",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/30d8de67d989e2bf",
+        "status" : "broken",
+        "statusDetails" : "element click intercepted: Element <input class=\"ant-input registration-box\" placeholder=\"Введіть ваше прізвище\" type=\"text\" id=\"lastName\" value=\"\"> is not clickable at point (829, 223). Other element would receive the click: <div class=\"ant-radio-group ant-radio-group-solid button-container\" id=\"role\">...</div>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az83-73', ip: '10.1.0.104', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [f01f80ead5a1b2b01271501856751f42, clickElement {id=7e17773a-9fca-4c43-b323-a6f83b8c8d9b}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.e9geJQ}, goog:chromeOptions: {debuggerAddress: localhost:41659}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41659/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (f01f80ead5a1b2b01271501856751f42)] -> id: lastName]\nSession ID: f01f80ead5a1b2b01271501856751f42",
+        "time" : {
+          "start" : 1642786788153,
+          "stop" : 1642786789832,
+          "duration" : 1679
+        }
+      }, {
+        "uid" : "89f157cf217d1355",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/89f157cf217d1355",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786788039,
+          "stop" : 1642786790068,
+          "duration" : 2029
+        }
+      }, {
+        "uid" : "40f7bdaad2b2b859",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/53//#testresult/40f7bdaad2b2b859",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642785772282,
+          "stop" : 1642785774410,
+          "duration" : 2128
+        }
+      }, {
+        "uid" : "16e205810af5fdb3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/41//#testresult/16e205810af5fdb3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642773222158,
+          "stop" : 1642773224427,
+          "duration" : 2269
+        }
+      }, {
+        "uid" : "d39dc7b3a99bad0",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/39//#testresult/d39dc7b3a99bad0",
+        "status" : "broken",
+        "statusDetails" : "element click intercepted: Element <input class=\"ant-input registration-box\" placeholder=\"Введіть ваше ім`я\" type=\"text\" id=\"firstName\" value=\"\"> is not clickable at point (1070, 170). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az135-188', ip: '10.1.0.185', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [765458c731dfaf52e6b582ba63b12e47, clickElement {id=121b1939-31e6-44bf-b3f3-347691fbec38}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.oDOEmY}, goog:chromeOptions: {debuggerAddress: localhost:39025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39025/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (765458c731dfaf52e6b582ba63b12e47)] -> id: firstName]\nSession ID: 765458c731dfaf52e6b582ba63b12e47",
+        "time" : {
+          "start" : 1642769264747,
+          "stop" : 1642769266985,
+          "duration" : 2238
+        }
+      }, {
+        "uid" : "cbeb8d759148622e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/cbeb8d759148622e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642762499041,
+          "stop" : 1642762501275,
+          "duration" : 2234
+        }
+      }, {
+        "uid" : "84df649106da2809",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/36//#testresult/84df649106da2809",
+        "status" : "broken",
+        "statusDetails" : "element not interactable\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az135-188', ip: '10.1.0.33', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [372d46f33accf644514b8eb6f6c7342d, clickElement {id=aff8e970-4582-4981-bd4b-a044d07a6357}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.snueyo}, goog:chromeOptions: {debuggerAddress: localhost:43959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43959/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (372d46f33accf644514b8eb6f6c7342d)] -> id: phone]\nSession ID: 372d46f33accf644514b8eb6f6c7342d",
+        "time" : {
+          "start" : 1642761193727,
+          "stop" : 1642761204827,
+          "duration" : 11100
+        }
+      }, {
+        "uid" : "503b94a3bc601a07",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/37//#testresult/503b94a3bc601a07",
+        "status" : "broken",
+        "statusDetails" : "element click intercepted: Element <input class=\"ant-input registration-box\" placeholder=\"Введіть ваше прізвище\" type=\"text\" id=\"lastName\" value=\"\"> is not clickable at point (829, 223). Other element would receive the click: <div class=\"ant-radio-group ant-radio-group-solid button-container\" id=\"role\">...</div>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.106', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [768177833a1562886deb9ca874715cde, clickElement {id=78834266-55a9-4b30-a6eb-3f272ab821d6}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.P2XjIX}, goog:chromeOptions: {debuggerAddress: localhost:40831}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40831/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (768177833a1562886deb9ca874715cde)] -> id: lastName]\nSession ID: 768177833a1562886deb9ca874715cde",
+        "time" : {
+          "start" : 1642761193999,
+          "stop" : 1642761195689,
+          "duration" : 1690
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8e9c1d3159fa292d.json",
+  "parameterValues" : [ ]
+}
