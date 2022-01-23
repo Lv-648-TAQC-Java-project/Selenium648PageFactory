@@ -1,0 +1,360 @@
+{
+  "uid" : "d062d5f9b6723a7a",
+  "name" : "TUA-428",
+  "fullName" : "com.ita.edu.teachua.ui.tests.BasicSearchTest.checkInvalidSymbolsAndQuantityPaste",
+  "historyId" : "aa2153fbded512d4ba12d4f9043d893a",
+  "time" : {
+    "start" : 1642952407060,
+    "stop" : 1642952408210,
+    "duration" : 1150
+  },
+  "description" : "Verify search field behavior for invalid number of symbols pasted",
+  "descriptionHtml" : "<p>Verify search field behavior for invalid number of symbols pasted</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1642952401832,
+      "stop" : 1642952407057,
+      "duration" : 5225
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1642951702546,
+      "stop" : 1642951704398,
+      "duration" : 1852
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify search field behavior for invalid number of symbols pasted",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Insert from clipboard *150rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv* in search field",
+      "time" : {
+        "start" : 1642952407060,
+        "stop" : 1642952407176,
+        "duration" : 116
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "150rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if {title} of invalid search results is present on the page",
+      "time" : {
+        "start" : 1642952407176,
+        "stop" : 1642952408210,
+        "duration" : 1034
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642952408211,
+      "stop" : 1642952408282,
+      "duration" : 71
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkInvalidSymbolsAndQuantityPaste"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az121-65"
+  }, {
+    "name" : "thread",
+    "value" : "2829@fv-az121-65.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "150rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv"
+  }, {
+    "name" : "arg1",
+    "value" : "За критеріями пошуку гуртків не знайдено"
+  } ],
+  "links" : [ {
+    "name" : "TUA-428",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 22,
+        "unknown" : 0,
+        "total" : 26
+      },
+      "items" : [ {
+        "uid" : "88b1ca8634aed07c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/63//#testresult/88b1ca8634aed07c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642948463532,
+          "stop" : 1642948464671,
+          "duration" : 1139
+        }
+      }, {
+        "uid" : "1ddcd06d48de1c3d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/62//#testresult/1ddcd06d48de1c3d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642944362686,
+          "stop" : 1642944363835,
+          "duration" : 1149
+        }
+      }, {
+        "uid" : "351ca20c43921158",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/351ca20c43921158",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642936692501,
+          "stop" : 1642936693681,
+          "duration" : 1180
+        }
+      }, {
+        "uid" : "3c1f7409afcf1a3c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/61//#testresult/3c1f7409afcf1a3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642886368506,
+          "stop" : 1642886369657,
+          "duration" : 1151
+        }
+      }, {
+        "uid" : "1259a953ba1cbc6a",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/1259a953ba1cbc6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642884725125,
+          "stop" : 1642884726279,
+          "duration" : 1154
+        }
+      }, {
+        "uid" : "7b6c1b2c1b7371fa",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/7b6c1b2c1b7371fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642880416720,
+          "stop" : 1642880417859,
+          "duration" : 1139
+        }
+      }, {
+        "uid" : "c11129262bb7cf04",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/c11129262bb7cf04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642879142992,
+          "stop" : 1642879144140,
+          "duration" : 1148
+        }
+      }, {
+        "uid" : "1d25ad4a66098ae0",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/59//#testresult/1d25ad4a66098ae0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642876793147,
+          "stop" : 1642876794342,
+          "duration" : 1195
+        }
+      }, {
+        "uid" : "eb13134f9fcb9b5b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/58//#testresult/eb13134f9fcb9b5b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642871022629,
+          "stop" : 1642871023799,
+          "duration" : 1170
+        }
+      }, {
+        "uid" : "2bf4706a002b3a07",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/2bf4706a002b3a07",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642868576955,
+          "stop" : 1642868578096,
+          "duration" : 1141
+        }
+      }, {
+        "uid" : "b1d9871b20aced6f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/b1d9871b20aced6f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642850197890,
+          "stop" : 1642850199072,
+          "duration" : 1182
+        }
+      }, {
+        "uid" : "8acdab50de38cce1",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/8acdab50de38cce1",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [df329110e5ef33e26d36135c6dad5317, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.nz23a8}, goog:chromeOptions: {debuggerAddress: localhost:37981}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37981/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: df329110e5ef33e26d36135c6dad5317",
+        "time" : {
+          "start" : 1642792746583,
+          "stop" : 1642792756773,
+          "duration" : 10190
+        }
+      }, {
+        "uid" : "2734b2854b9d366b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/2734b2854b9d366b",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.98', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [7c8ccc9b35d7bf300740ea6aca87a12d, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.ioCgxQ}, goog:chromeOptions: {debuggerAddress: localhost:43843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43843/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7c8ccc9b35d7bf300740ea6aca87a12d",
+        "time" : {
+          "start" : 1642790074307,
+          "stop" : 1642790084439,
+          "duration" : 10132
+        }
+      }, {
+        "uid" : "feb1f19d1305060a",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/feb1f19d1305060a",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az77-149', ip: '10.1.0.181', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [e6a031c49c87999be3213014012910f4, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.jDmnV8}, goog:chromeOptions: {debuggerAddress: localhost:33059}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33059/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e6a031c49c87999be3213014012910f4",
+        "time" : {
+          "start" : 1642787601459,
+          "stop" : 1642787611643,
+          "duration" : 10184
+        }
+      }, {
+        "uid" : "6692be6df30b68a1",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/6692be6df30b68a1",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.188', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [19113b76631be9449a4b76e6c24aef8a, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.8ddSS0}, goog:chromeOptions: {debuggerAddress: localhost:38945}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38945/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 19113b76631be9449a4b76e6c24aef8a",
+        "time" : {
+          "start" : 1642787576033,
+          "stop" : 1642787586181,
+          "duration" : 10148
+        }
+      }, {
+        "uid" : "4574b1c224e51f09",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/4574b1c224e51f09",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642787141308,
+          "stop" : 1642787142444,
+          "duration" : 1136
+        }
+      }, {
+        "uid" : "d866814d420a3230",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/d866814d420a3230",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642787130463,
+          "stop" : 1642787131603,
+          "duration" : 1140
+        }
+      }, {
+        "uid" : "f75203f841cabb81",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/53//#testresult/f75203f841cabb81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786138666,
+          "stop" : 1642786139818,
+          "duration" : 1152
+        }
+      }, {
+        "uid" : "b18271b98d2e5174",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/41//#testresult/b18271b98d2e5174",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642773585991,
+          "stop" : 1642773587174,
+          "duration" : 1183
+        }
+      }, {
+        "uid" : "9a2b697e58de5e64",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/39//#testresult/9a2b697e58de5e64",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642769632414,
+          "stop" : 1642769633575,
+          "duration" : 1161
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d062d5f9b6723a7a.json",
+  "parameterValues" : [ "150rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv", "За критеріями пошуку гуртків не знайдено" ]
+}
