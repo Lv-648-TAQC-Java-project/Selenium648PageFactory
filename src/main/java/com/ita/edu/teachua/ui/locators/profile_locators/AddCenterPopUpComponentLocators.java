@@ -2,7 +2,7 @@ package com.ita.edu.teachua.ui.locators.profile_locators;
 
 
 public class AddCenterPopUpComponentLocators {
-    public static final String ADD_LOCATION_BUTTON_CSS_SELECTOR = "span[class='add-club-location']>button[type='submit']";
+    public static final String ADD_LOCATION_BUTTON_CSS_SELECTOR = "span[class='add-club-location'] span:not([class])";
     public static final String NEXT_STEP_BUTTON_CSS_SELECTOR = "button[class='ant-btn next-btn'] span";
     public static final String PHONE_NUMBER_FIELD_ID = "contacts_contactТелефон";
     public static final String DESCRIPTION_FIELD_ID = "basic_description";

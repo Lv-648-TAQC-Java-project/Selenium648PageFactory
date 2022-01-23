@@ -47,6 +47,7 @@ public class AddCenterPopUpComponent extends BasePage {
 
     @Step("Click on '+Додати локацію' button")
     public AddLocationPopUpComponent clickOnAddLocationButton() {
+        waitUntilElementToBeClickable(By.cssSelector(AddCenterPopUpComponentLocators.ADD_LOCATION_BUTTON_CSS_SELECTOR),10);
         addLocation.click();
         return new AddLocationPopUpComponent(driver);
     }
