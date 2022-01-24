@@ -1,0 +1,466 @@
+{
+  "uid" : "e400571c8b607d9f",
+  "name" : "TUA-498",
+  "fullName" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest.VerifyThatUserAsOwnerCanNotDeleteClubThatNotRegisteredByHim",
+  "historyId" : "12bb9e0cbdf572d192e9a85adced3d58",
+  "time" : {
+    "start" : 1643057691604,
+    "stop" : 1643057700316,
+    "duration" : 8712
+  },
+  "description" : "This test case verifies that the User as \"Керiвник гуртка\" can not delete a club that was not registered by him",
+  "descriptionHtml" : "<p>This test case verifies that the User as &quot;Керiвник гуртка&quot; can not delete a club that was not registered by him</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1643057671552,
+      "stop" : 1643057672821,
+      "duration" : 1269
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643057671552,
+        "stop" : 1643057671553,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643057599699,
+      "stop" : 1643057601537,
+      "duration" : 1838
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test case verifies that the User as \"Керiвник гуртка\" can not delete a club that was not registered by him",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643057691604,
+        "stop" : 1643057691605,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643057693472,
+        "stop" : 1643057694842,
+        "duration" : 1370
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643057693472,
+          "stop" : 1643057693473,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Вокальна студія, музика, музичні інструменти], \"name\":\"Голосистi діти\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"blocks\":[{\"key\":\"brl63\",\"text\":\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\",\"type\":\"unstyled\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643057694848,
+        "stop" : 1643057694849,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Delete club request",
+      "time" : {
+        "start" : 1643057696016,
+        "stop" : 1643057696926,
+        "duration" : 910
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643057696016,
+          "stop" : 1643057696017,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "1493"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643057696959,
+        "stop" : 1643057696959,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Delete club request",
+      "time" : {
+        "start" : 1643057699369,
+        "stop" : 1643057700316,
+        "duration" : 947
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643057699369,
+          "stop" : 1643057699370,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "1493"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "VerifyThatUserAsOwnerCanNotDeleteClubThatNotRegisteredByHim"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az121-422"
+  }, {
+    "name" : "thread",
+    "value" : "2762@fv-az121-422.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-498",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 10,
+        "skipped" : 2,
+        "passed" : 19,
+        "unknown" : 0,
+        "total" : 31
+      },
+      "items" : [ {
+        "uid" : "bac14036a2d5fd88",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/bac14036a2d5fd88",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643055512608,
+          "stop" : 1643055523725,
+          "duration" : 11117
+        }
+      }, {
+        "uid" : "15ef9dc7789cb97f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/15ef9dc7789cb97f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643025614260,
+          "stop" : 1643025621711,
+          "duration" : 7451
+        }
+      }, {
+        "uid" : "e8da81e1300f5c46",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/e8da81e1300f5c46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643023544806,
+          "stop" : 1643023553004,
+          "duration" : 8198
+        }
+      }, {
+        "uid" : "5eb8368159b97966",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/65//#testresult/5eb8368159b97966",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642957644125,
+          "stop" : 1642957652086,
+          "duration" : 7961
+        }
+      }, {
+        "uid" : "4cf373d9afc36024",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/64//#testresult/4cf373d9afc36024",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642951744221,
+          "stop" : 1642951752919,
+          "duration" : 8698
+        }
+      }, {
+        "uid" : "7de82e0cc346ee31",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/63//#testresult/7de82e0cc346ee31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642947825082,
+          "stop" : 1642947832220,
+          "duration" : 7138
+        }
+      }, {
+        "uid" : "d3ae0293375dbeee",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/62//#testresult/d3ae0293375dbeee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642943680269,
+          "stop" : 1642943690125,
+          "duration" : 9856
+        }
+      }, {
+        "uid" : "f8b8ba2838ecc086",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/f8b8ba2838ecc086",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642935991507,
+          "stop" : 1642936000825,
+          "duration" : 9318
+        }
+      }, {
+        "uid" : "e57cbb1b1e3f8e15",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/61//#testresult/e57cbb1b1e3f8e15",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642885754052,
+          "stop" : 1642885761628,
+          "duration" : 7576
+        }
+      }, {
+        "uid" : "e38f270568a50755",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/e38f270568a50755",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642884055818,
+          "stop" : 1642884064790,
+          "duration" : 8972
+        }
+      }, {
+        "uid" : "954e0c4ef5514054",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/954e0c4ef5514054",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642879758008,
+          "stop" : 1642879766069,
+          "duration" : 8061
+        }
+      }, {
+        "uid" : "6851a05501a3368d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/6851a05501a3368d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642878477183,
+          "stop" : 1642878484870,
+          "duration" : 7687
+        }
+      }, {
+        "uid" : "4e68ad841aafcb70",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/59//#testresult/4e68ad841aafcb70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642876098562,
+          "stop" : 1642876106502,
+          "duration" : 7940
+        }
+      }, {
+        "uid" : "d81b3d18a9db4076",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/58//#testresult/d81b3d18a9db4076",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642870352407,
+          "stop" : 1642870359969,
+          "duration" : 7562
+        }
+      }, {
+        "uid" : "602d56c8bb1cbe1d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/602d56c8bb1cbe1d",
+        "status" : "broken",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+        "time" : {
+          "start" : 1642867912015,
+          "stop" : 1642867914918,
+          "duration" : 2903
+        }
+      }, {
+        "uid" : "67511e157a4ff10e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/67511e157a4ff10e",
+        "status" : "broken",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+        "time" : {
+          "start" : 1642849510062,
+          "stop" : 1642849512704,
+          "duration" : 2642
+        }
+      }, {
+        "uid" : "ec815a299cf5a4c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/ec815a299cf5a4c",
+        "status" : "skipped",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+        "time" : {
+          "start" : 1642792247465,
+          "stop" : 1642792247472,
+          "duration" : 7
+        }
+      }, {
+        "uid" : "22a023ca1abf2eb7",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/22a023ca1abf2eb7",
+        "status" : "skipped",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+        "time" : {
+          "start" : 1642789586219,
+          "stop" : 1642789586221,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "1d3ea2b8e9023a50",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/1d3ea2b8e9023a50",
+        "status" : "broken",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+        "time" : {
+          "start" : 1642787069122,
+          "stop" : 1642787077002,
+          "duration" : 7880
+        }
+      }, {
+        "uid" : "8befffec36b3872f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/8befffec36b3872f",
+        "status" : "broken",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+        "time" : {
+          "start" : 1642787044203,
+          "stop" : 1642787051214,
+          "duration" : 7011
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e400571c8b607d9f.json",
+  "parameterValues" : [ ]
+}
