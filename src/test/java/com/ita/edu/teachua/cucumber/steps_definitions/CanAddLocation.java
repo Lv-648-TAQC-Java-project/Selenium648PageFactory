@@ -76,9 +76,9 @@ public class CanAddLocation {
         pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent().sendKeysLocationNameField(validLocationName);
     }
 
-    @And("Check if Data in the Назва field is accepted by input with {addLocationPopUpIds} at 0 index")
-    public void checkIfDataInTheНазваFieldIsAccepted(String[] addLocationPopUpIds) {
-        pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent().isDataAccepted(addLocationPopUpIds[0]);
+    @And("Check if Data in the Назва field is accepted by input with {addLocationPopUpIds} at {int} index")
+    public void checkIfDataInTheНазваFieldIsAccepted(String[] addLocationPopUpIds, int arg1) {
+        pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent().isDataAccepted(addLocationPopUpIds[arg1]);
     }
 
     @Then("Choose a Kyiv city from the Місто drop-down list")
@@ -89,9 +89,9 @@ public class CanAddLocation {
 
     }
 
-    @And("Check if The Kyiv city accepted from the drop-down list by when choosing it in dropdown with {addLocationPopUpIds} at 1 index")
-    public void checkIfTheKyivCityAcceptedFromTheDropDownListByWhenChoosingItInDropdownWithAddLocationPopUpIdsAtIndex(String[] addLocationPopUpIds) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-        softAssert.assertTrue(pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent().isDataAccepted(addLocationPopUpIds[1]));
+    @And("Check if The Kyiv city accepted from the drop-down list by when choosing it in dropdown with {addLocationPopUpIds} at {int} index")
+    public void checkIfTheKyivCityAcceptedFromTheDropDownListByWhenChoosingItInDropdownWithAddLocationPopUpIdsAtIndex(String[] addLocationPopUpIds, int arg1) {
+        softAssert.assertTrue(pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent().isDataAccepted(addLocationPopUpIds[arg1]));
     }
 
     @Then("Choose Akademmistechko from the Метро\\/Місцевість drop-down list")
@@ -128,5 +128,38 @@ public class CanAddLocation {
     public void checkIfDataInTheАдресаFieldIsAcceptedByInputWithAddLocationPopUpIdsAtIndex(String[] addLocationPopUpIds) {
         pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent().isDataAccepted(addLocationPopUpIds[4]);
     }
+    @Then("Enter valid {coordinates} into the Координати field")
+    public void enterValidCoordinatesIntoTheКоординатиField(String coordinates) {
+        pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent().sendKeysCoordinatesField(coordinates);
+    }
 
+    @And("Check if Data in the Координати field is accepted by input with {addLocationPopUpIds} at 5 index")
+    public void checkIfDataInTheКоординатиFieldIsAcceptedByInputWithAddLocationPopUpIdsAtIndex(String[] addLocationPopUpIds) {
+        pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent().isDataAccepted(addLocationPopUpIds[5]);
+    }
+
+    @Then("Enter valid {validPhone} into the Номер телефону field")
+    public void enterValidValidPhoneIntoTheНомерТелефонуField(String validPhone) {
+        pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent().sendKeysPhoneField(validPhone);
+    }
+
+    @And("Check if Data in the Номер телефону field is accepted by input with {addLocationPopUpIds} at 6 index")
+    public void checkIfDataInTheНомерТелефонуFieldIsAcceptedByInputWithAddLocationPopUpIdsAtIndex(String[] addLocationPopUpIds) {
+        pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent().isDataAccepted(addLocationPopUpIds[6]);
+    }
+
+    @And("Click on Додати button")
+    public void clickOnДодатиButton() {
+        pageContext.getAllProfilePageComponents().getAddLocationPopUpComponent().clickOnAddButtonToClubPopUp();
+    }
+
+    @Then("Enter valid data {validPhone} into the Контакти group box 1st field")
+    public void enterValidDataValidPhoneIntoTheКонтактиGroupBoxStField(String validPhone) {
+        pageContext.getAllProfilePageComponents().getAddClubPopUpComponent().enterValidTelephoneNumber(validPhone);
+    }
+
+    @And("Check if Data in the Контакти group box 1st field is accepted by input with {addClubPopUpComponentIds} at {int} index")
+    public void checkIfDataInTheКонтактиGroupBoxStFieldIsAcceptedByInputWithAddClubPopUpComponentIdsAtIndex(String[] addClubPopUpComponentIds, int arg1) {
+        pageContext.getAllProfilePageComponents().getAddClubPopUpComponent().isDataAccepted(addClubPopUpComponentIds[arg1]);
+    }
 }
