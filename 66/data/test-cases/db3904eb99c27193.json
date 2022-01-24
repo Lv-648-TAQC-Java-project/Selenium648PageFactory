@@ -1,0 +1,432 @@
+{
+  "uid" : "db3904eb99c27193",
+  "name" : "TUA",
+  "fullName" : "com.ita.edu.teachua.api.tests.CityTest.changeLongitudeAndLatitudeOfCityTest",
+  "historyId" : "f8c5c9eef8230b231218bbecca871bb5",
+  "time" : {
+    "start" : 1643025640091,
+    "stop" : 1643025645814,
+    "duration" : 5723
+  },
+  "description" : "[API] Change the values of the longitude and latitude of the city",
+  "descriptionHtml" : "<p>[API] Change the values of the longitude and latitude of the city</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1643025634930,
+      "stop" : 1643025636630,
+      "duration" : 1700
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643025634930,
+        "stop" : 1643025634931,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643025526468,
+      "stop" : 1643025531007,
+      "duration" : 4539
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "[API] Change the values of the longitude and latitude of the city",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643025640091,
+        "stop" : 1643025640091,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Add new city",
+      "time" : {
+        "start" : 1643025641780,
+        "stop" : 1643025642582,
+        "duration" : 802
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643025641780,
+          "stop" : 1643025641780,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "city",
+        "value" : "City(id=null, name=Черкаси_1, latitude=32.0643, longitude=49.2542)"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Update city with id = '162'",
+      "time" : {
+        "start" : 1643025642662,
+        "stop" : 1643025643982,
+        "duration" : 1320
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643025642662,
+          "stop" : 1643025642663,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "city",
+        "value" : "City(id=null, name=Черкаси_1, latitude=49.2542, longitude=32.0643)"
+      }, {
+        "name" : "id",
+        "value" : "162"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Delete city with id = '162'",
+      "time" : {
+        "start" : 1643025644007,
+        "stop" : 1643025645813,
+        "duration" : 1806
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643025644007,
+          "stop" : 1643025644007,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "162"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.CityTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.CityTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "changeLongitudeAndLatitudeOfCityTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.CityTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az77-44"
+  }, {
+    "name" : "thread",
+    "value" : "2767@fv-az77-44.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 2,
+        "passed" : 26,
+        "unknown" : 0,
+        "total" : 29
+      },
+      "items" : [ {
+        "uid" : "6846d5f63fd740c5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/6846d5f63fd740c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643023570576,
+          "stop" : 1643023575299,
+          "duration" : 4723
+        }
+      }, {
+        "uid" : "d835b00f623fb467",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/65//#testresult/d835b00f623fb467",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642957657503,
+          "stop" : 1642957662386,
+          "duration" : 4883
+        }
+      }, {
+        "uid" : "7b1ff60acb90bf9f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/64//#testresult/7b1ff60acb90bf9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642951758808,
+          "stop" : 1642951764575,
+          "duration" : 5767
+        }
+      }, {
+        "uid" : "5dabc6689e27e3d0",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/63//#testresult/5dabc6689e27e3d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642947837731,
+          "stop" : 1642947842136,
+          "duration" : 4405
+        }
+      }, {
+        "uid" : "9b5a2bc3c76d72d6",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/62//#testresult/9b5a2bc3c76d72d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642943696359,
+          "stop" : 1642943701548,
+          "duration" : 5189
+        }
+      }, {
+        "uid" : "dbac4a75685b2818",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/dbac4a75685b2818",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642936006239,
+          "stop" : 1642936010586,
+          "duration" : 4347
+        }
+      }, {
+        "uid" : "58966118f4531846",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/61//#testresult/58966118f4531846",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642885767263,
+          "stop" : 1642885772139,
+          "duration" : 4876
+        }
+      }, {
+        "uid" : "4d283a5982f3b2cd",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/4d283a5982f3b2cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642884073548,
+          "stop" : 1642884078247,
+          "duration" : 4699
+        }
+      }, {
+        "uid" : "7679514c2246408e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/7679514c2246408e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642879771554,
+          "stop" : 1642879775821,
+          "duration" : 4267
+        }
+      }, {
+        "uid" : "459e74fe1c7096fb",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/459e74fe1c7096fb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642878490963,
+          "stop" : 1642878495317,
+          "duration" : 4354
+        }
+      }, {
+        "uid" : "7620469deb61bca5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/59//#testresult/7620469deb61bca5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642876112404,
+          "stop" : 1642876117827,
+          "duration" : 5423
+        }
+      }, {
+        "uid" : "801929674f86b2a9",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/58//#testresult/801929674f86b2a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642870365503,
+          "stop" : 1642870370182,
+          "duration" : 4679
+        }
+      }, {
+        "uid" : "6b56c1e055669c0b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/6b56c1e055669c0b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642867922693,
+          "stop" : 1642867927869,
+          "duration" : 5176
+        }
+      }, {
+        "uid" : "b87428723f433707",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/b87428723f433707",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642849519084,
+          "stop" : 1642849524928,
+          "duration" : 5844
+        }
+      }, {
+        "uid" : "8f1adc6492b61028",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/8f1adc6492b61028",
+        "status" : "skipped",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+        "time" : {
+          "start" : 1642792249252,
+          "stop" : 1642792249255,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "8ee34bb09f18e646",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/8ee34bb09f18e646",
+        "status" : "skipped",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+        "time" : {
+          "start" : 1642789587693,
+          "stop" : 1642789587695,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "862767779a34bd4c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/862767779a34bd4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642787090858,
+          "stop" : 1642787098324,
+          "duration" : 7466
+        }
+      }, {
+        "uid" : "79d4737952990db6",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/79d4737952990db6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642787058094,
+          "stop" : 1642787065974,
+          "duration" : 7880
+        }
+      }, {
+        "uid" : "bcb6cb77fabb2cec",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/bcb6cb77fabb2cec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786465015,
+          "stop" : 1642786471361,
+          "duration" : 6346
+        }
+      }, {
+        "uid" : "c755432f98260afc",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/c755432f98260afc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786470040,
+          "stop" : 1642786475177,
+          "duration" : 5137
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "db3904eb99c27193.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,361 @@
+{
+  "uid" : "8871f2e66d26ebd8",
+  "name" : "TUA-428",
+  "fullName" : "com.ita.edu.teachua.ui.tests.BasicSearchTest.checkInvalidSymbolsAndQuantityPaste",
+  "historyId" : "9370f7af46fc96298912928a455092df",
+  "time" : {
+    "start" : 1643026196139,
+    "stop" : 1643026197281,
+    "duration" : 1142
+  },
+  "description" : "Verify search field behavior for invalid number of symbols pasted",
+  "descriptionHtml" : "<p>Verify search field behavior for invalid number of symbols pasted</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1643026191828,
+      "stop" : 1643026196137,
+      "duration" : 4309
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643025526468,
+      "stop" : 1643025531007,
+      "duration" : 4539
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify search field behavior for invalid number of symbols pasted",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Insert from clipboard *152rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv+1* in search field",
+      "time" : {
+        "start" : 1643026196142,
+        "stop" : 1643026196246,
+        "duration" : 104
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "152rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv+1"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Check if {title} of invalid search results is present on the page",
+      "time" : {
+        "start" : 1643026196246,
+        "stop" : 1643026197281,
+        "duration" : 1035
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1643026197281,
+      "stop" : 1643026197350,
+      "duration" : 69
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkInvalidSymbolsAndQuantityPaste"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az77-44"
+  }, {
+    "name" : "thread",
+    "value" : "2767@fv-az77-44.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "152rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv+1"
+  }, {
+    "name" : "arg1",
+    "value" : "За критеріями пошуку гуртків не знайдено"
+  } ],
+  "links" : [ {
+    "name" : "TUA-428",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 24,
+        "unknown" : 0,
+        "total" : 29
+      },
+      "items" : [ {
+        "uid" : "c5bfb5def8cbce3e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/c5bfb5def8cbce3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643024179794,
+          "stop" : 1643024180964,
+          "duration" : 1170
+        }
+      }, {
+        "uid" : "1974722d5be81d43",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/65//#testresult/1974722d5be81d43",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642958255838,
+          "stop" : 1642958257004,
+          "duration" : 1166
+        }
+      }, {
+        "uid" : "17a7d76b2591a4c4",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/64//#testresult/17a7d76b2591a4c4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642952412946,
+          "stop" : 1642952414107,
+          "duration" : 1161
+        }
+      }, {
+        "uid" : "c115d2788e960e1a",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/63//#testresult/c115d2788e960e1a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642948468687,
+          "stop" : 1642948469866,
+          "duration" : 1179
+        }
+      }, {
+        "uid" : "755541a58af43b3d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/62//#testresult/755541a58af43b3d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642944368736,
+          "stop" : 1642944369879,
+          "duration" : 1143
+        }
+      }, {
+        "uid" : "e16f4d31401961af",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/e16f4d31401961af",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642936698106,
+          "stop" : 1642936699306,
+          "duration" : 1200
+        }
+      }, {
+        "uid" : "53e0f66f6f281b3c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/61//#testresult/53e0f66f6f281b3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642886374296,
+          "stop" : 1642886375426,
+          "duration" : 1130
+        }
+      }, {
+        "uid" : "a93d2f2c47f1784b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/a93d2f2c47f1784b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642884731358,
+          "stop" : 1642884732516,
+          "duration" : 1158
+        }
+      }, {
+        "uid" : "b9e93534137c6f5b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/b9e93534137c6f5b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642880423090,
+          "stop" : 1642880424235,
+          "duration" : 1145
+        }
+      }, {
+        "uid" : "a193af21649e8743",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/a193af21649e8743",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642879148310,
+          "stop" : 1642879149461,
+          "duration" : 1151
+        }
+      }, {
+        "uid" : "9f5175101a645068",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/59//#testresult/9f5175101a645068",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642876798893,
+          "stop" : 1642876800071,
+          "duration" : 1178
+        }
+      }, {
+        "uid" : "499acf9a96b44825",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/58//#testresult/499acf9a96b44825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642871028384,
+          "stop" : 1642871029515,
+          "duration" : 1131
+        }
+      }, {
+        "uid" : "422a00470b36eb72",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/422a00470b36eb72",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642868583184,
+          "stop" : 1642868584333,
+          "duration" : 1149
+        }
+      }, {
+        "uid" : "2573ad31d95b4ef",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/2573ad31d95b4ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642850204248,
+          "stop" : 1642850205422,
+          "duration" : 1174
+        }
+      }, {
+        "uid" : "cb3e9942e12467d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/cb3e9942e12467d",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az74-933', ip: '10.1.0.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [0fdc91901841fadad3b02d6504bad363, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.MVfNas}, goog:chromeOptions: {debuggerAddress: localhost:37677}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37677/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0fdc91901841fadad3b02d6504bad363",
+        "time" : {
+          "start" : 1642792760651,
+          "stop" : 1642792770849,
+          "duration" : 10198
+        }
+      }, {
+        "uid" : "f3f459f13704906d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/f3f459f13704906d",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az42-839', ip: '10.1.0.98', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [2c13d8afe7dcff5339616a370facecfe, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.WrSqGv}, goog:chromeOptions: {debuggerAddress: localhost:35149}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35149/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2c13d8afe7dcff5339616a370facecfe",
+        "time" : {
+          "start" : 1642790087838,
+          "stop" : 1642790097972,
+          "duration" : 10134
+        }
+      }, {
+        "uid" : "36394ce262d01adb",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/36394ce262d01adb",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az77-149', ip: '10.1.0.181', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [f10f7d9de03e94b7b70be242be5755a8, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.1ByViK}, goog:chromeOptions: {debuggerAddress: localhost:46211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46211/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f10f7d9de03e94b7b70be242be5755a8",
+        "time" : {
+          "start" : 1642787615729,
+          "stop" : 1642787625904,
+          "duration" : 10175
+        }
+      }, {
+        "uid" : "7c3d298947856d41",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/7c3d298947856d41",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input[id^='rc_select']\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az33-58', ip: '10.1.0.188', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [53d02b5d601b304b7f96978cce7bc2ec, findElement {using=css selector, value=input[id^='rc_select']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.bhW4O5}, goog:chromeOptions: {debuggerAddress: localhost:46817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46817/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 53d02b5d601b304b7f96978cce7bc2ec",
+        "time" : {
+          "start" : 1642787590082,
+          "stop" : 1642787600232,
+          "duration" : 10150
+        }
+      }, {
+        "uid" : "796501b18c5cf761",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/796501b18c5cf761",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.clubs-not-found\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az83-73', ip: '10.1.0.104', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1025-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [735da35b9c3705954ff4f078990cc061, findElement {using=css selector, value=div.clubs-not-found}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.MfQa0x}, goog:chromeOptions: {debuggerAddress: localhost:35087}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35087/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 735da35b9c3705954ff4f078990cc061",
+        "time" : {
+          "start" : 1642787148728,
+          "stop" : 1642787159321,
+          "duration" : 10593
+        }
+      }, {
+        "uid" : "ce1f8004ca64e6aa",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/ce1f8004ca64e6aa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642787137705,
+          "stop" : 1642787138843,
+          "duration" : 1138
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8871f2e66d26ebd8.json",
+  "parameterValues" : [ "152rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv+1", "За критеріями пошуку гуртків не знайдено" ]
+}

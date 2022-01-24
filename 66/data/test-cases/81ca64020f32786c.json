@@ -1,0 +1,351 @@
+{
+  "uid" : "81ca64020f32786c",
+  "name" : "TUA-502",
+  "fullName" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest.VerifyThatUserAsOwnerCannotCreateNewClubIsInCenterIfNameFieldContainLessThan5Characters",
+  "historyId" : "c820dbadcb14cd1b7056c1876d08d7dc",
+  "time" : {
+    "start" : 1643025621714,
+    "stop" : 1643025622497,
+    "duration" : 783
+  },
+  "description" : "This test case verify  that User as \"Керiвник гуртка\" cannot create new club is in a center if \"Назва\" field contain less than 5 characters",
+  "descriptionHtml" : "<p>This test case verify  that User as &quot;Керiвник гуртка&quot; cannot create new club is in a center if &quot;Назва&quot; field contain less than 5 characters</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1643025595843,
+      "stop" : 1643025597298,
+      "duration" : 1455
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643025595844,
+        "stop" : 1643025595847,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643025526468,
+      "stop" : 1643025531007,
+      "duration" : 4539
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "This test case verify  that User as \"Керiвник гуртка\" cannot create new club is in a center if \"Назва\" field contain less than 5 characters",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643025621716,
+        "stop" : 1643025622495,
+        "duration" : 779
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643025621716,
+          "stop" : 1643025621716,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Вокальна студія, музика, музичні інструменти], \"name\":\"char\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"blocks\":[{\"key\":\"brl63\",\"text\":\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\",\"type\":\"unstyled\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "VerifyThatUserAsOwnerCannotCreateNewClubIsInCenterIfNameFieldContainLessThan5Characters"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az77-44"
+  }, {
+    "name" : "thread",
+    "value" : "2767@fv-az77-44.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-502",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 2,
+        "passed" : 27,
+        "unknown" : 0,
+        "total" : 29
+      },
+      "items" : [ {
+        "uid" : "806dbf4e846841e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/806dbf4e846841e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643023553006,
+          "stop" : 1643023553821,
+          "duration" : 815
+        }
+      }, {
+        "uid" : "378ec46d5dc4b31c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/65//#testresult/378ec46d5dc4b31c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642957652092,
+          "stop" : 1642957652884,
+          "duration" : 792
+        }
+      }, {
+        "uid" : "e47a5fce423d3962",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/64//#testresult/e47a5fce423d3962",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642951752923,
+          "stop" : 1642951753827,
+          "duration" : 904
+        }
+      }, {
+        "uid" : "18065f6715dd172",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/63//#testresult/18065f6715dd172",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642947832223,
+          "stop" : 1642947833024,
+          "duration" : 801
+        }
+      }, {
+        "uid" : "ddeaa9fd816ca7cd",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/62//#testresult/ddeaa9fd816ca7cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642943690128,
+          "stop" : 1642943691429,
+          "duration" : 1301
+        }
+      }, {
+        "uid" : "7fbef5dba55d3389",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/7fbef5dba55d3389",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642936000831,
+          "stop" : 1642936001661,
+          "duration" : 830
+        }
+      }, {
+        "uid" : "9afc1877d233592",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/61//#testresult/9afc1877d233592",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642885761634,
+          "stop" : 1642885762455,
+          "duration" : 821
+        }
+      }, {
+        "uid" : "5ae5a4693bcd48e2",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/5ae5a4693bcd48e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642884064792,
+          "stop" : 1642884065811,
+          "duration" : 1019
+        }
+      }, {
+        "uid" : "232bb39bbaa65db",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/232bb39bbaa65db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642879766073,
+          "stop" : 1642879766878,
+          "duration" : 805
+        }
+      }, {
+        "uid" : "8482b1ba3e16840b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/8482b1ba3e16840b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642878484873,
+          "stop" : 1642878485705,
+          "duration" : 832
+        }
+      }, {
+        "uid" : "edf3adf3c2cb115c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/59//#testresult/edf3adf3c2cb115c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642876106505,
+          "stop" : 1642876107313,
+          "duration" : 808
+        }
+      }, {
+        "uid" : "c8ef64b6be8ab5b5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/58//#testresult/c8ef64b6be8ab5b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642870359972,
+          "stop" : 1642870360926,
+          "duration" : 954
+        }
+      }, {
+        "uid" : "e005f634190880d3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/e005f634190880d3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642867914923,
+          "stop" : 1642867915869,
+          "duration" : 946
+        }
+      }, {
+        "uid" : "fc327a1acc1c3124",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/fc327a1acc1c3124",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642849512718,
+          "stop" : 1642849513550,
+          "duration" : 832
+        }
+      }, {
+        "uid" : "1392fe59bdd819ed",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/1392fe59bdd819ed",
+        "status" : "skipped",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+        "time" : {
+          "start" : 1642792247502,
+          "stop" : 1642792247506,
+          "duration" : 4
+        }
+      }, {
+        "uid" : "d36040c1b8c4e610",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/d36040c1b8c4e610",
+        "status" : "skipped",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.singin.SuccessSignIn), not marked as ignorable (3 known properties: \"id\", \"email\", \"accessToken\"])\n at [Source: (String)\"{\"status\":405,\"message\":\"Request method 'POST' not supported\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.singin.SuccessSignIn[\"status\"])",
+        "time" : {
+          "start" : 1642789586223,
+          "stop" : 1642789586224,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "7682451c93311c20",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/7682451c93311c20",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642787077006,
+          "stop" : 1642787077865,
+          "duration" : 859
+        }
+      }, {
+        "uid" : "5fdbb78693990b3c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/56//#testresult/5fdbb78693990b3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642787051217,
+          "stop" : 1642787052031,
+          "duration" : 814
+        }
+      }, {
+        "uid" : "5c9b23b86f2686fa",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/55//#testresult/5c9b23b86f2686fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786458801,
+          "stop" : 1642786459615,
+          "duration" : 814
+        }
+      }, {
+        "uid" : "239e26b5d6e3f7a3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/54//#testresult/239e26b5d6e3f7a3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642786463411,
+          "stop" : 1642786464239,
+          "duration" : 828
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "81ca64020f32786c.json",
+  "parameterValues" : [ ]
+}
