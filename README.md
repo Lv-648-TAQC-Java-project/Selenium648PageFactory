@@ -29,9 +29,12 @@ adminPassword=example
 - gitter chat
 - license
 - etc.
-[![Github Issues](https://img.shields.io/github/issues/ita-social-projects/GreenCity?style=flat-square)](https://github.com/ita-social-projects/TeachUA_TA/issues)
-[![Pending Pull-Requests](https://img.shields.io/github/issues-pr/ita-social-projects/GreenCity?style=flat-square)](https://github.com/ita-social-projects/TeachUA_TA/pulls)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+[![Build Status](https://img.shields.io/github/workflow/status/ita-social-projects/TeachUA_TA/allure-testng-maven)](https://github.com/ita-social-projects/TeachUA_TA/actions/workflows/allure-testng-maven.yml)
+[![Github Issues](https://img.shields.io/github/issues/ita-social-projects/TeachUA_TA)](https://github.com/ita-social-projects/TeachUA_TA/issues)
+[![Pending Pull-Requests](https://img.shields.io/github/issues-pr/ita-social-projects/TeachUA_TA)](https://github.com/ita-social-projects/TeachUA_TA/pulls)
+[![Closed Pull-Requests](https://img.shields.io/github/issues-pr-closed/ita-social-projects/TeachUA_TA)](https://github.com/ita-social-projects/TeachUA_TA/pulls?q=is%3Apr+is%3Aclosed)
+[![License](https://img.shields.io/github/license/ita-social-projects/TeachUA_TA)](http://badges.mit-license.org)
+
 
 - For more on these wonderful  badges, refer to <a href="https://shields.io/" target="_blank">shields.io</a>.
 
