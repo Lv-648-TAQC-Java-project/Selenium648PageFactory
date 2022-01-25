@@ -1,0 +1,356 @@
+{
+  "uid" : "c60041439fa732b9",
+  "name" : "TUA-226",
+  "fullName" : "com.ita.edu.teachua.ui.tests.BasicSearchTest.checkSearchWithNameOfClubsTyping",
+  "historyId" : "f575ffb8f8893edb2395830d32dac97b",
+  "time" : {
+    "start" : 1643129917688,
+    "stop" : 1643129919043,
+    "duration" : 1355
+  },
+  "description" : "TUA-226 Verify that user can perform basic search by typing name of a club",
+  "descriptionHtml" : "<p>TUA-226 Verify that user can perform basic search by typing name of a club</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1643129913549,
+      "stop" : 1643129917686,
+      "duration" : 4137
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643129043956,
+      "stop" : 1643129047093,
+      "duration" : 3137
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "TUA-226 Verify that user can perform basic search by typing name of a club",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Type *Студія танцю \"Несамовиті\"* in search field",
+      "time" : {
+        "start" : 1643129917689,
+        "stop" : 1643129917955,
+        "duration" : 266
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "Студія танцю \"Несамовиті\""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if club Студія танцю \"Несамовиті\" is present on the page",
+      "time" : {
+        "start" : 1643129917955,
+        "stop" : 1643129919043,
+        "duration" : 1088
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Студія танцю \"Несамовиті\""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1643129919044,
+      "stop" : 1643129919122,
+      "duration" : 78
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkSearchWithNameOfClubsTyping"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az213-112"
+  }, {
+    "name" : "thread",
+    "value" : "2842@fv-az213-112.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Студія танцю \"Несамовиті\""
+  } ],
+  "links" : [ {
+    "name" : "TUA-226",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 6,
+        "skipped" : 0,
+        "passed" : 32,
+        "unknown" : 0,
+        "total" : 39
+      },
+      "items" : [ {
+        "uid" : "93be8d36709022a5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/71//#testresult/93be8d36709022a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129888076,
+          "stop" : 1643129889522,
+          "duration" : 1446
+        }
+      }, {
+        "uid" : "2c874777f5863f",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/70//#testresult/2c874777f5863f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643123455140,
+          "stop" : 1643123456543,
+          "duration" : 1403
+        }
+      }, {
+        "uid" : "6650108c2e2a52db",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/69//#testresult/6650108c2e2a52db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643123390426,
+          "stop" : 1643123391821,
+          "duration" : 1395
+        }
+      }, {
+        "uid" : "2b6cf4be1339bf66",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/2b6cf4be1339bf66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643109468484,
+          "stop" : 1643109470019,
+          "duration" : 1535
+        }
+      }, {
+        "uid" : "7648ad9b5eda8374",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/7648ad9b5eda8374",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643104708184,
+          "stop" : 1643104709617,
+          "duration" : 1433
+        }
+      }, {
+        "uid" : "a397442987a9378d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/a397442987a9378d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643101068829,
+          "stop" : 1643101070319,
+          "duration" : 1490
+        }
+      }, {
+        "uid" : "4bd0f2c18213ffa8",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/4bd0f2c18213ffa8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643060373714,
+          "stop" : 1643060375081,
+          "duration" : 1367
+        }
+      }, {
+        "uid" : "3dbfc16fb413e90c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/3dbfc16fb413e90c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643058368769,
+          "stop" : 1643058370147,
+          "duration" : 1378
+        }
+      }, {
+        "uid" : "ab022f1fe26bcd40",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/ab022f1fe26bcd40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643056190412,
+          "stop" : 1643056191850,
+          "duration" : 1438
+        }
+      }, {
+        "uid" : "72b8bf195a770e8",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/72b8bf195a770e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643026283282,
+          "stop" : 1643026284615,
+          "duration" : 1333
+        }
+      }, {
+        "uid" : "8d3a97f51d97b475",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/8d3a97f51d97b475",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643024277138,
+          "stop" : 1643024278540,
+          "duration" : 1402
+        }
+      }, {
+        "uid" : "dde03dd342c8be0",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/65//#testresult/dde03dd342c8be0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642958342646,
+          "stop" : 1642958344002,
+          "duration" : 1356
+        }
+      }, {
+        "uid" : "2d5709030f3e6aee",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/64//#testresult/2d5709030f3e6aee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642952506773,
+          "stop" : 1642952508074,
+          "duration" : 1301
+        }
+      }, {
+        "uid" : "1a4a7e25f644b9bc",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/63//#testresult/1a4a7e25f644b9bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642948556174,
+          "stop" : 1642948557486,
+          "duration" : 1312
+        }
+      }, {
+        "uid" : "125d508bceb67c4d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/62//#testresult/125d508bceb67c4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642944462858,
+          "stop" : 1642944464278,
+          "duration" : 1420
+        }
+      }, {
+        "uid" : "7aa4f78bbee1f127",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/7aa4f78bbee1f127",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642936785427,
+          "stop" : 1642936786826,
+          "duration" : 1399
+        }
+      }, {
+        "uid" : "a023c6d50258679c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/61//#testresult/a023c6d50258679c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642886462479,
+          "stop" : 1642886463887,
+          "duration" : 1408
+        }
+      }, {
+        "uid" : "b31ad3366508c99b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/b31ad3366508c99b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642884820460,
+          "stop" : 1642884821871,
+          "duration" : 1411
+        }
+      }, {
+        "uid" : "18615e69137b9e0f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/18615e69137b9e0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642880508975,
+          "stop" : 1642880510423,
+          "duration" : 1448
+        }
+      }, {
+        "uid" : "676953eb23bfff72",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/676953eb23bfff72",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642879234912,
+          "stop" : 1642879236264,
+          "duration" : 1352
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c60041439fa732b9.json",
+  "parameterValues" : [ "Студія танцю \"Несамовиті\"" ]
+}
