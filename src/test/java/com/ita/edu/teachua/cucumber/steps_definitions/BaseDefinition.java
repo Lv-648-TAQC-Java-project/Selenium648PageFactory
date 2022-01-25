@@ -15,13 +15,13 @@ import java.time.Duration;
 public class BaseDefinition {
     protected static WebDriver driver;
     protected static TestValueProvider testValueProvider;
+
     @BeforeAll
     public static void beforeAll() throws IOException {
         testValueProvider = new TestValueProvider();
         WebDriverManager.chromedriver().setup();
-
-
     }
+
     @Before
     public void before(){
         ChromeOptions options = new ChromeOptions();

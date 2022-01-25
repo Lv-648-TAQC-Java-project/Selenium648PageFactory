@@ -8,7 +8,7 @@ adminEmail=example@test.com
 adminPassword=example
 ```
 
-<a href="https://softserve.academy/"><img src="https://s.057.ua/section/newsInternalIcon/upload/images/news/icon/000/050/792/vnutr_5ce4f980ef15f.jpg" title="SoftServe IT Academy" alt="SoftServe IT Academy"></a>
+<a href="https://softserve.academy/"><img src="https://github.com/ita-social-projects/TeachUA/blob/main/images/logo.png" title="SoftServe IT Academy" alt="SoftServe IT Academy"></a>
 
 ***INSERT GRAPHIC HERE (include hyperlink in image)***
 
@@ -21,7 +21,6 @@ adminPassword=example
 > include terms/tags that can be searched
 
 **Badges will go here**
-
 - build status
 - coverage
 - issues (waffle.io maybe)
@@ -33,11 +32,12 @@ adminPassword=example
 - license
 - etc.
 
-[![Build Status](https://img.shields.io/travis/ita-social-projects/GreenCity/master?style=flat-square)](https://travis-ci.org/github/ita-social-projects/GreenCity)
-[![Coverage Status](https://img.shields.io/gitlab/coverage/ita-social-projects/GreenCity/master?style=flat-square)](https://coveralls.io)
-[![Github Issues](https://img.shields.io/github/issues/ita-social-projects/GreenCity?style=flat-square)](https://github.com/ita-social-projects/GreenCity/issues)
-[![Pending Pull-Requests](https://img.shields.io/github/issues-pr/ita-social-projects/GreenCity?style=flat-square)](https://github.com/ita-social-projects/GreenCity/pulls)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+[![Build Status](https://img.shields.io/github/workflow/status/ita-social-projects/TeachUA_TA/allure-testng-maven)](https://github.com/ita-social-projects/TeachUA_TA/actions/workflows/allure-testng-maven.yml)
+[![Github Issues](https://img.shields.io/github/issues/ita-social-projects/TeachUA_TA)](https://github.com/ita-social-projects/TeachUA_TA/issues)
+[![Pending Pull-Requests](https://img.shields.io/github/issues-pr/ita-social-projects/TeachUA_TA)](https://github.com/ita-social-projects/TeachUA_TA/pulls)
+[![Closed Pull-Requests](https://img.shields.io/github/issues-pr-closed/ita-social-projects/TeachUA_TA)](https://github.com/ita-social-projects/TeachUA_TA/pulls?q=is%3Apr+is%3Aclosed)
+[![License](https://img.shields.io/github/license/ita-social-projects/TeachUA_TA)](http://badges.mit-license.org)
+
 
 - For more on these wonderful  badges, refer to <a href="https://shields.io/" target="_blank">shields.io</a>.
 
@@ -51,18 +51,9 @@ adminPassword=example
   - [Required to install](#Required-to-install)
   - [Environment](#Environment)
   - [Clone](#Clone)
-  - [Setup](#Setup)
   - [How to run local](#How-to-run-local)
-  - [How to run Docker](#How-to-run-Docker)
-- [Usage](#Usage)
-  - [How to work with swagger UI](#How-to-work-with-swagger-UI)
-  - [How to run tests](#How-to-run-tests)
-  - [How to Checkstyle](#How-to-Checkstyle)
-- [Documentation](#Documentation))
 - [Contributing](#contributing)
   - [git flow](#git-flow)
-  - [issue flow](#git-flow)
-- [FAQ](#faq)
 - [Support](#support)
 - [License](#license)
 
@@ -74,65 +65,29 @@ adminPassword=example
 - Images of what it should look like
 
 ### Required to install
-* Python (3.6.3)
-* PostgreSQL (9.5.9)
-* Django (1.11.6)
-* NodeJS (6.11.4)
-* Redis (3.0.6)
+* Java(1.8)
+* Maven(3.8.2)
+* Allure(2.17.2)
 
 ### Environment
 environmental variables
 ```properties
-spring.datasource.url=${DATASOURCE_URL}
-spring.datasource.username=${DATASOURCE_USER}
-spring.datasource.password=${DATASOURCE_PASSWORD}
-spring.mail.username=${EMAIL_ADDRESS}
-spring.mail.password=${EMAIL_PASSWORD}
-cloud.name=${CLOUD_NAME}
-api.key=${API_KEY}
-api.secret=${API_SECRET}
+ BASE_URL=${secrets.BASE_URL}
+ ADMIN_EMAIL=${secrets.ADMIN_EMAIL}
+ ADMIN_PASSWORD=${secrets.ADMIN_PASSWORD}
+ TEST_TEACH_UA_META_EMAIL=${secrets.TEST_TEACH_UA_META_EMAIL}
+ TEST_TEACH_UA_META_PASSWORD=${secrets.TEST_TEACH_UA_META_PASSWORD}
 ```
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/ita-social-projects/SOMEREPO`
-
-### Setup
-
-- If you want more syntax highlighting, format your code like this:
-
-> update and install this package first
-
-```shell
-$ brew update
-$ brew install SOMEREPOproductions
-```
-
-> now install npm and bower packages
-
-```shell
-$ npm install
-$ bower install
-```
-
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
+- Clone this repo to your local machine using `https://github.com/ita-social-projects/TeachUA_TA.git`
 
 ### How to run local
-
-### How to run Docker
-
+mvn test
 ---
 
-## Usage
-### How to work with swagger UI
-### How to run tests
-### How to Checkstyle
 
----
-
-## Documentation
-
----
 
 ## Contributing
 
@@ -144,51 +99,35 @@ $ bower install
     - 🍴 Fork this repo!
 
 - **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/ita-social-projects/SOMEREPO.git`
+    - 👯 Clone this repo to your local machine using `https://github.com/ita-social-projects/TeachUA_TA.git`
 
 #### Step 2
 
-- **HACK AWAY!** 🔨🔨🔨
-
-#### Step 3
-
-- 🔃 Create a new pull request using <a href="https://github.com/ita-social-projects/SOMEREPO/compare/" target="_blank">github.com/ita-social-projects/SOMEREPO</a>.
-
-### Issue flow
-
----
+- 🔃 Create a new pull request using <a href="https://github.com/ita-social-projects/TeachUA_TA/compare/" target="_blank">github.com/ita-social-projects/SOMEREPO</a>.
 
 ## Team
 
 > Or Contributors/People
-
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam) 
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)  
+> 
+[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/Mykhailo5)
+[![@lhalam](https://avatars.githubusercontent.com/u/89529887?s=100&v=4)](https://github.com/vy1989)
+[![@lhalam](https://avatars.githubusercontent.com/u/39509993?s=100&v=4)](https://github.com/AndriyBarskyi)
+[![@lhalam](https://avatars.githubusercontent.com/u/51734891?s=100&v=4)](https://github.com/nataskrypak)
+[![@lhalam](https://avatars.githubusercontent.com/u/44065623?s=100&v=4)](https://github.com/Nadya101) 
+[![@lhalam](https://avatars.githubusercontent.com/u/81072407?s=100&v=4)](https://github.com/andriy66)
+[![@lhalam](https://avatars.githubusercontent.com/u/62646603?s=100&v=4)](https://github.com/Pidstavskiy)
+[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/MakKeywa)  
 
 - You can just grab their GitHub profile image URL
 - You should probably resize their picture using `?s=200` at the end of the image URL.
-
----
-
-## FAQ
-
-- **How do I do *specifically* so and so?**
-    - No problem! Just do this.
-
----
 
 ## Support
 
 Reach out to me at one of the following places!
 
-- Website at <a href="http://Website.com" target="_blank">`Website.com`</a>
-- Facebook at <a href="https://www.facebook.com/LiubomyrHalamaha/" target="_blank">`Liubomyr Halamaha`</a>
+- Website at <a href="https://speak-ukrainian.org.ua/" target="_blank">`Навчай українською`</a>
+- Facebook at <a href="https://www.facebook.com/teach.in.ukrainian
+" target="_blank">`Навчай українською`</a>
 - Insert more social links here.
 
 ---
