@@ -352,27 +352,30 @@ public class AdvancedSearchPage extends BasePage {
 
     @Step("Go to the next page with clubs")
     public AdvancedSearchPage clickOnNextPageButton() {
-        this.waitUntilVisibilityOfElementLocated(By.xpath(AdvancedSearchPageLocators.NEXT_PAGE_BUTTON_XPATH), 5);
+        this.sleep(1000);
+        //this.waitUntilVisibilityOfElementLocated(By.xpath(AdvancedSearchPageLocators.NEXT_PAGE_BUTTON_XPATH), 5);
         nextPageButton.click();
         return this;
     }
 
     @Step("Get number of pages with clubs")
     public int getNumberOfPagesWithClubs() {
-        sleep(1000);
-        this.waitForAmountOfElements(By.xpath(AdvancedSearchPageLocators.CLUB_CARD_XPATH), AMOUNT_OF_CLUBS_ON_ONE_PAGE, 5);
-        this.waitUntilVisibilityOfElementLocated(By.xpath(AdvancedSearchPageLocators.LAST_PAGE_BUTTON_XPATH), 5);
+        this.sleep(1000);
+        //this.waitForAmountOfElements(By.xpath(AdvancedSearchPageLocators.CLUB_CARD_XPATH), AMOUNT_OF_CLUBS_ON_ONE_PAGE, 5);
+        //this.waitUntilVisibilityOfElementLocated(By.xpath(AdvancedSearchPageLocators.LAST_PAGE_BUTTON_XPATH), 5);
         return Integer.parseInt(lastPageButton.getInnerText());
     }
 
     @Step("Click on arrow up to sort clubs in descending order")
     public AdvancedSearchPage clickOnArrowUpButton() {
+        this.sleep(1000);
         arrowUpButton.click();
         return this;
     }
 
     @Step("Click on 'за рейтингом' to sort clubs by rating in descending order")
     public AdvancedSearchPage clickOnSortByRatingButton() {
+        this.sleep(1000);
         sortByRatingButton.click();
         return this;
     }
