@@ -125,8 +125,9 @@ mvn test
 
 Reach out to me at one of the following places!
 
-- Website at <a href="http://Website.com" target="_blank">`Website.com`</a>
-- Facebook at <a href="https://www.facebook.com/LiubomyrHalamaha/" target="_blank">`Liubomyr Halamaha`</a>
+- Website at <a href="https://speak-ukrainian.org.ua/" target="_blank">`Навчай українською`</a>
+- Facebook at <a href="https://www.facebook.com/teach.in.ukrainian
+" target="_blank">`Навчай українською`</a>
 - Insert more social links here.
 
 ---
