@@ -1,0 +1,356 @@
+{
+  "uid" : "701e927add72b290",
+  "name" : "TUA-428",
+  "fullName" : "com.ita.edu.teachua.ui.tests.BasicSearchTest.checkInvalidSymbolsAndQuantityTyping",
+  "historyId" : "e3ad5643c0971ac36ade0a1270d3a858",
+  "time" : {
+    "start" : 1643134148730,
+    "stop" : 1643134150228,
+    "duration" : 1498
+  },
+  "description" : "Verify search field behavior for invalid number of symbols entered",
+  "descriptionHtml" : "<p>Verify search field behavior for invalid number of symbols entered</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1643134145161,
+      "stop" : 1643134148728,
+      "duration" : 3567
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643133389830,
+      "stop" : 1643133391949,
+      "duration" : 2119
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify search field behavior for invalid number of symbols entered",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Type *150rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv* in search field",
+      "time" : {
+        "start" : 1643134148730,
+        "stop" : 1643134149230,
+        "duration" : 500
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "150rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if {title} of invalid search results is present on the page",
+      "time" : {
+        "start" : 1643134149230,
+        "stop" : 1643134150228,
+        "duration" : 998
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1643134150229,
+      "stop" : 1643134150301,
+      "duration" : 72
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkInvalidSymbolsAndQuantityTyping"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az203-521"
+  }, {
+    "name" : "thread",
+    "value" : "2794@fv-az203-521.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "150rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv"
+  }, {
+    "name" : "arg1",
+    "value" : "За критеріями пошуку гуртків не знайдено"
+  } ],
+  "links" : [ {
+    "name" : "TUA-428",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 6,
+        "skipped" : 0,
+        "passed" : 37,
+        "unknown" : 0,
+        "total" : 43
+      },
+      "items" : [ {
+        "uid" : "11db298784333b64",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/74//#testresult/11db298784333b64",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130974894,
+          "stop" : 1643130976401,
+          "duration" : 1507
+        }
+      }, {
+        "uid" : "530d9ee17165ded4",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/75//#testresult/530d9ee17165ded4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130934202,
+          "stop" : 1643130935702,
+          "duration" : 1500
+        }
+      }, {
+        "uid" : "70e81b7a32b25002",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/73//#testresult/70e81b7a32b25002",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130057694,
+          "stop" : 1643130059309,
+          "duration" : 1615
+        }
+      }, {
+        "uid" : "9b7f50736f0e03d7",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/72//#testresult/9b7f50736f0e03d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129842751,
+          "stop" : 1643129844256,
+          "duration" : 1505
+        }
+      }, {
+        "uid" : "bce6bb67a34c6b9d",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/71//#testresult/bce6bb67a34c6b9d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129818255,
+          "stop" : 1643129819939,
+          "duration" : 1684
+        }
+      }, {
+        "uid" : "5faab224f9e36649",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/70//#testresult/5faab224f9e36649",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643123380116,
+          "stop" : 1643123381576,
+          "duration" : 1460
+        }
+      }, {
+        "uid" : "a0541c873dc50913",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/69//#testresult/a0541c873dc50913",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643123324748,
+          "stop" : 1643123326170,
+          "duration" : 1422
+        }
+      }, {
+        "uid" : "cfcf7e742589bdfd",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/cfcf7e742589bdfd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643109388007,
+          "stop" : 1643109389742,
+          "duration" : 1735
+        }
+      }, {
+        "uid" : "23e0ad0f8b64256f",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/23e0ad0f8b64256f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643104629537,
+          "stop" : 1643104631198,
+          "duration" : 1661
+        }
+      }, {
+        "uid" : "6e9a93c21313aef0",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/6e9a93c21313aef0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643100980418,
+          "stop" : 1643100982114,
+          "duration" : 1696
+        }
+      }, {
+        "uid" : "aa5b2d933bbff949",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/aa5b2d933bbff949",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643060299961,
+          "stop" : 1643060301415,
+          "duration" : 1454
+        }
+      }, {
+        "uid" : "3b84949b1b11b3be",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/3b84949b1b11b3be",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643058288964,
+          "stop" : 1643058290402,
+          "duration" : 1438
+        }
+      }, {
+        "uid" : "b30506c2403b7ffe",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/b30506c2403b7ffe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643056107450,
+          "stop" : 1643056108900,
+          "duration" : 1450
+        }
+      }, {
+        "uid" : "dcc57ddf8b6f347f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/dcc57ddf8b6f347f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643026208233,
+          "stop" : 1643026209736,
+          "duration" : 1503
+        }
+      }, {
+        "uid" : "4ef2438126d9e3c9",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/4ef2438126d9e3c9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643024192872,
+          "stop" : 1643024194386,
+          "duration" : 1514
+        }
+      }, {
+        "uid" : "69c972572d59666a",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/65//#testresult/69c972572d59666a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642958267063,
+          "stop" : 1642958268589,
+          "duration" : 1526
+        }
+      }, {
+        "uid" : "cacec8eee00a4c82",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/64//#testresult/cacec8eee00a4c82",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642952425341,
+          "stop" : 1642952426766,
+          "duration" : 1425
+        }
+      }, {
+        "uid" : "366faab1478353c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/63//#testresult/366faab1478353c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642948480324,
+          "stop" : 1642948481807,
+          "duration" : 1483
+        }
+      }, {
+        "uid" : "9c2a54ed790a9e3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/62//#testresult/9c2a54ed790a9e3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642944380785,
+          "stop" : 1642944382311,
+          "duration" : 1526
+        }
+      }, {
+        "uid" : "87eda2aeb649597e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/87eda2aeb649597e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642936709767,
+          "stop" : 1642936711369,
+          "duration" : 1602
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "701e927add72b290.json",
+  "parameterValues" : [ "150rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv", "За критеріями пошуку гуртків не знайдено" ]
+}
