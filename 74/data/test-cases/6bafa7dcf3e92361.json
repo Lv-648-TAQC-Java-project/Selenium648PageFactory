@@ -1,0 +1,222 @@
+{
+  "uid" : "6bafa7dcf3e92361",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "7781934045aefe4cf70f3208e0739cd7",
+  "time" : {
+    "start" : 1643130261147,
+    "stop" : 1643130269512,
+    "duration" : 8365
+  },
+  "status" : "failed",
+  "statusMessage" : "expected [rgb(255, 77, 79)] but found [rgb(10, 5, 4)]",
+  "statusTrace" : "java.lang.AssertionError: expected [rgb(255, 77, 79)] but found [rgb(10, 5, 4)]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\n\tat org.testng.Assert.assertEquals(Assert.java:122)\n\tat org.testng.Assert.assertEquals(Assert.java:629)\n\tat org.testng.Assert.assertEquals(Assert.java:639)\n\tat com.ita.edu.teachua.cucumber.steps_definitions.RestorePasswordEmailFieldValidation.frameOfTheFieldBecomesColorColor(RestorePasswordEmailFieldValidation.java:46)\n\tat ✽.Frame of the field becomes rgb(255, 77, 79) color(file:///home/runner/work/TeachUA_TA/TeachUA_TA/src/test/resources/features/RestorePasswordFieldValidation.feature:9)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1643130216150,
+      "stop" : 1643130217305,
+      "duration" : 1155
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1643130217306,
+      "stop" : 1643130217355,
+      "duration" : 49
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643130212697,
+      "stop" : 1643130216096,
+      "duration" : 3399
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected [rgb(255, 77, 79)] but found [rgb(10, 5, 4)]",
+    "statusTrace" : "java.lang.AssertionError: expected [rgb(255, 77, 79)] but found [rgb(10, 5, 4)]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\n\tat org.testng.Assert.assertEquals(Assert.java:122)\n\tat org.testng.Assert.assertEquals(Assert.java:629)\n\tat org.testng.Assert.assertEquals(Assert.java:639)\n\tat com.ita.edu.teachua.cucumber.steps_definitions.RestorePasswordEmailFieldValidation.frameOfTheFieldBecomesColorColor(RestorePasswordEmailFieldValidation.java:46)\n\tat ✽.Frame of the field becomes rgb(255, 77, 79) color(file:///home/runner/work/TeachUA_TA/TeachUA_TA/src/test/resources/features/RestorePasswordFieldValidation.feature:9)\n",
+    "steps" : [ {
+      "name" : "Click on guest dropdown",
+      "time" : {
+        "start" : 1643130265448,
+        "stop" : 1643130265595,
+        "duration" : 147
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on `Увійти` button",
+      "time" : {
+        "start" : 1643130265596,
+        "stop" : 1643130265897,
+        "duration" : 301
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Забули пароль' button.",
+      "time" : {
+        "start" : 1643130265897,
+        "stop" : 1643130266466,
+        "duration" : 569
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Filling email field",
+      "time" : {
+        "start" : 1643130266466,
+        "stop" : 1643130266750,
+        "duration" : 284
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "kjfdhgiuerehgo"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on 'Відновити' button",
+      "time" : {
+        "start" : 1643130266751,
+        "stop" : 1643130267352,
+        "duration" : 601
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1643130486411,
+      "stop" : 1643130486429,
+      "duration" : 18
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "BDD Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "host",
+    "value" : "fv-az152-435"
+  }, {
+    "name" : "thread",
+    "value" : "2839@fv-az152-435.TestNG-tests-1(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"Restore password with invalid email test\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Optional[Verify if user can change the password entering incorrect email]\""
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6bafa7dcf3e92361.json",
+  "parameterValues" : [ "\"Restore password with invalid email test\"", "\"Optional[Verify if user can change the password entering incorrect email]\"" ]
+}

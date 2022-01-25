@@ -1,0 +1,814 @@
+{
+  "uid" : "2c8fd6a460ccda8f",
+  "name" : "Example of BDD suite",
+  "fullName" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner.scenario",
+  "historyId" : "74a6d17bc6c34a88871ca30a40dae59e",
+  "time" : {
+    "start" : 1643130418563,
+    "stop" : 1643130486411,
+    "duration" : 67848
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1643130216150,
+      "stop" : 1643130217305,
+      "duration" : 1155
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1643130217306,
+      "stop" : 1643130217355,
+      "duration" : 49
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643130212697,
+      "stop" : 1643130216096,
+      "duration" : 3399
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1643130422583,
+        "stop" : 1643130425805,
+        "duration" : 3222
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1643130422583,
+          "stop" : 1643130422652,
+          "duration" : 69
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1643130422652,
+          "stop" : 1643130422958,
+          "duration" : 306
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1643130422958,
+          "stop" : 1643130425805,
+          "duration" : 2847
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1643130423658,
+            "stop" : 1643130423752,
+            "duration" : 94
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1643130423752,
+            "stop" : 1643130425805,
+            "duration" : 2053
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1643130425805,
+        "stop" : 1643130429087,
+        "duration" : 3282
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1643130429087,
+        "stop" : 1643130429410,
+        "duration" : 323
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click edit pop up",
+      "time" : {
+        "start" : 1643130429411,
+        "stop" : 1643130429484,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 4352 in phone field",
+      "time" : {
+        "start" : 1643130429485,
+        "stop" : 1643130431800,
+        "duration" : 2315
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "4352"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill 65987458 in phone field",
+      "time" : {
+        "start" : 1643130432823,
+        "stop" : 1643130434950,
+        "duration" : 2127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "65987458"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill 6593859632586 in phone field",
+      "time" : {
+        "start" : 1643130435965,
+        "stop" : 1643130438088,
+        "duration" : 2123
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "6593859632586"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill jngeoлщшогнеп in phone field",
+      "time" : {
+        "start" : 1643130439102,
+        "stop" : 1643130441235,
+        "duration" : 2133
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "jngeoлщшогнеп"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill !96397180 in phone field",
+      "time" : {
+        "start" : 1643130442249,
+        "stop" : 1643130444368,
+        "duration" : 2119
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "!96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill @96397180 in phone field",
+      "time" : {
+        "start" : 1643130445383,
+        "stop" : 1643130447512,
+        "duration" : 2129
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "@96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill #96397180 in phone field",
+      "time" : {
+        "start" : 1643130448527,
+        "stop" : 1643130450641,
+        "duration" : 2114
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "#96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill $96397180 in phone field",
+      "time" : {
+        "start" : 1643130451656,
+        "stop" : 1643130453777,
+        "duration" : 2121
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "$96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill %96397180 in phone field",
+      "time" : {
+        "start" : 1643130454792,
+        "stop" : 1643130456915,
+        "duration" : 2123
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "%96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill ^96397180 in phone field",
+      "time" : {
+        "start" : 1643130457930,
+        "stop" : 1643130460051,
+        "duration" : 2121
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "^96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill &96397180 in phone field",
+      "time" : {
+        "start" : 1643130461065,
+        "stop" : 1643130463202,
+        "duration" : 2137
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "&96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill *96397180 in phone field",
+      "time" : {
+        "start" : 1643130464216,
+        "stop" : 1643130466342,
+        "duration" : 2126
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "*96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill (96397180 in phone field",
+      "time" : {
+        "start" : 1643130467356,
+        "stop" : 1643130469485,
+        "duration" : 2129
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "(96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill _96397180 in phone field",
+      "time" : {
+        "start" : 1643130470500,
+        "stop" : 1643130472686,
+        "duration" : 2186
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "_96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill +96397180 in phone field",
+      "time" : {
+        "start" : 1643130473701,
+        "stop" : 1643130475846,
+        "duration" : 2145
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "+96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill .96397180 in phone field",
+      "time" : {
+        "start" : 1643130476861,
+        "stop" : 1643130478972,
+        "duration" : 2111
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : ".96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill :96397180 in phone field",
+      "time" : {
+        "start" : 1643130479987,
+        "stop" : 1643130482207,
+        "duration" : 2220
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : ":96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill  in phone field",
+      "time" : {
+        "start" : 1643130483222,
+        "stop" : 1643130485314,
+        "duration" : 2092
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : ""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 27,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1643130486411,
+      "stop" : 1643130486429,
+      "duration" : 18
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testMethod",
+    "value" : "scenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "BDD Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "host",
+    "value" : "fv-az152-435"
+  }, {
+    "name" : "thread",
+    "value" : "2839@fv-az152-435.TestNG-tests-1(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\""
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 13,
+        "skipped" : 0,
+        "passed" : 28,
+        "unknown" : 0,
+        "total" : 42
+      },
+      "items" : [ {
+        "uid" : "a3a34127f61fdad2",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/75//#testresult/a3a34127f61fdad2",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az91-939', ip: '10.1.0.150', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.dVtM76}, goog:chromeOptions: {debuggerAddress: localhost:43119}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43119/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7d39304a42d59b9a39efe88a62eda5d1",
+        "time" : {
+          "start" : 1643130409274,
+          "stop" : 1643130428043,
+          "duration" : 18769
+        }
+      }, {
+        "uid" : "59a222c53be5b406",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/73//#testresult/59a222c53be5b406",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129447290,
+          "stop" : 1643129517638,
+          "duration" : 70348
+        }
+      }, {
+        "uid" : "1aa86beb43ce3637",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/72//#testresult/1aa86beb43ce3637",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129255794,
+          "stop" : 1643129324821,
+          "duration" : 69027
+        }
+      }, {
+        "uid" : "bee220b112064b66",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/71//#testresult/bee220b112064b66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129236357,
+          "stop" : 1643129309010,
+          "duration" : 72653
+        }
+      }, {
+        "uid" : "2d31896cfbd3c334",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/70//#testresult/2d31896cfbd3c334",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643122878878,
+          "stop" : 1643122949337,
+          "duration" : 70459
+        }
+      }, {
+        "uid" : "449a0959c34e73d1",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/69//#testresult/449a0959c34e73d1",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az105-937', ip: '10.1.0.227', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Nf1ndQ}, goog:chromeOptions: {debuggerAddress: localhost:46433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46433/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: fcf764cec5f2f55229e2df1d07319c3f",
+        "time" : {
+          "start" : 1643122865759,
+          "stop" : 1643122883124,
+          "duration" : 17365
+        }
+      }, {
+        "uid" : "96ff064d4b96aec5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/96ff064d4b96aec5",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az96-851', ip: '10.1.0.193', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.1Iegcj}, goog:chromeOptions: {debuggerAddress: localhost:40281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40281/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cd68120aa0eaf83f08cbfc1e604d4fe9",
+        "time" : {
+          "start" : 1643108864641,
+          "stop" : 1643108882821,
+          "duration" : 18180
+        }
+      }, {
+        "uid" : "4cb9f77799dde80c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/4cb9f77799dde80c",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az213-112', ip: '10.1.0.200', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.P2r21i}, goog:chromeOptions: {debuggerAddress: localhost:46047}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46047/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 31adb56f0b7181a27811b18d314112b5",
+        "time" : {
+          "start" : 1643104121334,
+          "stop" : 1643104143232,
+          "duration" : 21898
+        }
+      }, {
+        "uid" : "66ee60c4ae777fe",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/66ee60c4ae777fe",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az36-112', ip: '10.1.0.8', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.HfBg8F}, goog:chromeOptions: {debuggerAddress: localhost:34931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34931/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f81ae4fb25d28024311cdccc39f1a70f",
+        "time" : {
+          "start" : 1643100341533,
+          "stop" : 1643100371183,
+          "duration" : 29650
+        }
+      }, {
+        "uid" : "e72c40797f0574ed",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/e72c40797f0574ed",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не може містити літери] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Будь ласка введіть Ваш номер телефону] but found []",
+        "time" : {
+          "start" : 1643059846365,
+          "stop" : 1643059920811,
+          "duration" : 74446
+        }
+      }, {
+        "uid" : "441395ba1940602c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/441395ba1940602c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643057810441,
+          "stop" : 1643057879697,
+          "duration" : 69256
+        }
+      }, {
+        "uid" : "6e5c161ea5dd8dc3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/6e5c161ea5dd8dc3",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az121-422', ip: '10.1.0.205', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.fdGwof}, goog:chromeOptions: {debuggerAddress: localhost:39823}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39823/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 60e057f309400ca7620e56ba5b762b21",
+        "time" : {
+          "start" : 1643055618472,
+          "stop" : 1643055642985,
+          "duration" : 24513
+        }
+      }, {
+        "uid" : "9c64cd9652fccc10",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/9c64cd9652fccc10",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643025713354,
+          "stop" : 1643025781772,
+          "duration" : 68418
+        }
+      }, {
+        "uid" : "9ebd37f70a44190a",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/9ebd37f70a44190a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643023634824,
+          "stop" : 1643023704314,
+          "duration" : 69490
+        }
+      }, {
+        "uid" : "5632276698e817ee",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/65//#testresult/5632276698e817ee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642957780086,
+          "stop" : 1642957850508,
+          "duration" : 70422
+        }
+      }, {
+        "uid" : "7cc00928e04ca872",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/64//#testresult/7cc00928e04ca872",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642951891596,
+          "stop" : 1642951963218,
+          "duration" : 71622
+        }
+      }, {
+        "uid" : "2759697f7da173b5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/63//#testresult/2759697f7da173b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642947959784,
+          "stop" : 1642948032603,
+          "duration" : 72819
+        }
+      }, {
+        "uid" : "852625759faadf3b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/62//#testresult/852625759faadf3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642943820782,
+          "stop" : 1642943891498,
+          "duration" : 70716
+        }
+      }, {
+        "uid" : "cc4189815fae3d51",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/cc4189815fae3d51",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642936131629,
+          "stop" : 1642936202478,
+          "duration" : 70849
+        }
+      }, {
+        "uid" : "fa3c33194d7bf2af",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/61//#testresult/fa3c33194d7bf2af",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642885894224,
+          "stop" : 1642885964346,
+          "duration" : 70122
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2c8fd6a460ccda8f.json",
+  "parameterValues" : [ "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\"", "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\"" ]
+}
