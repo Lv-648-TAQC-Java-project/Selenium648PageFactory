@@ -1,10 +1,10 @@
 package com.ita.edu.teachua.cucumber.cucumberTestRunner;
 
+import com.ita.edu.teachua.utils.Retry;
 import io.cucumber.testng.*;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.ITestContext;
+import org.testng.ITestNGMethod;
+import org.testng.annotations.*;
 
 
 @CucumberOptions(
@@ -14,6 +14,13 @@ import org.testng.annotations.Test;
 )
 public class CucumberTestRunner extends AbstractTestNGCucumberTests {
     private TestNGCucumberRunner testNGCucumberRunner;
+
+    @BeforeSuite(alwaysRun = true)
+    public void beforeSuite(ITestContext context){
+        for(ITestNGMethod method : context.getAllTestMethods()){
+            method.setRetryAnalyzerClass(Retry.class);
+        }
+    }
 
     @BeforeClass(alwaysRun=true)
     public void setUpClass(){
