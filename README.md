@@ -53,12 +53,8 @@ adminPassword=example
   - [Clone](#Clone)
   - [Setup](#Setup)
   - [How to run local](#How-to-run-local)
-  - [How to run Docker](#How-to-run-Docker)
 - [Usage](#Usage)
-  - [How to work with swagger UI](#How-to-work-with-swagger-UI)
   - [How to run tests](#How-to-run-tests)
-  - [How to Checkstyle](#How-to-Checkstyle)
-- [Documentation](#Documentation))
 - [Contributing](#contributing)
   - [git flow](#git-flow)
   - [issue flow](#git-flow)
@@ -74,28 +70,22 @@ adminPassword=example
 - Images of what it should look like
 
 ### Required to install
-* Python (3.6.3)
-* PostgreSQL (9.5.9)
-* Django (1.11.6)
-* NodeJS (6.11.4)
-* Redis (3.0.6)
+* Java(1.8)
+* Allure(2.17.2)
 
 ### Environment
 environmental variables
 ```properties
-spring.datasource.url=${DATASOURCE_URL}
-spring.datasource.username=${DATASOURCE_USER}
-spring.datasource.password=${DATASOURCE_PASSWORD}
-spring.mail.username=${EMAIL_ADDRESS}
-spring.mail.password=${EMAIL_PASSWORD}
-cloud.name=${CLOUD_NAME}
-api.key=${API_KEY}
-api.secret=${API_SECRET}
+ BASE_URL=${secrets.BASE_URL}
+ ADMIN_EMAIL=${secrets.ADMIN_EMAIL}
+ ADMIN_PASSWORD=${secrets.ADMIN_PASSWORD}
+ TEST_TEACH_UA_META_EMAIL=${secrets.TEST_TEACH_UA_META_EMAIL}
+ TEST_TEACH_UA_META_PASSWORD=${secrets.TEST_TEACH_UA_META_PASSWORD}
 ```
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/ita-social-projects/SOMEREPO`
+- Clone this repo to your local machine using `https://github.com/ita-social-projects/TeachUA_TA.git`
 
 ### Setup
 
@@ -119,18 +109,10 @@ $ bower install
 
 ### How to run local
 
-### How to run Docker
-
 ---
 
 ## Usage
-### How to work with swagger UI
 ### How to run tests
-### How to Checkstyle
-
----
-
-## Documentation
 
 ---
 
