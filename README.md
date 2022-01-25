@@ -109,12 +109,12 @@ mvn test
 
 > Or Contributors/People
 > 
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/andriy66)
+[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/Mykhailo5)
 [![@lhalam](https://avatars.githubusercontent.com/u/89529887?s=100&v=4)](https://github.com/vy1989)
 [![@lhalam](https://avatars.githubusercontent.com/u/39509993?s=100&v=4)](https://github.com/AndriyBarskyi)
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/Mykhailo5)
 [![@lhalam](https://avatars.githubusercontent.com/u/51734891?s=100&v=4)](https://github.com/nataskrypak)
 [![@lhalam](https://avatars.githubusercontent.com/u/44065623?s=100&v=4)](https://github.com/Nadya101) 
+[![@lhalam](https://avatars.githubusercontent.com/u/81072407?s=96&v=4)](https://github.com/andriy66)
 [![@lhalam](https://avatars.githubusercontent.com/u/62646603?s=100&v=4)](https://github.com/Pidstavskiy)
 [![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/MakKeywa)  
 
