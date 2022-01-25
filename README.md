@@ -54,7 +54,6 @@ adminPassword=example
   - [How to run local](#How-to-run-local)
 - [Contributing](#contributing)
   - [git flow](#git-flow)
-- [FAQ](#faq)
 - [Support](#support)
 - [License](#license)
 
@@ -121,15 +120,6 @@ mvn test
 
 - You can just grab their GitHub profile image URL
 - You should probably resize their picture using `?s=200` at the end of the image URL.
-
----
-
-## FAQ
-
-- **How do I do *specifically* so and so?**
-    - No problem! Just do this.
-
----
 
 ## Support
 
