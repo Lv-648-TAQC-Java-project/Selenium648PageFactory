@@ -1,0 +1,392 @@
+{
+  "uid" : "bd08a7e62f14db25",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "7781934045aefe4cf70f3208e0739cd7",
+  "time" : {
+    "start" : 1643130273921,
+    "stop" : 1643130284648,
+    "duration" : 10727
+  },
+  "status" : "broken",
+  "statusMessage" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az91-939', ip: '10.1.0.150', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.7apOIx}, goog:chromeOptions: {debuggerAddress: localhost:42685}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42685/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4a8cc6aefda8c0a181fb080cc7affde7",
+  "statusTrace" : "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az91-939', ip: '10.1.0.150', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.7apOIx}, goog:chromeOptions: {debuggerAddress: localhost:42685}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42685/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4a8cc6aefda8c0a181fb080cc7affde7\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\n\tat com.ita.edu.teachua.ui.pages.base_page.BasePage.waitUntilElementToBeClickable(BasePage.java:43)\n\tat com.ita.edu.teachua.ui.pages.header_page.GuestDropdownComponent.clickOnLoginButton(GuestDropdownComponent.java:31)\n\tat com.ita.edu.teachua.cucumber.steps_definitions.RestorePasswordEmailFieldValidation.clickOnLoginButton(RestorePasswordEmailFieldValidation.java:25)\n\tat ✽.Select Увійти option(file:///home/runner/work/TeachUA_TA/TeachUA_TA/src/test/resources/features/RestorePasswordFieldValidation.feature:5)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1643130228535,
+      "stop" : 1643130229490,
+      "duration" : 955
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1643130229490,
+      "stop" : 1643130229562,
+      "duration" : 72
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643130226799,
+      "stop" : 1643130228488,
+      "duration" : 1689
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az91-939', ip: '10.1.0.150', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.7apOIx}, goog:chromeOptions: {debuggerAddress: localhost:42685}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42685/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4a8cc6aefda8c0a181fb080cc7affde7",
+    "statusTrace" : "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az91-939', ip: '10.1.0.150', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.7apOIx}, goog:chromeOptions: {debuggerAddress: localhost:42685}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42685/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4a8cc6aefda8c0a181fb080cc7affde7\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\n\tat com.ita.edu.teachua.ui.pages.base_page.BasePage.waitUntilElementToBeClickable(BasePage.java:43)\n\tat com.ita.edu.teachua.ui.pages.header_page.GuestDropdownComponent.clickOnLoginButton(GuestDropdownComponent.java:31)\n\tat com.ita.edu.teachua.cucumber.steps_definitions.RestorePasswordEmailFieldValidation.clickOnLoginButton(RestorePasswordEmailFieldValidation.java:25)\n\tat ✽.Select Увійти option(file:///home/runner/work/TeachUA_TA/TeachUA_TA/src/test/resources/features/RestorePasswordFieldValidation.feature:5)\n",
+    "steps" : [ {
+      "name" : "Click on guest dropdown",
+      "time" : {
+        "start" : 1643130279131,
+        "stop" : 1643130279182,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on `Увійти` button",
+      "time" : {
+        "start" : 1643130279183,
+        "stop" : 1643130284575,
+        "duration" : 5392
+      },
+      "status" : "broken",
+      "statusMessage" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az91-939', ip: '10.1.0.150', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.7apOIx}, goog:chromeOptions: {debuggerAddress: localhost:42685}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42685/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4a8cc6aefda8c0a181fb080cc7affde7",
+      "statusTrace" : "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az91-939', ip: '10.1.0.150', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.7apOIx}, goog:chromeOptions: {debuggerAddress: localhost:42685}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42685/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4a8cc6aefda8c0a181fb080cc7affde7\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\n\tat com.ita.edu.teachua.ui.pages.base_page.BasePage.waitUntilElementToBeClickable(BasePage.java:43)\n\tat com.ita.edu.teachua.ui.pages.header_page.GuestDropdownComponent.clickOnLoginButton(GuestDropdownComponent.java:31)\n\tat com.ita.edu.teachua.cucumber.steps_definitions.RestorePasswordEmailFieldValidation.clickOnLoginButton(RestorePasswordEmailFieldValidation.java:25)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:57)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:95)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:75)\n\tat io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)\n\tat io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:146)\n\tat io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)\n\tat io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:146)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1643130428044,
+      "stop" : 1643130428055,
+      "duration" : 11
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "BDD Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "host",
+    "value" : "fv-az91-939"
+  }, {
+    "name" : "thread",
+    "value" : "2788@fv-az91-939.TestNG-tests-1(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"Restore password with invalid email test\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Optional[Verify if user can change the password entering incorrect email]\""
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2cae349f82be926c",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <div>...</div> is not clickable at point (1196, 132). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az91-939', ip: '10.1.0.150', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [899a27127964f98574632fe8176007ba, clickElement {id=c4901a10-9d22-48b6-ad37-ea56a3efae40}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.6G1qiP}, goog:chromeOptions: {debuggerAddress: localhost:38227}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38227/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (899a27127964f98574632fe8176007ba)] -> xpath: //div[contains(text(),'Увійти')]]\nSession ID: 899a27127964f98574632fe8176007ba",
+      "time" : {
+        "start" : 1643130265947,
+        "stop" : 1643130273912,
+        "duration" : 7965
+      }
+    }, {
+      "uid" : "e56542a53491408c",
+      "status" : "failed",
+      "statusDetails" : "expected [rgb(255, 77, 79)] but found [rgb(0, 0, 0)]",
+      "time" : {
+        "start" : 1643130257322,
+        "stop" : 1643130265945,
+        "duration" : 8623
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 37,
+        "unknown" : 0,
+        "total" : 39
+      },
+      "items" : [ {
+        "uid" : "9e76c44c6c526f26",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/73//#testresult/9e76c44c6c526f26",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129297234,
+          "stop" : 1643129306462,
+          "duration" : 9228
+        }
+      }, {
+        "uid" : "bc50dd8cd9b7d4c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/72//#testresult/bc50dd8cd9b7d4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129118158,
+          "stop" : 1643129126478,
+          "duration" : 8320
+        }
+      }, {
+        "uid" : "2f6648c9a82e9c5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/71//#testresult/2f6648c9a82e9c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129100120,
+          "stop" : 1643129108850,
+          "duration" : 8730
+        }
+      }, {
+        "uid" : "3474b84ffba56840",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/70//#testresult/3474b84ffba56840",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643122736892,
+          "stop" : 1643122745675,
+          "duration" : 8783
+        }
+      }, {
+        "uid" : "48ddd537bada2b8c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/69//#testresult/48ddd537bada2b8c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643122728703,
+          "stop" : 1643122738153,
+          "duration" : 9450
+        }
+      }, {
+        "uid" : "2c6e5a7317b495e5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/2c6e5a7317b495e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643108718285,
+          "stop" : 1643108727574,
+          "duration" : 9289
+        }
+      }, {
+        "uid" : "dcbcef05909eaac0",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/dcbcef05909eaac0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643103986649,
+          "stop" : 1643103996220,
+          "duration" : 9571
+        }
+      }, {
+        "uid" : "ed8f169337fc7458",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/ed8f169337fc7458",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az36-112', ip: '10.1.0.8', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.AwFuzd}, goog:chromeOptions: {debuggerAddress: localhost:36521}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36521/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d8fa50b0ac87c832e7718268874282a3",
+        "time" : {
+          "start" : 1643100198749,
+          "stop" : 1643100216247,
+          "duration" : 17498
+        }
+      }, {
+        "uid" : "e5173eaec0352554",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/e5173eaec0352554",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643059698312,
+          "stop" : 1643059707399,
+          "duration" : 9087
+        }
+      }, {
+        "uid" : "25d45a2bc96047b1",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/25d45a2bc96047b1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643057662819,
+          "stop" : 1643057672775,
+          "duration" : 9956
+        }
+      }, {
+        "uid" : "6887feb69752bdac",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/6887feb69752bdac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643055475635,
+          "stop" : 1643055484410,
+          "duration" : 8775
+        }
+      }, {
+        "uid" : "1e40c832ba0d8abe",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/1e40c832ba0d8abe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643025583151,
+          "stop" : 1643025593833,
+          "duration" : 10682
+        }
+      }, {
+        "uid" : "41bee7195c2e1a23",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/41bee7195c2e1a23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643023504958,
+          "stop" : 1643023513953,
+          "duration" : 8995
+        }
+      }, {
+        "uid" : "618b0d866e7a4d5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/65//#testresult/618b0d866e7a4d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642957650479,
+          "stop" : 1642957658779,
+          "duration" : 8300
+        }
+      }, {
+        "uid" : "8ac9e1453ad44261",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/64//#testresult/8ac9e1453ad44261",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642951755245,
+          "stop" : 1642951764283,
+          "duration" : 9038
+        }
+      }, {
+        "uid" : "41ba78a5a60ab9bd",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/63//#testresult/41ba78a5a60ab9bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642947830728,
+          "stop" : 1642947839158,
+          "duration" : 8430
+        }
+      }, {
+        "uid" : "98798311b9002cc6",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/62//#testresult/98798311b9002cc6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642943688858,
+          "stop" : 1642943697451,
+          "duration" : 8593
+        }
+      }, {
+        "uid" : "69554230d02b2f8e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/69554230d02b2f8e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642935996534,
+          "stop" : 1642936006460,
+          "duration" : 9926
+        }
+      }, {
+        "uid" : "523bc7bdee957edc",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/61//#testresult/523bc7bdee957edc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642885764058,
+          "stop" : 1642885772425,
+          "duration" : 8367
+        }
+      }, {
+        "uid" : "3c86dce30658a44d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/3c86dce30658a44d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642884067970,
+          "stop" : 1642884076291,
+          "duration" : 8321
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "bd08a7e62f14db25.json",
+  "parameterValues" : [ "\"Restore password with invalid email test\"", "\"Optional[Verify if user can change the password entering incorrect email]\"" ]
+}
