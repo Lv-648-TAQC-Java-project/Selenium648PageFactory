@@ -72,7 +72,7 @@ public class AddCenterPopUpComponent extends BasePage {
   
     @Step("Delete possible values from 'Назва центру' field")
     public AddCenterPopUpComponent clearCenterName() {
-        centerNameField.clear();
+        if(centerNameField.isDisplayed())centerNameField.clear();
         return this;
     }
 

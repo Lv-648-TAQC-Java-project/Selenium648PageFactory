@@ -22,6 +22,7 @@ public class GuestDropdownComponent extends BasePage {
 
     @Step("Click on register button")
     public RegisterPopUpComponent clickOnRegisterButton() {
+        sleep(200);
         registerButton.click();
         return new RegisterPopUpComponent(driver);
     }
