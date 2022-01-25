@@ -1,0 +1,456 @@
+{
+  "uid" : "c9eb2a096fad57ad",
+  "name" : "TUA-498",
+  "fullName" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest.VerifyThatUserAsOwnerCanNotDeleteClubThatNotRegisteredByHim",
+  "historyId" : "12bb9e0cbdf572d192e9a85adced3d58",
+  "time" : {
+    "start" : 1643142191899,
+    "stop" : 1643142217616,
+    "duration" : 25717
+  },
+  "description" : "This test case verifies that the User as \"Керiвник гуртка\" can not delete a club that was not registered by him",
+  "descriptionHtml" : "<p>This test case verifies that the User as &quot;Керiвник гуртка&quot; can not delete a club that was not registered by him</p>\n",
+  "status" : "broken",
+  "statusMessage" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+  "statusTrace" : "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])\n\tat com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:843)\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1206)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4218)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3214)\n\tat com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)\n\tat io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)\n\tat io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)\n\tat io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)\n\tat io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)\n\tat io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)\n\tat io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)\n\tat io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)\n\tat com.ita.edu.teachua.api.tests.AuthorizedClubTest.VerifyThatUserAsOwnerCanNotDeleteClubThatNotRegisteredByHim(AuthorizedClubTest.java:41)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1643141988513,
+      "stop" : 1643141994380,
+      "duration" : 5867
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643141988515,
+        "stop" : 1643141988515,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643141407279,
+      "stop" : 1643141407287,
+      "duration" : 8
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643141407288,
+      "stop" : 1643141409672,
+      "duration" : 2384
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643141409672,
+      "stop" : 1643141409672,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643141409672,
+      "stop" : 1643141409673,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643141409673,
+      "stop" : 1643141409673,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test case verifies that the User as \"Керiвник гуртка\" can not delete a club that was not registered by him",
+    "status" : "broken",
+    "statusMessage" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+    "statusTrace" : "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])\n\tat com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:843)\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1206)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4218)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3214)\n\tat com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)\n\tat io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)\n\tat io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)\n\tat io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)\n\tat io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)\n\tat io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)\n\tat io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)\n\tat io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)\n\tat com.ita.edu.teachua.api.tests.AuthorizedClubTest.VerifyThatUserAsOwnerCanNotDeleteClubThatNotRegisteredByHim(AuthorizedClubTest.java:41)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643142191899,
+        "stop" : 1643142191900,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643142216936,
+        "stop" : 1643142217608,
+        "duration" : 672
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643142216936,
+          "stop" : 1643142216936,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Вокальна студія, музика, музичні інструменти], \"name\":\"Голосистi діти\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"blocks\":[{\"key\":\"brl63\",\"text\":\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\",\"type\":\"unstyled\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "VerifyThatUserAsOwnerCanNotDeleteClubThatNotRegisteredByHim"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az203-521"
+  }, {
+    "name" : "thread",
+    "value" : "2952@fv-az203-521.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-498",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5c0f2c57301ec839",
+      "status" : "skipped",
+      "statusDetails" : "Unrecognized field \"timestamp\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"timestamp\":1643142191828,\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"\",\"path\":\"/dev/api/club\"}\"; line: 1, column: 27] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"timestamp\"])",
+      "time" : {
+        "start" : 1643142123338,
+        "stop" : 1643142191897,
+        "duration" : 68559
+      }
+    }, {
+      "uid" : "dca512acd7d21a1e",
+      "status" : "skipped",
+      "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+      "time" : {
+        "start" : 1643142076229,
+        "stop" : 1643142123332,
+        "duration" : 47103
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 13,
+        "skipped" : 2,
+        "passed" : 40,
+        "unknown" : 0,
+        "total" : 55
+      },
+      "items" : [ {
+        "uid" : "92ad742ddd8cea42",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/91//#testresult/92ad742ddd8cea42",
+        "status" : "broken",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+        "time" : {
+          "start" : 1643142284933,
+          "stop" : 1643142316633,
+          "duration" : 31700
+        }
+      }, {
+        "uid" : "affb15d57f1c4696",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/90//#testresult/affb15d57f1c4696",
+        "status" : "broken",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+        "time" : {
+          "start" : 1643141340715,
+          "stop" : 1643141351958,
+          "duration" : 11243
+        }
+      }, {
+        "uid" : "731210203b66e4d",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/85//#testresult/731210203b66e4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643140670938,
+          "stop" : 1643140680971,
+          "duration" : 10033
+        }
+      }, {
+        "uid" : "dff095d4947c5c90",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/84//#testresult/dff095d4947c5c90",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643139877579,
+          "stop" : 1643139885855,
+          "duration" : 8276
+        }
+      }, {
+        "uid" : "9ed9d65485ff3fd7",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/83//#testresult/9ed9d65485ff3fd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643139258932,
+          "stop" : 1643139267052,
+          "duration" : 8120
+        }
+      }, {
+        "uid" : "9d1f4459e0f603ac",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/82//#testresult/9d1f4459e0f603ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643138293499,
+          "stop" : 1643138303102,
+          "duration" : 9603
+        }
+      }, {
+        "uid" : "9fa9f60953d6dc41",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/81//#testresult/9fa9f60953d6dc41",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643138171421,
+          "stop" : 1643138179395,
+          "duration" : 7974
+        }
+      }, {
+        "uid" : "cce55d0843990524",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/80//#testresult/cce55d0843990524",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643136968721,
+          "stop" : 1643136978840,
+          "duration" : 10119
+        }
+      }, {
+        "uid" : "f10f15b910ba95e1",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/79//#testresult/f10f15b910ba95e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643136887176,
+          "stop" : 1643136895565,
+          "duration" : 8389
+        }
+      }, {
+        "uid" : "41e91d5aa5eb2415",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/78//#testresult/41e91d5aa5eb2415",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643136044777,
+          "stop" : 1643136053034,
+          "duration" : 8257
+        }
+      }, {
+        "uid" : "f6a5e203fa7629f3",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/77//#testresult/f6a5e203fa7629f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643134126657,
+          "stop" : 1643134136297,
+          "duration" : 9640
+        }
+      }, {
+        "uid" : "f3e896bf4a60595f",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/76//#testresult/f3e896bf4a60595f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643133466375,
+          "stop" : 1643133473190,
+          "duration" : 6815
+        }
+      }, {
+        "uid" : "7d9ace33e105cf0f",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/74//#testresult/7d9ace33e105cf0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130303003,
+          "stop" : 1643130309799,
+          "duration" : 6796
+        }
+      }, {
+        "uid" : "cd0782fafb6cf3a0",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/75//#testresult/cd0782fafb6cf3a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130314570,
+          "stop" : 1643130323229,
+          "duration" : 8659
+        }
+      }, {
+        "uid" : "8536ad3de6cc33e4",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/73//#testresult/8536ad3de6cc33e4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129321051,
+          "stop" : 1643129328771,
+          "duration" : 7720
+        }
+      }, {
+        "uid" : "2e3718c3b10a076b",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/72//#testresult/2e3718c3b10a076b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129135079,
+          "stop" : 1643129143617,
+          "duration" : 8538
+        }
+      }, {
+        "uid" : "25509c2409dbae36",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/71//#testresult/25509c2409dbae36",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129115811,
+          "stop" : 1643129125934,
+          "duration" : 10123
+        }
+      }, {
+        "uid" : "d5bf2d7d8032fda2",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/70//#testresult/d5bf2d7d8032fda2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643122787009,
+          "stop" : 1643122795070,
+          "duration" : 8061
+        }
+      }, {
+        "uid" : "6abd6dc869fa8590",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/69//#testresult/6abd6dc869fa8590",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643122756173,
+          "stop" : 1643122763207,
+          "duration" : 7034
+        }
+      }, {
+        "uid" : "19d7b423defbcc42",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/19d7b423defbcc42",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643108728671,
+          "stop" : 1643108737483,
+          "duration" : 8812
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c9eb2a096fad57ad.json",
+  "parameterValues" : [ ]
+}

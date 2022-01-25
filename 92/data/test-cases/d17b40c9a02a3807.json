@@ -1,0 +1,449 @@
+{
+  "uid" : "d17b40c9a02a3807",
+  "name" : "TUA-176",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.checkDescriptionFieldWithLessThan40Symbols",
+  "historyId" : "128eb4ecae813f1fdbd776c29d2c4b6b",
+  "time" : {
+    "start" : 1643142315569,
+    "stop" : 1643142325917,
+    "duration" : 10348
+  },
+  "description" : "TUA-176-Verify that error message ‘Некоректний опис гуртка\\n\" + \"Опис гуртка може містити від 40 до 1500 символів.’ appears when the user enters less than 40 symbols into the field",
+  "descriptionHtml" : "<p>TUA-176-Verify that error message ‘Некоректний опис гуртка\\n&quot; + &quot;Опис гуртка може містити від 40 до 1500 символів.’ appears when the user enters less than 40 symbols into the field</p>\n",
+  "status" : "broken",
+  "statusMessage" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az203-521', ip: '10.1.0.58', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [16a1db2ca543bb91e2b2ada03a5371c1, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.jWOOa7}, goog:chromeOptions: {debuggerAddress: localhost:41611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41611/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 16a1db2ca543bb91e2b2ada03a5371c1",
+  "statusTrace" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az203-521', ip: '10.1.0.58', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [16a1db2ca543bb91e2b2ada03a5371c1, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.jWOOa7}, goog:chromeOptions: {debuggerAddress: localhost:41611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41611/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 16a1db2ca543bb91e2b2ada03a5371c1\n\tat sun.reflect.GeneratedConstructorAccessor121.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\n\tat com.ita.edu.teachua.ui.pagefactory.ElementHandler.invoke(ElementHandler.java:32)\n\tat com.sun.proxy.$Proxy41.click(Unknown Source)\n\tat com.ita.edu.teachua.ui.pages.header_page.HeaderPage.clickOnGuestDropdown(HeaderPage.java:27)\n\tat com.ita.edu.teachua.ui.pages.header_page.HeaderPage.authorize(HeaderPage.java:40)\n\tat com.ita.edu.teachua.ui.tests.OwnerProfileTest.checkDescriptionFieldWithLessThan40Symbols(OwnerProfileTest.java:629)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1643142279372,
+      "stop" : 1643142315567,
+      "duration" : 36195
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643141407279,
+      "stop" : 1643141407287,
+      "duration" : 8
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643141407288,
+      "stop" : 1643141409672,
+      "duration" : 2384
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643141409672,
+      "stop" : 1643141409672,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643141409672,
+      "stop" : 1643141409673,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643141409673,
+      "stop" : 1643141409673,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "TUA-176-Verify that error message ‘Некоректний опис гуртка\\n\" + \"Опис гуртка може містити від 40 до 1500 символів.’ appears when the user enters less than 40 symbols into the field",
+    "status" : "broken",
+    "statusMessage" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az203-521', ip: '10.1.0.58', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [16a1db2ca543bb91e2b2ada03a5371c1, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.jWOOa7}, goog:chromeOptions: {debuggerAddress: localhost:41611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41611/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 16a1db2ca543bb91e2b2ada03a5371c1",
+    "statusTrace" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az203-521', ip: '10.1.0.58', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [16a1db2ca543bb91e2b2ada03a5371c1, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.jWOOa7}, goog:chromeOptions: {debuggerAddress: localhost:41611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41611/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 16a1db2ca543bb91e2b2ada03a5371c1\n\tat sun.reflect.GeneratedConstructorAccessor121.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\n\tat com.ita.edu.teachua.ui.pagefactory.ElementHandler.invoke(ElementHandler.java:32)\n\tat com.sun.proxy.$Proxy41.click(Unknown Source)\n\tat com.ita.edu.teachua.ui.pages.header_page.HeaderPage.clickOnGuestDropdown(HeaderPage.java:27)\n\tat com.ita.edu.teachua.ui.pages.header_page.HeaderPage.authorize(HeaderPage.java:40)\n\tat com.ita.edu.teachua.ui.tests.OwnerProfileTest.checkDescriptionFieldWithLessThan40Symbols(OwnerProfileTest.java:629)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1643142315569,
+        "stop" : 1643142325807,
+        "duration" : 10238
+      },
+      "status" : "broken",
+      "statusMessage" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az203-521', ip: '10.1.0.58', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [16a1db2ca543bb91e2b2ada03a5371c1, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.jWOOa7}, goog:chromeOptions: {debuggerAddress: localhost:41611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41611/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 16a1db2ca543bb91e2b2ada03a5371c1",
+      "statusTrace" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az203-521', ip: '10.1.0.58', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [16a1db2ca543bb91e2b2ada03a5371c1, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.jWOOa7}, goog:chromeOptions: {debuggerAddress: localhost:41611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41611/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 16a1db2ca543bb91e2b2ada03a5371c1\n\tat sun.reflect.GeneratedConstructorAccessor121.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\n\tat com.ita.edu.teachua.ui.pagefactory.ElementHandler.invoke(ElementHandler.java:32)\n\tat com.sun.proxy.$Proxy41.click(Unknown Source)\n\tat com.ita.edu.teachua.ui.pages.header_page.HeaderPage.clickOnGuestDropdown(HeaderPage.java:27)\n\tat com.ita.edu.teachua.ui.pages.header_page.HeaderPage.authorize(HeaderPage.java:40)\n\tat com.ita.edu.teachua.ui.tests.OwnerProfileTest.checkDescriptionFieldWithLessThan40Symbols(OwnerProfileTest.java:629)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1643142315569,
+          "stop" : 1643142325807,
+          "duration" : 10238
+        },
+        "status" : "broken",
+        "statusMessage" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az203-521', ip: '10.1.0.58', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [16a1db2ca543bb91e2b2ada03a5371c1, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.jWOOa7}, goog:chromeOptions: {debuggerAddress: localhost:41611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41611/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 16a1db2ca543bb91e2b2ada03a5371c1",
+        "statusTrace" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az203-521', ip: '10.1.0.58', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [16a1db2ca543bb91e2b2ada03a5371c1, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.jWOOa7}, goog:chromeOptions: {debuggerAddress: localhost:41611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41611/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 16a1db2ca543bb91e2b2ada03a5371c1\n\tat sun.reflect.GeneratedConstructorAccessor121.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\n\tat com.ita.edu.teachua.ui.pagefactory.ElementHandler.invoke(ElementHandler.java:32)\n\tat com.sun.proxy.$Proxy41.click(Unknown Source)\n\tat com.ita.edu.teachua.ui.pages.header_page.HeaderPage.clickOnGuestDropdown(HeaderPage.java:27)\n\tat com.ita.edu.teachua.ui.pages.header_page.HeaderPage.authorize(HeaderPage.java:40)\n\tat com.ita.edu.teachua.ui.tests.OwnerProfileTest.checkDescriptionFieldWithLessThan40Symbols(OwnerProfileTest.java:629)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "d57fcfb55c095fae",
+      "name" : "Logs for thread 14",
+      "source" : "d57fcfb55c095fae.log",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "7ab0fa0a95e3f78d",
+      "name" : "Page screenshot",
+      "source" : "7ab0fa0a95e3f78d.png",
+      "type" : "image/png",
+      "size" : 6665
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1643142325919,
+      "stop" : 1643142325991,
+      "duration" : 72
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkDescriptionFieldWithLessThan40Symbols"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az203-521"
+  }, {
+    "name" : "thread",
+    "value" : "2952@fv-az203-521.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "[Also known as the Mo, 1, Also known as the Monastery of the ghfg]"
+  } ],
+  "links" : [ {
+    "name" : "TUA-176",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 8,
+        "skipped" : 0,
+        "passed" : 45,
+        "unknown" : 0,
+        "total" : 53
+      },
+      "items" : [ {
+        "uid" : "f86bca63886ee988",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/91//#testresult/f86bca63886ee988",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az202-534', ip: '10.1.0.105', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [3b76873641256a44169951914d0623eb, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.OAXOJY}, goog:chromeOptions: {debuggerAddress: localhost:43667}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43667/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3b76873641256a44169951914d0623eb",
+        "time" : {
+          "start" : 1643142160910,
+          "stop" : 1643142174614,
+          "duration" : 13704
+        }
+      }, {
+        "uid" : "f14021b6b4eed57b",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/90//#testresult/f14021b6b4eed57b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643142031821,
+          "stop" : 1643142058623,
+          "duration" : 26802
+        }
+      }, {
+        "uid" : "44cf5f656a2dda74",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/85//#testresult/44cf5f656a2dda74",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#basic_contactТелефон\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az214-35', ip: '10.1.0.107', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [54130604e2174aeed1912eaf38217b9b, findElement {using=id, value=basic_contactТелефон}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Td47kL}, goog:chromeOptions: {debuggerAddress: localhost:40399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40399/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 54130604e2174aeed1912eaf38217b9b",
+        "time" : {
+          "start" : 1643141408384,
+          "stop" : 1643141443954,
+          "duration" : 35570
+        }
+      }, {
+        "uid" : "6b66946e7e7b98c2",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/84//#testresult/6b66946e7e7b98c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643140337897,
+          "stop" : 1643140351328,
+          "duration" : 13431
+        }
+      }, {
+        "uid" : "b8e3cca786016b3a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/83//#testresult/b8e3cca786016b3a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643139730343,
+          "stop" : 1643139743572,
+          "duration" : 13229
+        }
+      }, {
+        "uid" : "f6915b50a01468b5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/82//#testresult/f6915b50a01468b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643138749812,
+          "stop" : 1643138763641,
+          "duration" : 13829
+        }
+      }, {
+        "uid" : "35e3ad1f4db8fe96",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/81//#testresult/35e3ad1f4db8fe96",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643138599063,
+          "stop" : 1643138613816,
+          "duration" : 14753
+        }
+      }, {
+        "uid" : "fd093758fac2e96d",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/80//#testresult/fd093758fac2e96d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643137414808,
+          "stop" : 1643137427985,
+          "duration" : 13177
+        }
+      }, {
+        "uid" : "937122ddcba0491a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/79//#testresult/937122ddcba0491a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643137350148,
+          "stop" : 1643137363882,
+          "duration" : 13734
+        }
+      }, {
+        "uid" : "a470f9d72d95a59d",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/78//#testresult/a470f9d72d95a59d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643136382327,
+          "stop" : 1643136395835,
+          "duration" : 13508
+        }
+      }, {
+        "uid" : "a1f6117b31b2eff5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/77//#testresult/a1f6117b31b2eff5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643134594231,
+          "stop" : 1643134607587,
+          "duration" : 13356
+        }
+      }, {
+        "uid" : "74088550265ec477",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/76//#testresult/74088550265ec477",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643133927277,
+          "stop" : 1643133941158,
+          "duration" : 13881
+        }
+      }, {
+        "uid" : "139227dde5002b72",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/74//#testresult/139227dde5002b72",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130751107,
+          "stop" : 1643130765116,
+          "duration" : 14009
+        }
+      }, {
+        "uid" : "70b190ec212546ea",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/75//#testresult/70b190ec212546ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130703652,
+          "stop" : 1643130718292,
+          "duration" : 14640
+        }
+      }, {
+        "uid" : "c05bcdb1a01376e6",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/73//#testresult/c05bcdb1a01376e6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129787497,
+          "stop" : 1643129804204,
+          "duration" : 16707
+        }
+      }, {
+        "uid" : "8193eba9e51d7c73",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/72//#testresult/8193eba9e51d7c73",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129602550,
+          "stop" : 1643129617965,
+          "duration" : 15415
+        }
+      }, {
+        "uid" : "eaef3b14b96a4f2f",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/71//#testresult/eaef3b14b96a4f2f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129586076,
+          "stop" : 1643129599425,
+          "duration" : 13349
+        }
+      }, {
+        "uid" : "a82771fd632c0ae5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/70//#testresult/a82771fd632c0ae5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643123140376,
+          "stop" : 1643123154740,
+          "duration" : 14364
+        }
+      }, {
+        "uid" : "cea8659962fdedbd",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/69//#testresult/cea8659962fdedbd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643123095934,
+          "stop" : 1643123109416,
+          "duration" : 13482
+        }
+      }, {
+        "uid" : "70012ca017a99983",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/70012ca017a99983",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643109129582,
+          "stop" : 1643109144562,
+          "duration" : 14980
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d17b40c9a02a3807.json",
+  "parameterValues" : [ "[Also known as the Mo, 1, Also known as the Monastery of the ghfg]" ]
+}
