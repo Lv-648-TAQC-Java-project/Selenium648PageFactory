@@ -1,0 +1,753 @@
+{
+  "uid" : "fe6e8a3881b97a1f",
+  "name" : "TUA-359",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.getErrorMessageInChangePasswordPopUpTest",
+  "historyId" : "867c05818644afd4d40222f9b2c36b88",
+  "time" : {
+    "start" : 1643138880986,
+    "stop" : 1643138891756,
+    "duration" : 10770
+  },
+  "description" : "TUA-359 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up",
+  "descriptionHtml" : "<p>TUA-359 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1643138876904,
+      "stop" : 1643138880985,
+      "duration" : 4081
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643138201148,
+      "stop" : 1643138201156,
+      "duration" : 8
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643138201157,
+      "stop" : 1643138203037,
+      "duration" : 1880
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643138203037,
+      "stop" : 1643138203037,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643138203038,
+      "stop" : 1643138203038,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643138203038,
+      "stop" : 1643138203038,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "TUA-359 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1643138880987,
+        "stop" : 1643138884402,
+        "duration" : 3415
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1643138880987,
+          "stop" : 1643138881455,
+          "duration" : 468
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1643138881455,
+          "stop" : 1643138881565,
+          "duration" : 110
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1643138881566,
+          "stop" : 1643138884402,
+          "duration" : 2836
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1643138882254,
+            "stop" : 1643138882344,
+            "duration" : 90
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1643138882345,
+            "stop" : 1643138884402,
+            "duration" : 2057
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1643138884402,
+        "stop" : 1643138887867,
+        "duration" : 3465
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1643138887867,
+        "stop" : 1643138888553,
+        "duration" : 686
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click edit pop up",
+      "time" : {
+        "start" : 1643138888553,
+        "stop" : 1643138888630,
+        "duration" : 77
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Select Change password checkbox",
+      "time" : {
+        "start" : 1643138888631,
+        "stop" : 1643138889267,
+        "duration" : 636
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill in current password input: ''",
+      "time" : {
+        "start" : 1643138889267,
+        "stop" : 1643138889383,
+        "duration" : 116
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "currentPassword",
+        "value" : ""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill in new password input: 'NewPassword101!'",
+      "time" : {
+        "start" : 1643138889383,
+        "stop" : 1643138889553,
+        "duration" : 170
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "newPassword",
+        "value" : "NewPassword101!"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill in confirm password input: 'NewPassword101!'",
+      "time" : {
+        "start" : 1643138889553,
+        "stop" : 1643138889718,
+        "duration" : 165
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "confirmPassword",
+        "value" : "NewPassword101!"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on Save change button",
+      "time" : {
+        "start" : 1643138889718,
+        "stop" : 1643138889777,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill in current password input: 'admin'",
+      "time" : {
+        "start" : 1643138890132,
+        "stop" : 1643138890229,
+        "duration" : 97
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "currentPassword",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill in new password input: ''",
+      "time" : {
+        "start" : 1643138890229,
+        "stop" : 1643138890341,
+        "duration" : 112
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "newPassword",
+        "value" : ""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill in confirm password input: 'NewPassword101!'",
+      "time" : {
+        "start" : 1643138890341,
+        "stop" : 1643138890537,
+        "duration" : 196
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "confirmPassword",
+        "value" : "NewPassword101!"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on Save change button",
+      "time" : {
+        "start" : 1643138890537,
+        "stop" : 1643138890620,
+        "duration" : 83
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill in current password input: 'admin'",
+      "time" : {
+        "start" : 1643138890977,
+        "stop" : 1643138891099,
+        "duration" : 122
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "currentPassword",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill in new password input: 'NewPassword101!'",
+      "time" : {
+        "start" : 1643138891099,
+        "stop" : 1643138891247,
+        "duration" : 148
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "newPassword",
+        "value" : "NewPassword101!"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill in confirm password input: ''",
+      "time" : {
+        "start" : 1643138891247,
+        "stop" : 1643138891348,
+        "duration" : 101
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "confirmPassword",
+        "value" : ""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on Save change button",
+      "time" : {
+        "start" : 1643138891348,
+        "stop" : 1643138891403,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 22,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1643138891757,
+      "stop" : 1643138891831,
+      "duration" : 74
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "getErrorMessageInChangePasswordPopUpTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az202-534"
+  }, {
+    "name" : "thread",
+    "value" : "2805@fv-az202-534.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-359",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 44,
+        "unknown" : 0,
+        "total" : 49
+      },
+      "items" : [ {
+        "uid" : "3e7acdb18071ac50",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/81//#testresult/3e7acdb18071ac50",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643138741646,
+          "stop" : 1643138753149,
+          "duration" : 11503
+        }
+      }, {
+        "uid" : "dda7dcff2463a1f6",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/80//#testresult/dda7dcff2463a1f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643137543556,
+          "stop" : 1643137553044,
+          "duration" : 9488
+        }
+      }, {
+        "uid" : "8d491862206e4efa",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/79//#testresult/8d491862206e4efa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643137478870,
+          "stop" : 1643137488740,
+          "duration" : 9870
+        }
+      }, {
+        "uid" : "d453c6ba1e763395",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/78//#testresult/d453c6ba1e763395",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643136509325,
+          "stop" : 1643136519903,
+          "duration" : 10578
+        }
+      }, {
+        "uid" : "57aa1b26b89449b7",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/77//#testresult/57aa1b26b89449b7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643134721633,
+          "stop" : 1643134731800,
+          "duration" : 10167
+        }
+      }, {
+        "uid" : "31dbd6c31b85f0e9",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/76//#testresult/31dbd6c31b85f0e9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643134053502,
+          "stop" : 1643134063434,
+          "duration" : 9932
+        }
+      }, {
+        "uid" : "f8f1f42ef384023f",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/74//#testresult/f8f1f42ef384023f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130881109,
+          "stop" : 1643130892320,
+          "duration" : 11211
+        }
+      }, {
+        "uid" : "6000a0da21427518",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/75//#testresult/6000a0da21427518",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130835327,
+          "stop" : 1643130847155,
+          "duration" : 11828
+        }
+      }, {
+        "uid" : "cad3b1c2f1e0d0ff",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/73//#testresult/cad3b1c2f1e0d0ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129928265,
+          "stop" : 1643129941558,
+          "duration" : 13293
+        }
+      }, {
+        "uid" : "ce10dab7be13d1da",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/72//#testresult/ce10dab7be13d1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129737640,
+          "stop" : 1643129750430,
+          "duration" : 12790
+        }
+      }, {
+        "uid" : "cb12b71d1d0b8415",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/71//#testresult/cb12b71d1d0b8415",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129718463,
+          "stop" : 1643129730097,
+          "duration" : 11634
+        }
+      }, {
+        "uid" : "26465557e6e3a37e",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/70//#testresult/26465557e6e3a37e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643123275437,
+          "stop" : 1643123287129,
+          "duration" : 11692
+        }
+      }, {
+        "uid" : "3ca51a627b86d0d2",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/69//#testresult/3ca51a627b86d0d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643123232858,
+          "stop" : 1643123243013,
+          "duration" : 10155
+        }
+      }, {
+        "uid" : "18dd882e01311936",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/18dd882e01311936",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643109279068,
+          "stop" : 1643109291113,
+          "duration" : 12045
+        }
+      }, {
+        "uid" : "56648cd68b316454",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/56648cd68b316454",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643104520676,
+          "stop" : 1643104532298,
+          "duration" : 11622
+        }
+      }, {
+        "uid" : "6d93f60cb23cf9b3",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/6d93f60cb23cf9b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643100863412,
+          "stop" : 1643100875515,
+          "duration" : 12103
+        }
+      }, {
+        "uid" : "c6d3945eaf4b92e8",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/c6d3945eaf4b92e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643060200457,
+          "stop" : 1643060211717,
+          "duration" : 11260
+        }
+      }, {
+        "uid" : "5847088bc3ab3ed",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/5847088bc3ab3ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643058183574,
+          "stop" : 1643058194844,
+          "duration" : 11270
+        }
+      }, {
+        "uid" : "54120ee1e570a63e",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/54120ee1e570a63e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643056003110,
+          "stop" : 1643056013813,
+          "duration" : 10703
+        }
+      }, {
+        "uid" : "69cfdd07a846f628",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/69cfdd07a846f628",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643026105792,
+          "stop" : 1643026116523,
+          "duration" : 10731
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fe6e8a3881b97a1f.json",
+  "parameterValues" : [ ]
+}
