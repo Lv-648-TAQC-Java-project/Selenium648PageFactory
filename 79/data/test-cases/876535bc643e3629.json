@@ -1,0 +1,497 @@
+{
+  "uid" : "876535bc643e3629",
+  "name" : "TUA-160",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty",
+  "historyId" : "91a4eadc8fcaed5ef2a2eb00eeebe764",
+  "time" : {
+    "start" : 1643137256620,
+    "stop" : 1643137265775,
+    "duration" : 9155
+  },
+  "description" : "This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty",
+  "descriptionHtml" : "<p>This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1643137252985,
+      "stop" : 1643137256618,
+      "duration" : 3633
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643136813719,
+      "stop" : 1643136815511,
+      "duration" : 1792
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1643137256622,
+        "stop" : 1643137260051,
+        "duration" : 3429
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1643137256622,
+          "stop" : 1643137257099,
+          "duration" : 477
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1643137257099,
+          "stop" : 1643137257211,
+          "duration" : 112
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1643137257211,
+          "stop" : 1643137260051,
+          "duration" : 2840
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1643137257902,
+            "stop" : 1643137257996,
+            "duration" : 94
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "shouldDisplayMessage" : false,
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1643137257996,
+            "stop" : 1643137260051,
+            "duration" : 2055
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1643137260052,
+        "stop" : 1643137264013,
+        "duration" : 3961
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Додати центр' button ",
+      "time" : {
+        "start" : 1643137264013,
+        "stop" : 1643137264492,
+        "duration" : 479
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on '+Додати локацію' button",
+      "time" : {
+        "start" : 1643137264492,
+        "stop" : 1643137265183,
+        "duration" : 691
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Checking that 'Додати локацію' pop-up is opened",
+      "time" : {
+        "start" : 1643137265183,
+        "stop" : 1643137265757,
+        "duration" : 574
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Checking that 'Додати' button is disabled",
+      "time" : {
+        "start" : 1643137265758,
+        "stop" : 1643137265775,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 11,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1643137265776,
+      "stop" : 1643137265846,
+      "duration" : 70
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az105-937"
+  }, {
+    "name" : "thread",
+    "value" : "2783@fv-az105-937.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-160",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 15,
+        "skipped" : 0,
+        "passed" : 31,
+        "unknown" : 0,
+        "total" : 46
+      },
+      "items" : [ {
+        "uid" : "5c00dd0f7f049a46",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/78//#testresult/5c00dd0f7f049a46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643136292800,
+          "stop" : 1643136300276,
+          "duration" : 7476
+        }
+      }, {
+        "uid" : "828b735678e4aca6",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/77//#testresult/828b735678e4aca6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643134503111,
+          "stop" : 1643134510816,
+          "duration" : 7705
+        }
+      }, {
+        "uid" : "9e2927c13bb71cc1",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/76//#testresult/9e2927c13bb71cc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643133835061,
+          "stop" : 1643133842703,
+          "duration" : 7642
+        }
+      }, {
+        "uid" : "6d0b77f68ac2d9a2",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/74//#testresult/6d0b77f68ac2d9a2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130657841,
+          "stop" : 1643130666167,
+          "duration" : 8326
+        }
+      }, {
+        "uid" : "f52db4080ebf0501",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/75//#testresult/f52db4080ebf0501",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130610953,
+          "stop" : 1643130619606,
+          "duration" : 8653
+        }
+      }, {
+        "uid" : "737634d832d4ef60",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/73//#testresult/737634d832d4ef60",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129680884,
+          "stop" : 1643129689264,
+          "duration" : 8380
+        }
+      }, {
+        "uid" : "9ca2272feede0816",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/72//#testresult/9ca2272feede0816",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129506191,
+          "stop" : 1643129514755,
+          "duration" : 8564
+        }
+      }, {
+        "uid" : "9210d8fa2c111573",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/71//#testresult/9210d8fa2c111573",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643129484101,
+          "stop" : 1643129492116,
+          "duration" : 8015
+        }
+      }, {
+        "uid" : "65d9de3297b4b0c2",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/70//#testresult/65d9de3297b4b0c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643123035801,
+          "stop" : 1643123045368,
+          "duration" : 9567
+        }
+      }, {
+        "uid" : "5e17d21ad28fb717",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/69//#testresult/5e17d21ad28fb717",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643123003205,
+          "stop" : 1643123011746,
+          "duration" : 8541
+        }
+      }, {
+        "uid" : "8313db98cfcabaf5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/8313db98cfcabaf5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643109015593,
+          "stop" : 1643109024323,
+          "duration" : 8730
+        }
+      }, {
+        "uid" : "547881ed0bd61778",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/547881ed0bd61778",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643104269728,
+          "stop" : 1643104278578,
+          "duration" : 8850
+        }
+      }, {
+        "uid" : "316372eaef7f855a",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/316372eaef7f855a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643100604618,
+          "stop" : 1643100618081,
+          "duration" : 13463
+        }
+      }, {
+        "uid" : "9bce334ca6f17b5b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/9bce334ca6f17b5b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643059970705,
+          "stop" : 1643059979250,
+          "duration" : 8545
+        }
+      }, {
+        "uid" : "710abcb1e0675962",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/710abcb1e0675962",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643057945663,
+          "stop" : 1643057955567,
+          "duration" : 9904
+        }
+      }, {
+        "uid" : "ac1ca9df83d27119",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/ac1ca9df83d27119",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643055764283,
+          "stop" : 1643055774441,
+          "duration" : 10158
+        }
+      }, {
+        "uid" : "1a6b67c1cc6f5c59",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/1a6b67c1cc6f5c59",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643025874048,
+          "stop" : 1643025883390,
+          "duration" : 9342
+        }
+      }, {
+        "uid" : "ba0e2d272ee072c5",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/ba0e2d272ee072c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643023796061,
+          "stop" : 1643023804857,
+          "duration" : 8796
+        }
+      }, {
+        "uid" : "352896d41bd2226c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/65//#testresult/352896d41bd2226c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642957718608,
+          "stop" : 1642957727185,
+          "duration" : 8577
+        }
+      }, {
+        "uid" : "16bd8489415729ff",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/64//#testresult/16bd8489415729ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642951823127,
+          "stop" : 1642951832084,
+          "duration" : 8957
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "876535bc643e3629.json",
+  "parameterValues" : [ ]
+}
