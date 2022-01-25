@@ -1,0 +1,1669 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "com.ita.edu.teachua",
+    "children" : [ {
+      "name" : "api.tests",
+      "children" : [ {
+        "name" : "ResetPasswordTest",
+        "children" : [ {
+          "name" : "resetPasswordTest",
+          "uid" : "7d2a43d5ed3fd6ed",
+          "parentUid" : "ad9107003d7f0cdf179d5bdd4e8f0ec9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140554233,
+            "stop" : 1643140560855,
+            "duration" : 6622
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ad9107003d7f0cdf179d5bdd4e8f0ec9"
+      }, {
+        "name" : "RegistrationTest",
+        "children" : [ {
+          "name" : "testRegisterWithAllEmptyFields",
+          "uid" : "6cc30aafd84047f5",
+          "parentUid" : "eaf20589b239f7a9eb5b8499fab6696d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140560867,
+            "stop" : 1643140562401,
+            "duration" : 1534
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testRegisterWithExistingCredentials",
+          "uid" : "61dc273b5523db30",
+          "parentUid" : "eaf20589b239f7a9eb5b8499fab6696d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140562404,
+            "stop" : 1643140565026,
+            "duration" : 2622
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testRegisterWithInvalidData",
+          "uid" : "30ee7036c4dd2779",
+          "parentUid" : "eaf20589b239f7a9eb5b8499fab6696d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140565032,
+            "stop" : 1643140570747,
+            "duration" : 5715
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testRegisterWithInvalidPassword",
+          "uid" : "7af9207059dc53aa",
+          "parentUid" : "eaf20589b239f7a9eb5b8499fab6696d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140570751,
+            "stop" : 1643140571898,
+            "duration" : 1147
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testRegisterWithNonExistingRole",
+          "uid" : "6852d21fa258cb04",
+          "parentUid" : "eaf20589b239f7a9eb5b8499fab6696d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140571900,
+            "stop" : 1643140574049,
+            "duration" : 2149
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testRegisterWithOneEmptyField",
+          "uid" : "8abd7dd3f5654708",
+          "parentUid" : "eaf20589b239f7a9eb5b8499fab6696d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140574054,
+            "stop" : 1643140579275,
+            "duration" : 5221
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testRegisterWithValidData",
+          "uid" : "5cf33ee42f856e96",
+          "parentUid" : "eaf20589b239f7a9eb5b8499fab6696d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140579279,
+            "stop" : 1643140587114,
+            "duration" : 7835
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "eaf20589b239f7a9eb5b8499fab6696d"
+      }, {
+        "name" : "AboutUsTest",
+        "children" : [ {
+          "name" : "createChangeAndDeleteAboutUs",
+          "uid" : "c3e0961a015cb87c",
+          "parentUid" : "1e45f51dda9f752a744bdef392c50e5f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140592380,
+            "stop" : 1643140597584,
+            "duration" : 5204
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getAboutUs",
+          "uid" : "ec9a9263647998e0",
+          "parentUid" : "1e45f51dda9f752a744bdef392c50e5f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140597588,
+            "stop" : 1643140601454,
+            "duration" : 3866
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getAllAboutUs",
+          "uid" : "b95a73d333f74e8d",
+          "parentUid" : "1e45f51dda9f752a744bdef392c50e5f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140601510,
+            "stop" : 1643140603067,
+            "duration" : 1557
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "1e45f51dda9f752a744bdef392c50e5f"
+      }, {
+        "name" : "SignInTest",
+        "children" : [ {
+          "name" : "successSignInTest",
+          "uid" : "756a2015e63e4dbc",
+          "parentUid" : "167700e4c202ee819c0dffa8472cc282",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140603078,
+            "stop" : 1643140605775,
+            "duration" : 2697
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "167700e4c202ee819c0dffa8472cc282"
+      }, {
+        "name" : "CenterTests",
+        "children" : [ {
+          "name" : "changeCenter",
+          "uid" : "aba156b663b9f8eb",
+          "parentUid" : "79e7fad0cb6d137fbc5256cd9dc5bbd3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140608112,
+            "stop" : 1643140614424,
+            "duration" : 6312
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deleteCenter",
+          "uid" : "515d453b8ba8284e",
+          "parentUid" : "79e7fad0cb6d137fbc5256cd9dc5bbd3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140614426,
+            "stop" : 1643140616446,
+            "duration" : 2020
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getCenter2",
+          "uid" : "8058c5811c21fb97",
+          "parentUid" : "79e7fad0cb6d137fbc5256cd9dc5bbd3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140616448,
+            "stop" : 1643140617387,
+            "duration" : 939
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getListOfCenters",
+          "uid" : "c54c9ccbc9e6ce06",
+          "parentUid" : "79e7fad0cb6d137fbc5256cd9dc5bbd3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140617390,
+            "stop" : 1643140625743,
+            "duration" : 8353
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getListOfCentersById",
+          "uid" : "d984853acff863bd",
+          "parentUid" : "79e7fad0cb6d137fbc5256cd9dc5bbd3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140625754,
+            "stop" : 1643140626768,
+            "duration" : 1014
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "79e7fad0cb6d137fbc5256cd9dc5bbd3"
+      }, {
+        "name" : "FeedbackTest",
+        "children" : [ {
+          "name" : "addFeedbackToClubTest",
+          "uid" : "4972e4c796f44ab0",
+          "parentUid" : "659f4dbf67165d83dc50694ff4134565",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140627904,
+            "stop" : 1643140628853,
+            "duration" : 949
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "createFeedbackWithEmptyTextFiledTest",
+          "uid" : "e614f4229cdccf9e",
+          "parentUid" : "659f4dbf67165d83dc50694ff4134565",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140628857,
+            "stop" : 1643140631030,
+            "duration" : 2173
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getFeedbackByIdTest",
+          "uid" : "a75beca1c1640b9f",
+          "parentUid" : "659f4dbf67165d83dc50694ff4134565",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140631032,
+            "stop" : 1643140631945,
+            "duration" : 913
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "659f4dbf67165d83dc50694ff4134565"
+      }, {
+        "name" : "AuthorizedClubTest",
+        "children" : [ {
+          "name" : "VerifyThatClubCannotBeCreatedWhenEnteringInvalidData",
+          "uid" : "d898cf01be5ad7c5",
+          "parentUid" : "401c32cd2a60f670b74ba00666096f85",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140633591,
+            "stop" : 1643140642527,
+            "duration" : 8936
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Новий тип гуртка", "Category not found by name: Новий тип гуртка", "ageFrom must be greater than or equal to 2", "2", "19", "18", "ageTo must be less than or equal to 18", "ЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁ", "Це поле може містити тільки українські та англійські літери, цифри та спеціальні символи", "Description", "Довжина опису не може бути меншою за 40 символів", "descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptndescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptionriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriiptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescrasdfw", "Танці, хореографія", "Довжина опису не може бути більшою за 1500 символів", "ЪЫЭЁЁ", "name can't contain russian letters", "name", "name Довжина назви має бути від 5 до 100 символів", "characterscharacsterscharacterscharacterscharacterscharacterscharacterscharacterschacharacterscharact", "testName", "1" ]
+        }, {
+          "name" : "VerifyThatClubCannotBeCreatedWhenOneOfTheMandatoryFieldsAreNotFilled",
+          "uid" : "52aad295683f019c",
+          "parentUid" : "401c32cd2a60f670b74ba00666096f85",
+          "status" : "failed",
+          "time" : {
+            "start" : 1643140659713,
+            "stop" : 1643140668401,
+            "duration" : 8688
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "VerifyThatUserAsOwnerCanCreateNewClubWhichRegisteredOnHim",
+          "uid" : "afccd8f1924cd4ae",
+          "parentUid" : "401c32cd2a60f670b74ba00666096f85",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140668403,
+            "stop" : 1643140670935,
+            "duration" : 2532
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "VerifyThatUserAsOwnerCanNotDeleteClubThatNotRegisteredByHim",
+          "uid" : "731210203b66e4d",
+          "parentUid" : "401c32cd2a60f670b74ba00666096f85",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140670938,
+            "stop" : 1643140680971,
+            "duration" : 10033
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "VerifyThatUserAsOwnerCannotCreateNewClubIsInCenterIfNameFieldContainLessThan5Characters",
+          "uid" : "4f860cb26c642ffa",
+          "parentUid" : "401c32cd2a60f670b74ba00666096f85",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140680973,
+            "stop" : 1643140682835,
+            "duration" : 1862
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "VerifyThatUserCannotCreateNewClubWithRussianCharactersInNameField",
+          "uid" : "46377c0d94e82a58",
+          "parentUid" : "401c32cd2a60f670b74ba00666096f85",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140682837,
+            "stop" : 1643140684165,
+            "duration" : 1328
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "401c32cd2a60f670b74ba00666096f85"
+      }, {
+        "name" : "BannerTest",
+        "children" : [ {
+          "name" : "addNewBannerAndDeleteIt",
+          "uid" : "a6c7c43b04f4397d",
+          "parentUid" : "b4ee3c42c4e90ce8da76a15001d59f9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140687873,
+            "stop" : 1643140689671,
+            "duration" : 1798
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "addNewBannerWithInvalidData",
+          "uid" : "1da95637af8ada12",
+          "parentUid" : "b4ee3c42c4e90ce8da76a15001d59f9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140689672,
+            "stop" : 1643140691050,
+            "duration" : 1378
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getBanner",
+          "uid" : "66a6b1494c9b98ad",
+          "parentUid" : "b4ee3c42c4e90ce8da76a15001d59f9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140691055,
+            "stop" : 1643140692018,
+            "duration" : 963
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getListOfBanners",
+          "uid" : "42fb239574ced331",
+          "parentUid" : "b4ee3c42c4e90ce8da76a15001d59f9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140692020,
+            "stop" : 1643140692814,
+            "duration" : 794
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "b4ee3c42c4e90ce8da76a15001d59f9b"
+      }, {
+        "name" : "DistrictTest",
+        "children" : [ {
+          "name" : "createDistrict",
+          "uid" : "4a578f9f65829a2e",
+          "parentUid" : "0cc3ae96a59584b10933aa1f9ede1ac8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140696784,
+            "stop" : 1643140698815,
+            "duration" : 2031
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getListOfDistricts",
+          "uid" : "e7de05f00d9ffa26",
+          "parentUid" : "0cc3ae96a59584b10933aa1f9ede1ac8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140698820,
+            "stop" : 1643140700065,
+            "duration" : 1245
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "0cc3ae96a59584b10933aa1f9ede1ac8"
+      }, {
+        "name" : "CityTest",
+        "children" : [ {
+          "name" : "addCityWithoutNameTest",
+          "uid" : "3cdfbec9703dc9f8",
+          "parentUid" : "8317707f54dd259513cce7a39df39cff",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140701126,
+            "stop" : 1643140704710,
+            "duration" : 3584
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "changeLongitudeAndLatitudeOfCityTest",
+          "uid" : "bf769c48b0a4a0c1",
+          "parentUid" : "8317707f54dd259513cce7a39df39cff",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140704712,
+            "stop" : 1643140710263,
+            "duration" : 5551
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getListOfCitiesTest",
+          "uid" : "23f1eb8cde020862",
+          "parentUid" : "8317707f54dd259513cce7a39df39cff",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140710265,
+            "stop" : 1643140711065,
+            "duration" : 800
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "8317707f54dd259513cce7a39df39cff"
+      }, {
+        "name" : "StationTests",
+        "children" : [ {
+          "name" : "getStationByID",
+          "uid" : "21ec07b05b413896",
+          "parentUid" : "f3b4b10674b023687cd82bb64fc9d23d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140716336,
+            "stop" : 1643140720617,
+            "duration" : 4281
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getStations",
+          "uid" : "d5a25e20ea380899",
+          "parentUid" : "f3b4b10674b023687cd82bb64fc9d23d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140720619,
+            "stop" : 1643140721639,
+            "duration" : 1020
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getStationsByName",
+          "uid" : "897e65ef041f177c",
+          "parentUid" : "f3b4b10674b023687cd82bb64fc9d23d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140721641,
+            "stop" : 1643140722561,
+            "duration" : 920
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f3b4b10674b023687cd82bb64fc9d23d"
+      }, {
+        "name" : "QuestionTest",
+        "children" : [ {
+          "name" : "getQuestionByIdTest",
+          "uid" : "7ad2c31249c07f0",
+          "parentUid" : "bd2998eabb534ac1214e77af7dc3e609",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140724144,
+            "stop" : 1643140725179,
+            "duration" : 1035
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "updateTitleOfFAQTest",
+          "uid" : "36c0f3ddc592d766",
+          "parentUid" : "bd2998eabb534ac1214e77af7dc3e609",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140725181,
+            "stop" : 1643140731677,
+            "duration" : 6496
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "bd2998eabb534ac1214e77af7dc3e609"
+      }, {
+        "name" : "UserTest",
+        "children" : [ {
+          "name" : "testUserCanEditProfile",
+          "uid" : "56710f6e754c44c6",
+          "parentUid" : "bb0d363bf10368c4ffed16cfd995e29f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140744959,
+            "stop" : 1643140747939,
+            "duration" : 2980
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testUserCanEditRole",
+          "uid" : "2a4cfb5165a6d941",
+          "parentUid" : "bb0d363bf10368c4ffed16cfd995e29f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140747942,
+            "stop" : 1643140750298,
+            "duration" : 2356
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testUserCanNotEditProfileWithInvalidData",
+          "uid" : "8e8e5e9fadda2c23",
+          "parentUid" : "bb0d363bf10368c4ffed16cfd995e29f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140750302,
+            "stop" : 1643140756310,
+            "duration" : 6008
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testUserCanNotEditProfileWithInvalidPhone",
+          "uid" : "7fb0d9f60cf6bbf2",
+          "parentUid" : "bb0d363bf10368c4ffed16cfd995e29f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140756312,
+            "stop" : 1643140759172,
+            "duration" : 2860
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testUserCanNotEditProfileWithMissingField",
+          "uid" : "65baf345e4ba941d",
+          "parentUid" : "bb0d363bf10368c4ffed16cfd995e29f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140759176,
+            "stop" : 1643140761814,
+            "duration" : 2638
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testUserDataIsAvailableToUser",
+          "uid" : "2bf6f73c49d64bd4",
+          "parentUid" : "bb0d363bf10368c4ffed16cfd995e29f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140761823,
+            "stop" : 1643140762665,
+            "duration" : 842
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "bb0d363bf10368c4ffed16cfd995e29f"
+      }, {
+        "name" : "ContactTests",
+        "children" : [ {
+          "name" : "createChangeAndDeleteContact",
+          "uid" : "aad26c89d648aa4d",
+          "parentUid" : "7b452dfd9ed508d81e9a353068867d0a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140765815,
+            "stop" : 1643140768851,
+            "duration" : 3036
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getContact",
+          "uid" : "4a15180c8af12a0b",
+          "parentUid" : "7b452dfd9ed508d81e9a353068867d0a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140768855,
+            "stop" : 1643140774773,
+            "duration" : 5918
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getContacts",
+          "uid" : "9dea453a0a93f1a3",
+          "parentUid" : "7b452dfd9ed508d81e9a353068867d0a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140774776,
+            "stop" : 1643140775641,
+            "duration" : 865
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "7b452dfd9ed508d81e9a353068867d0a"
+      }, {
+        "name" : "ChallengeTest",
+        "children" : [ {
+          "name" : "addChallengeTestWithValidData",
+          "uid" : "fe1801360a2d8a9b",
+          "parentUid" : "e15bcbc3b5395e13c53fbf3360be8326",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140778390,
+            "stop" : 1643140784283,
+            "duration" : 5893
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "isNotAbleToCreateChallengeWithInvalidValues",
+          "uid" : "6096acc1bb85a781",
+          "parentUid" : "e15bcbc3b5395e13c53fbf3360be8326",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140784285,
+            "stop" : 1643140785510,
+            "duration" : 1225
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e15bcbc3b5395e13c53fbf3360be8326"
+      }, {
+        "name" : "CategoryTest",
+        "children" : [ {
+          "name" : "changeCategory",
+          "uid" : "393666f18456207c",
+          "parentUid" : "b32d0727f76a56160576e1c030c0fe5a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140789362,
+            "stop" : 1643140790164,
+            "duration" : 802
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "createCategory",
+          "uid" : "8635145a4366d20e",
+          "parentUid" : "b32d0727f76a56160576e1c030c0fe5a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140790166,
+            "stop" : 1643140791895,
+            "duration" : 1729
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getCategory",
+          "uid" : "6d780b902c2a6afd",
+          "parentUid" : "b32d0727f76a56160576e1c030c0fe5a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140791897,
+            "stop" : 1643140792850,
+            "duration" : 953
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getListOfCategories",
+          "uid" : "9131079e4608f86b",
+          "parentUid" : "b32d0727f76a56160576e1c030c0fe5a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140792851,
+            "stop" : 1643140794844,
+            "duration" : 1993
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getListOfCategoriesSearch",
+          "uid" : "124c2f69d034730",
+          "parentUid" : "b32d0727f76a56160576e1c030c0fe5a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140794852,
+            "stop" : 1643140795966,
+            "duration" : 1114
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "b32d0727f76a56160576e1c030c0fe5a"
+      }, {
+        "name" : "RoleAdminTest",
+        "children" : [ {
+          "name" : "createNewRole",
+          "uid" : "f8840439c6fa9205",
+          "parentUid" : "09dc70da54e3dcee1d3382f387647b6d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140804432,
+            "stop" : 1643140807411,
+            "duration" : 2979
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getListOfRolesTest",
+          "uid" : "26d4e0f087e58505",
+          "parentUid" : "09dc70da54e3dcee1d3382f387647b6d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140807413,
+            "stop" : 1643140808256,
+            "duration" : 843
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getRoleByIDTest",
+          "uid" : "2099c52f067c470e",
+          "parentUid" : "09dc70da54e3dcee1d3382f387647b6d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140808258,
+            "stop" : 1643140809265,
+            "duration" : 1007
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "09dc70da54e3dcee1d3382f387647b6d"
+      } ],
+      "uid" : "api.tests"
+    }, {
+      "name" : "ui.tests",
+      "children" : [ {
+        "name" : "RestorePasswordViaGmailApiTest",
+        "children" : [ {
+          "name" : "verifyErrorPasswordAndReenterPasswordNotEqualTest",
+          "uid" : "51d21f42a8e9e3af",
+          "parentUid" : "b9bf849a70f4aca2801b341eded1d194",
+          "status" : "unknown",
+          "time" : {
+            "start" : 1643140554233,
+            "stop" : 1643140554234,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "VerifyNewPasswordValidationWhenRestoringPasswordViaForgotPassword",
+          "uid" : "ff0c6286cffcd7c",
+          "parentUid" : "b9bf849a70f4aca2801b341eded1d194",
+          "status" : "unknown",
+          "time" : {
+            "start" : 1643140554434,
+            "stop" : 1643140554434,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testPasswordRecovery",
+          "uid" : "6d77534b36618951",
+          "parentUid" : "b9bf849a70f4aca2801b341eded1d194",
+          "status" : "unknown",
+          "time" : {
+            "start" : 1643140554436,
+            "stop" : 1643140554436,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "restorePasswordWithInvalidEmailTest",
+          "uid" : "e8aeba4e481d613d",
+          "parentUid" : "b9bf849a70f4aca2801b341eded1d194",
+          "status" : "failed",
+          "time" : {
+            "start" : 1643140573335,
+            "stop" : 1643140583387,
+            "duration" : 10052
+          },
+          "flaky" : true,
+          "newFailed" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "b9bf849a70f4aca2801b341eded1d194"
+      }, {
+        "name" : "RegistrationTest",
+        "children" : [ {
+          "name" : "checkAlertsFieldsWhenEmpty",
+          "uid" : "faf8e3f0d86eecf7",
+          "parentUid" : "24a42cdc45d45375d57d3351a207c9db",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140565549,
+            "stop" : 1643140568221,
+            "duration" : 2672
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "24a42cdc45d45375d57d3351a207c9db"
+      }, {
+        "name" : "AdvancedSearchTest",
+        "children" : [ {
+          "name" : "checkByValidAgeDataProvider",
+          "uid" : "c887be83b779d7f",
+          "parentUid" : "ef2c132adb2320f4c501dc7a23c0885c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140590799,
+            "stop" : 1643140591210,
+            "duration" : 411
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "2", "2" ]
+        }, {
+          "name" : "checkByValidAgeDataProvider",
+          "uid" : "7070ebf54254385b",
+          "parentUid" : "ef2c132adb2320f4c501dc7a23c0885c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140598136,
+            "stop" : 1643140598521,
+            "duration" : 385
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "18", "18" ]
+        }, {
+          "name" : "checkByValidAgeDataProvider",
+          "uid" : "4e99018e6fcece42",
+          "parentUid" : "ef2c132adb2320f4c501dc7a23c0885c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140605121,
+            "stop" : 1643140605491,
+            "duration" : 370
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "1", "2" ]
+        }, {
+          "name" : "checkByValidAgeDataProvider",
+          "uid" : "31edf24bf0b13382",
+          "parentUid" : "ef2c132adb2320f4c501dc7a23c0885c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140610768,
+            "stop" : 1643140611183,
+            "duration" : 415
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "19", "18" ]
+        }, {
+          "name" : "checkIfCentersAreDisplayedAsAList",
+          "uid" : "fadcfe89e319951c",
+          "parentUid" : "ef2c132adb2320f4c501dc7a23c0885c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140616625,
+            "stop" : 1643140617635,
+            "duration" : 1010
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "checkSortingClubsByNameInAscendingOrder",
+          "uid" : "545aca9ae55f99c5",
+          "parentUid" : "ef2c132adb2320f4c501dc7a23c0885c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140625854,
+            "stop" : 1643140682345,
+            "duration" : 56491
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "checkSortingClubsByNameInDescendingOrder",
+          "uid" : "f95626b480a10b79",
+          "parentUid" : "ef2c132adb2320f4c501dc7a23c0885c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140688729,
+            "stop" : 1643140746011,
+            "duration" : 57282
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "checkSortingClubsByRatingInAscendingOrder",
+          "uid" : "3e773f155aaf9afe",
+          "parentUid" : "ef2c132adb2320f4c501dc7a23c0885c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140752029,
+            "stop" : 1643140818528,
+            "duration" : 66499
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "checkSortingClubsByRatingInDescendingOrder",
+          "uid" : "de531c7a058cfba4",
+          "parentUid" : "ef2c132adb2320f4c501dc7a23c0885c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140826514,
+            "stop" : 1643140883759,
+            "duration" : 57245
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "openAdvancedSearchFieldTest",
+          "uid" : "5770ccd54ecdcffb",
+          "parentUid" : "ef2c132adb2320f4c501dc7a23c0885c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140888820,
+            "stop" : 1643140899113,
+            "duration" : 10293
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "verifyAllParametersActiveCenterAdvancedSearch",
+          "uid" : "87c2c18d765cfd86",
+          "parentUid" : "ef2c132adb2320f4c501dc7a23c0885c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140935247,
+            "stop" : 1643140936592,
+            "duration" : 1345
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "verifyAllParametersActiveClubsAdvancedSearch",
+          "uid" : "a2eb05e05613e41e",
+          "parentUid" : "ef2c132adb2320f4c501dc7a23c0885c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643140962706,
+            "stop" : 1643140965492,
+            "duration" : 2786
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ef2c132adb2320f4c501dc7a23c0885c"
+      }, {
+        "name" : "OwnerProfileTest",
+        "children" : [ {
+          "name" : "TestUserCheckInvalidDataForFieldPhone",
+          "uid" : "5d6628191831e42d",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643140973673,
+            "stop" : 1643141126535,
+            "duration" : 152862
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[6895, Телефон не відповідає вказаному формату, 65987458, Телефон не відповідає вказаному формату, 6593859632586, Телефон не відповідає вказаному формату, jngeoлщшогнеп, Телефон не може містити літери, !96397180, Телефон не відповідає вказаному формату, @96397180, Телефон не відповідає вказаному формату, #96397180, Телефон не відповідає вказаному формату, $96397180, Телефон не відповідає вказаному формату, %96397180, Телефон не відповідає вказаному формату, ^96397180, Телефон не відповідає вказаному формату, &96397180, Телефон не відповідає вказаному формату, *96397180, Телефон не відповідає вказаному формату, (96397180, Телефон не відповідає вказаному формату, _96397180, Телефон не відповідає вказаному формату, +96397180, Телефон не відповідає вказаному формату, .96397180, Телефон не відповідає вказаному формату, :96397180, Телефон не відповідає вказаному формату, , Будь ласка введіть Ваш номер телефону]" ]
+        }, {
+          "name" : "VerifyThatErrorMessagesIsDisplayedAfterUserLeavesFieldsEmptyAndClicksNextStepButton",
+          "uid" : "1391ec1f45aa5d00",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643141155390,
+            "stop" : 1643141169081,
+            "duration" : 13691
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "VerifyThatOwnerCanAddLocationOfClub",
+          "uid" : "82f627e19c858e3f",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643141205490,
+            "stop" : 1643141219137,
+            "duration" : 13647
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "ValidName2", "2", "18", "ValidAddress", "49.829104498711104, 24.005058710351314", "0966666666", "example@email.com", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "name,cityName,districtName,stationName,address,coordinates,phone", "basic_contactТелефон,basic_contactFacebook,basic_contactWhatsApp,basic_contactПошта,basic_contactSkype,basic_contactContact" ]
+        }, {
+          "name" : "VerifyThatOwnerCannotAddLocationToTheListOfLocationsAfterLeavingFieldsEmpty",
+          "uid" : "561f8c49191ce1fa",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643141241425,
+            "stop" : 1643141259388,
+            "duration" : 17963
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "addLocationWithValidDataOfMandatoryFields",
+          "uid" : "5dc9e4f220782f08",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643141266202,
+            "stop" : 1643141289902,
+            "duration" : 23700
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "ТестЛокація2", "Сумська 2/3", "50.00100346155677, 36.234188917163884", "0977777777" ]
+        }, {
+          "name" : "checkButtonIsEnabledWithValidInput",
+          "uid" : "b5fd7eabb3581cca",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643141298013,
+            "stop" : 1643141335853,
+            "duration" : 37840
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\\n\" +\n\"Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\\n\" +\n\"On the top of the column stands a bronze figurine of a woman holding a whe are you so sad& i think that is, Also known as the Monastery of the Caves, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\\n\" +\n\"Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\\n\" +\n\"On the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 b]" ]
+        }, {
+          "name" : "checkDescriptionFieldWithLessAndMoreThan1500Symbols",
+          "uid" : "cd6418cfb15ce870",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643141346281,
+            "stop" : 1643141397810,
+            "duration" : 51529
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalv, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square., Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd. With its numerous parks and gardens, Kiev is perfect for picnics and outdoor activities.\nHidropark is an island in the Dnieper River whose natural beaches are very popular during the summer. Besides swimming, you can also play beach volleyball, eat delicious street food or simply sunbathe.]" ]
+        }, {
+          "name" : "checkDescriptionFieldWithLessThan40Symbols",
+          "uid" : "44cf5f656a2dda74",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643141408384,
+            "stop" : 1643141443954,
+            "duration" : 35570
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[Also known as the Mo, 1, Also known as the Monastery of the ghfg]" ]
+        }, {
+          "name" : "checkDescriptionFieldWithValidLettersAndSymbols",
+          "uid" : "9f798cfed5970c2f",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643141469273,
+            "stop" : 1643141482922,
+            "duration" : 13649
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[Education, students, Школа балетуee and so , 12345678901234567890123456789012345678656, !#$%&'()*+,-./:;<=>?@[]^_`{}~^&^%%^&***#]" ]
+        }, {
+          "name" : "checkErrorMsWhenFillInvalidDataIntoFirstNameField",
+          "uid" : "4c5e2624d310ca18",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643141503499,
+            "stop" : 1643141517174,
+            "duration" : 13675
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[AfBbCcDdEeFfGgHhIiJjKkLlMmNn, Ім'я не може містити більше, ніж 25 символів, AfBbCcDdEeFfGgHhIiJjKkLlMm, Ім'я не може містити більше, ніж 25 символів, , Будь ласка введіть Ваше ім'я, 1Admin, Ім'я не може містити цифри, 2Admin, Ім'я не може містити цифри, 3Admin, Ім'я не може містити цифри, 4Admin, Ім'я не може містити цифри, -Name, Ім'я повинно починатися і закінчуватися літерою, < Name>, Ім'я не може містити спеціальні символи, 'Name, Ім'я повинно починатися і закінчуватися літерою, Name-, Ім'я повинно починатися і закінчуватися літерою, <Name >, Ім'я не може містити спеціальні символи, Name', Ім'я повинно починатися і закінчуватися літерою, !Admin, Ім'я не може містити спеціальні символи, @Admin, Ім'я не може містити спеціальні символи, #Admin, Ім'я не може містити спеціальні символи, $Admin, Ім'я не може містити спеціальні символи, %Admin, Ім'я не може містити спеціальні символи, ^Admin, Ім'я не може містити спеціальні символи, &Admin, Ім'я не може містити спеціальні символи, *Admin, Ім'я не може містити спеціальні символи, (Admin, Ім'я не може містити спеціальні символи, _Admin, Ім'я не може містити спеціальні символи, +Admin, Ім'я не може містити спеціальні символи, .Admin, Ім'я не може містити спеціальні символи, :Admin, Ім'я не може містити спеціальні символи, , Будь ласка введіть Ваше ім'я]" ]
+        }, {
+          "name" : "checkErrorMsWhenFillInvalidDataIntoLastNameField",
+          "uid" : "986b74d33eb93fe5",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643141546143,
+            "stop" : 1643141559870,
+            "duration" : 13727
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[AfBbCcDdEeFfGgHhIiJjKkLlMmNn, Прізвище не може містити більше, ніж 25 символів, AfBbCcDdEeFfGgHhIiJjKkLlMm, Прізвище не може містити більше, ніж 25 символів, 1Admin, Прізвище не може містити цифри, 2Admin, Прізвище не може містити цифри, 3Admin, Прізвище не може містити цифри, 4Admin, Прізвище не може містити цифри, -Lastname, Прізвище повинно починатися і закінчуватися літерою, < Lastname>, Прізвище не може містити спеціальні символи, 'Lastname, Прізвище повинно починатися і закінчуватися літерою, Lastname-, Прізвище повинно починатися і закінчуватися літерою, <Lastname >, Прізвище не може містити спеціальні символи, Lastname', Прізвище повинно починатися і закінчуватися літерою, !Admin, Прізвище не може містити спеціальні символи, @Admin, Прізвище не може містити спеціальні символи, #Admin, Прізвище не може містити спеціальні символи, $Admin, Прізвище не може містити спеціальні символи, %Admin, Прізвище не може містити спеціальні символи, ^Admin, Прізвище не може містити спеціальні символи, &Admin, Прізвище не може містити спеціальні символи, *Admin, Прізвище не може містити спеціальні символи, (Admin, Прізвище не може містити спеціальні символи, _Admin, Прізвище не може містити спеціальні символи, +Admin, Прізвище не може містити спеціальні символи, .Admin, Прізвище не може містити спеціальні символи, :Admin, Прізвище не може містити спеціальні символи, , Будь ласка введіть Ваше прізвище]" ]
+        }, {
+          "name" : "checkLastVerifyEnteredDataInRegistrationRemembered",
+          "uid" : "ff60df4109ff1c90",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643141583653,
+            "stop" : 1643141586318,
+            "duration" : 2665
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getErrorMessageInChangePasswordPopUpTest",
+          "uid" : "76cbf8d258b22c9b",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643141623243,
+            "stop" : 1643141637054,
+            "duration" : 13811
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testAddLocationByOwner",
+          "uid" : "4f749cfa4ed24971",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643141657335,
+            "stop" : 1643141671128,
+            "duration" : 13793
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "ValidLocationName", "ValidAddress", "49.829104498711104, 24.005058710351314", "0966666666" ]
+        }, {
+          "name" : "testAddLocationFromProfilePage",
+          "uid" : "b3ea1881c4b573bb",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643141693933,
+            "stop" : 1643141707567,
+            "duration" : 13634
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "ValidLocationName", "ValidAddress", "49.829104498711104, 24.005058710351314", "0966666666", "ValidCenterName", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "Тестовий гурток для центру" ]
+        }, {
+          "name" : "verifyThatErrorMessageAppearsWhenUserEntersLetterInRUSOrGER",
+          "uid" : "63790759a0553f72",
+          "parentUid" : "206ac0137e8fc9f38d45ba42eeee3c81",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643141736980,
+            "stop" : 1643141750642,
+            "duration" : 13662
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfЫ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfъ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä]" ]
+        } ],
+        "uid" : "206ac0137e8fc9f38d45ba42eeee3c81"
+      }, {
+        "name" : "BasicSearchTest",
+        "children" : [ {
+          "name" : "checkInvalidSymbolsAndQuantityPaste",
+          "uid" : "9d409f351e3bb2f7",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643141773962,
+            "stop" : 1643141776091,
+            "duration" : 2129
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "///", "За критеріями пошуку гуртків не знайдено" ]
+        }, {
+          "name" : "checkInvalidSymbolsAndQuantityPaste",
+          "uid" : "f43d40576bc35731",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643141807900,
+            "stop" : 1643141809065,
+            "duration" : 1165
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "150rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv", "За критеріями пошуку гуртків не знайдено" ]
+        }, {
+          "name" : "checkInvalidSymbolsAndQuantityPaste",
+          "uid" : "f05baa70f75a4f2",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643141846183,
+            "stop" : 1643141847387,
+            "duration" : 1204
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "152rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv+1", "За критеріями пошуку гуртків не знайдено" ]
+        }, {
+          "name" : "checkInvalidSymbolsAndQuantityTyping",
+          "uid" : "21dd6ebc979fb880",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643141859454,
+            "stop" : 1643141860622,
+            "duration" : 1168
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "///", "За критеріями пошуку гуртків не знайдено" ]
+        }, {
+          "name" : "checkInvalidSymbolsAndQuantityTyping",
+          "uid" : "b058173a424dab18",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643141891981,
+            "stop" : 1643141893448,
+            "duration" : 1467
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "150rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv", "За критеріями пошуку гуртків не знайдено" ]
+        }, {
+          "name" : "checkInvalidSymbolsAndQuantityTyping",
+          "uid" : "b56bac018010c2fd",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643141908988,
+            "stop" : 1643141910440,
+            "duration" : 1452
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "152rtyuiopasdfghjklzxcvbnm;qwertyuiop[asdfghjkl 50cvbnm,.qwertyuiopasdfghjklzxcvbnm,.qwertertyu 100йцукенuiopasdfghjklzxcvbqwertyuiop[asdfghjklzxcv+1", "За критеріями пошуку гуртків не знайдено" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsClipBoard",
+          "uid" : "c04e1c46a5c9be22",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643141946621,
+            "stop" : 1643141956755,
+            "duration" : 10134
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "American Gymnastics Club" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsClipBoard",
+          "uid" : "fb70894c4385e743",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643141991991,
+            "stop" : 1643142002136,
+            "duration" : 10145
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "IT освіта: курси \"ГРАНД\"" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsClipBoard",
+          "uid" : "b08d1487e763fc96",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643142033191,
+            "stop" : 1643142034376,
+            "duration" : 1185
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Онлайн-школа точних наук YOUSTUD" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsClipBoard",
+          "uid" : "187386752a5e47db",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643142041687,
+            "stop" : 1643142042873,
+            "duration" : 1186
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Театральна Студія \"Зоряні Діти''" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsClipBoard",
+          "uid" : "b08585266d4ffd12",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643142053207,
+            "stop" : 1643142055866,
+            "duration" : 2659
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Студія танцю \"Несамовиті\"" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsClipBoard",
+          "uid" : "9a0eeab281be839f",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643142066439,
+            "stop" : 1643142070155,
+            "duration" : 3716
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "LESKIV-SCHOOL" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsClipBoard",
+          "uid" : "d64f64c36d2df101",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643142080222,
+            "stop" : 1643142081450,
+            "duration" : 1228
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Школа танців Dream Team" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsTyping",
+          "uid" : "44444d7e001f89e7",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "failed",
+          "time" : {
+            "start" : 1643142100153,
+            "stop" : 1643142111621,
+            "duration" : 11468
+          },
+          "flaky" : false,
+          "newFailed" : true,
+          "parameters" : [ "American Gymnastics Club" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsTyping",
+          "uid" : "ce4456d8fa19e1cc",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "failed",
+          "time" : {
+            "start" : 1643142128937,
+            "stop" : 1643142140470,
+            "duration" : 11533
+          },
+          "flaky" : false,
+          "newFailed" : true,
+          "parameters" : [ "IT освіта: курси \"ГРАНД\"" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsTyping",
+          "uid" : "d38b3c560ca59e72",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "failed",
+          "time" : {
+            "start" : 1643142164995,
+            "stop" : 1643142176584,
+            "duration" : 11589
+          },
+          "flaky" : false,
+          "newFailed" : true,
+          "parameters" : [ "Онлайн-школа точних наук YOUSTUD" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsTyping",
+          "uid" : "38c19b278cbcdf13",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643142212199,
+            "stop" : 1643142222311,
+            "duration" : 10112
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Театральна Студія \"Зоряні Діти''" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsTyping",
+          "uid" : "ddbf02921b77fdaa",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "failed",
+          "time" : {
+            "start" : 1643142254198,
+            "stop" : 1643142265684,
+            "duration" : 11486
+          },
+          "flaky" : false,
+          "newFailed" : true,
+          "parameters" : [ "Студія танцю \"Несамовиті\"" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsTyping",
+          "uid" : "81ed52e6c3b78aff",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "broken",
+          "time" : {
+            "start" : 1643142301469,
+            "stop" : 1643142311608,
+            "duration" : 10139
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "LESKIV-SCHOOL" ]
+        }, {
+          "name" : "checkSearchWithNameOfClubsTyping",
+          "uid" : "206089dae88f5597",
+          "parentUid" : "690f24f8545ded7894ad2853783d0e7f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1643142318424,
+            "stop" : 1643142319848,
+            "duration" : 1424
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Школа танців Dream Team" ]
+        } ],
+        "uid" : "690f24f8545ded7894ad2853783d0e7f"
+      } ],
+      "uid" : "ui.tests"
+    }, {
+      "name" : "cucumber.cucumberTestRunner.CucumberTestRunner",
+      "children" : [ {
+        "name" : "runScenario",
+        "uid" : "873d554b06174867",
+        "parentUid" : "4f6fc222fafb3b6b50f3c23a26661b5e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643140555398,
+          "stop" : 1643140574529,
+          "duration" : 19131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.\"", "\"Optional[Verify that a 'Керівник' can add a location of a club]\"" ]
+      }, {
+        "name" : "runScenario",
+        "uid" : "34d50809fcf04949",
+        "parentUid" : "4f6fc222fafb3b6b50f3c23a26661b5e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643140574573,
+          "stop" : 1643140606325,
+          "duration" : 31752
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty.\"", "\"Optional[Verify that a 'Керівник' can add a location of a club]\"" ]
+      }, {
+        "name" : "runScenario",
+        "uid" : "e5dac92dd1b68b58",
+        "parentUid" : "4f6fc222fafb3b6b50f3c23a26661b5e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643140632783,
+          "stop" : 1643140641847,
+          "duration" : 9064
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"Restore password with invalid email test\"", "\"Optional[Verify if user can change the password entering incorrect email]\"" ]
+      }, {
+        "name" : "runScenario",
+        "uid" : "ed1a36373160be9f",
+        "parentUid" : "4f6fc222fafb3b6b50f3c23a26661b5e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643140641848,
+          "stop" : 1643140712571,
+          "duration" : 70723
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\"", "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\"" ]
+      }, {
+        "name" : "scenario",
+        "uid" : "e264715bf0f31019",
+        "parentUid" : "4f6fc222fafb3b6b50f3c23a26661b5e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643140712574,
+          "stop" : 1643140731469,
+          "duration" : 18895
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.\"", "\"Optional[Verify that a 'Керівник' can add a location of a club]\"" ]
+      }, {
+        "name" : "scenario",
+        "uid" : "a1622f7f82615da4",
+        "parentUid" : "4f6fc222fafb3b6b50f3c23a26661b5e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643140731474,
+          "stop" : 1643140747899,
+          "duration" : 16425
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty.\"", "\"Optional[Verify that a 'Керівник' can add a location of a club]\"" ]
+      }, {
+        "name" : "scenario",
+        "uid" : "b9dbd6b92d4ef7e4",
+        "parentUid" : "4f6fc222fafb3b6b50f3c23a26661b5e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643140767561,
+          "stop" : 1643140779027,
+          "duration" : 11466
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"Restore password with invalid email test\"", "\"Optional[Verify if user can change the password entering incorrect email]\"" ]
+      }, {
+        "name" : "scenario",
+        "uid" : "19e8e56a304dfce",
+        "parentUid" : "4f6fc222fafb3b6b50f3c23a26661b5e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643140779029,
+          "stop" : 1643140852958,
+          "duration" : 73929
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\"", "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\"" ]
+      } ],
+      "uid" : "cucumber.cucumberTestRunner.CucumberTestRunner"
+    } ],
+    "uid" : "com.ita.edu.teachua"
+  } ],
+  "name" : "packages"
+}
