@@ -15,6 +15,7 @@ import com.ita.edu.teachua.api.models.club.add_club_response.District;
 import com.ita.edu.teachua.api.models.club.add_club_response.Station;
 import com.ita.edu.teachua.api.models.complaint.Complaint;
 import com.ita.edu.teachua.api.models.contact.ContactModel;
+import com.ita.edu.teachua.api.models.district.DistrictModel;
 import com.ita.edu.teachua.api.models.news.NewsModel;
 import com.ita.edu.teachua.api.models.roles.RoleNameModel;
 import com.ita.edu.teachua.api.models.roles.RoleModel;
@@ -37,7 +38,7 @@ public class GsonParser {
     private Complaint complaintModel;
     private Category category;
     private Center center;
-    private District districtModel;
+    private DistrictModel districtModel;
     private BannerModel bannerModel;
     private RoleModel roleModel;
     private RoleNameModel roleNameModel;
@@ -97,7 +98,7 @@ public class GsonParser {
 
     public void parseAddDistrictJson() {
         try (FileReader reader = new FileReader("src/main/resources/request_bodies/district/district.json")) {
-            this.districtModel = gson.fromJson(reader, District.class);
+            this.districtModel = gson.fromJson(reader, DistrictModel.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -105,7 +106,7 @@ public class GsonParser {
         }
     }
 
-    public District getAddDistrict() {
+    public DistrictModel getAddDistrict() {
         return districtModel;
     }
 
