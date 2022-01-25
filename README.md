@@ -51,13 +51,9 @@ adminPassword=example
   - [Required to install](#Required-to-install)
   - [Environment](#Environment)
   - [Clone](#Clone)
-  - [Setup](#Setup)
   - [How to run local](#How-to-run-local)
-- [Usage](#Usage)
-  - [How to run tests](#How-to-run-tests)
 - [Contributing](#contributing)
   - [git flow](#git-flow)
-  - [issue flow](#git-flow)
 - [FAQ](#faq)
 - [Support](#support)
 - [License](#license)
@@ -71,7 +67,7 @@ adminPassword=example
 
 ### Required to install
 * Java(1.8)
-* Maven(4.0.0)
+* Maven(3.8.2)
 * Allure(2.17.2)
 
 ### Environment
@@ -88,26 +84,11 @@ environmental variables
 
 - Clone this repo to your local machine using `https://github.com/ita-social-projects/TeachUA_TA.git`
 
-### Setup
-
-- If you want more syntax highlighting, format your code like this:
-> now install java and allure packages
-
-```shell
-$ npm install
-$ bower install
-```
-
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
-
 ### How to run local
-
+mvn test
 ---
 
-## Usage
-### How to run tests
 
----
 
 ## Contributing
 
@@ -119,32 +100,24 @@ $ bower install
     - 🍴 Fork this repo!
 
 - **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/ita-social-projects/SOMEREPO.git`
+    - 👯 Clone this repo to your local machine using `https://github.com/ita-social-projects/TeachUA_TA.git`
 
 #### Step 2
 
-- **HACK AWAY!** 🔨🔨🔨
-
-#### Step 3
-
-- 🔃 Create a new pull request using <a href="https://github.com/ita-social-projects/SOMEREPO/compare/" target="_blank">github.com/ita-social-projects/SOMEREPO</a>.
-
-### Issue flow
-
----
+- 🔃 Create a new pull request using <a href="https://github.com/ita-social-projects/TeachUA_TA/compare/" target="_blank">github.com/ita-social-projects/SOMEREPO</a>.
 
 ## Team
 
 > Or Contributors/People
 
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam) 
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)
-[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/lhalam)  
+[![@lhalam](https://avatars.githubusercontent.com/u/89529887?v=4)](https://github.com/vy1989)
+[![@lhalam](https://avatars.githubusercontent.com/u/39509993?v=4)](https://github.com/AndriyBarskyi)
+[![@lhalam](https://avatars.githubusercontent.com/u/51734891?v=4)](https://github.com/nataskrypak)
+[![@lhalam](https://avatars.githubusercontent.com/u/44065623?v=4)](https://github.com/Nadya101) 
+[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/andriy66)
+[![@lhalam](https://avatars.githubusercontent.com/u/89551784?v=4)](https://github.com/Mykhailo5)
+[![@lhalam](https://avatars.githubusercontent.com/u/62646603?v=4)](https://github.com/Pidstavskiy)
+[![@lhalam](https://avatars.githubusercontent.com/u/40471548?v=4)](https://github.com/MakKeywa)  
 
 - You can just grab their GitHub profile image URL
 - You should probably resize their picture using `?s=200` at the end of the image URL.
