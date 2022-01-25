@@ -71,6 +71,7 @@ adminPassword=example
 
 ### Required to install
 * Java(1.8)
+* Maven(4.0.0)
 * Allure(2.17.2)
 
 ### Environment
@@ -90,15 +91,7 @@ environmental variables
 ### Setup
 
 - If you want more syntax highlighting, format your code like this:
-
-> update and install this package first
-
-```shell
-$ brew update
-$ brew install SOMEREPOproductions
-```
-
-> now install npm and bower packages
+> now install java and allure packages
 
 ```shell
 $ npm install
