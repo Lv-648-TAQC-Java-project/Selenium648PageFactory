@@ -43,5 +43,9 @@ public class BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
+    public void waitForAmountOfElements(By locator, int amount, long seconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+        wait.until(ExpectedConditions.numberOfElementsToBe(locator, amount));
+    }
 
 }
