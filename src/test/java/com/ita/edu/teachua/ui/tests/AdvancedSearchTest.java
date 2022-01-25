@@ -179,7 +179,6 @@ public class AdvancedSearchTest extends TestRunner {
         List<String> stringCards = new ArrayList<>();
         int n = advancedSearchPage.getNumberOfPagesWithClubs();
         for (int i = 0; i < n; ++i) {
-            advancedSearchPage.sleep(3000);
             cards = advancedSearchPage.getClubCards();
             for (ClubsItemComponent card : cards) {
                 stringCards.add(card.getCardTitle().getText());
@@ -244,7 +243,6 @@ public class AdvancedSearchTest extends TestRunner {
         List<Integer> ratings = new ArrayList<>();
         int n = advancedSearchPage.getNumberOfPagesWithClubs();
         for (int i = 0; i < n; ++i) {
-            advancedSearchPage.sleep(3000);
             cards = advancedSearchPage.getClubCards();
             for (ClubsItemComponent card : cards) {
                 ratings.add(card.getRating());
