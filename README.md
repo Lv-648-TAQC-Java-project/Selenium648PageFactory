@@ -21,6 +21,8 @@ adminPassword=example
 > include terms/tags that can be searched
 
 **Badges will go here**
+- build status
+- coverage
 - issues (waffle.io maybe)
 - devDependencies
 - npm package
@@ -29,6 +31,7 @@ adminPassword=example
 - gitter chat
 - license
 - etc.
+
 [![Build Status](https://img.shields.io/github/workflow/status/ita-social-projects/TeachUA_TA/allure-testng-maven)](https://github.com/ita-social-projects/TeachUA_TA/actions/workflows/allure-testng-maven.yml)
 [![Github Issues](https://img.shields.io/github/issues/ita-social-projects/TeachUA_TA)](https://github.com/ita-social-projects/TeachUA_TA/issues)
 [![Pending Pull-Requests](https://img.shields.io/github/issues-pr/ita-social-projects/TeachUA_TA)](https://github.com/ita-social-projects/TeachUA_TA/pulls)
