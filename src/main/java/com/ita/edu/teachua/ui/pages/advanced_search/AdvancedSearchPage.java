@@ -328,6 +328,7 @@ public class AdvancedSearchPage extends BasePage {
 
     @Step("Get all clubs cards")
     public List<ClubsItemComponent> getClubCards() {
+        this.sleep(3000);
         List<ClubsItemComponent> cards = new ArrayList<>();
         List<WebElement> clubs = clubsCards;
         for (WebElement j : clubs) {
