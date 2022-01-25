@@ -115,9 +115,9 @@ mvn test
 [![@lhalam](https://avatars.githubusercontent.com/u/51734891?s=100&v=4)](https://github.com/nataskrypak)
 [![@lhalam](https://avatars.githubusercontent.com/u/44065623?s=100&v=4)](https://github.com/Nadya101) 
 [![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/andriy66)
-[![@lhalam](https://avatars.githubusercontent.com/u/89551784?s=100&v=4)](https://github.com/Mykhailo5)
+[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/Mykhailo5)
 [![@lhalam](https://avatars.githubusercontent.com/u/62646603?s=100&v=4)](https://github.com/Pidstavskiy)
-[![@lhalam](https://avatars.githubusercontent.com/u/40471548?s=100&v=4)](https://github.com/MakKeywa)  
+[![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/MakKeywa)  
 
 - You can just grab their GitHub profile image URL
 - You should probably resize their picture using `?s=200` at the end of the image URL.
