@@ -1,0 +1,356 @@
+{
+  "uid" : "2c3864a24a6da33f",
+  "name" : "TUA-226",
+  "fullName" : "com.ita.edu.teachua.ui.tests.BasicSearchTest.checkSearchWithNameOfClubsClipBoard",
+  "historyId" : "f5d380ec5768611fd71e32728e26a1a0",
+  "time" : {
+    "start" : 1643123344991,
+    "stop" : 1643123346225,
+    "duration" : 1234
+  },
+  "description" : "TUA-226 Verify that user can perform basic search by inserting name of a club",
+  "descriptionHtml" : "<p>TUA-226 Verify that user can perform basic search by inserting name of a club</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1643123341498,
+      "stop" : 1643123344989,
+      "duration" : 3491
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643122668839,
+      "stop" : 1643122671729,
+      "duration" : 2890
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "TUA-226 Verify that user can perform basic search by inserting name of a club",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Insert from clipboard *Онлайн-школа точних наук YOUSTUD* in search field",
+      "time" : {
+        "start" : 1643123344991,
+        "stop" : 1643123345131,
+        "duration" : 140
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "input",
+        "value" : "Онлайн-школа точних наук YOUSTUD"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if club Онлайн-школа точних наук YOUSTUD is present on the page",
+      "time" : {
+        "start" : 1643123345131,
+        "stop" : 1643123346225,
+        "duration" : 1094
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Онлайн-школа точних наук YOUSTUD"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1643123346226,
+      "stop" : 1643123346294,
+      "duration" : 68
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkSearchWithNameOfClubsClipBoard"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.BasicSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az105-937"
+  }, {
+    "name" : "thread",
+    "value" : "2769@fv-az105-937.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Онлайн-школа точних наук YOUSTUD"
+  } ],
+  "links" : [ {
+    "name" : "TUA-226",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 6,
+        "skipped" : 0,
+        "passed" : 30,
+        "unknown" : 0,
+        "total" : 36
+      },
+      "items" : [ {
+        "uid" : "7a18b961ef1ba5fd",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/7a18b961ef1ba5fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643109412945,
+          "stop" : 1643109414199,
+          "duration" : 1254
+        }
+      }, {
+        "uid" : "e09ac00cdbcb90ce",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/68//#testresult/e09ac00cdbcb90ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643104654025,
+          "stop" : 1643104655266,
+          "duration" : 1241
+        }
+      }, {
+        "uid" : "c321842f4affca7a",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/c321842f4affca7a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643101007421,
+          "stop" : 1643101008665,
+          "duration" : 1244
+        }
+      }, {
+        "uid" : "64b0146b254bb207",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/64b0146b254bb207",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643060322104,
+          "stop" : 1643060323288,
+          "duration" : 1184
+        }
+      }, {
+        "uid" : "135abcb6f059417c",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/135abcb6f059417c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643058314461,
+          "stop" : 1643058315652,
+          "duration" : 1191
+        }
+      }, {
+        "uid" : "5e4df96fe6145b3d",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/67//#testresult/5e4df96fe6145b3d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643056134007,
+          "stop" : 1643056135207,
+          "duration" : 1200
+        }
+      }, {
+        "uid" : "4103e52af5c92cf7",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/4103e52af5c92cf7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643026230394,
+          "stop" : 1643026231568,
+          "duration" : 1174
+        }
+      }, {
+        "uid" : "e17096a5f6802587",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/66//#testresult/e17096a5f6802587",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643024218378,
+          "stop" : 1643024219598,
+          "duration" : 1220
+        }
+      }, {
+        "uid" : "75ccc1faf86824ac",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/65//#testresult/75ccc1faf86824ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642958290298,
+          "stop" : 1642958291512,
+          "duration" : 1214
+        }
+      }, {
+        "uid" : "9e728b84bf00a3a7",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/64//#testresult/9e728b84bf00a3a7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642952450577,
+          "stop" : 1642952451797,
+          "duration" : 1220
+        }
+      }, {
+        "uid" : "7b6153802a470a6f",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/63//#testresult/7b6153802a470a6f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642948503811,
+          "stop" : 1642948505039,
+          "duration" : 1228
+        }
+      }, {
+        "uid" : "fb53e0a08c726370",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/62//#testresult/fb53e0a08c726370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642944406086,
+          "stop" : 1642944407305,
+          "duration" : 1219
+        }
+      }, {
+        "uid" : "1c7b56a61863074b",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/1c7b56a61863074b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642936733293,
+          "stop" : 1642936734536,
+          "duration" : 1243
+        }
+      }, {
+        "uid" : "7dfc078bc6a271be",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/61//#testresult/7dfc078bc6a271be",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642886409429,
+          "stop" : 1642886410605,
+          "duration" : 1176
+        }
+      }, {
+        "uid" : "c3ca626019380a40",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/c3ca626019380a40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642884767483,
+          "stop" : 1642884768694,
+          "duration" : 1211
+        }
+      }, {
+        "uid" : "88f8e73d6b8029a7",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/88f8e73d6b8029a7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642880457053,
+          "stop" : 1642880458246,
+          "duration" : 1193
+        }
+      }, {
+        "uid" : "16f36a7f5e6d7eee",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/60//#testresult/16f36a7f5e6d7eee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642879183047,
+          "stop" : 1642879184249,
+          "duration" : 1202
+        }
+      }, {
+        "uid" : "4580bfa9d31d42ed",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/59//#testresult/4580bfa9d31d42ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642876834096,
+          "stop" : 1642876835350,
+          "duration" : 1254
+        }
+      }, {
+        "uid" : "bee6f6f0a915fbce",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/58//#testresult/bee6f6f0a915fbce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642871062817,
+          "stop" : 1642871064005,
+          "duration" : 1188
+        }
+      }, {
+        "uid" : "9438e79f8d27a003",
+        "reportUrl" : "https://Lv-648-TAQC-Java-project.github.io/Selenium648PageFactory/57//#testresult/9438e79f8d27a003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642868619225,
+          "stop" : 1642868620403,
+          "duration" : 1178
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2c3864a24a6da33f.json",
+  "parameterValues" : [ "Онлайн-школа точних наук YOUSTUD" ]
+}
