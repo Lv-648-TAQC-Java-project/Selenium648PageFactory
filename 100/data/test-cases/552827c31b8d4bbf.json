@@ -1,0 +1,1005 @@
+{
+  "uid" : "552827c31b8d4bbf",
+  "name" : "TUA-343",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.checkErrorMsWhenFillInvalidDataIntoLastNameField",
+  "historyId" : "d0e4194e474567f6be7b3f45a3f59b13",
+  "time" : {
+    "start" : 1643227881503,
+    "stop" : 1643227918683,
+    "duration" : 37180
+  },
+  "description" : "Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data into the 'Прізвище' field",
+  "descriptionHtml" : "<p>Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data into the 'Прізвище' field</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1643227877490,
+      "stop" : 1643227881501,
+      "duration" : 4011
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643227238309,
+      "stop" : 1643227238318,
+      "duration" : 9
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643227238319,
+      "stop" : 1643227241310,
+      "duration" : 2991
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643227241310,
+      "stop" : 1643227241310,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643227241311,
+      "stop" : 1643227241311,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643227241311,
+      "stop" : 1643227241311,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data into the 'Прізвище' field",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1643227881504,
+        "stop" : 1643227884872,
+        "duration" : 3368
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1643227881504,
+          "stop" : 1643227881964,
+          "duration" : 460
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1643227881965,
+          "stop" : 1643227882070,
+          "duration" : 105
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1643227882070,
+          "stop" : 1643227884872,
+          "duration" : 2802
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1643227882737,
+            "stop" : 1643227882822,
+            "duration" : 85
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1643227882822,
+            "stop" : 1643227884872,
+            "duration" : 2050
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1643227884872,
+        "stop" : 1643227888186,
+        "duration" : 3314
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1643227888186,
+        "stop" : 1643227888541,
+        "duration" : 355
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click edit pop up",
+      "time" : {
+        "start" : 1643227888541,
+        "stop" : 1643227888618,
+        "duration" : 77
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill AfBbCcDdEeFfGgHhIiJjKkLlMmNn in last name field",
+      "time" : {
+        "start" : 1643227888618,
+        "stop" : 1643227889103,
+        "duration" : 485
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "AfBbCcDdEeFfGgHhIiJjKkLlMmNn"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill AfBbCcDdEeFfGgHhIiJjKkLlMm in last name field",
+      "time" : {
+        "start" : 1643227890125,
+        "stop" : 1643227890337,
+        "duration" : 212
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "AfBbCcDdEeFfGgHhIiJjKkLlMm"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill 1Admin in last name field",
+      "time" : {
+        "start" : 1643227891357,
+        "stop" : 1643227891483,
+        "duration" : 126
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "1Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill 2Admin in last name field",
+      "time" : {
+        "start" : 1643227892501,
+        "stop" : 1643227892615,
+        "duration" : 114
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "2Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill 3Admin in last name field",
+      "time" : {
+        "start" : 1643227893628,
+        "stop" : 1643227893744,
+        "duration" : 116
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "3Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill 4Admin in last name field",
+      "time" : {
+        "start" : 1643227894762,
+        "stop" : 1643227894870,
+        "duration" : 108
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "4Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill -Lastname in last name field",
+      "time" : {
+        "start" : 1643227895886,
+        "stop" : 1643227896006,
+        "duration" : 120
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "-Lastname"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill < Lastname> in last name field",
+      "time" : {
+        "start" : 1643227897020,
+        "stop" : 1643227897148,
+        "duration" : 128
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "< Lastname>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill 'Lastname in last name field",
+      "time" : {
+        "start" : 1643227898164,
+        "stop" : 1643227898296,
+        "duration" : 132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "'Lastname"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill Lastname- in last name field",
+      "time" : {
+        "start" : 1643227899310,
+        "stop" : 1643227899434,
+        "duration" : 124
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "Lastname-"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill <Lastname > in last name field",
+      "time" : {
+        "start" : 1643227900450,
+        "stop" : 1643227900582,
+        "duration" : 132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "<Lastname >"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill Lastname' in last name field",
+      "time" : {
+        "start" : 1643227901597,
+        "stop" : 1643227901726,
+        "duration" : 129
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "Lastname'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill !Admin in last name field",
+      "time" : {
+        "start" : 1643227902739,
+        "stop" : 1643227902861,
+        "duration" : 122
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "!Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill @Admin in last name field",
+      "time" : {
+        "start" : 1643227903874,
+        "stop" : 1643227903994,
+        "duration" : 120
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "@Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill #Admin in last name field",
+      "time" : {
+        "start" : 1643227905009,
+        "stop" : 1643227905124,
+        "duration" : 115
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "#Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill $Admin in last name field",
+      "time" : {
+        "start" : 1643227906137,
+        "stop" : 1643227906264,
+        "duration" : 127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "$Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill %Admin in last name field",
+      "time" : {
+        "start" : 1643227907278,
+        "stop" : 1643227907393,
+        "duration" : 115
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "%Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill ^Admin in last name field",
+      "time" : {
+        "start" : 1643227908407,
+        "stop" : 1643227908524,
+        "duration" : 117
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "^Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill &Admin in last name field",
+      "time" : {
+        "start" : 1643227909537,
+        "stop" : 1643227909655,
+        "duration" : 118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "&Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill *Admin in last name field",
+      "time" : {
+        "start" : 1643227910669,
+        "stop" : 1643227910815,
+        "duration" : 146
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "*Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill (Admin in last name field",
+      "time" : {
+        "start" : 1643227911830,
+        "stop" : 1643227911946,
+        "duration" : 116
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "(Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill _Admin in last name field",
+      "time" : {
+        "start" : 1643227912961,
+        "stop" : 1643227913088,
+        "duration" : 127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "_Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill +Admin in last name field",
+      "time" : {
+        "start" : 1643227914102,
+        "stop" : 1643227914244,
+        "duration" : 142
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : "+Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill .Admin in last name field",
+      "time" : {
+        "start" : 1643227915257,
+        "stop" : 1643227915404,
+        "duration" : 147
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : ".Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill :Admin in last name field",
+      "time" : {
+        "start" : 1643227916418,
+        "stop" : 1643227916548,
+        "duration" : 130
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : ":Admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill  in last name field",
+      "time" : {
+        "start" : 1643227917562,
+        "stop" : 1643227917670,
+        "duration" : 108
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastNameFill",
+        "value" : ""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 35,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1643227918684,
+      "stop" : 1643227918757,
+      "duration" : 73
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkErrorMsWhenFillInvalidDataIntoLastNameField"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az91-939"
+  }, {
+    "name" : "thread",
+    "value" : "2784@fv-az91-939.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "[AfBbCcDdEeFfGgHhIiJjKkLlMmNn, Прізвище не може містити більше, ніж 25 символів, AfBbCcDdEeFfGgHhIiJjKkLlMm, Прізвище не може містити більше, ніж 25 символів, 1Admin, Прізвище не може містити цифри, 2Admin, Прізвище не може містити цифри, 3Admin, Прізвище не може містити цифри, 4Admin, Прізвище не може містити цифри, -Lastname, Прізвище повинно починатися і закінчуватися літерою, < Lastname>, Прізвище не може містити спеціальні символи, 'Lastname, Прізвище повинно починатися і закінчуватися літерою, Lastname-, Прізвище повинно починатися і закінчуватися літерою, <Lastname >, Прізвище не може містити спеціальні символи, Lastname', Прізвище повинно починатися і закінчуватися літерою, !Admin, Прізвище не може містити спеціальні символи, @Admin, Прізвище не може містити спеціальні символи, #Admin, Прізвище не може містити спеціальні символи, $Admin, Прізвище не може містити спеціальні символи, %Admin, Прізвище не може містити спеціальні символи, ^Admin, Прізвище не може містити спеціальні символи, &Admin, Прізвище не може містити спеціальні символи, *Admin, Прізвище не може містити спеціальні символи, (Admin, Прізвище не може містити спеціальні символи, _Admin, Прізвище не може містити спеціальні символи, +Admin, Прізвище не може містити спеціальні символи, .Admin, Прізвище не може містити спеціальні символи, :Admin, Прізвище не може містити спеціальні символи, , Будь ласка введіть Ваше прізвище]"
+  } ],
+  "links" : [ {
+    "name" : "TUA-343",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 10,
+        "skipped" : 0,
+        "passed" : 50,
+        "unknown" : 0,
+        "total" : 62
+      },
+      "items" : [ {
+        "uid" : "ee6b27ae47674e9",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/98//#testresult/ee6b27ae47674e9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643212261528,
+          "stop" : 1643212300279,
+          "duration" : 38751
+        }
+      }, {
+        "uid" : "66f010e25b629509",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/66f010e25b629509",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643189150117,
+          "stop" : 1643189188506,
+          "duration" : 38389
+        }
+      }, {
+        "uid" : "5279d3da9638fecb",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/5279d3da9638fecb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643189094636,
+          "stop" : 1643189133107,
+          "duration" : 38471
+        }
+      }, {
+        "uid" : "24c79674cc72a35a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/24c79674cc72a35a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643189030177,
+          "stop" : 1643189068854,
+          "duration" : 38677
+        }
+      }, {
+        "uid" : "6f32dfc1349dc0d8",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/6f32dfc1349dc0d8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643185529067,
+          "stop" : 1643185567892,
+          "duration" : 38825
+        }
+      }, {
+        "uid" : "33c5233719b652c8",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/93//#testresult/33c5233719b652c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643181622114,
+          "stop" : 1643181660870,
+          "duration" : 38756
+        }
+      }, {
+        "uid" : "748d95ae94d2bbf1",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/92//#testresult/748d95ae94d2bbf1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643142403304,
+          "stop" : 1643142443048,
+          "duration" : 39744
+        }
+      }, {
+        "uid" : "66875274babfd453",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/91//#testresult/66875274babfd453",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az202-534', ip: '10.1.0.105', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [cd55bdce2139791e6a7e7bb6f29ba95d, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.BnpZuw}, goog:chromeOptions: {debuggerAddress: localhost:37495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37495/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cd55bdce2139791e6a7e7bb6f29ba95d",
+        "time" : {
+          "start" : 1643142265324,
+          "stop" : 1643142279012,
+          "duration" : 13688
+        }
+      }, {
+        "uid" : "fde5f445afe10fd9",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/90//#testresult/fde5f445afe10fd9",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az75-82', ip: '10.1.0.250', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [7bf79a9975ea38a448992c031007d0fc, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Qd34Hr}, goog:chromeOptions: {debuggerAddress: localhost:43919}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43919/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7bf79a9975ea38a448992c031007d0fc",
+        "time" : {
+          "start" : 1643142124307,
+          "stop" : 1643142138134,
+          "duration" : 13827
+        }
+      }, {
+        "uid" : "986b74d33eb93fe5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/85//#testresult/986b74d33eb93fe5",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az214-35', ip: '10.1.0.107', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [48606bd97ba944aa0bac4f6d9a25ef1a, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.tb1dzk}, goog:chromeOptions: {debuggerAddress: localhost:38375}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38375/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 48606bd97ba944aa0bac4f6d9a25ef1a",
+        "time" : {
+          "start" : 1643141546143,
+          "stop" : 1643141559870,
+          "duration" : 13727
+        }
+      }, {
+        "uid" : "1c0df2f776d083c9",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/84//#testresult/1c0df2f776d083c9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643140420312,
+          "stop" : 1643140458938,
+          "duration" : 38626
+        }
+      }, {
+        "uid" : "e825d90276f3be81",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/83//#testresult/e825d90276f3be81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643139812185,
+          "stop" : 1643139850969,
+          "duration" : 38784
+        }
+      }, {
+        "uid" : "9888e17607e25aef",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/82//#testresult/9888e17607e25aef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643138832400,
+          "stop" : 1643138870206,
+          "duration" : 37806
+        }
+      }, {
+        "uid" : "63f80b13d678b3aa",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/81//#testresult/63f80b13d678b3aa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643138688349,
+          "stop" : 1643138728961,
+          "duration" : 40612
+        }
+      }, {
+        "uid" : "da5fee509e9e6079",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/80//#testresult/da5fee509e9e6079",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643137495374,
+          "stop" : 1643137533682,
+          "duration" : 38308
+        }
+      }, {
+        "uid" : "e41842fd13f5d664",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/79//#testresult/e41842fd13f5d664",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643137430673,
+          "stop" : 1643137468173,
+          "duration" : 37500
+        }
+      }, {
+        "uid" : "359c35c1b32f843e",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/78//#testresult/359c35c1b32f843e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643136461391,
+          "stop" : 1643136499049,
+          "duration" : 37658
+        }
+      }, {
+        "uid" : "3795d3f0034ce47",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/77//#testresult/3795d3f0034ce47",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643134673998,
+          "stop" : 1643134711434,
+          "duration" : 37436
+        }
+      }, {
+        "uid" : "5d9253cd09865d37",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/76//#testresult/5d9253cd09865d37",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643134006516,
+          "stop" : 1643134043473,
+          "duration" : 36957
+        }
+      }, {
+        "uid" : "c884b6f4b59fe2e7",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/74//#testresult/c884b6f4b59fe2e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130830782,
+          "stop" : 1643130870279,
+          "duration" : 39497
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "552827c31b8d4bbf.json",
+  "parameterValues" : [ "[AfBbCcDdEeFfGgHhIiJjKkLlMmNn, Прізвище не може містити більше, ніж 25 символів, AfBbCcDdEeFfGgHhIiJjKkLlMm, Прізвище не може містити більше, ніж 25 символів, 1Admin, Прізвище не може містити цифри, 2Admin, Прізвище не може містити цифри, 3Admin, Прізвище не може містити цифри, 4Admin, Прізвище не може містити цифри, -Lastname, Прізвище повинно починатися і закінчуватися літерою, < Lastname>, Прізвище не може містити спеціальні символи, 'Lastname, Прізвище повинно починатися і закінчуватися літерою, Lastname-, Прізвище повинно починатися і закінчуватися літерою, <Lastname >, Прізвище не може містити спеціальні символи, Lastname', Прізвище повинно починатися і закінчуватися літерою, !Admin, Прізвище не може містити спеціальні символи, @Admin, Прізвище не може містити спеціальні символи, #Admin, Прізвище не може містити спеціальні символи, $Admin, Прізвище не може містити спеціальні символи, %Admin, Прізвище не може містити спеціальні символи, ^Admin, Прізвище не може містити спеціальні символи, &Admin, Прізвище не може містити спеціальні символи, *Admin, Прізвище не може містити спеціальні символи, (Admin, Прізвище не може містити спеціальні символи, _Admin, Прізвище не може містити спеціальні символи, +Admin, Прізвище не може містити спеціальні символи, .Admin, Прізвище не може містити спеціальні символи, :Admin, Прізвище не може містити спеціальні символи, , Будь ласка введіть Ваше прізвище]" ]
+}
