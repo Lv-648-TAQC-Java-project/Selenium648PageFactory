@@ -110,4 +110,12 @@ public class BaseDefinition {
     public String[] addClubPopUpComponentIds(String addClubPopUpComponentIds) {
         return addClubPopUpComponentIds.split(",");
     }
+    @ParameterType("([^\"]*)")
+    public String validCoordinates(String validCoordinates) {
+        return validCoordinates;
+    }
+    @ParameterType("([^\"]*)")
+    public String validPhoneNumber(String validPhoneNumber) {
+        return validPhoneNumber;
+    }
 }
