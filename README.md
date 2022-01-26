@@ -48,7 +48,6 @@
 ## Installation
 
 - All the `code` required to get started
-- Images of what it should look like
 
 ### Required to install
 * Java(1.8)
