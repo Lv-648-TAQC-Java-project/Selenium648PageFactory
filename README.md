@@ -1,8 +1,6 @@
 # selenium648PageFactory
 <a href="https://softserve.academy/"><img src="https://github.com/ita-social-projects/TeachUA/blob/main/images/logo.png" title="SoftServe IT Academy" alt="SoftServe IT Academy"></a>
 
-***INSERT GRAPHIC HERE (include hyperlink in image)***
-
 # Repository Title Goes Here
 
 > Subtitle or Short Description Goes Here
@@ -39,7 +37,7 @@
   - [Environment](#Environment)
   - [Clone](#Clone)
   - [How to run local](#How-to-run-local)
-  - [Properties](#What to write in properties)
+  - [Properties](#Properties)
 - [Contributing](#contributing)
   - [git flow](#git-flow)
 - [Support](#support)
