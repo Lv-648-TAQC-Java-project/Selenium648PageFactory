@@ -1,0 +1,422 @@
+{
+  "uid" : "d6ce90f0f5196f30",
+  "name" : "TUA-501",
+  "fullName" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest.VerifyThatUserCannotCreateNewClubWithRussianCharactersInNameField",
+  "historyId" : "9e343e1f390387148ff2f0ae100cbe10",
+  "time" : {
+    "start" : 1643211742228,
+    "stop" : 1643211743024,
+    "duration" : 796
+  },
+  "description" : "This test case verify  that User as \"Керiвник гуртка\" cannot create new club is in a center with Russian alphabet for \"Назва\" field",
+  "descriptionHtml" : "<p>This test case verify  that User as &quot;Керiвник гуртка&quot; cannot create new club is in a center with Russian alphabet for &quot;Назва&quot; field</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1643211702130,
+      "stop" : 1643211703355,
+      "duration" : 1225
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643211702131,
+        "stop" : 1643211702131,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643211634459,
+      "stop" : 1643211634466,
+      "duration" : 7
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643211634467,
+      "stop" : 1643211636220,
+      "duration" : 1753
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643211636220,
+      "stop" : 1643211636220,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643211636221,
+      "stop" : 1643211636221,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643211636221,
+      "stop" : 1643211636221,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test case verify  that User as \"Керiвник гуртка\" cannot create new club is in a center with Russian alphabet for \"Назва\" field",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643211742229,
+        "stop" : 1643211743022,
+        "duration" : 793
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643211742229,
+          "stop" : 1643211742229,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Вокальна студія, музика, музичні інструменти], \"name\":\"Э э ъ Ъ Ы ы\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"blocks\":[{\"key\":\"brl63\",\"text\":\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\",\"type\":\"unstyled\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "VerifyThatUserCannotCreateNewClubWithRussianCharactersInNameField"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az91-939"
+  }, {
+    "name" : "thread",
+    "value" : "2766@fv-az91-939.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-501",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5a95de16d3ce4d60",
+      "status" : "skipped",
+      "statusDetails" : "Couldn't kickstart handshaking",
+      "time" : {
+        "start" : 1643211741931,
+        "stop" : 1643211742226,
+        "duration" : 295
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 2,
+        "passed" : 59,
+        "unknown" : 0,
+        "total" : 61
+      },
+      "items" : [ {
+        "uid" : "5a43422435059793",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/5a43422435059793",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188650606,
+          "stop" : 1643188651405,
+          "duration" : 799
+        }
+      }, {
+        "uid" : "2aefb8515a73cace",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/2aefb8515a73cace",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188579138,
+          "stop" : 1643188579938,
+          "duration" : 800
+        }
+      }, {
+        "uid" : "8bc8baab15d8320e",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/8bc8baab15d8320e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188505401,
+          "stop" : 1643188506709,
+          "duration" : 1308
+        }
+      }, {
+        "uid" : "b5757172c0e7c5fa",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/b5757172c0e7c5fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643185007588,
+          "stop" : 1643185009246,
+          "duration" : 1658
+        }
+      }, {
+        "uid" : "1c032ce0f17bd10a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/93//#testresult/1c032ce0f17bd10a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643181095549,
+          "stop" : 1643181096505,
+          "duration" : 956
+        }
+      }, {
+        "uid" : "21bd7355d4027f54",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/92//#testresult/21bd7355d4027f54",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643142218295,
+          "stop" : 1643142218950,
+          "duration" : 655
+        }
+      }, {
+        "uid" : "b90bf9f45734d021",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/91//#testresult/b90bf9f45734d021",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643142317448,
+          "stop" : 1643142318251,
+          "duration" : 803
+        }
+      }, {
+        "uid" : "ea466ec45a32e513",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/90//#testresult/ea466ec45a32e513",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643141352603,
+          "stop" : 1643141353247,
+          "duration" : 644
+        }
+      }, {
+        "uid" : "46377c0d94e82a58",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/85//#testresult/46377c0d94e82a58",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643140682837,
+          "stop" : 1643140684165,
+          "duration" : 1328
+        }
+      }, {
+        "uid" : "509a96923186d73a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/84//#testresult/509a96923186d73a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643139886524,
+          "stop" : 1643139887620,
+          "duration" : 1096
+        }
+      }, {
+        "uid" : "a776f4a54b6be109",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/83//#testresult/a776f4a54b6be109",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643139267699,
+          "stop" : 1643139268348,
+          "duration" : 649
+        }
+      }, {
+        "uid" : "56bafc5b0644acce",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/82//#testresult/56bafc5b0644acce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643138303918,
+          "stop" : 1643138304721,
+          "duration" : 803
+        }
+      }, {
+        "uid" : "de73369ab08c8dd5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/81//#testresult/de73369ab08c8dd5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643138180206,
+          "stop" : 1643138181004,
+          "duration" : 798
+        }
+      }, {
+        "uid" : "32706a597df8d3d0",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/80//#testresult/32706a597df8d3d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643136979477,
+          "stop" : 1643136980113,
+          "duration" : 636
+        }
+      }, {
+        "uid" : "5c3de95ad2787260",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/79//#testresult/5c3de95ad2787260",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643136896234,
+          "stop" : 1643136896874,
+          "duration" : 640
+        }
+      }, {
+        "uid" : "541386546ab3962f",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/78//#testresult/541386546ab3962f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643136053695,
+          "stop" : 1643136054391,
+          "duration" : 696
+        }
+      }, {
+        "uid" : "499cfa8e89d0ede3",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/77//#testresult/499cfa8e89d0ede3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643134137256,
+          "stop" : 1643134138096,
+          "duration" : 840
+        }
+      }, {
+        "uid" : "d913866cceb2cbe6",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/76//#testresult/d913866cceb2cbe6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643133473855,
+          "stop" : 1643133474510,
+          "duration" : 655
+        }
+      }, {
+        "uid" : "3ecc8543bd174150",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/74//#testresult/3ecc8543bd174150",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130310455,
+          "stop" : 1643130311114,
+          "duration" : 659
+        }
+      }, {
+        "uid" : "594d4e7ef719b16b",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/75//#testresult/594d4e7ef719b16b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643130324030,
+          "stop" : 1643130325233,
+          "duration" : 1203
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d6ce90f0f5196f30.json",
+  "parameterValues" : [ ]
+}
