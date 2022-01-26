@@ -1,0 +1,145 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az119-533', ip: '10.1.1.34', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.44YV3G}, goog:chromeOptions: {debuggerAddress: localhost:36283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36283/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 178da70ce5a206dc000d527d004e271e",
+      "children" : [ {
+        "name" : "Runs Cucumber Scenarios",
+        "uid" : "76a3b4dff75a7762",
+        "parentUid" : "49d68d3a2da3bb31a493f16d93c24923",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643184895026,
+          "stop" : 1643184921183,
+          "duration" : 26157
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verifies that a 'Керівник' can add a location of a club that doesn't refer to any center after filling in mandatory fields with valid data.\"", "\"Optional[Verify that a 'Керівник' can add a location of a club]\"" ]
+      } ],
+      "uid" : "49d68d3a2da3bb31a493f16d93c24923"
+    }, {
+      "name" : "element click intercepted: Element <div>...</div> is not clickable at point (1192, 125). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az119-533', ip: '10.1.1.34', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [b8940c3b240c41fe5d0730694e4fc10b, clickElement {id=93697eb1-316b-4df4-bcc2-331263c964db}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.vnyc5L}, goog:chromeOptions: {debuggerAddress: localhost:37961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37961/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (b8940c3b240c41fe5d0730694e4fc10b)] -> xpath: //span/div[contains(text(),'Додати центр')]]\nSession ID: b8940c3b240c41fe5d0730694e4fc10b",
+      "children" : [ {
+        "name" : "Runs Cucumber Scenarios",
+        "uid" : "83c14fb7fc0f220a",
+        "parentUid" : "567d1dcd531fa9729fcf758805f891af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643184921211,
+          "stop" : 1643184934555,
+          "duration" : 13344
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verifies that a 'Керівник' can add location to the list of locations after filling in all mandatory and all optional fields with valid data\"", "\"Optional[Verify that a 'Керівник' can add a location of a club]\"" ]
+      } ],
+      "uid" : "567d1dcd531fa9729fcf758805f891af"
+    }, {
+      "name" : "element not interactable\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az119-533', ip: '10.1.1.34', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [9f66c80c17d8572941e7b6de3984b5d6, clickElement {id=a0638fa4-9aae-45a2-9862-d585936ea2ae}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.mYIn9Y}, goog:chromeOptions: {debuggerAddress: localhost:43633}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43633/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (9f66c80c17d8572941e7b6de3984b5d6)] -> xpath: //span/div[contains(text(),'Додати центр')]]\nSession ID: 9f66c80c17d8572941e7b6de3984b5d6",
+      "children" : [ {
+        "name" : "Runs Cucumber Scenarios",
+        "uid" : "6cf0f4e98f9c8082",
+        "parentUid" : "b6a72875247ef756d7bb21606c465dd0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643184934559,
+          "stop" : 1643184962592,
+          "duration" : 28033
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty.\"", "\"Optional[Verify that a 'Керівник' can add a location of a club]\"" ]
+      } ],
+      "uid" : "b6a72875247ef756d7bb21606c465dd0"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+      "children" : [ {
+        "name" : "TUA-371/372/463",
+        "uid" : "e82003e9a335cc8b",
+        "parentUid" : "1268d6ccad54242b054cbd82dca899f9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643184997449,
+          "stop" : 1643184998124,
+          "duration" : 675
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-498",
+        "uid" : "dbffe1080e168d4c",
+        "parentUid" : "1268d6ccad54242b054cbd82dca899f9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643185004302,
+          "stop" : 1643185006924,
+          "duration" : 2622
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1268d6ccad54242b054cbd82dca899f9"
+    }, {
+      "name" : "element click intercepted: Element <input class=\"ant-input registration-box\" placeholder=\"Введіть ваше прізвище\" type=\"text\" id=\"lastName\" value=\"\"> is not clickable at point (731, 255). Other element would receive the click: <div class=\"registration-or\">...</div>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az119-533', ip: '10.1.1.34', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [777840996cd612da475a3cb9bbd661ec, clickElement {id=addd4a3e-d8f9-470c-a646-76e30d86c325}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.84aicn}, goog:chromeOptions: {debuggerAddress: localhost:39981}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39981/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (777840996cd612da475a3cb9bbd661ec)] -> id: lastName]\nSession ID: 777840996cd612da475a3cb9bbd661ec",
+      "children" : [ {
+        "name" : "TUA-454",
+        "uid" : "d4ea158862b68d9f",
+        "parentUid" : "caa0c743a520960f1905ffc7ad58254a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643185572000,
+          "stop" : 1643185574147,
+          "duration" : 2147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "caa0c743a520960f1905ffc7ad58254a"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "The following asserts failed:\n\texpected [404] but found [403],\n\texpected [Category not found by name: Новий тип гуртка] but found [Club already exist with name: Голосистi діти]",
+      "children" : [ {
+        "name" : "TUA-409",
+        "uid" : "8aa0b452f9496251",
+        "parentUid" : "403c37ad5edbb158a95e373ddb679fcf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643184974477,
+          "stop" : 1643184981374,
+          "duration" : 6897
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Новий тип гуртка", "Category not found by name: Новий тип гуртка", "ageFrom must be greater than or equal to 2", "2", "19", "18", "ageTo must be less than or equal to 18", "ЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁ", "Це поле може містити тільки українські та англійські літери, цифри та спеціальні символи", "Description", "Довжина опису не може бути меншою за 40 символів", "descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptndescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptionriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriiptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescrasdfw", "Танці, хореографія", "Довжина опису не може бути більшою за 1500 символів", "ЪЫЭЁЁ", "name can't contain russian letters", "name", "name Довжина назви має бути від 5 до 100 символів", "characterscharacsterscharacterscharacterscharacterscharacterscharacterscharacterschacharacterscharact", "testName", "1" ]
+      } ],
+      "uid" : "403c37ad5edbb158a95e373ddb679fcf"
+    }, {
+      "name" : "The following asserts failed:\n\texpected [400] but found [403],\n\texpected [categories must not be empty] but found [null],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [403],\n\texpected [contacts must not be empty] but found [Club already exist with name: Голосистi діти]",
+      "children" : [ {
+        "name" : "TUA-405",
+        "uid" : "b120e1f68b4cba4c",
+        "parentUid" : "ff09c8309d6771ba1b7709e89d518166",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643184991347,
+          "stop" : 1643184995827,
+          "duration" : 4480
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ff09c8309d6771ba1b7709e89d518166"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
