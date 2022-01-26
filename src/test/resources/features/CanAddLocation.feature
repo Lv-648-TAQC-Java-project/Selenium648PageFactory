@@ -41,10 +41,23 @@ Feature: Verify that a 'Керівник' can add a location of a club
     Then Enter valid data <validPhone> into the Контакти group box 1st field
     And Check if Data in the Контакти group box 1st field is accepted by input with <addClubPopUpComponentIds> at 0 index
 
-
-
     Examples:
       | validClubName | ageFrom | ageTo | validLocationName | addLocationPopUpIds                                              | validAddress | coordinates                            | validPhone | addClubPopUpComponentIds                                                                                                     |
       | ValidName2    | 2       | 18    | ValidLocationName | name,cityName,stationName,districtName,address,coordinates,phone | ValidAddress | 49.829104498711104, 24.005058710351314 | 0966666666 | basic_contactТелефон,basic_contactFacebook,basic_contactWhatsApp,basic_contactПошта,basic_contactSkype,basic_contactContact |
 
-
+  Scenario Outline: This test case verifies that a 'Керівник' can add location to the list of locations after filling in all mandatory and all optional fields with valid data
+    Given Log in as an Керівник
+    And Go to the 'Додати центр'
+    When Click on '+Додати локацію' button
+    And Fill 'Назва' field with correct value <validLocationName>
+    And Select Київ from the city dropdown list
+    And Select Академмістечко from the dropdown list
+    And Select Деснянський from the dropdown list
+    And Fill in 'Адреса' field with <validAddress>
+    And Fill in 'Координати' field with <validCoordinates>
+    And Fill in 'Номер телефону' field with <validPhoneNumber>
+    And Click on 'Додати' button
+    Then Location <validLocationName> is in the list of locations
+    Examples:
+      | validLocationName | validAddress | validCoordinates | validPhoneNumber |
+      | ValidLocationName | ValidAddress | 49.829104498711104, 24.005058710351314 | 0976855546 |
