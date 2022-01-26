@@ -1,13 +1,4 @@
 # selenium648PageFactory
-
-create in `src/test/resources` file  `data.properties`
-
-```
-baseURL=https://example.org.ua
-adminEmail=example@test.com
-adminPassword=example
-```
-
 <a href="https://softserve.academy/"><img src="https://github.com/ita-social-projects/TeachUA/blob/main/images/logo.png" title="SoftServe IT Academy" alt="SoftServe IT Academy"></a>
 
 ***INSERT GRAPHIC HERE (include hyperlink in image)***
@@ -22,13 +13,9 @@ adminPassword=example
 
 **Badges will go here**
 - build status
-- coverage
-- issues (waffle.io maybe)
-- devDependencies
-- npm package
-- slack
-- downloads
-- gitter chat
+- issues 
+- Open Pull Request
+- Closed Pull Request
 - license
 - etc.
 
@@ -52,6 +39,7 @@ adminPassword=example
   - [Environment](#Environment)
   - [Clone](#Clone)
   - [How to run local](#How-to-run-local)
+  - [Properties](#What to write in properties)
 - [Contributing](#contributing)
   - [git flow](#git-flow)
 - [Support](#support)
@@ -84,9 +72,17 @@ environmental variables
 - Clone this repo to your local machine using `https://github.com/ita-social-projects/TeachUA_TA.git`
 
 ### How to run local
-mvn test
 ---
+- mvn test
+### Properties
 
+create in `src/test/resources` file  `data.properties`
+
+```
+baseURL=https://example.org.ua
+adminEmail=example@test.com
+adminPassword=example
+```
 
 
 ## Contributing
@@ -117,9 +113,6 @@ mvn test
 [![@lhalam](https://avatars.githubusercontent.com/u/81072407?s=100&v=4)](https://github.com/andriy66)
 [![@lhalam](https://avatars.githubusercontent.com/u/62646603?s=100&v=4)](https://github.com/Pidstavskiy)
 [![@lhalam](https://avatars3.githubusercontent.com/u/3837059?s=100&v=4)](https://github.com/MakKeywa)  
-
-- You can just grab their GitHub profile image URL
-- You should probably resize their picture using `?s=200` at the end of the image URL.
 
 ## Support
 
