@@ -25,8 +25,6 @@ public class BaseDefinition {
     @Before
     public void before(){
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        driver = new ChromeDriver(options);
         if (testValueProvider.getHeadlessMode()) {
             options.addArguments("--headless");
             options.addArguments("--window-size=1920,1080", "--no-sandbox", "'--disable-dev-shm-usage");

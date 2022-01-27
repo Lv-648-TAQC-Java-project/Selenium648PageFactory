@@ -1,15 +1,9 @@
 package com.ita.edu.teachua.cucumber.steps_definitions;
 
-import com.ita.edu.teachua.ui.pages.profile_page.ProfilePage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
-
-import java.time.Duration;
 
 public class UserCanChangeRole {
     private final BaseDefinition baseDef;
@@ -36,7 +30,7 @@ public class UserCanChangeRole {
 
     @And("Check if user has role ROLE_MANAGER in profile")
     public void checkIfUserHasMANAGERRoleStatus() {
-        Assert.assertEquals(pageContext.getAllPages().getProfilePage()
+        softAssert.assertEquals(pageContext.getAllPages().getProfilePage()
                 .getRoleStatus(), "ROLE_MANAGER");
     }
 
@@ -52,7 +46,7 @@ public class UserCanChangeRole {
     }
     @And("Check if user has role ROLE_USER in profile")
     public void checkIfUserHasUSERRoleStatus() {
-        Assert.assertEquals(pageContext.getAllPages().getProfilePage()
+        softAssert.assertEquals(pageContext.getAllPages().getProfilePage()
                 .getRoleStatus(), "ROLE_USER");
     }
 
@@ -60,5 +54,10 @@ public class UserCanChangeRole {
     public void clickOnRoleManagerButton() {
         pageContext.getAllProfilePageComponents().getProfileEditPopUpComponent()
                 .clickOnRoleManager();
+    }
+
+    @And("Check all asserts")
+    public void checkAllAsserts() {
+        softAssert.assertAll();
     }
 }

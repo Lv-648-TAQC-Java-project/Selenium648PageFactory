@@ -11,3 +11,4 @@ Feature: [Edit profile] The user or manager can change it's role
     Then Click on Керівник button
     And Click on Зберегти зміни button
     And Check if user has role ROLE_MANAGER in profile
+    And Check all asserts

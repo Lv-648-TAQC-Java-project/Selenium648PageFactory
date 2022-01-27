@@ -40,10 +40,6 @@ public class ProfilePage extends BasePage {
     @FindBy(how = How.XPATH, using = ProfilePageLocators.ROLE_STATUS)
     private WebElement roleStatus;
 
-    private static String EXPECTED_CONDITION_MANAGER = "ROLE_MANAGER";
-    private static String EXPECTED_CONDITION_USER = "ROLE_USER";
-    private static String CURRENT_EXPECTED_CONDITION;
-
     public ProfilePage(WebDriver driver) {
         super(driver);
     }
@@ -92,21 +88,6 @@ public class ProfilePage extends BasePage {
 
     public String getRoleStatus() {
         sleep(3000);
-        /*WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(new ExpectedCondition<Boolean>() {
-            @Override
-            public @Nullable Boolean apply(@Nullable WebDriver webDriver) {
-                if (roleStatus.getText().equals(EXPECTED_CONDITION_MANAGER)) {
-                    CURRENT_EXPECTED_CONDITION = EXPECTED_CONDITION_MANAGER;
-                    return Boolean.TRUE;
-                }else if (roleStatus.getText().equals(EXPECTED_CONDITION_USER)){
-                    CURRENT_EXPECTED_CONDITION = EXPECTED_CONDITION_USER;
-                    return Boolean.TRUE;
-                }
-                return Boolean.FALSE;
-            }
-        });*/
-        //waitUntilVisibilityOfElementLocated(By.xpath(ProfilePageLocators.ROLE_STATUS), 10);
         return roleStatus.getText();
     }
 
