@@ -22,7 +22,8 @@ public class GuestDropdownComponent extends BasePage {
 
     @Step("Click on register button")
     public RegisterPopUpComponent clickOnRegisterButton() {
-        sleep(200);
+        waitUntilVisibilityOfElementLocated(By.xpath(GuestDropdownComponentLocators.REGISTER_BUTTON_XPATH),10);
+        waitUntilElementToBeClickable(By.xpath(GuestDropdownComponentLocators.REGISTER_BUTTON_XPATH),10);
         registerButton.click();
         return new RegisterPopUpComponent(driver);
     }
