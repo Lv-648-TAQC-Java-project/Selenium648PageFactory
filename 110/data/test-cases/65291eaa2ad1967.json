@@ -1,0 +1,1244 @@
+{
+  "uid" : "65291eaa2ad1967",
+  "name" : "TUA-237",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.VerifyThatOwnerCanAddLocationOfClub",
+  "historyId" : "f303dfa62753b0f644315810abbb1db9",
+  "time" : {
+    "start" : 1643311719221,
+    "stop" : 1643311735692,
+    "duration" : 16471
+  },
+  "description" : "This test case verifies that a 'Керівник' can add a location of a club after filling in mandatory fields with valid data.",
+  "descriptionHtml" : "<p>This test case verifies that a 'Керівник' can add a location of a club after filling in mandatory fields with valid data.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1643311715296,
+      "stop" : 1643311719219,
+      "duration" : 3923
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311288326,
+      "stop" : 1643311288334,
+      "duration" : 8
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311288335,
+      "stop" : 1643311291734,
+      "duration" : 3399
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311291735,
+      "stop" : 1643311291735,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311291735,
+      "stop" : 1643311291735,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311291735,
+      "stop" : 1643311291735,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test case verifies that a 'Керівник' can add a location of a club after filling in mandatory fields with valid data.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1643311719222,
+        "stop" : 1643311722669,
+        "duration" : 3447
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1643311719222,
+          "stop" : 1643311719688,
+          "duration" : 466
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1643311719688,
+          "stop" : 1643311719801,
+          "duration" : 113
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1643311719801,
+          "stop" : 1643311722669,
+          "duration" : 2868
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1643311720511,
+            "stop" : 1643311720610,
+            "duration" : 99
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1643311720610,
+            "stop" : 1643311722669,
+            "duration" : 2059
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1643311722669,
+        "stop" : 1643311725726,
+        "duration" : 3057
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1643311725726,
+        "stop" : 1643311726421,
+        "duration" : 695
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Додати' button",
+      "time" : {
+        "start" : 1643311726421,
+        "stop" : 1643311726477,
+        "duration" : 56
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Додати гурток' button",
+      "time" : {
+        "start" : 1643311726477,
+        "stop" : 1643311727318,
+        "duration" : 841
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Enter ValidName2 data into the 'Назва' field of 'Основна інформація' tab",
+      "time" : {
+        "start" : 1643311727319,
+        "stop" : 1643311727504,
+        "duration" : 185
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "clubName",
+        "value" : "ValidName2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check off 'Спортивні секції' check-box from 'Категорія' group box",
+      "time" : {
+        "start" : 1643311727504,
+        "stop" : 1643311727604,
+        "duration" : 100
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Enter 2 into the first age input and 18 in second age input",
+      "time" : {
+        "start" : 1643311727605,
+        "stop" : 1643311727909,
+        "duration" : 304
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ageFrom",
+        "value" : "2"
+      }, {
+        "name" : "ageTo",
+        "value" : "18"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on 'Наступний крок' button",
+      "time" : {
+        "start" : 1643311727909,
+        "stop" : 1643311728013,
+        "duration" : 104
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click the 'Додати локацію' link on the 'Контакти' tab",
+      "time" : {
+        "start" : 1643311728013,
+        "stop" : 1643311728121,
+        "duration" : 108
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Checking that 'Додати локацію' pop-up is opened",
+      "time" : {
+        "start" : 1643311728121,
+        "stop" : 1643311728717,
+        "duration" : 596
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Enter data into the 'Назва' field of 'Додати локацію' pop-up ",
+      "time" : {
+        "start" : 1643311728717,
+        "stop" : 1643311728854,
+        "duration" : 137
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locationName",
+        "value" : "ValidName2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if data for the field with Id name is accepted",
+      "time" : {
+        "start" : 1643311728854,
+        "stop" : 1643311728877,
+        "duration" : 23
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "name"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on 'Місто' dropdown",
+      "time" : {
+        "start" : 1643311728877,
+        "stop" : 1643311728956,
+        "duration" : 79
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Choose a 'Київ' city from the 'Місто' drop-down list",
+      "time" : {
+        "start" : 1643311728956,
+        "stop" : 1643311729600,
+        "duration" : 644
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if data for the field with Id cityName is accepted",
+      "time" : {
+        "start" : 1643311729600,
+        "stop" : 1643311729618,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "cityName"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on 'Метро/Місцевість' dropdown",
+      "time" : {
+        "start" : 1643311729618,
+        "stop" : 1643311729690,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Choose a 'Академмістечко' locality from the 'Метро/Міцевість' drop-down list",
+      "time" : {
+        "start" : 1643311729690,
+        "stop" : 1643311730005,
+        "duration" : 315
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if data for the field with Id stationName is accepted",
+      "time" : {
+        "start" : 1643311730005,
+        "stop" : 1643311730023,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "stationName"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on 'Район міста' dropdown",
+      "time" : {
+        "start" : 1643311730023,
+        "stop" : 1643311730100,
+        "duration" : 77
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Choose a 'Деснянський' district from the 'Місто' drop-down list",
+      "time" : {
+        "start" : 1643311730100,
+        "stop" : 1643311730400,
+        "duration" : 300
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if data for the field with Id districtName is accepted",
+      "time" : {
+        "start" : 1643311730401,
+        "stop" : 1643311730417,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "districtName"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter data ValidAddress into the 'Адреса' field",
+      "time" : {
+        "start" : 1643311730417,
+        "stop" : 1643311730572,
+        "duration" : 155
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "address",
+        "value" : "ValidAddress"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if data for the field with Id address is accepted",
+      "time" : {
+        "start" : 1643311730572,
+        "stop" : 1643311730588,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "address"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter data 49.829104498711104, 24.005058710351314 into the 'Географічні координати' field ",
+      "time" : {
+        "start" : 1643311730588,
+        "stop" : 1643311731144,
+        "duration" : 556
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "coordinates",
+        "value" : "49.829104498711104, 24.005058710351314"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if data for the field with Id coordinates is accepted",
+      "time" : {
+        "start" : 1643311731144,
+        "stop" : 1643311731158,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "coordinates"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter data 0966666666 into the 'Номер телефону' field",
+      "time" : {
+        "start" : 1643311731159,
+        "stop" : 1643311731296,
+        "duration" : 137
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "0966666666"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if data for the field with Id phone is accepted",
+      "time" : {
+        "start" : 1643311731296,
+        "stop" : 1643311731309,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "phone"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click the 'Додати' button",
+      "time" : {
+        "start" : 1643311731309,
+        "stop" : 1643311731420,
+        "duration" : 111
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Enter 0966666666 data into Phone number field of 'Контакти' area ",
+      "time" : {
+        "start" : 1643311731478,
+        "stop" : 1643311731783,
+        "duration" : 305
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "number",
+        "value" : "0966666666"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if data for the field with Id basic_contactТелефон is accepted",
+      "time" : {
+        "start" : 1643311731783,
+        "stop" : 1643311731826,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "basic_contactТелефон"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter ValidName2 data into Facebook field of 'Контакти' area ",
+      "time" : {
+        "start" : 1643311731826,
+        "stop" : 1643311732035,
+        "duration" : 209
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "facebook",
+        "value" : "ValidName2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if data for the field with Id basic_contactFacebook is accepted",
+      "time" : {
+        "start" : 1643311732036,
+        "stop" : 1643311732051,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "basic_contactFacebook"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter ValidName2 data into WhatsApp field of 'Контакти' area ",
+      "time" : {
+        "start" : 1643311732051,
+        "stop" : 1643311732220,
+        "duration" : 169
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "whatsApp",
+        "value" : "ValidName2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if data for the field with Id basic_contactWhatsApp is accepted",
+      "time" : {
+        "start" : 1643311732220,
+        "stop" : 1643311732232,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "basic_contactWhatsApp"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter example@email.com data into Email field of 'Контакти' area ",
+      "time" : {
+        "start" : 1643311732233,
+        "stop" : 1643311732460,
+        "duration" : 227
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "example@email.com"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if data for the field with Id basic_contactПошта is accepted",
+      "time" : {
+        "start" : 1643311732460,
+        "stop" : 1643311732471,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "basic_contactПошта"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter ValidName2 data into Skype field of 'Контакти' area ",
+      "time" : {
+        "start" : 1643311732472,
+        "stop" : 1643311732644,
+        "duration" : 172
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "skype",
+        "value" : "ValidName2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if data for the field with Id basic_contactSkype is accepted",
+      "time" : {
+        "start" : 1643311732644,
+        "stop" : 1643311732657,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "basic_contactSkype"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter ValidName2 data into Site field of 'Контакти' area ",
+      "time" : {
+        "start" : 1643311732657,
+        "stop" : 1643311732827,
+        "duration" : 170
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "site",
+        "value" : "ValidName2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if data for the field with Id basic_contactContact is accepted",
+      "time" : {
+        "start" : 1643311732827,
+        "stop" : 1643311732840,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "basic_contactContact"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on 'Наступний крок' button",
+      "time" : {
+        "start" : 1643311732840,
+        "stop" : 1643311732917,
+        "duration" : 77
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "time" : {
+        "start" : 1643311732917,
+        "stop" : 1643311735623,
+        "duration" : 2706
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click the 'Завершити' button",
+      "time" : {
+        "start" : 1643311735624,
+        "stop" : 1643311735692,
+        "duration" : 68
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 49,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1643311735693,
+      "stop" : 1643311735809,
+      "duration" : 116
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "VerifyThatOwnerCanAddLocationOfClub"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az136-507"
+  }, {
+    "name" : "thread",
+    "value" : "2827@fv-az136-507.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "ValidName2"
+  }, {
+    "name" : "arg1",
+    "value" : "2"
+  }, {
+    "name" : "arg2",
+    "value" : "18"
+  }, {
+    "name" : "arg3",
+    "value" : "ValidAddress"
+  }, {
+    "name" : "arg4",
+    "value" : "49.829104498711104, 24.005058710351314"
+  }, {
+    "name" : "arg5",
+    "value" : "0966666666"
+  }, {
+    "name" : "arg6",
+    "value" : "example@email.com"
+  }, {
+    "name" : "arg7",
+    "value" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }, {
+    "name" : "arg8",
+    "value" : "name,cityName,districtName,stationName,address,coordinates,phone"
+  }, {
+    "name" : "arg9",
+    "value" : "basic_contactТелефон,basic_contactFacebook,basic_contactWhatsApp,basic_contactПошта,basic_contactSkype,basic_contactContact"
+  } ],
+  "links" : [ {
+    "name" : "TUA-237",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 6,
+        "skipped" : 0,
+        "passed" : 68,
+        "unknown" : 0,
+        "total" : 76
+      },
+      "items" : [ {
+        "uid" : "f7bcdfdd5f6aa8cc",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/109//#testresult/f7bcdfdd5f6aa8cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643310229947,
+          "stop" : 1643310246230,
+          "duration" : 16283
+        }
+      }, {
+        "uid" : "118389597da1ebcb",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/118389597da1ebcb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643308504544,
+          "stop" : 1643308522061,
+          "duration" : 17517
+        }
+      }, {
+        "uid" : "61dcd290e278d587",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/61dcd290e278d587",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [true] but found [false]",
+        "time" : {
+          "start" : 1643306629922,
+          "stop" : 1643306655205,
+          "duration" : 25283
+        }
+      }, {
+        "uid" : "228da9bfd14c2e79",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/228da9bfd14c2e79",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [true] but found [false]",
+        "time" : {
+          "start" : 1643303743968,
+          "stop" : 1643303769586,
+          "duration" : 25618
+        }
+      }, {
+        "uid" : "ed4d1ac40cc0fe73",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/107//#testresult/ed4d1ac40cc0fe73",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643301501885,
+          "stop" : 1643301517977,
+          "duration" : 16092
+        }
+      }, {
+        "uid" : "3550454666a96132",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/106//#testresult/3550454666a96132",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643296065406,
+          "stop" : 1643296084458,
+          "duration" : 19052
+        }
+      }, {
+        "uid" : "6df83567f8cff7b3",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/105//#testresult/6df83567f8cff7b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643292108091,
+          "stop" : 1643292124553,
+          "duration" : 16462
+        }
+      }, {
+        "uid" : "837dd2ee127476d7",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/104//#testresult/837dd2ee127476d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643292047660,
+          "stop" : 1643292063555,
+          "duration" : 15895
+        }
+      }, {
+        "uid" : "421228334c66add9",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/103//#testresult/421228334c66add9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643287202490,
+          "stop" : 1643287221667,
+          "duration" : 19177
+        }
+      }, {
+        "uid" : "fd649e5f9c66ec60",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/102//#testresult/fd649e5f9c66ec60",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643287162120,
+          "stop" : 1643287177691,
+          "duration" : 15571
+        }
+      }, {
+        "uid" : "e6505fe733710375",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/e6505fe733710375",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643284885551,
+          "stop" : 1643284901449,
+          "duration" : 15898
+        }
+      }, {
+        "uid" : "eca5de26f103b253",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/eca5de26f103b253",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643279391412,
+          "stop" : 1643279407679,
+          "duration" : 16267
+        }
+      }, {
+        "uid" : "5950d3908d320ccb",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/5950d3908d320ccb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643277452154,
+          "stop" : 1643277470708,
+          "duration" : 18554
+        }
+      }, {
+        "uid" : "7695e2a018c3ef46",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/100//#testresult/7695e2a018c3ef46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643227678975,
+          "stop" : 1643227695256,
+          "duration" : 16281
+        }
+      }, {
+        "uid" : "2cecf3cd6fbd2f20",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/98//#testresult/2cecf3cd6fbd2f20",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643212060935,
+          "stop" : 1643212077273,
+          "duration" : 16338
+        }
+      }, {
+        "uid" : "6ef298a4022788c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/6ef298a4022788c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188948037,
+          "stop" : 1643188965176,
+          "duration" : 17139
+        }
+      }, {
+        "uid" : "e584a51e025938f",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/e584a51e025938f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188889956,
+          "stop" : 1643188906801,
+          "duration" : 16845
+        }
+      }, {
+        "uid" : "da8337d5f37daa64",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/da8337d5f37daa64",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188822125,
+          "stop" : 1643188840518,
+          "duration" : 18393
+        }
+      }, {
+        "uid" : "c6f815db427c5f0e",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/c6f815db427c5f0e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643185327714,
+          "stop" : 1643185344637,
+          "duration" : 16923
+        }
+      }, {
+        "uid" : "43c7257b830e5531",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/93//#testresult/43c7257b830e5531",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643181412435,
+          "stop" : 1643181429147,
+          "duration" : 16712
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "65291eaa2ad1967.json",
+  "parameterValues" : [ "ValidName2", "2", "18", "ValidAddress", "49.829104498711104, 24.005058710351314", "0966666666", "example@email.com", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "name,cityName,districtName,stationName,address,coordinates,phone", "basic_contactТелефон,basic_contactFacebook,basic_contactWhatsApp,basic_contactПошта,basic_contactSkype,basic_contactContact" ]
+}

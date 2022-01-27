@@ -1,0 +1,556 @@
+{
+  "uid" : "d00238f6ac8910d7",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "f85ff1a3666dd50027e9b6e5622dd9d0",
+  "time" : {
+    "start" : 1643311317910,
+    "stop" : 1643311336201,
+    "duration" : 18291
+  },
+  "status" : "broken",
+  "statusMessage" : "element click intercepted: Element <div>...</div> is not clickable at point (1192, 119). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=97.0.4692.99)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az136-507', ip: '10.1.0.21', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [031bf4e4eb97e5bb69b2789fefaa40a3, clickElement {id=ff0a9522-5310-46a3-8650-5a6a4b6b8621}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.zpXXCo}, goog:chromeOptions: {debuggerAddress: localhost:34427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34427/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (031bf4e4eb97e5bb69b2789fefaa40a3)] -> xpath: //span/div[contains(text(),'Додати центр')]]\nSession ID: 031bf4e4eb97e5bb69b2789fefaa40a3",
+  "statusTrace" : "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div>...</div> is not clickable at point (1192, 119). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=97.0.4692.99)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az136-507', ip: '10.1.0.21', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [031bf4e4eb97e5bb69b2789fefaa40a3, clickElement {id=ff0a9522-5310-46a3-8650-5a6a4b6b8621}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.zpXXCo}, goog:chromeOptions: {debuggerAddress: localhost:34427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34427/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (031bf4e4eb97e5bb69b2789fefaa40a3)] -> xpath: //span/div[contains(text(),'Додати центр')]]\nSession ID: 031bf4e4eb97e5bb69b2789fefaa40a3\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\n\tat com.ita.edu.teachua.ui.elements.base_element.BaseElement.click(BaseElement.java:21)\n\tat sun.reflect.GeneratedMethodAccessor177.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat com.ita.edu.teachua.ui.pagefactory.ElementHandler.invoke(ElementHandler.java:46)\n\tat com.sun.proxy.$Proxy43.click(Unknown Source)\n\tat com.ita.edu.teachua.ui.pages.header_page.OwnerDropdownComponent.clickOnAddCenterButton(OwnerDropdownComponent.java:29)\n\tat com.ita.edu.teachua.cucumber.steps_definitions.CannotAddLocation.goToTheДодатиЦентр(CannotAddLocation.java:30)\n\tat ✽.Go to the Додати центр(file:///home/runner/work/TeachUA_TA/TeachUA_TA/src/test/resources/features/CannotAddLocation.feature:4)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1643311291781,
+      "stop" : 1643311292954,
+      "duration" : 1173
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1643311292954,
+      "stop" : 1643311293039,
+      "duration" : 85
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311288326,
+      "stop" : 1643311288334,
+      "duration" : 8
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311288335,
+      "stop" : 1643311291734,
+      "duration" : 3399
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311291735,
+      "stop" : 1643311291735,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311291735,
+      "stop" : 1643311291735,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311291735,
+      "stop" : 1643311291735,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element click intercepted: Element <div>...</div> is not clickable at point (1192, 119). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=97.0.4692.99)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az136-507', ip: '10.1.0.21', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [031bf4e4eb97e5bb69b2789fefaa40a3, clickElement {id=ff0a9522-5310-46a3-8650-5a6a4b6b8621}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.zpXXCo}, goog:chromeOptions: {debuggerAddress: localhost:34427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34427/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (031bf4e4eb97e5bb69b2789fefaa40a3)] -> xpath: //span/div[contains(text(),'Додати центр')]]\nSession ID: 031bf4e4eb97e5bb69b2789fefaa40a3",
+    "statusTrace" : "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div>...</div> is not clickable at point (1192, 119). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=97.0.4692.99)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az136-507', ip: '10.1.0.21', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [031bf4e4eb97e5bb69b2789fefaa40a3, clickElement {id=ff0a9522-5310-46a3-8650-5a6a4b6b8621}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.zpXXCo}, goog:chromeOptions: {debuggerAddress: localhost:34427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34427/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (031bf4e4eb97e5bb69b2789fefaa40a3)] -> xpath: //span/div[contains(text(),'Додати центр')]]\nSession ID: 031bf4e4eb97e5bb69b2789fefaa40a3\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\n\tat com.ita.edu.teachua.ui.elements.base_element.BaseElement.click(BaseElement.java:21)\n\tat sun.reflect.GeneratedMethodAccessor177.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat com.ita.edu.teachua.ui.pagefactory.ElementHandler.invoke(ElementHandler.java:46)\n\tat com.sun.proxy.$Proxy43.click(Unknown Source)\n\tat com.ita.edu.teachua.ui.pages.header_page.OwnerDropdownComponent.clickOnAddCenterButton(OwnerDropdownComponent.java:29)\n\tat com.ita.edu.teachua.cucumber.steps_definitions.CannotAddLocation.goToTheДодатиЦентр(CannotAddLocation.java:30)\n\tat ✽.Go to the Додати центр(file:///home/runner/work/TeachUA_TA/TeachUA_TA/src/test/resources/features/CannotAddLocation.feature:4)\n",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1643311322051,
+        "stop" : 1643311328777,
+        "duration" : 6726
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1643311322051,
+          "stop" : 1643311322510,
+          "duration" : 459
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1643311322510,
+          "stop" : 1643311325856,
+          "duration" : 3346
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1643311325856,
+          "stop" : 1643311328777,
+          "duration" : 2921
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1643311326611,
+            "stop" : 1643311326701,
+            "duration" : 90
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1643311326701,
+            "stop" : 1643311328777,
+            "duration" : 2076
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1643311328777,
+        "stop" : 1643311334980,
+        "duration" : 6203
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Додати центр' button ",
+      "time" : {
+        "start" : 1643311334980,
+        "stop" : 1643311336109,
+        "duration" : 1129
+      },
+      "status" : "broken",
+      "statusMessage" : "element click intercepted: Element <div>...</div> is not clickable at point (1192, 119). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=97.0.4692.99)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az136-507', ip: '10.1.0.21', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [031bf4e4eb97e5bb69b2789fefaa40a3, clickElement {id=ff0a9522-5310-46a3-8650-5a6a4b6b8621}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.zpXXCo}, goog:chromeOptions: {debuggerAddress: localhost:34427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34427/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (031bf4e4eb97e5bb69b2789fefaa40a3)] -> xpath: //span/div[contains(text(),'Додати центр')]]\nSession ID: 031bf4e4eb97e5bb69b2789fefaa40a3",
+      "statusTrace" : "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div>...</div> is not clickable at point (1192, 119). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=97.0.4692.99)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az136-507', ip: '10.1.0.21', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [031bf4e4eb97e5bb69b2789fefaa40a3, clickElement {id=ff0a9522-5310-46a3-8650-5a6a4b6b8621}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.zpXXCo}, goog:chromeOptions: {debuggerAddress: localhost:34427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34427/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (031bf4e4eb97e5bb69b2789fefaa40a3)] -> xpath: //span/div[contains(text(),'Додати центр')]]\nSession ID: 031bf4e4eb97e5bb69b2789fefaa40a3\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\n\tat com.ita.edu.teachua.ui.elements.base_element.BaseElement.click(BaseElement.java:21)\n\tat sun.reflect.GeneratedMethodAccessor177.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat com.ita.edu.teachua.ui.pagefactory.ElementHandler.invoke(ElementHandler.java:46)\n\tat com.sun.proxy.$Proxy43.click(Unknown Source)\n\tat com.ita.edu.teachua.ui.pages.header_page.OwnerDropdownComponent.clickOnAddCenterButton(OwnerDropdownComponent.java:29)\n\tat com.ita.edu.teachua.cucumber.steps_definitions.CannotAddLocation.goToTheДодатиЦентр(CannotAddLocation.java:30)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:57)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:95)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:75)\n\tat io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)\n\tat io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:146)\n\tat io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)\n\tat io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:146)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1643311588960,
+      "stop" : 1643311588969,
+      "duration" : 9
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "BDD Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "host",
+    "value" : "fv-az136-507"
+  }, {
+    "name" : "thread",
+    "value" : "2827@fv-az136-507.TestNG-tests-1(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty.\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Optional[Verify that a 'Керівник' can add a location of a club]\""
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 26,
+        "skipped" : 0,
+        "passed" : 50,
+        "unknown" : 0,
+        "total" : 76
+      },
+      "items" : [ {
+        "uid" : "bf50b40e7441502b",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/109//#testresult/bf50b40e7441502b",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az75-457', ip: '10.1.0.248', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.XWzeBo}, goog:chromeOptions: {debuggerAddress: localhost:40003}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40003/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cda56e0254e53fed87f54888650ba3e5",
+        "time" : {
+          "start" : 1643309822080,
+          "stop" : 1643309832496,
+          "duration" : 10416
+        }
+      }, {
+        "uid" : "13d3a75fe96431bb",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/13d3a75fe96431bb",
+        "status" : "broken",
+        "statusDetails" : "element not interactable\n  (Session info: chrome=97.0.4692.99)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az96-479', ip: '10.1.0.16', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [81d7207ea14114d75af0e1bb4b009cd5, clickElement {id=ed550a04-e8c8-4880-8650-abd9b77f09e8}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.QLGcXK}, goog:chromeOptions: {debuggerAddress: localhost:43817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43817/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (81d7207ea14114d75af0e1bb4b009cd5)] -> xpath: //span/div[contains(text(),'Додати центр')]]\nSession ID: 81d7207ea14114d75af0e1bb4b009cd5",
+        "time" : {
+          "start" : 1643308108777,
+          "stop" : 1643308131759,
+          "duration" : 22982
+        }
+      }, {
+        "uid" : "ddd05dcfa059108",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/ddd05dcfa059108",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for visibility of element located by By.id: basic_email (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az136-507', ip: '10.1.0.104', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.nsZYZP}, goog:chromeOptions: {debuggerAddress: localhost:33055}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33055/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 557fb34c6684064d3ed5dea87f108ff3",
+        "time" : {
+          "start" : 1643306254007,
+          "stop" : 1643306268501,
+          "duration" : 14494
+        }
+      }, {
+        "uid" : "3523a882c6c087f8",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/3523a882c6c087f8",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(text(),'Додати локацію')] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az202-404', ip: '10.1.0.136', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.lN6GBP}, goog:chromeOptions: {debuggerAddress: localhost:37555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37555/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b8edf2528ac08dbae970eb3cc708ab08",
+        "time" : {
+          "start" : 1643303343744,
+          "stop" : 1643303396369,
+          "duration" : 52625
+        }
+      }, {
+        "uid" : "64d98ec1f808e3cd",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/107//#testresult/64d98ec1f808e3cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643301099238,
+          "stop" : 1643301124650,
+          "duration" : 25412
+        }
+      }, {
+        "uid" : "12bc0a8ef9adb1cc",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/106//#testresult/12bc0a8ef9adb1cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643295627007,
+          "stop" : 1643295652430,
+          "duration" : 25423
+        }
+      }, {
+        "uid" : "9629c6a17a92c4ba",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/105//#testresult/9629c6a17a92c4ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643291709945,
+          "stop" : 1643291726648,
+          "duration" : 16703
+        }
+      }, {
+        "uid" : "583c98ad30f2c291",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/104//#testresult/583c98ad30f2c291",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643291649119,
+          "stop" : 1643291663544,
+          "duration" : 14425
+        }
+      }, {
+        "uid" : "e16390c70f8013e6",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/103//#testresult/e16390c70f8013e6",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.cssSelector: span[class='add-club-location'] span:not([class]) (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az200-978', ip: '10.1.0.186', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.Cov5cS}, goog:chromeOptions: {debuggerAddress: localhost:41005}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41005/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 84b9b65d5f9efbfcb8337b756bff106b",
+        "time" : {
+          "start" : 1643286789127,
+          "stop" : 1643286833045,
+          "duration" : 43918
+        }
+      }, {
+        "uid" : "d02a1fbb7b63755e",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/102//#testresult/d02a1fbb7b63755e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643286762236,
+          "stop" : 1643286782216,
+          "duration" : 19980
+        }
+      }, {
+        "uid" : "f10c67c34193ce13",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/f10c67c34193ce13",
+        "status" : "broken",
+        "statusDetails" : "element click intercepted: Element <div>...</div> is not clickable at point (1196, 131). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=97.0.4692.99)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az91-43', ip: '10.1.0.196', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [577ceb6011bc8eb90269c2fe753be0c4, clickElement {id=524c94bd-2760-4e84-bb4a-b44d81f3cb30}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.gpw4Vp}, goog:chromeOptions: {debuggerAddress: localhost:38139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38139/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (577ceb6011bc8eb90269c2fe753be0c4)] -> xpath: //div[contains(text(),'Увійти')]]\nSession ID: 577ceb6011bc8eb90269c2fe753be0c4",
+        "time" : {
+          "start" : 1643284479510,
+          "stop" : 1643284487838,
+          "duration" : 8328
+        }
+      }, {
+        "uid" : "a6a2197e407567c1",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/a6a2197e407567c1",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az91-43', ip: '10.1.0.15', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.QXgZH1}, goog:chromeOptions: {debuggerAddress: localhost:46135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46135/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 78d1229ecf8da908ca0aa445220b689d",
+        "time" : {
+          "start" : 1643279008731,
+          "stop" : 1643279019327,
+          "duration" : 10596
+        }
+      }, {
+        "uid" : "5840f586d47c2300",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/5840f586d47c2300",
+        "status" : "broken",
+        "statusDetails" : "element click intercepted: Element <div>...</div> is not clickable at point (1192, 132). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=97.0.4692.99)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az202-404', ip: '10.1.0.57', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [23af834987a9311a2dbca178f503de7b, clickElement {id=ae0cd811-3a56-4698-b02c-55733b0ba683}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.DYkvPi}, goog:chromeOptions: {debuggerAddress: localhost:38843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38843/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (23af834987a9311a2dbca178f503de7b)] -> xpath: //span/div[contains(text(),'Додати центр')]]\nSession ID: 23af834987a9311a2dbca178f503de7b",
+        "time" : {
+          "start" : 1643277050380,
+          "stop" : 1643277070112,
+          "duration" : 19732
+        }
+      }, {
+        "uid" : "6b6f86c1948604ed",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/100//#testresult/6b6f86c1948604ed",
+        "status" : "broken",
+        "statusDetails" : "element not interactable\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az91-939', ip: '10.1.1.35', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [e116d042fdc61907393bdda66b740c1a, clickElement {id=e34440c8-a931-4b5b-9094-2091f7e1f4d5}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.GRnMUZ}, goog:chromeOptions: {debuggerAddress: localhost:39383}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39383/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (e116d042fdc61907393bdda66b740c1a)] -> xpath: //span/div[contains(text(),'Додати центр')]]\nSession ID: e116d042fdc61907393bdda66b740c1a",
+        "time" : {
+          "start" : 1643227277109,
+          "stop" : 1643227316464,
+          "duration" : 39355
+        }
+      }, {
+        "uid" : "51b4c9f9b135605c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/98//#testresult/51b4c9f9b135605c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643211637423,
+          "stop" : 1643211654573,
+          "duration" : 17150
+        }
+      }, {
+        "uid" : "b7bce3e82177de54",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/b7bce3e82177de54",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.cssSelector: span[class='add-club-location'] span:not([class]) (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az200-809', ip: '10.1.0.84', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.D9tssd}, goog:chromeOptions: {debuggerAddress: localhost:44541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44541/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 18b5f016059c9379ab54a8733e1ab2eb",
+        "time" : {
+          "start" : 1643188544616,
+          "stop" : 1643188579153,
+          "duration" : 34537
+        }
+      }, {
+        "uid" : "1b890bad520b8872",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/1b890bad520b8872",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.cssSelector: span[class='add-club-location'] span:not([class]) (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az200-809', ip: '10.1.0.186', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.vXQ5Wo}, goog:chromeOptions: {debuggerAddress: localhost:44953}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44953/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0492c8b553de5b0a162abba540cfe064",
+        "time" : {
+          "start" : 1643188489229,
+          "stop" : 1643188518860,
+          "duration" : 29631
+        }
+      }, {
+        "uid" : "9cff7e8842994cf7",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/9cff7e8842994cf7",
+        "status" : "broken",
+        "statusDetails" : "element click intercepted: Element <div>...</div> is not clickable at point (1196, 132). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az200-809', ip: '10.1.0.156', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [8d6cfaf3a9cbcef58d1117bb041c538b, clickElement {id=a50a33ba-e337-4c79-9054-3990b7e3007f}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.KkIhZs}, goog:chromeOptions: {debuggerAddress: localhost:43327}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43327/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (8d6cfaf3a9cbcef58d1117bb041c538b)] -> xpath: //div[contains(text(),'Увійти')]]\nSession ID: 8d6cfaf3a9cbcef58d1117bb041c538b",
+        "time" : {
+          "start" : 1643188424157,
+          "stop" : 1643188430427,
+          "duration" : 6270
+        }
+      }, {
+        "uid" : "6cf0f4e98f9c8082",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/6cf0f4e98f9c8082",
+        "status" : "broken",
+        "statusDetails" : "element not interactable\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az119-533', ip: '10.1.1.34', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [9f66c80c17d8572941e7b6de3984b5d6, clickElement {id=a0638fa4-9aae-45a2-9862-d585936ea2ae}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.mYIn9Y}, goog:chromeOptions: {debuggerAddress: localhost:43633}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43633/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (9f66c80c17d8572941e7b6de3984b5d6)] -> xpath: //span/div[contains(text(),'Додати центр')]]\nSession ID: 9f66c80c17d8572941e7b6de3984b5d6",
+        "time" : {
+          "start" : 1643184934559,
+          "stop" : 1643184962592,
+          "duration" : 28033
+        }
+      }, {
+        "uid" : "c161bd3dbb410be0",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/93//#testresult/c161bd3dbb410be0",
+        "status" : "broken",
+        "statusDetails" : "element not interactable\n  (Session info: chrome=97.0.4692.71)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az191-415', ip: '10.1.0.160', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5c153bb40cce5bb56a7a2da33c5769bc, clickElement {id=afd265c7-8cf7-40a9-afda-4237c72d455c}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.rKztyY}, goog:chromeOptions: {debuggerAddress: localhost:40725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40725/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (5c153bb40cce5bb56a7a2da33c5769bc)] -> xpath: //span/div[contains(text(),'Додати центр')]]\nSession ID: 5c153bb40cce5bb56a7a2da33c5769bc",
+        "time" : {
+          "start" : 1643181021822,
+          "stop" : 1643181057563,
+          "duration" : 35741
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d00238f6ac8910d7.json",
+  "parameterValues" : [ "\"This test case verifies that a 'Керівник' cannot add a location to the list of locations after leaving all mandatory and optional fields empty.\"", "\"Optional[Verify that a 'Керівник' can add a location of a club]\"" ]
+}

@@ -1,0 +1,452 @@
+{
+  "uid" : "3df613fb79650743",
+  "name" : "TUA-371/372/463",
+  "fullName" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest.VerifyThatUserAsOwnerCanCreateNewClubWhichRegisteredOnHim",
+  "historyId" : "be8a3f279d3cefcda92917759da7d2b2",
+  "time" : {
+    "start" : 1643311382211,
+    "stop" : 1643311383645,
+    "duration" : 1434
+  },
+  "description" : "This test case verify that user as \"Керiвник гуртка\" can create new club with valid data",
+  "descriptionHtml" : "<p>This test case verify that user as &quot;Керiвник гуртка&quot; can create new club with valid data</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1643311357112,
+      "stop" : 1643311358302,
+      "duration" : 1190
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643311357112,
+        "stop" : 1643311357113,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311288326,
+      "stop" : 1643311288334,
+      "duration" : 8
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311288335,
+      "stop" : 1643311291734,
+      "duration" : 3399
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311291735,
+      "stop" : 1643311291735,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311291735,
+      "stop" : 1643311291735,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643311291735,
+      "stop" : 1643311291735,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test case verify that user as \"Керiвник гуртка\" can create new club with valid data",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643311382212,
+        "stop" : 1643311382905,
+        "duration" : 693
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643311382212,
+          "stop" : 1643311382212,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Вокальна студія, музика, музичні інструменти], \"name\":\"Голосистi діти\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"blocks\":[{\"key\":\"brl63\",\"text\":\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\",\"type\":\"unstyled\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Delete club request",
+      "time" : {
+        "start" : 1643311382931,
+        "stop" : 1643311383644,
+        "duration" : 713
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643311382931,
+          "stop" : 1643311382931,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "1693"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "VerifyThatUserAsOwnerCanCreateNewClubWhichRegisteredOnHim"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az136-507"
+  }, {
+    "name" : "thread",
+    "value" : "2827@fv-az136-507.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-463",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 18,
+        "skipped" : 2,
+        "passed" : 56,
+        "unknown" : 0,
+        "total" : 76
+      },
+      "items" : [ {
+        "uid" : "2f2c8fee25db7259",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/109//#testresult/2f2c8fee25db7259",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643309872541,
+          "stop" : 1643309873948,
+          "duration" : 1407
+        }
+      }, {
+        "uid" : "6d13347a56145105",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/6d13347a56145105",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643308162338,
+          "stop" : 1643308164020,
+          "duration" : 1682
+        }
+      }, {
+        "uid" : "4340fbcc8add6e4c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/4340fbcc8add6e4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643306309521,
+          "stop" : 1643306310935,
+          "duration" : 1414
+        }
+      }, {
+        "uid" : "4e83fb1d8d0f0d25",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/4e83fb1d8d0f0d25",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643303416681,
+          "stop" : 1643303418711,
+          "duration" : 2030
+        }
+      }, {
+        "uid" : "67a99cfe0ffde66",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/107//#testresult/67a99cfe0ffde66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643301180293,
+          "stop" : 1643301182286,
+          "duration" : 1993
+        }
+      }, {
+        "uid" : "e1c36a274058b050",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/106//#testresult/e1c36a274058b050",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643295683108,
+          "stop" : 1643295684714,
+          "duration" : 1606
+        }
+      }, {
+        "uid" : "a306736679f5d6dd",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/105//#testresult/a306736679f5d6dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643291786388,
+          "stop" : 1643291788405,
+          "duration" : 2017
+        }
+      }, {
+        "uid" : "8980d4bdbe1c65de",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/104//#testresult/8980d4bdbe1c65de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643291724599,
+          "stop" : 1643291726794,
+          "duration" : 2195
+        }
+      }, {
+        "uid" : "99c88584a301f3e5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/103//#testresult/99c88584a301f3e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643286878327,
+          "stop" : 1643286879993,
+          "duration" : 1666
+        }
+      }, {
+        "uid" : "c3834d9e30e0952a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/102//#testresult/c3834d9e30e0952a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643286838692,
+          "stop" : 1643286840309,
+          "duration" : 1617
+        }
+      }, {
+        "uid" : "87df989aa826704a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/87df989aa826704a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643284551485,
+          "stop" : 1643284554942,
+          "duration" : 3457
+        }
+      }, {
+        "uid" : "bea0e4624c140913",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/bea0e4624c140913",
+        "status" : "broken",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":401,\"message\":\"You have no necessary permissions (role)\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+        "time" : {
+          "start" : 1643279081669,
+          "stop" : 1643279082469,
+          "duration" : 800
+        }
+      }, {
+        "uid" : "dbd0b394904d3ee3",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/dbd0b394904d3ee3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643277124212,
+          "stop" : 1643277126299,
+          "duration" : 2087
+        }
+      }, {
+        "uid" : "e2ac16b248dfdd17",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/100//#testresult/e2ac16b248dfdd17",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643227361877,
+          "stop" : 1643227363632,
+          "duration" : 1755
+        }
+      }, {
+        "uid" : "b936425bd1b357c4",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/98//#testresult/b936425bd1b357c4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643211730247,
+          "stop" : 1643211731896,
+          "duration" : 1649
+        }
+      }, {
+        "uid" : "8595bc14545f900b",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/8595bc14545f900b",
+        "status" : "broken",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+        "time" : {
+          "start" : 1643188638319,
+          "stop" : 1643188639129,
+          "duration" : 810
+        }
+      }, {
+        "uid" : "ba8fe8d5240e1ff6",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/ba8fe8d5240e1ff6",
+        "status" : "broken",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+        "time" : {
+          "start" : 1643188551579,
+          "stop" : 1643188552439,
+          "duration" : 860
+        }
+      }, {
+        "uid" : "331b658a1fdde633",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/331b658a1fdde633",
+        "status" : "broken",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+        "time" : {
+          "start" : 1643188489646,
+          "stop" : 1643188490892,
+          "duration" : 1246
+        }
+      }, {
+        "uid" : "e82003e9a335cc8b",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/e82003e9a335cc8b",
+        "status" : "broken",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+        "time" : {
+          "start" : 1643184997449,
+          "stop" : 1643184998124,
+          "duration" : 675
+        }
+      }, {
+        "uid" : "c3172dd9509fe26d",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/93//#testresult/c3172dd9509fe26d",
+        "status" : "broken",
+        "statusDetails" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot), not marked as ignorable (17 known properties: \"isApproved\", \"urlGallery\", \"urlWeb\", \"ageFrom\", \"name\", \"center\", \"ageTo\", \"id\", \"description\", \"urlBackground\", \"workTime\", \"user\", \"urlLogo\", \"categories\", \"locations\", \"rating\", \"isOnline\"])\n at [Source: (String)\"{\"status\":403,\"message\":\"Club already exist with name: Голосистi діти\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.club.add_club_response.ClubRoot[\"status\"])",
+        "time" : {
+          "start" : 1643181084201,
+          "stop" : 1643181085014,
+          "duration" : 813
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3df613fb79650743.json",
+  "parameterValues" : [ ]
+}
