@@ -1,0 +1,132 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "element click intercepted: Element <div>...</div> is not clickable at point (1196, 132). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=97.0.4692.99)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az202-404', ip: '10.1.0.40', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [60893eac5d7689ce25d0fa976c5e939d, clickElement {id=84d45c35-cac3-48e9-96bd-2dbdecf15f03}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.XpMNso}, goog:chromeOptions: {debuggerAddress: localhost:46721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46721/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (60893eac5d7689ce25d0fa976c5e939d)] -> xpath: //div[contains(text(),'Увійти')]]\nSession ID: 60893eac5d7689ce25d0fa976c5e939d",
+      "children" : [ {
+        "name" : "Runs Cucumber Scenarios",
+        "uid" : "4f7cc72988bb0335",
+        "parentUid" : "227b6b41807cb55452348902ee42ae14",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643301086262,
+          "stop" : 1643301099227,
+          "duration" : 12965
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verifies that a 'Керівник' can add location to the list of locations after filling in all mandatory and all optional fields with valid data\"", "\"Optional[Verify that a 'Керівник' can add a location to the list of locations]\"" ]
+      } ],
+      "uid" : "227b6b41807cb55452348902ee42ae14"
+    }, {
+      "name" : "Cannot deserialize instance of `java.lang.String` out of START_OBJECT token\n at [Source: (String)\"{\"id\":267,\"name\":\"API testing925\",\"urlBackgroundPicture\":null,\"email\":null,\"phones\":null,\"description\":\"somethingsomethingsomethingsomethingsomethingsomething\",\"urlWeb\":null,\"urlLogo\":null,\"socialLinks\":null,\"user\":{\"id\":1,\"firstName\":\"admin\",\"lastName\":\"Admin\"},\"locations\":[{\"id\":1580,\"name\":\"location23\",\"address\":\"test321\",\"cityName\":\"Львів\",\"districtName\":\"Оболонський\",\"stationName\":\"Вирлиця\",\"city\":{\"id\":7,\"name\":\"Львів\",\"latitude\":49.839684,\"longitude\":24.029717},\"cityId\":7,\"districtId\":8,\"\"[truncated 5141 chars]; line: 1, column: 4722] (through reference chain: com.ita.edu.teachua.api.models.center.total.Content[\"clubs\"]->java.util.ArrayList[0]->com.ita.edu.teachua.api.models.center.total.Club[\"center\"]->com.ita.edu.teachua.api.models.center.total.Center2[\"locations\"]->java.util.ArrayList[0])",
+      "children" : [ {
+        "name" : "get center by id",
+        "uid" : "a404666ba33026a1",
+        "parentUid" : "6413f134e3feaa274effe860bd7aa0f1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643301139016,
+          "stop" : 1643301139823,
+          "duration" : 807
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6413f134e3feaa274effe860bd7aa0f1"
+    }, {
+      "name" : "element click intercepted: Element <div class=\"role-name\">...</div> is not clickable at point (645, 231). Other element would receive the click: <span class=\"ant-radio-button ant-radio-button-checked\">...</span>\n  (Session info: chrome=97.0.4692.99)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az202-404', ip: '10.1.0.40', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [6a7220fc875c28c73e472f888f39d50f, clickElement {id=c4a490f5-a13f-4048-8cdf-6e3bd851e79a}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.dNHgfW}, goog:chromeOptions: {debuggerAddress: localhost:44961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44961/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (6a7220fc875c28c73e472f888f39d50f)] -> xpath: //div[contains(text(),'Відвідувач')]]\nSession ID: 6a7220fc875c28c73e472f888f39d50f",
+      "children" : [ {
+        "name" : "Runs Cucumber Scenarios",
+        "uid" : "4e8159ff3be2a7e9",
+        "parentUid" : "95d3bbb4ba1ef84a9c1f3c5a2534cf76",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643301150970,
+          "stop" : 1643301166025,
+          "duration" : 15055
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"Verify that the manager can change it's role to 'user' and then back to 'manager'\"", "\"Optional[[Edit profile] The user or manager can change it's role]\"" ]
+      } ],
+      "uid" : "95d3bbb4ba1ef84a9c1f3c5a2534cf76"
+    }, {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[@class='ant-select-item-option-content'][contains(text(),'Київ')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az202-404', ip: '10.1.0.40', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.KArmo3}, goog:chromeOptions: {debuggerAddress: localhost:35501}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35501/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 905f9cc7b76334bb8eb88c21e1b7e0a8",
+      "children" : [ {
+        "name" : "Example of BDD suite",
+        "uid" : "b23c9f641acaf559",
+        "parentUid" : "2a5aa87bb3772ed0fd2c354a949f1838",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643301234592,
+          "stop" : 1643301253069,
+          "duration" : 18477
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verifies that a 'Керівник' can add location to the list of locations after filling in all mandatory and all optional fields with valid data\"", "\"Optional[Verify that a 'Керівник' can add a location to the list of locations]\"" ]
+      } ],
+      "uid" : "2a5aa87bb3772ed0fd2c354a949f1838"
+    }, {
+      "name" : "element not interactable: element has zero size\n  (Session info: chrome=97.0.4692.99)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az202-404', ip: '10.1.0.40', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [b87a806b9e95374fc566d2076c442ca7, clickElement {id=3dcc420f-ee0a-4ecb-b964-1bb813a1fc75}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.X5fgR7}, goog:chromeOptions: {debuggerAddress: localhost:33689}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33689/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (b87a806b9e95374fc566d2076c442ca7)] -> xpath: //div[contains(text(),'Відвідувач')]]\nSession ID: b87a806b9e95374fc566d2076c442ca7",
+      "children" : [ {
+        "name" : "Example of BDD suite",
+        "uid" : "52703d930aea8dcd",
+        "parentUid" : "14fff6060b62a013fa54a019b7e6e4af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643301291583,
+          "stop" : 1643301306222,
+          "duration" : 14639
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"Verify that the manager can change it's role to 'user' and then back to 'manager'\"", "\"Optional[[Edit profile] The user or manager can change it's role]\"" ]
+      } ],
+      "uid" : "14fff6060b62a013fa54a019b7e6e4af"
+    }, {
+      "name" : "element click intercepted: Element <span>...</span> is not clickable at point (977, 662). Other element would receive the click: <form id=\"basic\" class=\"ant-form ant-form-horizontal mainInfo\">...</form>\n  (Session info: chrome=97.0.4692.99)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az202-404', ip: '10.1.0.40', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [91f394e1dbe849da4b6f7ef6a0432d23, clickElement {id=d6612505-e90f-448d-a037-983220cf46da}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.tvPlpe}, goog:chromeOptions: {debuggerAddress: localhost:45801}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45801/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (91f394e1dbe849da4b6f7ef6a0432d23)] -> css selector: button[class='ant-btn next-btn'] span]\nSession ID: 91f394e1dbe849da4b6f7ef6a0432d23",
+      "children" : [ {
+        "name" : "TUA-252",
+        "uid" : "894da26a660ddc85",
+        "parentUid" : "519de5f86bdc2a12f263a6840248d269",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643301488255,
+          "stop" : 1643301497483,
+          "duration" : 9228
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "519de5f86bdc2a12f263a6840248d269"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+      "children" : [ {
+        "name" : "TUA-405",
+        "uid" : "4070f138aa31dbcc",
+        "parentUid" : "0f1afb5282055acdb48f63753e2580f7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643301173073,
+          "stop" : 1643301180291,
+          "duration" : 7218
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0f1afb5282055acdb48f63753e2580f7"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

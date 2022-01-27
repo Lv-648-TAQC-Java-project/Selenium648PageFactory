@@ -1,0 +1,657 @@
+{
+  "uid" : "4070f138aa31dbcc",
+  "name" : "TUA-405",
+  "fullName" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest.VerifyThatClubCannotBeCreatedWhenOneOfTheMandatoryFieldsAreNotFilled",
+  "historyId" : "bdaf6a73b00186027404e7d1392f9ec8",
+  "time" : {
+    "start" : 1643301173073,
+    "stop" : 1643301180291,
+    "duration" : 7218
+  },
+  "description" : "This test case verifies that user cannot create a club when one of the mandatory fields are not filled",
+  "descriptionHtml" : "<p>This test case verifies that user cannot create a club when one of the mandatory fields are not filled</p>\n",
+  "status" : "failed",
+  "statusMessage" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+  "statusTrace" : "java.lang.AssertionError: The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)\n\tat com.ita.edu.teachua.api.tests.AuthorizedClubTest.VerifyThatClubCannotBeCreatedWhenOneOfTheMandatoryFieldsAreNotFilled(AuthorizedClubTest.java:139)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1643301149662,
+      "stop" : 1643301150732,
+      "duration" : 1070
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643301149662,
+        "stop" : 1643301149662,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643301083197,
+      "stop" : 1643301083203,
+      "duration" : 6
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643301083204,
+      "stop" : 1643301085068,
+      "duration" : 1864
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643301085069,
+      "stop" : 1643301085069,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643301085069,
+      "stop" : 1643301085069,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643301085069,
+      "stop" : 1643301085069,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test case verifies that user cannot create a club when one of the mandatory fields are not filled",
+    "status" : "failed",
+    "statusMessage" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+    "statusTrace" : "java.lang.AssertionError: The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)\n\tat com.ita.edu.teachua.api.tests.AuthorizedClubTest.VerifyThatClubCannotBeCreatedWhenOneOfTheMandatoryFieldsAreNotFilled(AuthorizedClubTest.java:139)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+    "steps" : [ {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643301173077,
+        "stop" : 1643301173887,
+        "duration" : 810
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643301173077,
+          "stop" : 1643301173077,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"centerId\":2,\"name\":\"Голосистi діти\",\"ageFrom\":2,\"description\":\"{\\\"blocks\\\":[{\\\"key\\\":\\\"brl63\\\",\\\"text\\\":\\\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\\\",\\\"type\\\":\\\"unstyled\\\",\\\"depth\\\":1,\\\"inlineStyleRanges\\\":[],\\\"entityRanges\\\":[],\\\"data\\\":{}}],\\\"entityMap\\\":{}}\",\"locations\":[{\"address\":\"https://speak-ukrainian.org.ua/dev/club/910\",\"districtName\":\"Голосіївський\",\"cityName\":\"Київ\",\"phone\":\"0666666666\",\"coordinates\":\"50.35535081747696, 30.51765754176391\",\"name\":\"Голосівська\",\"stationName\":\"Голосіївська\",\"key\":0}],\"isOnline\":true,\"userId\":\"264\",\"ageTo\":18,\"contacts\":\"{\\\"1\\\"::\\\"ліл\\\"}\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643301173888,
+        "stop" : 1643301175672,
+        "duration" : 1784
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643301173888,
+          "stop" : 1643301173888,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"centerId\":2,\"categoriesName\":[\"Вокальна студія, музика, музичні інструменти\"],\"name\":\"Голосистi діти\",\"ageFrom\":2,\"locations\":[{\"address\":\"https://speak-ukrainian.org.ua/dev/club/910\",\"districtName\":\"Голосіївський\",\"cityName\":\"Київ\",\"phone\":\"0666666666\",\"coordinates\":\"50.35535081747696, 30.51765754176391\",\"name\":\"Голосівська\",\"stationName\":\"Голосіївська\",\"key\":0}],\"isOnline\":true,\"userId\":\"264\",\"ageTo\":18,\"contacts\":\"{\\\"1\\\"::\\\"ліл\\\"}\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643301175678,
+        "stop" : 1643301176937,
+        "duration" : 1259
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643301175678,
+          "stop" : 1643301175678,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"centerId\":2,\"categoriesName\":[\"Вокальна студія, музика, музичні інструменти\"],\"ageFrom\":2,\"description\":\"{\\\"blocks\\\":[{\\\"key\\\":\\\"brl63\\\",\\\"text\\\":\\\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\\\",\\\"type\\\":\\\"unstyled\\\",\\\"depth\\\":1,\\\"inlineStyleRanges\\\":[],\\\"entityRanges\\\":[],\\\"data\\\":{}}],\\\"entityMap\\\":{}}\",\"locations\":[{\"address\":\"https://speak-ukrainian.org.ua/dev/club/910\",\"districtName\":\"Голосіївський\",\"cityName\":\"Київ\",\"phone\":\"0666666666\",\"coordinates\":\"50.35535081747696, 30.51765754176391\",\"name\":\"Голосівська\",\"stationName\":\"Голосіївська\",\"key\":0}],\"isOnline\":true,\"userId\":\"264\",\"ageTo\":18,\"contacts\":\"{\\\"1\\\"::\\\"ліл\\\"}\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643301176938,
+        "stop" : 1643301177794,
+        "duration" : 856
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643301176938,
+          "stop" : 1643301176939,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"centerId\":2,\"categoriesName\":[\"Вокальна студія, музика, музичні інструменти\"],\"name\":\"Голосистi діти\",\"description\":\"{\\\"blocks\\\":[{\\\"key\\\":\\\"brl63\\\",\\\"text\\\":\\\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\\\",\\\"type\\\":\\\"unstyled\\\",\\\"depth\\\":1,\\\"inlineStyleRanges\\\":[],\\\"entityRanges\\\":[],\\\"data\\\":{}}],\\\"entityMap\\\":{}}\",\"locations\":[{\"address\":\"https://speak-ukrainian.org.ua/dev/club/910\",\"districtName\":\"Голосіївський\",\"cityName\":\"Київ\",\"phone\":\"0666666666\",\"coordinates\":\"50.35535081747696, 30.51765754176391\",\"name\":\"Голосівська\",\"stationName\":\"Голосіївська\",\"key\":0}],\"isOnline\":true,\"userId\":\"264\",\"ageTo\":18,\"contacts\":\"{\\\"1\\\"::\\\"ліл\\\"}\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643301177795,
+        "stop" : 1643301178601,
+        "duration" : 806
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643301177795,
+          "stop" : 1643301177796,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"centerId\":2,\"categoriesName\":[\"Вокальна студія, музика, музичні інструменти\"],\"name\":\"Голосистi діти\",\"description\":\"{\\\"blocks\\\":[{\\\"key\\\":\\\"brl63\\\",\\\"text\\\":\\\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\\\",\\\"type\\\":\\\"unstyled\\\",\\\"depth\\\":1,\\\"inlineStyleRanges\\\":[],\\\"entityRanges\\\":[],\\\"data\\\":{}}],\\\"entityMap\\\":{}}\",\"ageFrom\":2,\"locations\":[{\"address\":\"https://speak-ukrainian.org.ua/dev/club/910\",\"districtName\":\"Голосіївський\",\"cityName\":\"Київ\",\"phone\":\"0666666666\",\"coordinates\":\"50.35535081747696, 30.51765754176391\",\"name\":\"Голосівська\",\"stationName\":\"Голосіївська\",\"key\":0}],\"isOnline\":true,\"userId\":\"264\",\"contacts\":\"{\\\"1\\\"::\\\"ліл\\\"}\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643301178616,
+        "stop" : 1643301179439,
+        "duration" : 823
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643301178616,
+          "stop" : 1643301178616,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"centerId\":2,\"categoriesName\":[\"Вокальна студія, музика, музичні інструменти\"],\"name\":\"Голосистi діти\",\"description\":\"{\\\"blocks\\\":[{\\\"key\\\":\\\"brl63\\\",\\\"text\\\":\\\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\\\",\\\"type\\\":\\\"unstyled\\\",\\\"depth\\\":1,\\\"inlineStyleRanges\\\":[],\\\"entityRanges\\\":[],\\\"data\\\":{}}],\\\"entityMap\\\":{}}\",\"ageFrom\":2,\"locations\":[{\"address\":\"https://speak-ukrainian.org.ua/dev/club/910\",\"districtName\":\"Голосіївський\",\"cityName\":\"Київ\",\"phone\":\"0666666666\",\"coordinates\":\"50.35535081747696, 30.51765754176391\",\"name\":\"Голосівська\",\"stationName\":\"Голосіївська\",\"key\":0}],\"isOnline\":true,\"userId\":\"264\",\"ageTo\":18}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Delete club request",
+      "time" : {
+        "start" : 1643301179467,
+        "stop" : 1643301180290,
+        "duration" : 823
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643301179467,
+          "stop" : 1643301179468,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "1667"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 14,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "VerifyThatClubCannotBeCreatedWhenOneOfTheMandatoryFieldsAreNotFilled"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az202-404"
+  }, {
+    "name" : "thread",
+    "value" : "2762@fv-az202-404.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-405",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4bcb6147f3692d61",
+      "status" : "skipped",
+      "statusDetails" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+      "time" : {
+        "start" : 1643301166468,
+        "stop" : 1643301173071,
+        "duration" : 6603
+      }
+    }, {
+      "uid" : "6e84e3a8a2951b68",
+      "status" : "skipped",
+      "statusDetails" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+      "time" : {
+        "start" : 1643301159411,
+        "stop" : 1643301166456,
+        "duration" : 7045
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 69,
+        "broken" : 0,
+        "skipped" : 2,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 71
+      },
+      "items" : [ {
+        "uid" : "7d306f121eeba0e5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/106//#testresult/7d306f121eeba0e5",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+        "time" : {
+          "start" : 1643295677465,
+          "stop" : 1643295683101,
+          "duration" : 5636
+        }
+      }, {
+        "uid" : "4af7278aa8fae3bd",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/105//#testresult/4af7278aa8fae3bd",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+        "time" : {
+          "start" : 1643291780139,
+          "stop" : 1643291786385,
+          "duration" : 6246
+        }
+      }, {
+        "uid" : "e574d5c485232dae",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/104//#testresult/e574d5c485232dae",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+        "time" : {
+          "start" : 1643291717764,
+          "stop" : 1643291724596,
+          "duration" : 6832
+        }
+      }, {
+        "uid" : "c6326484243fbe07",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/103//#testresult/c6326484243fbe07",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+        "time" : {
+          "start" : 1643286872407,
+          "stop" : 1643286878324,
+          "duration" : 5917
+        }
+      }, {
+        "uid" : "3d416d46977010ba",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/102//#testresult/3d416d46977010ba",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+        "time" : {
+          "start" : 1643286833030,
+          "stop" : 1643286838688,
+          "duration" : 5658
+        }
+      }, {
+        "uid" : "d57b5012939dcadc",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/d57b5012939dcadc",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+        "time" : {
+          "start" : 1643284544766,
+          "stop" : 1643284551483,
+          "duration" : 6717
+        }
+      }, {
+        "uid" : "699dae9e37044218",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/699dae9e37044218",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [401],\n\texpected [categories must not be empty] but found [null],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [401],\n\texpected [contacts must not be empty] but found [You have no necessary permissions (role)]",
+        "time" : {
+          "start" : 1643279074708,
+          "stop" : 1643279079571,
+          "duration" : 4863
+        }
+      }, {
+        "uid" : "ef09be37e7c7cd71",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/ef09be37e7c7cd71",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+        "time" : {
+          "start" : 1643277117662,
+          "stop" : 1643277124210,
+          "duration" : 6548
+        }
+      }, {
+        "uid" : "542fb17fdf273bbf",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/100//#testresult/542fb17fdf273bbf",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+        "time" : {
+          "start" : 1643227353975,
+          "stop" : 1643227361875,
+          "duration" : 7900
+        }
+      }, {
+        "uid" : "2a34e74e36f36a4b",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/98//#testresult/2a34e74e36f36a4b",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+        "time" : {
+          "start" : 1643211723127,
+          "stop" : 1643211730241,
+          "duration" : 7114
+        }
+      }, {
+        "uid" : "2636621e85ac3bbc",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/2636621e85ac3bbc",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [403],\n\texpected [categories must not be empty] but found [null],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [403],\n\texpected [contacts must not be empty] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643188631549,
+          "stop" : 1643188636720,
+          "duration" : 5171
+        }
+      }, {
+        "uid" : "7749e7269c2ac3c1",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/7749e7269c2ac3c1",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [403],\n\texpected [categories must not be empty] but found [null],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [403],\n\texpected [contacts must not be empty] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643188544573,
+          "stop" : 1643188549750,
+          "duration" : 5177
+        }
+      }, {
+        "uid" : "e841aa634030a02",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/e841aa634030a02",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [403],\n\texpected [categories must not be empty] but found [null],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [403],\n\texpected [contacts must not be empty] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643188481996,
+          "stop" : 1643188487324,
+          "duration" : 5328
+        }
+      }, {
+        "uid" : "b120e1f68b4cba4c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/b120e1f68b4cba4c",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [403],\n\texpected [categories must not be empty] but found [null],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [403],\n\texpected [contacts must not be empty] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643184991347,
+          "stop" : 1643184995827,
+          "duration" : 4480
+        }
+      }, {
+        "uid" : "30308e62637c0677",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/93//#testresult/30308e62637c0677",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [403],\n\texpected [categories must not be empty] but found [null],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [403],\n\texpected [contacts must not be empty] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643181078975,
+          "stop" : 1643181082860,
+          "duration" : 3885
+        }
+      }, {
+        "uid" : "b3badb3abc298d85",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/92//#testresult/b3badb3abc298d85",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [403],\n\texpected [categories must not be empty] but found [null],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [403],\n\texpected [contacts must not be empty] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643142067882,
+          "stop" : 1643142073933,
+          "duration" : 6051
+        }
+      }, {
+        "uid" : "cf3e83e31ce817a2",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/91//#testresult/cf3e83e31ce817a2",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [403],\n\texpected [categories must not be empty] but found [null],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [contacts must not be empty] but found []",
+        "time" : {
+          "start" : 1643142077067,
+          "stop" : 1643142120700,
+          "duration" : 43633
+        }
+      }, {
+        "uid" : "76720da8185d2412",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/90//#testresult/76720da8185d2412",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [403],\n\texpected [categories must not be empty] but found [null],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [403],\n\texpected [contacts must not be empty] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643141308970,
+          "stop" : 1643141314160,
+          "duration" : 5190
+        }
+      }, {
+        "uid" : "52aad295683f019c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/85//#testresult/52aad295683f019c",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+        "time" : {
+          "start" : 1643140659713,
+          "stop" : 1643140668401,
+          "duration" : 8688
+        }
+      }, {
+        "uid" : "a7da8e6d09824696",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/84//#testresult/a7da8e6d09824696",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+        "time" : {
+          "start" : 1643139871018,
+          "stop" : 1643139876036,
+          "duration" : 5018
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4070f138aa31dbcc.json",
+  "parameterValues" : [ ]
+}
