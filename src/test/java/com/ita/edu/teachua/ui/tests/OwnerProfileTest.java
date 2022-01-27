@@ -402,7 +402,6 @@ public class OwnerProfileTest extends TestRunner {
         HeaderPage header = new HeaderPage(driver);
         RegisterPopUpComponent registerCheck = header.clickOnGuestDropdown()
                 .clickOnRegisterButton()
-                .clickLastNameField()
                 .fillLastName("Вайтович")
                 .clickFirstNameField()
                 .fillFirstName("Світлана")
