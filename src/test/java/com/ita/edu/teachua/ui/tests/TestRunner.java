@@ -1,5 +1,6 @@
 package com.ita.edu.teachua.ui.tests;
 
+import com.ita.edu.teachua.utils.Retry;
 import com.ita.edu.teachua.utils.TestNgListeners;
 import com.ita.edu.teachua.utils.TestValueProvider;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -8,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestContext;
+import org.testng.ITestNGMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -22,8 +24,11 @@ public class TestRunner {
     protected static TestValueProvider testValueProvider;
     protected WebDriver driver;
 
-    @BeforeSuite
-    public void beforeSuite() throws IOException {
+    @BeforeSuite(alwaysRun = true)
+    public void beforeSuite(ITestContext context) throws IOException {
+        for (ITestNGMethod method : context.getAllTestMethods()) {
+            method.setRetryAnalyzerClass(Retry.class);
+        }
         WebDriverManager.chromedriver().setup();
         testValueProvider = new TestValueProvider();
     }

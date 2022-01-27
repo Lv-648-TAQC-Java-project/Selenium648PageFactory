@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class District{
+    private Integer id;
     private String name;
-    private String cityName;
+    private Object city;
 }

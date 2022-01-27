@@ -18,6 +18,8 @@ import java.util.List;
 
 public class AdvancedSearchPage extends BasePage {
 
+    private final Integer AMOUNT_OF_CLUBS_ON_ONE_PAGE = 6;
+
     @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.CLUB_RADIOBUTTON_XPATH)
     private RadioButton clubsRadioButton;
     @FindBy(how = How.XPATH, using = AdvancedSearchPageLocators.CITY_LABEL_XPATH)
@@ -326,10 +328,10 @@ public class AdvancedSearchPage extends BasePage {
 
     @Step("Get all clubs cards")
     public List<ClubsItemComponent> getClubCards() {
+        this.sleep(3000);
         List<ClubsItemComponent> cards = new ArrayList<>();
-        this.sleep(2000);
-        waitUntilVisibilityOfElementLocated(By.xpath(AdvancedSearchPageLocators.CLUB_CARD_XPATH), 5);
-        for (WebElement j : clubCards) {
+        List<WebElement> clubs = clubsCards;
+        for (WebElement j : clubs) {
             cards.add(new ClubsItemComponent(driver, j));
         }
         return cards;
@@ -350,22 +352,24 @@ public class AdvancedSearchPage extends BasePage {
     }
 
     @Step("Go to the next page with clubs")
-    public void clickOnNextPageButton() {
+    public AdvancedSearchPage clickOnNextPageButton() {
+        this.sleep(1000);
+        //this.waitUntilVisibilityOfElementLocated(By.xpath(AdvancedSearchPageLocators.NEXT_PAGE_BUTTON_XPATH), 5);
         nextPageButton.click();
+        return this;
     }
 
     @Step("Get number of pages with clubs")
     public int getNumberOfPagesWithClubs() {
-        this.sleep(2000);
-        implicitlyWaitInMs(5000);
-        waitUntilVisibilityOfElementLocated(By.xpath(AdvancedSearchPageLocators.LAST_PAGE_BUTTON_XPATH), 5);
+        this.sleep(1000);
+        //this.waitForAmountOfElements(By.xpath(AdvancedSearchPageLocators.CLUB_CARD_XPATH), AMOUNT_OF_CLUBS_ON_ONE_PAGE, 5);
+        //this.waitUntilVisibilityOfElementLocated(By.xpath(AdvancedSearchPageLocators.LAST_PAGE_BUTTON_XPATH), 5);
         return Integer.parseInt(lastPageButton.getInnerText());
     }
 
     @Step("Click on arrow up to sort clubs in descending order")
     public AdvancedSearchPage clickOnArrowUpButton() {
-        //sleep(1000);
-        implicitlyWaitInMs(5000);
+        this.sleep(1000);
         arrowUpButton.click();
         return this;
     }
@@ -379,5 +383,4 @@ public class AdvancedSearchPage extends BasePage {
 
     public AdvancedSearchPage getAdvancedSearchPage(){
         return this;
-    }
-}
+    }}

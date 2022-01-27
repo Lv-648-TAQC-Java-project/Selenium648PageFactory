@@ -23,8 +23,9 @@ public class HeaderPage extends BasePage {
 
     @Step("Click on guest dropdown")
     public GuestDropdownComponent clickOnGuestDropdown() {
+        sleep(200);
         guestDropdown.click();
-        //sleep(2000);
+        sleep(200);
         return new GuestDropdownComponent(driver);
     }
 

@@ -49,12 +49,13 @@ public class AddLocationPopUpComponent extends BasePage {
 
     @Step("Checking that 'Додати локацію' pop-up is opened")
     public boolean addLocationPopUpBlockIsDisplayed() {
-        waitUntilVisibilityOfElementLocated(By.xpath(AddLocationPopUpComponentLocators.ADD_LOCATION_BLOCK_HEADER_XPATH), 10);
+        waitUntilVisibilityOfElementLocated(By.xpath(AddLocationPopUpComponentLocators.ADD_LOCATION_BLOCK_HEADER_XPATH), 30);
         return addLocationPopUpBlock.isDisplayed();
     }
 
     @Step("Enter data into the 'Назва' field of 'Додати локацію' pop-up ")
     public AddLocationPopUpComponent sendKeysLocationNameField(String locationName) {
+        waitUntilVisibilityOfElementLocated(By.id(AddLocationPopUpComponentLocators.LOCATION_NAME_FIELD_ID),30);
         locationNameField.set(locationName);
         return this;
     }

@@ -175,15 +175,15 @@ public class AdvancedSearchTest extends TestRunner {
     }
 
     public List<String> getTitlesFromAllPages(AdvancedSearchPage advancedSearchPage) {
+        List<ClubsItemComponent> cards;
         List<String> stringCards = new ArrayList<>();
         int n = advancedSearchPage.getNumberOfPagesWithClubs();
         for (int i = 0; i < n; ++i) {
-            for (ClubsItemComponent card : advancedSearchPage.getClubCards()) {
+            cards = advancedSearchPage.getClubCards();
+            for (ClubsItemComponent card : cards) {
                 stringCards.add(card.getCardTitle().getText());
             }
-            if (i < n - 1) {
-                advancedSearchPage.clickOnNextPageButton();
-            }
+            advancedSearchPage.clickOnNextPageButton();
         }
         return stringCards;
     }
@@ -210,7 +210,7 @@ public class AdvancedSearchTest extends TestRunner {
                 }
             }
         }
-        return true;
+        return titles.size() != 0;
     }
 
     @Issue("TUA-103")

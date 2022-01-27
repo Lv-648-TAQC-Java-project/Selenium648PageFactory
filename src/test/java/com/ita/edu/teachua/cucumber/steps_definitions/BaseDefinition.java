@@ -15,18 +15,23 @@ import java.time.Duration;
 public class BaseDefinition {
     protected static WebDriver driver;
     protected static TestValueProvider testValueProvider;
+
     @BeforeAll
     public static void beforeAll() throws IOException {
         testValueProvider = new TestValueProvider();
         WebDriverManager.chromedriver().setup();
-
-
     }
+
     @Before
     public void before(){
         ChromeOptions options = new ChromeOptions();
         //options.addArguments("--headless");
         driver = new ChromeDriver();
+        if (testValueProvider.getHeadlessMode()) {
+            options.addArguments("--headless");
+            options.addArguments("--window-size=1920,1080", "--no-sandbox", "'--disable-dev-shm-usage");
+        }
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(testValueProvider.getBaseUrl());
@@ -94,5 +99,25 @@ public class BaseDefinition {
     @ParameterType("([^\"]*)")
     public String color(String color) {
         return color;
+    }
+    @ParameterType("([^\"]*)")
+    public String coordinates(String coordinates) {
+        return coordinates;
+    }
+    @ParameterType("([^\"]*)")
+    public String validPhone(String validPhone) {
+        return validPhone;
+    }
+    @ParameterType("([^\"]*)")
+    public String[] addClubPopUpComponentIds(String addClubPopUpComponentIds) {
+        return addClubPopUpComponentIds.split(",");
+    }
+    @ParameterType("([^\"]*)")
+    public String validCoordinates(String validCoordinates) {
+        return validCoordinates;
+    }
+    @ParameterType("([^\"]*)")
+    public String validPhoneNumber(String validPhoneNumber) {
+        return validPhoneNumber;
     }
 }

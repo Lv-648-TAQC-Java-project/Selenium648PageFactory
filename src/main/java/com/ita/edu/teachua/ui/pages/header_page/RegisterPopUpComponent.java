@@ -77,7 +77,7 @@ public class RegisterPopUpComponent extends BasePage {
     }
 
     public Input getPasswordConfirmField() {
-        sleep(400);
+        sleep(800);
         return passwordConfirm;
     }
 
