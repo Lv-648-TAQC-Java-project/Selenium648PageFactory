@@ -1,0 +1,799 @@
+{
+  "uid" : "5992ca7c00bd49ab",
+  "name" : "TUA-176",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.checkDescriptionFieldWithLessThan40Symbols",
+  "historyId" : "128eb4ecae813f1fdbd776c29d2c4b6b",
+  "time" : {
+    "start" : 1643310349641,
+    "stop" : 1643310363489,
+    "duration" : 13848
+  },
+  "description" : "TUA-176-Verify that error message ‘Некоректний опис гуртка\\n\" + \"Опис гуртка може містити від 40 до 1500 символів.’ appears when the user enters less than 40 symbols into the field",
+  "descriptionHtml" : "<p>TUA-176-Verify that error message ‘Некоректний опис гуртка\\n&quot; + &quot;Опис гуртка може містити від 40 до 1500 символів.’ appears when the user enters less than 40 symbols into the field</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1643310346030,
+      "stop" : 1643310349639,
+      "duration" : 3609
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643309782448,
+      "stop" : 1643309782463,
+      "duration" : 15
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643309782465,
+      "stop" : 1643309788343,
+      "duration" : 5878
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643309788344,
+      "stop" : 1643309788344,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643309788344,
+      "stop" : 1643309788344,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643309788345,
+      "stop" : 1643309788345,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "TUA-176-Verify that error message ‘Некоректний опис гуртка\\n\" + \"Опис гуртка може містити від 40 до 1500 символів.’ appears when the user enters less than 40 symbols into the field",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1643310349644,
+        "stop" : 1643310353182,
+        "duration" : 3538
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1643310349644,
+          "stop" : 1643310350119,
+          "duration" : 475
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1643310350119,
+          "stop" : 1643310350251,
+          "duration" : 132
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1643310350251,
+          "stop" : 1643310353182,
+          "duration" : 2931
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1643310350977,
+            "stop" : 1643310351112,
+            "duration" : 135
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1643310351112,
+            "stop" : 1643310353182,
+            "duration" : 2070
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1643310353182,
+        "stop" : 1643310356136,
+        "duration" : 2954
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1643310356136,
+        "stop" : 1643310356497,
+        "duration" : 361
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on 'Додати' button",
+      "time" : {
+        "start" : 1643310356497,
+        "stop" : 1643310356557,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on 'Додати гурток' button",
+      "time" : {
+        "start" : 1643310356557,
+        "stop" : 1643310357384,
+        "duration" : 827
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill 'Назва' field with Танці, хореографія",
+      "time" : {
+        "start" : 1643310357384,
+        "stop" : 1643310358148,
+        "duration" : 764
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Танці, хореографія"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on 'Танці, хореографія' checkbox",
+      "time" : {
+        "start" : 1643310358148,
+        "stop" : 1643310358267,
+        "duration" : 119
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Hover to basic_ageFrom element",
+      "time" : {
+        "start" : 1643310358267,
+        "stop" : 1643310358409,
+        "duration" : 142
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "basic_ageFrom"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click 6 times on upper arrow in 'Від' field",
+      "time" : {
+        "start" : 1643310358409,
+        "stop" : 1643310358768,
+        "duration" : 359
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Hover to basic_ageTo element",
+      "time" : {
+        "start" : 1643310358768,
+        "stop" : 1643310358908,
+        "duration" : 140
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "basic_ageTo"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click 7 times on upper arrow in 'до' field",
+      "time" : {
+        "start" : 1643310358908,
+        "stop" : 1643310359341,
+        "duration" : 433
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on 'Наступний крок' button",
+      "time" : {
+        "start" : 1643310359341,
+        "stop" : 1643310359454,
+        "duration" : 113
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter 9632548777 data into Phone number field of 'Контакти' area ",
+      "time" : {
+        "start" : 1643310359454,
+        "stop" : 1643310359669,
+        "duration" : 215
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "number",
+        "value" : "9632548777"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on 'Наступний крок' button",
+      "time" : {
+        "start" : 1643310359669,
+        "stop" : 1643310359768,
+        "duration" : 99
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill 'Опис' field with Also known as the Mo",
+      "time" : {
+        "start" : 1643310359769,
+        "stop" : 1643310361006,
+        "duration" : 1237
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Also known as the Mo"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1643310361006,
+        "stop" : 1643310361006,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill 'Опис' field with 1",
+      "time" : {
+        "start" : 1643310361042,
+        "stop" : 1643310362161,
+        "duration" : 1119
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "1"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1643310362161,
+        "stop" : 1643310362161,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill 'Опис' field with Also known as the Monastery of the ghfg",
+      "time" : {
+        "start" : 1643310362179,
+        "stop" : 1643310363465,
+        "duration" : 1286
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Also known as the Monastery of the ghfg"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1643310363465,
+        "stop" : 1643310363465,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 25,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1643310363490,
+      "stop" : 1643310363591,
+      "duration" : 101
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkDescriptionFieldWithLessThan40Symbols"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az75-457"
+  }, {
+    "name" : "thread",
+    "value" : "2812@fv-az75-457.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "[Also known as the Mo, 1, Also known as the Monastery of the ghfg]"
+  } ],
+  "links" : [ {
+    "name" : "TUA-176",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 8,
+        "skipped" : 0,
+        "passed" : 65,
+        "unknown" : 0,
+        "total" : 73
+      },
+      "items" : [ {
+        "uid" : "81d32f4eb9b3903a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/81d32f4eb9b3903a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643308631759,
+          "stop" : 1643308646774,
+          "duration" : 15015
+        }
+      }, {
+        "uid" : "4ddc9bb0f46da9ae",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/4ddc9bb0f46da9ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643306748706,
+          "stop" : 1643306761816,
+          "duration" : 13110
+        }
+      }, {
+        "uid" : "f6ad1a664b2aa10a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/f6ad1a664b2aa10a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643303866679,
+          "stop" : 1643303880869,
+          "duration" : 14190
+        }
+      }, {
+        "uid" : "59f3fc05b4931686",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/107//#testresult/59f3fc05b4931686",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643301617472,
+          "stop" : 1643301631315,
+          "duration" : 13843
+        }
+      }, {
+        "uid" : "ce6332d0c131e6b0",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/106//#testresult/ce6332d0c131e6b0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643296203541,
+          "stop" : 1643296219416,
+          "duration" : 15875
+        }
+      }, {
+        "uid" : "e5b8b75a0422b99b",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/105//#testresult/e5b8b75a0422b99b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643292226024,
+          "stop" : 1643292239817,
+          "duration" : 13793
+        }
+      }, {
+        "uid" : "23a7678f83dd00b",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/104//#testresult/23a7678f83dd00b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643292162028,
+          "stop" : 1643292176274,
+          "duration" : 14246
+        }
+      }, {
+        "uid" : "b8fee47660fc5095",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/103//#testresult/b8fee47660fc5095",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643287340673,
+          "stop" : 1643287355733,
+          "duration" : 15060
+        }
+      }, {
+        "uid" : "687ba21f478a5dc",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/102//#testresult/687ba21f478a5dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643287276271,
+          "stop" : 1643287289664,
+          "duration" : 13393
+        }
+      }, {
+        "uid" : "95f4b7f6ebc5aef6",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/95f4b7f6ebc5aef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643285001362,
+          "stop" : 1643285015571,
+          "duration" : 14209
+        }
+      }, {
+        "uid" : "2761cf003434a863",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/2761cf003434a863",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643279508606,
+          "stop" : 1643279522439,
+          "duration" : 13833
+        }
+      }, {
+        "uid" : "a9b6dc341e86c948",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/a9b6dc341e86c948",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643277570301,
+          "stop" : 1643277584308,
+          "duration" : 14007
+        }
+      }, {
+        "uid" : "1b62717651676e74",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/100//#testresult/1b62717651676e74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643227794916,
+          "stop" : 1643227812999,
+          "duration" : 18083
+        }
+      }, {
+        "uid" : "474bc4e96daa666",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/98//#testresult/474bc4e96daa666",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643212179461,
+          "stop" : 1643212192657,
+          "duration" : 13196
+        }
+      }, {
+        "uid" : "eefaeee5c577bedf",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/eefaeee5c577bedf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643189065373,
+          "stop" : 1643189079584,
+          "duration" : 14211
+        }
+      }, {
+        "uid" : "5eb864584db9516b",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/5eb864584db9516b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643189010652,
+          "stop" : 1643189024947,
+          "duration" : 14295
+        }
+      }, {
+        "uid" : "d64da7c897486b95",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/d64da7c897486b95",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188943544,
+          "stop" : 1643188960213,
+          "duration" : 16669
+        }
+      }, {
+        "uid" : "755bd7f5b7313bcd",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/755bd7f5b7313bcd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643185447729,
+          "stop" : 1643185461401,
+          "duration" : 13672
+        }
+      }, {
+        "uid" : "b97645aeb9ddb9c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/93//#testresult/b97645aeb9ddb9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643181537723,
+          "stop" : 1643181552915,
+          "duration" : 15192
+        }
+      }, {
+        "uid" : "d17b40c9a02a3807",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/92//#testresult/d17b40c9a02a3807",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az203-521', ip: '10.1.0.58', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [16a1db2ca543bb91e2b2ada03a5371c1, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.jWOOa7}, goog:chromeOptions: {debuggerAddress: localhost:41611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41611/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 16a1db2ca543bb91e2b2ada03a5371c1",
+        "time" : {
+          "start" : 1643142315569,
+          "stop" : 1643142325917,
+          "duration" : 10348
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5992ca7c00bd49ab.json",
+  "parameterValues" : [ "[Also known as the Mo, 1, Also known as the Monastery of the ghfg]" ]
+}
