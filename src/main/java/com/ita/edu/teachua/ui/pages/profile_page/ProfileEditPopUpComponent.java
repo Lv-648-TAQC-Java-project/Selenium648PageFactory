@@ -42,6 +42,10 @@ public class ProfileEditPopUpComponent extends BasePage {
     private Label newPasswordErrorMessage;
     @FindBy(how = How.XPATH, using = ProfileEditPopUpLocators.CONFIRM_PASSWORD_ERROR_MESSAGE_XPATH)
     private Label confirmPasswordErrorMessage;
+    @FindBy(how = How.XPATH, using = ProfileEditPopUpLocators.ROLE_USER_BUTTON_XPATH)
+    private Button roleUserButton;
+    @FindBy(how = How.XPATH, using = ProfileEditPopUpLocators.ROLE_MANAGER_BUTTON_XPATH)
+    private Button roleManagerButton;
 
     public ProfileEditPopUpComponent(WebDriver driver) {
         super(driver);
@@ -91,6 +95,16 @@ public class ProfileEditPopUpComponent extends BasePage {
             sleep(200);
             return clickOnChangePasswordCheckBox();
         }
+        return this;
+    }
+    @Step("Click on role user button 'Відвідувач'")
+    public ProfileEditPopUpComponent clickOnRoleUser(){
+        roleUserButton.click();
+        return this;
+    }
+    @Step("Click on role manager button 'Керівник'")
+    public ProfileEditPopUpComponent clickOnRoleManager(){
+        roleManagerButton.click();
         return this;
     }
 
