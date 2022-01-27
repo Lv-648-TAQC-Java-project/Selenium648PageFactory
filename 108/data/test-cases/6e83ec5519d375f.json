@@ -1,0 +1,859 @@
+{
+  "uid" : "6e83ec5519d375f",
+  "name" : "TUA-356",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.TestUserCheckInvalidDataForFieldPhone",
+  "historyId" : "826496b20e7aeeafbe18ba5492051b5c",
+  "time" : {
+    "start" : 1643306551650,
+    "stop" : 1643306614736,
+    "duration" : 63086
+  },
+  "description" : "Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field",
+  "descriptionHtml" : "<p>Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1643306548089,
+      "stop" : 1643306551648,
+      "duration" : 3559
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643306216537,
+      "stop" : 1643306216542,
+      "duration" : 5
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643306216543,
+      "stop" : 1643306222067,
+      "duration" : 5524
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643306222068,
+      "stop" : 1643306222068,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643306222068,
+      "stop" : 1643306222068,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643306222068,
+      "stop" : 1643306222068,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1643306551651,
+        "stop" : 1643306555033,
+        "duration" : 3382
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1643306551651,
+          "stop" : 1643306552122,
+          "duration" : 471
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1643306552122,
+          "stop" : 1643306552226,
+          "duration" : 104
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1643306552226,
+          "stop" : 1643306555033,
+          "duration" : 2807
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1643306552893,
+            "stop" : 1643306552973,
+            "duration" : 80
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1643306552973,
+            "stop" : 1643306555033,
+            "duration" : 2060
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1643306555033,
+        "stop" : 1643306557490,
+        "duration" : 2457
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1643306557491,
+        "stop" : 1643306558176,
+        "duration" : 685
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click edit pop up",
+      "time" : {
+        "start" : 1643306558177,
+        "stop" : 1643306558253,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 6895 in phone field",
+      "time" : {
+        "start" : 1643306558254,
+        "stop" : 1643306560402,
+        "duration" : 2148
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "6895"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill 65987458 in phone field",
+      "time" : {
+        "start" : 1643306561428,
+        "stop" : 1643306563545,
+        "duration" : 2117
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "65987458"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill 6593859632586 in phone field",
+      "time" : {
+        "start" : 1643306564559,
+        "stop" : 1643306566679,
+        "duration" : 2120
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "6593859632586"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill jngeoлщшогнеп in phone field",
+      "time" : {
+        "start" : 1643306567693,
+        "stop" : 1643306569828,
+        "duration" : 2135
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "jngeoлщшогнеп"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill !96397180 in phone field",
+      "time" : {
+        "start" : 1643306570854,
+        "stop" : 1643306572988,
+        "duration" : 2134
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "!96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill @96397180 in phone field",
+      "time" : {
+        "start" : 1643306574003,
+        "stop" : 1643306576118,
+        "duration" : 2115
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "@96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill #96397180 in phone field",
+      "time" : {
+        "start" : 1643306577132,
+        "stop" : 1643306579250,
+        "duration" : 2118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "#96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill $96397180 in phone field",
+      "time" : {
+        "start" : 1643306580265,
+        "stop" : 1643306582402,
+        "duration" : 2137
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "$96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill %96397180 in phone field",
+      "time" : {
+        "start" : 1643306583419,
+        "stop" : 1643306585539,
+        "duration" : 2120
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "%96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill ^96397180 in phone field",
+      "time" : {
+        "start" : 1643306586555,
+        "stop" : 1643306588682,
+        "duration" : 2127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "^96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill &96397180 in phone field",
+      "time" : {
+        "start" : 1643306589696,
+        "stop" : 1643306591815,
+        "duration" : 2119
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "&96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill *96397180 in phone field",
+      "time" : {
+        "start" : 1643306592828,
+        "stop" : 1643306594949,
+        "duration" : 2121
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "*96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill (96397180 in phone field",
+      "time" : {
+        "start" : 1643306595963,
+        "stop" : 1643306598082,
+        "duration" : 2119
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "(96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill _96397180 in phone field",
+      "time" : {
+        "start" : 1643306599095,
+        "stop" : 1643306601211,
+        "duration" : 2116
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "_96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill +96397180 in phone field",
+      "time" : {
+        "start" : 1643306602226,
+        "stop" : 1643306604350,
+        "duration" : 2124
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "+96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill .96397180 in phone field",
+      "time" : {
+        "start" : 1643306605366,
+        "stop" : 1643306607490,
+        "duration" : 2124
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : ".96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill :96397180 in phone field",
+      "time" : {
+        "start" : 1643306608503,
+        "stop" : 1643306610642,
+        "duration" : 2139
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : ":96397180"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill  in phone field",
+      "time" : {
+        "start" : 1643306611656,
+        "stop" : 1643306613721,
+        "duration" : 2065
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : ""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 27,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1643306614736,
+      "stop" : 1643306614821,
+      "duration" : 85
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestUserCheckInvalidDataForFieldPhone"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az136-507"
+  }, {
+    "name" : "thread",
+    "value" : "2931@fv-az136-507.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "[6895, Телефон не відповідає вказаному формату, 65987458, Телефон не відповідає вказаному формату, 6593859632586, Телефон не відповідає вказаному формату, jngeoлщшогнеп, Телефон не може містити літери, !96397180, Телефон не відповідає вказаному формату, @96397180, Телефон не відповідає вказаному формату, #96397180, Телефон не відповідає вказаному формату, $96397180, Телефон не відповідає вказаному формату, %96397180, Телефон не відповідає вказаному формату, ^96397180, Телефон не відповідає вказаному формату, &96397180, Телефон не відповідає вказаному формату, *96397180, Телефон не відповідає вказаному формату, (96397180, Телефон не відповідає вказаному формату, _96397180, Телефон не відповідає вказаному формату, +96397180, Телефон не відповідає вказаному формату, .96397180, Телефон не відповідає вказаному формату, :96397180, Телефон не відповідає вказаному формату, , Будь ласка введіть Ваш номер телефону]"
+  } ],
+  "links" : [ {
+    "name" : "TUA-356",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 69,
+        "unknown" : 0,
+        "total" : 73
+      },
+      "items" : [ {
+        "uid" : "254527d3f97f7c3f",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/254527d3f97f7c3f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643303661064,
+          "stop" : 1643303725584,
+          "duration" : 64520
+        }
+      }, {
+        "uid" : "a91c8a8be727d85b",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/107//#testresult/a91c8a8be727d85b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643301420144,
+          "stop" : 1643301483627,
+          "duration" : 63483
+        }
+      }, {
+        "uid" : "c3dd6f2bda8ed039",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/106//#testresult/c3dd6f2bda8ed039",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643295979830,
+          "stop" : 1643296045661,
+          "duration" : 65831
+        }
+      }, {
+        "uid" : "f13079d7e0f472de",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/105//#testresult/f13079d7e0f472de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643292024632,
+          "stop" : 1643292089104,
+          "duration" : 64472
+        }
+      }, {
+        "uid" : "2f07f5df4c017052",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/104//#testresult/2f07f5df4c017052",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643291966028,
+          "stop" : 1643292030177,
+          "duration" : 64149
+        }
+      }, {
+        "uid" : "846197c62c0bb87",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/103//#testresult/846197c62c0bb87",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643287117555,
+          "stop" : 1643287183114,
+          "duration" : 65559
+        }
+      }, {
+        "uid" : "8e18ba80bfe02b3d",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/102//#testresult/8e18ba80bfe02b3d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643287082424,
+          "stop" : 1643287146760,
+          "duration" : 64336
+        }
+      }, {
+        "uid" : "d6b512ad524219dd",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/d6b512ad524219dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643284804098,
+          "stop" : 1643284867659,
+          "duration" : 63561
+        }
+      }, {
+        "uid" : "4ecaf4cddfc73418",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/4ecaf4cddfc73418",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643279310266,
+          "stop" : 1643279374587,
+          "duration" : 64321
+        }
+      }, {
+        "uid" : "14f9385c548166eb",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/14f9385c548166eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643277370859,
+          "stop" : 1643277434257,
+          "duration" : 63398
+        }
+      }, {
+        "uid" : "515a04c73dd612d4",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/100//#testresult/515a04c73dd612d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643227596432,
+          "stop" : 1643227660250,
+          "duration" : 63818
+        }
+      }, {
+        "uid" : "b574bbec7011dea7",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/98//#testresult/b574bbec7011dea7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643211979592,
+          "stop" : 1643212043516,
+          "duration" : 63924
+        }
+      }, {
+        "uid" : "8fcd5886f7f93a99",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/8fcd5886f7f93a99",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188865384,
+          "stop" : 1643188929632,
+          "duration" : 64248
+        }
+      }, {
+        "uid" : "1d76694bbb457eec",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/1d76694bbb457eec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188807559,
+          "stop" : 1643188872416,
+          "duration" : 64857
+        }
+      }, {
+        "uid" : "5d83d19810eeec4f",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/5d83d19810eeec4f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188734808,
+          "stop" : 1643188799396,
+          "duration" : 64588
+        }
+      }, {
+        "uid" : "fc729628cb862ea8",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/fc729628cb862ea8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643185247076,
+          "stop" : 1643185310974,
+          "duration" : 63898
+        }
+      }, {
+        "uid" : "7dfe42cfbd47d09a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/93//#testresult/7dfe42cfbd47d09a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643181331161,
+          "stop" : 1643181395870,
+          "duration" : 64709
+        }
+      }, {
+        "uid" : "796662ed5fad3e",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/92//#testresult/796662ed5fad3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643141896302,
+          "stop" : 1643142019096,
+          "duration" : 122794
+        }
+      }, {
+        "uid" : "f172743cdd5b41ed",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/91//#testresult/f172743cdd5b41ed",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az202-534', ip: '10.1.0.105', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [33c8da4ad5adcd9bacd734f686634db8, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.7e40Gf}, goog:chromeOptions: {debuggerAddress: localhost:38155}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38155/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 33c8da4ad5adcd9bacd734f686634db8",
+        "time" : {
+          "start" : 1643141844350,
+          "stop" : 1643141884439,
+          "duration" : 40089
+        }
+      }, {
+        "uid" : "cdcca98c09b4304e",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/90//#testresult/cdcca98c09b4304e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643141617770,
+          "stop" : 1643141711093,
+          "duration" : 93323
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6e83ec5519d375f.json",
+  "parameterValues" : [ "[6895, Телефон не відповідає вказаному формату, 65987458, Телефон не відповідає вказаному формату, 6593859632586, Телефон не відповідає вказаному формату, jngeoлщшогнеп, Телефон не може містити літери, !96397180, Телефон не відповідає вказаному формату, @96397180, Телефон не відповідає вказаному формату, #96397180, Телефон не відповідає вказаному формату, $96397180, Телефон не відповідає вказаному формату, %96397180, Телефон не відповідає вказаному формату, ^96397180, Телефон не відповідає вказаному формату, &96397180, Телефон не відповідає вказаному формату, *96397180, Телефон не відповідає вказаному формату, (96397180, Телефон не відповідає вказаному формату, _96397180, Телефон не відповідає вказаному формату, +96397180, Телефон не відповідає вказаному формату, .96397180, Телефон не відповідає вказаному формату, :96397180, Телефон не відповідає вказаному формату, , Будь ласка введіть Ваш номер телефону]" ]
+}
