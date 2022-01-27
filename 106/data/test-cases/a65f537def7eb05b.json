@@ -1,0 +1,1073 @@
+{
+  "uid" : "a65f537def7eb05b",
+  "name" : "TUA-178",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.verifyThatErrorMessageAppearsWhenUserEntersLetterInRUSOrGER",
+  "historyId" : "d3e9b06fcd62faf0a6c5fc7f96eaef17",
+  "time" : {
+    "start" : 1643296402835,
+    "stop" : 1643296429462,
+    "duration" : 26627
+  },
+  "description" : "This test case verifies that  error message appears when user enters letters in Russian or German languages into the field",
+  "descriptionHtml" : "<p>This test case verifies that  error message appears when user enters letters in Russian or German languages into the field</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1643296397850,
+      "stop" : 1643296402833,
+      "duration" : 4983
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643295581174,
+      "stop" : 1643295581181,
+      "duration" : 7
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643295581183,
+      "stop" : 1643295587141,
+      "duration" : 5958
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643295587142,
+      "stop" : 1643295587142,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643295587142,
+      "stop" : 1643295587142,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643295587143,
+      "stop" : 1643295587143,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test case verifies that  error message appears when user enters letters in Russian or German languages into the field",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1643296402839,
+        "stop" : 1643296406532,
+        "duration" : 3693
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1643296402839,
+          "stop" : 1643296403360,
+          "duration" : 521
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1643296403360,
+          "stop" : 1643296403518,
+          "duration" : 158
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1643296403518,
+          "stop" : 1643296406532,
+          "duration" : 3014
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1643296404320,
+            "stop" : 1643296404451,
+            "duration" : 131
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1643296404451,
+            "stop" : 1643296406532,
+            "duration" : 2081
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1643296406532,
+        "stop" : 1643296411108,
+        "duration" : 4576
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1643296411108,
+        "stop" : 1643296411878,
+        "duration" : 770
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Додати' button",
+      "time" : {
+        "start" : 1643296411878,
+        "stop" : 1643296411945,
+        "duration" : 67
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Додати гурток' button",
+      "time" : {
+        "start" : 1643296411945,
+        "stop" : 1643296412805,
+        "duration" : 860
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Назва' field with Name of club",
+      "time" : {
+        "start" : 1643296412805,
+        "stop" : 1643296413577,
+        "duration" : 772
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Name of club"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check off 'Спортивні секції' check-box from 'Категорія' group box",
+      "time" : {
+        "start" : 1643296413577,
+        "stop" : 1643296413663,
+        "duration" : 86
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Enter 2 into the first age input and 16 in second age input",
+      "time" : {
+        "start" : 1643296413663,
+        "stop" : 1643296413954,
+        "duration" : 291
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ageFrom",
+        "value" : "2"
+      }, {
+        "name" : "ageTo",
+        "value" : "16"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on 'Наступний крок' button",
+      "time" : {
+        "start" : 1643296413954,
+        "stop" : 1643296414095,
+        "duration" : 141
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Enter gfhdfghfg data into Facebook field of 'Контакти' area ",
+      "time" : {
+        "start" : 1643296414095,
+        "stop" : 1643296414355,
+        "duration" : 260
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "facebook",
+        "value" : "gfhdfghfg"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter fhfdhgfd@gmail.com data into Email field of 'Контакти' area ",
+      "time" : {
+        "start" : 1643296414355,
+        "stop" : 1643296414753,
+        "duration" : 398
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "fhfdhgfd@gmail.com"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter ghdfghf data into WhatsApp field of 'Контакти' area ",
+      "time" : {
+        "start" : 1643296414753,
+        "stop" : 1643296414943,
+        "duration" : 190
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "whatsApp",
+        "value" : "ghdfghf"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter grsgr data into Site field of 'Контакти' area ",
+      "time" : {
+        "start" : 1643296414943,
+        "stop" : 1643296415114,
+        "duration" : 171
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "site",
+        "value" : "grsgr"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter efaefs data into Skype field of 'Контакти' area ",
+      "time" : {
+        "start" : 1643296415114,
+        "stop" : 1643296415303,
+        "duration" : 189
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "skype",
+        "value" : "efaefs"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter 7557565755 data into Phone number field of 'Контакти' area ",
+      "time" : {
+        "start" : 1643296415303,
+        "stop" : 1643296415536,
+        "duration" : 233
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "number",
+        "value" : "7557565755"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on 'Наступний крок' button",
+      "time" : {
+        "start" : 1643296415536,
+        "stop" : 1643296415635,
+        "duration" : 99
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfЫ",
+      "time" : {
+        "start" : 1643296415635,
+        "stop" : 1643296417028,
+        "duration" : 1393
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfЫ"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1643296417028,
+        "stop" : 1643296417028,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ",
+      "time" : {
+        "start" : 1643296417060,
+        "stop" : 1643296418443,
+        "duration" : 1383
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1643296418443,
+        "stop" : 1643296418443,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfъ",
+      "time" : {
+        "start" : 1643296418496,
+        "stop" : 1643296419846,
+        "duration" : 1350
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfъ"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1643296419847,
+        "stop" : 1643296419847,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ",
+      "time" : {
+        "start" : 1643296419864,
+        "stop" : 1643296421227,
+        "duration" : 1363
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1643296421227,
+        "stop" : 1643296421227,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö",
+      "time" : {
+        "start" : 1643296421247,
+        "stop" : 1643296422640,
+        "duration" : 1393
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1643296422640,
+        "stop" : 1643296422640,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä",
+      "time" : {
+        "start" : 1643296422660,
+        "stop" : 1643296424003,
+        "duration" : 1343
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1643296424003,
+        "stop" : 1643296424003,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü",
+      "time" : {
+        "start" : 1643296424024,
+        "stop" : 1643296425377,
+        "duration" : 1353
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1643296425378,
+        "stop" : 1643296425378,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü",
+      "time" : {
+        "start" : 1643296425397,
+        "stop" : 1643296426737,
+        "duration" : 1340
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1643296426737,
+        "stop" : 1643296426737,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö",
+      "time" : {
+        "start" : 1643296426755,
+        "stop" : 1643296428115,
+        "duration" : 1360
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1643296428115,
+        "stop" : 1643296428115,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Опис' field with sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä",
+      "time" : {
+        "start" : 1643296428134,
+        "stop" : 1643296429444,
+        "duration" : 1310
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1643296429444,
+        "stop" : 1643296429444,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 41,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1643296429463,
+      "stop" : 1643296429536,
+      "duration" : 73
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyThatErrorMessageAppearsWhenUserEntersLetterInRUSOrGER"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az108-43"
+  }, {
+    "name" : "thread",
+    "value" : "2778@fv-az108-43.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "[sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfЫ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfъ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä]"
+  } ],
+  "links" : [ {
+    "name" : "TUA-178",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 6,
+        "skipped" : 0,
+        "passed" : 64,
+        "unknown" : 0,
+        "total" : 70
+      },
+      "items" : [ {
+        "uid" : "3ad9d7a0bc647f67",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/105//#testresult/3ad9d7a0bc647f67",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643292407345,
+          "stop" : 1643292431752,
+          "duration" : 24407
+        }
+      }, {
+        "uid" : "7f0f789da1c08647",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/104//#testresult/7f0f789da1c08647",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643292343751,
+          "stop" : 1643292366669,
+          "duration" : 22918
+        }
+      }, {
+        "uid" : "681aebdfb6ff5333",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/103//#testresult/681aebdfb6ff5333",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643287546546,
+          "stop" : 1643287572531,
+          "duration" : 25985
+        }
+      }, {
+        "uid" : "4548c90c958b498a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/102//#testresult/4548c90c958b498a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643287452444,
+          "stop" : 1643287475475,
+          "duration" : 23031
+        }
+      }, {
+        "uid" : "30e1a9dcd01b0b9d",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/30e1a9dcd01b0b9d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643285181912,
+          "stop" : 1643285204709,
+          "duration" : 22797
+        }
+      }, {
+        "uid" : "69943671d8ce0f9e",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/69943671d8ce0f9e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643279690758,
+          "stop" : 1643279713936,
+          "duration" : 23178
+        }
+      }, {
+        "uid" : "b706eb0d7351f214",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/b706eb0d7351f214",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643277723584,
+          "stop" : 1643277746982,
+          "duration" : 23398
+        }
+      }, {
+        "uid" : "6e3c1e6d19590344",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/100//#testresult/6e3c1e6d19590344",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643227979648,
+          "stop" : 1643228002937,
+          "duration" : 23289
+        }
+      }, {
+        "uid" : "9699a4bcd80a8aba",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/98//#testresult/9699a4bcd80a8aba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643212369008,
+          "stop" : 1643212392102,
+          "duration" : 23094
+        }
+      }, {
+        "uid" : "386ee263c2051d23",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/386ee263c2051d23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643189252864,
+          "stop" : 1643189277564,
+          "duration" : 24700
+        }
+      }, {
+        "uid" : "2458db574c7a05c9",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/2458db574c7a05c9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643189195280,
+          "stop" : 1643189219468,
+          "duration" : 24188
+        }
+      }, {
+        "uid" : "56a799debfaac77e",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/56a799debfaac77e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643189132474,
+          "stop" : 1643189156150,
+          "duration" : 23676
+        }
+      }, {
+        "uid" : "1db5bf2de2899303",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/1db5bf2de2899303",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643185627027,
+          "stop" : 1643185650823,
+          "duration" : 23796
+        }
+      }, {
+        "uid" : "dce31067b420febd",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/93//#testresult/dce31067b420febd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643181720311,
+          "stop" : 1643181744474,
+          "duration" : 24163
+        }
+      }, {
+        "uid" : "59d987d7a5b7d9c6",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/92//#testresult/59d987d7a5b7d9c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643142505324,
+          "stop" : 1643142529851,
+          "duration" : 24527
+        }
+      }, {
+        "uid" : "b117d988309d706",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/91//#testresult/b117d988309d706",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643142384992,
+          "stop" : 1643142409023,
+          "duration" : 24031
+        }
+      }, {
+        "uid" : "7d766a50dc9c3419",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/90//#testresult/7d766a50dc9c3419",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az75-82', ip: '10.1.0.250', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a11d5c760596d303b4506675e0a6fd37, findElement {using=xpath, value=//div[@class = 'ant-dropdown-trigger user-profile']/span[@role]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.YU2MST}, goog:chromeOptions: {debuggerAddress: localhost:41847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41847/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a11d5c760596d303b4506675e0a6fd37",
+        "time" : {
+          "start" : 1643142313983,
+          "stop" : 1643142324341,
+          "duration" : 10358
+        }
+      }, {
+        "uid" : "63790759a0553f72",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/85//#testresult/63790759a0553f72",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az214-35', ip: '10.1.0.107', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [6bed532e5d399ee4136d8a2122fe2cb4, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.iIt3wK}, goog:chromeOptions: {debuggerAddress: localhost:35641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35641/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6bed532e5d399ee4136d8a2122fe2cb4",
+        "time" : {
+          "start" : 1643141736980,
+          "stop" : 1643141750642,
+          "duration" : 13662
+        }
+      }, {
+        "uid" : "754f150c12f16de9",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/84//#testresult/754f150c12f16de9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643140518686,
+          "stop" : 1643140542139,
+          "duration" : 23453
+        }
+      }, {
+        "uid" : "14c2711784fcb453",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/83//#testresult/14c2711784fcb453",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643139911842,
+          "stop" : 1643139935743,
+          "duration" : 23901
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a65f537def7eb05b.json",
+  "parameterValues" : [ "[sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfЫ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfъ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä]" ]
+}
