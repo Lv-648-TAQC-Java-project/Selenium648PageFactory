@@ -1,0 +1,413 @@
+{
+  "uid" : "dbd042a72e0de3a1",
+  "name" : "TUA-370",
+  "fullName" : "com.ita.edu.teachua.api.tests.FeedbackTest.createFeedbackWithEmptyTextFiledTest",
+  "historyId" : "2869f6801ab4acb85271734bae3fdc0f",
+  "time" : {
+    "start" : 1643308132644,
+    "stop" : 1643308133467,
+    "duration" : 823
+  },
+  "description" : "[API] Verify that feedback without text is not added to the club",
+  "descriptionHtml" : "<p>[API] Verify that feedback without text is not added to the club</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1643308130546,
+      "stop" : 1643308131575,
+      "duration" : 1029
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643308130546,
+        "stop" : 1643308130548,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643308061606,
+      "stop" : 1643308061615,
+      "duration" : 9
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643308061616,
+      "stop" : 1643308068002,
+      "duration" : 6386
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643308068003,
+      "stop" : 1643308068003,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643308068003,
+      "stop" : 1643308068003,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643308068003,
+      "stop" : 1643308068004,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "[API] Verify that feedback without text is not added to the club",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Add new feedback to the club",
+      "time" : {
+        "start" : 1643308132644,
+        "stop" : 1643308133467,
+        "duration" : 823
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643308132644,
+          "stop" : 1643308132645,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "feedback",
+        "value" : "FeedbackRequest(id=null, rate=4.0, text=, userId=264, clubId=5)"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.FeedbackTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.FeedbackTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createFeedbackWithEmptyTextFiledTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.FeedbackTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az96-479"
+  }, {
+    "name" : "thread",
+    "value" : "2812@fv-az96-479.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-370",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 2,
+        "passed" : 72,
+        "unknown" : 0,
+        "total" : 74
+      },
+      "items" : [ {
+        "uid" : "b0328338da9e132a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/b0328338da9e132a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643306282701,
+          "stop" : 1643306283784,
+          "duration" : 1083
+        }
+      }, {
+        "uid" : "e39907871cc69fc",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/e39907871cc69fc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643303383473,
+          "stop" : 1643303384278,
+          "duration" : 805
+        }
+      }, {
+        "uid" : "c1616685c933b2c5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/107//#testresult/c1616685c933b2c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643301147598,
+          "stop" : 1643301148400,
+          "duration" : 802
+        }
+      }, {
+        "uid" : "426ca1c7dbb9714",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/106//#testresult/426ca1c7dbb9714",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643295656484,
+          "stop" : 1643295657167,
+          "duration" : 683
+        }
+      }, {
+        "uid" : "5ea7194d11d107fd",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/105//#testresult/5ea7194d11d107fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643291758468,
+          "stop" : 1643291759269,
+          "duration" : 801
+        }
+      }, {
+        "uid" : "c604c78f3b0d8c6a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/104//#testresult/c604c78f3b0d8c6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643291695092,
+          "stop" : 1643291696117,
+          "duration" : 1025
+        }
+      }, {
+        "uid" : "ea5c6a6c20fe992c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/103//#testresult/ea5c6a6c20fe992c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643286840263,
+          "stop" : 1643286841058,
+          "duration" : 795
+        }
+      }, {
+        "uid" : "277df107ae6cad76",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/102//#testresult/277df107ae6cad76",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643286810134,
+          "stop" : 1643286810787,
+          "duration" : 653
+        }
+      }, {
+        "uid" : "7c374795c21d4d22",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/7c374795c21d4d22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643284520082,
+          "stop" : 1643284520976,
+          "duration" : 894
+        }
+      }, {
+        "uid" : "dfe9eed0b0764e9f",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/dfe9eed0b0764e9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643279034706,
+          "stop" : 1643279035524,
+          "duration" : 818
+        }
+      }, {
+        "uid" : "73f032d4dda0d7c7",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/73f032d4dda0d7c7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643277093649,
+          "stop" : 1643277094675,
+          "duration" : 1026
+        }
+      }, {
+        "uid" : "ce049f26e6320feb",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/100//#testresult/ce049f26e6320feb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643227330162,
+          "stop" : 1643227331111,
+          "duration" : 949
+        }
+      }, {
+        "uid" : "a653be5186538518",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/98//#testresult/a653be5186538518",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643211700465,
+          "stop" : 1643211701284,
+          "duration" : 819
+        }
+      }, {
+        "uid" : "76d15dfacaade3db",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/76d15dfacaade3db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188595103,
+          "stop" : 1643188595956,
+          "duration" : 853
+        }
+      }, {
+        "uid" : "383036f7428e7427",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/383036f7428e7427",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188506398,
+          "stop" : 1643188507192,
+          "duration" : 794
+        }
+      }, {
+        "uid" : "14cd84ded5143b69",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/14cd84ded5143b69",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188441038,
+          "stop" : 1643188441838,
+          "duration" : 800
+        }
+      }, {
+        "uid" : "b55cb1208f8c019b",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/b55cb1208f8c019b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643184956791,
+          "stop" : 1643184957757,
+          "duration" : 966
+        }
+      }, {
+        "uid" : "90d227fa04f7d216",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/93//#testresult/90d227fa04f7d216",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643181049142,
+          "stop" : 1643181049777,
+          "duration" : 635
+        }
+      }, {
+        "uid" : "98786130fff78ca2",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/92//#testresult/98786130fff78ca2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643141934286,
+          "stop" : 1643141958599,
+          "duration" : 24313
+        }
+      }, {
+        "uid" : "359501edfc9bf128",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/91//#testresult/359501edfc9bf128",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643141958568,
+          "stop" : 1643141989371,
+          "duration" : 30803
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "dbd042a72e0de3a1.json",
+  "parameterValues" : [ ]
+}
