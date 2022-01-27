@@ -1,0 +1,758 @@
+{
+  "uid" : "3b20b14191cb1ccd",
+  "name" : "TUA-409",
+  "fullName" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest.VerifyThatClubCannotBeCreatedWhenEnteringInvalidData",
+  "historyId" : "3e501e9dfbe2d5ef0cf4c1ad9cbee6fb",
+  "time" : {
+    "start" : 1643286851848,
+    "stop" : 1643286860151,
+    "duration" : 8303
+  },
+  "description" : "This test case verifies that the club cannot be created when entering invalid data",
+  "descriptionHtml" : "<p>This test case verifies that the club cannot be created when entering invalid data</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1643286842042,
+      "stop" : 1643286843684,
+      "duration" : 1642
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preparing base request",
+      "time" : {
+        "start" : 1643286842042,
+        "stop" : 1643286842043,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643286750845,
+      "stop" : 1643286750861,
+      "duration" : 16
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643286750863,
+      "stop" : 1643286754887,
+      "duration" : 4024
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643286754888,
+      "stop" : 1643286754888,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643286754888,
+      "stop" : 1643286754888,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643286754888,
+      "stop" : 1643286754888,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test case verifies that the club cannot be created when entering invalid data",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643286851854,
+        "stop" : 1643286852681,
+        "duration" : 827
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643286851854,
+          "stop" : 1643286851854,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Новий тип гуртка], \"name\":\"Голосистi діти\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"blocks\":[{\"key\":\"brl63\",\"text\":\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\",\"type\":\"unstyled\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643286852683,
+        "stop" : 1643286853476,
+        "duration" : 793
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643286852683,
+          "stop" : 1643286852690,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Танці, хореографія], \"name\":\"ЪЫЭЁЁ\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"blocks\":[{\"key\":\"brl63\",\"text\":\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\",\"type\":\"unstyled\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643286853478,
+        "stop" : 1643286854325,
+        "duration" : 847
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643286853478,
+          "stop" : 1643286853503,
+          "duration" : 25
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Танці, хореографія], \"name\":\"name\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"blocks\":[{\"key\":\"brl63\",\"text\":\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\",\"type\":\"unstyled\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643286854333,
+        "stop" : 1643286855591,
+        "duration" : 1258
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643286854334,
+          "stop" : 1643286854335,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Танці, хореографія], \"name\":\"characterscharacsterscharacterscharacterscharacterscharacterscharacterscharacterschacharacterscharact\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"blocks\":[{\"key\":\"brl63\",\"text\":\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\",\"type\":\"unstyled\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643286855593,
+        "stop" : 1643286856407,
+        "duration" : 814
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643286855593,
+          "stop" : 1643286855594,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Танці, хореографія], \"name\":\"testName\", \"ageFrom\":\"1\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"blocks\":[{\"key\":\"brl63\",\"text\":\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\",\"type\":\"unstyled\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643286856416,
+        "stop" : 1643286857415,
+        "duration" : 999
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643286856416,
+          "stop" : 1643286856417,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Танці, хореографія], \"name\":\"testName\", \"ageFrom\":\"2\", \"ageTo\":\"19\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"blocks\":[{\"key\":\"brl63\",\"text\":\"аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа\",\"type\":\"unstyled\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643286857420,
+        "stop" : 1643286858275,
+        "duration" : 855
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643286857420,
+          "stop" : 1643286857420,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Танці, хореографія], \"name\":\"testName\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"entityMap\":{},\"blocks\":[{\"depth\":1,\"data\":{},\"inlineStyleRanges\":[],\"text\":\"ЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁ\",\"type\":\"unstyled\",\"key\":\"brl63\",\"entityRanges\":[]}]}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643286858280,
+        "stop" : 1643286859344,
+        "duration" : 1064
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643286858280,
+          "stop" : 1643286858286,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Танці, хореографія], \"name\":\"testName\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"entityMap\":{},\"blocks\":[{\"depth\":1,\"data\":{},\"inlineStyleRanges\":[],\"text\":\"Description\",\"type\":\"unstyled\",\"key\":\"brl63\",\"entityRanges\":[]}]}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Add new club request",
+      "time" : {
+        "start" : 1643286859347,
+        "stop" : 1643286860149,
+        "duration" : 802
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Preparing base request",
+        "time" : {
+          "start" : 1643286859347,
+          "stop" : 1643286859348,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "addClub",
+        "value" : "{\"categoriesName\":[Танці, хореографія], \"name\":\"testName\", \"ageFrom\":\"2\", \"ageTo\":\"18\", \"urlLogo\":null, \"urlBackground\":null, \"isOnline\":\"true\", \"description\":\"{\"entityMap\":{},\"blocks\":[{\"depth\":1,\"data\":{},\"inlineStyleRanges\":[],\"text\":\"descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptndescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptionriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriiptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescrasdfw\",\"type\":\"unstyled\",\"key\":\"brl63\",\"entityRanges\":[]}]}\", \"userId\":\"264\", \"locations\":[Location(name=Голосівська, cityName=Київ, districtName=Голосіївський, stationName=Голосіївська, address=https://speak-ukrainian.org.ua/dev/club/910, coordinates=50.35535081747696, 30.51765754176391, phone=0666666666, key=0.0)], \"contacts\":\"{\"1\"::\"ліл\"}\", \"centerId\":\"2\"}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 18,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "VerifyThatClubCannotBeCreatedWhenEnteringInvalidData"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.api.tests.AuthorizedClubTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az200-978"
+  }, {
+    "name" : "thread",
+    "value" : "2819@fv-az200-978.TestNG-tests-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Новий тип гуртка"
+  }, {
+    "name" : "arg1",
+    "value" : "Category not found by name: Новий тип гуртка"
+  }, {
+    "name" : "arg10",
+    "value" : "ageFrom must be greater than or equal to 2"
+  }, {
+    "name" : "arg11",
+    "value" : "2"
+  }, {
+    "name" : "arg12",
+    "value" : "19"
+  }, {
+    "name" : "arg13",
+    "value" : "18"
+  }, {
+    "name" : "arg14",
+    "value" : "ageTo must be less than or equal to 18"
+  }, {
+    "name" : "arg15",
+    "value" : "ЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁ"
+  }, {
+    "name" : "arg16",
+    "value" : "Це поле може містити тільки українські та англійські літери, цифри та спеціальні символи"
+  }, {
+    "name" : "arg17",
+    "value" : "Description"
+  }, {
+    "name" : "arg18",
+    "value" : "Довжина опису не може бути меншою за 40 символів"
+  }, {
+    "name" : "arg19",
+    "value" : "descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptndescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptionriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriiptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescrasdfw"
+  }, {
+    "name" : "arg2",
+    "value" : "Танці, хореографія"
+  }, {
+    "name" : "arg20",
+    "value" : "Довжина опису не може бути більшою за 1500 символів"
+  }, {
+    "name" : "arg3",
+    "value" : "ЪЫЭЁЁ"
+  }, {
+    "name" : "arg4",
+    "value" : "name can't contain russian letters"
+  }, {
+    "name" : "arg5",
+    "value" : "name"
+  }, {
+    "name" : "arg6",
+    "value" : "name Довжина назви має бути від 5 до 100 символів"
+  }, {
+    "name" : "arg7",
+    "value" : "characterscharacsterscharacterscharacterscharacterscharacterscharacterscharacterschacharacterscharact"
+  }, {
+    "name" : "arg8",
+    "value" : "testName"
+  }, {
+    "name" : "arg9",
+    "value" : "1"
+  } ],
+  "links" : [ {
+    "name" : "TUA-409",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8d9d7b379d2f7717",
+      "status" : "skipped",
+      "statusDetails" : "The following asserts failed:\n\texpected [404] but found [403],\n\texpected [Category not found by name: Новий тип гуртка] but found [Club already exist with name: Голосистi діти]",
+      "time" : {
+        "start" : 1643286843696,
+        "stop" : 1643286851840,
+        "duration" : 8144
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 16,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 49,
+        "unknown" : 0,
+        "total" : 65
+      },
+      "items" : [ {
+        "uid" : "9ff86006f2d8ef73",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/102//#testresult/9ff86006f2d8ef73",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643286814536,
+          "stop" : 1643286821731,
+          "duration" : 7195
+        }
+      }, {
+        "uid" : "ba2aa74898490bcb",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/ba2aa74898490bcb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643284524005,
+          "stop" : 1643284532334,
+          "duration" : 8329
+        }
+      }, {
+        "uid" : "b6142d38cd69bd9a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/b6142d38cd69bd9a",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [404] but found [401],\n\texpected [Category not found by name: Новий тип гуртка] but found [You have no necessary permissions (role)]",
+        "time" : {
+          "start" : 1643279054268,
+          "stop" : 1643279063594,
+          "duration" : 9326
+        }
+      }, {
+        "uid" : "495583476d2a9c30",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/495583476d2a9c30",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643277096557,
+          "stop" : 1643277104455,
+          "duration" : 7898
+        }
+      }, {
+        "uid" : "68def4b50ca768b3",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/100//#testresult/68def4b50ca768b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643227333159,
+          "stop" : 1643227340944,
+          "duration" : 7785
+        }
+      }, {
+        "uid" : "354e36ae9790a834",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/98//#testresult/354e36ae9790a834",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643211703357,
+          "stop" : 1643211710953,
+          "duration" : 7596
+        }
+      }, {
+        "uid" : "6cdb04dfc6a9fe07",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/6cdb04dfc6a9fe07",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [404] but found [403],\n\texpected [Category not found by name: Новий тип гуртка] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643188614495,
+          "stop" : 1643188621881,
+          "duration" : 7386
+        }
+      }, {
+        "uid" : "8a2ee0cd4d4db366",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/8a2ee0cd4d4db366",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [404] but found [403],\n\texpected [Category not found by name: Новий тип гуртка] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643188525919,
+          "stop" : 1643188533591,
+          "duration" : 7672
+        }
+      }, {
+        "uid" : "dbd170473598ff6c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/dbd170473598ff6c",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [404] but found [403],\n\texpected [Category not found by name: Новий тип гуртка] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643188461870,
+          "stop" : 1643188469613,
+          "duration" : 7743
+        }
+      }, {
+        "uid" : "8aa0b452f9496251",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/8aa0b452f9496251",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [404] but found [403],\n\texpected [Category not found by name: Новий тип гуртка] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643184974477,
+          "stop" : 1643184981374,
+          "duration" : 6897
+        }
+      }, {
+        "uid" : "e37dc6de41c28476",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/93//#testresult/e37dc6de41c28476",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [404] but found [403],\n\texpected [Category not found by name: Новий тип гуртка] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643181063981,
+          "stop" : 1643181070302,
+          "duration" : 6321
+        }
+      }, {
+        "uid" : "b763ebabbc5fd6f9",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/92//#testresult/b763ebabbc5fd6f9",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [404] but found [403],\n\texpected [Category not found by name: Новий тип гуртка] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643142043439,
+          "stop" : 1643142051321,
+          "duration" : 7882
+        }
+      }, {
+        "uid" : "820bd5c79d8feb97",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/91//#testresult/820bd5c79d8feb97",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [404] but found [403],\n\texpected [Category not found by name: Новий тип гуртка] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643142046756,
+          "stop" : 1643142062965,
+          "duration" : 16209
+        }
+      }, {
+        "uid" : "62928973e68af4c6",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/90//#testresult/62928973e68af4c6",
+        "status" : "failed",
+        "statusDetails" : "The following asserts failed:\n\texpected [404] but found [403],\n\texpected [Category not found by name: Новий тип гуртка] but found [Club already exist with name: Голосистi діти]",
+        "time" : {
+          "start" : 1643141289429,
+          "stop" : 1643141299861,
+          "duration" : 10432
+        }
+      }, {
+        "uid" : "d898cf01be5ad7c5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/85//#testresult/d898cf01be5ad7c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643140633591,
+          "stop" : 1643140642527,
+          "duration" : 8936
+        }
+      }, {
+        "uid" : "870444e06531def4",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/84//#testresult/870444e06531def4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643139852051,
+          "stop" : 1643139859957,
+          "duration" : 7906
+        }
+      }, {
+        "uid" : "aafa0afaf14bb07f",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/83//#testresult/aafa0afaf14bb07f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643139234722,
+          "stop" : 1643139240841,
+          "duration" : 6119
+        }
+      }, {
+        "uid" : "61f5bbf4f94323b8",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/82//#testresult/61f5bbf4f94323b8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643138263927,
+          "stop" : 1643138272061,
+          "duration" : 8134
+        }
+      }, {
+        "uid" : "62b35aa2fd2fb65",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/81//#testresult/62b35aa2fd2fb65",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643138141614,
+          "stop" : 1643138149307,
+          "duration" : 7693
+        }
+      }, {
+        "uid" : "76ab65a0031c4da",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/80//#testresult/76ab65a0031c4da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643136942537,
+          "stop" : 1643136949343,
+          "duration" : 6806
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3b20b14191cb1ccd.json",
+  "parameterValues" : [ "Новий тип гуртка", "Category not found by name: Новий тип гуртка", "ageFrom must be greater than or equal to 2", "2", "19", "18", "ageTo must be less than or equal to 18", "ЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁЪЫЭЁ", "Це поле може містити тільки українські та англійські літери, цифри та спеціальні символи", "Description", "Довжина опису не може бути меншою за 40 символів", "descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptndescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptionriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriiptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescrasdfw", "Танці, хореографія", "Довжина опису не може бути більшою за 1500 символів", "ЪЫЭЁЁ", "name can't contain russian letters", "name", "name Довжина назви має бути від 5 до 100 символів", "characterscharacsterscharacterscharacterscharacterscharacterscharacterscharacterschacharacterscharact", "testName", "1" ]
+}
