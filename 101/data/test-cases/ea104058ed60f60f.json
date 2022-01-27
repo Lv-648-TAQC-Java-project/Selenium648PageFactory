@@ -1,0 +1,711 @@
+{
+  "uid" : "ea104058ed60f60f",
+  "name" : "TUA-159",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.addLocationWithValidDataOfMandatoryFields",
+  "historyId" : "76a4c1037bfaf6d005d723885bef1335",
+  "time" : {
+    "start" : 1643279425611,
+    "stop" : 1643279436461,
+    "duration" : 10850
+  },
+  "description" : "Verify that a user can add location to the list of locations after filling in only mandatory fields with valid data",
+  "descriptionHtml" : "<p>Verify that a user can add location to the list of locations after filling in only mandatory fields with valid data</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1643279421381,
+      "stop" : 1643279425609,
+      "duration" : 4228
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643278964052,
+      "stop" : 1643278964063,
+      "duration" : 11
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643278964064,
+      "stop" : 1643278967726,
+      "duration" : 3662
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643278967726,
+      "stop" : 1643278967726,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643278967727,
+      "stop" : 1643278967727,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1643278967727,
+      "stop" : 1643278967727,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify that a user can add location to the list of locations after filling in only mandatory fields with valid data",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1643279425611,
+        "stop" : 1643279429023,
+        "duration" : 3412
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1643279425611,
+          "stop" : 1643279426083,
+          "duration" : 472
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1643279426083,
+          "stop" : 1643279426186,
+          "duration" : 103
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1643279426186,
+          "stop" : 1643279429023,
+          "duration" : 2837
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1643279426875,
+            "stop" : 1643279426963,
+            "duration" : 88
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1643279426963,
+            "stop" : 1643279429023,
+            "duration" : 2060
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1643279429023,
+        "stop" : 1643279432345,
+        "duration" : 3322
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1643279432345,
+        "stop" : 1643279433034,
+        "duration" : 689
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Додати' button",
+      "time" : {
+        "start" : 1643279433034,
+        "stop" : 1643279433078,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Додати центр' button",
+      "time" : {
+        "start" : 1643279433078,
+        "stop" : 1643279433572,
+        "duration" : 494
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on '+Додати локацію' button",
+      "time" : {
+        "start" : 1643279433572,
+        "stop" : 1643279434217,
+        "duration" : 645
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Enter data into the 'Назва' field of 'Додати локацію' pop-up ",
+      "time" : {
+        "start" : 1643279434217,
+        "stop" : 1643279434922,
+        "duration" : 705
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locationName",
+        "value" : "ТестЛокація2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on 'Місто' dropdown",
+      "time" : {
+        "start" : 1643279434922,
+        "stop" : 1643279435011,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Choose a 'Київ' city from the 'Місто' drop-down list",
+      "time" : {
+        "start" : 1643279435011,
+        "stop" : 1643279435642,
+        "duration" : 631
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Enter data Сумська 2/3 into the 'Адреса' field",
+      "time" : {
+        "start" : 1643279435642,
+        "stop" : 1643279435775,
+        "duration" : 133
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "address",
+        "value" : "Сумська 2/3"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter data 50.00100346155677, 36.234188917163884 into the 'Географічні координати' field ",
+      "time" : {
+        "start" : 1643279435775,
+        "stop" : 1643279436215,
+        "duration" : 440
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "coordinates",
+        "value" : "50.00100346155677, 36.234188917163884"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter data 0977777777 into the 'Номер телефону' field",
+      "time" : {
+        "start" : 1643279436215,
+        "stop" : 1643279436336,
+        "duration" : 121
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneNumber",
+        "value" : "0977777777"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click the 'Додати' button",
+      "time" : {
+        "start" : 1643279436336,
+        "stop" : 1643279436433,
+        "duration" : 97
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if checkbox with name 'ТестЛокація2' is displayed",
+      "time" : {
+        "start" : 1643279436434,
+        "stop" : 1643279436461,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "ТестЛокація2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 19,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1643279436462,
+      "stop" : 1643279436532,
+      "duration" : 70
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "addLocationWithValidDataOfMandatoryFields"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az91-43"
+  }, {
+    "name" : "thread",
+    "value" : "2792@fv-az91-43.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "ТестЛокація2"
+  }, {
+    "name" : "arg1",
+    "value" : "Сумська 2/3"
+  }, {
+    "name" : "arg2",
+    "value" : "50.00100346155677, 36.234188917163884"
+  }, {
+    "name" : "arg3",
+    "value" : "0977777777"
+  } ],
+  "links" : [ {
+    "name" : "TUA-159",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 17,
+        "skipped" : 0,
+        "passed" : 47,
+        "unknown" : 0,
+        "total" : 64
+      },
+      "items" : [ {
+        "uid" : "e257a4aa7209d679",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/e257a4aa7209d679",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643277488572,
+          "stop" : 1643277499497,
+          "duration" : 10925
+        }
+      }, {
+        "uid" : "dd2fe2479c9ddfa3",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/100//#testresult/dd2fe2479c9ddfa3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643227713134,
+          "stop" : 1643227724270,
+          "duration" : 11136
+        }
+      }, {
+        "uid" : "742cc587ed7e0855",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/98//#testresult/742cc587ed7e0855",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643212095641,
+          "stop" : 1643212106423,
+          "duration" : 10782
+        }
+      }, {
+        "uid" : "b82375d0f2428007",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/b82375d0f2428007",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188982807,
+          "stop" : 1643188993609,
+          "duration" : 10802
+        }
+      }, {
+        "uid" : "34d465fb81101725",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/34d465fb81101725",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188924555,
+          "stop" : 1643188935603,
+          "duration" : 11048
+        }
+      }, {
+        "uid" : "5e5e5e1394eb9211",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/5e5e5e1394eb9211",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188857862,
+          "stop" : 1643188869209,
+          "duration" : 11347
+        }
+      }, {
+        "uid" : "69702950a613e60a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/69702950a613e60a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643185360582,
+          "stop" : 1643185371337,
+          "duration" : 10755
+        }
+      }, {
+        "uid" : "37ec0d29c5c1bcaf",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/93//#testresult/37ec0d29c5c1bcaf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643181446021,
+          "stop" : 1643181456391,
+          "duration" : 10370
+        }
+      }, {
+        "uid" : "b1f399762d5fbee8",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/92//#testresult/b1f399762d5fbee8",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az203-521', ip: '10.1.0.58', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [e93a235b1cf39f284379c177f7a1101a, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.wLciF3}, goog:chromeOptions: {debuggerAddress: localhost:39617}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39617/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e93a235b1cf39f284379c177f7a1101a",
+        "time" : {
+          "start" : 1643142121718,
+          "stop" : 1643142135558,
+          "duration" : 13840
+        }
+      }, {
+        "uid" : "cf04578edb790a0c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/91//#testresult/cf04578edb790a0c",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.ant-dropdown-trigger.user-profile>span.avatarIfLogin\"}\n  (Session info: chrome=97.0.4692.71)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az202-534', ip: '10.1.0.105', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [f503229c2180b8314a633f35a0e3ee49, findElement {using=css selector, value=div.ant-dropdown-trigger.user-profile>span.avatarIfLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.G4Yx4O}, goog:chromeOptions: {debuggerAddress: localhost:40801}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40801/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f503229c2180b8314a633f35a0e3ee49",
+        "time" : {
+          "start" : 1643142040757,
+          "stop" : 1643142054470,
+          "duration" : 13713
+        }
+      }, {
+        "uid" : "c0e18c858714f3a2",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/90//#testresult/c0e18c858714f3a2",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[@class='ant-select-item-option-content'][contains(text(),'Київ')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az75-82', ip: '10.1.0.250', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.ioNQgf}, goog:chromeOptions: {debuggerAddress: localhost:32819}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:32819/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8c0c3ddc99129df754d2625b90834333",
+        "time" : {
+          "start" : 1643141847963,
+          "stop" : 1643141912583,
+          "duration" : 64620
+        }
+      }, {
+        "uid" : "5dc9e4f220782f08",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/85//#testresult/5dc9e4f220782f08",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643141266202,
+          "stop" : 1643141289902,
+          "duration" : 23700
+        }
+      }, {
+        "uid" : "4e342718f63ea060",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/84//#testresult/4e342718f63ea060",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643140250892,
+          "stop" : 1643140261762,
+          "duration" : 10870
+        }
+      }, {
+        "uid" : "63cac14fb8fe34f8",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/83//#testresult/63cac14fb8fe34f8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643139640558,
+          "stop" : 1643139651653,
+          "duration" : 11095
+        }
+      }, {
+        "uid" : "43d3c0f35e0e3457",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/82//#testresult/43d3c0f35e0e3457",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643138666895,
+          "stop" : 1643138677661,
+          "duration" : 10766
+        }
+      }, {
+        "uid" : "3942719e3357bf87",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/81//#testresult/3942719e3357bf87",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643138499630,
+          "stop" : 1643138511291,
+          "duration" : 11661
+        }
+      }, {
+        "uid" : "a927a93f5c0f6ccd",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/80//#testresult/a927a93f5c0f6ccd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643137332777,
+          "stop" : 1643137343107,
+          "duration" : 10330
+        }
+      }, {
+        "uid" : "d68c12c7d885f8e4",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/79//#testresult/d68c12c7d885f8e4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643137269779,
+          "stop" : 1643137279613,
+          "duration" : 9834
+        }
+      }, {
+        "uid" : "2d386d85453a4939",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/78//#testresult/2d386d85453a4939",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643136304338,
+          "stop" : 1643136314068,
+          "duration" : 9730
+        }
+      }, {
+        "uid" : "8716ad23ed352c3a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/77//#testresult/8716ad23ed352c3a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643134515167,
+          "stop" : 1643134525650,
+          "duration" : 10483
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ea104058ed60f60f.json",
+  "parameterValues" : [ "ТестЛокація2", "Сумська 2/3", "50.00100346155677, 36.234188917163884", "0977777777" ]
+}
