@@ -14,7 +14,7 @@ public class ProfileEditPopUpLocators {
     public static final String NEW_PASSWORD_INPUT_XPATH = "//*[@id='edit_password']";
     public static final String CONFIRM_PASSWORD_INPUT_XPATH = "//*[@id='edit_confirmPassword']";
     public static final String MESSAGE_INVALID_INPUT_XPATH = "//div[@role='alert']";
-
-
+    public static final String ROLE_USER_BUTTON_XPATH = "//div[contains(text(),'Відвідувач')]";
+    public static final String ROLE_MANAGER_BUTTON_XPATH = "//div[contains(text(),'Керівник')]";
 }
 
