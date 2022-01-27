@@ -14,8 +14,8 @@ public class Center2 {
     public String description;
     public String urlWeb;
     public String urlLogo;
-    public List<String> locations;
-    public List<String> clubs;
+    public List<Object> locations;
+    public List<Object> clubs;
     public User user;
     public int centerExternalId;
     public int rating;
