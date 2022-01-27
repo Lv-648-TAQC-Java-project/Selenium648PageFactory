@@ -8,6 +8,7 @@ import com.ita.edu.teachua.ui.locators.profile_locators.ProfilePageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.ui.pages.clubs_page.ClubPagePopUpComponent;
 import io.qameta.allure.Step;
+import org.checkerframework.checker.nullness.qual.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,6 +16,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -37,6 +39,10 @@ public class ProfilePage extends BasePage {
     private WebElement title;
     @FindBy(how = How.XPATH, using = ProfilePageLocators.ROLE_STATUS)
     private WebElement roleStatus;
+
+    private static String EXPECTED_CONDITION_MANAGER = "ROLE_MANAGER";
+    private static String EXPECTED_CONDITION_USER = "ROLE_USER";
+    private static String CURRENT_EXPECTED_CONDITION;
 
     public ProfilePage(WebDriver driver) {
         super(driver);
@@ -86,7 +92,22 @@ public class ProfilePage extends BasePage {
     }
 
     public String getRoleStatus() {
-        waitUntilVisibilityOfElementLocated(By.xpath(ProfilePageLocators.ROLE_STATUS), 10);
+        sleep(3000);
+        /*WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(new ExpectedCondition<Boolean>() {
+            @Override
+            public @Nullable Boolean apply(@Nullable WebDriver webDriver) {
+                if (roleStatus.getText().equals(EXPECTED_CONDITION_MANAGER)) {
+                    CURRENT_EXPECTED_CONDITION = EXPECTED_CONDITION_MANAGER;
+                    return Boolean.TRUE;
+                }else if (roleStatus.getText().equals(EXPECTED_CONDITION_USER)){
+                    CURRENT_EXPECTED_CONDITION = EXPECTED_CONDITION_USER;
+                    return Boolean.TRUE;
+                }
+                return Boolean.FALSE;
+            }
+        });*/
+        //waitUntilVisibilityOfElementLocated(By.xpath(ProfilePageLocators.ROLE_STATUS), 10);
         return roleStatus.getText();
     }
 

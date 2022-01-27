@@ -1,5 +1,6 @@
 package com.ita.edu.teachua.cucumber.steps_definitions;
 
+import com.ita.edu.teachua.ui.pages.profile_page.ProfilePage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

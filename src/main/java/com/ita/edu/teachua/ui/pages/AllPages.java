@@ -45,8 +45,7 @@ public class AllPages {
     }
 
     public ProfilePage getProfilePage() {
-        return new ProfilePage(driver);
-        //return profilePage == null ? new ProfilePage(driver) : profilePage;
+        return profilePage == null ? new ProfilePage(driver) : profilePage;
     }
 
     public ServicesPage getServicesPage() {
