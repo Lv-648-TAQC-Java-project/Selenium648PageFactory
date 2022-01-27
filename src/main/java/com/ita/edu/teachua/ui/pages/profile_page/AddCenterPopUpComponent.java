@@ -78,6 +78,7 @@ public class AddCenterPopUpComponent extends BasePage {
 
     @Step("Click on 'Наступний крок' button")
     public AddCenterPopUpComponent clickOnNextStepButton() {
+        waitUntilElementToBeClickable(By.cssSelector(AddCenterPopUpComponentLocators.NEXT_STEP_BUTTON_CSS_SELECTOR),10);
         nextStepButton.click();
         return this;
     }
