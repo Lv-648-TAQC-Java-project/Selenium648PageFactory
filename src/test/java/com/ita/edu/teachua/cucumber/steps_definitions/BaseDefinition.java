@@ -25,8 +25,8 @@ public class BaseDefinition {
     @Before
     public void before(){
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        driver = new ChromeDriver(options);
+        //options.addArguments("--headless");
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(testValueProvider.getBaseUrl());

@@ -5,7 +5,6 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.Dropdown;
 import com.ita.edu.teachua.ui.elements.custom_elements.Link;
 import com.ita.edu.teachua.ui.locators.profile_locators.ProfilePageLocators;
-import com.ita.edu.teachua.ui.pages.advanced_search.ClubsItemComponent;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.ui.pages.clubs_page.ClubPagePopUpComponent;
 import io.qameta.allure.Step;
@@ -16,7 +15,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,6 +35,8 @@ public class ProfilePage extends BasePage {
     private List<WebElement> centers;
     @FindBy(how = How.XPATH, using = ProfilePageLocators.TITLE_XPATH)
     private WebElement title;
+    @FindBy(how = How.XPATH, using = ProfilePageLocators.ROLE_STATUS)
+    private WebElement roleStatus;
 
     public ProfilePage(WebDriver driver) {
         super(driver);
@@ -79,6 +83,11 @@ public class ProfilePage extends BasePage {
 
     public String verifyPage(){
     return title.getText();
+    }
+
+    public String getRoleStatus() {
+        waitUntilVisibilityOfElementLocated(By.xpath(ProfilePageLocators.ROLE_STATUS), 10);
+        return roleStatus.getText();
     }
 
     public ProfilePage getProfilePage(){

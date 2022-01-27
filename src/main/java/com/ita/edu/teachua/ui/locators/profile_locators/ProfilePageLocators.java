@@ -9,4 +9,5 @@ public class ProfilePageLocators {
     public static final String MY_CLUBS_DROPDOWN_CSS_SELECTOR = ".ant-select-selector";
     public static final String CENTERS_BLOCKS_XPATH = "//div[@class='ant-card ant-card-bordered center-card']"; //
     public static final String TITLE_XPATH="//div[@class='content-title']";
+    public static final String ROLE_STATUS = "//div[@class='user-role']";
 }
