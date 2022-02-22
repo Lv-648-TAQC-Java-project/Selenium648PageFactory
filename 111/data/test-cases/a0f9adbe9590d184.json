@@ -1,0 +1,456 @@
+{
+  "uid" : "a0f9adbe9590d184",
+  "name" : "TUA-359",
+  "fullName" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest.getErrorMessageInChangePasswordPopUpTest",
+  "historyId" : "867c05818644afd4d40222f9b2c36b88",
+  "time" : {
+    "start" : 1645527170961,
+    "stop" : 1645527177388,
+    "duration" : 6427
+  },
+  "description" : "TUA-359 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up",
+  "descriptionHtml" : "<p>TUA-359 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up</p>\n",
+  "status" : "broken",
+  "statusMessage" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.JUc1SF}, goog:chromeOptions: {debuggerAddress: localhost:33109}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33109/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e376e0ffb0f7e67d520eb6f4b2083782",
+  "statusTrace" : "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.JUc1SF}, goog:chromeOptions: {debuggerAddress: localhost:33109}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33109/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e376e0ffb0f7e67d520eb6f4b2083782\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\n\tat com.ita.edu.teachua.ui.pages.base_page.BasePage.waitUntilElementToBeClickable(BasePage.java:43)\n\tat com.ita.edu.teachua.ui.pages.header_page.GuestDropdownComponent.clickOnLoginButton(GuestDropdownComponent.java:33)\n\tat com.ita.edu.teachua.ui.pages.header_page.HeaderPage.authorize(HeaderPage.java:40)\n\tat com.ita.edu.teachua.ui.tests.OwnerProfileTest.getErrorMessageInChangePasswordPopUpTest(OwnerProfileTest.java:539)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1645527167276,
+      "stop" : 1645527170960,
+      "duration" : 3684
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1645526942930,
+      "stop" : 1645526942939,
+      "duration" : 9
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1645526942940,
+      "stop" : 1645526944985,
+      "duration" : 2045
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1645526944986,
+      "stop" : 1645526944986,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1645526944986,
+      "stop" : 1645526944986,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1645526944986,
+      "stop" : 1645526944986,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "TUA-359 Verify that error messages are shown while leaving empty any field in the 'Змінити пароль' pop-up",
+    "status" : "broken",
+    "statusMessage" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.JUc1SF}, goog:chromeOptions: {debuggerAddress: localhost:33109}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33109/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e376e0ffb0f7e67d520eb6f4b2083782",
+    "statusTrace" : "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.JUc1SF}, goog:chromeOptions: {debuggerAddress: localhost:33109}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33109/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e376e0ffb0f7e67d520eb6f4b2083782\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\n\tat com.ita.edu.teachua.ui.pages.base_page.BasePage.waitUntilElementToBeClickable(BasePage.java:43)\n\tat com.ita.edu.teachua.ui.pages.header_page.GuestDropdownComponent.clickOnLoginButton(GuestDropdownComponent.java:33)\n\tat com.ita.edu.teachua.ui.pages.header_page.HeaderPage.authorize(HeaderPage.java:40)\n\tat com.ita.edu.teachua.ui.tests.OwnerProfileTest.getErrorMessageInChangePasswordPopUpTest(OwnerProfileTest.java:539)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1645527170962,
+        "stop" : 1645527176652,
+        "duration" : 5690
+      },
+      "status" : "broken",
+      "statusMessage" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.JUc1SF}, goog:chromeOptions: {debuggerAddress: localhost:33109}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33109/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e376e0ffb0f7e67d520eb6f4b2083782",
+      "statusTrace" : "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.JUc1SF}, goog:chromeOptions: {debuggerAddress: localhost:33109}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33109/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e376e0ffb0f7e67d520eb6f4b2083782\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\n\tat com.ita.edu.teachua.ui.pages.base_page.BasePage.waitUntilElementToBeClickable(BasePage.java:43)\n\tat com.ita.edu.teachua.ui.pages.header_page.GuestDropdownComponent.clickOnLoginButton(GuestDropdownComponent.java:33)\n\tat com.ita.edu.teachua.ui.pages.header_page.HeaderPage.authorize(HeaderPage.java:40)\n\tat com.ita.edu.teachua.ui.tests.OwnerProfileTest.getErrorMessageInChangePasswordPopUpTest(OwnerProfileTest.java:539)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1645527170962,
+          "stop" : 1645527171451,
+          "duration" : 489
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1645527171451,
+          "stop" : 1645527176652,
+          "duration" : 5201
+        },
+        "status" : "broken",
+        "statusMessage" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.JUc1SF}, goog:chromeOptions: {debuggerAddress: localhost:33109}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33109/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e376e0ffb0f7e67d520eb6f4b2083782",
+        "statusTrace" : "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.JUc1SF}, goog:chromeOptions: {debuggerAddress: localhost:33109}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33109/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e376e0ffb0f7e67d520eb6f4b2083782\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\n\tat com.ita.edu.teachua.ui.pages.base_page.BasePage.waitUntilElementToBeClickable(BasePage.java:43)\n\tat com.ita.edu.teachua.ui.pages.header_page.GuestDropdownComponent.clickOnLoginButton(GuestDropdownComponent.java:33)\n\tat com.ita.edu.teachua.ui.pages.header_page.HeaderPage.authorize(HeaderPage.java:40)\n\tat com.ita.edu.teachua.ui.tests.OwnerProfileTest.getErrorMessageInChangePasswordPopUpTest(OwnerProfileTest.java:539)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "b68508c5babe0d0",
+      "name" : "Logs for thread 14",
+      "source" : "b68508c5babe0d0.log",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "c9f3ff7b262e5fa2",
+      "name" : "Page screenshot",
+      "source" : "c9f3ff7b262e5fa2.png",
+      "type" : "image/png",
+      "size" : 491682
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1645527177389,
+      "stop" : 1645527177500,
+      "duration" : 111
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "getErrorMessageInChangePasswordPopUpTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "UI Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.ui.tests.OwnerProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az105-913"
+  }, {
+    "name" : "thread",
+    "value" : "2154@fv-az105-913.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TUA-359",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 8,
+        "skipped" : 0,
+        "passed" : 69,
+        "unknown" : 0,
+        "total" : 77
+      },
+      "items" : [ {
+        "uid" : "dd278cd5a7a210b5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/110//#testresult/dd278cd5a7a210b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643311967003,
+          "stop" : 1643311978983,
+          "duration" : 11980
+        }
+      }, {
+        "uid" : "724dda2fc637b94a",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/109//#testresult/724dda2fc637b94a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643310481827,
+          "stop" : 1643310492457,
+          "duration" : 10630
+        }
+      }, {
+        "uid" : "22650e6e62327d59",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/22650e6e62327d59",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643308770028,
+          "stop" : 1643308781389,
+          "duration" : 11361
+        }
+      }, {
+        "uid" : "5e122cf9905cd442",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/5e122cf9905cd442",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643306877115,
+          "stop" : 1643306888499,
+          "duration" : 11384
+        }
+      }, {
+        "uid" : "57e258e3a0c80c21",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/57e258e3a0c80c21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643304002193,
+          "stop" : 1643304013107,
+          "duration" : 10914
+        }
+      }, {
+        "uid" : "fd5fe08eb4a323ae",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/107//#testresult/fd5fe08eb4a323ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643301749648,
+          "stop" : 1643301760370,
+          "duration" : 10722
+        }
+      }, {
+        "uid" : "c0df82be62662736",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/106//#testresult/c0df82be62662736",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643296347399,
+          "stop" : 1643296359937,
+          "duration" : 12538
+        }
+      }, {
+        "uid" : "a6447b6d21def786",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/105//#testresult/a6447b6d21def786",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643292357213,
+          "stop" : 1643292368444,
+          "duration" : 11231
+        }
+      }, {
+        "uid" : "fa9810690988927d",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/104//#testresult/fa9810690988927d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643292294357,
+          "stop" : 1643292304943,
+          "duration" : 10586
+        }
+      }, {
+        "uid" : "39da6b62aaa2d00c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/103//#testresult/39da6b62aaa2d00c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643287490714,
+          "stop" : 1643287502844,
+          "duration" : 12130
+        }
+      }, {
+        "uid" : "aebf5a3cdfdfb625",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/102//#testresult/aebf5a3cdfdfb625",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643287404947,
+          "stop" : 1643287415639,
+          "duration" : 10692
+        }
+      }, {
+        "uid" : "8be8a0b53f60e0c1",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/8be8a0b53f60e0c1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643285132768,
+          "stop" : 1643285144505,
+          "duration" : 11737
+        }
+      }, {
+        "uid" : "a70349ccc5a5ce36",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/a70349ccc5a5ce36",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643279642292,
+          "stop" : 1643279652779,
+          "duration" : 10487
+        }
+      }, {
+        "uid" : "fc4f3da8d7d9cafc",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/fc4f3da8d7d9cafc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643277673335,
+          "stop" : 1643277683794,
+          "duration" : 10459
+        }
+      }, {
+        "uid" : "5c24dad0aaf83763",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/100//#testresult/5c24dad0aaf83763",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643227930528,
+          "stop" : 1643227941481,
+          "duration" : 10953
+        }
+      }, {
+        "uid" : "5e9024aaca4afe8c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/98//#testresult/5e9024aaca4afe8c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643212320300,
+          "stop" : 1643212330909,
+          "duration" : 10609
+        }
+      }, {
+        "uid" : "6f5dd353339e9aa6",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/6f5dd353339e9aa6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643189201088,
+          "stop" : 1643189211789,
+          "duration" : 10701
+        }
+      }, {
+        "uid" : "99497ec36034c584",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/99497ec36034c584",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643189144677,
+          "stop" : 1643189155806,
+          "duration" : 11129
+        }
+      }, {
+        "uid" : "ee19a9ff0ec96a3e",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/ee19a9ff0ec96a3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643189080710,
+          "stop" : 1643189092335,
+          "duration" : 11625
+        }
+      }, {
+        "uid" : "9f977b99674bc2e1",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/9f977b99674bc2e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643185578526,
+          "stop" : 1643185589118,
+          "duration" : 10592
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a0f9adbe9590d184.json",
+  "parameterValues" : [ ]
+}

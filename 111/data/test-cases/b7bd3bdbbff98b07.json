@@ -1,0 +1,543 @@
+{
+  "uid" : "b7bd3bdbbff98b07",
+  "name" : "Example of BDD suite",
+  "fullName" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner.scenario",
+  "historyId" : "74a6d17bc6c34a88871ca30a40dae59e",
+  "time" : {
+    "start" : 1645527169117,
+    "stop" : 1645527184181,
+    "duration" : 15064
+  },
+  "status" : "broken",
+  "statusMessage" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.GgGqnt}, goog:chromeOptions: {debuggerAddress: localhost:38151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38151/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5d1e580a1ff36b8df0e41e855ea2e2eb",
+  "statusTrace" : "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.GgGqnt}, goog:chromeOptions: {debuggerAddress: localhost:38151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38151/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5d1e580a1ff36b8df0e41e855ea2e2eb\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\n\tat com.ita.edu.teachua.ui.pages.base_page.BasePage.waitUntilElementToBeClickable(BasePage.java:43)\n\tat com.ita.edu.teachua.ui.pages.header_page.OwnerDropdownComponent.clickOnProfile(OwnerDropdownComponent.java:36)\n\tat com.ita.edu.teachua.cucumber.steps_definitions.InvalidDataInFieldPhone.clickOnProfile(InvalidDataInFieldPhone.java:31)\n\tat ✽.Click on profile(file:///home/runner/work/TeachUA_TA/TeachUA_TA/src/test/resources/features/UserCheckInvalidDataForFieldPhone.feature:7)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1645526945035,
+      "stop" : 1645526946139,
+      "duration" : 1104
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1645526946139,
+      "stop" : 1645526946202,
+      "duration" : 63
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1645526942930,
+      "stop" : 1645526942939,
+      "duration" : 9
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1645526942940,
+      "stop" : 1645526944985,
+      "duration" : 2045
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1645526944986,
+      "stop" : 1645526944986,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1645526944986,
+      "stop" : 1645526944986,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "beforeSuite",
+    "time" : {
+      "start" : 1645526944986,
+      "stop" : 1645526944986,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.GgGqnt}, goog:chromeOptions: {debuggerAddress: localhost:38151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38151/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5d1e580a1ff36b8df0e41e855ea2e2eb",
+    "statusTrace" : "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.GgGqnt}, goog:chromeOptions: {debuggerAddress: localhost:38151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38151/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5d1e580a1ff36b8df0e41e855ea2e2eb\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\n\tat com.ita.edu.teachua.ui.pages.base_page.BasePage.waitUntilElementToBeClickable(BasePage.java:43)\n\tat com.ita.edu.teachua.ui.pages.header_page.OwnerDropdownComponent.clickOnProfile(OwnerDropdownComponent.java:36)\n\tat com.ita.edu.teachua.cucumber.steps_definitions.InvalidDataInFieldPhone.clickOnProfile(InvalidDataInFieldPhone.java:31)\n\tat ✽.Click on profile(file:///home/runner/work/TeachUA_TA/TeachUA_TA/src/test/resources/features/UserCheckInvalidDataForFieldPhone.feature:7)\n",
+    "steps" : [ {
+      "name" : "Authorize user with valid email admin@gmail.com and password admin",
+      "time" : {
+        "start" : 1645527172589,
+        "stop" : 1645527176003,
+        "duration" : 3414
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on guest dropdown",
+        "time" : {
+          "start" : 1645527172589,
+          "stop" : 1645527173078,
+          "duration" : 489
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on `Увійти` button",
+        "time" : {
+          "start" : 1645527173078,
+          "stop" : 1645527173180,
+          "duration" : 102
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set values 'admin@gmail.com'/'admin' for `Емейл` and `Пароль` fields",
+        "time" : {
+          "start" : 1645527173180,
+          "stop" : 1645527176003,
+          "duration" : 2823
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Fill in Password field: 'admin'",
+          "time" : {
+            "start" : 1645527173863,
+            "stop" : 1645527173955,
+            "duration" : 92
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "passwordValue",
+            "value" : "admin"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Click on Submit button",
+          "time" : {
+            "start" : 1645527173955,
+            "stop" : 1645527176003,
+            "duration" : 2048
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "admin@gmail.com"
+        }, {
+          "name" : "password",
+          "value" : "admin"
+        } ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "admin@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on dropdown for authorized user in top right corner of header",
+      "time" : {
+        "start" : 1645527176003,
+        "stop" : 1645527178874,
+        "duration" : 2871
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'Мій профіль' button in dropdown for authorized users",
+      "time" : {
+        "start" : 1645527178875,
+        "stop" : 1645527184079,
+        "duration" : 5204
+      },
+      "status" : "broken",
+      "statusMessage" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.GgGqnt}, goog:chromeOptions: {debuggerAddress: localhost:38151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38151/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5d1e580a1ff36b8df0e41e855ea2e2eb",
+      "statusTrace" : "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.GgGqnt}, goog:chromeOptions: {debuggerAddress: localhost:38151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38151/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5d1e580a1ff36b8df0e41e855ea2e2eb\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\n\tat com.ita.edu.teachua.ui.pages.base_page.BasePage.waitUntilElementToBeClickable(BasePage.java:43)\n\tat com.ita.edu.teachua.ui.pages.header_page.OwnerDropdownComponent.clickOnProfile(OwnerDropdownComponent.java:36)\n\tat com.ita.edu.teachua.cucumber.steps_definitions.InvalidDataInFieldPhone.clickOnProfile(InvalidDataInFieldPhone.java:31)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:57)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:95)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:75)\n\tat io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)\n\tat io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:146)\n\tat io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)\n\tat io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:146)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)\n\tat com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner.scenario(CucumberTestRunner.java:31)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1645527184182,
+      "stop" : 1645527184192,
+      "duration" : 10
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "testMethod",
+    "value" : "scenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "BDD Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ita.edu.teachua.cucumber.cucumberTestRunner.CucumberTestRunner"
+  }, {
+    "name" : "host",
+    "value" : "fv-az105-913"
+  }, {
+    "name" : "thread",
+    "value" : "2154@fv-az105-913.TestNG-tests-1(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\""
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 21,
+        "skipped" : 0,
+        "passed" : 55,
+        "unknown" : 0,
+        "total" : 77
+      },
+      "items" : [ {
+        "uid" : "745627e9967a6b95",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/110//#testresult/745627e9967a6b95",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643311521685,
+          "stop" : 1643311588959,
+          "duration" : 67274
+        }
+      }, {
+        "uid" : "e8341d881464e3d9",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/109//#testresult/e8341d881464e3d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643310028531,
+          "stop" : 1643310097639,
+          "duration" : 69108
+        }
+      }, {
+        "uid" : "7f4704d975360d02",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/7f4704d975360d02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643308266698,
+          "stop" : 1643308336162,
+          "duration" : 69464
+        }
+      }, {
+        "uid" : "f5cbbb02608fbe2c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/f5cbbb02608fbe2c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643306446786,
+          "stop" : 1643306514371,
+          "duration" : 67585
+        }
+      }, {
+        "uid" : "616658167a95f943",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/108//#testresult/616658167a95f943",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643303577941,
+          "stop" : 1643303646915,
+          "duration" : 68974
+        }
+      }, {
+        "uid" : "e5b01a27c98557f",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/107//#testresult/e5b01a27c98557f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643301306224,
+          "stop" : 1643301375204,
+          "duration" : 68980
+        }
+      }, {
+        "uid" : "f6c440584a3ce770",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/106//#testresult/f6c440584a3ce770",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643295862262,
+          "stop" : 1643295932898,
+          "duration" : 70636
+        }
+      }, {
+        "uid" : "7d48c1883cd735fc",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/105//#testresult/7d48c1883cd735fc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643291923839,
+          "stop" : 1643291993552,
+          "duration" : 69713
+        }
+      }, {
+        "uid" : "d5c175c9d30675ba",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/104//#testresult/d5c175c9d30675ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643291866197,
+          "stop" : 1643291935709,
+          "duration" : 69512
+        }
+      }, {
+        "uid" : "34c862a9475585e5",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/103//#testresult/34c862a9475585e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643287040551,
+          "stop" : 1643287112545,
+          "duration" : 71994
+        }
+      }, {
+        "uid" : "8de28c76da4118cc",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/102//#testresult/8de28c76da4118cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643286975868,
+          "stop" : 1643287043966,
+          "duration" : 68098
+        }
+      }, {
+        "uid" : "985d2c12477233f7",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/985d2c12477233f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643284640433,
+          "stop" : 1643284710559,
+          "duration" : 70126
+        }
+      }, {
+        "uid" : "4d32340c2c9fea58",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/4d32340c2c9fea58",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643279168709,
+          "stop" : 1643279237115,
+          "duration" : 68406
+        }
+      }, {
+        "uid" : "3c8761fa1c235b77",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/101//#testresult/3c8761fa1c235b77",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643277217812,
+          "stop" : 1643277286137,
+          "duration" : 68325
+        }
+      }, {
+        "uid" : "d7cc328c9b104047",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/100//#testresult/d7cc328c9b104047",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643227473353,
+          "stop" : 1643227542000,
+          "duration" : 68647
+        }
+      }, {
+        "uid" : "611c86caec2e3e2c",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/98//#testresult/611c86caec2e3e2c",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.0', revision: '87802e897b'\nSystem info: host: 'fv-az91-939', ip: '10.1.0.68', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1027-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.U6Pfn0}, goog:chromeOptions: {debuggerAddress: localhost:33713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33713/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ff0a07fe3bed0f155bb2be80fba96447",
+        "time" : {
+          "start" : 1643211796180,
+          "stop" : 1643211812502,
+          "duration" : 16322
+        }
+      }, {
+        "uid" : "39a02651eaa0cd73",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/97//#testresult/39a02651eaa0cd73",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188746852,
+          "stop" : 1643188815618,
+          "duration" : 68766
+        }
+      }, {
+        "uid" : "983f4fce9f7fd25",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/96//#testresult/983f4fce9f7fd25",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188695528,
+          "stop" : 1643188765658,
+          "duration" : 70130
+        }
+      }, {
+        "uid" : "731a9b2ebc3e8ab",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/95//#testresult/731a9b2ebc3e8ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643188620375,
+          "stop" : 1643188689836,
+          "duration" : 69461
+        }
+      }, {
+        "uid" : "52d0da8f815db472",
+        "reportUrl" : "https://ita-social-projects.github.io/TeachUA_TA/94//#testresult/52d0da8f815db472",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643185129185,
+          "stop" : 1643185198085,
+          "duration" : 68900
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b7bd3bdbbff98b07.json",
+  "parameterValues" : [ "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\"", "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\"" ]
+}

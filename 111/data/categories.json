@@ -1,0 +1,383 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[@class='ant-select-item-option-content'][contains(text(),'Київ')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.d8hqzE}, goog:chromeOptions: {debuggerAddress: localhost:42821}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42821/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 18973613eaac0df99d7447110cd7f620",
+      "children" : [ {
+        "name" : "Runs Cucumber Scenarios",
+        "uid" : "4019afe520a58fe1",
+        "parentUid" : "bfec48d7bbeff1f34608677ddbd7f1a9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645526946223,
+          "stop" : 1645526980186,
+          "duration" : 33963
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verifies that a 'Керівник' can add location to the list of locations after filling in all mandatory and all optional fields with valid data\"", "\"Optional[Verify that a 'Керівник' can add a location to the list of locations]\"" ]
+      } ],
+      "uid" : "bfec48d7bbeff1f34608677ddbd7f1a9"
+    }, {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.LYU0NT}, goog:chromeOptions: {debuggerAddress: localhost:34693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34693/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0212b73545bf9c6c2262d639795ee316",
+      "children" : [ {
+        "name" : "TUA-356",
+        "uid" : "7679fef0a4c70d",
+        "parentUid" : "4c89ac42bd0da2269b6fb5adadc1a2b0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645526954411,
+          "stop" : 1645526961136,
+          "duration" : 6725
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[6895, Телефон не відповідає вказаному формату, 65987458, Телефон не відповідає вказаному формату, 6593859632586, Телефон не відповідає вказаному формату, jngeoлщшогнеп, Телефон не може містити літери, !96397180, Телефон не відповідає вказаному формату, @96397180, Телефон не відповідає вказаному формату, #96397180, Телефон не відповідає вказаному формату, $96397180, Телефон не відповідає вказаному формату, %96397180, Телефон не відповідає вказаному формату, ^96397180, Телефон не відповідає вказаному формату, &96397180, Телефон не відповідає вказаному формату, *96397180, Телефон не відповідає вказаному формату, (96397180, Телефон не відповідає вказаному формату, _96397180, Телефон не відповідає вказаному формату, +96397180, Телефон не відповідає вказаному формату, .96397180, Телефон не відповідає вказаному формату, :96397180, Телефон не відповідає вказаному формату, , Будь ласка введіть Ваш номер телефону]" ]
+      } ],
+      "uid" : "4c89ac42bd0da2269b6fb5adadc1a2b0"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.registration.SuccessRegistration), not marked as ignorable (3 known properties: \"roleName\", \"id\", \"email\"])\n at [Source: (String)\"{\"status\":401,\"message\":\"Email awdcftgbhumiookk@gmail.com already exist\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.registration.SuccessRegistration[\"status\"])",
+      "children" : [ {
+        "name" : "createAndActivateUser",
+        "uid" : "9f6541b8cf8226ac",
+        "parentUid" : "7ea2bd05a0d84b4a32076d3173e660f3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645526977787,
+          "stop" : 1645526977787,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TUA-457",
+        "uid" : "68dde0babb3539aa",
+        "parentUid" : "7ea2bd05a0d84b4a32076d3173e660f3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645527069009,
+          "stop" : 1645527069632,
+          "duration" : 623
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7ea2bd05a0d84b4a32076d3173e660f3"
+    }, {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.fCbAYA}, goog:chromeOptions: {debuggerAddress: localhost:46053}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46053/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 997878fa8f45c0ecf03d1b852e0f3fe4",
+      "children" : [ {
+        "name" : "TUA-237",
+        "uid" : "5d77d6c08828d5e5",
+        "parentUid" : "b7d3340f8c3744164813a2e36a1b2388",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645526977874,
+          "stop" : 1645526991118,
+          "duration" : 13244
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "ValidName2", "2", "18", "ValidAddress", "49.829104498711104, 24.005058710351314", "0966666666", "example@email.com", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "name,cityName,districtName,stationName,address,coordinates,phone", "basic_contactТелефон,basic_contactFacebook,basic_contactWhatsApp,basic_contactПошта,basic_contactSkype,basic_contactContact" ]
+      } ],
+      "uid" : "b7d3340f8c3744164813a2e36a1b2388"
+    }, {
+      "name" : "Expected condition failed: waiting for visibility of element located by By.id: basic_email (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.FYNSm4}, goog:chromeOptions: {debuggerAddress: localhost:44119}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44119/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cf0dd8c3547a5d02f5eeb1abcf8efda4",
+      "children" : [ {
+        "name" : "TUA-159",
+        "uid" : "2a84231d4e40e5d6",
+        "parentUid" : "e7c0029f840e336409c12df57d45d763",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645527006776,
+          "stop" : 1645527017526,
+          "duration" : 10750
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "ТестЛокація2", "Сумська 2/3", "50.00100346155677, 36.234188917163884", "0977777777" ]
+      } ],
+      "uid" : "e7c0029f840e336409c12df57d45d763"
+    }, {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.StOp91}, goog:chromeOptions: {debuggerAddress: localhost:45965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45965/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 46d9d09339564093e8a41bcd8de64c13",
+      "children" : [ {
+        "name" : "TUA-172",
+        "uid" : "431609f142bb2d3a",
+        "parentUid" : "a1574e59500cdf935c2b2dd71d1738f4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645527021559,
+          "stop" : 1645527040089,
+          "duration" : 18530
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\\n\" +\n\"Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\\n\" +\n\"On the top of the column stands a bronze figurine of a woman holding a whe are you so sad& i think that is, Also known as the Monastery of the Caves, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\\n\" +\n\"Interestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\\n\" +\n\"On the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 b]" ]
+      } ],
+      "uid" : "a1574e59500cdf935c2b2dd71d1738f4"
+    }, {
+      "name" : "Unrecognized field \"status\" (class com.ita.edu.teachua.api.models.center.change_response.Root), not marked as ignorable (13 known properties: \"urlBackgroundPicture\", \"urlWeb\", \"userId\", \"name\", \"contacts\", \"clubsId\", \"urlLogo\", \"id\", \"description\", \"locations\", \"phones\", \"centerExternalId\", \"email\"])\n at [Source: (String)\"{\"status\":401,\"message\":\"You have no necessary permissions (role)\"}\"; line: 1, column: 14] (through reference chain: com.ita.edu.teachua.api.models.center.change_response.Root[\"status\"])",
+      "children" : [ {
+        "name" : "change center",
+        "uid" : "e888f837abba6602",
+        "parentUid" : "66609b0a4a1928578386d9d081205e9c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645527041006,
+          "stop" : 1645527041633,
+          "duration" : 627
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "66609b0a4a1928578386d9d081205e9c"
+    }, {
+      "name" : "java.lang.NullPointerException",
+      "children" : [ {
+        "name" : "deleted center",
+        "uid" : "2dea827b38f524f1",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645527043157,
+          "stop" : 1645527043810,
+          "duration" : 653
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5592898b36d684905e31486a23088bda"
+    }, {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.tdT3C2}, goog:chromeOptions: {debuggerAddress: localhost:34185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34185/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b5d90482162ebb8c94f88b2180e4e86b",
+      "children" : [ {
+        "name" : "TUA-177",
+        "uid" : "120a5cedc0828a04",
+        "parentUid" : "f4ce2d72ea8fcae2e3f7d4b9a67c2475",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645527043786,
+          "stop" : 1645527058014,
+          "duration" : 14228
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalv, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square., Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd, Also known as the Monastery of the Caves, Pechersk Lavra is a historic Orthodox Christian monastery which gave its name to one of the biggest districts in Kiev. This incredibly beautiful complex started as a cave monastery nearly 1,000 years ago.\nInterestingly, while being a major tourist attraction in Kiev, Pechersk Lavra is also an active monastery, which means that over 100 monks live there. There are several churches within the complex, while a part of the monastery serves as a museum, where you can find many architectural relics of the past.Locally known as Maidan Nezalezhnosti, this square has been in the center of many important events in the modern history of Ukraine. The most recognizable monument on the square is the so-called Independence Monument, a 200ft tall victory column placed in the center of the square.\nOn the top of the column stands a bronze figurine of a woman holding a rose branch. Since the beginning of the Ukrainian independence movement, this square has been used for political rallies and protests. Nowadays, the square hosts a number of cultural events, and is a place where many city tours begin.In the city of churches, the Golden Gate of Kiev strikes as a rather odd structure. Currently used as a museum, this was the main gate to the fortification of Kiev in the 11th century.The original structure was nearly completely dismantled, and only few vestiges remain. The rest was rebuilt in 1982 based on a speculation , since nobody knows how the originalfd. With its numerous parks and gardens, Kiev is perfect for picnics and outdoor activities.\nHidropark is an island in the Dnieper River whose natural beaches are very popular during the summer. Besides swimming, you can also play beach volleyball, eat delicious street food or simply sunbathe.]" ]
+      } ],
+      "uid" : "f4ce2d72ea8fcae2e3f7d4b9a67c2475"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='ant-form-item-explain ant-form-item-explain-error']\"}\n  (Session info: chrome=98.0.4758.102)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [de28b2ecf514f602ea7353cc17281241, findElement {using=xpath, value=//div[@class='ant-form-item-explain ant-form-item-explain-error']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.08JmXB}, goog:chromeOptions: {debuggerAddress: localhost:38309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38309/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: de28b2ecf514f602ea7353cc17281241",
+      "children" : [ {
+        "name" : "TUA-176",
+        "uid" : "ca0f9f7c621465f2",
+        "parentUid" : "fe57ae2d415bf93c1cd9103c15f1605a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645527061999,
+          "stop" : 1645527083018,
+          "duration" : 21019
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[Also known as the Mo, 1, Also known as the Monastery of the ghfg]" ]
+      } ],
+      "uid" : "fe57ae2d415bf93c1cd9103c15f1605a"
+    }, {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.ZxzeYs}, goog:chromeOptions: {debuggerAddress: localhost:38447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38447/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: fc9032bd8bef727e9a7831c8fb2f9605",
+      "children" : [ {
+        "name" : "TUA-343",
+        "uid" : "87b3b718cb26d06",
+        "parentUid" : "7a4f18b2caf51c88cf43a983d9dfb729",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645527149220,
+          "stop" : 1645527155295,
+          "duration" : 6075
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[AfBbCcDdEeFfGgHhIiJjKkLlMmNn, Прізвище не може містити більше, ніж 25 символів, AfBbCcDdEeFfGgHhIiJjKkLlMm, Прізвище не може містити більше, ніж 25 символів, 1Admin, Прізвище не може містити цифри, 2Admin, Прізвище не може містити цифри, 3Admin, Прізвище не може містити цифри, 4Admin, Прізвище не може містити цифри, -Lastname, Прізвище повинно починатися і закінчуватися літерою, < Lastname>, Прізвище не може містити спеціальні символи, 'Lastname, Прізвище повинно починатися і закінчуватися літерою, Lastname-, Прізвище повинно починатися і закінчуватися літерою, <Lastname >, Прізвище не може містити спеціальні символи, Lastname', Прізвище повинно починатися і закінчуватися літерою, !Admin, Прізвище не може містити спеціальні символи, @Admin, Прізвище не може містити спеціальні символи, #Admin, Прізвище не може містити спеціальні символи, $Admin, Прізвище не може містити спеціальні символи, %Admin, Прізвище не може містити спеціальні символи, ^Admin, Прізвище не може містити спеціальні символи, &Admin, Прізвище не може містити спеціальні символи, *Admin, Прізвище не може містити спеціальні символи, (Admin, Прізвище не може містити спеціальні символи, _Admin, Прізвище не може містити спеціальні символи, +Admin, Прізвище не може містити спеціальні символи, .Admin, Прізвище не може містити спеціальні символи, :Admin, Прізвище не може містити спеціальні символи, , Будь ласка введіть Ваше прізвище]" ]
+      } ],
+      "uid" : "7a4f18b2caf51c88cf43a983d9dfb729"
+    }, {
+      "name" : "element click intercepted: Element <span role=\"img\" aria-label=\"caret-down\" class=\"anticon anticon-caret-down\">...</span> is not clickable at point (1244, 33). Other element would receive the click: <div tabindex=\"-1\" class=\"ant-modal-wrap ant-modal-centered\" role=\"dialog\">...</div>\n  (Session info: chrome=98.0.4758.102)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [d1471b9265d349cdb281b97e8c5137eb, clickElement {id=c232c6c7-3d06-4af1-a818-1d049f4fc670}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.828rmL}, goog:chromeOptions: {debuggerAddress: localhost:42693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42693/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (d1471b9265d349cdb281b97e8c5137eb)] -> xpath: //div[@class = 'ant-dropdown-trigger user-profile']/span[@role]]\nSession ID: d1471b9265d349cdb281b97e8c5137eb",
+      "children" : [ {
+        "name" : "TUA-454",
+        "uid" : "12b362bc425a2c60",
+        "parentUid" : "155c08d64e42d3471ac327f3434aa890",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645527159333,
+          "stop" : 1645527167167,
+          "duration" : 7834
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "155c08d64e42d3471ac327f3434aa890"
+    }, {
+      "name" : "element click intercepted: Element <div>...</div> is not clickable at point (1196, 123). Other element would receive the click: <section class=\"ant-layout global-padding\">...</section>\n  (Session info: chrome=98.0.4758.102)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [624539dfb56bda7edfb41812ffc3debf, clickElement {id=b64adf35-2848-4ffb-9a78-7e51ece40052}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.LMBaLG}, goog:chromeOptions: {debuggerAddress: localhost:41735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41735/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on LINUX (624539dfb56bda7edfb41812ffc3debf)] -> xpath: //div[contains(text(),'Увійти')]]\nSession ID: 624539dfb56bda7edfb41812ffc3debf",
+      "children" : [ {
+        "name" : "Example of BDD suite",
+        "uid" : "6ff8e059f21998b9",
+        "parentUid" : "d4e158c55f69dfda47f5a23bbc0761aa",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645527163866,
+          "stop" : 1645527169111,
+          "duration" : 5245
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"Verify that the manager can change it's role to 'user' and then back to 'manager'\"", "\"Optional[[Edit profile] The user or manager can change it's role]\"" ]
+      } ],
+      "uid" : "d4e158c55f69dfda47f5a23bbc0761aa"
+    }, {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.xpath: //span/a[contains(text(),'Мій Профіль')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.GgGqnt}, goog:chromeOptions: {debuggerAddress: localhost:38151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38151/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5d1e580a1ff36b8df0e41e855ea2e2eb",
+      "children" : [ {
+        "name" : "Example of BDD suite",
+        "uid" : "b7bd3bdbbff98b07",
+        "parentUid" : "4bd28d4881f5d257281e7089b086c5af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645527169117,
+          "stop" : 1645527184181,
+          "duration" : 15064
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\"", "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\"" ]
+      } ],
+      "uid" : "4bd28d4881f5d257281e7089b086c5af"
+    }, {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),'Увійти')] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.JUc1SF}, goog:chromeOptions: {debuggerAddress: localhost:33109}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33109/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e376e0ffb0f7e67d520eb6f4b2083782",
+      "children" : [ {
+        "name" : "TUA-359",
+        "uid" : "a0f9adbe9590d184",
+        "parentUid" : "a9a396f87a50260fd810187caf80ee38",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645527170961,
+          "stop" : 1645527177388,
+          "duration" : 6427
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a9a396f87a50260fd810187caf80ee38"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='ant-form-item-explain ant-form-item-explain-error']\"}\n  (Session info: chrome=98.0.4758.102)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'fv-az105-913', ip: '10.1.0.41', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-1028-azure', java.version: '1.8.0_292'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [fd3c92eae44f07a37c8b6ae19c4ea328, findElement {using=xpath, value=//div[@class='ant-form-item-explain ant-form-item-explain-error']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.AvsF4Q}, goog:chromeOptions: {debuggerAddress: localhost:37747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37747/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: fd3c92eae44f07a37c8b6ae19c4ea328",
+      "children" : [ {
+        "name" : "TUA-178",
+        "uid" : "8c76280113f0f1bb",
+        "parentUid" : "c525baa5b72edf47b769512f81930f65",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645527212112,
+          "stop" : 1645527233127,
+          "duration" : 21015
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfЫ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfъ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfэ, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfü, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfö, sfadsfadsfasdfasdfasfsdfadfasdffefewfwefwfä]" ]
+      } ],
+      "uid" : "c525baa5b72edf47b769512f81930f65"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "The following asserts failed:\n\texpected [400] but found [500],\n\texpected [categories must not be empty] but found [Internal Server Error],\n\texpected [400] but found [500],\n\texpected [description must not be empty] but found [Internal Server Error],\n\texpected [400] but found [200],\n\texpected [contacts must not be empty] but found [null]",
+      "children" : [ {
+        "name" : "TUA-405",
+        "uid" : "8f4614a4cf139431",
+        "parentUid" : "0f1afb5282055acdb48f63753e2580f7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1645527009831,
+          "stop" : 1645527014594,
+          "duration" : 4763
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0f1afb5282055acdb48f63753e2580f7"
+    }, {
+      "name" : "The following asserts failed:\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не може містити літери] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Телефон не відповідає вказаному формату] but found [],\n\texpected [Будь ласка введіть Ваш номер телефону] but found []",
+      "children" : [ {
+        "name" : "Runs Cucumber Scenarios",
+        "uid" : "f12a18084e05a904",
+        "parentUid" : "c6347a349ff9ff312abfd01e40fe0748",
+        "status" : "failed",
+        "time" : {
+          "start" : 1645527045574,
+          "stop" : 1645527116019,
+          "duration" : 70445
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "\"This test case verify that error messages are shown and 'Зберегти зміни' button becomes disabled while entering invalid data for the 'Телефон' field\"", "\"Optional[Verify that error messages are shown and 'Зберегти зміни' button becomes disabled]\"" ]
+      } ],
+      "uid" : "c6347a349ff9ff312abfd01e40fe0748"
+    }, {
+      "name" : "expected [404] but found [401]",
+      "children" : [ {
+        "name" : "TUA-419",
+        "uid" : "e16980285810e3fc",
+        "parentUid" : "b536eef98b4b92ad94f63ef178992a3a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1645527063338,
+          "stop" : 1645527063972,
+          "duration" : 634
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b536eef98b4b92ad94f63ef178992a3a"
+    }, {
+      "name" : "expected [4] but found [5]",
+      "children" : [ {
+        "name" : "[API banner] Get list of all banners",
+        "uid" : "4a78d90d91ba945f",
+        "parentUid" : "ac4f2fea14b736fd895abb7bd4fe53d7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1645527075083,
+          "stop" : 1645527075719,
+          "duration" : 636
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ac4f2fea14b736fd895abb7bd4fe53d7"
+    }, {
+      "name" : "The following asserts failed:\n\texpected [] but found [Ім'я не може містити цифри],\n\texpected [] but found [Ім'я повинно починатися і закінчуватися літерою],\n\texpected [] but found [Ім'я не може містити спеціальні символи],\n\texpected [] but found [Ім'я повинно починатися і закінчуватися літерою],\n\texpected [] but found [Ім'я повинно починатися і закінчуватися літерою],\n\texpected [] but found [Ім'я не може містити спеціальні символи],\n\texpected [] but found [Ім'я повинно починатися і закінчуватися літерою],\n\texpected [] but found [Ім'я не може містити спеціальні символи],\n\texpected [] but found [Ім'я не може містити спеціальні символи],\n\texpected [] but found [Ім'я не може містити спеціальні символи],\n\texpected [] but found [Ім'я не може містити спеціальні символи],\n\texpected [] but found [Ім'я не може містити спеціальні символи],\n\texpected [] but found [Ім'я не може містити спеціальні символи],\n\texpected [] but found [Ім'я не може містити спеціальні символи],\n\texpected [] but found [Ім'я не може містити спеціальні символи],\n\texpected [] but found [Ім'я не може містити спеціальні символи],\n\texpected [] but found [Ім'я не може містити спеціальні символи],\n\texpected [] but found [Будь ласка введіть Ваше ім'я]",
+      "children" : [ {
+        "name" : "TUA-328",
+        "uid" : "d8b1bf5e72b66134",
+        "parentUid" : "905c272c42ea01de8658c357ea48a7e5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1645527104126,
+          "stop" : 1645527145321,
+          "duration" : 41195
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "[AfBbCcDdEeFfGgHhIiJjKkLlMmNn, Ім'я не може містити більше, ніж 25 символів, AfBbCcDdEeFfGgHhIiJjKkLlMm, Ім'я не може містити більше, ніж 25 символів, , Будь ласка введіть Ваше ім'я, 1Admin, Ім'я не може містити цифри, 2Admin, Ім'я не може містити цифри, 3Admin, Ім'я не може містити цифри, 4Admin, Ім'я не може містити цифри, -Name, Ім'я повинно починатися і закінчуватися літерою, < Name>, Ім'я не може містити спеціальні символи, 'Name, Ім'я повинно починатися і закінчуватися літерою, Name-, Ім'я повинно починатися і закінчуватися літерою, <Name >, Ім'я не може містити спеціальні символи, Name', Ім'я повинно починатися і закінчуватися літерою, !Admin, Ім'я не може містити спеціальні символи, @Admin, Ім'я не може містити спеціальні символи, #Admin, Ім'я не може містити спеціальні символи, $Admin, Ім'я не може містити спеціальні символи, %Admin, Ім'я не може містити спеціальні символи, ^Admin, Ім'я не може містити спеціальні символи, &Admin, Ім'я не може містити спеціальні символи, *Admin, Ім'я не може містити спеціальні символи, (Admin, Ім'я не може містити спеціальні символи, _Admin, Ім'я не може містити спеціальні символи, +Admin, Ім'я не може містити спеціальні символи, .Admin, Ім'я не може містити спеціальні символи, :Admin, Ім'я не може містити спеціальні символи, , Будь ласка введіть Ваше ім'я]" ]
+      } ],
+      "uid" : "905c272c42ea01de8658c357ea48a7e5"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
