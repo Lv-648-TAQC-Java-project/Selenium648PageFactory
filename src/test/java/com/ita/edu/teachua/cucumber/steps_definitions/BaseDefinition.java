@@ -115,7 +115,50 @@ public class BaseDefinition {
         return validCoordinates;
     }
     @ParameterType("([^\"]*)")
+    public String errorLastName (String errorLastName ) {
+        return errorLastName ;
+    }
+    @ParameterType("([^\"]*)")
+    public String lastName (String lastName ) {
+        return lastName ;
+    }
+    @ParameterType("([^\"]*)")
+    public String errorFirstName(String errorFirstName) {
+        return errorFirstName;
+    }
+    @ParameterType("([^\"]*)")
+    public String firstName(String firstName) {
+        return firstName;
+    }
+    @ParameterType("([^\"]*)")
+    public String errorEmail(String errorEmail) {
+        return errorEmail;
+    }
+    @ParameterType("([^\"]*)")
+    public String errorPhone(String errorPhone) {
+        return errorPhone;
+    }
+    @ParameterType("([^\"]*)")
+    public String errorPassword(String errorPassword) {
+        return errorPassword;
+    }
+    @ParameterType("([^\"]*)")
+    public String password(String password) {
+        return password;
+    }
+    @ParameterType("([^\"]*)")
+    public String errorConfirmPassword(String errorConfirmPassword) {
+        return errorConfirmPassword;
+    }
+    @ParameterType("([^\"]*)")
+    public String confirmPassword(String confirmPassword) {
+        return confirmPassword;
+    }
+    @ParameterType("([^\"]*)")
     public String validPhoneNumber(String validPhoneNumber) {
         return validPhoneNumber;
     }
+
+
+
 }

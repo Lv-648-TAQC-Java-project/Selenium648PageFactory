@@ -8,7 +8,9 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.locators.header_locators.RegisterPopUpComponentLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import io.qameta.allure.Step;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
@@ -29,6 +31,19 @@ public class RegisterPopUpComponent extends BasePage {
     private Button registerButton;
     @FindBy(how = How.XPATH, using = RegisterPopUpComponentLocators.CLOSE_BUTTON_XPATH)
     private Button closeButton;
+    @FindBy(how = How.XPATH, using = RegisterPopUpComponentLocators.ERROR_MASSAGE_LAST_NAME_FIELD)
+    private Button errorMassageLastNameField;
+    @FindBy(how = How.XPATH, using = RegisterPopUpComponentLocators.ERROR_MASSAGE_FIRST_NAME_FIELD)
+    private Button errorMassageFirstNameField;
+    @FindBy(how = How.XPATH, using = RegisterPopUpComponentLocators.ERROR_MASSAGE_PHONE_FIELD)
+    private Button errorMassagePhoneField;
+    @FindBy(how = How.XPATH, using = RegisterPopUpComponentLocators.ERROR_MASSAGE_EMAIL_FIELD)
+    private Button errorMassageEmailField;
+    @FindBy(how = How.XPATH, using = RegisterPopUpComponentLocators.ERROR_MASSAGE_PASSWORD_FIELD)
+    private Button errorMassagePasswordField;
+    @FindBy(how = How.XPATH, using = RegisterPopUpComponentLocators.ERROR_MASSAGE_CONFIRM_PASSWORD_FIELD)
+    private Button errorMassageConfirmPasswordField;
+
 
     public RegisterPopUpComponent(WebDriver driver) {
         super(driver);
@@ -133,24 +148,34 @@ public class RegisterPopUpComponent extends BasePage {
         return this;
     }
 
-    public RegisterPopUpComponent clearFirstNameField() {
-        firstName.clear();
-        return this;
+    public void clearFirstNameField() {
+        firstName.click();
+        String del = Keys.chord(Keys.CONTROL, "a") + Keys.DELETE;
+        firstName.sendKeys(del);
     }
 
-    public RegisterPopUpComponent clearEmailField() {
-        email.clear();
-        return this;
+    public void clearEmailField() {
+        email.click();
+        String del = Keys.chord(Keys.CONTROL, "a") + Keys.DELETE;
+        email.sendKeys(del);
     }
 
-    public RegisterPopUpComponent clearPasswordField() {
-        password.clear();
-        return this;
+    public void clearPhoneField() {
+        phoneNumber.click();
+        String del = Keys.chord(Keys.CONTROL, "a") + Keys.DELETE;
+        phoneNumber.sendKeys(del);
     }
 
-    public RegisterPopUpComponent clearPasswordConfirmField() {
-        passwordConfirm.clear();
-        return this;
+    public void clearPasswordField() {
+        password.click();
+        String del = Keys.chord(Keys.CONTROL, "a") + Keys.DELETE;
+        password.sendKeys(del);
+    }
+
+    public void clearPasswordConfirmField() {
+        passwordConfirm.click();
+        String del = Keys.chord(Keys.CONTROL, "a") + Keys.DELETE;
+        passwordConfirm.sendKeys(del);
     }
 
     @Step("Click close button")
@@ -159,10 +184,13 @@ public class RegisterPopUpComponent extends BasePage {
         return new HeaderPage(driver);
     }
 
-    public RegisterPopUpComponent clearLastNameField() {
-        lastName.clear();
-        return this;
+    public void clearLastNameField() {
+        lastName.click();
+            String del = Keys.chord(Keys.CONTROL, "a") + Keys.DELETE;
+        lastName.sendKeys(del);
     }
+
+
 
     @Step("Get text from field (last name)")
     public String getLastNameText() {
@@ -188,6 +216,37 @@ public class RegisterPopUpComponent extends BasePage {
     public String getPhoneNumberText() {
         return phoneNumber.getText();
     }
+
+    @Step("Get error massage from last name field")
+    public String getErrorMassageLastNameField() {
+        return errorMassageLastNameField.getText();
+    }
+
+    @Step("Get error massage from first name field")
+    public String getErrorMassageFirstNameField() {
+        return errorMassageFirstNameField.getText();
+    }
+
+    @Step("Get error massage from phone field")
+    public String getErrorMassagePhoneField() {
+        return errorMassagePhoneField.getText();
+    }
+
+    @Step("Get error massage from email field")
+    public String getErrorMassageEmailField() {
+        return errorMassageEmailField.getText();
+    }
+
+    @Step("Get error massage from password field")
+    public String getErrorMassagePasswordField() {
+        return errorMassagePasswordField.getText();
+    }
+
+    @Step("Get error massage from confirm password field")
+    public String getErrorMassageConfirmPasswordField() {
+        return errorMassageConfirmPasswordField.getText();
+    }
+
 
     public RegisterPopUpComponent getRegisterPopUpComponent(){
         return this;
