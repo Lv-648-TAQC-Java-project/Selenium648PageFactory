@@ -3,16 +3,13 @@ package com.ita.edu.teachua.ui.pages;
 import com.ita.edu.teachua.ui.pages.aboutuspage.AboutUsPage;
 import com.ita.edu.teachua.ui.pages.administration_pages.BannerPage;
 import com.ita.edu.teachua.ui.pages.advanced_search.AdvancedSearchPage;
-import com.ita.edu.teachua.ui.pages.challenge_page.ChallengePage;
+import com.ita.edu.teachua.ui.pages.challenge_page.AddChallengePage;
 import com.ita.edu.teachua.ui.pages.clubs_page.ClubsPage;
 import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
 import com.ita.edu.teachua.ui.pages.main_page.MainPage;
-import com.ita.edu.teachua.ui.pages.profile_page.ProfileEditPopUpComponent;
 import com.ita.edu.teachua.ui.pages.profile_page.ProfilePage;
 import com.ita.edu.teachua.ui.pages.services_page.ServicesPage;
 import org.openqa.selenium.WebDriver;
-
-import java.lang.reflect.InvocationTargetException;
 
 public class AllPages {
     private WebDriver driver;
@@ -22,7 +19,7 @@ public class AllPages {
     private ProfilePage profilePage;
     private ServicesPage servicesPage;
     private ClubsPage clubsPage;
-    private ChallengePage challengePage;
+    private AddChallengePage challengePage;
     private AdvancedSearchPage advancedSearchPage;
     private BannerPage bannerPage;
     private AboutUsPage aboutUsPage;
@@ -56,8 +53,8 @@ public class AllPages {
         return clubsPage == null ? new ClubsPage(driver) : clubsPage;
     }
 
-    public ChallengePage getChallengePage() {
-        return challengePage == null ? new ChallengePage(driver) : challengePage;
+    public AddChallengePage getChallengePage() {
+        return challengePage == null ? new AddChallengePage(driver) : challengePage;
     }
 
     public AdvancedSearchPage getAdvancedSearchPage() {
@@ -96,7 +93,7 @@ public class AllPages {
         this.clubsPage = clubsPage;
     }
 
-    public void setChallengePage(ChallengePage challengePage) {
+    public void setChallengePage(AddChallengePage challengePage) {
         this.challengePage = challengePage;
     }
 
