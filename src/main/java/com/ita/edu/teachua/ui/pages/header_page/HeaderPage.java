@@ -5,6 +5,7 @@ import com.ita.edu.teachua.ui.locators.header_locators.HeaderPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
