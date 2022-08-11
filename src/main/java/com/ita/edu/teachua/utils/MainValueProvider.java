@@ -148,4 +148,16 @@ public class MainValueProvider {
         return properties.getProperty("deleteFileClientURL");
     }
 
+    public String getJDBCLogin() {
+        return properties.getProperty("jdbc_login");
+    }
+
+    public String getJDBCPassword() {
+        return properties.getProperty("admin_password");
+    }
+
+    public String getJDBCUrl() {
+        return properties.getProperty("jdbc_url");
+    }
+
 }
