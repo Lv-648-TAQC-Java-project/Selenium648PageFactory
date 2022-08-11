@@ -1,5 +1,6 @@
 package com.ita.edu.teachua.utils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -44,5 +45,8 @@ public class TestValueProvider {
                 Boolean.parseBoolean(System.getenv("TEST_TEACH_UA_HEADLESS_MODE"));
     }
 
+    public File getImage() {
+        return new File("src/test/resources/sunFlowerImage.png");
+
+    }
 }
-//

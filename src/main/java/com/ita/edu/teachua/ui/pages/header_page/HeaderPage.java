@@ -4,6 +4,7 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Dropdown;
 import com.ita.edu.teachua.ui.locators.header_locators.HeaderPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
@@ -32,6 +33,7 @@ public class HeaderPage extends BasePage {
 
     @Step("Click on dropdown for authorized user in top right corner of header")
     public OwnerDropdownComponent clickOnOwnerDropdown() {
+        waitUntilElementToBeClickable(By.cssSelector(HeaderPageLocators.OWNER_DROPDOWN_CSS_SELECTOR),10000);
         ownerDropdown.click();
         return new OwnerDropdownComponent(driver);
     }

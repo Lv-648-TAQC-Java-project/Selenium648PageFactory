@@ -1,11 +1,15 @@
 package com.ita.edu.teachua.ui.pages.header_page;
 
 import com.ita.edu.teachua.ui.elements.custom_elements.Button;
+import com.ita.edu.teachua.ui.locators.ChallengePageLocators.ChallengePageLocators;
 import com.ita.edu.teachua.ui.locators.header_locators.AdministrationDropdownFromOwnerComponentLocators;
 import com.ita.edu.teachua.ui.pages.administration_pages.BannerPage;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.ui.pages.challenge_page.AddChallengePage;
+import com.ita.edu.teachua.ui.pages.challenge_page.ChallengePage;
+import com.ita.edu.teachua.ui.pages.challenge_page.ChallengesPage;
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -27,9 +31,10 @@ public class AdministrationDropdownComponent extends BasePage {
     }
 
     @Step("Click on 'Challenges' button")
-    public AddChallengePage clickOnChallengesButton() {
+    public ChallengesPage clickOnChallengesButton() {
+        waitUntilElementToBeClickable(By.xpath(AdministrationDropdownFromOwnerComponentLocators.CHALLENGES_BUTTON),10000);
         challengeButton.click();
-        return new AddChallengePage(driver);
+        return new ChallengesPage(driver);
     }
 
     public AdministrationDropdownComponent getAdministrationDropdownComponent(){
