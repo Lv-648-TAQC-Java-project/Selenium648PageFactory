@@ -8,8 +8,9 @@ import java.util.List;
 @Data
 public class ChallengesEntity {
 
-    public static final String SELECT_ALL = "SELECT * FROM challenges WHERE sort_number = '%s%d'";
+    public static final String SELECT_ALL = "SELECT * FROM challenges";
     public static final String SELECT_NAME_WHERE_ID = "SELECT name FROM challenges WHERE id = '%d'";
+    public static final String DELETE_FROM_CHALLENGES_WHERE_NAME = "DELETE FROM challenges WHERE name = '%s' ";
 
 
     private Long id;

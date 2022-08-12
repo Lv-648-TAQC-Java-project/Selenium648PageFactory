@@ -9,15 +9,16 @@ public class ChallengesServices {
     private final ChallengesDAO challengesDAO;
 
     public ChallengesServices() {
-
         challengesDAO = new ChallengesDAO();
     }
-    public List<ChallengesEntity> getAll(String getsortnumber, int getsortnumberint) {
-
-        return challengesDAO.selectByNamePictureSortNumberTitle(getsortnumber,getsortnumberint);
+    public List<ChallengesEntity> getAll() {
+        return challengesDAO.selectAll();
     }
     public List<ChallengesEntity> getMameWhereId(long getsortnumberint) {
-
         return challengesDAO.selectByNameWhereId(getsortnumberint);
+    }
+
+    public void deleteChallengesByName(String name) {
+        challengesDAO.deleteByName(name);
     }
 }

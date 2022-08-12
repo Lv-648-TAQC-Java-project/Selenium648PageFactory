@@ -4,12 +4,15 @@ import com.ita.edu.teachua.ui.elements.custom_elements.Button;
 import com.ita.edu.teachua.ui.elements.custom_elements.Input;
 import com.ita.edu.teachua.ui.locators.ChallengePageLocators.ChallengePageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import com.ita.edu.teachua.utils.jdbc.entity.ChallengesEntity;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AddChallengePage extends BasePage implements ChallengePage {
 
@@ -108,6 +111,11 @@ public class AddChallengePage extends BasePage implements ChallengePage {
         word = word + "a";
         }
         return word;
+    }
+
+    @Step("Verify that current list contain the name")
+    public boolean findName(List<ChallengesEntity> list , String name){
+          return list.contains(name);
     }
 
 
