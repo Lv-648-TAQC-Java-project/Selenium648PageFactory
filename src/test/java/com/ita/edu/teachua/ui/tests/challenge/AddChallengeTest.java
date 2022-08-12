@@ -29,7 +29,7 @@ public class AddChallengeTest extends TestRunner {
                 .fillSequenceNumberField("155")
                 .fillNameField(validChallengeName)
                 .fillTitleField("dksfkdjfskldf")
-                .fillDescriptionField("sdfs;dfs;df;sdf")
+                .fillDescriptionField("qwertyuiopasdghjklzxcvbnmgqwerсtghyujkiol")
                 .addImage(testValueProvider.getImage())
                 .clickSaveChallengeButton();
         ChallengesServices challengesServices = new ChallengesServices();
@@ -52,7 +52,7 @@ public class AddChallengeTest extends TestRunner {
                 .fillSequenceNumberField("0,3")
                 .fillNameField("ваууууу")
                 .fillTitleField("dksfkdjfskldf")
-                .fillDescriptionField("sdfs;dfs;df;sdf")
+                .fillDescriptionField("qwertyuiopasdghjklzxcvbnmgqwerсtghyujkiol")
                 .addImage(testValueProvider.getImage())
                 .clickSaveChallengeButton();
         softAssert.assertEquals(addChallengePage.getErrorMassage(), "Це поле може містити лише унікальні цифри");
@@ -78,7 +78,7 @@ public class AddChallengeTest extends TestRunner {
                 .fillSequenceNumberField("166")
                 .fillNameField("")
                 .fillTitleField("dksfkdjfskldf")
-                .fillDescriptionField("sdfs;dfs;df;sdf")
+                .fillDescriptionField("qwertyuiopasdghjklzxcvbnmgqwerсtghyujkiol")
                 .addImage(testValueProvider.getImage())
                 .clickSaveChallengeButton();
         softAssert.assertEquals(addChallengePage.getErrorMassage(), "Поле ‘Назва Челенджу не може бути порожнім");
