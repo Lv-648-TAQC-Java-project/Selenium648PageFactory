@@ -25,7 +25,7 @@ public class AllPages {
     private AboutUsPage aboutUsPage;
 
 
-    public AllPages(WebDriver driver){
+    public AllPages(WebDriver driver) {
         this.driver = driver;
     }
 
