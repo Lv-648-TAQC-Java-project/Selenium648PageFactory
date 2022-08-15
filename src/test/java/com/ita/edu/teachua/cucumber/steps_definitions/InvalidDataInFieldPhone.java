@@ -4,9 +4,6 @@ import com.ita.edu.teachua.ui.pages.header_page.OwnerDropdownComponent;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class InvalidDataInFieldPhone {
@@ -23,7 +20,7 @@ public class InvalidDataInFieldPhone {
 
     @Then("Click on owner profile popup")
     public void clickOnOwnerProfilePopup() {
-        ownerDropdownComponent=pageContext.getAllPages().getHeaderPage().clickOnOwnerDropdown();
+        ownerDropdownComponent=pageContext.getAllPages().getHeaderPage().goToOnOwnerDropdown();
     }
 
     @And("Click on profile")

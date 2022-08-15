@@ -27,7 +27,7 @@ public class CannotAddLocation  {
 
     @Then("Go to the Додати центр")
     public void goToTheДодатиЦентр() {
-        pageContext.getAllPages().getHeaderPage().clickOnOwnerDropdown().clickOnAddCenterButton();
+        pageContext.getAllPages().getHeaderPage().goToOnOwnerDropdown().clickOnAddCenterButton();
     }
 
     @And("Click on Додати локацію button")

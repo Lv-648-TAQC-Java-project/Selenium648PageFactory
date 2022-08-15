@@ -5,9 +5,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.testng.asserts.SoftAssert;
 
-
-import java.lang.reflect.InvocationTargetException;
-
 public class CanAddLocation {
 
     private  BaseDefinition baseDef;
@@ -26,7 +23,7 @@ public class CanAddLocation {
     @Then("Go to the Мій профіль")
     public void goToTheМійПрофіль() {
         pageContext.getAllPages().getHeaderPage()
-                .clickOnOwnerDropdown()
+                .goToOnOwnerDropdown()
                 .clickOnProfile();
 
     }

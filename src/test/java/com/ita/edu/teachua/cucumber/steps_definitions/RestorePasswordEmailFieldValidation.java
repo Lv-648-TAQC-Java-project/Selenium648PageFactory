@@ -17,7 +17,7 @@ public class RestorePasswordEmailFieldValidation {
 
     @Given("Click on Guest DropDown icon")
     public void clickOnGuestDropDownIcon() {
-        pageContext.getAllPages().getHeaderPage().clickOnGuestDropdown();
+        pageContext.getAllPages().getHeaderPage().goToOnGuestDropdown();
     }
 
     @And("Select Увійти option")

@@ -22,7 +22,7 @@ public class AddChallengeTest extends TestRunner {
         SoftAssert softAssert = new SoftAssert();
 
         headerPage.authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
-                .clickOnOwnerDropdown()
+                .goToOnOwnerDropdown()
                 .clickOnAdministrationButton()
                 .clickOnChallengesButton()
                 .clickAddChallengeButton()
@@ -45,7 +45,7 @@ public class AddChallengeTest extends TestRunner {
         HeaderPage headerPage = new HeaderPage(driver);
         AddChallengePage addChallengePage = new AddChallengePage(driver);
         headerPage.authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
-                .clickOnOwnerDropdown()
+                .goToOnOwnerDropdown()
                 .clickOnAdministrationButton()
                 .clickOnChallengesButton()
                 .clickAddChallengeButton()
@@ -71,7 +71,7 @@ public class AddChallengeTest extends TestRunner {
         AddChallengePage addChallengePage = new AddChallengePage(driver);
 
         headerPage.authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
-                .clickOnOwnerDropdown()
+                .goToOnOwnerDropdown()
                 .clickOnAdministrationButton()
                 .clickOnChallengesButton()
                 .clickAddChallengeButton()
@@ -97,7 +97,7 @@ public class AddChallengeTest extends TestRunner {
         AddChallengePage addChallengePage = new AddChallengePage(driver);
 
         headerPage.authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
-                .clickOnOwnerDropdown()
+                .goToOnOwnerDropdown()
                 .clickOnAdministrationButton()
                 .clickOnChallengesButton()
                 .clickAddChallengeButton()
@@ -121,7 +121,7 @@ public class AddChallengeTest extends TestRunner {
         HeaderPage headerPage = new HeaderPage(driver);
         AddChallengePage addChallengePage = new AddChallengePage(driver);
         headerPage.authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
-                .clickOnOwnerDropdown()
+                .goToOnOwnerDropdown()
                 .clickOnAdministrationButton()
                 .clickOnChallengesButton()
                 .clickAddChallengeButton()
