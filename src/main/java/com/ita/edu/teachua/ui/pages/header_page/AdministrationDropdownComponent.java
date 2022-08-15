@@ -31,7 +31,7 @@ public class AdministrationDropdownComponent extends BasePage {
     }
 
     @Step("Click on 'Challenges' button")
-    public ChallengesPage clickOnChallengesButton() {
+    public ChallengesPage goToChallengesPage() {
         waitUntilElementToBeClickable(By.xpath(AdministrationDropdownFromOwnerComponentLocators.CHALLENGES_BUTTON),10000);
         challengeButton.click();
         return new ChallengesPage(driver);

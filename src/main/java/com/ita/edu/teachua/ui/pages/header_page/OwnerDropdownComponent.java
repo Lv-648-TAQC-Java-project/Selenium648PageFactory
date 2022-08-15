@@ -39,7 +39,7 @@ public class OwnerDropdownComponent extends BasePage {
     }
 
     @Step("Click on 'Адміністрування' button in dropdown")
-    public AdministrationDropdownComponent clickOnAdministrationButton() {
+    public AdministrationDropdownComponent goToAdministrationDropDown() {
         sleep(1500);
         administrationButton.click();
         //sleep(200);

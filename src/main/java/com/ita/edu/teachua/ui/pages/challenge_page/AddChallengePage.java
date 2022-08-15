@@ -6,6 +6,7 @@ import com.ita.edu.teachua.ui.locators.ChallengePageLocators.ChallengePageLocato
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.utils.jdbc.entity.ChallengesEntity;
 import io.qameta.allure.Step;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -46,7 +47,9 @@ public class AddChallengePage extends BasePage implements ChallengePage {
 
     @Step("Clear sequence number field")
     public AddChallengePage clearSequenceNumberField(){
-        sequenceNumberField.clear();
+        sequenceNumberField.click();
+        String del = Keys.chord(Keys.CONTROL,"a") + Keys.DELETE;
+        sequenceNumberField.sendKeys(del);
         return this;
     }
 
@@ -95,7 +98,7 @@ public class AddChallengePage extends BasePage implements ChallengePage {
     @Step("Add image")
     public AddChallengePage addImage(File image){
         inputPhoto.sendKeys(image.getAbsolutePath());
-        sleep(3000);
+        sleep(2000);
         return this;
     }
 

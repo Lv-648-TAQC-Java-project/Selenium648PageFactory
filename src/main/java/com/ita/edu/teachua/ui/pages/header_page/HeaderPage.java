@@ -23,7 +23,7 @@ public class HeaderPage extends BasePage {
 
     @Step("Click on guest dropdown")
     public GuestDropdownComponent goToGuestDropdown() {
-        waitUntilElementToBeClickable(By.cssSelector(HeaderPageLocators.GUEST_DROPDOWN_XPATH),10000);
+        waitUntilElementToBeClickable(By.cssSelector(HeaderPageLocators.OWNER_DROPDOWN_CSS_SELECTOR),10);
         guestDropdown.click();
         sleep(200);
         return new GuestDropdownComponent(driver);
@@ -31,7 +31,7 @@ public class HeaderPage extends BasePage {
 
     @Step("Click on dropdown for authorized user in top right corner of header")
     public OwnerDropdownComponent goToOwnerDropdown() {
-        waitUntilElementToBeClickable(By.cssSelector(HeaderPageLocators.OWNER_DROPDOWN_CSS_SELECTOR),10000);
+        waitUntilElementToBeClickable(By.cssSelector(HeaderPageLocators.OWNER_DROPDOWN_CSS_SELECTOR),10);
         ownerDropdown.click();
         return new OwnerDropdownComponent(driver);
     }
