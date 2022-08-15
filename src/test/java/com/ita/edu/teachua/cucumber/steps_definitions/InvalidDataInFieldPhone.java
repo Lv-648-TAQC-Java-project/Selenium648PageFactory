@@ -20,7 +20,7 @@ public class InvalidDataInFieldPhone {
 
     @Then("Click on owner profile popup")
     public void clickOnOwnerProfilePopup() {
-        ownerDropdownComponent=pageContext.getAllPages().getHeaderPage().goToOnOwnerDropdown();
+        ownerDropdownComponent=pageContext.getAllPages().getHeaderPage().goToOwnerDropdown();
     }
 
     @And("Click on profile")

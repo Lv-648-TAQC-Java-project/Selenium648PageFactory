@@ -21,7 +21,7 @@ public class AddLocationWithValidDataFillingAllFields {
     public void goToTheДодатиЦентр() {
         pageContext.getAllPages()
                 .getHeaderPage()
-                .goToOnOwnerDropdown()
+                .goToOwnerDropdown()
                 .clickOnAddCenterButton();
     }
 

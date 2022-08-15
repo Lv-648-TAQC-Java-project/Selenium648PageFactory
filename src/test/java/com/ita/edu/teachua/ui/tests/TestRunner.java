@@ -1,5 +1,8 @@
 package com.ita.edu.teachua.ui.tests;
 
+import com.ita.edu.teachua.ui.pages.AllPages;
+import com.ita.edu.teachua.ui.pages.challenge_page.AddChallengePage;
+import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
 import com.ita.edu.teachua.utils.Retry;
 import com.ita.edu.teachua.utils.TestNgListeners;
 import com.ita.edu.teachua.utils.TestValueProvider;
@@ -14,6 +17,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
+import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -23,6 +27,11 @@ public class TestRunner {
 
     protected static TestValueProvider testValueProvider;
     protected WebDriver driver;
+
+    protected HeaderPage runApplication(){
+        return new HeaderPage(driver);
+    }
+
 
     @BeforeSuite(alwaysRun = true)
     public void beforeSuite(ITestContext context) throws IOException {

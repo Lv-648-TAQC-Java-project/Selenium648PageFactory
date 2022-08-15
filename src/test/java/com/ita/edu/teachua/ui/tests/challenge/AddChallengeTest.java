@@ -17,12 +17,11 @@ public class AddChallengeTest extends TestRunner {
 
     @Test(description = "Verify all fields on challenge page with valid data")
     public void canCreateChallengeWithValidData() {
-        HeaderPage headerPage = new HeaderPage(driver);
         AddChallengePage addChallengePage = new AddChallengePage(driver);
         SoftAssert softAssert = new SoftAssert();
-
+        HeaderPage headerPage = new HeaderPage(driver);
         headerPage.authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
-                .goToOnOwnerDropdown()
+                .goToOwnerDropdown()
                 .clickOnAdministrationButton()
                 .clickOnChallengesButton()
                 .clickAddChallengeButton()
@@ -42,10 +41,9 @@ public class AddChallengeTest extends TestRunner {
     @Test(description = "Verify sequence number fields on challenge page with invalid data")
     public void verifySequenceNumberFieldsWithInvalidData() {
         SoftAssert softAssert = new SoftAssert();
-        HeaderPage headerPage = new HeaderPage(driver);
         AddChallengePage addChallengePage = new AddChallengePage(driver);
-        headerPage.authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
-                .goToOnOwnerDropdown()
+        runApplication().authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
+                .goToOwnerDropdown()
                 .clickOnAdministrationButton()
                 .clickOnChallengesButton()
                 .clickAddChallengeButton()
@@ -67,11 +65,10 @@ public class AddChallengeTest extends TestRunner {
     @Test(description = "Verify name fields on challenge page with invalid data")
     public void verifyNameFieldsWithInvalidData() {
         SoftAssert softAssert = new SoftAssert();
-        HeaderPage headerPage = new HeaderPage(driver);
         AddChallengePage addChallengePage = new AddChallengePage(driver);
 
-        headerPage.authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
-                .goToOnOwnerDropdown()
+        runApplication().authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
+                .goToOwnerDropdown()
                 .clickOnAdministrationButton()
                 .clickOnChallengesButton()
                 .clickAddChallengeButton()
@@ -93,11 +90,10 @@ public class AddChallengeTest extends TestRunner {
     @Test(description = "Verify description fields on challenge page with invalid data")
     public void verifyDescriptionFieldsWithInvalidData() {
         SoftAssert softAssert = new SoftAssert();
-        HeaderPage headerPage = new HeaderPage(driver);
         AddChallengePage addChallengePage = new AddChallengePage(driver);
 
-        headerPage.authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
-                .goToOnOwnerDropdown()
+        runApplication().authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
+                .goToOwnerDropdown()
                 .clickOnAdministrationButton()
                 .clickOnChallengesButton()
                 .clickAddChallengeButton()
@@ -118,10 +114,9 @@ public class AddChallengeTest extends TestRunner {
 
     @Test(description = "Verify photo fields on challenge page with invalid data")
     public void verifyPhotoFieldsWithInvalidData() {
-        HeaderPage headerPage = new HeaderPage(driver);
         AddChallengePage addChallengePage = new AddChallengePage(driver);
-        headerPage.authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
-                .goToOnOwnerDropdown()
+        runApplication().authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
+                .goToOwnerDropdown()
                 .clickOnAdministrationButton()
                 .clickOnChallengesButton()
                 .clickAddChallengeButton()

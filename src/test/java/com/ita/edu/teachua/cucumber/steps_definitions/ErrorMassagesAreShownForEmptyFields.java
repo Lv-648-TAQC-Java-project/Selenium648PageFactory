@@ -19,7 +19,7 @@ public class ErrorMassagesAreShownForEmptyFields {
 
     @Given("Go to registration page")
     public void goToRegistrationPage(){
-        pageContext.getAllPages().getHeaderPage().goToOnGuestDropdown().clickOnRegisterButton()
+        pageContext.getAllPages().getHeaderPage().goToGuestDropdown().clickOnRegisterButton()
                 .getRegisterPopUpComponent();
 
     }

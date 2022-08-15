@@ -16,7 +16,7 @@ public class RestorePasswordViaGmailApiTest extends TestRunner {
     @Test(description = "TUA-318", enabled=false)
     public void VerifyNewPasswordValidationWhenRestoringPasswordViaForgotPassword(){
         HeaderPage header = new HeaderPage(driver);
-        header.goToOnGuestDropdown()
+        header.goToGuestDropdown()
                 .clickOnLoginButton()
                 .clickOnForgotPasswordButton()
                 .inputEmail("speak.ukrainian.atqc.test@gmail.com")
@@ -39,7 +39,7 @@ public class RestorePasswordViaGmailApiTest extends TestRunner {
     public void testPasswordRecovery() {
         HeaderPage header = new HeaderPage(driver);
         RestoringPasswordFinishPopUpComponent restoringPassword = new RestoringPasswordFinishPopUpComponent(driver);
-        header.goToOnGuestDropdown().clickOnLoginButton()
+        header.goToGuestDropdown().clickOnLoginButton()
                 .clickOnForgotPasswordButton()
                 .inputEmail("speak.ukrainian.atqc.test@gmail.com")
                 .clickOnRestore();
@@ -60,7 +60,7 @@ public class RestorePasswordViaGmailApiTest extends TestRunner {
     public void verifyErrorPasswordAndReenterPasswordNotEqualTest() {
         HeaderPage header = new HeaderPage(driver);
         RestoringPasswordFinishPopUpComponent restoringPassword = new RestoringPasswordFinishPopUpComponent(driver);
-        header.goToOnGuestDropdown()
+        header.goToGuestDropdown()
                 .clickOnLoginButton()
                 .clickOnForgotPasswordButton()
                 .inputEmail("speak.ukrainian.atqc.test@gmail.com")
@@ -83,7 +83,7 @@ public class RestorePasswordViaGmailApiTest extends TestRunner {
     public void restorePasswordWithInvalidEmailTest() {
         HeaderPage header = new HeaderPage(driver);
         RestoringBeginPopUpComponent restoringPopUp =new RestoringBeginPopUpComponent(driver);
-        header.goToOnGuestDropdown()
+        header.goToGuestDropdown()
                 .clickOnLoginButton()
                 .clickOnForgotPasswordButton()
 

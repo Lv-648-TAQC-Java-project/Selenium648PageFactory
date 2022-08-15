@@ -23,7 +23,7 @@ public class CanAddLocation {
     @Then("Go to the Мій профіль")
     public void goToTheМійПрофіль() {
         pageContext.getAllPages().getHeaderPage()
-                .goToOnOwnerDropdown()
+                .goToOwnerDropdown()
                 .clickOnProfile();
 
     }

@@ -25,7 +25,7 @@ public class UserCanChangeRole {
     @Then("Go to the My Profile")
     public void goToMyProfile() {
         pageContext.getAllPages().getHeaderPage()
-                .goToOnOwnerDropdown().clickOnProfile();
+                .goToOwnerDropdown().clickOnProfile();
     }
 
     @And("Check if user has role ROLE_MANAGER in profile")

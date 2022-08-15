@@ -20,7 +20,7 @@ public class RegistrationTest extends TestRunner {
     @Test(invocationCount = 1,description = "TUA-483")
     public void checkAlertsFieldsWhenEmpty() {
         HeaderPage profile = new HeaderPage(driver);
-        RegisterPopUpComponent registration = profile.goToOnGuestDropdown().clickOnRegisterButton();
+        RegisterPopUpComponent registration = profile.goToGuestDropdown().clickOnRegisterButton();
 
         Input lastName = registration.fillLastName("a" + Keys.BACK_SPACE).getLastNameField();
         Input firstName = registration.fillFirstName("a" + Keys.BACK_SPACE).getFirstNameField();

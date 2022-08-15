@@ -17,13 +17,12 @@ public class HeaderPage extends BasePage {
     private Dropdown ownerDropdown;
 
 
-
     public HeaderPage(WebDriver driver) {
         super(driver);
     }
 
     @Step("Click on guest dropdown")
-    public GuestDropdownComponent goToOnGuestDropdown() {
+    public GuestDropdownComponent goToGuestDropdown() {
         waitUntilElementToBeClickable(By.cssSelector(HeaderPageLocators.GUEST_DROPDOWN_XPATH),10000);
         guestDropdown.click();
         sleep(200);
@@ -31,7 +30,7 @@ public class HeaderPage extends BasePage {
     }
 
     @Step("Click on dropdown for authorized user in top right corner of header")
-    public OwnerDropdownComponent goToOnOwnerDropdown() {
+    public OwnerDropdownComponent goToOwnerDropdown() {
         waitUntilElementToBeClickable(By.cssSelector(HeaderPageLocators.OWNER_DROPDOWN_CSS_SELECTOR),10000);
         ownerDropdown.click();
         return new OwnerDropdownComponent(driver);
@@ -39,7 +38,7 @@ public class HeaderPage extends BasePage {
 
     @Step("Authorize user with valid email {email} and password {password}")
     public HeaderPage authorize(String email, String password) {
-        goToOnGuestDropdown().clickOnLoginButton().fillLoginFields(email, password);
+        goToGuestDropdown().clickOnLoginButton().fillLoginFields(email, password);
         //sleep(3000);
         return new HeaderPage(driver);
     }
