@@ -60,7 +60,7 @@ public class ChallengesDAO {
     public void deleteByName(String name) {
         Statement statement = ManagerDAO.getInstance().getStatement();
         try {
-            statement.executeQuery(String.format(ChallengesEntity.DELETE_FROM_CHALLENGES_WHERE_NAME));
+            statement.executeQuery(String.format(ChallengesEntity.DELETE_FROM_CHALLENGES_WHERE_NAME,name));
         } catch (SQLException e) {
             e.printStackTrace();
         }

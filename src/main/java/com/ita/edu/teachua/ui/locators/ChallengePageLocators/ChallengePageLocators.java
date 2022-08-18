@@ -9,7 +9,7 @@ public class ChallengePageLocators {
     public static final String ADD_CHALLENGE_PHOTO_FIELD = "//*[@class = \"ant-upload\" ]";
     public static final String ADD_CHALLENGE_SAVE_BUTTON = "//*[text() = \"Зберегти\" ]";
     public static final String ADD_CHALLENGE_INPUT_PHOTO_ID = "//*[@id=\"picture\"]";
-    public static final String ADD_CHALLENGE_ALERT_MASSAGE = "//*[@class=\"ant-message\"]";
+    public static final String ADD_CHALLENGE_MASSAGE = "//*[@class=\"ant-message\"]";
 
 
 }

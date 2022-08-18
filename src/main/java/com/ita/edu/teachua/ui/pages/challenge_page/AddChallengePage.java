@@ -6,13 +6,14 @@ import com.ita.edu.teachua.ui.locators.ChallengePageLocators.ChallengePageLocato
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
 import com.ita.edu.teachua.utils.jdbc.entity.ChallengesEntity;
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
 
 public class AddChallengePage extends BasePage implements ChallengePage {
@@ -31,8 +32,8 @@ public class AddChallengePage extends BasePage implements ChallengePage {
     private Button saveButton;
     @FindBy(how = How.XPATH, using = ChallengePageLocators.ADD_CHALLENGE_INPUT_PHOTO_ID)
     private Input inputPhoto;
-    @FindBy(how = How.XPATH, using = ChallengePageLocators.ADD_CHALLENGE_ALERT_MASSAGE)
-    private Input errorMassage;
+    @FindBy(how = How.XPATH, using = ChallengePageLocators.ADD_CHALLENGE_MASSAGE)
+    private WebElement massage;
 
 
     public AddChallengePage(WebDriver driver) {
@@ -79,7 +80,9 @@ public class AddChallengePage extends BasePage implements ChallengePage {
 
     @Step("Clear description field")
     public AddChallengePage clearDescriptionField(){
-        descriptionField.clear();
+        descriptionField.click();
+        String del = Keys.chord(Keys.CONTROL ,"a") + Keys.DELETE;
+        descriptionField.sendKeys(del);
         return this;
     }
 
@@ -103,8 +106,9 @@ public class AddChallengePage extends BasePage implements ChallengePage {
     }
 
     @Step("Get error massage")
-    public String getErrorMassage(){
-        return errorMassage.getText();
+    public String getMassage(){
+    waitUntilVisibilityOfElementLocated(By.xpath(ChallengePageLocators.ADD_CHALLENGE_MASSAGE),2);
+        return massage.getText();
     }
 
     @Step("Print numbers of symbols")
@@ -117,8 +121,14 @@ public class AddChallengePage extends BasePage implements ChallengePage {
     }
 
     @Step("Verify that current list contain the name")
-    public boolean findName(List<ChallengesEntity> list , String name){
-          return list.contains(name);
+    public boolean listContainName(List<ChallengesEntity> list , String name){
+        boolean result = false;
+        for (int i = 0; i < list.size(); i++ ) {
+           if (list.get(i).getName().equals(name) == true){
+               result = true;
+           }
+       }
+       return result;
     }
 
 
