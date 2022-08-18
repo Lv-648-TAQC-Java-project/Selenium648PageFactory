@@ -1,5 +1,6 @@
 package com.ita.edu.teachua.ui.tests.challenge;
 
+import com.ita.edu.teachua.testdata.ChallengeData;
 import com.ita.edu.teachua.ui.tests.TestRunner;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -8,9 +9,7 @@ import org.testng.asserts.SoftAssert;
 
 public class AddChallengeTest extends TestRunner {
 
-    static final String validChallengeName = "ваууууу";
-    static final String validDescription = "qwertyuiopasdghjklzxcvbnmgqwerсtghyujkiol";
-    static final String validTitle = "dksfkdjfskldf";
+    ChallengeData data = new ChallengeData();
     SoftAssert softAssert = new SoftAssert();
 
 
@@ -22,15 +21,15 @@ public class AddChallengeTest extends TestRunner {
                 .goToAdministrationDropDown()
                 .goToChallengesPage()
                 .goToAddChallengePage()
-                .fillSequenceNumberField("155")
-                .fillNameField(validChallengeName)
-                .fillTitleField(validTitle)
-                .fillDescriptionField(validDescription)
+                .fillSequenceNumberField(data.getValidSequenceNumber())
+                .fillNameField(data.getValidChallengeName())
+                .fillTitleField(data.getValidTitle())
+                .fillDescriptionField(data.getValidDescription())
                 .addImage(testValueProvider.getImage())
                 .clickSaveChallengeButton();
-        Assert.assertTrue(initPages().getChallengePage().listContainName(allChallengesList(), validChallengeName));
+        Assert.assertTrue(initPages().getChallengePage().listContainName(allChallengesList(), data.getValidChallengeName()));
         Assert.assertNotEquals(initPages().getChallengePage().getMassage(),"Це поле може містити лише унікальні цифри");
-    deleteDataBaseRequest(validChallengeName);
+    deleteDataBaseRequest(data.getValidChallengeName());
     }
 
     @Test(description = "Verify sequence number fields on challenge page with invalid data")
@@ -40,17 +39,17 @@ public class AddChallengeTest extends TestRunner {
                 .goToAdministrationDropDown()
                 .goToChallengesPage()
                 .goToAddChallengePage()
-                .fillSequenceNumberField("0,4")
-                .fillNameField(validChallengeName)
-                .fillTitleField(validTitle)
-                .fillDescriptionField(validDescription)
+                .fillSequenceNumberField(data.getFloatSequenceNumber())
+                .fillNameField(data.getValidChallengeName())
+                .fillTitleField(data.getValidTitle())
+                .fillDescriptionField(data.getValidDescription())
                 .addImage(testValueProvider.getImage())
                 .clickSaveChallengeButton();
         softAssert.assertEquals(initPages().getChallengePage().getMassage(), "Це поле може містити лише унікальні цифри");
 
         initPages().getChallengePage()
                 .clearSequenceNumberField()
-                .fillSequenceNumberField("-15")
+                .fillSequenceNumberField(data.getNegativeSequenceNumber())
                 .clickSaveChallengeButton();
         softAssert.assertEquals(initPages().getChallengePage().getMassage(), "Це поле може містити лише унікальні цифри");
         softAssert.assertAll();
@@ -64,17 +63,17 @@ public class AddChallengeTest extends TestRunner {
                 .goToAdministrationDropDown()
                 .goToChallengesPage()
                 .goToAddChallengePage()
-                .fillSequenceNumberField("166")
-                .fillNameField("")
-                .fillTitleField(validTitle)
-                .fillDescriptionField(validDescription)
+                .fillSequenceNumberField(data.getValidSequenceNumber())
+                .fillNameField(data.getEmptyNameField())
+                .fillTitleField(data.getValidTitle())
+                .fillDescriptionField(data.getValidDescription())
                 .addImage(testValueProvider.getImage())
                 .clickSaveChallengeButton();
         softAssert.assertEquals(initPages().getChallengePage().getMassage(), "Поле ‘Назва Челенджу не може бути порожнім");
 
         initPages().getChallengePage()
                 .clearSequenceNumberField()
-                .fillNameField("qwertyuiopasdghjklzxcvbnmgqwerс")
+                .fillNameField(data.getToLongChallengeName())
                 .clickSaveChallengeButton();
         softAssert.assertEquals(initPages().getChallengePage().getMassage(), "Назва Челенджу задовга");
         softAssert.assertAll();
@@ -88,17 +87,17 @@ public class AddChallengeTest extends TestRunner {
                 .goToAdministrationDropDown()
                 .goToChallengesPage()
                 .goToAddChallengePage()
-                .fillSequenceNumberField("1687")
-                .fillNameField(validChallengeName)
-                .fillTitleField(validTitle)
-                .fillDescriptionField("dfgdfg")
+                .fillSequenceNumberField(data.getValidSequenceNumber())
+                .fillNameField(data.getValidChallengeName())
+                .fillTitleField(data.getValidTitle())
+                .fillDescriptionField(data.getToShortChallengeDescription())
                 .addImage(testValueProvider.getImage())
                 .clickSaveChallengeButton();
         softAssert.assertEquals(initPages().getChallengePage().getMassage(), "Опис Челенджу закороткий");
 
         initPages().getChallengePage()
                 .clearDescriptionField()
-                .fillNameField(initPages().getChallengePage().printNumberOfSymbols(1501))
+                .fillDescriptionField(data.getToLongChallengeDescription())
                 .clickSaveChallengeButton();
         softAssert.assertEquals(initPages().getChallengePage().getMassage(), "Опис Челенджу задовгий");
         softAssert.assertAll();
@@ -112,10 +111,10 @@ public class AddChallengeTest extends TestRunner {
                 .goToAdministrationDropDown()
                 .goToChallengesPage()
                 .goToAddChallengePage()
-                .fillSequenceNumberField("169")
-                .fillNameField(validChallengeName)
-                .fillTitleField(validTitle)
-                .fillDescriptionField(validDescription)
+                .fillSequenceNumberField(data.getValidSequenceNumber())
+                .fillNameField(data.getValidChallengeName())
+                .fillTitleField(data.getValidTitle())
+                .fillDescriptionField(data.getValidDescription())
                 .clickSaveChallengeButton();
         Assert.assertEquals(initPages().getChallengePage().getMassage(), "Ви не додали фото для завдання челенджу.");
     }

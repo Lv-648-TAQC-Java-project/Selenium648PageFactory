@@ -24,7 +24,7 @@ public class ChallengesDAO {
         ManagerDAO.getInstance().closeStatement(statement);
         return ChallengesEntity.getChallenges(rows);
     }
-    @Step("select By Name Wher eId ClubsDAO")
+    @Step("select By Name Where eId ClubsDAO")
     public List<ChallengesEntity> selectByNameWhereId(long getsortnumberint) {
         Statement statement = ManagerDAO.getInstance().getStatement();
         List<List<String>> rows = null;

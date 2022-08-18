@@ -111,15 +111,6 @@ public class AddChallengePage extends BasePage implements ChallengePage {
         return massage.getText();
     }
 
-    @Step("Print numbers of symbols")
-    public String printNumberOfSymbols(int number){
-        String word = "";
-        for (int i = 0 ; i < number ; i++){
-        word = word + "a";
-        }
-        return word;
-    }
-
     @Step("Verify that current list contain the name")
     public boolean listContainName(List<ChallengesEntity> list , String name){
         boolean result = false;
