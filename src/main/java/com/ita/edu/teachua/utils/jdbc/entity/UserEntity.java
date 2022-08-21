@@ -40,17 +40,20 @@ public class UserEntity {
 
     public static UserEntity getUser (List<String> row){
         UserEntity userEntity = new UserEntity();
-        userEntity.setEmail(row.get(0));
-        userEntity.setFirst_name(row.get(1));
-        userEntity.setLast_name(row.get(2));
-        userEntity.setPassword(row.get(3));
-        userEntity.setPhone(row.get(4));
-        userEntity.setProvider(row.get(5));
-        userEntity.setProvider_id(row.get(6));
-        userEntity.setStatus(Boolean.parseBoolean(row.get(7)));
-        userEntity.setUrl_logo(row.get(8));
-        userEntity.setVerification_code(row.get(9));
-        userEntity.setRole_id(Integer.parseInt(row.get(10)));
+        userEntity.setId(Long.parseLong(row.get(0)));
+        userEntity.setEmail(row.get(1));
+        userEntity.setFirst_name(row.get(2));
+        userEntity.setLast_name(row.get(3));
+        userEntity.setPassword(row.get(4));
+        userEntity.setPhone(row.get(5));
+        userEntity.setProvider(row.get(6));
+        userEntity.setProvider_id(row.get(7));
+        userEntity.setStatus(Boolean.parseBoolean(row.get(8)));
+        userEntity.setUrl_logo(row.get(9));
+        userEntity.setVerification_code(row.get(10));
+        if (row.get(11) != null) {
+            userEntity.setRole_id(Integer.parseInt(row.get(11)));
+        }
        return userEntity;
     }
 

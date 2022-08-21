@@ -1,7 +1,6 @@
 package com.ita.edu.teachua.ui.tests;
 
 import com.ita.edu.teachua.ui.pages.AllPages;
-import com.ita.edu.teachua.ui.pages.challenge_page.AddChallengePage;
 import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
 import com.ita.edu.teachua.utils.Retry;
 import com.ita.edu.teachua.utils.TestNgListeners;
@@ -97,5 +96,13 @@ public class TestRunner {
         ChallengesServices challengesServices = new ChallengesServices();
         challengesServices.deleteChallengesByName(challengeName);
     }
+
+//    @Step("Authorize user with valid email {email} and password {password}")
+//    public HeaderPage authorize(User user) {
+//        HeaderPage headerPage = new HeaderPage(driver);
+//        headerPage.goToGuestDropdown().clickOnLoginButton().fillLoginFields(user.getEmail(), user.getPassword());
+//        //sleep(3000);
+//        return new HeaderPage(driver);
+//    }
 
 }

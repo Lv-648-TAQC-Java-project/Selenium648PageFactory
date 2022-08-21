@@ -12,7 +12,7 @@ public class UsersServices {
         usersDAO = new UsersDAO();
     }
 
-    public List<UserEntity> get(){
+    public List<UserEntity> selectAll(){
         return usersDAO.selectAll();
     }
 

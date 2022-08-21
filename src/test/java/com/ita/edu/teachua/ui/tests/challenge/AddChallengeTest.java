@@ -1,7 +1,8 @@
 package com.ita.edu.teachua.ui.tests.challenge;
 
-import com.ita.edu.teachua.testdata.ChallengeData;
+import com.ita.edu.teachua.data.challenges.Challenge;
 import com.ita.edu.teachua.ui.tests.TestRunner;
+import com.ita.edu.teachua.data.user.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -9,28 +10,27 @@ import org.testng.asserts.SoftAssert;
 
 public class AddChallengeTest extends TestRunner {
 
-    ChallengeData data = new ChallengeData();
+    Challenge data = new Challenge();
     SoftAssert softAssert = new SoftAssert();
+    User user = new User();
 
-
-
-    @Test(description = "Verify all fields on challenge page with valid data")
-    public void canCreateChallengeWithValidData() {
-        runApplication().authorize(testValueProvider.getAdminEmail(), testValueProvider.getAdminPassword())
-                .goToOwnerDropdown()
-                .goToAdministrationDropDown()
-                .goToChallengesPage()
-                .goToAddChallengePage()
-                .fillSequenceNumberField(data.getValidSequenceNumber())
-                .fillNameField(data.getValidChallengeName())
-                .fillTitleField(data.getValidTitle())
-                .fillDescriptionField(data.getValidDescription())
-                .addImage(testValueProvider.getImage())
-                .clickSaveChallengeButton();
-        Assert.assertTrue(initPages().getChallengePage().listContainName(allChallengesList(), data.getValidChallengeName()));
-        Assert.assertNotEquals(initPages().getChallengePage().getMassage(),"Це поле може містити лише унікальні цифри");
-    deleteDataBaseRequest(data.getValidChallengeName());
-    }
+//    @Test(description = "Verify all fields on challenge page with valid data")
+//    public void canCreateChallengeWithValidData(User adminUser) {//User adminUser
+//        runApplication().authorize()
+//                .goToOwnerDropdown()
+//                .goToAdministrationDropDown()
+//                .goToChallengesPage()
+//                .goToAddChallengePage()
+//                .fillSequenceNumberField(data.getValidSequenceNumber())
+//                .fillNameField(data.getValidChallengeName())
+//                .fillTitleField(data.getValidTitle())
+//                .fillDescriptionField(data.getValidDescription())
+//                .addImage(testValueProvider.getImage())
+//                .clickSaveChallengeButton();
+//        Assert.assertTrue(initPages().getChallengePage().listContainName(allChallengesList(), data.getValidChallengeName()));
+//        Assert.assertNotEquals(initPages().getChallengePage().getMassage(),"Це поле може містити лише унікальні цифри");
+//    deleteDataBaseRequest(data.getValidChallengeName());
+//    }
 
     @Test(description = "Verify sequence number fields on challenge page with invalid data")
     public void verifySequenceNumberFieldsWithInvalidData() {
