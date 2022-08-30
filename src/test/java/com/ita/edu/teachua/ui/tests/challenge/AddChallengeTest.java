@@ -28,7 +28,6 @@ public class AddChallengeTest extends TestRunner {
     @Test(description = "Verify all fields on challenge page with valid data" ,dataProvider = "data")
 
     public void canCreateChallengeWithValidData(User adminUser ,Challenge validChallenge) {
-
         AddChallengePage addChallengePage = runApplication()
                 .authorize(adminUser)
                 .goToOwnerDropdown()
