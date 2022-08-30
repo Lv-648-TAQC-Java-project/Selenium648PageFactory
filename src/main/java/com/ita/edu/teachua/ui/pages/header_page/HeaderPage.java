@@ -3,6 +3,7 @@ package com.ita.edu.teachua.ui.pages.header_page;
 import com.ita.edu.teachua.ui.elements.custom_elements.Dropdown;
 import com.ita.edu.teachua.ui.locators.header_locators.HeaderPageLocators;
 import com.ita.edu.teachua.ui.pages.base_page.BasePage;
+import com.ita.edu.teachua.ui.user.User;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -43,6 +44,13 @@ public class HeaderPage extends BasePage {
         return new HeaderPage(driver);
     }
 
+    @Step("Authorize user with valid email {email} and password {password}")
+    public HeaderPage authorize(User user) {
+        HeaderPage headerPage = new HeaderPage(driver);
+        headerPage.goToGuestDropdown().clickOnLoginButton().fillLoginFields(user.getEmail(), user.getUIPassword());
+        //sleep(3000);
+        return new HeaderPage(driver);
+    }
 
 
 }

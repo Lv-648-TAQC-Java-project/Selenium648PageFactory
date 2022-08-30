@@ -1,4 +1,4 @@
-package com.ita.edu.teachua.data.user;
+package com.ita.edu.teachua.ui.user;
 
 import lombok.Data;
 

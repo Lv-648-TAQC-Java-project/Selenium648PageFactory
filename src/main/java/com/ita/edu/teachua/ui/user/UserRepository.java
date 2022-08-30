@@ -1,14 +1,41 @@
-package com.ita.edu.teachua.data.user;
+package com.ita.edu.teachua.ui.user;
 
-import com.ita.edu.teachua.utils.TestValueProvider;
+import com.ita.edu.teachua.utils.MainValueProvider;
 import com.ita.edu.teachua.utils.jdbc.entity.UserEntity;
 import com.ita.edu.teachua.utils.jdbc.services.UsersServices;
 
+import java.io.IOException;
 import java.util.List;
 
-public class UserRepository {
 
-    TestValueProvider testValueProvider = new TestValueProvider();
+public final class UserRepository {
+
+    private static volatile UserRepository instance = null;
+
+    private UserRepository(){}
+
+    public static UserRepository get(){
+        if (instance == null){
+            synchronized (UserRepository.class){
+                if (instance == null){
+                    instance = new UserRepository();
+                }
+            }
+        }
+        return instance;
+    }
+
+    MainValueProvider mainValueProvider;
+
+    {
+        try {
+            mainValueProvider = new MainValueProvider();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
     User user = new User();
 
     public List<UserEntity> getAllUsers(){
@@ -17,15 +44,15 @@ public class UserRepository {
     }
 
     public User adminUser(){
-        return createUser(testValueProvider.getAdminEmail(), user , testValueProvider.getAdminPassword());
+        return createUser(mainValueProvider.getAdminEmail(), user , mainValueProvider.getAdminPassword());
     }
 
     public User baseUser(){
-        return createUser(testValueProvider.getBaseEmail(), user , testValueProvider.getBasePassword());
+        return createUser(mainValueProvider.getBaseEmail(), user , mainValueProvider.getBasePassword());
     }
 
     public User leaderUser(){
-        return createUser(testValueProvider.getLeaderEmail(), user , testValueProvider.getLeaderPassword());
+        return createUser(mainValueProvider.getLeaderEmail(), user , mainValueProvider.getLeaderPassword());
     }
 
     public User createUser (String email , User user , String UIPassword){
@@ -45,7 +72,7 @@ public class UserRepository {
                 break;
             }
         }
-        return new User();
+        return user;
     }
 
 }

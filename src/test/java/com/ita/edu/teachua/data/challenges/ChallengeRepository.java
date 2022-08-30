@@ -35,7 +35,7 @@ public class ChallengeRepository {
         challenge.setTitle(validTitle);
         challenge.setDescription(validDescription);
         challenge.setPhoto(testValueProvider.getImage());
-        return new Challenge();
+        return challenge;
     }
 
     public Challenge challengeWithInvalidFloatSequenceNumber() {
@@ -44,7 +44,7 @@ public class ChallengeRepository {
         challenge.setTitle(validTitle);
         challenge.setDescription(validDescription);
         challenge.setPhoto(testValueProvider.getImage());
-        return new Challenge();
+        return challenge;
     }
 
     public Challenge challengeWithInvalidNegativeSequenceNumber() {
@@ -53,7 +53,7 @@ public class ChallengeRepository {
         challenge.setTitle(validTitle);
         challenge.setDescription(validDescription);
         challenge.setPhoto(testValueProvider.getImage());
-        return new Challenge();
+        return challenge;
     }
 
     public Challenge challengeWithEmptyName() {
@@ -62,7 +62,7 @@ public class ChallengeRepository {
         challenge.setTitle(validTitle);
         challenge.setDescription(validDescription);
         challenge.setPhoto(testValueProvider.getImage());
-        return new Challenge();
+        return challenge;
     }
 
     public Challenge challengeWithToLongName() {
@@ -71,7 +71,7 @@ public class ChallengeRepository {
         challenge.setTitle(validTitle);
         challenge.setDescription(validDescription);
         challenge.setPhoto(testValueProvider.getImage());
-        return new Challenge();
+        return challenge;
     }
 
     public Challenge challengeWithToLongDescription() {
@@ -80,7 +80,7 @@ public class ChallengeRepository {
         challenge.setTitle(validTitle);
         challenge.setDescription(toLongChallengeDescription);
         challenge.setPhoto(testValueProvider.getImage());
-        return new Challenge();
+        return challenge;
     }
 
     public Challenge challengeWithToShortDescription() {
@@ -89,7 +89,7 @@ public class ChallengeRepository {
         challenge.setTitle(validTitle);
         challenge.setDescription(toShortChallengeDescription);
         challenge.setPhoto(testValueProvider.getImage());
-        return new Challenge();
+        return challenge;
     }
 
     public Challenge challengeWithoutPhoto() {
@@ -97,7 +97,7 @@ public class ChallengeRepository {
         challenge.setName(validChallengeName);
         challenge.setTitle(validTitle);
         challenge.setDescription(toShortChallengeDescription);
-        return new Challenge();
+        return challenge;
     }
 
 }
