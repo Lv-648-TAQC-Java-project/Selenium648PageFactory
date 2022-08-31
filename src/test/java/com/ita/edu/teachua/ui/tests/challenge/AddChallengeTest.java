@@ -15,19 +15,15 @@ public class AddChallengeTest extends TestRunner {
 
     @DataProvider(parallel = true)
     public Object[][] data(){
-        User adminUser = UserRepository.get().adminUser();
         ChallengeRepository challengeRepository = new ChallengeRepository();
-        Challenge challenge = challengeRepository.challengeWithValidData();
-
         Object[][] data = new Object[][]{
-                {adminUser , challenge}};
+                {UserRepository.get().adminUser() , challengeRepository.challengeWithValidData() , AddChallengePage.THIS_FIELD_CAN_CONTAIN_ONLY_UNIQUE_NUMBER_MASSAGE}};
         return data;
     }
 
 
     @Test(description = "Verify all fields on challenge page with valid data" ,dataProvider = "data")
-
-    public void canCreateChallengeWithValidData(User adminUser ,Challenge validChallenge) {
+    public void canCreateChallengeWithValidData(User adminUser ,Challenge validChallenge ,String expectedMassage) {
         AddChallengePage addChallengePage = runApplication()
                 .authorize(adminUser)
                 .goToOwnerDropdown()
@@ -41,7 +37,7 @@ public class AddChallengeTest extends TestRunner {
                 .addImage(validChallenge.getPhoto())
                 .clickSaveChallengeButton();
         Assert.assertTrue(initPages().getChallengePage().listContainName(allChallengesList(), validChallenge.getName()));
-        Assert.assertNotEquals(initPages().getChallengePage().getMassage(), "Це поле може містити лише унікальні цифри");
+        Assert.assertNotEquals(initPages().getChallengePage().getMassage(),expectedMassage );
         deleteDataBaseRequest(validChallenge.getName());
     }
 

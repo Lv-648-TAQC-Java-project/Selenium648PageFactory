@@ -35,6 +35,8 @@ public class AddChallengePage extends BasePage implements ChallengePage {
     @FindBy(how = How.XPATH, using = ChallengePageLocators.ADD_CHALLENGE_MASSAGE)
     private WebElement massage;
 
+    public static final String THIS_FIELD_CAN_CONTAIN_ONLY_UNIQUE_NUMBER_MASSAGE =  "Це поле може містити лише унікальні цифри";
+
 
     public AddChallengePage(WebDriver driver) {
         super(driver);
