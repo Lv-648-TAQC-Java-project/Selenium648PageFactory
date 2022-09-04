@@ -1,6 +1,5 @@
 package com.ita.edu.teachua.ui.tests;
 
-import com.ita.edu.teachua.ui.user.User;
 import com.ita.edu.teachua.ui.pages.AllPages;
 import com.ita.edu.teachua.ui.pages.header_page.HeaderPage;
 import com.ita.edu.teachua.utils.Retry;
@@ -31,6 +30,7 @@ public class TestRunner {
 
     protected static TestValueProvider testValueProvider;
     protected WebDriver driver;
+    protected SoftAssert softAssert;
 
     @BeforeSuite(alwaysRun = true)
     public void beforeSuite(ITestContext context) throws IOException {
@@ -50,6 +50,7 @@ public class TestRunner {
             options.addArguments("--headless");
             options.addArguments("--window-size=1920,1080", "--no-sandbox", "'--disable-dev-shm-usage");
         }
+        softAssert = new SoftAssert();
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

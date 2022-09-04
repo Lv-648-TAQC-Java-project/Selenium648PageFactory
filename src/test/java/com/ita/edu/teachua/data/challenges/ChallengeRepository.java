@@ -96,7 +96,7 @@ public class ChallengeRepository {
         challenge.setSequenceNumber(validSequenceNumber);
         challenge.setName(validChallengeName);
         challenge.setTitle(validTitle);
-        challenge.setDescription(toShortChallengeDescription);
+        challenge.setDescription(validDescription);
         return challenge;
     }
 

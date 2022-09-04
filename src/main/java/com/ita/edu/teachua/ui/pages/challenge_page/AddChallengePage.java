@@ -36,8 +36,11 @@ public class AddChallengePage extends BasePage implements ChallengePage {
     private WebElement massage;
 
     public static final String THIS_FIELD_CAN_CONTAIN_ONLY_UNIQUE_NUMBER_MASSAGE =  "Це поле може містити лише унікальні цифри";
-
-
+    public static final String THIS_FIELD_CANT_BE_EMPTY_MASSAGE = "Поле ‘Назва Челенджу не може бути порожнім";
+    public static final String CHALLENGE_NAME_TO_LONG_MASSAGE = "Назва Челенджу задовга";
+    public static final String CHALLENGE_DESCRIPTION_TO_SHORT_MASSAGE = "Опис Челенджу закороткий";
+    public static final String CHALLENGE_DESCRIPTION_TO_LONG_MASSAGE = "Опис Челенджу задовгий";
+    public static final String YOU_DO_NOT_ADD_ANY_PHOTO_MASSAGE = "Ви не додали фото для завдання челенджу.";
     public AddChallengePage(WebDriver driver) {
         super(driver);
     }
@@ -65,6 +68,12 @@ public class AddChallengePage extends BasePage implements ChallengePage {
     @Step("Clear name field")
     public AddChallengePage clearNameField(){
         nameField.clear();
+        return this;
+    }
+
+    @Step("Wait")
+    public AddChallengePage waitThreeSecond(){
+        sleep(3000);
         return this;
     }
 
